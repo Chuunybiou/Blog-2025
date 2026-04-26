@@ -1,4 +1,11 @@
 User-agent: *
 Allow: /
+Disallow: /article-type-capvietnam
+Disallow: /article-type-capvietnam.php
+Disallow: /merci-guide
+Disallow: /merci-guide.php
+Disallow: /data/
+Disallow: /go
+Disallow: /go.php
 
-Sitemap: https://www.capvietnam.fr/sitemap.xml
+Sitemap: https://www.blog-capvietnam.fr/sitemap.xml

@@ -10,9 +10,15 @@
   </url>
   <url>
     <loc>https://www.blog-capvietnam.fr/articles</loc>
-    <lastmod>2026-04-10</lastmod>
+    <lastmod>2026-04-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.blog-capvietnam.fr/guide-cap-vietnam-2026</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.blog-capvietnam.fr/photos-videos</loc>
@@ -34,6 +40,12 @@
   </url>
 
   <!-- Articles — Démarches Administratives -->
+  <url>
+    <loc>https://www.blog-capvietnam.fr/quitter-france-expat-vietnam</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <url>
     <loc>https://www.blog-capvietnam.fr/visa-vietnam-francais-guide-2026</loc>
     <lastmod>2026-04-08</lastmod>
@@ -103,6 +115,14 @@
     <priority>0.6</priority>
   </url>
 
+  <!-- Section Vietnamienne -->
+  <url>
+    <loc>https://www.blog-capvietnam.fr/vi/</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Articles — Argent & Travail -->
   <url>
     <loc>https://www.blog-capvietnam.fr/budget-mensuel-hanoi-2026</loc>
@@ -112,7 +132,7 @@
   </url>
   <url>
     <loc>https://www.blog-capvietnam.fr/transferer-argent-vietnam-wise</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -130,9 +150,27 @@
   </url>
   <url>
     <loc>https://www.blog-capvietnam.fr/cafes-coworkings-hanoi</loc>
-    <lastmod>2026-02-12</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.blog-capvietnam.fr/budget-mensuel-hcmc-2026</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.blog-capvietnam.fr/checklist-depart-installer-vietnam</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.blog-capvietnam.fr/calculateur-budget-vietnam</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.blog-capvietnam.fr/creer-blog-expat-rentable</loc>

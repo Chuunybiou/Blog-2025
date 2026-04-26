@@ -1,7 +1,0 @@
-DirectoryIndex blog-capvietnam.html index.html index.php
-
-RewriteEngine On
-
-# Rediriger vers blog-capvietnam.html si accès racine
-RewriteCond %{REQUEST_URI} ^/$
-RewriteRule ^$ /blog-capvietnam.html [L]
