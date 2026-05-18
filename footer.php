@@ -7,21 +7,26 @@
       <p>Le blog d'un Français qui s'installe au Vietnam. Démarches, couple mixte et travail en ligne depuis Hanoï.</p>
     </div>
     <div class="footer-col">
-      <h4>Catégories</h4>
+      <h4><?= ($page_lang ?? 'fr') === 'vi' ? 'Danh mục' : 'Catégories' ?></h4>
       <a href="<?= $path_prefix ?>articles-capvietnam.php">Démarches Administratives</a>
       <a href="<?= $path_prefix ?>articles-capvietnam.php">Couple Mixte &amp; Famille</a>
       <a href="<?= $path_prefix ?>articles-capvietnam.php">Argent &amp; Travail en Ligne</a>
       <a href="<?= $path_prefix ?>articles-capvietnam.php">Voyager au Vietnam</a>
     </div>
     <div class="footer-col">
-      <h4>Liens utiles</h4>
+      <h4><?= ($page_lang ?? 'fr') === 'vi' ? 'Liên kết hữu ích' : 'Liens utiles' ?></h4>
       <a href="<?= $path_prefix ?>a-propos-capvietnam.php">À propos</a>
       <a href="<?= $path_prefix ?>blog-capvietnam.php#contact">Contact</a>
       <a href="<?= $path_prefix ?>blog-capvietnam.php#newsletter">Newsletter</a>
-      <a href="<?= $path_prefix ?>guide-cap-vietnam-2026.php" style="color:var(--amber-soft)">Guide Cap Vietnam — 9 €</a>
+      <a href="<?= $path_prefix ?>livre-vietnamien.php" style="color:var(--terracotta-soft);font-weight:600">📕 Apprendre le vietnamien</a>
+      <a href="<?= $path_prefix ?>guide-cap-vietnam-2026.php" style="color:var(--amber-soft);font-weight:600">📘 Guide Cap Vietnam</a>
+      <hr style="border-color:var(--border);margin:0.8rem 0">
+      <a href="https://bonusparrainage.com/revolut" target="_blank" rel="noopener" style="color:var(--amber-soft)">💳 Code parrainage Revolut</a>
+      <a href="https://bonusparrainage.com" target="_blank" rel="noopener">🎁 BonusParrainage.com</a>
+      <a href="https://anthony-bouillon.com" target="_blank" rel="noopener">💻 Services informatiques</a>
     </div>
     <div class="footer-col">
-      <h4>Réseaux</h4>
+      <h4><?= ($page_lang ?? 'fr') === 'vi' ? 'Mạng xã hội' : 'Réseaux' ?></h4>
       <a href="<?= SITE_TIKTOK ?>" target="_blank" rel="noopener">TikTok</a>
       <a href="<?= SITE_YOUTUBE ?>" target="_blank" rel="noopener">YouTube</a>
       <a href="<?= $path_prefix ?>go.php?id=kofi" target="_blank" rel="noopener" style="color:var(--amber-soft);font-weight:600">☕ Soutenir le blog</a>
@@ -46,7 +51,9 @@
     <h3>1. Éditeur du site</h3>
     <p>Le site blog-capvietnam.fr est édité par :<br>
     <strong><?= SITE_AUTHOR ?></strong><br>
-    Adresse : Hanoi<br>
+    Statut : Auto-entrepreneur (micro-entreprise)<br>
+    SIRET : 85214042500038<br>
+    Adresse : 47 rue Vivienne, 75002 Paris, France<br>
     Email : <?= SITE_EMAIL ?><br>
     Directeur de la publication : <?= SITE_AUTHOR ?></p>
     <h3>2. Hébergeur</h3>

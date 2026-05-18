@@ -13,6 +13,6 @@ define('PROFILE_PHOTO',   'assets/img/profile/anthony-profil.jpg');
 
 // Affiliate links
 define('AFF_WISE',      'https://wise.com/invite/dic/anthonyrolandb');
-define('AFF_REVOLUT',   'https://revolut.com/referral/?referral-code=anthonfytu!MAY1-26-AR-H1&geo-redirect');
+define('AFF_REVOLUT',   'https://revolut.com/referral/?referral-code=anthonfytu!MAY2-26-VR-FR&geo-redirect');
 define('AFF_AMAZON_G7', 'https://amzn.to/4u8wqts');
 define('AFF_KOFI',      'https://ko-fi.com/blogcapvietnam');

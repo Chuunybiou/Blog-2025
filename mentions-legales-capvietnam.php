@@ -29,9 +29,10 @@ include 'header.php';
 
   <h2>1. Éditeur du site</h2>
   <p><strong>Nom :</strong> Anthony Bouillon</p>
-  <p><strong>Adresse :</strong> Hanoï, Vietnam</p>
+  <p><strong>Statut :</strong> Auto-entrepreneur (micro-entreprise)</p>
+  <p><strong>SIRET :</strong> 85214042500038</p>
+  <p><strong>Adresse :</strong> 47 rue Vivienne, 75002 Paris, France</p>
   <p><strong>Email :</strong> <a href="mailto:<?= SITE_EMAIL ?>"><?= SITE_EMAIL ?></a></p>
-  <p><strong>Statut :</strong> Particulier / créateur de contenu indépendant</p>
   <p>Le directeur de la publication est Anthony Bouillon.</p>
 
   <h2>2. Hébergement</h2>

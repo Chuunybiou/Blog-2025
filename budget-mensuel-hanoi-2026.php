@@ -191,6 +191,17 @@ include 'header.php';
     include '_affiliate-cta.php';
     ?>
 
+    <?php
+    $aff_id    = 'revolut';
+    $aff_icon  = '💳';
+    $aff_title = 'Revolut — zéro frais de change pour ton budget à Hanoï';
+    $aff_text  = 'Dépense en VND directement depuis ta carte sans commission. Idéal pour gérer ton budget expatrié au quotidien. Bonus : <strong>je reverse 50% de ma prime de parrainage</strong> — personne d\'autre ne fait ça.';
+    $aff_cta   = 'Ouvrir Revolut (bonus + 50% reversé)';
+    $aff_note  = 'Lien de parrainage — sans coût supplémentaire pour toi.';
+    $aff_theme = 'blue';
+    include '_affiliate-cta.php';
+    ?>
+
     <h2 id="section-faq">Questions fréquentes</h2>
     <div class="faq-item">
       <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Peut-on vraiment vivre confortablement à Hanoï avec 1 000 €/mois ? <span class="faq-arrow">▼</span></button>

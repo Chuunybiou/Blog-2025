@@ -1,13 +1,13 @@
 ﻿<?php
 require_once __DIR__ . '/config/site.php';
-$page_title       = 'Guide Cap Vietnam 2026 — S\'installer au Vietnam | 9 €';
-$page_description = 'Guide pratique pour s\'installer au Vietnam : visa TT, mariage, budget 2026, travail en ligne, couple mixte. 9 chapitres, 47 checklists. 9 €.';
+$page_title       = 'Guide Cap Vietnam 2026 — S\'installer au Vietnam';
+$page_description = 'Guide pratique pour s\'installer au Vietnam : visa TT, mariage, budget 2026, travail en ligne, couple mixte. 9 chapitres, 47 checklists. Disponible sur Amazon.';
 $page_canonical   = SITE_URL . '/guide-cap-vietnam-2026';
-$page_og_title    = 'Guide Cap Vietnam 2026 — 9 €';
-$page_og_desc     = 'Tout ce qu\'il faut savoir pour s\'installer au Vietnam en tant que Français. Visa, mariage, budget, travail en ligne. 9 chapitres. 9 €.';
+$page_og_title    = 'Guide Cap Vietnam 2026 — S\'installer au Vietnam';
+$page_og_desc     = 'Tout ce qu\'il faut savoir pour s\'installer au Vietnam en tant que Français. Visa, mariage, budget, travail en ligne. 9 chapitres. Disponible sur Amazon.';
 $page_og_url      = SITE_URL . '/guide-cap-vietnam-2026';
 $page_og_image    = 'https://images.unsplash.com/photo-1573270689103-d7a4e42b609a?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"Product","name":"Guide Cap Vietnam 2026","description":"Guide pratique pour s\'installer au Vietnam en tant que Français — visa, mariage, budget, travail en ligne.","offers":{"@type":"Offer","price":"9.00","priceCurrency":"EUR","availability":"https://schema.org/InStock","url":"' . SITE_URL . '/guide-cap-vietnam-2026"},"author":{"@type":"Person","name":"Anthony Bouillon"},"image":"https://images.unsplash.com/photo-1573270689103-d7a4e42b609a?w=1200&q=80"}';
+$page_schema      = '{"@context":"https://schema.org","@type":"Book","name":"Guide Cap Vietnam 2026","description":"Guide pratique pour s\'installer au Vietnam en tant que Français — visa, mariage, budget, travail en ligne.","author":{"@type":"Person","name":"Anthony Bouillon"},"url":"https://amzn.to/4wpzaER","image":"https://images.unsplash.com/photo-1573270689103-d7a4e42b609a?w=1200&q=80"}';
 $page_extra_css   = '
 .guide-hero{padding-top:64px;background:linear-gradient(160deg,#0d1829 0%,#1a2744 50%,#0d1829 100%);position:relative;overflow:hidden}
 .guide-hero::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 60% 60% at 10% 90%,rgba(192,21,30,0.12),transparent 60%),radial-gradient(ellipse 50% 50% at 90% 10%,rgba(212,168,75,0.08),transparent 60%)}
@@ -132,30 +132,12 @@ include 'header.php';
         <li>Budget réel 2026 — pas les chiffres bidons d'il y a 4 ans</li>
        
       </ul>
-      <div class="price-block">
-        <div>
-          <div class="price-tag">9 €</div>
-          <div class="price-detail">Téléchargement immédiat · PDF · 32 pages</div>
-        </div>
-      </div>
       <div class="paypal-form-wrap">
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-          <input type="hidden" name="cmd" value="_xclick">
-          <input type="hidden" name="business" value="<?= SITE_PAYPAL ?>">
-          <input type="hidden" name="lc" value="FR">
-          <input type="hidden" name="item_name" value="Guide Cap Vietnam 2026 — PDF">
-          <input type="hidden" name="amount" value="9.00">
-          <input type="hidden" name="currency_code" value="EUR">
-          <input type="hidden" name="no_shipping" value="1">
-          <input type="hidden" name="no_note" value="1">
-          <input type="hidden" name="return" value="<?= SITE_URL ?>/merci-guide">
-          <input type="hidden" name="cancel_return" value="<?= SITE_URL ?>/guide-cap-vietnam-2026">
-          <button type="submit" class="paypal-btn"><span class="paypal-logo">PayPal</span> Acheter pour 9 € →</button>
-        </form>
+        <a href="https://amzn.to/4wpzaER" class="paypal-btn" target="_blank" rel="noopener sponsored">📕 Commander sur Amazon →</a>
         <div class="trust-line">
-          <span>🔒 Paiement sécurisé PayPal</span>
-          <span>📥 Téléchargement immédiat</span>
-          <span>🔄 Mise à jour 2027 incluse</span>
+          <span>🔒 Achat sécurisé Amazon</span>
+          <span>📥 Version numérique disponible</span>
+          <span>⭐ Avis vérifiés</span>
         </div>
       </div>
     </div>
@@ -251,7 +233,7 @@ include 'header.php';
         <div class="testimonial-author"><strong>Pierre D.</strong> — Marié, installé à HCMC</div>
       </div>
       <div class="testimonial-card">
-        <p class="testimonial-text">« 9 euros pour éviter les galères que j'ai vécues moi-même, c'est cadeau. Le chapitre fiscal m'a évité une double imposition. »</p>
+        <p class="testimonial-text">« Ce guide rassemble tout ce qu'on apprend à la dure. Le chapitre fiscal m'a évité une double imposition. »</p>
         <div class="testimonial-author"><strong>Thomas L.</strong> — Freelance à Hanoï</div>
       </div>
     </div>
@@ -275,42 +257,25 @@ include 'header.php';
 <section class="cta2-section">
   <div class="cta2-inner">
     <h2>Prêt à partir ?</h2>
-    <p>Pour le prix d'un café, tu évites des mois de galères administratives.</p>
-    <span class="price-tag-big">9 €</span>
-    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-      <input type="hidden" name="cmd" value="_xclick">
-      <input type="hidden" name="business" value="<?= SITE_PAYPAL ?>">
-      <input type="hidden" name="lc" value="FR">
-      <input type="hidden" name="item_name" value="Guide Cap Vietnam 2026 — PDF">
-      <input type="hidden" name="amount" value="9.00">
-      <input type="hidden" name="currency_code" value="EUR">
-      <input type="hidden" name="no_shipping" value="1">
-      <input type="hidden" name="no_note" value="1">
-      <input type="hidden" name="return" value="<?= SITE_URL ?>/merci-guide">
-      <input type="hidden" name="cancel_return" value="<?= SITE_URL ?>/guide-cap-vietnam-2026">
-      <button type="submit" class="paypal-btn">PayPal — Télécharger le guide pour 9 € →</button>
-    </form>
-    <p class="cta2-note">🔒 Paiement sécurisé PayPal · PDF téléchargeable immédiatement · Mise à jour 2027 incluse</p>
+    <p>Tout ce qu'il faut savoir pour s'installer au Vietnam, condensé par quelqu'un qui l'a vécu.</p>
+    <a href="https://amzn.to/4wpzaER" class="paypal-btn" target="_blank" rel="noopener sponsored">📕 Commander sur Amazon →</a>
+    <p class="cta2-note">🔒 Achat sécurisé Amazon · Version numérique ou papier · Lien affilié — commission perçue</p>
   </div>
 </section>
 
 <section class="guide-faq">
   <h2>Questions fréquentes</h2>
   <div class="faq-item">
-    <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Comment je reçois le guide après le paiement ? <span class="faq-arrow">▼</span></button>
-    <div class="faq-answer">Immédiatement après le paiement PayPal, tu es redirigé vers une page de téléchargement directe. Le PDF est disponible en un clic.</div>
-  </div>
-  <div class="faq-item">
-    <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">La mise à jour 2027 est-elle vraiment incluse ? <span class="faq-arrow">▼</span></button>
-    <div class="faq-answer">Oui. Le guide est mis à jour chaque année. Si tu l'achètes en 2026, tu reçois la version 2027 automatiquement par email à l'adresse liée à ton compte PayPal.</div>
+    <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Le guide est-il disponible en version numérique ? <span class="faq-arrow">▼</span></button>
+    <div class="faq-answer">Oui. Sur Amazon tu peux choisir la version Kindle (téléchargement immédiat) ou la version papier selon ta préférence.</div>
   </div>
   <div class="faq-item">
     <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Le guide couvre aussi Ho Chi Minh City ou seulement Hanoï ? <span class="faq-arrow">▼</span></button>
     <div class="faq-answer">Les démarches administratives (visa, mariage, fiscalité) sont valables pour tout le Vietnam. Les adresses pratiques (logement, coworkings) sont principalement pour Hanoï, avec des comparaisons HCMC pour le budget.</div>
   </div>
   <div class="faq-item">
-    <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Je n'ai pas de compte PayPal, je peux quand même acheter ? <span class="faq-arrow">▼</span></button>
-    <div class="faq-answer">Oui. PayPal permet de payer par carte bancaire directement sans créer de compte — il suffit de cliquer sur "Payer par carte" sur la page PayPal.</div>
+    <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Les infos sont à jour en 2026 ? <span class="faq-arrow">▼</span></button>
+    <div class="faq-answer">Oui. Tous les prix, les délais de visa et les procédures administratives ont été vérifiés début 2026. Le guide est relu chaque année avant sa mise en vente.</div>
   </div>
 </section>
 

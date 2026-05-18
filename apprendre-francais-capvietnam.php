@@ -1,6 +1,6 @@
 <?php
 require_once __DIR__ . '/config/site.php';
-$page_lang_switch = ['href' => 'vi/', 'label' => '🇻🇳 VI', 'title' => 'Phiên bản tiếng Việt'];
+$page_lang_switch = ['href' => 'vi/', 'label' => '🇻🇳 Tiếng Việt', 'title' => 'Phiên bản tiếng Việt'];
 $page_hreflang    = ['fr' => SITE_URL . '/apprendre-francais-capvietnam', 'vi' => SITE_URL . '/vi/', 'x-default' => SITE_URL . '/vi/'];
 $page_title       = 'Học tiếng Pháp miễn phí | Cap Vietnam Hanoï';
 $page_description = 'Học tiếng Pháp miễn phí với người Pháp tại Hà Nội. Video TikTok, bài học và PDF. Apprenez le français avec un Français à Hanoï.';

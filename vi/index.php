@@ -5,7 +5,7 @@ $path_prefix      = '../';
 $page_lang        = 'vi';
 $page_lang_switch = [
   'href'  => '../blog-capvietnam.php',
-  'label' => '🇫🇷 FR',
+  'label' => '🇫🇷 Français',
   'title' => 'Version française',
 ];
 $page_hreflang    = [
@@ -102,6 +102,20 @@ $page_extra_css = '
 .vi-nl-form button:hover{background:#2a85b8}
 @media(max-width:900px){.vi-hero-inner{grid-template-columns:1fr}.tt-grid{grid-template-columns:repeat(2,1fr)}.vi-resources-grid{grid-template-columns:1fr}}
 @media(max-width:640px){.vi-hero-ctas{flex-direction:column}.tt-grid{grid-template-columns:repeat(2,1fr)}.vi-nl-form{flex-direction:column}.vi-cta-btns{flex-direction:column;align-items:center}}
+/* Articles grid */
+.vi-articles-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.vi-art-preview{display:block;background:var(--white);border-radius:var(--radius);overflow:hidden;text-decoration:none;color:inherit;box-shadow:var(--shadow-sm);transition:transform 0.3s,box-shadow 0.3s}
+.vi-art-preview:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg)}
+.vi-art-preview-img{height:180px;overflow:hidden}
+.vi-art-preview-img img{width:100%;height:100%;object-fit:cover;transition:transform 0.3s}
+.vi-art-preview:hover .vi-art-preview-img img{transform:scale(1.05)}
+.vi-art-preview-body{padding:1.5rem}
+.vi-art-preview-cat{display:inline-block;font-size:0.65rem;letter-spacing:2px;text-transform:uppercase;font-weight:700;color:#1a5f8a;margin-bottom:0.75rem}
+.vi-art-preview-body h3{font-family:"DM Serif Display",serif;font-size:1rem;line-height:1.4;margin-bottom:0.75rem;color:var(--ink)}
+.vi-art-preview-body p{font-size:0.85rem;color:var(--muted);line-height:1.6;margin-bottom:1rem}
+.vi-art-preview-more{font-size:0.82rem;font-weight:700;color:#1a5f8a}
+@media(max-width:900px){.vi-articles-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.vi-articles-grid{grid-template-columns:1fr}}
 ';
 
 include '../header.php';
@@ -134,8 +148,8 @@ include '../header.php';
       <div class="vi-profile-name"><?= SITE_AUTHOR ?></div>
       <div class="vi-profile-role">🇫🇷 Người Pháp • 📍 Hà Nội, Việt Nam</div>
       <p class="vi-profile-text">
-        Tôi đến Việt Nam năm <?= SITE_YEAR ?> và yêu đất nước này ngay lần đầu tiên.<br>
-        Trên TikTok, tôi dạy tiếng Pháp cho người Việt — đơn giản, thực tế, miễn phí.
+        Mình đến Việt Nam năm <?= SITE_YEAR ?> và yêu đất nước này ngay lần đầu tiên.<br>
+        Trên TikTok, mình dạy tiếng Pháp cho người Việt — đơn giản, thực tế, miễn phí.
       </p>
       <div class="vi-profile-tags">
         <span class="vi-tag">📍 Hà Nội</span>
@@ -180,6 +194,51 @@ include '../header.php';
   </div>
   <div style="text-align:center;margin-top:2.5rem">
     <a href="<?= SITE_TIKTOK ?>" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;padding:0.85rem 2rem;background:#ff0050;color:#fff;border-radius:4px;text-decoration:none;font-weight:700">🎵 Theo dõi để xem thêm video →</a>
+  </div>
+</section>
+
+<!-- ══ BÀI VIẾT ══ -->
+<section class="vi-section" style="background:var(--white)" id="bai-viet">
+  <div class="vi-section-label">Bài viết / Articles</div>
+  <h2 class="vi-section-title">✍️ Bài viết học tiếng Pháp</h2>
+  <p class="vi-section-desc">Hướng dẫn chi tiết bằng tiếng Việt — lý do học, phát âm, tài nguyên miễn phí.</p>
+  <div class="vi-articles-grid">
+    <a class="vi-art-preview" href="tai-sao-hoc-tieng-phap.php">
+      <div class="vi-art-preview-img">
+        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600&q=80"
+             alt="Tại sao nên học tiếng Pháp" loading="lazy">
+      </div>
+      <div class="vi-art-preview-body">
+        <div class="vi-art-preview-cat">Lý do học</div>
+        <h3>Tại Sao Nên Học Tiếng Pháp? 6 Lý Do Thực Tế Dành Cho Người Việt</h3>
+        <p>Canada, châu Phi, du học Pháp... Mình chia sẻ 6 cơ hội thực tế đang chờ người Việt biết tiếng Pháp.</p>
+        <span class="vi-art-preview-more">Đọc thêm →</span>
+      </div>
+    </a>
+    <a class="vi-art-preview" href="loi-phat-am-tieng-phap-nguoi-viet.php">
+      <div class="vi-art-preview-img">
+        <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=600&q=80"
+             alt="Lỗi phát âm tiếng Pháp của người Việt" loading="lazy">
+      </div>
+      <div class="vi-art-preview-body">
+        <div class="vi-art-preview-cat">Phát âm</div>
+        <h3>7 Lỗi Phát Âm Tiếng Pháp Mà Người Việt Thường Mắc (Và Cách Sửa)</h3>
+        <p>Âm R, nguyên âm mũi, chữ U... Mình giải thích từng lỗi với ví dụ cụ thể và cách luyện.</p>
+        <span class="vi-art-preview-more">Đọc thêm →</span>
+      </div>
+    </a>
+    <a class="vi-art-preview" href="hoc-tieng-phap-online-mien-phi.php">
+      <div class="vi-art-preview-img">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&q=80"
+             alt="Học tiếng Pháp online miễn phí" loading="lazy">
+      </div>
+      <div class="vi-art-preview-body">
+        <div class="vi-art-preview-cat">Tài nguyên</div>
+        <h3>Học Tiếng Pháp Online Miễn Phí: 7 Nguồn Tốt Nhất Năm 2026</h3>
+        <p>TikTok, YouTube, Duolingo, TV5Monde... Mình tổng hợp 7 nguồn học tiếng Pháp miễn phí tốt nhất.</p>
+        <span class="vi-art-preview-more">Đọc thêm →</span>
+      </div>
+    </a>
   </div>
 </section>
 
@@ -252,7 +311,7 @@ include '../header.php';
 
 <!-- ══ NEWSLETTER ══ -->
 <section class="vi-newsletter">
-  <h2>Nhận bài học mỗi tuần ✉️</h2>
+  <h2>Videos Tiktok ✉️</h2>
   <p>Đăng ký nhận bài học tiếng Pháp qua email — miễn phí, không spam.</p>
   <form class="vi-nl-form" action="<?= SITE_FORMSPREE ?>" method="POST">
     <input type="hidden" name="_subject" value="Newsletter VI — Cap Vietnam">

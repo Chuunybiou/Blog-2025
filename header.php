@@ -62,6 +62,7 @@ $page_extra_css   = $page_extra_css   ?? '';
 <link rel="preconnect" href="https://images.unsplash.com">
 <link rel="dns-prefetch" href="//www.paypal.com">
 <link rel="dns-prefetch" href="//formspree.io">
+<link rel="dns-prefetch" href="//www.amazon.fr">
 
 <!-- Non-render-blocking font load -->
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Libre+Franklin:wght@300;400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
@@ -165,7 +166,7 @@ nav.scrolled { box-shadow: var(--shadow-md); }
   text-decoration: none;
 }
 .nav-logo span { color: var(--terracotta); }
-.nav-links { display: flex; gap: 2rem; list-style: none; }
+.nav-links { display: flex; gap: 1rem; list-style: none; align-items: center; }
 .nav-links a {
   text-decoration: none;
   color: var(--muted);
@@ -187,9 +188,27 @@ nav.scrolled { box-shadow: var(--shadow-md); }
   transition: background 0.2s, transform 0.2s !important;
 }
 .nav-guide-cta:hover { background: var(--amber) !important; color: var(--ink) !important; transform: translateY(-1px); }
+
+/* CTA Livre Amazon - méthode polyglotte */
+.nav-book-cta {
+  background: var(--terracotta);
+  color: #fff !important;
+  padding: 0.35rem 0.9rem;
+  border-radius: 100px;
+  font-weight: 700 !important;
+  text-transform: none !important;
+  letter-spacing: 0 !important;
+  transition: background 0.2s, transform 0.2s !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+.nav-book-cta:hover { background: var(--terracotta-soft) !important; color: #fff !important; transform: translateY(-1px); }
+
 .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
 .nav-toggle span { display: block; width: 22px; height: 2px; background: var(--ink); margin: 5px 0; transition: 0.3s; }
-.nav-lang-switch { font-size: 1.1rem !important; padding: 0.2rem 0.5rem !important; border-radius: 4px !important; background: var(--warm-bg) !important; color: var(--ink) !important; }
+.nav-lang-switch { font-size: 0.85rem !important; padding: 0.35rem 0.9rem !important; border-radius: 100px !important; background: #2d2d2d !important; color: #fff !important; font-weight: 700 !important; text-transform: none !important; letter-spacing: 0 !important; transition: background 0.2s, transform 0.2s !important; line-height: 1 !important; }
+.nav-lang-switch:hover { background: #444 !important; transform: translateY(-1px); }
 
 /* ═══════════ SECTIONS ═══════════ */
 .section {
@@ -318,7 +337,7 @@ footer {
   .footer-grid { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 640px) {
-  .nav-links { display: none; position: absolute; top: 64px; left: 0; right: 0; background: var(--cream); flex-direction: column; padding: 1.5rem 2rem; gap: 1rem; border-bottom: 1px solid var(--border); }
+  .nav-links { display: none; position: absolute; top: 64px; left: 0; right: 0; background: var(--cream); flex-direction: column; padding: 1.5rem 2rem; gap: 1rem; border-bottom: 1px solid var(--border); align-items: flex-start; }
   .nav-links.open { display: flex; }
   .nav-toggle { display: block; }
   .footer-grid { grid-template-columns: 1fr; }
@@ -351,9 +370,10 @@ footer {
       <li><a href="<?= $path_prefix ?>articles-capvietnam.php">Articles</a></li>
       <li><a href="<?= $path_prefix ?>calculateur-budget-vietnam.php">🧮 Calculateur</a></li>
       <li><a href="<?= $path_prefix ?>a-propos-capvietnam.php">À propos</a></li>
-      <li><a href="<?= $path_prefix ?>apprendre-francais-capvietnam.php">Apprendre le français</a></li>
+      <li><a href="<?= $path_prefix ?>apprendre-francais-capvietnam.php">TIKTOK</a></li>
       <li><a href="<?= $path_prefix ?>blog-capvietnam.php#contact">Contact</a></li>
-      <li><a href="<?= $path_prefix ?>guide-cap-vietnam-2026.php" class="nav-guide-cta">Guide 9&nbsp;€ 📘</a></li>
+      <li><a href="<?= $path_prefix ?>livre-vietnamien.php" class="nav-book-cta" title="Apprendre le vietnamien avec la méthode polyglotte">Livre VN&nbsp;📕</a></li>
+      <li><a href="<?= $path_prefix ?>guide-cap-vietnam-2026.php" class="nav-guide-cta">Guide 📘</a></li>
       <?php if ($page_lang_switch): ?>
       <li><a href="<?= htmlspecialchars($page_lang_switch['href']) ?>" title="<?= htmlspecialchars($page_lang_switch['title']) ?>" class="nav-lang-switch"><?= $page_lang_switch['label'] ?></a></li>
       <?php endif; ?>

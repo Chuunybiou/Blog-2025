@@ -1,4 +1,4 @@
-﻿DirectoryIndex blog-capvietnam.html index.html index.php
+﻿DirectoryIndex blog-capvietnam.php index.html index.php
 
 RewriteEngine On
 
@@ -6,22 +6,32 @@ RewriteEngine On
 RewriteCond %{HTTPS} off
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# Rediriger vers blog-capvietnam.php si accès racine
+# blog-capvietnam.php → /  (canonical home)
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/blog-capvietnam\.php[\s?/] [NC]
+RewriteRule ^ / [R=301,L]
+
+# Redirect .php → clean URL (pages publiques seulement)
+# Exclure : go.php, generate-sitemap.php, convert-images-to-webp.php
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/([^/]+)\.php[\s?/] [NC]
+RewriteCond %1 !^(go|generate-sitemap|convert-images-to-webp)$
+RewriteRule ^([^/]+)\.php$ /$1 [R=301,L]
+
+# Accès racine → blog-capvietnam.php (interne)
 RewriteCond %{REQUEST_URI} ^/$
 RewriteRule ^$ /blog-capvietnam.php [L]
 
-# URLs propres : /slug → /slug.php
+# URLs propres : /slug → /slug.php (interne)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.php -f
 RewriteRule ^([^/]+)$ $1.php [L]
 
-# URLs propres pour /vi/ : /vi/slug → /vi/slug.php
+# URLs propres pour /vi/ : /vi/slug → /vi/slug.php (interne)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.php -f
 RewriteRule ^(vi/[^/]+)$ $1.php [L]
 
-# Affiliate redirect clean URLs: /go/wise → /go.php?id=wise
+# Affiliate redirect : /go/wise → go.php?id=wise (interne)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^go/([a-z0-9_-]+)$ go.php?id=$1 [L,QSA]

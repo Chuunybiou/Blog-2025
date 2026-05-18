@@ -173,6 +173,17 @@ include 'header.php';
     include '_affiliate-cta.php';
     ?>
 
+    <?php
+    $aff_id    = 'revolut';
+    $aff_icon  = '💳';
+    $aff_title = 'Revolut — encaisser et dépenser sans frais depuis le Vietnam';
+    $aff_text  = 'Reçois tes paiements clients, échange en VND au taux réel, retire des espèces sans frais. Et si tu passes par mon lien : <strong>je reverse 50% de ma prime de parrainage</strong>.';
+    $aff_cta   = 'Ouvrir Revolut (bonus + 50% reversé)';
+    $aff_note  = 'Lien de parrainage — sans coût supplémentaire pour toi.';
+    $aff_theme = 'blue';
+    include '_affiliate-cta.php';
+    ?>
+
     <h2 id="section-faq">Questions fréquentes</h2>
     <div class="faq-item">
       <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Peut-on travailler depuis un café sans être repéré par les autorités ? <span class="faq-arrow">▼</span></button>

@@ -175,7 +175,7 @@ include 'header.php';
       <div class="author-avatar" style="overflow:hidden;position:relative;"><img src="assets/img/profile/anthony-profil.jpg" alt="Anthony Bouillon" width="72" height="72" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"></div>
       <div class="author-info">
         <h4>Cap Vietnam</h4>
-        <p>5 ans de famille vietnamienne par procuration. Ces conseils reflètent l'expérience personnelle — chaque famille est unique, adapte-les à la tienne.</p>
+        <p>Ces conseils reflètent l'expérience personnelle — chaque famille est unique, adapte-les à la tienne.</p>
         <div class="author-links"><a href="a-propos-capvietnam.php">À propos →</a></div>
       </div>
     </div>
