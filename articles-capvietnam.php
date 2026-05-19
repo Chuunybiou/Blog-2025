@@ -19,7 +19,7 @@ $_count      = count($_all);
 $_categories = count(array_unique(array_column($_all, 'category')));
 
 // Category filter from URL
-$_valid_cats = ['admin' => 'Démarches Administratives', 'couple' => 'Couple Mixte & Famille', 'argent' => 'Argent & Travail en Ligne', 'voyager' => 'Voyager au Vietnam'];
+$_valid_cats = ['admin' => 'Démarches Administratives', 'couple' => 'Couple Mixte & Famille', 'argent' => 'Argent & Travail en Ligne', 'voyager' => 'Voyager au Vietnam', 'vie-pratique' => 'Vie Pratique'];
 $_active_cat = isset($_GET['cat']) && array_key_exists($_GET['cat'], $_valid_cats) ? $_GET['cat'] : 'all';
 $_cat_label  = $_active_cat !== 'all' ? $_valid_cats[$_active_cat] : null;
 
@@ -60,6 +60,7 @@ $page_extra_css = '
 .filter-tab.active-couple{background:var(--jade);color:#fff;border-color:var(--jade)}
 .filter-tab.active-argent{background:var(--amber);color:#fff;border-color:var(--amber)}
 .filter-tab.active-voyager{background:#1a5f8a;color:#fff;border-color:#1a5f8a}
+.filter-tab.active-vie-pratique{background:#2a7a7a;color:#fff;border-color:#2a7a7a}
 .search-box{display:flex;align-items:center;gap:0.5rem;border:1px solid var(--border);border-radius:100px;padding:0.4rem 1rem;background:var(--white)}
 .search-box input{border:none;background:none;font-family:inherit;font-size:0.9rem;color:var(--ink);width:200px;outline:none}
 .search-box input::placeholder{color:var(--muted)}
@@ -87,6 +88,7 @@ $page_extra_css = '
 .bg-couple{background:linear-gradient(135deg,var(--jade),#0e4a38)}
 .bg-argent{background:linear-gradient(135deg,var(--amber),#7a5500)}
 .bg-voyager{background:linear-gradient(135deg,#1a5f8a,#0d3a57)}
+.bg-vie-pratique{background:linear-gradient(135deg,#2a7a7a,#1a4f4f)}
 .card-body{padding:1.5rem;flex:1;display:flex;flex-direction:column}
 .card-meta{display:flex;align-items:center;gap:0.6rem;margin-bottom:0.6rem}
 .card-badge{font-size:0.58rem;letter-spacing:2px;text-transform:uppercase;font-weight:700;padding:3px 9px;border-radius:3px}
@@ -94,6 +96,7 @@ $page_extra_css = '
 .badge-couple{background:rgba(27,107,82,0.1);color:var(--jade)}
 .badge-argent{background:rgba(184,134,11,0.1);color:var(--amber)}
 .badge-voyager{background:rgba(26,95,138,0.1);color:#1a5f8a}
+.badge-vie-pratique{background:rgba(42,122,122,0.12);color:#2a7a7a}
 .card-date{font-size:0.78rem;color:var(--muted)}
 .card-body h3{font-family:"DM Serif Display",serif;font-size:1.15rem;line-height:1.3;margin-bottom:0.5rem}
 .card-body p{color:var(--muted);font-size:0.88rem;line-height:1.65;flex:1}
@@ -148,6 +151,7 @@ include 'header.php';
     <button class="filter-tab" data-filter="couple">💕 Couple Mixte</button>
     <button class="filter-tab" data-filter="argent">💻 Argent &amp; Travail</button>
     <button class="filter-tab" data-filter="voyager">✈️ Voyager au Vietnam</button>
+    <button class="filter-tab" data-filter="vie-pratique">🏠 Vie Pratique</button>
   </div>
   <div class="search-box">
     <span class="search-icon">🔍</span>
@@ -221,7 +225,7 @@ const tabs = document.querySelectorAll('.filter-tab');
 const cards = document.querySelectorAll('.article-card');
 const featured = document.querySelector('.featured-card');
 const featuredWrap = document.querySelector('.featured');
-const filterClassMap = { admin:'active-admin', couple:'active-couple', argent:'active-argent', voyager:'active-voyager' };
+const filterClassMap = { admin:'active-admin', couple:'active-couple', argent:'active-argent', voyager:'active-voyager', 'vie-pratique':'active-vie-pratique' };
 
 tabs.forEach(tab => {
   tab.addEventListener('click', () => {

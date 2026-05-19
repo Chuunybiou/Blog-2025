@@ -183,6 +183,15 @@ include 'header.php';
     include '_affiliate-cta.php';
     ?>
 
+    <div style="background:linear-gradient(135deg,#f0fdf4,#dcfce7);border-left:4px solid #00b67a;padding:1.5rem 1.75rem;border-radius:0 12px 12px 0;margin:2.5rem 0;">
+      <strong style="display:block;margin-bottom:0.5rem;color:#005c3c;font-size:1.05rem;">🎁 Obtenez votre bonus de parrainage Wise ou Revolut</strong>
+      <p style="margin:0 0 1rem;color:#3a3530;font-size:0.95rem;">Vous souhaitez ouvrir un compte Wise ou Revolut <strong>et recevoir une prime en cash</strong> ? Sur <a href="https://bonusparrainage.com" target="_blank" rel="noopener" style="color:#005c3c;font-weight:700;">BonusParrainage.com</a>, les codes parrainage sont vérifiés chaque jour et vous recevez <strong>50% de la prime de parrainage</strong> reversée directement sur PayPal.</p>
+      <div style="display:flex;gap:0.75rem;flex-wrap:wrap;">
+        <a href="https://bonusparrainage.com" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.25rem;background:#00b67a;color:#fff;border-radius:6px;text-decoration:none;font-weight:600;font-size:0.9rem;">💸 Code parrainage Wise</a>
+        <a href="https://bonusparrainage.com/revolut" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.25rem;background:#0075eb;color:#fff;border-radius:6px;text-decoration:none;font-weight:600;font-size:0.9rem;">💳 Code parrainage Revolut</a>
+      </div>
+    </div>
+
     <h2 id="section-7">Changer de l'argent en espèces au Vietnam</h2>
     <p>Malgré l'essor du paiement numérique, le VND en espèces reste nécessaire pour les marchés, les petits restaurants, les transports locaux et les services de quartier. Voici où changer en obtenant un bon taux :</p>
     <ul>

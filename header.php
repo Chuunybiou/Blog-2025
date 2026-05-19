@@ -383,3 +383,26 @@ footer {
     </button>
   </div>
 </nav>
+
+<?php if (($page_lang ?? 'fr') === 'fr'): ?>
+<?php $_vi_href = $page_lang_switch ? htmlspecialchars($page_lang_switch['href']) : ($path_prefix . 'vi/'); ?>
+<div id="vi-banner" style="display:none;background:#c8102e;color:#fff;text-align:center;padding:0.65rem 1rem;font-size:0.88rem;line-height:1.4">
+  🇻🇳 Bạn đang ở Việt Nam? &nbsp;
+  <a href="<?= $_vi_href ?>" style="color:#fff;font-weight:700;text-decoration:underline;white-space:nowrap">Xem phiên bản tiếng Việt →</a>
+  <button onclick="document.getElementById('vi-banner').style.display='none';document.cookie='vi_ok=1;max-age=7776000;path=/'" style="margin-left:0.75rem;background:rgba(255,255,255,0.2);border:none;color:#fff;border-radius:4px;padding:2px 10px;cursor:pointer;font-size:0.82rem">Không, cảm ơn ✕</button>
+</div>
+<script>
+(function(){
+  if(document.cookie.split(';').some(function(c){return c.trim().indexOf('vi_ok=')===0;})) return;
+  var b=document.getElementById('vi-banner');
+  var langs=((navigator.languages||[navigator.language||'']).join(',')).toLowerCase();
+  if(/\bvi\b/.test(langs)){b.style.display='block';return;}
+  window.addEventListener('load',function(){
+    fetch('https://ipapi.co/country/')
+      .then(function(r){return r.text();})
+      .then(function(c){if(c.trim()==='VN')b.style.display='block';})
+      .catch(function(){});
+  });
+})();
+</script>
+<?php endif; ?>
