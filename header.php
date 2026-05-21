@@ -10,7 +10,7 @@ $page_canonical   = $page_canonical   ?? 'https://www.blog-capvietnam.fr/';
 $page_og_title    = $page_og_title    ?? $page_title;
 $page_og_desc     = $page_og_desc     ?? $page_description;
 $page_og_url      = $page_og_url      ?? $page_canonical;
-$page_og_image    = $page_og_image    ?? 'https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=1200&q=80';
+$page_og_image    = $page_og_image    ?? 'https://www.blog-capvietnam.fr/assets/img/blog-vietnam.png';
 $page_schema      = $page_schema      ?? null;
 $page_extra_head  = $page_extra_head  ?? '';
 $page_extra_css   = $page_extra_css   ?? '';
@@ -54,7 +54,8 @@ $page_extra_css   = $page_extra_css   ?? '';
 <?php endif; ?>
 
 <meta name="theme-color" content="#1c1917">
-<link rel="icon" type="image/png" href="logo-entreprise.png">
+<link rel="icon" type="image/png" href="<?= $path_prefix ?>assets/img/blog-vietnam.png">
+<link rel="apple-touch-icon" href="<?= $path_prefix ?>assets/img/blog-vietnam.png">
 
 <!-- Resource hints -->
 <link rel="preconnect" href="https://fonts.googleapis.com">

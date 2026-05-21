@@ -1,10 +1,10 @@
 ﻿<?php
 require_once __DIR__ . '/config/site.php';
-$page_title       = 'À propos — Anthony Bouillon | Cap Vietnam';
-$page_description = 'Qui se cache derrière Cap Vietnam ? Un Français installé au Vietnam avec sa femme vietnamienne. Mon histoire et pourquoi j\'ai créé ce blog.';
+$page_title       = 'Le couple franco-vietnamien derrière ce blog — Cap Vietnam';
+$page_description = 'Je suis Anthony, Français en couple avec une Vietnamienne. Ce blog est le journal de ce qu\'on a appris, raté, payé, compris entre la France et le Vietnam.';
 $page_canonical   = 'https://www.blog-capvietnam.fr/a-propos';
-$page_og_title    = 'À propos — Cap Vietnam';
-$page_og_desc     = 'Un Français, une Vietnamienne, une nouvelle vie au Vietnam. Découvrez l\'histoire derrière le blog Cap Vietnam.';
+$page_og_title    = 'Le couple franco-vietnamien derrière ce blog — Cap Vietnam';
+$page_og_desc     = 'Français en couple avec une Vietnamienne. Ce blog raconte notre expérience commune : démarches, mariage, argent, vie entre Paris et Hanoï.';
 $page_og_url      = 'https://www.blog-capvietnam.fr/a-propos';
 $page_og_image    = 'https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=1200&q=80';
 $page_schema      = '{
@@ -95,8 +95,8 @@ include 'header.php';
       <div class="about-avatar-label">📍 Vietnam</div>
     </div>
     <div class="about-hero-text">
-      <h1>Salut, moi c'est<br><em>Anthony</em></h1>
-      <p>Français, ancien résident canadien, installé au Vietnam avec ma femme vietnamienne. Je documente mon expatriation et j'enseigne le français aux Vietnamiens sur TikTok et YouTube — sans filtre.</p>
+      <h1>Le couple franco-<br><em>vietnamien</em><br>derrière ce blog</h1>
+      <p>Je suis Anthony, Français en couple avec une Vietnamienne. Je partage ma vie entre la France et le Vietnam. Ce blog est le journal de ce qu'on a appris, raté, payé, compris.</p>
       <div class="hero-social">
         <a class="social-btn" href="<?= SITE_TIKTOK ?>" target="_blank" rel="noopener">🎵 TikTok</a>
         <a class="social-btn" href="<?= SITE_YOUTUBE ?>" target="_blank" rel="noopener">🎬 YouTube</a>
@@ -107,17 +107,19 @@ include 'header.php';
 
 <!-- STORY -->
 <section class="story-section">
-  <div class="story-label">Mon histoire</div>
-  <h2 class="story-title">De la France au Canada,<br>du Canada au Vietnam</h2>
+  <div class="story-label">À propos</div>
+  <h2 class="story-title">Ce que j'aurais voulu lire<br>avant de me lancer</h2>
   <div class="story-text">
-    <p>Tout a commencé quand j'ai quitté la France pour le Canada avec un permis de travail ouvert. J'y ai vécu, travaillé, appris l'anglais et découvert une liberté que je n'avais pas en France. Mais quelque chose me manquait — l'aventure, la vraie.</p>
-    <p>Puis j'ai rencontré ma femme. Une Vietnamienne avec qui tout a cliqué. Les appels vidéo, les visites au Vietnam, les projets ensemble… Très vite, la décision s'est imposée : je quitte tout et je m'installe avec elle à Hanoï.</p>
+    <p>Quand j'ai commencé les démarches pour mon couple, j'ai cherché des blogs sérieux en français sur le sujet. Beaucoup de blogs "expat au Vietnam" en mode touriste, presque rien sur la réalité d'un couple mixte franco-vietnamien. J'écris ce que j'aurais voulu lire avant de me lancer.</p>
     <div class="story-highlight">
-      « On m'a dit que j'étais fou. Quitter un permis de travail canadien pour aller vivre au Vietnam ? Peut-être. Mais la seule folie, c'est de ne pas essayer. »
+      « Ce blog, c'est le journal de ce qu'on a appris, raté, payé, compris. Pas un guide touristique. Pas du recopiage de Wikipédia. Du vécu. »
     </div>
-    <p>Ce blog est né de ce projet. Je voulais documenter chaque étape de cette transition — les démarches administratives, les galères, les surprises culturelles, les solutions que j'ai trouvées — pour que ceux qui veulent faire pareil n'aient pas à chercher les réponses dans 40 forums différents.</p>
-    <p>En parallèle, j'ai lancé un compte TikTok pour enseigner le français aux Vietnamiens. Ma copine m'aide avec les traductions et le contexte culturel. C'est devenu un projet qui nous rapproche encore plus.</p>
-    <p>Aujourd'hui, je construis ma vie en ligne depuis le Vietnam. Ce blog, mes vidéos et mes réseaux sont à la fois mon journal de bord et ma source de revenus. Tout est réel, tout est vécu, rien n'est inventé.</p>
+    <p>Mes 3 promesses :</p>
+    <p>✓ <strong>Vécu</strong> — chaque article est basé sur mon expérience directe, pas sur des sources secondaires.<br>
+    ✓ <strong>Pratique</strong> — vrais chiffres, vrais documents, vrais délais.<br>
+    ✓ <strong>Honnête</strong> — les liens affiliés sont signalés. Toujours.</p>
+    <p>Ma femme a accepté que je raconte notre expérience commune, pas qu'elle soit identifiée. Je respecte ça. Pas de nom, pas de visage, juste les leçons qu'on tire ensemble.</p>
+    <p>En dehors de ce blog, je suis auto-entrepreneur français (activité 100 % domiciliée en France). Je gère aussi <a href="https://bonusparrainage.com" target="_blank" rel="noopener">bonusparrainage.com</a> (codes parrainage pour expats) et <a href="https://anthony-bouillon.com" target="_blank" rel="noopener">anthony-bouillon.com</a> (dépannage IT francophone).</p>
   </div>
 </section>
 
@@ -169,23 +171,23 @@ include 'header.php';
 <!-- VALUES -->
 <section class="values-section">
   <h2 class="values-title">Ce que tu trouveras ici</h2>
-  <p class="values-subtitle">Les principes qui guident chaque article de ce blog.</p>
+  <p class="values-subtitle">Trois engagements que je tiens sur chaque article.</p>
   <div class="values-grid">
-    <div class="value-card"><div class="value-icon">🎯</div><h3>Du concret, pas du blabla</h3><p>Des guides pratiques basés sur mon expérience réelle. Pas de théorie recyclée depuis d'autres blogs.</p></div>
-    <div class="value-card"><div class="value-icon">💬</div><h3>Honnêteté totale</h3><p>Le Vietnam c'est incroyable, mais c'est pas parfait. Je parle aussi des galères, des arnaques et des moments difficiles.</p></div>
-    <div class="value-card"><div class="value-icon">🔄</div><h3>Toujours à jour</h3><p>Les règles changent souvent au Vietnam. Je mets mes articles à jour régulièrement avec les dernières infos.</p></div>
-    <div class="value-card"><div class="value-icon">🤝</div><h3>Communauté</h3><p>Ce blog est aussi un espace d'échange. Tes commentaires, questions et témoignages enrichissent le contenu.</p></div>
-    <div class="value-card"><div class="value-icon">🌏</div><h3>Deux cultures, un regard</h3><p>Grâce à ma femme vietnamienne, je te donne un point de vue que peu d'expats peuvent offrir : le regard de l'intérieur.</p></div>
-    <div class="value-card"><div class="value-icon">🆓</div><h3>Gratuit et indépendant</h3><p>Tout le contenu est gratuit. Le blog est financé par l'affiliation et mes propres projets — jamais par des articles sponsorisés déguisés.</p></div>
+    <div class="value-card"><div class="value-icon">🎯</div><h3>Vécu</h3><p>Pas du recopiage de Wikipédia. Chaque article vient d'une expérience directe : les démarches que j'ai faites, les chiffres que j'ai payés.</p></div>
+    <div class="value-card"><div class="value-icon">📊</div><h3>Pratique</h3><p>Vrais chiffres, vrais documents, vrais délais. Je n'invente pas de données pour remplir un article.</p></div>
+    <div class="value-card"><div class="value-icon">✅</div><h3>Honnête</h3><p>Les liens affiliés sont signalés. Toujours. Ils ne changent ni mes recommandations ni mon classement.</p></div>
+    <div class="value-card"><div class="value-icon">🌏</div><h3>De l'intérieur</h3><p>Je vis en couple franco-vietnamien. Je te donne un point de vue que peu d'expats "touristes" peuvent offrir.</p></div>
+    <div class="value-card"><div class="value-icon">🔒</div><h3>Vie privée respectée</h3><p>Ma femme a accepté que je raconte notre expérience commune, pas qu'elle soit identifiée. Pas de nom, pas de visage.</p></div>
+    <div class="value-card"><div class="value-icon">🆓</div><h3>Gratuit</h3><p>Tout le contenu est gratuit. Le blog vit de l'affiliation signalée — jamais d'articles sponsorisés déguisés.</p></div>
   </div>
 </section>
 
 <!-- NUMBERS -->
 <section class="numbers-section">
   <div class="numbers-grid">
-    <div class="number-item"><div class="num">18+</div><div class="label">Articles publiés</div></div>
-    <div class="number-item"><div class="num">4</div><div class="label">Catégories</div></div>
-    <div class="number-item"><div class="num">1</div><div class="label">Pays d'adoption</div></div>
+    <div class="number-item"><div class="num">4</div><div class="label">Thématiques</div></div>
+    <div class="number-item"><div class="num">2</div><div class="label">Pays</div></div>
+    <div class="number-item"><div class="num">2026</div><div class="label">Marié au Vietnam</div></div>
   </div>
 </section>
 

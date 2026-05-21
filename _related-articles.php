@@ -62,6 +62,19 @@ $_lbl_map = [
     </div>
   </div>
 </section>
+
+<div style="max-width:1200px;margin:0 auto;padding:0 2rem 3rem;">
+  <a href="https://bonusparrainage.com" target="_blank" rel="noopener"
+     style="display:flex;align-items:center;gap:1rem;padding:1rem 1.5rem;border:1px solid var(--border);border-radius:var(--radius);text-decoration:none;color:var(--ink);background:var(--white);">
+    <span style="font-size:1.4rem;flex-shrink:0;">🎁</span>
+    <div style="flex:1;">
+      <span style="font-weight:600;font-size:0.88rem;">Tu pars ou vis au Vietnam ?</span>
+      <span style="color:var(--muted);font-size:0.82rem;display:block;margin-top:2px;">Wise et Revolut ont des offres de bienvenue — codes vérifiés avec reversement de 50% de la prime sur <strong style="color:var(--terracotta);">bonusparrainage.com</strong></span>
+    </div>
+    <span style="color:var(--terracotta);font-weight:700;font-size:0.85rem;flex-shrink:0;white-space:nowrap;">Voir les codes →</span>
+  </a>
+</div>
+
 <?php
 unset($current_slug, $current_cat, $_all, $_same, $_other, $_picks, $_need, $_bg_map, $_txt_map, $_lbl_map, $_a, $_cat, $_bg, $_txt, $_lbl);
 ?>

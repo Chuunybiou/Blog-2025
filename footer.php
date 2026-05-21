@@ -18,14 +18,14 @@
   <div class="footer-grid">
     <div class="footer-brand">
       <a href="<?= $path_prefix ?>blog-capvietnam.php" class="nav-logo">Cap<span>Vietnam</span></a>
-      <p>Le blog d'un Français qui s'installe au Vietnam. Démarches, couple mixte et travail en ligne depuis Hanoï.</p>
+      <p>Le blog du couple franco-vietnamien. Mariage, démarches, argent et vie quotidienne entre la France et le Vietnam.</p>
     </div>
     <div class="footer-col">
       <h4><?= ($page_lang ?? 'fr') === 'vi' ? 'Danh mục' : 'Catégories' ?></h4>
-      <a href="<?= $path_prefix ?>articles-capvietnam.php">Démarches Administratives</a>
-      <a href="<?= $path_prefix ?>articles-capvietnam.php">Couple Mixte &amp; Famille</a>
-      <a href="<?= $path_prefix ?>articles-capvietnam.php">Argent &amp; Travail en Ligne</a>
-      <a href="<?= $path_prefix ?>articles-capvietnam.php">Voyager au Vietnam</a>
+      <a href="<?= $path_prefix ?>articles-capvietnam.php?cat=couple">💕 Couple franco-vietnamien</a>
+      <a href="<?= $path_prefix ?>articles-capvietnam.php?cat=admin">📋 Démarches &amp; installation</a>
+      <a href="<?= $path_prefix ?>articles-capvietnam.php?cat=argent">💻 Argent &amp; travail à distance</a>
+      <a href="<?= $path_prefix ?>articles-capvietnam.php?cat=voyager">✈️ Vie pratique au Vietnam</a>
     </div>
     <div class="footer-col">
       <h4><?= ($page_lang ?? 'fr') === 'vi' ? 'Liên kết hữu ích' : 'Liens utiles' ?></h4>
@@ -47,6 +47,9 @@
     </div>
   </div>
   <div class="footer-bottom">
+    <p style="font-size:0.78rem;color:rgba(250,248,244,0.35);margin-bottom:1rem;line-height:1.6;width:100%;">
+      ℹ️ Ce site contient des liens affiliés rémunérés. Ils ne modifient ni mon avis ni mon classement.
+    </p>
     <span>© <?= SITE_YEAR ?> Blog-CapVietnam. Tous droits réservés.</span>
     <div class="footer-legal">
       <a href="<?= $path_prefix ?>mentions-legales-capvietnam.php">Mentions légales</a>

@@ -3,11 +3,11 @@ require_once __DIR__ . '/config/site.php';
 
 $path_prefix      = '';
 $page_lang        = 'fr';
-$page_title       = 'Apprendre le Vietnamien — Méthode Polyglotte | Livre Cap Vietnam';
-$page_description = 'Le livre pour apprendre le vietnamien sans frustration. Méthode polyglotte adaptée aux francophones : tons, vocabulaire essentiel, phrases du quotidien. Écrit depuis Hanoï.';
+$page_title       = 'Apprendre le vietnamien sans cours ni application — Méthode polyglotte 1100 mots | Cap Vietnam';
+$page_description = 'Ebook Amazon : méthode polyglotte A0→B1 basée sur les 1100 mots les plus fréquents du vietnamien. Conçue pour les couples mixtes et les expats francophones.';
 $page_canonical   = 'https://www.blog-capvietnam.fr/livre-vietnamien';
 $page_og_title    = 'Apprendre le Vietnamien — la méthode polyglotte pour francophones';
-$page_og_desc     = 'Démarrez le vietnamien avec une méthode qui marche : 1 000 mots les plus fréquents, logique tonale expliquée, dialogues du quotidien. Disponible sur Amazon.';
+$page_og_desc     = 'Démarrez le vietnamien avec une méthode qui marche : 1 100 mots les plus fréquents, logique tonale expliquée, dialogues du quotidien. Disponible sur Amazon.';
 $page_og_image    = 'https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=1200&q=80';
 
 /* Lien Amazon — pense à ajouter ton tag d'affiliation Amazon Partenaires si tu en as un (?tag=tonid-21) */
@@ -515,9 +515,9 @@ include __DIR__ . '/header.php';
   <div class="book-hero-inner">
     <div class="book-hero-content">
       <span class="eyebrow">📕 Méthode Polyglotte</span>
-      <h1>Apprendre le vietnamien — <em>la méthode pensée pour les francophones</em></h1>
+      <h1>Apprendre le vietnamien sans cours et sans application : la méthode polyglotte <em>1 100 mots</em></h1>
       <p class="lead">
-        Les six tons vous font peur. Vous avez essayé Duolingo et lâché au bout de trois semaines. Vous habitez ou rêvez de Hanoï, Saïgon ou Da Nang, et chaque tentative de prononcer "phở" se solde par un sourire poli du serveur. Ce livre change la donne. Une méthode structurée, testée sur le terrain, qui vous mène à vos premières vraies conversations en quelques mois.
+        Quand j'ai voulu parler avec ma belle-famille vietnamienne, aucune app ne m'a vraiment aidé. J'ai construit ma propre méthode, basée sur les 1 100 mots qui couvrent 80 % des conversations quotidiennes. Testée sur le terrain à Hanoï, elle est pensée pour les francophones adultes — pas pour des étudiants en linguistique.
       </p>
       <div class="book-hero-ctas">
         <a href="<?= htmlspecialchars($amazon_url) ?>" target="_blank" rel="noopener noreferrer sponsored" class="btn-primary" data-track="hero">
@@ -530,7 +530,7 @@ include __DIR__ . '/header.php';
       </div>
       <div class="book-trust">
         <div class="book-trust-item">📍 <span>Écrit depuis <strong>Hanoï</strong></span></div>
-        <div class="book-trust-item">🎯 <span><strong>1 000 mots</strong> essentiels</span></div>
+        <div class="book-trust-item">🎯 <span><strong>1 100 mots</strong> essentiels</span></div>
         <div class="book-trust-item">🇫🇷 <span>Conçu pour <strong>francophones</strong></span></div>
       </div>
     </div>
@@ -556,14 +556,14 @@ include __DIR__ . '/header.php';
 <!-- ═══════ HOOK ═══════ -->
 <section class="book-hook">
   <div class="book-hook-inner">
-    <h2>Le vietnamien n'est pas plus difficile que l'anglais. <em>Il demande juste la bonne approche.</em></h2>
+    <h2>Aucune application n'est pensée pour un Français en couple avec une Vietnamienne. <em>Alors j'en ai construit une.</em></h2>
     <div class="book-hook-grid">
       <div class="book-hook-card">
         <span class="num">6</span>
         <p>Les tons font peur sur le papier. En réalité, votre oreille les attrape en quelques semaines avec les bons exercices.</p>
       </div>
       <div class="book-hook-card">
-        <span class="num">1 000</span>
+        <span class="num">1 100</span>
         <p>Le nombre de mots qui couvrent <strong>80 %</strong> de la conversation quotidienne. C'est par là qu'on commence — pas par la grammaire.</p>
       </div>
       <div class="book-hook-card">
@@ -652,26 +652,31 @@ include __DIR__ . '/header.php';
   <div class="book-personas-inner">
     <div class="book-personas-header">
       <h2>Ce livre est fait pour vous si…</h2>
-      <p>Quatre profils typiques pour qui cette méthode a été pensée.</p>
+      <p>Trois situations pour lesquelles cette méthode a été conçue.</p>
     </div>
     <div class="personas-grid cat-card">
       <div class="persona-card">
-        <h3>✈️ Vous préparez votre installation</h3>
-        <p>Vous partez vivre au Vietnam dans 3, 6 ou 12 mois. Vous voulez arriver avec un socle qui change tout : bail, banque, vie sociale.</p>
-      </div>
-      <div class="persona-card">
         <h3>💑 Vous êtes en couple mixte</h3>
-        <p>Votre conjoint(e) est vietnamien(ne). Vous voulez parler à ses parents, comprendre les conversations de famille, ne plus rester en marge.</p>
+        <p>Votre partenaire est vietnamien(ne). Vous voulez enfin parler à ses parents, comprendre les blagues de famille, cesser de sourire poliment sans comprendre.</p>
       </div>
       <div class="persona-card">
-        <h3>🎒 Vous voyagez profond</h3>
-        <p>Vous ne voulez pas du tourisme de surface. Quelques mois ou semestres sur place. Parler la langue change le voyage du tout au tout.</p>
+        <h3>🎒 Voyageur sérieux</h3>
+        <p>Trois semaines à Hanoï, Da Nang ou Hội An. Vous ne voulez pas du tourisme de façade — vous voulez les vraies conversations, hors des sentiers battus.</p>
       </div>
       <div class="persona-card">
-        <h3>🧠 Vous aimez les langues</h3>
-        <p>Polyglotte en herbe, vous cherchez votre prochain défi. Le vietnamien est une porte fascinante sur une logique linguistique très différente.</p>
+        <h3>✈️ Expat qui s'installe</h3>
+        <p>Vous partez vivre au Vietnam dans les 6 à 12 mois. Un socle linguistique change tout dès le premier jour : logement, banque, vie sociale.</p>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ═══════ AVIS LECTEURS ═══════ -->
+<section style="padding:5rem 2rem;background:var(--warm-bg);">
+  <div style="max-width:800px;margin:0 auto;text-align:center;">
+    <span style="font-size:0.7rem;letter-spacing:4px;text-transform:uppercase;color:var(--terracotta);font-weight:600;">Avis lecteurs</span>
+    <h2 style="font-family:'DM Serif Display',serif;font-size:clamp(1.6rem,3vw,2.2rem);margin:1rem 0;">Premiers retours de lecteurs</h2>
+    <p style="color:var(--muted);font-size:1rem;line-height:1.7;">Les premiers retours arrivent. Ils seront partagés ici dès que possible — honnêtement, sans filtre.</p>
   </div>
 </section>
 
@@ -681,7 +686,7 @@ include __DIR__ . '/header.php';
     <div class="author-photo"><img alt="" src="https://www.blog-capvietnam.fr/assets/img/profile/anthony-profil.jpg" class="img-fluid rounded-circle" width="150px" style="border-radius: 100%!important; "></div>
     <div class="book-author-content">
       <div class="eyebrow">L'auteur</div>
-      <h2>Un Français installé à Hanoï depuis plusieurs années</h2>
+      <h2>Français marié à une Vietnamienne, installé à Hanoï</h2>
       <p>
         J'ai débarqué à Hanoï sans parler un mot de vietnamien. J'ai testé toutes les méthodes : applications, profs particuliers, manuels universitaires, vidéos YouTube. La plupart sont mal pensées pour un francophone adulte qui veut des résultats concrets, pas de théorie.
       </p>
@@ -748,7 +753,7 @@ include __DIR__ . '/header.php';
     <a href="<?= htmlspecialchars($amazon_url) ?>" target="_blank" rel="noopener noreferrer sponsored" class="btn-primary" data-track="footer">
       Acheter sur Amazon <span>→</span>
     </a>
-
+    <span class="book-final-cta-note">Pas encore prêt(e) ? <a href="<?= $path_prefix ?>blog-capvietnam.php#newsletter" style="color:rgba(255,255,255,0.85);text-decoration:underline;">Inscrivez-vous à la newsletter</a> — je partage mes notes d'apprentissage chaque semaine.</span>
   </div>
 </section>
 

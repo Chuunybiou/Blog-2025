@@ -1,0 +1,30 @@
+/* ═══════════════════════════════════════════════════════════
+   Charte graphique commune — Écosystème Cap Vietnam
+   À inclure dans les 3 sites : Blog, Bons Plans, IT
+   ═══════════════════════════════════════════════════════════ */
+:root {
+  /* Couleurs */
+  --background: #fafaf9;
+  --surface:    #ffffff;
+  --ink:        #1c1917;
+  --ink-muted:  #57534e;
+  --accent:     #c9986a; /* terracotta/or doux — évoque l'or vietnamien */
+  --accent-dark:#8b6a3e;
+  --border:     #e7e5e4;
+  --success:    #4d7c5f;
+
+  /* Typographie */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+
+  /* Layout */
+  --container-max: 1100px;
+  --radius:        8px;
+
+  /* Ombres */
+  --shadow-sm: 0 1px 3px rgba(28, 25, 23, 0.06);
+  --shadow-md: 0 4px 16px rgba(28, 25, 23, 0.10);
+
+  /* Interaction */
+  --card-hover: translateY(-2px);
+  --transition: 0.2s ease;
+}

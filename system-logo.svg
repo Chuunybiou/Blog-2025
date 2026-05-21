@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none" role="img" aria-label="Cap Vietnam">
+  <!-- Montagne (évoque le V de Vietnam et Cap = promontoire) -->
+  <path d="M6 32 L20 8 L34 32" stroke="#c9986a" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Vague (évoque la mer et Cap = cap marin) -->
+  <path d="M3 35 Q11.5 31 20 35 Q28.5 39 37 35" stroke="#c9986a" stroke-width="2" stroke-linecap="round" fill="none"/>
+</svg>

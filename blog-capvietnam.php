@@ -10,11 +10,11 @@ $_art_all    = $_art_data['articles'];
 usort($_art_all, fn($a, $b) => strcmp($b['date'], $a['date']));
 $_art_latest = array_slice($_art_all, 0, 6);
 
-$page_title       = 'Cap Vietnam — Blog expat français à Hanoï';
-$page_description = 'Blog d\'un Français expatrié à Hanoï. Démarches admin, couple mixte franco-vietnamien et travail en ligne au Vietnam.';
+$page_title       = 'Le blog du couple franco-vietnamien — Cap Vietnam';
+$page_description = 'Le blog d\'un Français en couple avec une Vietnamienne. Démarches mariage, comptes joints, budget couple mixte, vie entre Paris et Hanoï.';
 $page_canonical   = SITE_URL . '/';
-$page_og_title    = 'Cap Vietnam — Blog d\'un Français expatrié au Vietnam';
-$page_og_desc     = 'Démarches, couple mixte, travail en ligne : tout sur la vie d\'expat à Hanoï.';
+$page_og_title    = 'Cap Vietnam — Le blog du couple franco-vietnamien';
+$page_og_desc     = 'Mariage, démarches, argent et vie quotidienne entre la France et le Vietnam — par un Français en couple avec une Vietnamienne.';
 $page_og_url      = SITE_URL . '/';
 $page_schema      = json_encode([
   '@context' => 'https://schema.org',
@@ -25,7 +25,7 @@ $page_schema      = json_encode([
       'name'        => SITE_NAME,
       'url'         => SITE_URL . '/',
       'inLanguage'  => 'fr',
-      'description' => 'Blog d\'un expatrié français installé au Vietnam. Démarches administratives, vie de couple mixte et travail en ligne depuis Hanoï.',
+      'description' => 'Le blog d\'un Français en couple avec une Vietnamienne. Démarches mariage, comptes joints, budget couple mixte, vie entre Paris et Hanoï.',
       'author'      => ['@type' => 'Person', 'name' => SITE_AUTHOR],
     ],
     [
@@ -295,9 +295,9 @@ include 'header.php';
   <img class="hero-bg-img" src="https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=1600&q=80" width="1600" height="900" alt="Rue animée de Hanoï" loading="eager">
   <div class="hero-grid"></div>
   <div class="hero-content">
-    <div class="hero-tag">Blog Expat</div>
-    <h1>Un Français<br>à <em>Hanoï</em></h1>
-    <p class="hero-desc">Démarches administratives, vie de couple mixte et travail en ligne — le journal d'une installation au Vietnam.</p>
+    <div class="hero-tag">Couple franco-vietnamien</div>
+    <h1>Le blog du couple<br><em>franco-vietnamien</em></h1>
+    <p class="hero-desc">Mariage, démarches, argent et vie quotidienne entre la France et le Vietnam — par un Français en couple avec une Vietnamienne.</p>
     <a href="#articles" class="hero-cta">Lire les articles →</a>
   </div>
   <div class="hero-scroll"></div>
@@ -306,26 +306,26 @@ include 'header.php';
 <!-- ═══════ CATEGORIES ═══════ -->
 <section class="section" id="categories">
   <div class="section-label">Explorer</div>
-  <h2 class="section-title">Quatre piliers, un seul voyage</h2>
-  <p class="section-desc">Tout ce qu'il faut savoir pour s'installer au Vietnam en tant que Français, organisé autour de quatre thématiques essentielles.</p>
+  <h2 class="section-title">Quatre thématiques, une expérience commune</h2>
+  <p class="section-desc">Tout ce qu'on a appris sur le couple franco-vietnamien, les démarches, l'argent et la vie au Vietnam — classé pour que tu trouves ce dont tu as besoin.</p>
 
   <div class="categories-grid">
-    <a class="cat-card" href="articles-capvietnam.php?cat=admin">
-      <div class="cat-banner cat-banner-admin"><div class="cat-icon">📋</div></div>
+    <a class="cat-card" href="articles-capvietnam.php?cat=couple">
+      <div class="cat-banner cat-banner-couple"><div class="cat-icon">💕</div></div>
       <div class="cat-body">
-        <div class="cat-tag cat-tag-admin">Catégorie 01</div>
-        <h3>Démarches Administratives</h3>
-        <p>Visa, mariage, impôts, banque, assurance santé… Toutes les étapes pour s'installer légalement au Vietnam sans galérer.</p>
+        <div class="cat-tag cat-tag-couple">Catégorie 01</div>
+        <h3>Couple franco-vietnamien</h3>
+        <p>Mariage mixte, différences culturelles, belle-famille, argent du couple et vie à deux entre la France et le Vietnam.</p>
         <div class="cat-count">→ Voir les articles</div>
       </div>
     </a>
 
-    <a class="cat-card" href="articles-capvietnam.php?cat=couple">
-      <div class="cat-banner cat-banner-couple"><div class="cat-icon">💕</div></div>
+    <a class="cat-card" href="articles-capvietnam.php?cat=admin">
+      <div class="cat-banner cat-banner-admin"><div class="cat-icon">📋</div></div>
       <div class="cat-body">
-        <div class="cat-tag cat-tag-couple">Catégorie 02</div>
-        <h3>Couple Mixte &amp; Famille</h3>
-        <p>Vivre en couple franco-vietnamien, les différences culturelles, la belle-famille, construire une vie à deux entre deux mondes.</p>
+        <div class="cat-tag cat-tag-admin">Catégorie 02</div>
+        <h3>Démarches &amp; installation</h3>
+        <p>Visa, mariage civil, carte de résidence, banque, assurance santé… Toutes les étapes pour s'installer légalement au Vietnam.</p>
         <div class="cat-count">→ Voir les articles</div>
       </div>
     </a>
@@ -334,8 +334,8 @@ include 'header.php';
       <div class="cat-banner cat-banner-argent"><div class="cat-icon">💻</div></div>
       <div class="cat-body">
         <div class="cat-tag cat-tag-argent">Catégorie 03</div>
-        <h3>Argent &amp; Travail en Ligne</h3>
-        <p>Gagner sa vie à distance, transférer son argent, budget mensuel à Hanoï et fiscalité de l'expatrié digital.</p>
+        <h3>Argent &amp; travail à distance</h3>
+        <p>Transférer de l'argent, gérer ses comptes entre deux pays, gagner sa vie en ligne et comprendre la fiscalité expat.</p>
         <div class="cat-count">→ Voir les articles</div>
       </div>
     </a>
@@ -344,8 +344,8 @@ include 'header.php';
       <div class="cat-banner cat-banner-voyager"><div class="cat-icon">✈️</div></div>
       <div class="cat-body">
         <div class="cat-tag cat-tag-voyager">Catégorie 04</div>
-        <h3>Voyager au Vietnam</h3>
-        <p>Tết, adresses locales, vie de quartier à Hanoï et expériences culturelles à vivre de l'intérieur.</p>
+        <h3>Vie pratique au Vietnam</h3>
+        <p>Logement, transports, santé, Tết et adresses locales à Hanoï — la vie quotidienne de l'intérieur.</p>
         <div class="cat-count">→ Voir les articles</div>
       </div>
     </a>
@@ -391,13 +391,13 @@ include 'header.php';
     </div>
     <div class="about-text">
       <div class="section-label">À propos</div>
-      <h2>Un Français, une Vietnamienne, une nouvelle vie à Hanoï</h2>
-      <p>Je suis un Français qui a décidé de tout quitter pour s'installer au Vietnam avec ma future femme vietnamienne. Ce blog est mon journal de bord : les démarches administratives que je traverse, les réalités du couple mixte, et comment je construis mes revenus en ligne.</p>
-      <p>Ici, pas de théorie — que du vécu. Chaque article est basé sur mon expérience directe ou celle d'autres expats que je rencontre en chemin.</p>
+      <h2>Le couple franco-vietnamien derrière ce blog</h2>
+      <p>Je suis Anthony, Français en couple avec une Vietnamienne. Je partage ma vie entre la France et le Vietnam. Ce blog est le journal de ce qu'on a appris, raté, payé, compris.</p>
+      <p>Quand j'ai commencé les démarches pour mon couple, j'ai cherché des blogs sérieux en français sur le sujet. Beaucoup de blogs "expat au Vietnam" en mode touriste, presque rien sur la réalité d'un couple mixte franco-vietnamien. J'écris ce que j'aurais voulu lire avant de me lancer.</p>
       <div class="about-stats">
         <div><div class="stat-num">Hanoï</div><div class="stat-label">Ville d'adoption</div></div>
-        <div><div class="stat-num">2026</div><div class="stat-label">Année de départ</div></div>
-        <div><div class="stat-num">4</div><div class="stat-label">Catégories</div></div>
+        <div><div class="stat-num">2026</div><div class="stat-label">Marié au Vietnam</div></div>
+        <div><div class="stat-num">4</div><div class="stat-label">Thématiques</div></div>
       </div>
     </div>
   </div>
