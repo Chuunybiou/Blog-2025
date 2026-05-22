@@ -1,12 +1,12 @@
 <?php
-$page_title       = 'Compte joint franco-vietnamien : comment on gère l\'argent à deux entre deux pays';
-$page_description = 'Compte joint en France avec un conjoint vietnamien, compte bancaire au Vietnam, Wise, Revolut… Ce que j\'ai appris en gérant nos finances de couple mixte entre Paris et Hanoï.';
+$page_title       = 'Compte joint franco-vietnamien : pourquoi c\'est presque impossible (et ma stratégie multi-comptes 2026)';
+$page_description = 'Aucune banque française n\'accepte un vrai compte joint avec une conjointe vietnamienne non-résidente. Après 2 ans de tests (Boursorama, Fortuneo, Wealthsimple, Wise, Revolut, Vietcombank), voici ma stratégie multi-comptes qui fonctionne en 2026.';
 $page_canonical   = 'https://www.blog-capvietnam.fr/compte-joint-franco-vietnamien';
-$page_og_title    = 'Compte joint franco-vietnamien : gérer l\'argent à deux entre France et Vietnam';
-$page_og_desc     = 'Comment ouvrir un compte joint en France avec un conjoint vietnamien, et comment on organise nos finances de couple mixte en 2026.';
+$page_og_title    = 'Compte joint franco-vietnamien : pourquoi c\'est presque impossible';
+$page_og_desc     = 'Aucune banque française n\'accepte un vrai compte joint avec une conjointe vietnamienne non-résidente. Après 2 ans de tests (Boursorama, Fortuneo, Wealthsimple, Wise, Revolut, Vietcombank), voici ma stratégie multi-comptes qui fonctionne en 2026.';
 $page_og_url      = 'https://www.blog-capvietnam.fr/compte-joint-franco-vietnamien';
 $page_og_image    = 'https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"Article","headline":"Compte joint franco-vietnamien : comment on gère l\'argent à deux entre deux pays","datePublished":"2026-05-15","author":{"@type":"Person","name":"Cap Vietnam","url":"https://www.blog-capvietnam.fr/a-propos-capvietnam.php"},"publisher":{"@type":"Organization","name":"Cap Vietnam"},"mainEntityOfPage":"https://www.blog-capvietnam.fr/compte-joint-franco-vietnamien","inLanguage":"fr","articleSection":"Couple franco-vietnamien"}';
+$page_schema      = '{"@context":"https://schema.org","@type":"Article","headline":"Compte joint franco-vietnamien : pourquoi c\'est presque impossible et la stratégie multi-comptes qu\'on utilise à la place","datePublished":"2026-05-15","author":{"@type":"Person","name":"Cap Vietnam","url":"https://www.blog-capvietnam.fr/a-propos-capvietnam.php"},"publisher":{"@type":"Organization","name":"Cap Vietnam"},"mainEntityOfPage":"https://www.blog-capvietnam.fr/compte-joint-franco-vietnamien","inLanguage":"fr","articleSection":"Couple franco-vietnamien"}';
 
 $article_color        = 'jade';
 $article_hero_bg      = '#0e3020';
@@ -38,7 +38,7 @@ include 'header.php';
       <span>Compte joint</span>
     </div>
     <span class="article-badge-hero">Couple franco-vietnamien</span>
-    <h1>Compte joint franco-vietnamien : comment on gère l'argent à deux entre la France et le Vietnam</h1>
+    <h1>Compte joint franco-vietnamien : pourquoi c'est (presque) impossible et la stratégie multi-comptes qu'on utilise à la place</h1>
     <div class="article-hero-meta">
       <span>Par <strong>Cap Vietnam</strong></span>
       <span>📅 15 mai 2026</span>
@@ -94,7 +94,7 @@ include 'header.php';
     <ul>
       <li><strong>Boursorama</strong> — compte joint possible si les deux titulaires ont un numéro fiscal français. Ma femme n'en avait pas à l'époque, ce qui bloquait la démarche.</li>
       <li><strong>Fortuneo</strong> — exigences similaires, ouverture de compte simplifiée en ligne mais nécessite une adresse française pour le co-titulaire.</li>
-      <li><strong>Hello Bank</strong> — l'agence conseillère m'a indiqué que le statut de conjoint(e) marié(e) facilitait le dossier, même avec un passeport étranger.</li>
+      <li><strong>Wealthsimple (Canada)</strong> — banque canadienne complète (compte chèque, CELI, carte de crédit, courtage) que j'utilise pour mes comptes côté Canada. Pas adaptée pour un compte joint avec une conjointe vietnamienne (exigence de résidence canadienne pour le co-titulaire).</li>
       <li><strong>Revolut / Wise</strong> — pas de compte joint au sens légal français, mais des outils partagés pratiques pour les dépenses courantes à deux.</li>
     </ul>
     <div class="info-box">
@@ -180,8 +180,14 @@ include 'header.php';
       « Je garde mes banques françaises et j'utilise Wise pour les transferts vers le Vietnam — c'est plus simple que de tout centraliser sur un seul compte. Chaque outil a sa fonction. »
     </div>
 
-    <h3>Comment on répartit les charges</h3>
-    <p>Notre organisation financière repose sur une règle simple que j'appelle le <strong>70/10/20</strong> : 70 % des revenus couvrent les dépenses courantes (loyer, nourriture, transports), 10 % vont à l'épargne commune, et 20 % restent à la libre disposition de chacun. Ce cadre s'est installé naturellement après quelques ajustements. Je développe la dimension culturelle — pourquoi c'est plus compliqué qu'en France — dans mon <a href="argent-couple-franco-vietnamien.php">article sur l'argent dans le couple franco-vietnamien</a>.</p>
+    <h3>Comment je répartis mon salaire entre mes comptes</h3>
+    <p>Concrètement, mon salaire français se répartit entre 3 comptes selon une logique simple :</p>
+    <ul>
+      <li><strong>70 % reste sur mon Boursorama</strong> : vie en France, cotisations auto-entreprise, abonnements, dépenses du quotidien quand je suis en France.</li>
+      <li><strong>10 % part vers mon Fortuneo</strong> : exclusivement pour mon PEA, mon épargne longue.</li>
+      <li><strong>20 % passe par Wise</strong> pour rejoindre le Vietnam — surtout vers le compte Vietcombank de ma femme qui gère les dépenses locales du foyer.</li>
+    </ul>
+    <p>Pas de pot commun formalisé, pas de budget catégoriel à la française : chacun gère sa partie selon une logique culturellement vietnamienne où la femme administre les finances du foyer. Je développe la dimension culturelle de ce système dans mon <a href="argent-couple-franco-vietnamien.php">article sur l'argent dans le couple franco-vietnamien</a>.</p>
 
     <h2 id="section-6">Comparatif des solutions pour un couple mixte franco-vietnamien</h2>
     <table class="comparison-table">
