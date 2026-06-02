@@ -118,6 +118,24 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.blog-capvietnam.fr/prix-mariage-franco-vietnamien</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.blog-capvietnam.fr/compte-joint-franco-vietnamien</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.blog-capvietnam.fr/argent-couple-franco-vietnamien</loc>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.blog-capvietnam.fr/tet-nouvel-an-lunaire-vietnam</loc>
     <lastmod>2026-02-10</lastmod>
     <changefreq>yearly</changefreq>
@@ -168,6 +186,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.blog-capvietnam.fr/compte-bancaire-canada-europe-wealthsimple</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.blog-capvietnam.fr/cafes-coworkings-hanoi</loc>
     <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
@@ -178,6 +202,26 @@
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+
+  <!-- ═══════════ VIE PRATIQUE ═══════════ -->
+  <url>
+    <loc>https://www.blog-capvietnam.fr/louer-appartement-hanoi-etranger</loc>
+    <lastmod>2026-03-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.blog-capvietnam.fr/telephone-vietnam-quelle-sim-choisir</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.blog-capvietnam.fr/ramener-produits-francais-vietnam</loc>
+    <lastmod>2026-02-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 
   <!-- ═══════════ VERSION VIETNAMIENNE /vi/ ═══════════ -->

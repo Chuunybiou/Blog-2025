@@ -35,16 +35,28 @@ $pages = [
   // Couple Mixte
   ['differences-culturelles-couple-franco-vietnamien', '2026-03-25', 'monthly', '0.7'],
   ['belle-famille-vietnamienne-guide',         '2026-03-18', 'monthly', '0.7'],
+  ['prix-mariage-franco-vietnamien',           '2026-04-15', 'monthly', '0.7'],
+  ['compte-joint-franco-vietnamien',           '2026-05-22', 'monthly', '0.8'],
+  ['argent-couple-franco-vietnamien',          '2026-04-20', 'monthly', '0.7'],
+  ['the-sante-vietnamien-dattes-goji-reglisse','2026-06-01', 'monthly', '0.7'],
   ['tet-nouvel-an-lunaire-vietnam',            '2026-02-10', 'yearly',  '0.7'],
   ['apprendre-vietnamien-couple',              '2026-02-05', 'monthly', '0.6'],
 
   // Argent & Travail
+  ['banque-vietnam-francais',                  '2026-06-01', 'monthly', '0.9'],
   ['budget-mensuel-hanoi-2026',                '2026-04-01', 'monthly', '0.8'],
   ['transferer-argent-vietnam-wise',           '2026-04-25', 'monthly', '0.8'],
+  ['compte-bancaire-canada-europe-wealthsimple','2026-04-18', 'monthly', '0.8'],
   ['travailler-en-ligne-vietnam',              '2026-03-15', 'monthly', '0.7'],
   ['fiscalite-expat-france-vietnam',           '2026-02-20', 'monthly', '0.8'],
   ['cafes-coworkings-hanoi',                   '2026-02-12', 'monthly', '0.6'],
   ['creer-blog-expat-rentable',                '2026-01-20', 'monthly', '0.7'],
+
+  // Vie pratique
+  ['adaptateur-prise-electrique-vietnam',      '2026-06-02', 'monthly', '0.7'],
+  ['louer-appartement-hanoi-etranger',         '2026-03-10', 'monthly', '0.7'],
+  ['telephone-vietnam-quelle-sim-choisir',     '2026-03-15', 'monthly', '0.7'],
+  ['ramener-produits-francais-vietnam',        '2026-02-28', 'monthly', '0.6'],
 ];
 
 $xml = '<?xml version="1.0" encoding="UTF-8"?>' . "\n";

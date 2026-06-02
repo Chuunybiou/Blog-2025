@@ -21,6 +21,7 @@ $page_extra_css   = $page_extra_css   ?? '';
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title><?= htmlspecialchars($page_title) ?></title>
+<meta name='impact-site-verification' value='92815f1a-4182-4e5e-9001-79e777d23b09'>
 <meta name="description" content="<?= htmlspecialchars($page_description) ?>">
 <meta name="author" content="Cap Vietnam">
 <meta name="robots" content="index, follow">

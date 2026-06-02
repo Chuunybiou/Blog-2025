@@ -7,10 +7,17 @@
 require_once __DIR__ . '/config/site.php';
 
 $destinations = [
-    'wise'      => AFF_WISE,
-    'revolut'   => AFF_REVOLUT,
-    'amazon-g7' => AFF_AMAZON_G7,
-    'kofi'      => AFF_KOFI,
+    'wise'       => AFF_WISE,
+    'revolut'    => AFF_REVOLUT,
+    'amazon-g7'  => AFF_AMAZON_G7,
+    'kofi'       => AFF_KOFI,
+    'boursobank'       => AFF_BOURSOBANK,
+    'amazon-dattes'   => AFF_AMAZON_DATTES,
+    'amazon-reglisse' => AFF_AMAZON_REGLISSE,
+    'amazon-goji-noir'=> AFF_AMAZON_GOJI_NOIR,
+    'amazon-stevia'      => AFF_AMAZON_STEVIA,
+    'amazon-jiaogulan'   => AFF_AMAZON_JIAOGULAN,
+    'amazon-adapter'     => AFF_AMAZON_ADAPTER,
 ];
 
 $id = trim($_GET['id'] ?? '');
