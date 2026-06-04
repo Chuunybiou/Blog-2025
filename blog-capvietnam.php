@@ -411,7 +411,7 @@ include 'header.php';
     <input type="email" name="email" placeholder="Ton adresse email" required>
     <button type="submit">S'inscrire</button>
   </form>
-  <p class="newsletter-rgpd">En t'inscrivant, tu acceptes de recevoir mes emails. Tes données sont traitées conformément à la <a href="#" onclick="openModal('privacy');return false;">politique de confidentialité</a>. Tu peux te désinscrire à tout moment.</p>
+  <p class="newsletter-rgpd">En t'inscrivant, tu acceptes de recevoir mes emails. Tes données sont traitées conformément à la <a href="confidentialite-capvietnam.php" onclick="openModal('privacy');return false;">politique de confidentialité</a>. Tu peux te désinscrire à tout moment.</p>
 </section>
 
 <!-- ═══════ CONTACT ═══════ -->
@@ -471,11 +471,13 @@ include 'header.php';
       </div>
       <label class="form-consent">
         <input type="checkbox" name="consent" required>
-        <span>J'accepte que mes données soient utilisées pour répondre à ma demande conformément à la <a href="#" onclick="openModal('privacy');return false;">politique de confidentialité</a>. Aucune donnée ne sera transmise à des tiers.</span>
+        <span>J'accepte que mes données soient utilisées pour répondre à ma demande conformément à la <a href="confidentialite-capvietnam.php" onclick="openModal('privacy');return false;">politique de confidentialité</a>. Aucune donnée ne sera transmise à des tiers.</span>
       </label>
       <button type="submit" class="form-submit">Envoyer le message</button>
     </form>
   </div>
 </section>
+
+<?php include 'lead-magnet.php'; ?>
 
 <?php include 'footer.php'; ?>

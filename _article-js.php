@@ -24,3 +24,4 @@ document.querySelectorAll('.related-card,.author-box,.comments-section,.cta-news
   _obs.observe(el);
 });
 </script>
+<?php $lm_context = 'popup'; include __DIR__ . '/lead-magnet.php'; ?>

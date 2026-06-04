@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 $page_title       = 'Gestion des cookies — Cap Vietnam';
 $page_description = 'Politique de gestion des cookies de Cap Vietnam : types de cookies utilisés, durée de conservation et comment les gérer.';
 $page_canonical   = 'https://www.blog-capvietnam.fr/cookies';
@@ -75,7 +75,7 @@ include 'header.php';
   <p>Cette politique de gestion des cookies peut être mise à jour. La date de dernière mise à jour est indiquée en haut de cette page.</p>
 
   <h2>6. Contact</h2>
-  <p>Pour toute question relative aux cookies : <a href="mailto:email-professionnel@tutanota.com">email-professionnel@tutanota.com</a></p>
+  <p>Pour toute question relative aux cookies : <a href="mailto:anthonybouilloncontact@gmail.com">anthonybouilloncontact@gmail.com</a></p>
 </main>
 
 <?php include 'footer.php'; ?>

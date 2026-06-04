@@ -110,7 +110,7 @@ include 'header.php';
   <div class="story-label">À propos</div>
   <h2 class="story-title">Ce que j'aurais voulu lire<br>avant de me lancer</h2>
   <div class="story-text">
-    <p>Quand j'ai commencé les démarches pour mon couple, j'ai cherché des blogs sérieux en français sur le sujet. Beaucoup de blogs "expat au Vietnam" en mode touriste, presque rien sur la réalité d'un couple mixte franco-vietnamien. J'écris ce que j'aurais voulu lire avant de me lancer.</p>
+    <p>Je suis Anthony, français, en couple avec une Vietnamienne, et je partage ma vie entre la France, le Canada et le Vietnam. Quand j'ai commencé les démarches pour mon couple, j'ai cherché des blogs sérieux en français sur le sujet. J'ai trouvé beaucoup d'« expat au Vietnam » en mode touriste, et presque rien sur la réalité d'un couple mixte franco-vietnamien : le mariage, l'administratif, l'argent, la belle-famille. J'écris ce que j'aurais voulu lire avant de me lancer — ce qu'on a appris, raté, payé, compris. À côté de ce blog, je suis aussi technicien IT et développeur web indépendant (<a href="https://anthony-bouillon.com" target="_blank" rel="noopener">anthony-bouillon.com</a>), et je tiens BonusParrainage, où je regroupe les outils financiers que j'utilise pour gérer mon argent entre la France et le Vietnam.</p>
     <div class="story-highlight">
       « Ce blog, c'est le journal de ce qu'on a appris, raté, payé, compris. Pas un guide touristique. Pas du recopiage de Wikipédia. Du vécu. »
     </div>
@@ -119,7 +119,9 @@ include 'header.php';
     ✓ <strong>Pratique</strong> — vrais chiffres, vrais documents, vrais délais.<br>
     ✓ <strong>Honnête</strong> — les liens affiliés sont signalés. Toujours.</p>
     <p>Ma femme a accepté que je raconte notre expérience commune, pas qu'elle soit identifiée. Je respecte ça. Pas de nom, pas de visage, juste les leçons qu'on tire ensemble.</p>
-    <p>En dehors de ce blog, je suis auto-entrepreneur français (activité 100 % domiciliée en France). Je gère aussi <a href="https://bonusparrainage.com" target="_blank" rel="noopener">bonusparrainage.com</a> (codes parrainage pour expats) et <a href="https://anthony-bouillon.com" target="_blank" rel="noopener">anthony-bouillon.com</a> (dépannage IT francophone).</p>
+    <div style="margin-top:1.5rem;padding:1rem 1.25rem;background:var(--warm-bg);border-radius:8px;font-size:.9rem;color:var(--muted)">
+      Auto-entrepreneur déclaré en France · SIRET 852 140 425 00038 · Hanoï, Vietnam.
+    </div>
   </div>
 </section>
 

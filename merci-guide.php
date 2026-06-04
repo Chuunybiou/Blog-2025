@@ -51,6 +51,10 @@ include 'header.php';
       📥 Télécharger le guide PDF
     </a>
     <span class="dl-note">PDF · 32 pages · Édition 2026 · Mise à jour 2027 incluse</span>
+    <!-- [À FOURNIR PAR MOI : mettre le chemin réel du PDF ici] -->
+    <a class="dl-btn" href="/Checklist-Vietnam-CapVietnam.pdf" download="Checklist-Vietnam-CapVietnam.pdf" style="margin-top:1rem;background:#bf4a2a">
+      📋 Télécharger la checklist (PDF)
+    </a>
   </div>
 </div>
 

@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Dynamic related articles section.
  * Set before including:
@@ -69,7 +69,7 @@ $_lbl_map = [
     <span style="font-size:1.4rem;flex-shrink:0;">🎁</span>
     <div style="flex:1;">
       <span style="font-weight:600;font-size:0.88rem;">Tu pars ou vis au Vietnam ?</span>
-      <span style="color:var(--muted);font-size:0.82rem;display:block;margin-top:2px;">Wise et Revolut ont des offres de bienvenue — codes vérifiés avec reversement de 50% de la prime sur <strong style="color:var(--terracotta);">bonusparrainage.com</strong></span>
+      <span style="color:var(--muted);font-size:0.82rem;display:block;margin-top:2px;">Wise et Revolut ont des offres de bienvenue — codes vérifiés sur <strong style="color:var(--terracotta);">bonusparrainage.com</strong></span>
     </div>
     <span style="color:var(--terracotta);font-weight:700;font-size:0.85rem;flex-shrink:0;white-space:nowrap;">Voir les codes →</span>
   </a>

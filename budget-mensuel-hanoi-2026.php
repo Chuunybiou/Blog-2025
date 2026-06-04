@@ -195,7 +195,7 @@ include 'header.php';
     $aff_id    = 'revolut';
     $aff_icon  = '💳';
     $aff_title = 'Revolut — zéro frais de change pour ton budget à Hanoï';
-    $aff_text  = 'Dépense en VND directement depuis ta carte sans commission. Idéal pour gérer ton budget expatrié au quotidien. Bonus : <strong>je reverse 50% de ma prime de parrainage</strong> — personne d\'autre ne fait ça.';
+    $aff_text  = 'Dépense en VND directement depuis ta carte sans commission. Idéal pour gérer ton budget expatrié au quotidien. Bonus : <strong>liens affiliés transparents.</strong>';
     $aff_cta   = 'Ouvrir Revolut (bonus + 50% reversé)';
     $aff_note  = 'Lien de parrainage — sans coût supplémentaire pour toi.';
     $aff_theme = 'blue';

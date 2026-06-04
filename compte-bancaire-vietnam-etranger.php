@@ -155,7 +155,7 @@ include 'header.php';
     $aff_id    = 'revolut';
     $aff_icon  = '💳';
     $aff_title = 'Revolut — la carte à avoir dans le portefeuille au Vietnam';
-    $aff_text  = 'Paiements sans frais de change, retraits DAB à l\'étranger, et compte multi-devises. En plus : <strong>je reverse 50% de ma prime de parrainage</strong> — unique en France.';
+    $aff_text  = 'Paiements sans frais de change, retraits DAB à l\'étranger, et compte multi-devises. En plus : <strong>liens affiliés transparents.</strong>';
     $aff_cta   = 'Ouvrir Revolut (bonus + 50% reversé)';
     $aff_note  = 'Lien de parrainage — sans coût supplémentaire pour toi.';
     $aff_theme = 'blue';

@@ -19,6 +19,9 @@ $page_extra_css   = $page_extra_css   ?? '';
 <html lang="<?= htmlspecialchars($page_lang) ?>">
 <head>
 <meta charset="UTF-8">
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6Q6E8EEN7F"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-6Q6E8EEN7F');</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title><?= htmlspecialchars($page_title) ?></title>
 <meta name='impact-site-verification' value='92815f1a-4182-4e5e-9001-79e777d23b09'>
