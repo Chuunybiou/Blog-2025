@@ -184,6 +184,16 @@ include 'header.php';
 
     <p>Pour plus de détails techniques officiels (carte Visa, plafonds, services en ligne) : <a href="https://www.vietcombank.com.vn/en" rel="noopener" target="_blank">Vietcombank.com.vn/en</a>.</p>
 
+    <div class="info-box" style="background:var(--warm-bg);border-left:4px solid var(--jade)">
+      <strong>🏦 Ouvrir un compte Vietcombank</strong><br>
+      Ma femme utilise Vietcombank depuis des années — c'est la banque que je recommande pour les expatriés au Vietnam. Si tu veux ouvrir un compte, tu peux utiliser son lien de parrainage :<br>
+      <a href="go.php?id=vietcombank" target="_blank" rel="noopener sponsored"
+         style="display:inline-block;margin-top:0.75rem;padding:0.5rem 1.25rem;background:var(--jade);color:#fff;border-radius:4px;font-weight:700;font-size:0.9rem;text-decoration:none;">
+        Ouvrir un compte Vietcombank →
+      </a>
+      <span style="display:block;margin-top:0.4rem;font-size:0.75rem;color:var(--muted)">Lien de parrainage — aucun coût supplémentaire pour toi.</span>
+    </div>
+
     <h3>Pilier 3 — Cash local</h3>
 
     <p>Pour les petits commerçants qui n'acceptent pas le QR, et pour les dépenses courantes en espèces, je retire du cash avec :</p>

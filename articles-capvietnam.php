@@ -163,7 +163,7 @@ include 'header.php';
 <?php if ($_featured): ?>
 <div class="featured">
   <a class="featured-card" href="<?= htmlspecialchars($_featured['slug']) ?>.php" data-cat="<?= htmlspecialchars($_featured['category']) ?>">
-    <div class="featured-visual">
+    <div class="featured-visual" <?= !empty($_featured['image']) ? 'style="background:url(\''.htmlspecialchars($_featured['image']).'\') center/cover no-repeat;background-blend-mode:normal;"' : '' ?>>
       <div class="featured-star">⭐ À la une</div>
       <?= $_featured['emoji'] ?>
     </div>
@@ -189,7 +189,13 @@ include 'header.php';
   $kw  = htmlspecialchars($a['keywords'] ?? strtolower($a['title']));
 ?>
     <a class="article-card" href="<?= htmlspecialchars($a['slug']) ?>.php" data-cat="<?= $cat ?>" data-title="<?= $kw ?>">
+      <?php if (!empty($a['image'])): ?>
+      <div class="card-banner" style="background:url('<?= htmlspecialchars($a['image']) ?>') center/cover no-repeat;">
+        <span style="position:absolute;bottom:.5rem;right:.6rem;font-size:1.6rem;filter:drop-shadow(0 1px 3px rgba(0,0,0,.4))"><?= $a['emoji'] ?></span>
+      </div>
+      <?php else: ?>
       <div class="card-banner bg-<?= $cat ?>"><?= $a['emoji'] ?></div>
+      <?php endif; ?>
       <div class="card-body">
         <div class="card-meta">
           <span class="card-badge badge-<?= $cat ?>"><?= htmlspecialchars($a['categoryLabel']) ?></span>

@@ -2,6 +2,34 @@
   "featured_slug": "visa-vietnam-francais-guide-2026",
   "articles": [
     {
+      "slug": "franchise-vietnamiens-physique-harmonie",
+      "title": "Appeler un chat un chat : la franchise des Vietnamiens sur le physique (et leur discrétion sur le reste)",
+      "excerpt": "Ma femme m'appelle son panda. La belle-famille commente le physique sans détour. Ce n'est pas de la méchanceté — c'est culturel. Mais la franchise vietnamienne cache une nuance que peu de Français anticipent.",
+      "category": "couple",
+      "categoryLabel": "Couple Mixte & Famille",
+      "date": "2026-06-06",
+      "dateLabel": "Juin 2026",
+      "readTime": "6 min",
+      "emoji": "💬",
+      "image": "",
+      "imageAlt": "Couple franco-vietnamien — différences culturelles franchise",
+      "keywords": "franchise vietnamiens physique direct culture couple franco vietnamien harmonie famille"
+    },
+    {
+      "slug": "visiter-pagode-vietnam-regles",
+      "title": "Visiter une pagode au Vietnam : chaussures, tenue, jaune déconseillé — ce que ma femme bouddhiste m'a appris",
+      "excerpt": "Chaussures à retirer, pas de jupe, éviter le jaune, aucune démonstration d'affection. Ma femme est bouddhiste pratiquante — voici ce qu'elle m'a transmis avant d'entrer dans les pagodes de Hanoï et Ninh Binh.",
+      "category": "voyager",
+      "categoryLabel": "Voyager au Vietnam",
+      "date": "2026-06-06",
+      "dateLabel": "Juin 2026",
+      "readTime": "6 min",
+      "emoji": "🛕",
+      "image": "",
+      "imageAlt": "Pagode au Vietnam — règles de visite tenue chaussures",
+      "keywords": "visiter pagode vietnam regles tenue chaussures bouddhisme jaune comportement"
+    },
+    {
       "slug": "adaptateur-prise-electrique-vietnam",
       "title": "Prise électrique et adaptateur au Vietnam : ce que les Français doivent savoir avant de partir",
       "excerpt": "La tension est la même qu'en France (220 V), mais les prises plates Type A sont partout dans les anciens appartements. Ce que j'ai découvert à l'arrivée, et l'adaptateur que j'emporte depuis.",
@@ -11,8 +39,8 @@
       "dateLabel": "Juin 2026",
       "readTime": "5 min",
       "emoji": "🔌",
-      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
-      "imageAlt": "Adaptateur prise électrique voyage Vietnam",
+      "image": "assets/img/capvietnam-prise.jpg",
+      "imageAlt": "Vraie prise électrique de type A dans un ancien appartement de Hanoï",
       "keywords": "adaptateur prise électrique vietnam francais type A voltage tension courant"
     },
     {
@@ -25,8 +53,8 @@
       "dateLabel": "Juin 2026",
       "readTime": "6 min",
       "emoji": "🍵",
-      "image": "assets/img/recette-tea/AH2cPyVim4e6zbGXxTjxIgu4AhQ-DXjjzHKj3nO33p7QIKj982QgeAXb4Rb4kM4AzCGu7RVyGVrNkZEWKJMg4_kbQIBMdnZBerH6-TFh1Tods1zXlyBMo4vB7ObENerJMQCXJ87OKqeQlMEcU3sBELbiaHRi-a1frZdDNmKoYWc-oZNIbrbJfOzsHVw_naxk.jpg",
-      "imageAlt": "Thé vietnamien aux dattes rouges, gojis et réglisse — théière en verre",
+      "image": "assets/img/capvietnam-tea.jpg",
+      "imageAlt": "Thé vietnamien aux dattes rouges, réglisse et jiaogulan — photo prise au Vietnam",
       "keywords": "thé vietnamien dattes réglisse goji noir recette belle mère santé"
     },
     {
@@ -39,8 +67,8 @@
       "dateLabel": "Juin 2026",
       "readTime": "9 min",
       "emoji": "🏦",
-      "image": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=600&q=80",
-      "imageAlt": "Compte bancaire au Vietnam pour Français — Vietcombank Techcombank Wise",
+      "image": "assets/img/capvietnam-money.jpg",
+      "imageAlt": "Billets de dong vietnamien — compte bancaire au Vietnam pour Français",
       "keywords": "compte bancaire vietnam francais vietcombank techcombank wise visa touriste"
     },
     {
@@ -53,8 +81,8 @@
       "dateLabel": "Mai 2026",
       "readTime": "9 min",
       "emoji": "🏠",
-      "image": "https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=600&q=80",
-      "imageAlt": "Appartement à Hanoï vue sur la rue",
+      "image": "assets/img/capvietnam-wc.jpg",
+      "imageAlt": "Salle de bain dans un appartement réel à Hanoï — louer au Vietnam",
       "keywords": "louer appartement hanoi etranger prix quartier contrat vnd"
     },
     {

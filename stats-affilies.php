@@ -92,6 +92,7 @@ $labels = [
     'amazon-stevia'    => ['label' => 'Stévia BIO (Amazon)',    'emoji' => '🌿'],
     'amazon-jiaogulan' => ['label' => 'Jiaogulan (Amazon)',     'emoji' => '🌱'],
     'amazon-adapter'   => ['label' => 'Adaptateur voyage (Amazon)', 'emoji' => '🔌'],
+    'vietcombank'      => ['label' => 'Vietcombank (parrainage)',   'emoji' => '🏦'],
     'boursobank'       => ['label' => 'Boursobank',             'emoji' => '🏦'],
     'kofi'             => ['label' => 'Ko-fi',                  'emoji' => '☕'],
 ];

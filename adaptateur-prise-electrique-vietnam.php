@@ -5,6 +5,7 @@ $page_canonical   = 'https://www.blog-capvietnam.fr/adaptateur-prise-electrique-
 $page_og_title    = 'Prise électrique au Vietnam : adaptateur nécessaire pour les Français ?';
 $page_og_desc     = '220 V comme en France, mais les prises plates Type A sont partout dans les anciens appartements. Ce que j\'ai découvert à l\'arrivée et l\'adaptateur que j\'utilise depuis.';
 $page_og_url      = 'https://www.blog-capvietnam.fr/adaptateur-prise-electrique-vietnam';
+$page_og_image    = 'https://www.blog-capvietnam.fr/assets/img/capvietnam-prise.jpg';
 
 $page_schema = '{
   "@context": "https://schema.org",
@@ -103,6 +104,8 @@ include 'header.php';
     <p>J'avais lu quelque part que "le Vietnam, c'est la même tension qu'en France, pas de souci". C'est vrai — mais personne ne m'avait prévenu que <strong>certains vieux bâtiments ont encore des prises plates</strong> incompatibles avec les fiches françaises. J'ai fini la soirée avec le chargeur de ma femme. Le lendemain, un adaptateur acheté au marché a réglé le problème.</p>
 
     <p>La majorité des logements modernes et des hôtels au Vietnam sont équipés de prises compatibles — votre chargeur français y rentre sans problème. Mais pour éviter ce genre de surprise dans un vieux bâtiment, un adaptateur universel dans la valise reste la précaution la plus simple. Voici tout ce qu'il faut savoir.</p>
+
+    <img src="assets/img/capvietnam-prise.jpg" alt="Prise électrique de type A dans un appartement de Hanoï — incompatible avec les fiches françaises rondes" width="800" height="600" loading="eager" style="width:100%;border-radius:var(--radius);margin:1.5rem 0;object-fit:cover;max-height:420px;">
 
     <!-- H2 #1 -->
     <h2 id="section-1">Avant tout : tension et type de prise sont deux choses distinctes</h2>

@@ -18,6 +18,7 @@ $destinations = [
     'amazon-stevia'      => AFF_AMAZON_STEVIA,
     'amazon-jiaogulan'   => AFF_AMAZON_JIAOGULAN,
     'amazon-adapter'     => AFF_AMAZON_ADAPTER,
+    'vietcombank'        => AFF_VIETCOMBANK,
 ];
 
 $id = trim($_GET['id'] ?? '');

@@ -20,7 +20,8 @@ define('MAILERLITE_API_KEY', 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0I
 
 // Affiliate links
 define('AFF_WISE',      'https://wise.com/invite/dic/anthonyrolandb');
-define('AFF_REVOLUT',   'https://revolut.com/referral/?referral-code=anthonfytu!MAY2-26-VR-FR&geo-redirect');
+define('AFF_REVOLUT',   'https://revolut.com/referral/?referral-code=anthonfytu!JUN1-26-VR-FR&geo-redirect');
+define('AFF_VIETCOMBANK', 'https://digibank.vietcombank.com.vn/invite/DGAS6ZI5PE');
 define('AFF_AMAZON_G7', 'https://amzn.to/4uhZZZD');
 define('AFF_KOFI',      'https://ko-fi.com/blogcapvietnam');
 define('AFF_BOURSOBANK',       'https://bour.so/p/CjnYYepGGnp');

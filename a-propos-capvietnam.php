@@ -156,15 +156,15 @@ include 'header.php';
       </div>
       <div class="timeline-item">
         <div class="timeline-dot"></div>
-        <div class="timeline-date">La décision</div>
-        <h3>Je quitte le Canada pour le Vietnam</h3>
-        <p>Démarches administratives, fermeture des comptes, préparation du départ. Cap Vietnam est lancé.</p>
+        <div class="timeline-date">Mars 2026</div>
+        <h3>Second voyage & cérémonie de mariage</h3>
+        <p>Retour au Vietnam pour le mariage. Une étape qui change tout.</p>
       </div>
       <div class="timeline-item active">
         <div class="timeline-dot"></div>
-        <div class="timeline-date">2026 — Maintenant</div>
-        <h3>Installation au Vietnam</h3>
-        <p>La vie commence ici. Blog, TikTok, vie en couple mixte, et construction d'une nouvelle existence.</p>
+        <div class="timeline-date">2026 — En cours</div>
+        <h3>Préparation de l'installation au Vietnam</h3>
+        <p>Les décisions se prennent une par une. Démarches, projections, organisation. Le Vietnam, bientôt pour de vrai.</p>
       </div>
     </div>
   </div>

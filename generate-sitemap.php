@@ -52,6 +52,10 @@ $pages = [
   ['cafes-coworkings-hanoi',                   '2026-02-12', 'monthly', '0.6'],
   ['creer-blog-expat-rentable',                '2026-01-20', 'monthly', '0.7'],
 
+  // Couple / Culture
+  ['franchise-vietnamiens-physique-harmonie',  '2026-06-06', 'monthly', '0.7'],
+  ['visiter-pagode-vietnam-regles',            '2026-06-06', 'monthly', '0.7'],
+
   // Vie pratique
   ['adaptateur-prise-electrique-vietnam',      '2026-06-02', 'monthly', '0.7'],
   ['louer-appartement-hanoi-etranger',         '2026-03-10', 'monthly', '0.7'],

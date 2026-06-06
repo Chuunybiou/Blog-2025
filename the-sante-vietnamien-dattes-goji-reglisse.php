@@ -1,10 +1,10 @@
 <?php
 // Raccourcis pour les noms de fichiers images (éviter la répétition des longs hashs)
 define('IMG_TEA_DIR', 'assets/img/recette-tea/');
-$img_hero      = IMG_TEA_DIR . 'AH2cPyVim4e6zbGXxTjxIgu4AhQ-DXjjzHKj3nO33p7QIKj982QgeAXb4Rb4kM4AzCGu7RVyGVrNkZEWKJMg4_kbQIBMdnZBerH6-TFh1Tods1zXlyBMo4vB7ObENerJMQCXJ87OKqeQlMEcU3sBELbiaHRi-a1frZdDNmKoYWc-oZNIbrbJfOzsHVw_naxk.jpg';
-$img_ambiance  = IMG_TEA_DIR . 'AdKbyQnxPh0Mkr5xmF63YHGA0SLf9cuZVWVetBHzFqRgl9yK7XUkhvujZgkpX9Ap3Gfxlj4xMO9aP1iCglvNq5g5TDQtNwiGzcIYAcUlZ_dM4Q1fqjp885CwYWv7z5olBn_pA6sAUQm4U420i3z_jxaIQYS4wHYHPrAhh7nDeYtl8bJz8n-E4EUPH23tKSNE.jpg';
+$img_hero      = 'assets/img/capvietnam-tea.jpg';
+$img_ambiance  = 'assets/img/capvietnam-tea-3.jpg';
 $img_mijotage  = IMG_TEA_DIR . '9fXxLDpCcUQPCd0cxOOB1oHbGOZ3Zr8L-YWDg9YDj6aK3qPDa4Li3untk8kbzzh9cJyzGnpjHpGcaTiDa-yCHN98dmbS80H5mnoweWriojN_Lw_n1z21xSQCFE_9irDAyVWxSGkQpCHeIQz4Vk8KZl5OA4f3izlbhTQOUXDivf2SmklqNdOI0d1eRz7Q-aBL.jpg';
-$img_dore      = IMG_TEA_DIR . 'nczP1h-jkZqeSvMPxvbvWA4r3KgXhetKm3wvk913mjy-7lfw9tIsafZw3EqOSFj1VQ15GSCD3TzS71Iu96jMTINlCgEfPAtC0FeSIyKxHZHkoJc_iNNnGNaQZ-AZSXNW7uDtjZHO5adEfU8Ol-Mu_CgDjyNr8Za3JEfQhBY4-S92o-hCnNxfa4WtY9dWb5XD.jpg';
+$img_dore      = 'assets/img/capvietnam-tea-2.jpg';
 $img_service   = IMG_TEA_DIR . 'CWpjA21BdGxe7vlMJAlV0rdbSKNiEvhNZ-q_b1j6BpTD9Tqq7MqoYJzVbupza3nOWw0Dw_3yxPiXNPxnIvcIsrxw6XGGimenIlYmNTGkfM9WPFk6m1Z6Bn-40dFcbByp1R_ACpnM5RSwBVcuyhvoeztffs3XcKFWO4SCMrYZswwWQZm4lQawTDBKT0PBWJ4g.jpg';
 
 $page_title       = 'Thé aux dattes, réglisse et goji noir : la recette de ma belle-mère vietnamienne';
@@ -19,14 +19,14 @@ $page_schema = '{
   "@context": "https://schema.org",
   "@type": "Recipe",
   "name": "Thé vietnamien aux dattes rouges, réglisse et goji noir",
-  "description": "Thé santé traditionnel vietnamien préparé avec des dattes rouges séchées, de la réglisse, des gojis noirs et de la stévia. Couleur jaune dorée, goût naturellement sucré.",
+  "description": "Thé santé traditionnel vietnamien préparé avec des dattes rouges séchées, de la réglisse, des gojis noirs et du jiaogulan. Couleur jaune dorée, goût naturellement sucré.",
   "recipeYield": "500 ml",
   "prepTime": "PT5M",
   "cookTime": "PT30M",
   "totalTime": "PT40M",
   "recipeCategory": "Boisson",
   "recipeCuisine": "Vietnamienne",
-  "keywords": "thé vietnamien dattes rouges réglisse goji noir stévia recette santé",
+  "keywords": "thé vietnamien dattes rouges réglisse goji noir jiaogulan recette santé",
   "datePublished": "2026-06-01",
   "author": {"@type": "Person", "name": "Anthony Bouillon", "url": "https://www.blog-capvietnam.fr/a-propos-capvietnam"},
   "recipeIngredient": [
@@ -34,13 +34,12 @@ $page_schema = '{
     "5 à 8 dattes rouges séchées (jujubes)",
     "2 à 3 rondelles de réglisse séchée (~5 g)",
     "1 petite pincée de gojis noirs (5 à 8 baies max)",
-    "Stévia en feuilles séchées ou en poudre, selon goût",
     "1 à 1,5 g de Gynostemma pentaphyllum (jiaogulan) séché"
   ],
   "recipeInstructions": [
     {"@type": "HowToStep", "text": "Verser 500 ml d\'eau froide dans une casserole. Ajouter les dattes rouges, les rondelles de réglisse et le jiaogulan séché."},
     {"@type": "HowToStep", "text": "Porter à frémissement puis laisser mijoter à feu doux pendant 20 à 30 minutes."},
-    {"@type": "HowToStep", "text": "Éteindre le feu. Ajouter les gojis noirs et la stévia. Laisser infuser 5 à 10 minutes."},
+    {"@type": "HowToStep", "text": "Éteindre le feu. Ajouter les gojis noirs. Laisser infuser 5 à 10 minutes."},
     {"@type": "HowToStep", "text": "Filtrer si souhaité ou servir tel quel, chaud ou sur glaçons."}
   ]
 }';
@@ -58,10 +57,10 @@ $page_faq = [
    'a' => 'Dans les grandes épiceries asiatiques (Paris 13e, Lyon Part-Dieu, Belleville…) ou sur Amazon et les boutiques de produits naturels en ligne. Cherchez « black wolfberry » ou « goji noir séché ». Ils sont moins courants que les gojis rouges mais de plus en plus disponibles.'],
   ['q' => 'Quelle est la différence entre goji rouge et goji noir ?',
    'a' => 'Le goji rouge (Lycium barbarum) est le plus courant en Occident. Le goji noir (Lycium ruthenicum) contient des anthocyanes qui lui donnent sa couleur foncée. Ajouté en petite quantité après cuisson, il ne teinte pas le thé — trop bouilli, il virerait le liquide au violet ou au gris.'],
-  ['q' => 'Peut-on remplacer la stévia par du miel ou du sucre ?',
-   'a' => 'Oui. La stévia (en feuilles ou en poudre) apporte une douceur sans sucre ajouté. Tu peux la remplacer par une cuillère de miel toutes fleurs ajoutée hors du feu, ou simplement du sucre. Les dattes rouges donnent déjà une douceur naturelle — goûte avant d\'ajouter un édulcorant.'],
+  ['q' => 'Peut-on ajouter du miel ou du sucre ?',
+   'a' => 'Les dattes rouges donnent déjà une douceur naturelle à la tisane. Si tu veux plus de douceur, ajoute une petite cuillère de miel toutes fleurs hors du feu, ou simplement du sucre. Goûte d\'abord — souvent ce n\'est pas nécessaire.'],
   ['q' => 'Ce thé contient-il de la caféine ?',
-   'a' => 'Non. Aucun des ingrédients (dattes, réglisse, goji, stévia, jiaogulan) ne contient de caféine. C\'est une tisane, pas un thé à proprement parler — idéale en soirée ou pour les personnes sensibles à la caféine.'],
+   'a' => 'Non. Aucun des ingrédients (dattes, réglisse, goji, jiaogulan) ne contient de caféine. C\'est une tisane, pas un thé à proprement parler — idéale en soirée ou pour les personnes sensibles à la caféine.'],
 ];
 
 $page_extra_head = '
@@ -142,7 +141,7 @@ include 'header.php';
     <p>J'ai regardé ma femme : <em>« C'est quoi ça ? »</em><br>
     Elle a souri. <em>« C'est le thé de ma mère. »</em></p>
 
-    <p>Pas de sachet. Pas de théière classique. Juste une casserole, cinq ingrédients, et une recette transmise comme ça, sans livre, par habitude de famille. J'en bois régulièrement depuis — et j'ai même réussi à le reproduire en France.</p>
+    <p>Pas de sachet. Pas de théière classique. Juste une casserole, quatre ingrédients, et une recette transmise comme ça, sans livre, par habitude de famille. J'en bois régulièrement depuis — et j'ai même réussi à le reproduire en France.</p>
 
     <img class="article-photo" src="<?= $img_hero ?>" alt="Thé vietnamien aux dattes rouges, gojis et réglisse dans une théière en verre" width="800" height="600" loading="lazy" style="width:100%;border-radius:var(--radius);margin:2rem 0;object-fit:cover;max-height:450px;">
 
@@ -155,10 +154,10 @@ include 'header.php';
 
     <p>Et le goût — doux, avec un arrière-goût floral et une touche de réglisse qui reste en bouche. Naturellement sucré sans qu'on y ait ajouté du sucre. Pas de pointe d'amertume. Pas de caféine. C'est le genre de boisson qui ne ressemble à rien d'autre qu'on aurait goûté en Europe, et qui pourtant paraît évidente une fois en main.</p>
 
-    <p>J'ai demandé ce qu'il y avait dedans. La liste m'a surpris par sa simplicité : <strong>cinq ingrédients</strong>, tous séchés, que les familles vietnamiennes gardent dans leurs placards comme nous gardons du thé Earl Grey.</p>
+    <p>J'ai demandé ce qu'il y avait dedans. La liste m'a surpris par sa simplicité : <strong>quatre ingrédients</strong>, tous séchés, que les familles vietnamiennes gardent dans leurs placards comme nous gardons du thé Earl Grey.</p>
 
     <!-- H2 #2 -->
-    <h2 id="section-2">Les cinq ingrédients</h2>
+    <h2 id="section-2">Les quatre ingrédients</h2>
 
     <img src="<?= $img_mijotage ?>" alt="Tasse en verre avec gojis rouges et dattes séchées flottant dans un thé doré" width="800" height="533" loading="lazy" style="width:100%;border-radius:var(--radius);margin:1.5rem 0;object-fit:cover;max-height:400px;">
 
@@ -192,8 +191,6 @@ include 'header.php';
 
     <p><strong>Les gojis noirs</strong> — et là, c'est le détail qui change tout. Pas les gojis rouges qu'on trouve en supermarché. Les gojis noirs (<em>Lycium ruthenicum</em>) ont une couleur profonde et une discrétion de saveur qui n'altère pas le profil aromatique général — mais leur quantité et leur moment d'ajout sont <em>cruciaux</em> pour la couleur finale. On y revient.</p>
 
-    <p><strong>La stévia</strong> — en feuilles séchées ou en poudre — complète la douceur naturelle des dattes sans ajouter de sucre. La belle-mère de ma femme en met une petite quantité, ajustée selon les goûts de chacun.</p>
-
     <p><strong>Le jiaogulan</strong> (<em>Gynostemma pentaphyllum</em>) — c'est celui que j'ai découvert plus tard, en cherchant comment enrichir la recette. Une petite herbe séchée, 1 à 1,5 g suffit, qu'on ajoute en début de cuisson avec les dattes et la réglisse. Son goût est discret, légèrement herbacé, et il se fond dans l'ensemble sans modifier la couleur dorée. Dans la médecine traditionnelle asiatique, il est surnommé « herbe de l'immortalité » — une réputation qui ne manque pas d'ambition.</p>
 
     <!-- H2 #3 -->
@@ -221,7 +218,7 @@ include 'header.php';
           <li>
             <div class="step-num">3</div>
             <div class="step-text">
-              <strong>Éteindre le feu.</strong> C'est seulement là qu'on ajoute les gojis noirs et la stévia. On ne les cuit pas — on les <strong>infuse</strong> dans le liquide chaud hors du feu.
+              <strong>Éteindre le feu.</strong> C'est seulement là qu'on ajoute les gojis noirs. On ne les cuit pas — on les <strong>infuse</strong> dans le liquide chaud hors du feu.
               <div class="step-sub">Couvrir la casserole et laisser infuser 5 à 10 minutes.</div>
             </div>
           </li>
@@ -268,8 +265,6 @@ include 'header.php';
 
     <p><strong>Les gojis noirs</strong> sont particulièrement riches en anthocyanes — les mêmes antioxydants présents dans les myrtilles ou le cassis. Plus récemment étudiés que leur cousin rouge, ils suscitent un intérêt croissant dans la recherche sur le stress oxydatif.</p>
 
-    <p><strong>La stévia</strong> permet de sucrer sans impact glycémique — intéressant pour ceux qui cherchent une boisson naturellement douce mais sans sucre ajouté.</p>
-
     <p><strong>Le jiaogulan</strong> (<em>Gynostemma pentaphyllum</em>) est l'un des adaptogènes les plus étudiés en Asie du Sud-Est. Surnommé « herbe de l'immortalité » dans la littérature traditionnelle chinoise, il est réputé pour ses propriétés antioxydantes et son soutien au système cardiovasculaire. Des recherches préliminaires s'y intéressent, notamment pour ses saponines (les gypenosides) qui en font un profil proche de certains ginsénosides du ginseng.</p>
 
     <div class="info-box">
@@ -315,16 +310,6 @@ include 'header.php';
       </div>
 
       <div style="border:1px solid var(--border);border-radius:var(--radius);padding:1.2rem;background:var(--white);">
-        <div style="font-size:1.5rem;margin-bottom:0.5rem;">🌿</div>
-        <p style="font-weight:700;font-size:0.95rem;margin-bottom:0.3rem;">Stévia BIO — feuilles coupées</p>
-        <p style="font-size:0.83rem;color:var(--muted);margin-bottom:0.8rem;">En feuilles séchées, plus naturelle que la poudre. Aussi en rayon bio supermarché.</p>
-        <a href="https://amzn.to/42T9iUx" rel="noopener sponsored" target="_blank"
-           style="display:inline-block;padding:0.5rem 1rem;background:var(--amber);color:var(--ink);border-radius:4px;font-size:0.82rem;font-weight:700;text-decoration:none;">
-          Voir sur Amazon →
-        </a>
-      </div>
-
-      <div style="border:1px solid var(--border);border-radius:var(--radius);padding:1.2rem;background:var(--white);">
         <div style="font-size:1.5rem;margin-bottom:0.5rem;">🌱</div>
         <p style="font-weight:700;font-size:0.95rem;margin-bottom:0.3rem;">Jiaogulan séché (Gynostemma)</p>
         <p style="font-size:0.83rem;color:var(--muted);margin-bottom:0.8rem;">1 à 1,5 g par 500 ml suffit. Presque introuvable en magasin — Amazon reste l'option la plus simple.</p>
@@ -364,10 +349,10 @@ include 'header.php';
 
     <div class="faq-item">
       <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
-        Peut-on remplacer la stévia par du miel ?
+        Peut-on ajouter du miel ou du sucre ?
         <span class="faq-arrow">▼</span>
       </button>
-      <div class="faq-answer">Oui. La stévia apporte une douceur sans sucre ajouté. Tu peux la remplacer par une cuillère de miel toutes fleurs ajoutée hors du feu, ou simplement du sucre. Les dattes rouges donnent déjà une douceur naturelle — goûte avant d'ajouter quoi que ce soit.</div>
+      <div class="faq-answer">Les dattes rouges donnent déjà une douceur naturelle à la tisane. Si tu veux plus de douceur, ajoute une petite cuillère de miel toutes fleurs hors du feu. Goûte d'abord — souvent ce n'est pas nécessaire.</div>
     </div>
 
     <div class="faq-item">
@@ -375,7 +360,7 @@ include 'header.php';
         Ce thé contient-il de la caféine ?
         <span class="faq-arrow">▼</span>
       </button>
-      <div class="faq-answer">Non. Aucun des ingrédients (dattes, réglisse, goji, stévia, jiaogulan) ne contient de caféine. C'est une tisane, pas un thé à proprement parler — idéale le soir ou pour les personnes sensibles à la caféine.</div>
+      <div class="faq-answer">Non. Aucun des ingrédients (dattes, réglisse, goji, jiaogulan) ne contient de caféine. C'est une tisane, pas un thé à proprement parler — idéale le soir ou pour les personnes sensibles à la caféine.</div>
     </div>
 
     <!-- POUR ALLER PLUS LOIN -->
