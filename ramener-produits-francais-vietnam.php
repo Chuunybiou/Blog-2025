@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 $page_title       = 'Ramener des produits français au Vietnam : ce qu\'on peut (et ne peut pas) en 2026';
 $page_description = 'Fromages, vins, médicaments, cosmétiques, électronique : ce qu\'on peut ramener de France au Vietnam dans ses valises sans problèmes douaniers. Guide pratique et liste concrète.';
 $page_canonical   = 'https://www.blog-capvietnam.fr/ramener-produits-francais-vietnam';
@@ -67,7 +67,6 @@ include 'header.php';
       <div class="toc-share-label">Partager</div>
       <div class="share-btns">
         <a class="share-btn" onclick="window.open('https://www.facebook.com/sharer.php?u='+encodeURIComponent(location.href))">f</a>
-        <a class="share-btn" onclick="window.open('https://twitter.com/intent/tweet?url='+encodeURIComponent(location.href))">𝕏</a>
         <a class="share-btn" onclick="navigator.clipboard.writeText(location.href);this.textContent='✓';setTimeout(()=>this.textContent='🔗',1500)">🔗</a>
       </div>
     </div>

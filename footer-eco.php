@@ -1,4 +1,4 @@
-<style>
+﻿<style>
 /* Styles spécifiques au footer-eco (injectés dans le body, valides en HTML5) */
 .eco-footer-grid {
   max-width: var(--container-max, 1100px);
@@ -180,7 +180,6 @@
     <div class="eco-footer-col">
       <h4><?= ($page_lang ?? 'fr') === 'vi' ? 'Mạng xã hội' : 'Réseaux' ?></h4>
       <a href="<?= SITE_TIKTOK ?>" target="_blank" rel="noopener">TikTok</a>
-      <a href="<?= SITE_YOUTUBE ?>" target="_blank" rel="noopener">YouTube</a>
       <a href="<?= ($path_prefix ?? '') ?>go.php?id=kofi" target="_blank" rel="noopener" class="accent">☕ Soutenir le blog</a>
     </div>
   </div>

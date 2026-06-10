@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 $page_title       = 'Louer un appartement à Hanoï en tant qu\'étranger : guide complet 2026';
 $page_description = 'Comment trouver et louer un appartement à Hanoï en tant qu\'étranger : prix par quartier, contrat, caution, charges et pièges à éviter. Guide mis à jour 2026.';
 $page_canonical   = 'https://www.blog-capvietnam.fr/louer-appartement-hanoi-etranger';
@@ -68,7 +68,6 @@ include 'header.php';
       <div class="toc-share-label">Partager</div>
       <div class="share-btns">
         <a class="share-btn" onclick="window.open('https://www.facebook.com/sharer.php?u='+encodeURIComponent(location.href))">f</a>
-        <a class="share-btn" onclick="window.open('https://twitter.com/intent/tweet?url='+encodeURIComponent(location.href))">𝕏</a>
         <a class="share-btn" onclick="navigator.clipboard.writeText(location.href);this.textContent='✓';setTimeout(()=>this.textContent='🔗',1500)">🔗</a>
       </div>
     </div>

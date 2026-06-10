@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 $page_title       = 'Compte bancaire au Vietnam pour Français — Vietcombank, Techcombank, Wise';
 $page_description = 'Faut-il vraiment ouvrir un compte bancaire au Vietnam quand on a un visa touriste 90 jours ? Mon analyse + comparatif Vietcombank, Techcombank, HSBC, et pourquoi j\'utilise Wise à la place.';
 $page_canonical   = 'https://www.blog-capvietnam.fr/banque-vietnam-francais';
@@ -82,13 +82,13 @@ include 'header.php';
       <li><a href="#section-4">Les 2 cas où c'est indispensable</a></li>
       <li><a href="#section-5">Comparatif des banques</a></li>
       <li><a href="#section-6">Documents et conditions</a></li>
+      <li><a href="#section-7">Côté France : quel compte garder</a></li>
       <li><a href="#section-faq">Questions fréquentes</a></li>
     </ol>
     <div class="toc-share">
       <div class="toc-share-label">Partager</div>
       <div class="share-btns">
         <a class="share-btn" title="Facebook" onclick="window.open('https://www.facebook.com/sharer.php?u='+encodeURIComponent(location.href))">f</a>
-        <a class="share-btn" title="X / Twitter" onclick="window.open('https://twitter.com/intent/tweet?url='+encodeURIComponent(location.href)+'&text=Compte+bancaire+Vietnam+pour+Fran%C3%A7ais')">𝕏</a>
         <a class="share-btn" title="LinkedIn" onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url='+encodeURIComponent(location.href))">in</a>
         <a class="share-btn" title="Copier le lien" onclick="navigator.clipboard.writeText(location.href);this.textContent='✓';setTimeout(()=>this.textContent='🔗',1500)">🔗</a>
       </div>
@@ -332,6 +332,53 @@ include 'header.php';
     </div>
 
     <!-- ============================
+         H2 #7 — Compte France en expatriation
+    ============================= -->
+    <h2 id="section-7">Côté France : quel compte garder quand on s'expatrie ?</h2>
+
+    <p>Gérer un compte bancaire vietnamien ne dispense pas d'avoir un compte français actif. Pour recevoir des virements depuis la France, payer des abonnements français, accéder à ses investissements ou préparer un retour éventuel, garder une banque française est généralement indispensable.</p>
+
+    <p>Parmi les options connues des expatriés français, <strong>Fortuneo</strong> revient souvent. C'est une banque en ligne française sans frais de tenue de compte, qui permet de conserver un accès aux marchés financiers français (actions, ETF, obligations) et qui propose un compte titres accessible depuis l'étranger.</p>
+
+    <div class="info-box">
+      <strong>📋 Ce que Fortuneo propose :</strong>
+      <ul style="margin:.5rem 0 0;padding-left:1.2rem">
+        <li>Compte bancaire gratuit (carte Mastercard Gold incluse sous conditions)</li>
+        <li>Accès aux marchés actions français et européens</li>
+        <li>PEA disponible à l'ouverture — <strong>à vérifier selon votre statut de résidence fiscale avant toute démarche</strong></li>
+        <li>Application mobile complète, service client en français</li>
+        <li>Bonus de bienvenue jusqu'à 250€ avec le code parrainage</li>
+      </ul>
+    </div>
+
+    <div class="warning-box">
+      <strong>⚠️ PEA et non-résidence : renseignez-vous avant d'agir</strong><br>
+      Depuis la loi PACTE (2019), un PEA existant peut être conservé en cas d'expatriation. En revanche, les conditions d'un nouveau versement ou d'une ouverture depuis l'étranger dépendent de votre situation fiscale et des CGU de votre banque. Ce point mérite d'être vérifié avec un conseiller fiscal spécialisé en expatriation avant toute démarche — les règles varient selon votre pays de résidence.
+    </div>
+
+    <div style="background:linear-gradient(135deg,#fff5f3,#ffecea);border:2px solid var(--terracotta);border-radius:var(--radius);padding:1.75rem;margin:1.5rem 0">
+      <div style="display:flex;align-items:flex-start;gap:1rem;flex-wrap:wrap">
+        <div style="font-size:2rem;line-height:1;flex-shrink:0">🇫🇷</div>
+        <div style="flex:1;min-width:220px">
+          <div style="font-weight:700;font-size:1rem;color:var(--ink);margin-bottom:.4rem">Fortuneo — compte bancaire France sans frais</div>
+          <div style="font-size:.9rem;color:var(--muted);margin-bottom:1rem;line-height:1.6">Ouvrir un compte sur <a href="go.php?id=fortuneo" target="_blank" rel="noopener sponsored" style="color:var(--terracotta);font-weight:600">fortuneo.fr</a>, puis saisir le code parrainage manuellement lors de l'inscription. Jusqu'à 250€ de bonus de bienvenue selon l'offre en cours.</div>
+          <div style="display:flex;align-items:center;gap:.75rem;flex-wrap:wrap">
+            <div style="background:#fff;border:2px solid var(--terracotta);border-radius:6px;padding:.5rem 1rem;font-size:1.1rem;font-weight:700;color:var(--terracotta);letter-spacing:2px;font-family:monospace">13036009</div>
+            <button onclick="navigator.clipboard.writeText('13036009');this.textContent='✓ Copié';setTimeout(()=>this.textContent='Copier le code',2000)"
+              style="padding:.5rem 1rem;background:var(--terracotta);color:#fff;border:none;border-radius:6px;font-weight:600;font-size:.85rem;cursor:pointer">
+              Copier le code
+            </button>
+            <a href="go.php?id=fortuneo" target="_blank" rel="noopener sponsored"
+              style="padding:.5rem 1rem;background:var(--ink);color:#fff;border-radius:6px;font-weight:600;font-size:.85rem;text-decoration:none">
+              Aller sur Fortuneo →
+            </a>
+          </div>
+          <div style="font-size:.75rem;color:var(--muted);margin-top:.6rem">Lien affilié — code à saisir manuellement à l'inscription. Offre soumise aux conditions Fortuneo à la date d'ouverture.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================
          FAQ
     ============================= -->
     <h2 id="section-faq">Questions fréquentes</h2>
@@ -445,7 +492,6 @@ include 'header.php';
         <div class="author-links">
           <a href="a-propos-capvietnam.php">À propos →</a>
           <a href="https://www.tiktok.com/@proffrancaisetranger" target="_blank" rel="noopener">TikTok</a>
-          <a href="<?= SITE_YOUTUBE ?>" target="_blank" rel="noopener">YouTube</a>
         </div>
       </div>
     </div>

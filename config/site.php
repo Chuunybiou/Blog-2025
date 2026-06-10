@@ -7,7 +7,6 @@ define('SITE_EMAIL',      'anthonybouilloncontact@gmail.com');
 define('SITE_FORMSPREE',  'https://formspree.io/f/mvzvevak');
 define('SITE_PAYPAL',     'fourre-et-pour-tout@protonmail.com');
 define('SITE_TIKTOK',     'https://www.tiktok.com/@proffrancaisetranger');
-define('SITE_YOUTUBE',    'https://www.youtube.com/@Apprendre-Learn-Hoc-Tieng-Phap/videos');
 define('SITE_YEAR',       '2026');
 define('PROFILE_PHOTO',   'assets/img/profile/anthony-profil.jpg');
 
@@ -22,6 +21,12 @@ define('MAILERLITE_API_KEY', 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0I
 define('AFF_WISE',      'https://wise.com/invite/dic/anthonyrolandb');
 define('AFF_REVOLUT',   'https://revolut.com/referral/?referral-code=anthonfytu!JUN1-26-VR-FR&geo-redirect');
 define('AFF_VIETCOMBANK', 'https://digibank.vietcombank.com.vn/invite/DGAS6ZI5PE');
+define('AFF_FORTUNEO',    'https://www.fortuneo.fr');
+define('AFF_WEALTHSIMPLE', 'https://www.wealthsimple.com/invite/HTBVCA');
+define('AFF_TANGERINE',   'https://www.tangerine.ca/fr/produits/bancaires/compte-cheques?rCode=76919587S1');
+define('AFF_IGRAAL',      'https://fr.igraal.com/parrainage?parrain=AG_60c137463200e&utm_medium=raf&utm_source=refer_friend');
+define('AFF_BUDGETAIR',   'https://www.awin1.com/cread.php?awinmid=63490&awinaffid=2907621');
+define('AFF_AMAZON_EBOOK_EN', 'https://amzn.to/4dZ0a5C');
 define('AFF_AMAZON_G7', 'https://amzn.to/4uhZZZD');
 define('AFF_KOFI',      'https://ko-fi.com/blogcapvietnam');
 define('AFF_BOURSOBANK',       'https://bour.so/p/CjnYYepGGnp');

@@ -5,8 +5,8 @@ $page_canonical   = 'https://www.blog-capvietnam.fr/apprendre-vietnamien-couple'
 $page_og_title    = 'Apprendre le vietnamien en couple : méthodes et ressources';
 $page_og_desc     = 'Meilleures méthodes pour apprendre le vietnamien : Pimsleur, Anki, Duolingo.';
 $page_og_url      = 'https://www.blog-capvietnam.fr/apprendre-vietnamien-couple';
-$page_og_image    = 'https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Apprendre le vietnamien en couple : methodes et realite","datePublished":"2026-02-10","dateModified":"2026-02-10","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Cap Vietnam","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=1200&q=80","description":"Meilleures methodes pour apprendre le vietnamien : Pimsleur, Anki, Duolingo.","timeRequired":"PT6M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/apprendre-vietnamien-couple"}';
+$page_og_image    = 'https://www.blog-capvietnam.fr/assets/img/og-capvietnam.png';
+$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Apprendre le vietnamien en couple : methodes et realite","datePublished":"2026-02-10","dateModified":"2026-02-10","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Cap Vietnam","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://www.blog-capvietnam.fr/assets/img/og-capvietnam.png","description":"Meilleures methodes pour apprendre le vietnamien : Pimsleur, Anki, Duolingo.","timeRequired":"PT6M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/apprendre-vietnamien-couple"}';
 
 $article_color   = 'jade';
 $article_hero_bg = '#1a3a1e';
@@ -63,7 +63,6 @@ include 'header.php';
       <div class="toc-share-label">Partager</div>
       <div class="share-btns">
         <a class="share-btn" onclick="window.open('https://www.facebook.com/sharer.php?u='+encodeURIComponent(location.href))">f</a>
-        <a class="share-btn" onclick="window.open('https://twitter.com/intent/tweet?url='+encodeURIComponent(location.href))">𝕏</a>
         <a class="share-btn" onclick="navigator.clipboard.writeText(location.href);this.textContent='✓';setTimeout(()=>this.textContent='🔗',1500)">🔗</a>
       </div>
     </div>
@@ -72,7 +71,7 @@ include 'header.php';
   <main class="article-content">
     <p><strong>Le vietnamien est réputé pour être l'une des langues les plus difficiles du monde pour les francophones.</strong> Six tons, une écriture romanisée qui cache une phonologie totalement étrangère, et un système de pronoms complexe. Pourtant, pour un Français vivant au Vietnam en couple mixte, c'est l'apprentissage le plus transformateur que tu puisses faire.</p>
 
-    <img class="article-photo" src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=1200&q=80" alt="Apprendre une nouvelle langue" width="1200" height="675" loading="lazy">
+    <img class="article-photo" src="assets/img/595605424_755082234270642_7802260515125357552_n.jpg" alt="Vie quotidienne d'un couple franco-vietnamien à Hanoï" width="800" height="700" loading="lazy" style="width:100%;border-radius:var(--radius);margin:1.5rem 0;object-fit:cover;max-height:400px;">
 
     <h2 id="section-1">Pourquoi c'est difficile — et pourquoi ça vaut le coup</h2>
     <p>Le vietnamien est une langue tonale avec 6 tons (sắc, huyền, hỏi, ngã, nặng, bằng). Le même mot prononcé avec des tons différents donne des significations radicalement différentes. "Ma" peut vouloir dire fantôme, mère, cheval, riz ou joue selon le ton. Pas de conjugaison, pas de genres grammaticaux — mais la phonologie est impitoyable.</p>
@@ -104,6 +103,15 @@ include 'header.php';
       <li><strong>Google Translate mode caméra</strong> : pointe ton téléphone sur un panneau ou un menu et traduction instantanée — très utile au quotidien.</li>
       <li><strong>VDict</strong> : dictionnaire vietnamien-français/anglais de référence, gratuit en ligne.</li>
     </ul>
+
+    <div class="info-box" style="border-left:3px solid var(--jade);">
+      <strong>📕 Mon livre pour apprendre le vietnamien</strong><br>
+      J'ai écrit une méthode basée sur les 1 100 mots les plus fréquents du vietnamien — sans cours magistraux, sans grammaire abstraite. Conçue pour les francophones en couple mixte ou en route pour le Vietnam.
+      <div style="margin-top:1rem;display:flex;gap:0.75rem;flex-wrap:wrap;">
+        <a href="livre-vietnamien.php" style="padding:0.55rem 1.1rem;background:var(--jade);color:#fff;border-radius:5px;text-decoration:none;font-weight:700;font-size:0.88rem;">Voir le livre →</a>
+        <a href="https://www.amazon.fr/dp/B0H1CHWKF8" target="_blank" rel="noopener sponsored" style="padding:0.55rem 1.1rem;background:#ff9900;color:#111;border-radius:5px;text-decoration:none;font-weight:700;font-size:0.88rem;">Acheter sur Amazon →</a>
+      </div>
+    </div>
 
     <h2 id="section-4">Apprendre avec son conjoint : les pièges à éviter</h2>
     <p>Demander à sa conjointe d'être son professeur est tentant — et peut fonctionner si on structure les sessions. Mais attention :</p>
@@ -177,6 +185,14 @@ include 'header.php';
     <div class="faq-item">
       <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Le dialecte de Hanoï diffère-t-il du vietnamien du sud ? <span class="faq-arrow">▼</span></button>
       <div class="faq-answer">Oui, significativement. Le vietnamien du Nord (Hanoï) et du Sud (Hô-Chi-Minh-Ville) ont des différences de prononciation importantes. Si tu vis à Hanoï, apprends le dialecte du Nord — les cours de Pimsleur sont en vietnamien du Nord standard. Les Vietnamiens du sud comprennent le nord et vice-versa.</div>
+    </div>
+
+    <!-- EBOOK ANGLAIS -->
+    <div style="border:1px solid var(--border);border-radius:10px;padding:1.25rem 1.5rem;background:var(--bg-alt);margin:2.5rem 0">
+      <div style="font-size:.85rem;color:var(--muted);margin-bottom:.4rem">📘 Et pour l'anglais ?</div>
+      <strong style="font-size:1rem;color:var(--navy)">Apprendre l'anglais avec la transcription phonétique</strong>
+      <p style="font-size:.9rem;color:var(--muted);margin:.5rem 0 .9rem">Au Vietnam, l'anglais est souvent indispensable : travail international, interactions avec les locaux anglophones, tourisme. J'ai conçu un ebook pour les francophones : chaque mot accompagné de sa transcription phonétique pour prononcer correctement dès le départ — la même logique que pour apprendre les tons du vietnamien.</p>
+      <a href="go.php?id=amazon-ebook-en" target="_blank" rel="noopener sponsored" class="btn btn-primary" style="font-size:.88rem">Voir sur Amazon →</a>
     </div>
 
     <div class="author-box">

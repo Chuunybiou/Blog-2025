@@ -19,6 +19,12 @@ $destinations = [
     'amazon-jiaogulan'   => AFF_AMAZON_JIAOGULAN,
     'amazon-adapter'     => AFF_AMAZON_ADAPTER,
     'vietcombank'        => AFF_VIETCOMBANK,
+    'fortuneo'           => AFF_FORTUNEO,
+    'wealthsimple'       => AFF_WEALTHSIMPLE,
+    'tangerine'          => AFF_TANGERINE,
+    'igraal'             => AFF_IGRAAL,
+    'budgetair'          => AFF_BUDGETAIR,
+    'amazon-ebook-en'    => AFF_AMAZON_EBOOK_EN,
 ];
 
 $id = trim($_GET['id'] ?? '');

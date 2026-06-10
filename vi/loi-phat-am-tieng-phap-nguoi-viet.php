@@ -229,7 +229,6 @@ include '../header.php';
   <div class="vi-art-cta-btns">
     <a class="vi-art-cta-white" href="<?= SITE_TIKTOK ?>" target="_blank" rel="noopener">🎵 @proffrancaisetranger</a>
     <a class="vi-art-cta-outline" href="./">📚 Trang học tiếng Pháp</a>
-    <a class="vi-art-cta-outline" href="<?= SITE_YOUTUBE ?>" target="_blank" rel="noopener">🎬 YouTube</a>
   </div>
 </section>
 

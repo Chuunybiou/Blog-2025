@@ -1,3 +1,4 @@
+<?php include __DIR__ . '/_community-cta.php'; ?>
 <script>
 window.addEventListener('scroll', () => {
   const article = document.querySelector('.article-content');

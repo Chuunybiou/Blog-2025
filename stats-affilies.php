@@ -93,6 +93,12 @@ $labels = [
     'amazon-jiaogulan' => ['label' => 'Jiaogulan (Amazon)',     'emoji' => '🌱'],
     'amazon-adapter'   => ['label' => 'Adaptateur voyage (Amazon)', 'emoji' => '🔌'],
     'vietcombank'      => ['label' => 'Vietcombank (parrainage)',   'emoji' => '🏦'],
+    'fortuneo'         => ['label' => 'Fortuneo (code 13036009)',    'emoji' => '🇫🇷'],
+    'wealthsimple'     => ['label' => 'Wealthsimple Canada',        'emoji' => '🍁'],
+    'tangerine'        => ['label' => 'Tangerine Canada',           'emoji' => '🏦'],
+    'igraal'           => ['label' => 'iGraal cashback',            'emoji' => '💰'],
+    'budgetair'        => ['label' => 'BudgetAir vols',             'emoji' => '✈️'],
+    'amazon-ebook-en'  => ['label' => 'Ebook Anglais Amazon',        'emoji' => '📘'],
     'boursobank'       => ['label' => 'Boursobank',             'emoji' => '🏦'],
     'kofi'             => ['label' => 'Ko-fi',                  'emoji' => '☕'],
 ];

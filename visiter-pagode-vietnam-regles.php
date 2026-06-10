@@ -1,17 +1,18 @@
-<?php
+﻿<?php
 $page_title       = 'Visiter une pagode au Vietnam : tenue, chaussures et comportement à adopter';
-$page_description = 'Chaussures à retirer, pas de jupe, éviter le jaune, aucune démonstration d\'affection — ce que ma femme bouddhiste m\'a appris avant d\'entrer dans les pagodes de Hanoï et de Ninh Binh.';
+$page_description = 'Chaussures à retirer, pas de jupe, couleurs bouddhistes à respecter (jaune et brun), aucune démonstration d\'affection — ce que ma femme bouddhiste m\'a appris avant d\'entrer dans les pagodes de Hanoï et de Ninh Binh.';
 $page_canonical   = 'https://www.blog-capvietnam.fr/visiter-pagode-vietnam-regles';
 $page_og_title    = 'Pagodes au Vietnam : les règles à connaître avant d\'entrer';
-$page_og_desc     = 'Chaussures, tenue, jaune interdit, pas de démonstration d\'affection — ce que ma femme bouddhiste m\'a appris avant de visiter les pagodes de Hanoï et Ninh Binh.';
+$page_og_desc     = 'Chaussures, tenue, couleurs du bouddhisme (jaune et brun), pas de démonstration d\'affection — ce que ma femme bouddhiste m\'a appris avant de visiter les pagodes de Hanoï et Ninh Binh.';
 $page_og_url      = 'https://www.blog-capvietnam.fr/visiter-pagode-vietnam-regles';
-$page_og_image    = 'https://www.blog-capvietnam.fr/assets/img/blog-vietnam.png';
+$page_og_image    = 'https://www.blog-capvietnam.fr/assets/img/596977934_755082304270635_2963209742693028438_n.jpg';
 
 $page_schema = '{
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Visiter une pagode au Vietnam : tenue, chaussures et comportement",
   "description": "Les règles concrètes pour visiter une pagode au Vietnam sans commettre d\'impair : tenue, chaussures, couleurs à éviter et comportement à l\'intérieur.",
+  "image": "https://www.blog-capvietnam.fr/assets/img/596977934_755082304270635_2963209742693028438_n.jpg",
   "datePublished": "2026-06-06",
   "dateModified": "2026-06-06",
   "author": {"@type": "Person", "name": "Anthony Bouillon", "url": "https://www.blog-capvietnam.fr/a-propos-capvietnam"},
@@ -34,17 +35,16 @@ $page_faq = [
    'a' => 'Non. Les pagodes vietnamiennes sont généralement ouvertes aux visiteurs de toutes confessions, à condition de les aborder avec respect. Le bouddhisme vietnamien n\'est pas prosélyte — on ne vous demandera pas vos croyances. Ce qu\'on attend, c\'est un comportement discret et une tenue appropriée.'],
   ['q' => 'Peut-on photographier à l\'intérieur d\'une pagode ?',
    'a' => 'Dans la plupart des pagodes, la photographie est tolérée dans les espaces ouverts et les cours extérieures. En revanche, évitez de photographier les moines, les fidèles en prière, ou les autels de près sans y être invité. En cas de doute, observez ce que font les locaux autour de vous.'],
-  ['q' => 'Le jaune est-il vraiment interdit ?',
-   'a' => 'Non, interdit au sens strict, mais fortement déconseillé — surtout une tenue entièrement jaune. Le jaune et le safran sont les couleurs sacrées des robes des moines et nonnes bouddhistes, symboles de sagesse et de détachement. Un visiteur habillé entièrement en jaune peut involontairement sembler imiter ce statut. Une pièce jaune parmi d\'autres tenues passe généralement inaperçue.'],
+  ['q' => 'Le jaune et le brun sont-ils vraiment à éviter en pagode ?',
+   'a' => 'Pas interdits, mais symboliquement forts. Le jaune (jaune curcuma, jaune doré) et le brun (brun foncé, beige) sont les deux couleurs les plus caractéristiques du bouddhisme — elles symbolisent la sagesse, le détachement et l\'éveil. Ce ne sont pas des couleurs qu\'on porte à la légère dans un lieu de culte. Une tenue entièrement dans ces tons peut sembler imiter le statut monastique, même sans intention. Une pièce jaune ou brune dans une tenue neutre passe généralement inaperçue.'],
   ['q' => 'Et si on oublie de retirer ses chaussures ?',
    'a' => 'C\'est la règle la moins négociable. Dans la quasi-totalité des pagodes, un panneau ou des chaussures rangées à l\'entrée vous le rappellent. Si vous oubliez et entrez avec les chaussures, on vous le fera savoir — poliment, mais sans hésitation. Mieux vaut vérifier avant de franchir le seuil.'],
   ['q' => 'Comment s\'habiller si on prévoit de visiter une pagode ?',
-   'a' => 'L\'idéal : pantalon léger ou jupe longue (sous le genou), haut couvrant les épaules, couleurs neutres. Évitez le jaune, les vêtements très serrés ou transparents. Si vous n\'avez pas prévu, certains sites touristiques prêtent ou vendent des sarongs à l\'entrée — mais ce n\'est pas systématique dans toutes les pagodes.'],
+   'a' => 'L\'idéal : pantalon léger ou jupe longue (sous le genou), haut couvrant les épaules, couleurs neutres. Évitez une tenue entièrement en jaune ou brun (couleurs symboliques du bouddhisme), les vêtements très serrés ou transparents. Si vous n\'avez pas prévu, certains sites touristiques prêtent ou vendent des sarongs à l\'entrée — mais ce n\'est pas systématique dans toutes les pagodes.'],
 ];
 
 $page_extra_head = '
-<!-- BROUILLON — retirer le noindex avant mise en prod -->
-<meta name="robots" content="noindex, nofollow">
+
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://www.blog-capvietnam.fr"},{"@type":"ListItem","position":2,"name":"Voyager au Vietnam","item":"https://www.blog-capvietnam.fr/articles-capvietnam"},{"@type":"ListItem","position":3,"name":"Visiter une pagode au Vietnam"}]}</script>
 ';
 
@@ -62,7 +62,7 @@ include 'header.php';
       <span>Visiter une pagode</span>
     </div>
     <span class="article-badge-hero" style="background:var(--jade);color:#fff">🛕 Voyager au Vietnam</span>
-    <h1>Visiter une pagode au Vietnam : chaussures, tenue, jaune déconseillé — ce que ma femme bouddhiste m'a appris</h1>
+    <h1>Visiter une pagode au Vietnam : chaussures, tenue, couleurs bouddhistes — ce que ma femme bouddhiste m'a appris</h1>
     <div class="article-hero-meta">
       <span>Par <strong>Cap Vietnam</strong></span>
       <span>📅 6 juin 2026</span>
@@ -78,7 +78,7 @@ include 'header.php';
     <ol class="toc-list">
       <li><a href="#section-1">Le contexte bouddhiste</a></li>
       <li><a href="#section-2">La tenue vestimentaire</a></li>
-      <li><a href="#section-3">Le jaune : déconseillé, pourquoi</a></li>
+      <li><a href="#section-3">Jaune et brun : couleurs du bouddhisme</a></li>
       <li><a href="#section-4">Les chaussures</a></li>
       <li><a href="#section-5">Le comportement à l'intérieur</a></li>
       <li><a href="#section-6">Ce que j'ai observé</a></li>
@@ -97,10 +97,12 @@ include 'header.php';
       <strong>📋 Les règles en un coup d'œil :</strong><br>
       ✅ Retirer ses chaussures à l'entrée<br>
       ✅ Tenue couverte : pas de jupe courte, pas de short, épaules couvertes<br>
-      ✅ Éviter les vêtements entièrement jaunes<br>
+      ✅ Éviter une tenue entièrement jaune ou brune (couleurs du bouddhisme)<br>
       ✅ Pas de démonstration d'affection (même tenir la main)<br>
       ✅ Voix basse, comportement discret
     </div>
+
+    <img class="article-photo" src="assets/img/596977934_755082304270635_2963209742693028438_n.jpg" alt="Pagode dorée au Vietnam — visite en couple franco-vietnamien" width="800" height="600" loading="eager" style="width:100%;border-radius:var(--radius);margin:2rem 0;object-fit:cover;max-height:420px;">
 
     <!-- H2 #1 -->
     <h2 id="section-1">Pourquoi ces règles existent : le bouddhisme vietnamien en quelques mots</h2>
@@ -130,15 +132,15 @@ include 'header.php';
     </div>
 
     <!-- H2 #3 -->
-    <h2 id="section-3">Le jaune : pas interdit, mais à éviter</h2>
+    <h2 id="section-3">Le jaune et le brun : les couleurs du bouddhisme</h2>
 
-    <p>Quand ma femme m'a dit d'éviter le jaune, j'ai d'abord pensé à une superstition. En fait, c'est beaucoup plus logique que ça.</p>
+    <p>Ma femme me l'a précisé en vietnamien : <em>Màu vàng và màu nâu là màu của Phật giáo</em> — "le jaune et le brun sont les couleurs du bouddhisme".</p>
 
-    <p>Le jaune — et plus précisément le safran — est <strong>la couleur des robes des moines et nonnes bouddhistes</strong>. Elle symbolise la sagesse, l'éveil et le détachement des biens matériels. Ce n'est pas une couleur qu'on porte à la légère dans ce contexte.</p>
+    <p>Le jaune curcuma et le jaune doré d'un côté, le brun foncé et le beige de l'autre — ce sont les <strong>deux couleurs les plus symboliques et caractéristiques du bouddhisme</strong>. Elles incarnent des valeurs philosophiques et spirituelles profondes : la sagesse, l'éveil, le détachement des biens matériels. Ce sont les couleurs des robes des moines et nonnes bouddhistes.</p>
 
-    <p>Ce n'est pas formellement interdit aux visiteurs. Mais arriver dans une pagode entièrement habillé en jaune peut sembler irrespectueux, comme si vous imitiez un statut qui ne vous appartient pas. Une pièce jaune dans une tenue neutre ne pose généralement pas de problème. Une tenue intégralement jaune, si.</p>
+    <p>Ce n'est pas formellement interdit aux visiteurs de les porter. Mais se présenter dans une pagode entièrement habillé dans ces couleurs peut être mal perçu — comme si vous imitiez un statut monastique qui ne vous appartient pas. Une pièce jaune ou brune dans une tenue neutre passe généralement inaperçue. Une tenue intégralement jaune ou brun monastique, non.</p>
 
-    <p>La règle de ma femme, simple : <em>dans le doute, portez du neutre</em>. Blanc, beige, gris, bleu — aucune de ces couleurs ne pose problème.</p>
+    <p>La règle simple de ma femme : <em>dans le doute, portez des couleurs neutres</em>. Blanc, gris, bleu, vert — aucune de ces couleurs ne crée d'ambiguïté.</p>
 
     <!-- H2 #4 -->
     <h2 id="section-4">Les chaussures : la règle absolue</h2>
@@ -163,6 +165,8 @@ include 'header.php';
     <h3>Les photographies</h3>
     <p>Dans les cours et espaces extérieurs, photographier est généralement accepté. À l'intérieur, devant les autels, en présence de moines ou de fidèles en prière : soyez plus prudent. Observez d'abord. Si personne d'autre ne prend de photos à cet endroit, abstenez-vous.</p>
 
+    <img class="article-photo" src="assets/img/597160990_755082414270624_2141642698403042435_n.jpg" alt="Pagode à Hanoï ou Ninh Binh — intérieur et architecture" width="800" height="600" loading="lazy" style="width:100%;border-radius:var(--radius);margin:2rem 0;object-fit:cover;max-height:420px;">
+
     <!-- H2 #6 -->
     <h2 id="section-6">Ce que j'ai observé à Hanoï et à Ninh Binh</h2>
 
@@ -176,7 +180,7 @@ include 'header.php';
       <strong>📋 En résumé avant votre visite :</strong>
       <ul style="margin:.75rem 0 0;padding-left:1.2rem">
         <li>Tenue couverte : pantalon, jupe longue, épaules couvertes</li>
-        <li>Pas de vêtement entièrement jaune</li>
+        <li>Éviter une tenue entièrement jaune ou brun monastique</li>
         <li>Chaussures retirées à l'entrée des espaces de culte</li>
         <li>Pas de démonstration d'affection</li>
         <li>Voix basse, photographies avec discernement</li>
@@ -208,7 +212,7 @@ include 'header.php';
 
     <!-- CTA NEWSLETTER -->
     <div class="cta-newsletter" style="background:linear-gradient(135deg,#0d2b1f,#1b4a35);margin-top:3rem;">
-      <h3>📥 Un email par mois depuis le Vietnam</h3>
+      <h3>📥 Alertes admin &amp; bons plans du mois</h3>
       <p>Culture, démarches, vie de couple mixte — mes vraies découvertes, sans filtre ni spam.</p>
       <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
         <input type="hidden" name="_subject" value="Newsletter Cap Vietnam — pagodes-vietnam">

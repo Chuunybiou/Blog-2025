@@ -164,7 +164,6 @@ include 'header.php';
       <div class="toc-share-label">Partager</div>
       <div class="share-btns">
         <a class="share-btn" title="Facebook" onclick="window.open('https://www.facebook.com/sharer.php?u='+encodeURIComponent(location.href))">f</a>
-        <a class="share-btn" title="Twitter" onclick="window.open('https://twitter.com/intent/tweet?url='+encodeURIComponent(location.href))">𝕏</a>
         <a class="share-btn" title="LinkedIn" onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url='+encodeURIComponent(location.href))">in</a>
         <a class="share-btn" title="Copier le lien" onclick="navigator.clipboard.writeText(location.href);this.textContent='✓';setTimeout(()=>this.textContent='🔗',1500)">🔗</a>
       </div>
@@ -298,7 +297,6 @@ include 'header.php';
         <p>Français expatrié à Hanoï. Je partage mon parcours d'installation au Vietnam avec ma femme vietnamienne : démarches administratives, vie de couple mixte et travail en ligne.</p>
         <div class="author-links">
           <a href="https://www.tiktok.com/@proffrancaisetranger" target="_blank" rel="noopener">TikTok</a>
-          <a href="https://www.youtube.com/@Apprendre-Learn-Hoc-Tieng-Phap/videos" target="_blank" rel="noopener">YouTube</a>
         </div>
       </div>
     </div>

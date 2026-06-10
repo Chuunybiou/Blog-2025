@@ -144,10 +144,10 @@ include '../header.php';
   <div class="vi-res-row">
     <div class="vi-res-num">2</div>
     <div class="vi-res-info">
-      <h3>YouTube — Bài Học Dài Hơn, Chi Tiết Hơn</h3>
-      <p>Trên kênh YouTube của mình, mình đăng các bài học dài hơn — giải thích chi tiết ngữ pháp, video so sánh phát âm, và series theo chủ đề. Nếu TikTok là "flash card video" thì YouTube là "bài học đầy đủ hơn".</p>
-      <p>Cả hai bổ sung cho nhau rất tốt: dùng TikTok để học hàng ngày nhanh, dùng YouTube khi muốn đi sâu vào một chủ đề.</p>
-      <a href="<?= SITE_YOUTUBE ?>" target="_blank" rel="noopener" class="vi-res-badge vi-badge-main">🎬 Xem YouTube — Miễn phí</a>
+      <h3>Anki — Ứng Dụng Luyện Từ Vựng Hiệu Quả Nhất</h3>
+      <p>Anki là ứng dụng thẻ ghi nhớ (flashcard) dựa trên thuật toán <strong>spaced repetition</strong> — hệ thống nhắc lại từ vựng đúng lúc bạn sắp quên. Đây là công cụ mà hầu hết người học ngôn ngữ chuyên nghiệp đều dùng.</p>
+      <p>Có sẵn bộ thẻ tiếng Pháp miễn phí trên AnkiWeb, hoặc tự tạo từ PDF 500 từ của mình (nguồn số 7). Anki desktop và web hoàn toàn miễn phí — bản Android cũng miễn phí.</p>
+      <span class="vi-res-badge vi-badge-free">Miễn phí (desktop + Android + web)</span>
     </div>
   </div>
 

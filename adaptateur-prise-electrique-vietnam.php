@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 $page_title       = 'Adaptateur prise électrique Vietnam : ce qu\'il faut savoir avant de partir';
 $page_description = 'Au Vietnam, la tension est la même qu\'en France (220 V), mais les prises plates Type A sont très répandues et incompatibles avec les fiches françaises. Quel adaptateur emporter, et comment éviter la prise de tête à l\'arrivée.';
 $page_canonical   = 'https://www.blog-capvietnam.fr/adaptateur-prise-electrique-vietnam';
@@ -45,7 +45,6 @@ $page_faq = [
 ];
 
 $page_extra_head = '
-<meta name="robots" content="noindex, nofollow">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://www.blog-capvietnam.fr"},{"@type":"ListItem","position":2,"name":"Vie pratique","item":"https://www.blog-capvietnam.fr/articles-capvietnam"},{"@type":"ListItem","position":3,"name":"Adaptateur prise électrique Vietnam"}]}</script>
 ';
 
@@ -89,7 +88,6 @@ include 'header.php';
       <div class="toc-share-label">Partager</div>
       <div class="share-btns">
         <a class="share-btn" title="Facebook" onclick="window.open('https://www.facebook.com/sharer.php?u='+encodeURIComponent(location.href))">f</a>
-        <a class="share-btn" title="X / Twitter" onclick="window.open('https://twitter.com/intent/tweet?url='+encodeURIComponent(location.href)+'&text=Prise+%C3%A9lectrique+Vietnam+pour+Fran%C3%A7ais')">𝕏</a>
         <a class="share-btn" title="LinkedIn" onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url='+encodeURIComponent(location.href))">in</a>
         <a class="share-btn" title="Copier le lien" onclick="navigator.clipboard.writeText(location.href);this.textContent='✓';setTimeout(()=>this.textContent='🔗',1500)">🔗</a>
       </div>
@@ -339,7 +337,6 @@ include 'header.php';
         <div class="author-links">
           <a href="a-propos-capvietnam.php">À propos →</a>
           <a href="<?= SITE_TIKTOK ?>" target="_blank" rel="noopener">TikTok</a>
-          <a href="<?= SITE_YOUTUBE ?>" target="_blank" rel="noopener">YouTube</a>
         </div>
       </div>
     </div>

@@ -264,14 +264,6 @@ include '../header.php';
         <span class="vi-res-badge badge-ext">Xem trang → </span>
       </div>
     </a>
-    <a class="vi-res-card" href="<?= SITE_YOUTUBE ?>" target="_blank" rel="noopener">
-      <div class="vi-res-icon">🎬</div>
-      <div class="vi-res-body">
-        <h3>Kênh YouTube</h3>
-        <p>Bài học dài hơn, giải thích chi tiết hơn. Theo dõi kênh YouTube để học tiếng Pháp chuyên sâu hơn.</p>
-        <span class="vi-res-badge badge-ext">YouTube →</span>
-      </div>
-    </a>
     <a class="vi-res-card" href="../guide-cap-vietnam-2026.php">
       <div class="vi-res-icon">📘</div>
       <div class="vi-res-body">
@@ -305,7 +297,6 @@ include '../header.php';
   <div class="vi-cta-btns">
     <a class="vi-cta-white" href="<?= SITE_TIKTOK ?>" target="_blank" rel="noopener">🎵 Theo dõi TikTok</a>
     <a class="vi-cta-outline" href="../500-mots-essentiels-francais-vietnamien.pdf" target="_blank" rel="noopener">📄 Tải PDF 500 từ vựng</a>
-    <a class="vi-cta-outline" href="<?= SITE_YOUTUBE ?>" target="_blank" rel="noopener">🎬 YouTube</a>
   </div>
 </section>
 

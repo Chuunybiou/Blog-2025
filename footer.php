@@ -1,4 +1,4 @@
-
+﻿
 <!-- ═══════ EBOOK BANNER ═══════ -->
 <section style="background:linear-gradient(135deg,#3a1a0a 0%,#2d1a0a 50%,#1c1208 100%);padding:3.5rem 2rem;text-align:center;">
   <div style="max-width:700px;margin:0 auto;">
@@ -30,10 +30,12 @@
     <div class="footer-col">
       <h4><?= ($page_lang ?? 'fr') === 'vi' ? 'Liên kết hữu ích' : 'Liens utiles' ?></h4>
       <a href="<?= $path_prefix ?>a-propos-capvietnam.php">À propos</a>
+      <a href="<?= $path_prefix ?>outils-vivre-vietnam.php">🛠️ Mes outils</a>
       <a href="<?= $path_prefix ?>blog-capvietnam.php#contact">Contact</a>
-      <a href="<?= $path_prefix ?>blog-capvietnam.php#newsletter">Newsletter</a>
+      <a href="<?= $path_prefix ?>blog-capvietnam.php#newsletter">Newsletter mensuelle</a>
       <a href="<?= $path_prefix ?>livre-vietnamien.php" style="color:var(--terracotta-soft);font-weight:600">📕 Apprendre le vietnamien</a>
-      <a href="<?= $path_prefix ?>guide-cap-vietnam-2026.php" style="color:var(--amber-soft);font-weight:600">📘 Guide Cap Vietnam</a>
+      <a href="<?= $path_prefix ?>mes-livres.php" style="color:rgba(250,248,244,0.55)">📚 Tous mes livres</a>
+      <a href="<?= $path_prefix ?>s-expatrier-vietnam-2026-guide-complet.php" style="color:var(--amber-soft);font-weight:600">📘 Guide expatriation 2026</a>
       <hr style="border-color:var(--border);margin:0.8rem 0">
       <a href="https://bonusparrainage.com/revolut" target="_blank" rel="noopener" style="color:var(--amber-soft)">💳 Code parrainage Revolut</a>
       <a href="https://bonusparrainage.com" target="_blank" rel="noopener">🎁 BonusParrainage.com</a>
@@ -42,7 +44,8 @@
     <div class="footer-col">
       <h4><?= ($page_lang ?? 'fr') === 'vi' ? 'Mạng xã hội' : 'Réseaux' ?></h4>
       <a href="<?= SITE_TIKTOK ?>" target="_blank" rel="noopener">TikTok</a>
-      <a href="<?= SITE_YOUTUBE ?>" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://www.facebook.com/groups/vivreauvietnamcouplefrancovietnamiencap/" target="_blank" rel="noopener">💬 Groupe Facebook</a>
+      <a href="https://discord.gg/MdDVNb7QZz" target="_blank" rel="noopener">🎮 Discord expats</a>
       <a href="<?= $path_prefix ?>go.php?id=kofi" target="_blank" rel="noopener" style="color:var(--amber-soft);font-weight:600">☕ Soutenir le blog</a>
     </div>
   </div>

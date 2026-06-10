@@ -121,6 +121,7 @@ $page_extra_css = '
   max-width: 520px;
   margin: 0 auto 2.5rem;
 }
+.hero-ctas { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
 .hero-cta {
   display: inline-flex;
   align-items: center;
@@ -135,6 +136,12 @@ $page_extra_css = '
   transition: background 0.25s, transform 0.2s;
 }
 .hero-cta:hover { background: var(--terracotta-soft); transform: translateY(-2px); }
+.hero-cta--ghost {
+  background: transparent;
+  border: 2px solid rgba(250,248,244,0.3);
+  color: var(--cream);
+}
+.hero-cta--ghost:hover { background: rgba(250,248,244,0.08); border-color: rgba(250,248,244,0.55); }
 .hero-scroll {
   position: absolute;
   z-index: 3;
@@ -292,30 +299,40 @@ include 'header.php';
 
 <!-- ═══════ HERO ═══════ -->
 <header class="hero" id="home">
-  <img class="hero-bg-img" src="https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=1600&q=80" width="1600" height="900" alt="Rue animée de Hanoï" loading="eager">
+  <img class="hero-bg-img" src="assets/img/596295808_755082580937274_5977220999229795732_n.jpg" width="1600" height="900" alt="Lac de l'Ouest (Hồ Tây) à Hanoï" loading="eager">
   <div class="hero-grid"></div>
   <div class="hero-content">
-    <div class="hero-tag">Couple franco-vietnamien</div>
-    <h1>Le blog du couple<br><em>franco-vietnamien</em></h1>
-    <p class="hero-desc">Mariage, démarches, argent et vie quotidienne entre la France et le Vietnam — par un Français en couple avec une Vietnamienne.</p>
-    <a href="#articles" class="hero-cta">Lire les articles →</a>
+    <div class="hero-tag">Couple franco-vietnamien · Expatriation Vietnam</div>
+    <h1>Le couple franco-vietnamien<br><em>de l'intérieur</em></h1>
+    <p class="hero-desc">Visa, mariage, argent, vie à Hanoï — par quelqu'un qui le vit vraiment avec sa femme vietnamienne.</p>
+    <div class="hero-ctas">
+      <a href="s-expatrier-vietnam-2026-guide-complet.php" class="hero-cta">Guide complet →</a>
+      <a href="articles-capvietnam.php?cat=couple" class="hero-cta hero-cta--ghost">Couple mixte →</a>
+    </div>
   </div>
   <div class="hero-scroll"></div>
 </header>
 
+<!-- ═══════ INTRO SEO ═══════ -->
+<section style="background:var(--warm-bg);padding:2.5rem 2rem;text-align:center;border-bottom:1px solid var(--border);">
+  <p style="max-width:720px;margin:0 auto;color:var(--muted);font-size:1.02rem;line-height:1.8;">
+    Ce blog s'adresse aux Français en couple avec une Vietnamienne, et à ceux qui préparent leur installation à Hanoï ou Hô-Chi-Minh-Ville. Ici, pas de contenu touristique : visa, résidence, mariage mixte, gestion de l'argent à l'international, fiscalité expat, vie quotidienne. Du concret, vérifié, mis à jour.
+  </p>
+</section>
+
 <!-- ═══════ CATEGORIES ═══════ -->
 <section class="section" id="categories">
   <div class="section-label">Explorer</div>
-  <h2 class="section-title">Quatre thématiques, une expérience commune</h2>
-  <p class="section-desc">Tout ce qu'on a appris sur le couple franco-vietnamien, les démarches, l'argent et la vie au Vietnam — classé pour que tu trouves ce dont tu as besoin.</p>
+  <h2 class="section-title">Par quoi tu commences ?</h2>
+  <p class="section-desc">Quatre thématiques qui couvrent l'expatriation franco-vietnamienne de A à Z — choisis celle qui correspond à ta situation.</p>
 
   <div class="categories-grid">
     <a class="cat-card" href="articles-capvietnam.php?cat=couple">
       <div class="cat-banner cat-banner-couple"><div class="cat-icon">💕</div></div>
       <div class="cat-body">
-        <div class="cat-tag cat-tag-couple">Catégorie 01</div>
+        <div class="cat-tag cat-tag-couple">Couple mixte</div>
         <h3>Couple franco-vietnamien</h3>
-        <p>Mariage mixte, différences culturelles, belle-famille, argent du couple et vie à deux entre la France et le Vietnam.</p>
+        <p>Comment on gère les différences culturelles, la belle-famille, l'argent et la distance — vécu de l'intérieur, pas depuis un article de magazine.</p>
         <div class="cat-count">→ Voir les articles</div>
       </div>
     </a>
@@ -323,19 +340,19 @@ include 'header.php';
     <a class="cat-card" href="articles-capvietnam.php?cat=admin">
       <div class="cat-banner cat-banner-admin"><div class="cat-icon">📋</div></div>
       <div class="cat-body">
-        <div class="cat-tag cat-tag-admin">Catégorie 02</div>
+        <div class="cat-tag cat-tag-admin">Démarches</div>
         <h3>Démarches &amp; installation</h3>
-        <p>Visa, mariage civil, carte de résidence, banque, assurance santé… Toutes les étapes pour s'installer légalement au Vietnam.</p>
+        <p>Visa, mariage civil, carte de résidence, banque — toutes les étapes expliquées clairement, sans jargon, par quelqu'un qui les a faites.</p>
         <div class="cat-count">→ Voir les articles</div>
       </div>
     </a>
 
     <a class="cat-card" href="articles-capvietnam.php?cat=argent">
-      <div class="cat-banner cat-banner-argent"><div class="cat-icon">💻</div></div>
+      <div class="cat-banner cat-banner-argent"><div class="cat-icon">💰</div></div>
       <div class="cat-body">
-        <div class="cat-tag cat-tag-argent">Catégorie 03</div>
+        <div class="cat-tag cat-tag-argent">Argent</div>
         <h3>Argent &amp; travail à distance</h3>
-        <p>Transférer de l'argent, gérer ses comptes entre deux pays, gagner sa vie en ligne et comprendre la fiscalité expat.</p>
+        <p>Deux pays, deux monnaies, deux systèmes fiscaux. Comment gérer son argent entre la France et le Vietnam sans se faire avoir par les frais.</p>
         <div class="cat-count">→ Voir les articles</div>
       </div>
     </a>
@@ -343,12 +360,24 @@ include 'header.php';
     <a class="cat-card" href="articles-capvietnam.php?cat=voyager">
       <div class="cat-banner cat-banner-voyager"><div class="cat-icon">✈️</div></div>
       <div class="cat-body">
-        <div class="cat-tag cat-tag-voyager">Catégorie 04</div>
+        <div class="cat-tag cat-tag-voyager">Vie pratique</div>
         <h3>Vie pratique au Vietnam</h3>
-        <p>Logement, transports, santé, Tết et adresses locales à Hanoï — la vie quotidienne de l'intérieur.</p>
+        <p>L'appartement, le scooter, la SIM locale, le Tết en famille — ce que les blogs touristiques ne montrent pas.</p>
         <div class="cat-count">→ Voir les articles</div>
       </div>
     </a>
+  </div>
+</section>
+
+<!-- ═══════ GUIDE CTA ═══════ -->
+<section style="background:linear-gradient(135deg,#0d2b1f 0%,#1b4a35 100%);padding:3rem 2rem;">
+  <div style="max-width:760px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap;">
+    <div>
+      <span style="display:inline-block;font-size:0.65rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;padding:4px 12px;border-radius:3px;background:rgba(27,107,82,0.35);color:#6ee7b7;margin-bottom:0.75rem;">📘 Guide complet</span>
+      <h2 style="font-family:'DM Serif Display',serif;font-size:clamp(1.4rem,3vw,2rem);color:#faf8f4;line-height:1.25;margin:0 0 0.5rem;">Nouveau au Vietnam ? Commence ici.</h2>
+      <p style="color:rgba(250,248,244,0.6);font-size:0.95rem;margin:0;">Visa, logement, banques, santé, fiscalité, coût de la vie — tout en un seul guide. Chiffres réels, rien d'inventé.</p>
+    </div>
+    <a href="s-expatrier-vietnam-2026-guide-complet.php" style="flex-shrink:0;display:inline-flex;align-items:center;gap:0.5rem;padding:0.9rem 1.8rem;background:#4db890;color:#0d2b1f;border-radius:5px;font-weight:700;font-size:0.95rem;text-decoration:none;white-space:nowrap;">Lire le guide →</a>
   </div>
 </section>
 
@@ -360,11 +389,26 @@ include 'header.php';
     <p class="section-desc">Les derniers articles pour préparer et réussir ton expatriation au Vietnam.</p>
 
     <div class="articles-grid">
-<?php foreach ($_art_latest as $_a):
+<?php
+$_cat_gradients = [
+  'admin'   => 'linear-gradient(135deg,rgba(191,74,42,0.18) 0%,rgba(140,40,10,0.10) 100%)',
+  'couple'  => 'linear-gradient(135deg,rgba(27,107,82,0.18) 0%,rgba(8,60,40,0.10) 100%)',
+  'argent'  => 'linear-gradient(135deg,rgba(184,134,11,0.18) 0%,rgba(120,85,0,0.10) 100%)',
+  'voyager' => 'linear-gradient(135deg,rgba(26,95,138,0.18) 0%,rgba(10,50,90,0.10) 100%)',
+];
+foreach ($_art_latest as $_a):
   $cat = htmlspecialchars($_a['category']);
+  $_fallback_bg = $_cat_gradients[$_a['category']] ?? 'linear-gradient(135deg,rgba(100,100,100,0.1),rgba(50,50,50,0.05))';
 ?>
       <article class="article-card">
+        <?php if (!empty($_a['image'])): ?>
         <img class="article-thumb" src="<?= htmlspecialchars($_a['image']) ?>" width="600" height="190" alt="<?= htmlspecialchars($_a['imageAlt']) ?>" loading="lazy" decoding="async">
+        <?php else: ?>
+        <div class="article-thumb" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.6rem;padding:1.5rem;background:<?= $_fallback_bg ?>;text-align:center;">
+          <span style="font-size:2.4rem;line-height:1;"><?= $_a['emoji'] ?? '📄' ?></span>
+          <span style="font-size:0.78rem;font-weight:600;color:var(--ink-muted);line-height:1.3;max-width:180px;"><?= htmlspecialchars(mb_substr($_a['title'], 0, 55)) ?>…</span>
+        </div>
+        <?php endif; ?>
         <div class="article-top">
           <div class="article-meta">
             <span class="article-badge badge-<?= $cat ?>"><?= htmlspecialchars($_a['categoryLabel']) ?></span>
@@ -387,7 +431,7 @@ include 'header.php';
 <section class="section" id="about">
   <div class="about-grid">
     <div class="about-visual">
-      <img src="https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=800&q=80" alt="Rue de Hanoï, Vietnam" loading="lazy">
+      <img src="assets/img/595605424_755082234270642_7802260515125357552_n.jpg" alt="Anthony et sa femme vietnamienne à Hanoï" loading="lazy">
     </div>
     <div class="about-text">
       <div class="section-label">À propos</div>
@@ -395,9 +439,9 @@ include 'header.php';
       <p>Je suis Anthony, Français en couple avec une Vietnamienne. Je partage ma vie entre la France et le Vietnam. Ce blog est le journal de ce qu'on a appris, raté, payé, compris.</p>
       <p>Quand j'ai commencé les démarches pour mon couple, j'ai cherché des blogs sérieux en français sur le sujet. Beaucoup de blogs "expat au Vietnam" en mode touriste, presque rien sur la réalité d'un couple mixte franco-vietnamien. J'écris ce que j'aurais voulu lire avant de me lancer.</p>
       <div class="about-stats">
-        <div><div class="stat-num">Hanoï</div><div class="stat-label">Ville d'adoption</div></div>
-        <div><div class="stat-num">2026</div><div class="stat-label">Marié au Vietnam</div></div>
-        <div><div class="stat-num">4</div><div class="stat-label">Thématiques</div></div>
+        <div><div class="stat-num">35+</div><div class="stat-label">Articles publiés</div></div>
+        <div><div class="stat-num">Juin 2026</div><div class="stat-label">Dernière mise à jour</div></div>
+        <div><a href="https://www.facebook.com/groups/vivreauvietnamcouplefrancovietnamiencap/" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;"><div class="stat-num" style="color:var(--jade);">Communauté</div><div class="stat-label">Facebook · Discord</div></a></div>
       </div>
     </div>
   </div>
@@ -405,8 +449,8 @@ include 'header.php';
 
 <!-- ═══════ NEWSLETTER ═══════ -->
 <section class="newsletter-section" id="newsletter">
-  <h2>Reçois les nouveaux articles</h2>
-  <p>Un email par mois, pas de spam. Désabonnement en un clic.</p>
+  <h2>La Newsletter Mensuelle</h2>
+  <p>Alertes administratives et bons plans du mois — démarches, finances, vie pratique au Vietnam. Un email par mois. Pas de spam. Désabonnement en un clic.</p>
   <form class="newsletter-form" action="<?= SITE_FORMSPREE ?>" method="POST">
     <input type="email" name="email" placeholder="Ton adresse email" required>
     <button type="submit">S'inscrire</button>
@@ -415,67 +459,16 @@ include 'header.php';
 </section>
 
 <!-- ═══════ CONTACT ═══════ -->
-<section class="section" id="contact">
-  <div class="contact-grid">
-    <div class="contact-info">
-      <div class="section-label">Contact</div>
-      <h2>Une question ?<br>Écris-moi.</h2>
-      <p>Que ce soit pour une collaboration, une question sur l'expatriation ou simplement dire bonjour — je réponds à tous les messages.</p>
-      <div class="contact-item">
-        <div class="contact-item-icon">✉️</div>
-        <div class="contact-item-text">
-          <strong>Email</strong>
-          <span><?= SITE_EMAIL ?></span>
-        </div>
-      </div>
-      <div class="contact-item">
-        <div class="contact-item-icon">📍</div>
-        <div class="contact-item-text">
-          <strong>Localisation</strong>
-          <span>Hanoï, Vietnam</span>
-        </div>
-      </div>
-      <div class="contact-item">
-        <div class="contact-item-icon">📱</div>
-        <div class="contact-item-text">
-          <strong>Réseaux sociaux</strong>
-          <span>TikTok · YouTube</span>
-        </div>
-      </div>
-    </div>
-
-    <form class="contact-form" action="<?= SITE_FORMSPREE ?>" method="POST">
-      <input type="hidden" name="_subject" value="Nouveau message depuis Cap Vietnam">
-      <div class="form-row">
-        <div class="form-group">
-          <label for="nom">Nom</label>
-          <input type="text" id="nom" name="nom" required>
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-      </div>
-      <div class="form-group">
-        <label for="sujet">Sujet</label>
-        <select id="sujet" name="sujet">
-          <option value="question">Question sur l'expatriation</option>
-          <option value="collab">Collaboration / Partenariat</option>
-          <option value="temoignage">Partager mon témoignage</option>
-          <option value="autre">Autre</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" placeholder="Écris ton message ici..." required></textarea>
-      </div>
-      <label class="form-consent">
-        <input type="checkbox" name="consent" required>
-        <span>J'accepte que mes données soient utilisées pour répondre à ma demande conformément à la <a href="confidentialite-capvietnam.php" onclick="openModal('privacy');return false;">politique de confidentialité</a>. Aucune donnée ne sera transmise à des tiers.</span>
-      </label>
-      <button type="submit" class="form-submit">Envoyer le message</button>
-    </form>
+<section class="section" id="contact" style="text-align:center;padding-top:3rem;padding-bottom:3rem;">
+  <div class="section-label">Contact</div>
+  <h2 style="font-family:'DM Serif Display',serif;font-size:2rem;margin-bottom:0.75rem;">Une question ?</h2>
+  <p style="color:var(--muted);max-width:480px;margin:0 auto 2rem;line-height:1.7;">Rejoins la communauté pour discuter avec d'autres expats, ou écris-moi directement.</p>
+  <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1.5rem;">
+    <a href="https://www.facebook.com/groups/vivreauvietnamcouplefrancovietnamiencap/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.8rem 1.5rem;background:#1877f2;color:#fff;border-radius:5px;font-weight:600;text-decoration:none;font-size:0.9rem;">💬 Groupe Facebook</a>
+    <a href="https://discord.gg/MdDVNb7QZz" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.8rem 1.5rem;background:#5865f2;color:#fff;border-radius:5px;font-weight:600;text-decoration:none;font-size:0.9rem;">🎮 Discord expats</a>
+    <a href="contact-capvietnam.php" style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.8rem 1.5rem;background:var(--warm-bg);color:var(--ink);border:1px solid var(--border);border-radius:5px;font-weight:600;text-decoration:none;font-size:0.9rem;">✉️ Formulaire de contact</a>
   </div>
+  <p style="color:var(--muted);font-size:0.85rem;"><?= SITE_EMAIL ?></p>
 </section>
 
 <?php include 'lead-magnet.php'; ?>

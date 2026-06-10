@@ -740,8 +740,29 @@ include __DIR__ . '/header.php';
 
     <div class="faq-item">
       <button class="faq-question" onclick="toggleFaq(this)">Comment puis-je vous contacter avant l'achat ?</button>
-      <div class="faq-answer">Page <a href="<?= $path_prefix ?>blog-capvietnam.php#contact">Contact</a> du blog. Je réponds à tous les messages, généralement sous 48h. N'hésitez pas si vous voulez vous assurer que le livre correspond bien à votre situation.</div>
+      <div class="faq-answer">Page <a href="<?= $path_prefix ?>contact-capvietnam.php">Contact</a> du blog. Je réponds à tous les messages, généralement sous 48h. N'hésitez pas si vous voulez vous assurer que le livre correspond bien à votre situation.</div>
     </div>
+  </div>
+</section>
+
+<!-- ═══════ AVIS LECTEUR ═══════ -->
+<section style="background:var(--warm-bg);padding:4rem 2rem;text-align:center;">
+  <div style="max-width:640px;margin:0 auto;">
+    <div style="font-size:0.65rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;color:var(--muted);margin-bottom:1.5rem;">⭐ Avis vérifié Amazon</div>
+    <div style="background:var(--white);border-radius:var(--radius);padding:2rem 2.5rem;box-shadow:var(--shadow-sm);text-align:left;position:relative;">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem;flex-wrap:wrap;gap:0.5rem;">
+        <div>
+          <div style="color:#FF9900;font-size:1.1rem;letter-spacing:2px;margin-bottom:0.15rem;">★★★★★</div>
+          <strong style="font-size:1rem;">super produit</strong>
+        </div>
+        <div style="text-align:right;font-size:0.8rem;color:var(--muted);">
+          <div>John — France</div>
+          <div>23 mai 2026 · Achat vérifié · Broché</div>
+        </div>
+      </div>
+      <p style="color:var(--ink-muted);line-height:1.75;font-size:0.97rem;margin:0;">"Franchement surpris par la qualité du livre. J'avais essayé plusieurs méthodes avant, mais souvent c'était soit trop scolaire, soit impossible à suivre quand on débute vraiment. Là, c'est beaucoup plus fluide et motivant."</p>
+    </div>
+    <a href="https://www.amazon.fr/dp/B0H1CHWKF8#customerReviews" target="_blank" rel="noopener sponsored" style="display:inline-block;margin-top:1.25rem;font-size:0.85rem;color:var(--muted);text-decoration:underline;">Voir tous les avis sur Amazon →</a>
   </div>
 </section>
 

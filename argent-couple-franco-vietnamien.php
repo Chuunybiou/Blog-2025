@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 $page_title       = 'Argent et couple franco-vietnamien : ce qu\'on ne dit pas assez';
 $page_description = 'Transparence financière, soutien à la famille, qui paie quoi… Comment on gère l\'argent dans notre couple franco-vietnamien. Mon expérience honnête, sans généraliser.';
 $page_canonical   = 'https://www.blog-capvietnam.fr/argent-couple-franco-vietnamien';
@@ -64,7 +64,6 @@ include 'header.php';
       <div class="toc-share-label">Partager</div>
       <div class="share-btns">
         <a class="share-btn" onclick="window.open('https://www.facebook.com/sharer.php?u='+encodeURIComponent(location.href))">f</a>
-        <a class="share-btn" onclick="window.open('https://twitter.com/intent/tweet?url='+encodeURIComponent(location.href))">𝕏</a>
         <a class="share-btn" onclick="navigator.clipboard.writeText(location.href);this.textContent='✓';setTimeout(()=>this.textContent='🔗',1500)">🔗</a>
       </div>
     </div>

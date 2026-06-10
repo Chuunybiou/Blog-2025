@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 $page_title       = 'Compte bancaire au Canada depuis l\'Europe : guide Wealthsimple 2026';
 $page_description = 'Comment ouvrir un compte bancaire canadien depuis la France ou l\'Europe avec Wealthsimple ? CELI, compte chèques, investissement : guide complet pour les expatriés.';
 $page_canonical   = 'https://www.blog-capvietnam.fr/compte-bancaire-canada-europe-wealthsimple';
@@ -61,13 +61,13 @@ include 'header.php';
       <li><a href="#section-5">CELI, REER : priorités</a></li>
       <li><a href="#section-6">Gérer CAD ↔ EUR</a></li>
       <li><a href="#section-7">Erreurs à éviter</a></li>
+      <li><a href="#section-tangerine">Tangerine en complément</a></li>
       <li><a href="#section-faq">Questions fréquentes</a></li>
     </ol>
     <div class="toc-share">
       <div class="toc-share-label">Partager</div>
       <div class="share-btns">
         <a class="share-btn" onclick="window.open('https://www.facebook.com/sharer.php?u='+encodeURIComponent(location.href))">f</a>
-        <a class="share-btn" onclick="window.open('https://twitter.com/intent/tweet?url='+encodeURIComponent(location.href))">𝕏</a>
         <a class="share-btn" onclick="navigator.clipboard.writeText(location.href);this.textContent='✓';setTimeout(()=>this.textContent='🔗',1500)">🔗</a>
       </div>
     </div>
@@ -263,7 +263,7 @@ include 'header.php';
       <div class="aff-cta__body">
         <div class="aff-cta__title">Wise — virements EUR/CAD au taux réel</div>
         <div class="aff-cta__text">Pour alimenter votre compte Wealthsimple depuis la France : Wise permet des virements EUR → CAD avec le taux de change réel. Frais affichés avant confirmation, délai 1–2 jours ouvrés.</div>
-        <a href="https://bonusparrainage.com/wise" target="_blank" rel="noopener" class="aff-cta__btn">Ouvrir un compte Wise →</a>
+        <a href="go.php?id=wise" target="_blank" rel="noopener sponsored" class="aff-cta__btn">Ouvrir un compte Wise →</a>
         <p class="aff-cta__note">Lien affilié — sans surcoût pour vous.</p>
       </div>
     </div>
@@ -291,6 +291,22 @@ include 'header.php';
 
     <h3>Confondre Wealthsimple Cash et un compte bancaire classique</h3>
     <p>Wealthsimple Cash est un excellent compte chèques à intérêt élevé, mais il ne propose pas tout : pas de chéquier, pas de crédit, pas de découvert autorisé. Pour les besoins bancaires plus complexes (prêt hypothécaire, ligne de crédit), une grande banque canadienne reste nécessaire en parallèle.</p>
+
+    <h2 id="section-tangerine">Complément : Tangerine pour les besoins bancaires du quotidien</h2>
+
+    <p>Wealthsimple couvre l'investissement et l'épargne à haut rendement. Mais pour les besoins bancaires classiques — virements automatiques, chèques, carte de débit liée à un compte courant traditionnel — <strong>Tangerine</strong> est la référence des Franco-Canadiens. C'est la banque en ligne du groupe Scotiabank, sans frais mensuels, avec une interface disponible en français.</p>
+
+    <p>Les deux se complètent bien : Tangerine pour le compte courant du quotidien, Wealthsimple pour l'investissement et l'épargne.</p>
+
+    <div class="aff-cta aff-cta--amber" style="background:linear-gradient(135deg,#fff8ec,#fff3d6);border:2px solid var(--amber)">
+      <div class="aff-cta__icon">🏦</div>
+      <div class="aff-cta__body">
+        <div class="aff-cta__title" style="color:var(--ink)">Tangerine — compte bancaire gratuit, en français, sans frais</div>
+        <div class="aff-cta__text" style="color:var(--muted)">Compte chèques, compte épargne (intérêts promotionnels à l'ouverture), carte Mastercard. Pas de frais mensuels. Code parrainage <strong>76919587S1</strong> : bonus de bienvenue sur dépôt qualifiant.</div>
+        <a href="https://www.tangerine.ca/fr/produits/bancaires/compte-cheques?rCode=76919587S1" target="_blank" rel="noopener sponsored" class="aff-cta__btn" style="background:var(--amber);color:var(--ink)">Ouvrir un compte Tangerine →</a>
+        <p class="aff-cta__note">Lien affilié — code 76919587S1. Offre soumise aux conditions de Tangerine à la date d'ouverture.</p>
+      </div>
+    </div>
 
     <h2 id="section-faq">Questions fréquentes</h2>
     <div class="faq-item">

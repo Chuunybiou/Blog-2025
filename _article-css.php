@@ -159,5 +159,15 @@ textarea.comment-input{min-height:120px;resize:vertical}
 .aff-cta__btn:hover{opacity:0.88}
 .aff-cta__note{font-size:0.75rem;color:var(--muted);margin-top:0.6rem;font-style:italic}
 @media(max-width:640px){.aff-cta{flex-direction:column}.aff-cta__icon{font-size:1.6rem}}
+.community-cta{background:linear-gradient(135deg,#1a1f3a 0%,#1e2a1a 100%);border-radius:var(--radius);padding:2rem 2.5rem;margin:3rem 0;color:var(--cream)}
+.community-cta h3{font-family:\"DM Serif Display\",serif;font-size:1.3rem;margin-bottom:0.4rem;color:var(--cream)}
+.community-cta>p{color:rgba(250,248,244,0.55);font-size:0.95rem;margin-bottom:1.5rem}
+.community-cta-btns{display:flex;gap:1rem;flex-wrap:wrap}
+.community-btn{display:inline-flex;align-items:center;gap:0.6rem;padding:0.7rem 1.4rem;border-radius:6px;font-weight:600;font-size:0.9rem;text-decoration:none;transition:opacity 0.2s,transform 0.2s}
+.community-btn:hover{opacity:0.88;transform:translateY(-1px)}
+.community-btn--fb{background:#1877f2;color:#fff}
+.community-btn--discord{background:#5865f2;color:#fff}
+.community-btn svg{flex-shrink:0}
+@media(max-width:600px){.community-cta-btns{flex-direction:column}}
 ";
 ?>

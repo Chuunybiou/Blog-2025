@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 // Raccourcis pour les noms de fichiers images (éviter la répétition des longs hashs)
 define('IMG_TEA_DIR', 'assets/img/recette-tea/');
 $img_hero      = 'assets/img/capvietnam-tea.jpg';
@@ -19,8 +19,9 @@ $page_schema = '{
   "@context": "https://schema.org",
   "@type": "Recipe",
   "name": "Thé vietnamien aux dattes rouges, réglisse et goji noir",
+  "image": ["https://www.blog-capvietnam.fr/assets/img/capvietnam-tea.jpg","https://www.blog-capvietnam.fr/assets/img/capvietnam-tea-2.jpg","https://www.blog-capvietnam.fr/assets/img/capvietnam-tea-3.jpg"],
   "description": "Thé santé traditionnel vietnamien préparé avec des dattes rouges séchées, de la réglisse, des gojis noirs et du jiaogulan. Couleur jaune dorée, goût naturellement sucré.",
-  "recipeYield": "500 ml",
+  "recipeYield": "3 à 4 tasses",
   "prepTime": "PT5M",
   "cookTime": "PT30M",
   "totalTime": "PT40M",
@@ -64,8 +65,7 @@ $page_faq = [
 ];
 
 $page_extra_head = '
-<!-- BROUILLON — retirer avant mise en prod -->
-<meta name="robots" content="noindex, nofollow">
+
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://www.blog-capvietnam.fr"},{"@type":"ListItem","position":2,"name":"Voyager au Vietnam","item":"https://www.blog-capvietnam.fr/articles-capvietnam"},{"@type":"ListItem","position":3,"name":"Thé vietnamien dattes goji réglisse"}]}</script>
 <style>
 .recipe-card{background:var(--white);border:2px solid var(--amber);border-radius:var(--radius);padding:2rem;margin:2.5rem 0;box-shadow:var(--shadow-sm)}
@@ -126,7 +126,6 @@ include 'header.php';
       <div class="toc-share-label">Partager</div>
       <div class="share-btns">
         <a class="share-btn" title="Facebook" onclick="window.open('https://www.facebook.com/sharer.php?u='+encodeURIComponent(location.href))">f</a>
-        <a class="share-btn" title="X / Twitter" onclick="window.open('https://twitter.com/intent/tweet?url='+encodeURIComponent(location.href)+'&text=Th%C3%A9+vietnamien+dattes+goji+r%C3%A9glisse')">𝕏</a>
         <a class="share-btn" title="LinkedIn" onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url='+encodeURIComponent(location.href))">in</a>
         <a class="share-btn" title="Copier le lien" onclick="navigator.clipboard.writeText(location.href);this.textContent='✓';setTimeout(()=>this.textContent='🔗',1500)">🔗</a>
       </div>
@@ -375,7 +374,7 @@ include 'header.php';
 
     <!-- CTA NEWSLETTER -->
     <div class="cta-newsletter" style="background:linear-gradient(135deg,#3d2e00,#5a4400);margin-top:3rem;">
-      <h3>📥 Un email par mois depuis le Vietnam</h3>
+      <h3>📥 Alertes admin &amp; bons plans du mois</h3>
       <p>Recettes, démarches, vie de couple mixte — mes vraies découvertes, sans filtre ni spam.</p>
       <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
         <input type="hidden" name="_subject" value="Newsletter Cap Vietnam — the-sante-vietnamien">
@@ -396,7 +395,6 @@ include 'header.php';
         <div class="author-links">
           <a href="a-propos-capvietnam.php">À propos →</a>
           <a href="<?= SITE_TIKTOK ?>" target="_blank" rel="noopener">TikTok</a>
-          <a href="<?= SITE_YOUTUBE ?>" target="_blank" rel="noopener">YouTube</a>
         </div>
       </div>
     </div>

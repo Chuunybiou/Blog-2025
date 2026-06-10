@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 $page_title       = 'Compte joint franco-vietnamien : pourquoi c\'est presque impossible (et ma stratégie multi-comptes 2026)';
 $page_description = 'Aucune banque française n\'accepte un vrai compte joint avec une conjointe vietnamienne non-résidente. Après 2 ans de tests (Boursorama, Fortuneo, Wealthsimple, Wise, Revolut, Vietcombank), voici ma stratégie multi-comptes qui fonctionne en 2026.';
 $page_canonical   = 'https://www.blog-capvietnam.fr/compte-joint-franco-vietnamien';
@@ -64,7 +64,6 @@ include 'header.php';
       <div class="toc-share-label">Partager</div>
       <div class="share-btns">
         <a class="share-btn" onclick="window.open('https://www.facebook.com/sharer.php?u='+encodeURIComponent(location.href))">f</a>
-        <a class="share-btn" onclick="window.open('https://twitter.com/intent/tweet?url='+encodeURIComponent(location.href))">𝕏</a>
         <a class="share-btn" onclick="navigator.clipboard.writeText(location.href);this.textContent='✓';setTimeout(()=>this.textContent='🔗',1500)">🔗</a>
       </div>
     </div>

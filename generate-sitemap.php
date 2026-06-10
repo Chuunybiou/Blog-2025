@@ -52,6 +52,11 @@ $pages = [
   ['cafes-coworkings-hanoi',                   '2026-02-12', 'monthly', '0.6'],
   ['creer-blog-expat-rentable',                '2026-01-20', 'monthly', '0.7'],
 
+  // Argent & Travail
+  ['igraal-cashback-expat-france',             '2026-06-06', 'monthly', '0.7'],
+  ['organiser-finances-expat-france-vietnam',  '2026-06-06', 'monthly', '0.8'],
+  ['fortuneo-expat-compte-france',             '2026-06-06', 'monthly', '0.8'],
+
   // Couple / Culture
   ['franchise-vietnamiens-physique-harmonie',  '2026-06-06', 'monthly', '0.7'],
   ['visiter-pagode-vietnam-regles',            '2026-06-06', 'monthly', '0.7'],

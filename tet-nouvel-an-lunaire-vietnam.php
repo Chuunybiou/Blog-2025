@@ -5,8 +5,8 @@ $page_canonical   = 'https://www.blog-capvietnam.fr/tet-nouvel-an-lunaire-vietna
 $page_og_title    = 'Le Tết vietnamien : traditions, signification et guide pour les étrangers';
 $page_og_desc     = 'Traditions du Tết au Vietnam, enveloppes rouges li xi et repas de famille.';
 $page_og_url      = 'https://www.blog-capvietnam.fr/tet-nouvel-an-lunaire-vietnam';
-$page_og_image    = 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Le Tet vecu de l interieur avec une famille vietnamienne","datePublished":"2026-02-01","dateModified":"2026-02-01","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Cap Vietnam","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1200&q=80","description":"Traditions du Tet au Vietnam, enveloppes rouges li xi et repas de famille.","timeRequired":"PT9M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/tet-nouvel-an-lunaire-vietnam"}';
+$page_og_image    = 'https://www.blog-capvietnam.fr/assets/img/tet-nouvel-an-vietnam-fleurs.jpg';
+$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Le Tet vecu de l interieur avec une famille vietnamienne","datePublished":"2026-02-01","dateModified":"2026-02-01","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Cap Vietnam","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://www.blog-capvietnam.fr/assets/img/tet-nouvel-an-vietnam-fleurs.jpg","description":"Traditions du Tet au Vietnam, enveloppes rouges li xi et repas de famille.","timeRequired":"PT9M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/tet-nouvel-an-lunaire-vietnam"}';
 
 $article_color   = 'jade';
 $article_hero_bg = '#1a3a1e';
@@ -63,7 +63,6 @@ include 'header.php';
       <div class="toc-share-label">Partager</div>
       <div class="share-btns">
         <a class="share-btn" onclick="window.open('https://www.facebook.com/sharer.php?u='+encodeURIComponent(location.href))">f</a>
-        <a class="share-btn" onclick="window.open('https://twitter.com/intent/tweet?url='+encodeURIComponent(location.href))">𝕏</a>
         <a class="share-btn" onclick="navigator.clipboard.writeText(location.href);this.textContent='✓';setTimeout(()=>this.textContent='🔗',1500)">🔗</a>
       </div>
     </div>
@@ -72,7 +71,7 @@ include 'header.php';
   <main class="article-content">
     <p><strong>Le Tết n'est pas le Nouvel An vietnamien comme Noël est Noël en France.</strong> C'est plus grand, plus dense, plus chargé émotionnellement. C'est le moment où le Vietnam entier se retrouve en famille, où les villes se vident et les campagnes s'animent. Vivre son premier Tết depuis l'intérieur d'une famille vietnamienne, c'est une expérience transformatrice.</p>
 
-    <img class="article-photo" src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1200&q=80" alt="Décorations du Tết à Hanoï" width="1200" height="675" loading="lazy">
+    <img class="article-photo" src="assets/img/tet-nouvel-an-vietnam-fleurs.jpg" alt="Fleurs de pêcher et décorations du Tết au Vietnam" width="1200" height="675" loading="lazy">
 
     <h2 id="section-1">Qu'est-ce que le Tết ?</h2>
     <p>Le Tết Nguyên Đán (Fête du Premier Matin) est le Nouvel An du calendrier lunaire vietnamien. Il tombe entre fin janvier et mi-février selon les années. En 2026, il est célébré le 17 février (année du Cheval de Feu). En 2027, il tombera le 6 février (Année du Coq).</p>

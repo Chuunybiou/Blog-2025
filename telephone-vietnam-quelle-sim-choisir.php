@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 $page_title       = 'Téléphone au Vietnam : quelle SIM choisir en 2026 (locale vs internationale)';
 $page_description = 'SIM locale Viettel, Vinaphone, Mobifone ou carte SIM internationale pour l\'Asie ? Mon comparatif complet pour choisir la bonne SIM avant de partir au Vietnam.';
 $page_canonical   = 'https://www.blog-capvietnam.fr/telephone-vietnam-quelle-sim-choisir';
@@ -66,7 +66,6 @@ include 'header.php';
       <div class="toc-share-label">Partager</div>
       <div class="share-btns">
         <a class="share-btn" onclick="window.open('https://www.facebook.com/sharer.php?u='+encodeURIComponent(location.href))">f</a>
-        <a class="share-btn" onclick="window.open('https://twitter.com/intent/tweet?url='+encodeURIComponent(location.href))">𝕏</a>
         <a class="share-btn" onclick="navigator.clipboard.writeText(location.href);this.textContent='✓';setTimeout(()=>this.textContent='🔗',1500)">🔗</a>
       </div>
     </div>

@@ -376,7 +376,7 @@ footer {
       <li><a href="<?= $path_prefix ?>calculateur-budget-vietnam.php">🧮 Calculateur</a></li>
       <li><a href="<?= $path_prefix ?>a-propos-capvietnam.php">À propos</a></li>
       <li><a href="<?= $path_prefix ?>apprendre-francais-capvietnam.php">TIKTOK</a></li>
-      <li><a href="<?= $path_prefix ?>blog-capvietnam.php#contact">Contact</a></li>
+      <li><a href="<?= $path_prefix ?>contact-capvietnam.php">Contact</a></li>
       <li><a href="<?= $path_prefix ?>livre-vietnamien.php" class="nav-book-cta" title="Apprendre le vietnamien avec la méthode polyglotte">Livre VN&nbsp;📕</a></li>
       <li><a href="<?= $path_prefix ?>guide-cap-vietnam-2026.php" class="nav-guide-cta">Guide 📘</a></li>
       <?php if ($page_lang_switch): ?>
