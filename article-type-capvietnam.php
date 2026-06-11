@@ -131,16 +131,16 @@ include 'header.php';
 <header class="article-hero">
   <div class="article-hero-inner">
     <div class="breadcrumb">
-      <a href="blog-capvietnam.php">Accueil</a>
+      <a href="blog-capvietnam">Accueil</a>
       <span class="breadcrumb-sep">›</span>
-      <a href="articles-capvietnam.php">Démarches Administratives</a>
+      <a href="articles-capvietnam">Démarches Administratives</a>
       <span class="breadcrumb-sep">›</span>
       <span>Visa Vietnam</span>
     </div>
     <span class="article-badge-hero">Démarches Administratives</span>
     <h1>Visa Vietnam pour un Français : le guide complet 2026</h1>
     <div class="article-hero-meta">
-      <span>Par <strong>Cap Vietnam</strong></span>
+      <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
       <span>📅 8 avril 2026</span>
       <span>⏱ 8 min de lecture</span>
     </div>
@@ -282,18 +282,18 @@ include 'header.php';
 
     <div class="cta-newsletter">
       <h3>Reçois mes prochains articles</h3>
-      <p>Un email par semaine. Désabonnement en un clic.</p>
+      <p>Un email par mois. Désabonnement en un clic.</p>
       <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
         <input type="email" name="email" placeholder="Ton adresse email" required>
         <button type="submit">S'inscrire</button>
       </form>
-      <p class="cta-rgpd">En t'inscrivant, tu acceptes la <a href="confidentialite-capvietnam.php">politique de confidentialité</a>.</p>
+      <p class="cta-rgpd">En t'inscrivant, tu acceptes la <a href="confidentialite-capvietnam">politique de confidentialité</a>.</p>
     </div>
 
     <div class="author-box">
       <div class="author-avatar" style="overflow:hidden;position:relative;"><img src="assets/img/profile/anthony-profil.jpg" alt="Anthony Bouillon" width="72" height="72" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"></div>
       <div class="author-info">
-        <h4>Cap Vietnam</h4>
+        <h4>Anthony Bouillon</h4>
         <p>Français expatrié à Hanoï. Je partage mon parcours d'installation au Vietnam avec ma femme vietnamienne : démarches administratives, vie de couple mixte et travail en ligne.</p>
         <div class="author-links">
           <a href="https://www.tiktok.com/@proffrancaisetranger" target="_blank" rel="noopener">TikTok</a>
@@ -311,7 +311,7 @@ include 'header.php';
       <textarea class="comment-input" placeholder="Ton commentaire..."></textarea>
       <label class="comment-consent">
         <input type="checkbox" required>
-        <span>J'accepte que mes données (prénom, email) soient stockées pour la gestion des commentaires conformément à la <a href="confidentialite-capvietnam.php">politique de confidentialité</a>.</span>
+        <span>J'accepte que mes données (prénom, email) soient stockées pour la gestion des commentaires conformément à la <a href="confidentialite-capvietnam">politique de confidentialité</a>.</span>
       </label>
       <button class="comment-submit">Publier le commentaire</button>
     </div>
@@ -324,15 +324,15 @@ include 'header.php';
     <div class="related-label">À lire aussi</div>
     <h2 class="related-title">Articles similaires</h2>
     <div class="related-grid">
-      <a class="related-card" href="quitter-canada-expat-vietnam.php">
+      <a class="related-card" href="quitter-canada-expat-vietnam">
         <div class="related-card-banner bg-admin">📋</div>
         <div class="related-card-body"><div class="related-card-badge text-admin">Démarches</div><h3>Quitter le Canada : impôts, banque et permis de travail</h3><p>Ce que j'ai dû faire avant de partir. Retour d'expérience concret.</p></div>
       </a>
-      <a class="related-card" href="se-marier-vietnamienne-demarches-france.php">
+      <a class="related-card" href="se-marier-vietnamienne-demarches-france">
         <div class="related-card-banner bg-couple">💕</div>
         <div class="related-card-body"><div class="related-card-badge text-couple">Couple Mixte</div><h3>Se marier avec une Vietnamienne : les démarches côté France</h3><p>Documents, délais, traductions… Le parcours complet.</p></div>
       </a>
-      <a class="related-card" href="budget-mensuel-hanoi-2026.php">
+      <a class="related-card" href="budget-mensuel-hanoi-2026">
         <div class="related-card-banner bg-argent">💻</div>
         <div class="related-card-body"><div class="related-card-badge text-argent">Argent</div><h3>Budget mensuel à Hanoï en 2026</h3><p>Combien ça coûte vraiment de vivre à Hanoï en tant qu'expat.</p></div>
       </a>

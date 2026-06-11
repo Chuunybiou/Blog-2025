@@ -6,7 +6,7 @@ $page_og_title    = 'S\'intégrer dans une belle-famille vietnamienne : le guide
 $page_og_desc     = 'Codes à respecter, cadeaux et tabous pour réussir votre première visite à la belle-famille vietnamienne.';
 $page_og_url      = 'https://www.blog-capvietnam.fr/belle-famille-vietnamienne-guide';
 $page_og_image    = 'https://images.unsplash.com/photo-1573495627361-d9b87960b12d?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Rencontrer la belle-famille vietnamienne : guide de survie","datePublished":"2026-03-01","dateModified":"2026-03-01","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Cap Vietnam","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1573495627361-d9b87960b12d?w=1200&q=80","description":"Codes a respecter, cadeaux et tabous pour reussir votre premiere visite a la belle-famille vietnamienne.","timeRequired":"PT8M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/belle-famille-vietnamienne-guide"}';
+$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Rencontrer la belle-famille vietnamienne : guide de survie","datePublished":"2026-03-01","dateModified":"2026-03-01","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1573495627361-d9b87960b12d?w=1200&q=80","description":"Codes a respecter, cadeaux et tabous pour reussir votre premiere visite a la belle-famille vietnamienne.","timeRequired":"PT8M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/belle-famille-vietnamienne-guide"}';
 
 $article_color   = 'jade';
 $article_hero_bg = '#1a3a1e';
@@ -33,16 +33,17 @@ include 'header.php';
 <header class="article-hero">
   <div class="article-hero-inner">
     <div class="breadcrumb">
-      <a href="blog-capvietnam.php">Accueil</a><span class="breadcrumb-sep">›</span>
-      <a href="articles-capvietnam.php">Couple Mixte</a><span class="breadcrumb-sep">›</span>
+      <a href="blog-capvietnam">Accueil</a><span class="breadcrumb-sep">›</span>
+      <a href="articles-capvietnam">Couple Mixte</a><span class="breadcrumb-sep">›</span>
       <span>Belle-famille vietnamienne</span>
     </div>
     <span class="article-badge-hero">Couple Mixte</span>
     <h1>S'intégrer dans une belle-famille vietnamienne : codes, gestes et erreurs à éviter</h1>
     <div class="article-hero-meta">
-      <span>Par <strong>Cap Vietnam</strong></span>
+      <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
       <span>📅 18 mars 2026</span>
       <span>⏱ 8 min de lecture</span>
+      <span>Mis &agrave; jour : Juin 2026</span>
     </div>
   </div>
 </header>
@@ -128,7 +129,7 @@ include 'header.php';
     <h2 id="section-6">Les grandes occasions : Tết, anniversaires et cérémonies</h2>
     <p>Les occasions importantes sont des moments de vérité dans la relation avec la belle-famille. Bien les gérer renforce considérablement ton intégration :</p>
     <ul>
-      <li><strong>Le Tết (Nouvel An lunaire)</strong> : l'occasion familiale la plus importante de l'année. Prépare des li xi (enveloppes rouges) pour les enfants et les aînés, arrive avec un cadeau, et prévois plusieurs jours sans autres engagements. Voir notre <a href="tet-nouvel-an-lunaire-vietnam.php">guide complet du Tết</a>.</li>
+      <li><strong>Le Tết (Nouvel An lunaire)</strong> : l'occasion familiale la plus importante de l'année. Prépare des li xi (enveloppes rouges) pour les enfants et les aînés, arrive avec un cadeau, et prévois plusieurs jours sans autres engagements. Voir notre <a href="tet-nouvel-an-lunaire-vietnam">guide complet du Tết</a>.</li>
       <li><strong>Les anniversaires</strong> : moins formalisés qu'en France, mais les 60e, 70e et 80e anniversaires des grands-parents sont des fêtes importantes avec repas de famille élargie. Contribuer financièrement à l'organisation est apprécié.</li>
       <li><strong>Les funérailles et deuil</strong> : en cas de décès dans la famille, ta présence aux cérémonies est essentielle — c'est là que se jugent vraiment l'engagement et le respect. Habits sombres, enveloppe de condoléances (en VND), attitude grave et silencieuse.</li>
       <li><strong>Les naissances</strong> : si un membre de la famille a un enfant, une visite dans les premières semaines avec un cadeau pour bébé est attendue. Les cadeaux pratiques (body, couverture, produits de soin) sont mieux reçus que les jouets.</li>
@@ -173,9 +174,9 @@ include 'header.php';
     <div class="author-box">
       <div class="author-avatar" style="overflow:hidden;position:relative;"><img src="assets/img/profile/anthony-profil.jpg" alt="Anthony Bouillon" width="72" height="72" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"></div>
       <div class="author-info">
-        <h4>Cap Vietnam</h4>
+        <h4>Anthony Bouillon</h4>
         <p>Ces conseils reflètent l'expérience personnelle — chaque famille est unique, adapte-les à la tienne.</p>
-        <div class="author-links"><a href="a-propos-capvietnam.php">À propos →</a></div>
+        <div class="author-links"><a href="a-propos-capvietnam">À propos →</a></div>
       </div>
     </div>
 

@@ -29,7 +29,7 @@ $lm_id = 'lm-' . ($lm_context === 'popup' ? 'popup' : 'inline');
         </div>
         <label style="display:flex;align-items:flex-start;gap:.4rem;cursor:pointer;font-size:.72rem;color:rgba(255,255,255,.35)">
           <input type="checkbox" name="consent" required style="margin-top:2px;flex-shrink:0">
-          <span>J'accepte de recevoir ce guide et des emails occasionnels de Cap Vietnam. <a href="<?= $path_prefix ?? '' ?>confidentialite-capvietnam.php" style="color:rgba(255,255,255,.5)">Politique de confidentialité</a>.</span>
+          <span>J'accepte de recevoir ce guide et des emails occasionnels de Cap Vietnam. <a href="<?= $path_prefix ?? '' ?>confidentialite-capvietnam" style="color:rgba(255,255,255,.5)">Politique de confidentialité</a>.</span>
         </label>
       </form>
       <div id="<?= $lm_id ?>-success" style="display:none;margin-top:.75rem;padding:.6rem 1rem;background:rgba(27,107,82,.25);border-radius:6px;font-size:.9rem;color:#a8e6cf">

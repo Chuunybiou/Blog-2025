@@ -6,7 +6,7 @@ $page_og_title    = 'Carte de résidence temporaire au Vietnam : guide complet 2
 $page_og_desc     = 'Comment obtenir la carte de résidence temporaire au Vietnam : types, documents et procédure.';
 $page_og_url      = 'https://www.blog-capvietnam.fr/carte-residence-temporaire-vietnam';
 $page_og_image    = 'https://images.unsplash.com/photo-1568992688065-536aad8a12f6?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"La carte de residence temporaire au Vietnam","datePublished":"2026-02-15","dateModified":"2026-02-15","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Cap Vietnam","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1568992688065-536aad8a12f6?w=1200&q=80","description":"Comment obtenir la carte de residence temporaire au Vietnam : types, documents et procedure.","timeRequired":"PT6M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/carte-residence-temporaire-vietnam"}';
+$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"La carte de residence temporaire au Vietnam","datePublished":"2026-02-15","dateModified":"2026-02-15","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1568992688065-536aad8a12f6?w=1200&q=80","description":"Comment obtenir la carte de residence temporaire au Vietnam : types, documents et procedure.","timeRequired":"PT6M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/carte-residence-temporaire-vietnam"}';
 
 $article_color   = 'terracotta';
 $article_hero_bg = '#3a1a0a';
@@ -33,14 +33,14 @@ include 'header.php';
 <header class="article-hero">
   <div class="article-hero-inner">
     <div class="breadcrumb">
-      <a href="blog-capvietnam.php">Accueil</a><span class="breadcrumb-sep">›</span>
-      <a href="articles-capvietnam.php">Démarches Administratives</a><span class="breadcrumb-sep">›</span>
+      <a href="blog-capvietnam">Accueil</a><span class="breadcrumb-sep">›</span>
+      <a href="articles-capvietnam">Démarches Administratives</a><span class="breadcrumb-sep">›</span>
       <span>Carte de résidence temporaire</span>
     </div>
     <span class="article-badge-hero">Démarches Administratives</span>
     <h1>Carte de résidence temporaire au Vietnam (Thẻ Tạm Trú) : comment l'obtenir</h1>
     <div class="article-hero-meta">
-      <span>Par <strong>Cap Vietnam</strong></span>
+      <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
       <span>📅 15 février 2026</span>
       <span>⏱ 8 min de lecture</span>
     </div>
@@ -181,9 +181,9 @@ include 'header.php';
     <div class="author-box">
       <div class="author-avatar" style="overflow:hidden;position:relative;"><img src="assets/img/profile/anthony-profil.jpg" alt="Anthony Bouillon" width="72" height="72" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"></div>
       <div class="author-info">
-        <h4>Cap Vietnam</h4>
+        <h4>Anthony Bouillon</h4>
         <p>Informations basées sur la Loi n°51/2019/QH14 et les décrets d'application. Toujours vérifier auprès du Département de l'Immigration local pour les mises à jour réglementaires.</p>
-        <div class="author-links"><a href="a-propos-capvietnam.php">À propos →</a></div>
+        <div class="author-links"><a href="a-propos-capvietnam">À propos →</a></div>
       </div>
     </div>
 

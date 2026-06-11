@@ -6,7 +6,7 @@ $page_og_title    = 'Quitter la France pour le Vietnam : le guide complet';
 $page_og_desc     = 'Toutes les démarches administratives pour quitter la France et s\'installer au Vietnam.';
 $page_og_url      = 'https://www.blog-capvietnam.fr/quitter-france-expat-vietnam';
 $page_og_image    = 'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Quitter la France pour le Vietnam : guide complet","datePublished":"2026-04-25","dateModified":"2026-04-25","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Cap Vietnam","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1200&q=80","description":"Toutes les démarches administratives pour quitter la France et s\'installer au Vietnam.","timeRequired":"PT10M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/quitter-france-expat-vietnam"}';
+$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Quitter la France pour le Vietnam : guide complet","datePublished":"2026-04-25","dateModified":"2026-04-25","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1200&q=80","description":"Toutes les démarches administratives pour quitter la France et s\'installer au Vietnam.","timeRequired":"PT10M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/quitter-france-expat-vietnam"}';
 
 $article_color   = 'terracotta';
 $article_hero_bg = '#3a1a0a';
@@ -34,14 +34,14 @@ include 'header.php';
 <header class="article-hero">
   <div class="article-hero-inner">
     <div class="breadcrumb">
-      <a href="blog-capvietnam.php">Accueil</a><span class="breadcrumb-sep">›</span>
-      <a href="articles-capvietnam.php">Démarches Administratives</a><span class="breadcrumb-sep">›</span>
+      <a href="blog-capvietnam">Accueil</a><span class="breadcrumb-sep">›</span>
+      <a href="articles-capvietnam">Démarches Administratives</a><span class="breadcrumb-sep">›</span>
       <span>Quitter la France</span>
     </div>
     <span class="article-badge-hero">Démarches Administratives</span>
     <h1>Quitter la France pour le Vietnam : impôts, Sécu et démarches</h1>
     <div class="article-hero-meta">
-      <span>Par <strong>Cap Vietnam</strong></span>
+      <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
       <span>📅 25 avril 2026</span>
       <span>⏱ 10 min de lecture</span>
     </div>
@@ -131,7 +131,7 @@ include 'header.php';
     <h2 id="section-5">Ton statut professionnel</h2>
     <p>La question du statut dépend entièrement de <strong>où se situe ton activité</strong> au moment du départ.</p>
     <p><strong>Si tu es salarié en France :</strong> une démission ou une rupture conventionnelle clôt proprement la relation. La rupture conventionnelle peut t'ouvrir droit à l'ARE, mais elle cesse dès ton installation à l'étranger — à peser selon ta situation.</p>
-    <p><strong>Si tu es auto-entrepreneur :</strong> c'est plus complexe. Le régime auto-entrepreneur impose une domiciliation en France. Si tu continues à facturer des clients français depuis le Vietnam, tu peux théoriquement maintenir ton micro, mais l'URSSAF peut contester ta domiciliation. La solution propre est de <strong>radier ton auto-entreprise</strong> et, si tu continues à facturer, de créer une structure adaptée (société, portage salarial, ou statut local vietnamien). Consulte un comptable expat avant de décider.</p>
+    <p><strong>Si tu es auto-entrepreneur :</strong> c'est plus complexe. Le régime auto-entrepreneur impose une domiciliation en France. Si tu continues à facturer des clients français depuis le Vietnam, tu peux théoriquement maintenir ton micro, mais l'URSSAF peut contester ta domiciliation. La solution propre est de <strong>radier ton auto-entreprise</strong> et, si tu continues à facturer, de créer une structure adaptée : société, portage salarial, ou statut local vietnamien. → <a href="portage-salarial-depuis-vietnam">Guide complet sur le portage salarial depuis le Vietnam</a>. Consulte un comptable expat avant de décider.</p>
     <div class="warning-box">
       <strong>⚠️ URSSAF et cotisations sociales :</strong>
       Tant que ton auto-entreprise est active, l'URSSAF prélève des cotisations même si tu vis au Vietnam. Si tu oublies de radier avant de partir et que tu continues à déclarer des revenus, tu cotises à des caisses françaises sans en bénéficier.
@@ -168,6 +168,10 @@ include 'header.php';
     include '_affiliate-cta.php';
     ?>
 
+    <div class="info-box">
+      <strong>Tu pars à la retraite ?</strong> → <a href="retraite-vietnam-francais">Guide complet : visa, pension française, CFE, fiscalité et budget pour les retraités français au Vietnam</a>
+    </div>
+
     <h2 id="section-faq">Questions fréquentes</h2>
     <div class="faq-item">
       <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Dois-je continuer à déclarer mes revenus vietnamiens en France ? <span class="faq-arrow">▼</span></button>
@@ -191,15 +195,15 @@ include 'header.php';
         <img src="assets/img/profile/anthony-profil.jpg" alt="Anthony Bouillon" width="72" height="72" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;">
       </div>
       <div class="author-info">
-        <h4>Cap Vietnam</h4>
+        <h4>Anthony Bouillon</h4>
         <p>Français expatrié à Hanoï. Je partage mon parcours d'installation au Vietnam avec ma femme vietnamienne : démarches administratives, vie de couple mixte et travail en ligne.</p>
-        <div class="author-links"><a href="a-propos-capvietnam.php">À propos →</a></div>
+        <div class="author-links"><a href="a-propos-capvietnam">À propos →</a></div>
       </div>
     </div>
 
     <div class="cta-newsletter">
       <h3>Reçois les prochains articles</h3>
-      <p>Un email par semaine sur l'expatriation au Vietnam. Pas de spam.</p>
+      <p>Un email par mois sur l'expatriation au Vietnam. Pas de spam.</p>
       <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
         <input type="email" name="email" placeholder="Ton adresse email" required>
         <button type="submit">S'inscrire</button>

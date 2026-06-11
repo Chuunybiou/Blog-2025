@@ -6,7 +6,7 @@ $page_og_title    = 'Apprendre le vietnamien en couple : méthodes et ressources
 $page_og_desc     = 'Meilleures méthodes pour apprendre le vietnamien : Pimsleur, Anki, Duolingo.';
 $page_og_url      = 'https://www.blog-capvietnam.fr/apprendre-vietnamien-couple';
 $page_og_image    = 'https://www.blog-capvietnam.fr/assets/img/og-capvietnam.png';
-$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Apprendre le vietnamien en couple : methodes et realite","datePublished":"2026-02-10","dateModified":"2026-02-10","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Cap Vietnam","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://www.blog-capvietnam.fr/assets/img/og-capvietnam.png","description":"Meilleures methodes pour apprendre le vietnamien : Pimsleur, Anki, Duolingo.","timeRequired":"PT6M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/apprendre-vietnamien-couple"}';
+$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Apprendre le vietnamien en couple : methodes et realite","datePublished":"2026-02-10","dateModified":"2026-02-10","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://www.blog-capvietnam.fr/assets/img/og-capvietnam.png","description":"Meilleures methodes pour apprendre le vietnamien : Pimsleur, Anki, Duolingo.","timeRequired":"PT6M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/apprendre-vietnamien-couple"}';
 
 $article_color   = 'jade';
 $article_hero_bg = '#1a3a1e';
@@ -31,16 +31,17 @@ include 'header.php';
 <header class="article-hero">
   <div class="article-hero-inner">
     <div class="breadcrumb">
-      <a href="blog-capvietnam.php">Accueil</a><span class="breadcrumb-sep">›</span>
-      <a href="articles-capvietnam.php">Couple Mixte</a><span class="breadcrumb-sep">›</span>
+      <a href="blog-capvietnam">Accueil</a><span class="breadcrumb-sep">›</span>
+      <a href="articles-capvietnam">Couple Mixte</a><span class="breadcrumb-sep">›</span>
       <span>Apprendre le vietnamien</span>
     </div>
     <span class="article-badge-hero">Couple Mixte</span>
     <h1>Apprendre le vietnamien quand on est en couple franco-vietnamien</h1>
     <div class="article-hero-meta">
-      <span>Par <strong>Cap Vietnam</strong></span>
+      <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
       <span>📅 5 février 2026</span>
       <span>⏱ 7 min de lecture</span>
+      <span>Mis &agrave; jour : Juin 2026</span>
     </div>
   </div>
 </header>
@@ -108,7 +109,7 @@ include 'header.php';
       <strong>📕 Mon livre pour apprendre le vietnamien</strong><br>
       J'ai écrit une méthode basée sur les 1 100 mots les plus fréquents du vietnamien — sans cours magistraux, sans grammaire abstraite. Conçue pour les francophones en couple mixte ou en route pour le Vietnam.
       <div style="margin-top:1rem;display:flex;gap:0.75rem;flex-wrap:wrap;">
-        <a href="livre-vietnamien.php" style="padding:0.55rem 1.1rem;background:var(--jade);color:#fff;border-radius:5px;text-decoration:none;font-weight:700;font-size:0.88rem;">Voir le livre →</a>
+        <a href="livre-vietnamien" style="padding:0.55rem 1.1rem;background:var(--jade);color:#fff;border-radius:5px;text-decoration:none;font-weight:700;font-size:0.88rem;">Voir le livre →</a>
         <a href="https://www.amazon.fr/dp/B0H1CHWKF8" target="_blank" rel="noopener sponsored" style="padding:0.55rem 1.1rem;background:#ff9900;color:#111;border-radius:5px;text-decoration:none;font-weight:700;font-size:0.88rem;">Acheter sur Amazon →</a>
       </div>
     </div>
@@ -198,9 +199,9 @@ include 'header.php';
     <div class="author-box">
       <div class="author-avatar" style="overflow:hidden;position:relative;"><img src="assets/img/profile/anthony-profil.jpg" alt="Anthony Bouillon" width="72" height="72" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"></div>
       <div class="author-info">
-        <h4>Cap Vietnam</h4>
+        <h4>Anthony Bouillon</h4>
         <p>Niveau B1 en vietnamien après 4 ans de pratique à Hanoï. Le chemin est long mais chaque étape ouvre de nouvelles portes.</p>
-        <div class="author-links"><a href="a-propos-capvietnam.php">À propos →</a></div>
+        <div class="author-links"><a href="a-propos-capvietnam">À propos →</a></div>
       </div>
     </div>
 

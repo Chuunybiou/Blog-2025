@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 require_once __DIR__ . '/config/site.php';
 $page_title       = 'Contact — Cap Vietnam';
 $page_description = 'Poser une question sur l\'expatriation au Vietnam, proposer une collaboration ou partager ton témoignage — écris-moi directement.';
@@ -46,7 +46,7 @@ include 'header.php';
 
 <div class="contact-page">
   <div class="breadcrumb" style="margin-bottom:1.5rem;font-size:0.85rem;color:var(--muted);">
-    <a href="blog-capvietnam.php" style="color:var(--muted);text-decoration:none;">Accueil</a>
+    <a href="blog-capvietnam" style="color:var(--muted);text-decoration:none;">Accueil</a>
     <span style="margin:0 0.5rem;">›</span>
     <span>Contact</span>
   </div>
@@ -116,7 +116,7 @@ include 'header.php';
         </div>
         <label class="form-consent">
           <input type="checkbox" name="consent" required>
-          <span>J'accepte que mes données soient utilisées pour répondre à ma demande. <a href="confidentialite-capvietnam.php">Politique de confidentialité</a>.</span>
+          <span>J'accepte que mes données soient utilisées pour répondre à ma demande. <a href="confidentialite-capvietnam">Politique de confidentialité</a>.</span>
         </label>
         <button type="submit" class="form-submit">Envoyer →</button>
       </form>

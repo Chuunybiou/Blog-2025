@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 require_once __DIR__ . '/config/site.php';
 $path_prefix      = $path_prefix      ?? '';
 $page_lang        = $page_lang        ?? 'fr';
@@ -358,7 +358,7 @@ nav.scrolled { box-shadow: var(--shadow-md); }
 <!-- ═══════ COOKIE BANNER RGPD ═══════ -->
 <div id="cookie-banner">
   <p>Ce site utilise des cookies pour améliorer votre expérience. Consultez notre
-    <a href="<?= $path_prefix ?>confidentialite-capvietnam.php"
+    <a href="<?= $path_prefix ?>confidentialite-capvietnam"
        onclick="openModal('privacy');return false;">politique de confidentialité</a>.</p>
   <button class="cookie-btn cookie-accept" onclick="acceptCookies()">Accepter</button>
   <button class="cookie-btn cookie-refuse" onclick="refuseCookies()">Refuser</button>
@@ -368,7 +368,7 @@ nav.scrolled { box-shadow: var(--shadow-md); }
 <nav id="nav">
   <div class="nav-inner">
     <!-- Logo inline SVG + wordmark -->
-    <a href="<?= $path_prefix ?>blog-capvietnam.php" class="nav-logo" aria-label="Cap Vietnam — Accueil">
+    <a href="<?= $path_prefix ?>blog-capvietnam" class="nav-logo" aria-label="Cap Vietnam — Accueil">
       <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <path d="M6 32 L20 8 L34 32" stroke="#c9986a" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
         <path d="M3 35 Q11.5 31 20 35 Q28.5 39 37 35" stroke="#c9986a" stroke-width="2" stroke-linecap="round" fill="none"/>
@@ -380,13 +380,13 @@ nav.scrolled { box-shadow: var(--shadow-md); }
     </a>
 
     <ul class="nav-links" id="navLinks">
-      <li><a href="<?= $path_prefix ?>blog-capvietnam.php">Accueil</a></li>
-      <li><a href="<?= $path_prefix ?>articles-capvietnam.php">Articles</a></li>
-      <li><a href="<?= $path_prefix ?>calculateur-budget-vietnam.php">Calculateur</a></li>
-      <li><a href="<?= $path_prefix ?>a-propos-capvietnam.php">À propos</a></li>
-      <li><a href="<?= $path_prefix ?>blog-capvietnam.php#contact">Contact</a></li>
-      <li><a href="<?= $path_prefix ?>livre-vietnamien.php" class="nav-cta-book">📕 Livre VN</a></li>
-      <li><a href="<?= $path_prefix ?>guide-cap-vietnam-2026.php" class="nav-cta-guide">Guide 2026</a></li>
+      <li><a href="<?= $path_prefix ?>blog-capvietnam">Accueil</a></li>
+      <li><a href="<?= $path_prefix ?>articles-capvietnam">Articles</a></li>
+      <li><a href="<?= $path_prefix ?>calculateur-budget-vietnam">Calculateur</a></li>
+      <li><a href="<?= $path_prefix ?>a-propos-capvietnam">À propos</a></li>
+      <li><a href="<?= $path_prefix ?>blog-capvietnam#contact">Contact</a></li>
+      <li><a href="<?= $path_prefix ?>livre-vietnamien" class="nav-cta-book">📕 Livre VN</a></li>
+      <li><a href="<?= $path_prefix ?>guide-cap-vietnam-2026" class="nav-cta-guide">Guide 2026</a></li>
       <?php if ($page_lang_switch): ?>
       <li>
         <a href="<?= htmlspecialchars($page_lang_switch['href']) ?>"

@@ -12,7 +12,7 @@
     <textarea class="comment-input" name="message" placeholder="Ton commentaire ou ta question…" required></textarea>
     <div class="comment-consent">
       <input type="checkbox" id="comment-consent-cb" name="consent" required>
-      <label for="comment-consent-cb">J'accepte que ce message soit traité conformément à la <a href="confidentialite-capvietnam.php">politique de confidentialité</a>.</label>
+      <label for="comment-consent-cb">J'accepte que ce message soit traité conformément à la <a href="confidentialite-capvietnam">politique de confidentialité</a>.</label>
     </div>
     <button type="submit" class="comment-submit">Envoyer →</button>
   </form>

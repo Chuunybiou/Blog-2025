@@ -56,16 +56,17 @@ include 'header.php';
 <header class="article-hero">
   <div class="article-hero-inner">
     <div class="breadcrumb">
-      <a href="blog-capvietnam.php">Accueil</a><span class="breadcrumb-sep">›</span>
-      <a href="articles-capvietnam.php">Voyager au Vietnam</a><span class="breadcrumb-sep">›</span>
+      <a href="blog-capvietnam">Accueil</a><span class="breadcrumb-sep">›</span>
+      <a href="articles-capvietnam">Voyager au Vietnam</a><span class="breadcrumb-sep">›</span>
       <span>Vol Paris-Hanoï</span>
     </div>
     <span class="article-badge-hero" style="background:var(--jade);color:#fff">✈️ Voyager au Vietnam</span>
     <h1>Vol Paris-Hanoï pas cher : les escales que j'ai prises et comment comparer les prix</h1>
     <div class="article-hero-meta">
-      <span>Par <strong>Cap Vietnam</strong></span>
+      <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
       <span>📅 7 juin 2026</span>
       <span>⏱ 6 min de lecture</span>
+      <span>Mis &agrave; jour : Juin 2026</span>
     </div>
   </div>
 </header>
@@ -225,9 +226,9 @@ include 'header.php';
     <div class="info-box" style="margin-top:3rem;">
       <strong>📖 À lire aussi :</strong>
       <ul style="margin:0.75rem 0 0.5rem;padding-left:1.2rem;">
-        <li><a href="checklist-depart-installer-vietnam.php">Checklist complète pour s'installer au Vietnam depuis la France</a></li>
-        <li><a href="organiser-finances-expat-france-vietnam.php">Organiser ses finances entre France et Vietnam</a></li>
-        <li><a href="visa-vietnam-francais-guide-2026.php">Visa Vietnam pour un Français : le guide complet 2026</a></li>
+        <li><a href="checklist-depart-installer-vietnam">Checklist complète pour s'installer au Vietnam depuis la France</a></li>
+        <li><a href="organiser-finances-expat-france-vietnam">Organiser ses finances entre France et Vietnam</a></li>
+        <li><a href="visa-vietnam-francais-guide-2026">Visa Vietnam pour un Français : le guide complet 2026</a></li>
       </ul>
     </div>
 
@@ -240,7 +241,7 @@ include 'header.php';
         <input type="email" name="email" placeholder="ton@email.com" required>
         <button type="submit" style="background:var(--jade);color:#fff;">S'inscrire</button>
       </form>
-      <p class="cta-rgpd">Désinscription en un clic. <a href="confidentialite-capvietnam.php">Politique de confidentialité</a>.</p>
+      <p class="cta-rgpd">Désinscription en un clic. <a href="confidentialite-capvietnam">Politique de confidentialité</a>.</p>
     </div>
 
     <!-- AUTHOR BOX -->
@@ -248,7 +249,7 @@ include 'header.php';
       <img src="<?= PROFILE_PHOTO ?>" alt="Anthony Bouillon — Cap Vietnam" width="72" height="72" loading="lazy" decoding="async" style="width:72px;height:72px;border-radius:50%;object-fit:cover;flex-shrink:0;">
       <div class="author-info">
         <p><strong>Anthony Bouillon</strong> — Français installé entre la France et le Vietnam. J'ai fait le trajet Paris-Hanoï deux fois et j'écris ce que j'aurais voulu lire avant de réserver mes billets.</p>
-        <a href="a-propos-capvietnam.php" class="author-link">En savoir plus →</a>
+        <a href="a-propos-capvietnam" class="author-link">En savoir plus →</a>
       </div>
     </div>
 

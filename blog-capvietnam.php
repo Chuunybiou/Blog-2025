@@ -5,10 +5,12 @@ $page_lang_switch = ['href' => 'vi/', 'label' => '🇻🇳 Tiếng Việt', 'tit
 $page_hreflang    = ['fr' => SITE_URL . '/', 'vi' => SITE_URL . '/vi/', 'x-default' => SITE_URL . '/'];
 
 // Load latest articles for home page section
-$_art_data   = json_decode(file_get_contents(__DIR__ . '/data/articles.json'), true);
-$_art_all    = $_art_data['articles'];
-usort($_art_all, fn($a, $b) => strcmp($b['date'], $a['date']));
-$_art_latest = array_slice($_art_all, 0, 6);
+$_art_data      = json_decode(file_get_contents(__DIR__ . '/data/articles.json'), true);
+$_art_all       = $_art_data['articles'];
+$_art_published = array_values(array_filter($_art_all, fn($a) => ($a['published'] ?? true) !== false));
+$_art_count     = count($_art_published);
+usort($_art_published, fn($a, $b) => strcmp($b['date'], $a['date']));
+$_art_latest    = array_slice($_art_published, 0, 6);
 
 $page_title       = 'Le blog du couple franco-vietnamien — Cap Vietnam';
 $page_description = 'Le blog d\'un Français en couple avec une Vietnamienne. Démarches mariage, comptes joints, budget couple mixte, vie entre Paris et Hanoï.';
@@ -26,7 +28,7 @@ $page_schema      = json_encode([
       'url'         => SITE_URL . '/',
       'inLanguage'  => 'fr',
       'description' => 'Le blog d\'un Français en couple avec une Vietnamienne. Démarches mariage, comptes joints, budget couple mixte, vie entre Paris et Hanoï.',
-      'author'      => ['@type' => 'Person', 'name' => SITE_AUTHOR],
+      'author'      => ['@id' => SITE_URL . '/#author'],
     ],
     [
       '@type'    => 'Blog',
@@ -35,6 +37,18 @@ $page_schema      = json_encode([
       'url'      => SITE_URL . '/',
       'isPartOf' => ['@id' => SITE_URL . '/#website'],
       'inLanguage' => 'fr',
+      'author'   => ['@id' => SITE_URL . '/#author'],
+    ],
+    [
+      '@type'    => 'Person',
+      '@id'      => SITE_URL . '/#author',
+      'name'     => SITE_AUTHOR,
+      'url'      => SITE_URL . '/a-propos-capvietnam',
+      'jobTitle' => 'Expatrié français au Vietnam, auteur & créateur de contenu',
+      'sameAs'   => [
+        SITE_TIKTOK,
+        'https://www.amazon.fr/stores/Anthony-Bouillon/author/B0CY93X8H5',
+      ],
     ],
   ],
 ], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
@@ -306,8 +320,8 @@ include 'header.php';
     <h1>Le couple franco-vietnamien<br><em>de l'intérieur</em></h1>
     <p class="hero-desc">Visa, mariage, argent, vie à Hanoï — par quelqu'un qui le vit vraiment avec sa femme vietnamienne.</p>
     <div class="hero-ctas">
-      <a href="s-expatrier-vietnam-2026-guide-complet.php" class="hero-cta">Guide complet →</a>
-      <a href="articles-capvietnam.php?cat=couple" class="hero-cta hero-cta--ghost">Couple mixte →</a>
+      <a href="s-expatrier-vietnam-2026-guide-complet" class="hero-cta">Guide complet →</a>
+      <a href="articles-capvietnam?cat=couple" class="hero-cta hero-cta--ghost">Couple mixte →</a>
     </div>
   </div>
   <div class="hero-scroll"></div>
@@ -327,7 +341,7 @@ include 'header.php';
   <p class="section-desc">Quatre thématiques qui couvrent l'expatriation franco-vietnamienne de A à Z — choisis celle qui correspond à ta situation.</p>
 
   <div class="categories-grid">
-    <a class="cat-card" href="articles-capvietnam.php?cat=couple">
+    <a class="cat-card" href="articles-capvietnam?cat=couple">
       <div class="cat-banner cat-banner-couple"><div class="cat-icon">💕</div></div>
       <div class="cat-body">
         <div class="cat-tag cat-tag-couple">Couple mixte</div>
@@ -337,7 +351,7 @@ include 'header.php';
       </div>
     </a>
 
-    <a class="cat-card" href="articles-capvietnam.php?cat=admin">
+    <a class="cat-card" href="articles-capvietnam?cat=admin">
       <div class="cat-banner cat-banner-admin"><div class="cat-icon">📋</div></div>
       <div class="cat-body">
         <div class="cat-tag cat-tag-admin">Démarches</div>
@@ -347,7 +361,7 @@ include 'header.php';
       </div>
     </a>
 
-    <a class="cat-card" href="articles-capvietnam.php?cat=argent">
+    <a class="cat-card" href="articles-capvietnam?cat=argent">
       <div class="cat-banner cat-banner-argent"><div class="cat-icon">💰</div></div>
       <div class="cat-body">
         <div class="cat-tag cat-tag-argent">Argent</div>
@@ -357,7 +371,7 @@ include 'header.php';
       </div>
     </a>
 
-    <a class="cat-card" href="articles-capvietnam.php?cat=voyager">
+    <a class="cat-card" href="articles-capvietnam?cat=voyager">
       <div class="cat-banner cat-banner-voyager"><div class="cat-icon">✈️</div></div>
       <div class="cat-body">
         <div class="cat-tag cat-tag-voyager">Vie pratique</div>
@@ -377,7 +391,7 @@ include 'header.php';
       <h2 style="font-family:'DM Serif Display',serif;font-size:clamp(1.4rem,3vw,2rem);color:#faf8f4;line-height:1.25;margin:0 0 0.5rem;">Nouveau au Vietnam ? Commence ici.</h2>
       <p style="color:rgba(250,248,244,0.6);font-size:0.95rem;margin:0;">Visa, logement, banques, santé, fiscalité, coût de la vie — tout en un seul guide. Chiffres réels, rien d'inventé.</p>
     </div>
-    <a href="s-expatrier-vietnam-2026-guide-complet.php" style="flex-shrink:0;display:inline-flex;align-items:center;gap:0.5rem;padding:0.9rem 1.8rem;background:#4db890;color:#0d2b1f;border-radius:5px;font-weight:700;font-size:0.95rem;text-decoration:none;white-space:nowrap;">Lire le guide →</a>
+    <a href="s-expatrier-vietnam-2026-guide-complet" style="flex-shrink:0;display:inline-flex;align-items:center;gap:0.5rem;padding:0.9rem 1.8rem;background:#4db890;color:#0d2b1f;border-radius:5px;font-weight:700;font-size:0.95rem;text-decoration:none;white-space:nowrap;">Lire le guide →</a>
   </div>
 </section>
 
@@ -419,7 +433,7 @@ foreach ($_art_latest as $_a):
         <p><?= htmlspecialchars($_a['excerpt']) ?></p>
         <div class="article-footer">
           <span class="read-time">⏱ <?= htmlspecialchars($_a['readTime']) ?> de lecture</span>
-          <a href="<?= htmlspecialchars($_a['slug']) ?>.php" class="read-more">Lire →</a>
+          <a href="<?= htmlspecialchars($_a['slug']) ?>" class="read-more">Lire →</a>
         </div>
       </article>
 <?php endforeach; ?>
@@ -439,7 +453,7 @@ foreach ($_art_latest as $_a):
       <p>Je suis Anthony, Français en couple avec une Vietnamienne. Je partage ma vie entre la France et le Vietnam. Ce blog est le journal de ce qu'on a appris, raté, payé, compris.</p>
       <p>Quand j'ai commencé les démarches pour mon couple, j'ai cherché des blogs sérieux en français sur le sujet. Beaucoup de blogs "expat au Vietnam" en mode touriste, presque rien sur la réalité d'un couple mixte franco-vietnamien. J'écris ce que j'aurais voulu lire avant de me lancer.</p>
       <div class="about-stats">
-        <div><div class="stat-num">35+</div><div class="stat-label">Articles publiés</div></div>
+        <div><div class="stat-num"><?= $_art_count ?></div><div class="stat-label">Articles publiés</div></div>
         <div><div class="stat-num">Juin 2026</div><div class="stat-label">Dernière mise à jour</div></div>
         <div><a href="https://www.facebook.com/groups/vivreauvietnamcouplefrancovietnamiencap/" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;"><div class="stat-num" style="color:var(--jade);">Communauté</div><div class="stat-label">Facebook · Discord</div></a></div>
       </div>
@@ -455,7 +469,7 @@ foreach ($_art_latest as $_a):
     <input type="email" name="email" placeholder="Ton adresse email" required>
     <button type="submit">S'inscrire</button>
   </form>
-  <p class="newsletter-rgpd">En t'inscrivant, tu acceptes de recevoir mes emails. Tes données sont traitées conformément à la <a href="confidentialite-capvietnam.php" onclick="openModal('privacy');return false;">politique de confidentialité</a>. Tu peux te désinscrire à tout moment.</p>
+  <p class="newsletter-rgpd">En t'inscrivant, tu acceptes de recevoir mes emails. Tes données sont traitées conformément à la <a href="confidentialite-capvietnam" onclick="openModal('privacy');return false;">politique de confidentialité</a>. Tu peux te désinscrire à tout moment.</p>
 </section>
 
 <!-- ═══════ CONTACT ═══════ -->
@@ -466,7 +480,7 @@ foreach ($_art_latest as $_a):
   <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1.5rem;">
     <a href="https://www.facebook.com/groups/vivreauvietnamcouplefrancovietnamiencap/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.8rem 1.5rem;background:#1877f2;color:#fff;border-radius:5px;font-weight:600;text-decoration:none;font-size:0.9rem;">💬 Groupe Facebook</a>
     <a href="https://discord.gg/MdDVNb7QZz" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.8rem 1.5rem;background:#5865f2;color:#fff;border-radius:5px;font-weight:600;text-decoration:none;font-size:0.9rem;">🎮 Discord expats</a>
-    <a href="contact-capvietnam.php" style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.8rem 1.5rem;background:var(--warm-bg);color:var(--ink);border:1px solid var(--border);border-radius:5px;font-weight:600;text-decoration:none;font-size:0.9rem;">✉️ Formulaire de contact</a>
+    <a href="contact-capvietnam" style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.8rem 1.5rem;background:var(--warm-bg);color:var(--ink);border:1px solid var(--border);border-radius:5px;font-weight:600;text-decoration:none;font-size:0.9rem;">✉️ Formulaire de contact</a>
   </div>
   <p style="color:var(--muted);font-size:0.85rem;"><?= SITE_EMAIL ?></p>
 </section>

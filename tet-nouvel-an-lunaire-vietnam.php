@@ -6,7 +6,7 @@ $page_og_title    = 'Le Tết vietnamien : traditions, signification et guide po
 $page_og_desc     = 'Traditions du Tết au Vietnam, enveloppes rouges li xi et repas de famille.';
 $page_og_url      = 'https://www.blog-capvietnam.fr/tet-nouvel-an-lunaire-vietnam';
 $page_og_image    = 'https://www.blog-capvietnam.fr/assets/img/tet-nouvel-an-vietnam-fleurs.jpg';
-$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Le Tet vecu de l interieur avec une famille vietnamienne","datePublished":"2026-02-01","dateModified":"2026-02-01","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Cap Vietnam","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://www.blog-capvietnam.fr/assets/img/tet-nouvel-an-vietnam-fleurs.jpg","description":"Traditions du Tet au Vietnam, enveloppes rouges li xi et repas de famille.","timeRequired":"PT9M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/tet-nouvel-an-lunaire-vietnam"}';
+$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Le Tet vecu de l interieur avec une famille vietnamienne","datePublished":"2026-02-01","dateModified":"2026-02-01","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://www.blog-capvietnam.fr/assets/img/tet-nouvel-an-vietnam-fleurs.jpg","description":"Traditions du Tet au Vietnam, enveloppes rouges li xi et repas de famille.","timeRequired":"PT9M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/tet-nouvel-an-lunaire-vietnam"}';
 
 $article_color   = 'jade';
 $article_hero_bg = '#1a3a1e';
@@ -31,16 +31,17 @@ include 'header.php';
 <header class="article-hero">
   <div class="article-hero-inner">
     <div class="breadcrumb">
-      <a href="blog-capvietnam.php">Accueil</a><span class="breadcrumb-sep">›</span>
-      <a href="articles-capvietnam.php">Couple Mixte</a><span class="breadcrumb-sep">›</span>
+      <a href="blog-capvietnam">Accueil</a><span class="breadcrumb-sep">›</span>
+      <a href="articles-capvietnam">Couple Mixte</a><span class="breadcrumb-sep">›</span>
       <span>Le Tết</span>
     </div>
     <span class="article-badge-hero">Couple Mixte</span>
     <h1>Le Tết vu de l'intérieur d'une famille vietnamienne</h1>
     <div class="article-hero-meta">
-      <span>Par <strong>Cap Vietnam</strong></span>
+      <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
       <span>📅 10 février 2026</span>
       <span>⏱ 8 min de lecture</span>
+      <span>Mis &agrave; jour : Juin 2026</span>
     </div>
   </div>
 </header>
@@ -175,9 +176,9 @@ include 'header.php';
     <div class="author-box">
       <div class="author-avatar" style="overflow:hidden;position:relative;"><img src="assets/img/profile/anthony-profil.jpg" alt="Anthony Bouillon" width="72" height="72" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"></div>
       <div class="author-info">
-        <h4>Cap Vietnam</h4>
+        <h4>Anthony Bouillon</h4>
         <p>Cinq Tết vécus depuis l'intérieur d'une famille de Hà Nam. Chaque année apporte une couche de compréhension supplémentaire.</p>
-        <div class="author-links"><a href="a-propos-capvietnam.php">À propos →</a></div>
+        <div class="author-links"><a href="a-propos-capvietnam">À propos →</a></div>
       </div>
     </div>
 

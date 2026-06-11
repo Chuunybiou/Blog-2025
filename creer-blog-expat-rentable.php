@@ -6,7 +6,7 @@ $page_og_title    = 'Créer un blog expat rentable depuis le Vietnam : guide com
 $page_og_desc     = 'Comment créer un blog expatrié rentable : niche, SEO, WordPress, affiliation.';
 $page_og_url      = 'https://www.blog-capvietnam.fr/creer-blog-expat-rentable';
 $page_og_image    = 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Creer un blog expat rentable depuis le Vietnam","datePublished":"2026-04-01","dateModified":"2026-04-01","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Cap Vietnam","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=1200&q=80","description":"Comment creer un blog expatrie rentable : niche, SEO, WordPress, affiliation.","timeRequired":"PT10M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/creer-blog-expat-rentable"}';
+$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Creer un blog expat rentable depuis le Vietnam","datePublished":"2026-04-01","dateModified":"2026-04-01","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=1200&q=80","description":"Comment creer un blog expatrie rentable : niche, SEO, WordPress, affiliation.","timeRequired":"PT10M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/creer-blog-expat-rentable"}';
 
 $article_color   = 'amber';
 $article_hero_bg = '#3a2800';
@@ -37,16 +37,17 @@ include 'header.php';
 <header class="article-hero">
   <div class="article-hero-inner">
     <div class="breadcrumb">
-      <a href="blog-capvietnam.php">Accueil</a><span class="breadcrumb-sep">›</span>
-      <a href="articles-capvietnam.php">Argent &amp; Travail</a><span class="breadcrumb-sep">›</span>
+      <a href="blog-capvietnam">Accueil</a><span class="breadcrumb-sep">›</span>
+      <a href="articles-capvietnam">Argent &amp; Travail</a><span class="breadcrumb-sep">›</span>
       <span>Créer un blog expat rentable</span>
     </div>
     <span class="article-badge-hero">Argent &amp; Travail</span>
     <h1>Créer un blog expat rentable depuis le Vietnam : guide complet 2026</h1>
     <div class="article-hero-meta">
-      <span>Par <strong>Cap Vietnam</strong></span>
+      <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
       <span>📅 1 avril 2026</span>
       <span>⏱ 10 min de lecture</span>
+      <span>Mis &agrave; jour : Juin 2026</span>
     </div>
   </div>
 </header>
@@ -240,9 +241,9 @@ include 'header.php';
     <div class="author-box">
       <div class="author-avatar" style="overflow:hidden;position:relative;"><img src="assets/img/profile/anthony-profil.jpg" alt="Anthony Bouillon" width="72" height="72" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"></div>
       <div class="author-info">
-        <h4>Cap Vietnam</h4>
+        <h4>Anthony Bouillon</h4>
         <p>Blog des expatriés français au Vietnam. Informations pratiques, vécues et vérifiées par notre communauté installée à Hanoï, Hô Chi Minh-Ville et Da Nang.</p>
-        <div class="author-links"><a href="a-propos-capvietnam.php">En savoir plus →</a></div>
+        <div class="author-links"><a href="a-propos-capvietnam">En savoir plus →</a></div>
       </div>
     </div>
 

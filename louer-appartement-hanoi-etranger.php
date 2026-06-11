@@ -6,7 +6,7 @@ $page_og_title    = 'Louer un appartement à Hanoï en tant qu\'étranger : prix
 $page_og_desc     = 'Budget logement réaliste à Hanoï en 2026, où chercher, comment négocier et signer un contrat en tant qu\'expatrié français.';
 $page_og_url      = 'https://www.blog-capvietnam.fr/louer-appartement-hanoi-etranger';
 $page_og_image    = 'https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Louer un appartement à Hanoï en tant qu\'étranger : guide complet 2026","datePublished":"2026-05-18","dateModified":"2026-05-18","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Cap Vietnam"},"image":"https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=1200&q=80","description":"Comment louer un appartement à Hanoï en tant qu\'étranger en 2026 : prix réels par quartier, contrat bilingue, charges et pièges classiques.","timeRequired":"PT9M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/louer-appartement-hanoi-etranger"}';
+$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Louer un appartement à Hanoï en tant qu\'étranger : guide complet 2026","datePublished":"2026-05-18","dateModified":"2026-05-18","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon"},"image":"https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=1200&q=80","description":"Comment louer un appartement à Hanoï en tant qu\'étranger en 2026 : prix réels par quartier, contrat bilingue, charges et pièges classiques.","timeRequired":"PT9M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/louer-appartement-hanoi-etranger"}';
 
 $article_color        = 'jade';
 $article_hero_bg      = '#0a2d1a';
@@ -36,14 +36,14 @@ include 'header.php';
 <header class="article-hero">
   <div class="article-hero-inner">
     <div class="breadcrumb">
-      <a href="blog-capvietnam.php">Accueil</a><span class="breadcrumb-sep">›</span>
-      <a href="articles-capvietnam.php">Vie Pratique</a><span class="breadcrumb-sep">›</span>
+      <a href="blog-capvietnam">Accueil</a><span class="breadcrumb-sep">›</span>
+      <a href="articles-capvietnam">Vie Pratique</a><span class="breadcrumb-sep">›</span>
       <span>Louer un appartement à Hanoï</span>
     </div>
     <span class="article-badge-hero">Vie Pratique</span>
     <h1>Louer un appartement à Hanoï en tant qu'étranger : prix réels, quartiers et pièges à éviter</h1>
     <div class="article-hero-meta">
-      <span>Par <strong>Cap Vietnam</strong></span>
+      <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
       <span>📅 18 mai 2026</span>
       <span>⏱ 9 min de lecture</span>
     </div>
@@ -398,11 +398,11 @@ include 'header.php';
     <div class="author-box">
       <div class="author-avatar" style="overflow:hidden;position:relative;"><img src="assets/img/profile/anthony-profil.jpg" alt="Anthony Bouillon" width="72" height="72" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"></div>
       <div class="author-info">
-        <h4>Cap Vietnam</h4>
+        <h4>Anthony Bouillon</h4>
         <p>Expatrié à Hanoï. J'ai visité une vingtaine d'appartements avant de signer mon bail — ces conseils viennent de mon expérience directe et des retours de la communauté expat francophone.</p>
         <div class="author-links">
-          <a href="a-propos-capvietnam.php">À propos →</a>
-          <a href="budget-mensuel-hanoi-2026.php">Budget mensuel à Hanoï →</a>
+          <a href="a-propos-capvietnam">À propos →</a>
+          <a href="budget-mensuel-hanoi-2026">Budget mensuel à Hanoï →</a>
         </div>
       </div>
     </div>

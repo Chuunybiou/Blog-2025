@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 require_once __DIR__ . '/config/site.php';
 $page_lang_switch = ['href' => 'vi/', 'label' => '🇻🇳 Tiếng Việt', 'title' => 'Phiên bản tiếng Việt'];
 $page_hreflang    = ['fr' => SITE_URL . '/apprendre-francais-capvietnam', 'vi' => SITE_URL . '/vi/', 'x-default' => SITE_URL . '/vi/'];
@@ -280,7 +280,7 @@ include 'header.php';
   <div class="cta-bottom-btns">
     <a class="cta-tiktok" href="https://www.tiktok.com/@proffrancaisetranger" target="_blank" rel="noopener">🎵 Theo dõi TikTok</a>
     <a class="cta-lessons" href="500-mots-essentiels-francais-vietnamien.pdf">📄 Tải PDF miễn phí</a>
-    <a class="cta-lessons" href="blog-capvietnam.php#newsletter">✉️ Đăng ký nhận bài học qua email</a>
+    <a class="cta-lessons" href="blog-capvietnam#newsletter">✉️ Đăng ký nhận bài học qua email</a>
   </div>
 </section>
 

@@ -56,16 +56,17 @@ include 'header.php';
 <header class="article-hero">
   <div class="article-hero-inner">
     <div class="breadcrumb">
-      <a href="blog-capvietnam.php">Accueil</a><span class="breadcrumb-sep">›</span>
-      <a href="articles-capvietnam.php">Argent &amp; Travail</a><span class="breadcrumb-sep">›</span>
+      <a href="blog-capvietnam">Accueil</a><span class="breadcrumb-sep">›</span>
+      <a href="articles-capvietnam">Argent &amp; Travail</a><span class="breadcrumb-sep">›</span>
       <span>Finances expat France-Vietnam</span>
     </div>
     <span class="article-badge-hero" style="background:var(--amber);color:var(--ink)">💻 Argent &amp; Travail</span>
     <h1>Organiser ses finances entre France et Vietnam : comptes, outils et stratégie</h1>
     <div class="article-hero-meta">
-      <span>Par <strong>Cap Vietnam</strong></span>
+      <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
       <span>📅 6 juin 2026</span>
       <span>⏱ 7 min de lecture</span>
+      <span>Mis &agrave; jour : Juin 2026</span>
     </div>
   </div>
 </header>
@@ -195,7 +196,7 @@ include 'header.php';
       <strong>📋 Quelle banque vietnamienne choisir ?</strong>
       Vietcombank est la plus répandue et la plus accessible pour les expatriés : réseau de DAB partout au Vietnam, application mobile en anglais, habituée aux clients étrangers. J'en ai un aperçu au quotidien via le compte de ma femme.
       <br><br>
-      <a href="banque-vietnam-francais.php" style="color:var(--terracotta);font-weight:600">→ Lire mon article complet sur les banques vietnamiennes</a>
+      <a href="banque-vietnam-francais" style="color:var(--terracotta);font-weight:600">→ Lire mon article complet sur les banques vietnamiennes</a>
     </div>
 
     <!-- H2 #5 -->
@@ -244,10 +245,11 @@ include 'header.php';
     <div class="info-box" style="margin-top:3rem;">
       <strong>📖 Articles liés :</strong>
       <ul style="margin:0.75rem 0 0.5rem;padding-left:1.2rem;">
-        <li><a href="banque-vietnam-francais.php">Compte bancaire au Vietnam pour Français : Vietcombank, Techcombank ou pas du tout ?</a></li>
-        <li><a href="transferer-argent-vietnam-wise.php">Transférer de l'argent vers le Vietnam avec Wise</a></li>
-        <li><a href="fortuneo-expat-compte-france.php">Fortuneo en expatriation : ce qu'on peut garder et ce qu'il faut vérifier</a></li>
-        <li><a href="compte-bancaire-canada-europe-wealthsimple.php">Compte bancaire Canada depuis l'Europe : guide Wealthsimple</a></li>
+        <li><a href="travailler-a-distance-depuis-vietnam">Travailler à distance depuis le Vietnam : le guide complet (statuts, fiscal, visa)</a></li>
+        <li><a href="banque-vietnam-francais">Compte bancaire au Vietnam pour Français : Vietcombank, Techcombank ou pas du tout ?</a></li>
+        <li><a href="transferer-argent-vietnam-wise">Transférer de l'argent vers le Vietnam avec Wise</a></li>
+        <li><a href="fortuneo-expat-compte-france">Fortuneo en expatriation : ce qu'on peut garder et ce qu'il faut vérifier</a></li>
+        <li><a href="compte-bancaire-canada-europe-wealthsimple">Compte bancaire Canada depuis l'Europe : guide Wealthsimple</a></li>
       </ul>
     </div>
 
@@ -260,7 +262,7 @@ include 'header.php';
         <input type="email" name="email" placeholder="ton@email.com" required>
         <button type="submit" style="background:var(--amber);color:var(--ink);">S'inscrire</button>
       </form>
-      <p class="cta-rgpd">Désinscription en un clic. <a href="confidentialite-capvietnam.php">Politique de confidentialité</a>.</p>
+      <p class="cta-rgpd">Désinscription en un clic. <a href="confidentialite-capvietnam">Politique de confidentialité</a>.</p>
     </div>
 
     <!-- AUTHOR BOX -->
@@ -268,7 +270,7 @@ include 'header.php';
       <img src="<?= PROFILE_PHOTO ?>" alt="Anthony Bouillon — Cap Vietnam" width="72" height="72" loading="lazy" decoding="async" style="width:72px;height:72px;border-radius:50%;object-fit:cover;flex-shrink:0;">
       <div class="author-info">
         <p><strong>Anthony Bouillon</strong> — Français entre la France, le Canada et le Vietnam. Je gère des finances sur plusieurs pays — je partage ce qui fonctionne, sans prétendre que mon cas est universel.</p>
-        <a href="a-propos-capvietnam.php" class="author-link">En savoir plus →</a>
+        <a href="a-propos-capvietnam" class="author-link">En savoir plus →</a>
       </div>
     </div>
 

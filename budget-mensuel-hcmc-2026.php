@@ -6,7 +6,7 @@ $page_og_title    = 'Budget mensuel à Hô-Chi-Minh-Ville 2026 : chiffres réels
 $page_og_desc     = 'Loyer, transport, loisirs et coût de la vie à Saigon en 2026 — comparatif avec Hanoï.';
 $page_og_url      = 'https://www.blog-capvietnam.fr/budget-mensuel-hcmc-2026';
 $page_og_image    = 'https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Budget mensuel a Ho-Chi-Minh-Ville en 2026 : combien ca coute vraiment","datePublished":"2026-04-26","dateModified":"2026-04-26","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Cap Vietnam","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=1200&q=80","description":"Loyer, transport, loisirs et cout de la vie a Saigon en 2026 — comparatif avec Hanoi.","timeRequired":"PT8M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/budget-mensuel-hcmc-2026"}';
+$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Budget mensuel a Ho-Chi-Minh-Ville en 2026 : combien ca coute vraiment","datePublished":"2026-04-26","dateModified":"2026-04-26","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=1200&q=80","description":"Loyer, transport, loisirs et cout de la vie a Saigon en 2026 — comparatif avec Hanoi.","timeRequired":"PT8M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/budget-mensuel-hcmc-2026"}';
 
 $article_color   = 'amber';
 $article_hero_bg = '#3a2800';
@@ -33,16 +33,17 @@ include 'header.php';
 <header class="article-hero">
   <div class="article-hero-inner">
     <div class="breadcrumb">
-      <a href="blog-capvietnam.php">Accueil</a><span class="breadcrumb-sep">›</span>
-      <a href="articles-capvietnam.php">Argent &amp; Travail</a><span class="breadcrumb-sep">›</span>
+      <a href="blog-capvietnam">Accueil</a><span class="breadcrumb-sep">›</span>
+      <a href="articles-capvietnam">Argent &amp; Travail</a><span class="breadcrumb-sep">›</span>
       <span>Budget HCMC 2026</span>
     </div>
     <span class="article-badge-hero">Argent &amp; Travail</span>
     <h1>Budget mensuel à Hô-Chi-Minh-Ville 2026 : chiffres réels d'un expatrié</h1>
     <div class="article-hero-meta">
-      <span>Par <strong>Cap Vietnam</strong></span>
+      <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
       <span>📅 26 avril 2026</span>
       <span>⏱ 8 min de lecture</span>
+      <span>Mis &agrave; jour : Juin 2026</span>
     </div>
   </div>
 </header>
@@ -149,7 +150,7 @@ include 'header.php';
       <div style="font-size:1.8rem;line-height:1;flex-shrink:0">🧮</div>
       <div>
         <strong>Simule ton budget HCMC personnalisé</strong>
-        Ces moyennes ne collent pas exactement à ta situation ? <a href="calculateur-budget-vietnam.php">Essaie le calculateur interactif →</a> — sélectionne la ville HCMC, ton type de logement, ton transport et ton niveau de vie pour un résultat instantané en € et en ₫.
+        Ces moyennes ne collent pas exactement à ta situation ? <a href="calculateur-budget-vietnam">Essaie le calculateur interactif →</a> — sélectionne la ville HCMC, ton type de logement, ton transport et ton niveau de vie pour un résultat instantané en € et en ₫.
       </div>
     </div>
 
@@ -205,6 +206,10 @@ include 'header.php';
     include '_affiliate-cta.php';
     ?>
 
+    <div class="info-box">
+      <strong>Tu prépares ta retraite à HCMV ?</strong> → <a href="retraite-vietnam-francais">Guide retraite au Vietnam pour les Français : visa, pension, santé, fiscalité</a>
+    </div>
+
     <h2 id="section-faq">Questions fréquentes</h2>
     <div class="faq-item">
       <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">HCMC est-elle vraiment plus chère que Hanoï ? <span class="faq-arrow">▼</span></button>
@@ -222,9 +227,9 @@ include 'header.php';
     <div class="author-box">
       <div class="author-avatar" style="overflow:hidden;position:relative;"><img src="assets/img/profile/anthony-profil.jpg" alt="Anthony Bouillon" width="72" height="72" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"></div>
       <div class="author-info">
-        <h4>Cap Vietnam</h4>
+        <h4>Anthony Bouillon</h4>
         <p>Basé à Hanoï mais avec des passages réguliers à HCMC. Chiffres compilés en 2026 auprès de la communauté expat francophone dans les deux villes.</p>
-        <div class="author-links"><a href="a-propos-capvietnam.php">À propos →</a></div>
+        <div class="author-links"><a href="a-propos-capvietnam">À propos →</a></div>
       </div>
     </div>
 

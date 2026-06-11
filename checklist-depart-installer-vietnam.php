@@ -6,7 +6,7 @@ $page_og_title    = 'Checklist installation Vietnam : de la France à Hanoï';
 $page_og_desc     = 'Tout ce qu\'il faut faire avant de partir s\'installer au Vietnam — checklist semaine par semaine.';
 $page_og_url      = 'https://www.blog-capvietnam.fr/checklist-depart-installer-vietnam';
 $page_og_image    = 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Checklist complete pour s installer au Vietnam depuis la France","datePublished":"2026-04-26","dateModified":"2026-04-26","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Cap Vietnam","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200&q=80","description":"Tout ce qu il faut faire avant de partir s installer au Vietnam — checklist semaine par semaine.","timeRequired":"PT10M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/checklist-depart-installer-vietnam"}';
+$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Checklist complete pour s installer au Vietnam depuis la France","datePublished":"2026-04-26","dateModified":"2026-04-26","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200&q=80","description":"Tout ce qu il faut faire avant de partir s installer au Vietnam — checklist semaine par semaine.","timeRequired":"PT10M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/checklist-depart-installer-vietnam"}';
 
 $article_color   = 'terracotta';
 $article_hero_bg = '#3a1a0a';
@@ -33,14 +33,14 @@ include 'header.php';
 <header class="article-hero">
   <div class="article-hero-inner">
     <div class="breadcrumb">
-      <a href="blog-capvietnam.php">Accueil</a><span class="breadcrumb-sep">›</span>
-      <a href="articles-capvietnam.php">Démarches Administratives</a><span class="breadcrumb-sep">›</span>
+      <a href="blog-capvietnam">Accueil</a><span class="breadcrumb-sep">›</span>
+      <a href="articles-capvietnam">Démarches Administratives</a><span class="breadcrumb-sep">›</span>
       <span>Checklist départ Vietnam</span>
     </div>
     <span class="article-badge-hero">Démarches Administratives</span>
     <h1>Checklist complète pour s'installer au Vietnam : de la France à Hanoï</h1>
     <div class="article-hero-meta">
-      <span>Par <strong>Cap Vietnam</strong></span>
+      <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
       <span>📅 26 avril 2026</span>
       <span>⏱ 10 min de lecture</span>
     </div>
@@ -75,7 +75,7 @@ include 'header.php';
 
     <div class="info-box">
       <strong>Cet article se concentre sur la logistique pratique.</strong>
-      Pour les démarches administratives (résidence fiscale, CPAM, CAF, auto-entreprise), consulte notre guide complet <a href="quitter-france-expat-vietnam.php">Quitter la France pour le Vietnam</a>.
+      Pour les démarches administratives (résidence fiscale, CPAM, CAF, auto-entreprise), consulte notre guide complet <a href="quitter-france-expat-vietnam">Quitter la France pour le Vietnam</a>.
     </div>
 
     <img class="article-photo" src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200&q=80" alt="Préparation départ voyage Vietnam" width="1200" height="675" loading="lazy">
@@ -87,7 +87,7 @@ include 'header.php';
       <li>☐ <strong>Vaccins : démarrer les séries longues.</strong> L'hépatite B nécessite 3 injections sur 6 mois (schéma classique) ou 1 mois (schéma accéléré). L'hépatite A se fait en 2 injections à 6 mois d'intervalle. Rage si zones rurales prévues. Consulter un médecin voyageur ou une clinique des voyages.</li>
       <li>☐ <strong>Apostille des diplômes</strong> (si tu peux avoir besoin d'un emploi au Vietnam) : demande en préfecture du département d'obtention du diplôme. Délai : 2 à 4 semaines. Coût : 0 à 50€ selon les préfectures.</li>
       <li>☐ <strong>Trier et vendre ses affaires</strong> (Vinted, Leboncoin, Facebook Marketplace). Règle pratique : tout ce qui se rachète au Vietnam pour moins de 200 000 VND (~6,50€) n'a pas besoin d'être transporté.</li>
-      <li>☐ <strong>Démarches administratives France</strong> (voir notre <a href="quitter-france-expat-vietnam.php">guide dédié</a>) : CPAM, CAF, impôts, auto-entreprise.</li>
+      <li>☐ <strong>Démarches administratives France</strong> (voir notre <a href="quitter-france-expat-vietnam">guide dédié</a>) : CPAM, CAF, impôts, auto-entreprise.</li>
       <li>☐ <strong>Ouvrir un compte Wise</strong> : le compte multi-devises indispensable pour convertir euros → VND au taux interbancaire. À ouvrir en France pour faciliter la vérification d'identité.</li>
     </ul>
 
@@ -99,7 +99,7 @@ include 'header.php';
       <li>☐ <strong>Stock de médicaments sur ordonnance</strong> : pour les traitements continus (contraception, traitement psychiatrique, hormones, médicaments cardiovasculaires), constitue un stock de 3 à 6 mois. Certains produits n'existent pas au Vietnam ou ont des formulations différentes. Demande à ton médecin des ordonnances anticipées.</li>
       <li>☐ <strong>Lunettes et lentilles</strong> : emporte 2 paires de lunettes et un stock suffisant de lentilles. Les opticiens vietnamiens sont bons mais la prescription en dioptries peut différer légèrement selon l'équipement.</li>
       <li>☐ <strong>Débloquer son téléphone</strong> : gratuit depuis la réforme de 2023 en France, en appelant ton opérateur. Indispensable pour utiliser une SIM locale vietnamienne.</li>
-      <li>☐ <strong>Assurance santé internationale</strong> : souscrire avant de quitter la France. Certains assureurs appliquent des délais de carence, et quelques-uns refusent d'assurer si tu es déjà à l'étranger au moment de la demande. AXA Expatriate, Cigna Global, Allianz Care — voir notre <a href="assurance-sante-vietnam-expat.php">comparatif assurances</a>.</li>
+      <li>☐ <strong>Assurance santé internationale</strong> : souscrire avant de quitter la France. Certains assureurs appliquent des délais de carence, et quelques-uns refusent d'assurer si tu es déjà à l'étranger au moment de la demande. AXA Expatriate, Cigna Global, Allianz Care — voir notre <a href="assurance-sante-vietnam-expat">comparatif assurances</a>.</li>
       <li>☐ <strong>Scanner tous les documents</strong> : passeport, actes de naissance, diplômes, contrat d'assurance, ordonnances. Stocker dans Google Drive ou un coffre-fort numérique. Envoyer une copie par email à quelqu'un de confiance en France.</li>
       <li>☐ <strong>Résiliation du bail</strong> ou mise en location du logement (préavis 1 mois zone tendue, 3 mois hors zone tendue).</li>
     </ul>
@@ -138,7 +138,7 @@ include 'header.php';
     <p>Les 7 premiers jours sont denses. Voici les priorités par ordre d'urgence :</p>
     <ul>
       <li>☐ <strong>Jour 1 — SIM locale</strong> : achète une SIM Viettel ou Vinaphone à l'aéroport ou dans une boutique opérateur en ville (50 000 à 100 000 VND pour la SIM + forfait données illimitées). Viettel a la meilleure couverture nationale.</li>
-      <li>☐ <strong>Jour 1–2 — Enregistrement công an phường</strong> : obligation légale dans les 24h suivant l'arrivée dans un logement. C'est normalement la responsabilité du propriétaire — vérifie avec lui que c'est fait. Voir notre article sur le <a href="carte-residence-temporaire-vietnam.php">sổ tạm trú</a>.</li>
+      <li>☐ <strong>Jour 1–2 — Enregistrement công an phường</strong> : obligation légale dans les 24h suivant l'arrivée dans un logement. C'est normalement la responsabilité du propriétaire — vérifie avec lui que c'est fait. Voir notre article sur le <a href="carte-residence-temporaire-vietnam">sổ tạm trú</a>.</li>
       <li>☐ <strong>Jour 2–3 — Repérage du quartier</strong> : localise la pharmacie la plus proche, le marché, un supermarché, une clinique internationale. Avoir ces adresses en tête avant d'en avoir besoin.</li>
       <li>☐ <strong>Jour 3–5 — Compte bancaire vietnamien</strong> : Vietcombank ou Techcombank, en agence. Apporte passeport + visa + adresse locale si possible. La carte de débit est souvent remise le jour même ou dans les 3 jours.</li>
       <li>☐ <strong>Semaine 1 — Casque de moto</strong> : si tu prévois d'utiliser un scooter, achète un casque certifié avant tout. Les casques en mousse vendus sur les marchés touristiques ne sont pas conformes et ne protègent pas.</li>
@@ -147,8 +147,8 @@ include 'header.php';
 
     <h2 id="section-6">Premier mois sur place</h2>
     <ul>
-      <li>☐ <strong>Conversion du permis de conduire</strong> : si tu as un permis valide et une thẻ tạm trú, commence les démarches au Sở Giao thông Vận tải local. Voir notre <a href="permis-conduire-vietnam.php">guide complet</a>.</li>
-      <li>☐ <strong>Demande de thẻ tạm trú</strong> : si tu es éligible (marié à un/une Vietnamien/ne, travail avec permis, investisseur). Voir notre <a href="carte-residence-temporaire-vietnam.php">guide sur la carte de résidence</a>.</li>
+      <li>☐ <strong>Conversion du permis de conduire</strong> : si tu as un permis valide et une thẻ tạm trú, commence les démarches au Sở Giao thông Vận tải local. Voir notre <a href="permis-conduire-vietnam">guide complet</a>.</li>
+      <li>☐ <strong>Demande de thẻ tạm trú</strong> : si tu es éligible (marié à un/une Vietnamien/ne, travail avec permis, investisseur). Voir notre <a href="carte-residence-temporaire-vietnam">guide sur la carte de résidence</a>.</li>
       <li>☐ <strong>Inscription consulaire</strong> : gratuite, facultative mais très recommandée. Sur service-public.fr (rubrique "Vivre à l'étranger") ou en se présentant au consulat de France à Hanoï (57 Trần Hưng Đạo) ou HCMC. Permet de voter, recevoir les alertes sécurité, accéder aux services consulaires.</li>
       <li>☐ <strong>Ouvrir MoMo ou ZaloPay</strong> : nécessite une SIM locale et un compte bancaire vietnamien. Ces apps de paiement mobile sont indispensables pour les marchés, restaurants de quartier et petits commerces.</li>
       <li>☐ <strong>Médecin référent</strong> : identifie une clinique internationale ou un médecin francophone/anglophone dans ton quartier avant d'en avoir besoin. Family Medical Practice (Hanoï et HCMC) et Vinmec sont les références.</li>
@@ -161,7 +161,7 @@ include 'header.php';
     <h2 id="section-7">Après 3 mois : les vérifications</h2>
     <ul>
       <li>☐ <strong>Visa / thẻ tạm trú</strong> : si tu es venu en e-visa 90 jours et que tu ne l'as pas renouvelé, il expire. Vérifier la date et anticiper : visa run, extension, ou basculement sur un autre statut.</li>
-      <li>☐ <strong>Règle des 183 jours</strong> : si tu dépasses 183 jours de présence au Vietnam dans l'année civile, tu deviens potentiellement résident fiscal vietnamien. Lire notre <a href="fiscalite-expat-france-vietnam.php">guide sur la fiscalité expatriée</a>.</li>
+      <li>☐ <strong>Règle des 183 jours</strong> : si tu dépasses 183 jours de présence au Vietnam dans l'année civile, tu deviens potentiellement résident fiscal vietnamien. Lire notre <a href="fiscalite-expat-france-vietnam">guide sur la fiscalité expatriée</a>.</li>
       <li>☐ <strong>Renouvellement des ordonnances</strong> : si ton stock de médicaments français est épuisé, consulte un médecin pour voir si un équivalent local existe ou si une commande depuis la France est nécessaire.</li>
       <li>☐ <strong>Réévaluation du logement</strong> : les 3 premiers mois servent souvent à explorer différents quartiers. Si ton premier logement ne te convient pas, c'est le bon moment pour chercher avant la prochaine saison (loyers plus négociables hors saison haute).</li>
       <li>☐ <strong>Banque française</strong> : vérifier si ta banque française facture des frais supplémentaires aux non-résidents. Si oui, évaluer si Wise + compte bancaire vietnamien suffisent à ton usage.</li>
@@ -210,9 +210,9 @@ include 'header.php';
     <div class="author-box">
       <div class="author-avatar" style="overflow:hidden;position:relative;"><img src="assets/img/profile/anthony-profil.jpg" alt="Anthony Bouillon" width="72" height="72" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"></div>
       <div class="author-info">
-        <h4>Cap Vietnam</h4>
+        <h4>Anthony Bouillon</h4>
         <p>Français installé à Hanoï avec ma femme vietnamienne. Cette checklist compile tout ce que j'aurais voulu savoir — et tout ce que j'ai oublié — avant mon départ de France en 2026.</p>
-        <div class="author-links"><a href="a-propos-capvietnam.php">À propos →</a></div>
+        <div class="author-links"><a href="a-propos-capvietnam">À propos →</a></div>
       </div>
     </div>
 

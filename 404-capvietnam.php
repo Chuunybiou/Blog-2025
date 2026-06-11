@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 $page_title       = 'Page introuvable — Cap Vietnam';
 $page_description = 'Cette page n\'existe pas ou a été déplacée.';
 $page_canonical   = 'https://www.blog-capvietnam.fr/404';
@@ -37,29 +37,29 @@ include 'header.php';
     <p class="error-desc">Comme un scooter dans le vieux quartier, tu as pris un mauvais virage. Mais pas de panique — voici quelques pistes pour retrouver ton chemin.</p>
 
     <div class="error-suggestions">
-      <a class="suggestion" href="blog-capvietnam.php">
+      <a class="suggestion" href="blog-capvietnam">
         <span class="suggestion-icon">🏠</span>
         <span class="suggestion-text">Retourner à l'accueil</span>
         <span class="suggestion-arrow">→</span>
       </a>
-      <a class="suggestion" href="articles-capvietnam.php">
+      <a class="suggestion" href="articles-capvietnam">
         <span class="suggestion-icon">📋</span>
         <span class="suggestion-text">Voir tous les articles</span>
         <span class="suggestion-arrow">→</span>
       </a>
-      <a class="suggestion" href="photos-videos-capvietnam.php">
+      <a class="suggestion" href="photos-videos-capvietnam">
         <span class="suggestion-icon">📸</span>
         <span class="suggestion-text">Photos &amp; Vidéos</span>
         <span class="suggestion-arrow">→</span>
       </a>
-      <a class="suggestion" href="apprendre-francais-capvietnam.php">
+      <a class="suggestion" href="apprendre-francais-capvietnam">
         <span class="suggestion-icon">🇫🇷</span>
         <span class="suggestion-text">Học tiếng Pháp — Apprendre le français</span>
         <span class="suggestion-arrow">→</span>
       </a>
     </div>
 
-    <a class="error-home" href="blog-capvietnam.php">← Revenir à l'accueil</a>
+    <a class="error-home" href="blog-capvietnam">← Revenir à l'accueil</a>
 
     <p class="error-fun">Fun fact : il y a environ 6 millions de scooters à Hanoï. Et aucun ne respecte cette page.</p>
   </div>

@@ -57,16 +57,17 @@ include 'header.php';
 <header class="article-hero">
   <div class="article-hero-inner">
     <div class="breadcrumb">
-      <a href="blog-capvietnam.php">Accueil</a><span class="breadcrumb-sep">›</span>
-      <a href="articles-capvietnam.php">Vie pratique</a><span class="breadcrumb-sep">›</span>
+      <a href="blog-capvietnam">Accueil</a><span class="breadcrumb-sep">›</span>
+      <a href="articles-capvietnam">Vie pratique</a><span class="breadcrumb-sep">›</span>
       <span>Prise électrique Vietnam</span>
     </div>
     <span class="article-badge-hero" style="background:<?= $article_badge ?>;color:<?= $article_badge_c ?>">🔌 Vie pratique</span>
     <h1>Prise électrique et adaptateur au Vietnam : ce que les Français doivent savoir avant de partir</h1>
     <div class="article-hero-meta">
-      <span>Par <strong>Cap Vietnam</strong></span>
+      <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
       <span>📅 2 juin 2026</span>
       <span>⏱ 5 min de lecture</span>
+      <span>Mis &agrave; jour : Juin 2026</span>
     </div>
   </div>
 </header>
@@ -307,10 +308,10 @@ include 'header.php';
     <div class="info-box" style="margin-top:3rem;">
       <strong>📚 Pour préparer votre voyage ou installation au Vietnam :</strong>
       <ul style="margin:0.75rem 0 0.5rem;padding-left:1.2rem;">
-        <li><a href="telephone-vietnam-quelle-sim-choisir.php">Quelle SIM choisir au Vietnam — comparatif des opérateurs</a></li>
-        <li><a href="louer-appartement-hanoi-etranger.php">Louer un appartement à Hanoï en tant qu'étranger</a></li>
-        <li><a href="transferer-argent-vietnam-wise.php">Transférer de l'argent en France → Vietnam avec Wise</a></li>
-        <li><a href="ramener-produits-francais-vietnam.php">Ce qu'on peut (et ne peut pas) ramener de France au Vietnam</a></li>
+        <li><a href="telephone-vietnam-quelle-sim-choisir">Quelle SIM choisir au Vietnam — comparatif des opérateurs</a></li>
+        <li><a href="louer-appartement-hanoi-etranger">Louer un appartement à Hanoï en tant qu'étranger</a></li>
+        <li><a href="transferer-argent-vietnam-wise">Transférer de l'argent en France → Vietnam avec Wise</a></li>
+        <li><a href="ramener-produits-francais-vietnam">Ce qu'on peut (et ne peut pas) ramener de France au Vietnam</a></li>
       </ul>
     </div>
 
@@ -323,7 +324,7 @@ include 'header.php';
         <input type="email" name="email" placeholder="ton@email.com" required>
         <button type="submit">S'inscrire</button>
       </form>
-      <p class="cta-rgpd">Désinscription en un clic. <a href="confidentialite-capvietnam.php">Politique de confidentialité</a>.</p>
+      <p class="cta-rgpd">Désinscription en un clic. <a href="confidentialite-capvietnam">Politique de confidentialité</a>.</p>
     </div>
 
     <!-- AUTHOR BOX -->
@@ -332,10 +333,10 @@ include 'header.php';
         <img src="<?= PROFILE_PHOTO ?>" alt="Anthony Bouillon — Cap Vietnam" width="72" height="72" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;">
       </div>
       <div class="author-info">
-        <h4>Cap Vietnam</h4>
+        <h4>Anthony Bouillon</h4>
         <p>Français installé au Vietnam avec ma femme vietnamienne. Je partage mes retours d'expérience concrets — les démarches, les finances, la vie au quotidien — sans inventer ce que je n'ai pas vécu.</p>
         <div class="author-links">
-          <a href="a-propos-capvietnam.php">À propos →</a>
+          <a href="a-propos-capvietnam">À propos →</a>
           <a href="<?= SITE_TIKTOK ?>" target="_blank" rel="noopener">TikTok</a>
         </div>
       </div>

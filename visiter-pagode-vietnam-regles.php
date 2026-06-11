@@ -57,16 +57,17 @@ include 'header.php';
 <header class="article-hero">
   <div class="article-hero-inner">
     <div class="breadcrumb">
-      <a href="blog-capvietnam.php">Accueil</a><span class="breadcrumb-sep">›</span>
-      <a href="articles-capvietnam.php">Voyager au Vietnam</a><span class="breadcrumb-sep">›</span>
+      <a href="blog-capvietnam">Accueil</a><span class="breadcrumb-sep">›</span>
+      <a href="articles-capvietnam">Voyager au Vietnam</a><span class="breadcrumb-sep">›</span>
       <span>Visiter une pagode</span>
     </div>
     <span class="article-badge-hero" style="background:var(--jade);color:#fff">🛕 Voyager au Vietnam</span>
     <h1>Visiter une pagode au Vietnam : chaussures, tenue, couleurs bouddhistes — ce que ma femme bouddhiste m'a appris</h1>
     <div class="article-hero-meta">
-      <span>Par <strong>Cap Vietnam</strong></span>
+      <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
       <span>📅 6 juin 2026</span>
       <span>⏱ 6 min de lecture</span>
+      <span>Mis &agrave; jour : Juin 2026</span>
     </div>
   </div>
 </header>
@@ -204,9 +205,9 @@ include 'header.php';
     <div class="info-box" style="margin-top:3rem;">
       <strong>📖 Articles qui pourraient t'intéresser :</strong>
       <ul style="margin:0.75rem 0 0.5rem;padding-left:1.2rem;">
-        <li><a href="belle-famille-vietnamienne-guide.php">Rencontrer la belle-famille vietnamienne : guide de survie</a></li>
-        <li><a href="differences-culturelles-couple-franco-vietnamien.php">Les différences culturelles en couple franco-vietnamien</a></li>
-        <li><a href="tet-nouvel-an-lunaire-vietnam.php">Mon premier Tết avec la famille de ma femme</a></li>
+        <li><a href="belle-famille-vietnamienne-guide">Rencontrer la belle-famille vietnamienne : guide de survie</a></li>
+        <li><a href="differences-culturelles-couple-franco-vietnamien">Les différences culturelles en couple franco-vietnamien</a></li>
+        <li><a href="tet-nouvel-an-lunaire-vietnam">Mon premier Tết avec la famille de ma femme</a></li>
       </ul>
     </div>
 
@@ -219,7 +220,7 @@ include 'header.php';
         <input type="email" name="email" placeholder="ton@email.com" required>
         <button type="submit" style="background:var(--jade);color:#fff;">S'inscrire</button>
       </form>
-      <p class="cta-rgpd">Désinscription en un clic. <a href="confidentialite-capvietnam.php">Politique de confidentialité</a>.</p>
+      <p class="cta-rgpd">Désinscription en un clic. <a href="confidentialite-capvietnam">Politique de confidentialité</a>.</p>
     </div>
 
     <!-- AUTHOR BOX -->
@@ -227,7 +228,7 @@ include 'header.php';
       <img src="<?= PROFILE_PHOTO ?>" alt="Anthony Bouillon — Cap Vietnam" width="72" height="72" loading="lazy" decoding="async" style="width:72px;height:72px;border-radius:50%;object-fit:cover;flex-shrink:0;">
       <div class="author-info">
         <p><strong>Anthony Bouillon</strong> — Français expatrié à Hanoï, en couple avec une Vietnamienne bouddhiste pratiquante. Ce que j'écris sur la culture et les traditions, je le tiens de ce que j'observe et de ce qu'elle me transmet — pas de ce que j'ai lu sur internet.</p>
-        <a href="a-propos-capvietnam.php" class="author-link">En savoir plus →</a>
+        <a href="a-propos-capvietnam" class="author-link">En savoir plus →</a>
       </div>
     </div>
 

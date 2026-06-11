@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 require_once __DIR__ . '/config/site.php';
 $page_title       = 'Mentions légales — Cap Vietnam';
 $page_description = 'Mentions légales du blog Cap Vietnam : éditeur, hébergeur, propriété intellectuelle et responsabilité.';
@@ -60,10 +60,10 @@ include 'header.php';
   <p>L'utilisation des informations du site se fait sous la seule responsabilité du lecteur. Anthony Bouillon ne saurait être tenu responsable des dommages directs ou indirects résultant de l'utilisation du site ou des informations qu'il contient.</p>
 
   <h2>6. Protection des données personnelles</h2>
-  <p>La politique de traitement des données personnelles est détaillée dans la <a href="confidentialite-capvietnam.php">politique de confidentialité</a> du site.</p>
+  <p>La politique de traitement des données personnelles est détaillée dans la <a href="confidentialite-capvietnam">politique de confidentialité</a> du site.</p>
 
   <h2>7. Cookies</h2>
-  <p>Les cookies utilisés sur ce site sont décrits dans la <a href="cookies-capvietnam.php">politique de gestion des cookies</a>.</p>
+  <p>Les cookies utilisés sur ce site sont décrits dans la <a href="cookies-capvietnam">politique de gestion des cookies</a>.</p>
 
   <h2>8. Droit applicable</h2>
   <p>Les présentes mentions légales sont soumises au droit français. En cas de litige, les tribunaux français sont compétents.</p>

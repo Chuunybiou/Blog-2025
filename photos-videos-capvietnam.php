@@ -152,7 +152,7 @@ include 'header.php';
   <div class="hero-mosaic"></div>
   <div class="page-hero-inner">
     <div class="breadcrumb">
-      <a href="blog-capvietnam.php">Accueil</a><span>›</span><span style="color:rgba(250,248,244,0.6)">Photos &amp; Vidéos</span>
+      <a href="blog-capvietnam">Accueil</a><span>›</span><span style="color:rgba(250,248,244,0.6)">Photos &amp; Vidéos</span>
     </div>
     <h1>Photos &amp; <em>Vidéos</em></h1>
     <p>Le Vietnam à travers mon objectif. Hanoï, street food, paysages, moments de vie et TikToks.</p>
@@ -343,7 +343,7 @@ include 'header.php';
     <input type="email" name="email" placeholder="Ton adresse email" required>
     <button type="submit">S'inscrire</button>
   </form>
-  <p class="nl-rgpd">En t'inscrivant, tu acceptes la <a href="confidentialite-capvietnam.php">politique de confidentialité</a>.</p>
+  <p class="nl-rgpd">En t'inscrivant, tu acceptes la <a href="confidentialite-capvietnam">politique de confidentialité</a>.</p>
 </section>
 
 <div class="lightbox" id="lightbox" onclick="if(event.target===this)closeLightbox()">

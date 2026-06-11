@@ -56,16 +56,17 @@ include 'header.php';
 <header class="article-hero">
   <div class="article-hero-inner">
     <div class="breadcrumb">
-      <a href="blog-capvietnam.php">Accueil</a><span class="breadcrumb-sep">›</span>
-      <a href="articles-capvietnam.php">Argent &amp; Travail</a><span class="breadcrumb-sep">›</span>
+      <a href="blog-capvietnam">Accueil</a><span class="breadcrumb-sep">›</span>
+      <a href="articles-capvietnam">Argent &amp; Travail</a><span class="breadcrumb-sep">›</span>
       <span>iGraal cashback expat</span>
     </div>
     <span class="article-badge-hero" style="background:var(--jade);color:#fff">💻 Argent &amp; Travail</span>
     <h1>iGraal depuis le Vietnam : récupérer du cashback sur ses achats français en ligne</h1>
     <div class="article-hero-meta">
-      <span>Par <strong>Cap Vietnam</strong></span>
+      <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
       <span>📅 6 juin 2026</span>
       <span>⏱ 5 min de lecture</span>
+      <span>Mis &agrave; jour : Juin 2026</span>
     </div>
   </div>
 </header>
@@ -185,9 +186,9 @@ include 'header.php';
     <div class="info-box" style="margin-top:3rem;">
       <strong>📖 Articles liés :</strong>
       <ul style="margin:0.75rem 0 0.5rem;padding-left:1.2rem;">
-        <li><a href="organiser-finances-expat-france-vietnam.php">Organiser ses finances entre France et Vietnam</a></li>
-        <li><a href="transferer-argent-vietnam-wise.php">Transférer de l'argent vers le Vietnam avec Wise</a></li>
-        <li><a href="ramener-produits-francais-vietnam.php">Ramener des produits français au Vietnam : ce qui passe, ce qui bloque</a></li>
+        <li><a href="organiser-finances-expat-france-vietnam">Organiser ses finances entre France et Vietnam</a></li>
+        <li><a href="transferer-argent-vietnam-wise">Transférer de l'argent vers le Vietnam avec Wise</a></li>
+        <li><a href="ramener-produits-francais-vietnam">Ramener des produits français au Vietnam : ce qui passe, ce qui bloque</a></li>
       </ul>
     </div>
 
@@ -200,7 +201,7 @@ include 'header.php';
         <input type="email" name="email" placeholder="ton@email.com" required>
         <button type="submit" style="background:var(--jade);color:#fff;">S'inscrire</button>
       </form>
-      <p class="cta-rgpd">Désinscription en un clic. <a href="confidentialite-capvietnam.php">Politique de confidentialité</a>.</p>
+      <p class="cta-rgpd">Désinscription en un clic. <a href="confidentialite-capvietnam">Politique de confidentialité</a>.</p>
     </div>
 
     <!-- AUTHOR BOX -->
@@ -208,7 +209,7 @@ include 'header.php';
       <img src="<?= PROFILE_PHOTO ?>" alt="Anthony Bouillon — Cap Vietnam" width="72" height="72" loading="lazy" decoding="async" style="width:72px;height:72px;border-radius:50%;object-fit:cover;flex-shrink:0;">
       <div class="author-info">
         <p><strong>Anthony Bouillon</strong> — Français expatrié entre la France et le Vietnam. J'utilise iGraal pour mes achats sur sites français depuis l'étranger — je partage ce que ça vaut vraiment.</p>
-        <a href="a-propos-capvietnam.php" class="author-link">En savoir plus →</a>
+        <a href="a-propos-capvietnam" class="author-link">En savoir plus →</a>
       </div>
     </div>
 

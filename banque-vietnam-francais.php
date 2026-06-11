@@ -57,14 +57,14 @@ include 'header.php';
 <header class="article-hero">
   <div class="article-hero-inner">
     <div class="breadcrumb">
-      <a href="blog-capvietnam.php">Accueil</a><span class="breadcrumb-sep">›</span>
-      <a href="articles-capvietnam.php">Argent & travail à distance</a><span class="breadcrumb-sep">›</span>
+      <a href="blog-capvietnam">Accueil</a><span class="breadcrumb-sep">›</span>
+      <a href="articles-capvietnam">Argent & travail à distance</a><span class="breadcrumb-sep">›</span>
       <span>Compte bancaire Vietnam</span>
     </div>
     <span class="article-badge-hero">💻 Argent & travail à distance</span>
     <h1>Compte bancaire au Vietnam pour Français : Vietcombank, Techcombank ou… pas du tout ? Mon analyse en visa touriste</h1>
     <div class="article-hero-meta">
-      <span>Par <strong>Cap Vietnam</strong></span>
+      <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
       <span>📅 1er juin 2026</span>
       <span>⏱ 9 min de lecture</span>
     </div>
@@ -152,7 +152,7 @@ include 'header.php';
 
     <h3>Pilier 1 — Wise pour les transferts internationaux</h3>
 
-    <p><a href="<?= SITE_URL ?>/go?id=wise" rel="noopener sponsored" target="_blank"><strong>Wise</strong></a> est l'outil central de ma gestion financière entre la France et le Vietnam. Trois raisons principales :</p>
+    <p><a href="<?= SITE_URL ?>/go.php?id=wise" rel="noopener sponsored" target="_blank"><strong>Wise</strong></a> est l'outil central de ma gestion financière entre la France et le Vietnam. Trois raisons principales :</p>
     <ul>
       <li><strong>Taux de change réel</strong> (taux interbancaire, sans marge cachée)</li>
       <li><strong>Frais très faibles</strong> sur les conversions EUR → VND</li>
@@ -309,7 +309,7 @@ include 'header.php';
     <p><strong>Vietcombank</strong> — la plus populaire et présente partout au Vietnam. C'est le standard : le réseau d'agences et de DAB le plus dense du pays, une application mobile en anglais et en vietnamien, et une banque habituée aux clients étrangers. Si tu veux la solution la plus reconnue et la plus simple à trouver partout sur le territoire, c'est celle-là.</p>
     <p>Source et vérification : <a href="https://www.vietcombank.com.vn/en" rel="noopener" target="_blank">Vietcombank.com.vn/en</a></p>
 
-    <p>Et si tu as besoin de gérer des flux internationaux en parallèle de ton compte vietnamien (recevoir depuis la France, envoyer à des clients étrangers), <a href="<?= SITE_URL ?>/go?id=wise" rel="noopener sponsored" target="_blank"><strong>Wise reste plus avantageux</strong></a> qu'un virement bancaire classique depuis le Vietnam.</p>
+    <p>Et si tu as besoin de gérer des flux internationaux en parallèle de ton compte vietnamien (recevoir depuis la France, envoyer à des clients étrangers), <a href="<?= SITE_URL ?>/go.php?id=wise" rel="noopener sponsored" target="_blank"><strong>Wise reste plus avantageux</strong></a> qu'un virement bancaire classique depuis le Vietnam.</p>
 
     <!-- ============================
          H2 #6 — Documents
@@ -318,10 +318,50 @@ include 'header.php';
 
     <p>Les exigences varient d'une banque à l'autre et évoluent régulièrement. La liste ci-dessous est <strong>indicative</strong> — vérifie impérativement les conditions exactes sur le site officiel de la banque choisie avant de te déplacer en agence.</p>
 
+    <div class="table-wrap">
+    <table class="comparison-table">
+      <thead>
+        <tr>
+          <th>Ton statut au Vietnam</th>
+          <th>Documents généralement requis</th>
+          <th>Probabilité d'acceptation</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>E-visa 90 jours (touriste)</td>
+          <td>Passeport, e-visa, justificatif de domicile (bail), SIM locale</td>
+          <td>⚠️ Variable selon agence — certaines acceptent, d'autres refusent</td>
+        </tr>
+        <tr>
+          <td>Visa DL (affaires)</td>
+          <td>Passeport, visa DL, justificatif de domicile, lettre entreprise</td>
+          <td>Bon si visa valide et domicile enregistré</td>
+        </tr>
+        <tr>
+          <td>Visa TT / TRC (conjoint vietnamien)</td>
+          <td>Passeport, visa TT ou TRC, acte de mariage, domicile</td>
+          <td>✅ Très bonne — statut reconnu</td>
+        </tr>
+        <tr>
+          <td>Permis de travail + visa employeur</td>
+          <td>Passeport, permis de travail, contrat de travail local, domicile</td>
+          <td>✅ Excellente — profil standard</td>
+        </tr>
+        <tr>
+          <td>TRC longue durée (retraite, investisseur)</td>
+          <td>Passeport, TRC, justificatif domicile</td>
+          <td>✅ Très bonne</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <p>Dans tous les cas, tu auras besoin de :</p>
     <ul>
       <li><strong>Passeport en cours de validité</strong> + photocopie</li>
-      <li><strong>Visa en cours de validité</strong> — visa TT familial, visa de travail ou e-visa multiple entrées + justificatif de domicile ; un visa touriste 90 jours peut être refusé selon les banques</li>
-      <li><strong>Justificatif de domicile vietnamien</strong> — contrat de bail signé ou attestation d'enregistrement de séjour délivrée par la police de quartier (<em>so tạm trú</em>)</li>
+      <li><strong>Visa ou titre de séjour en cours de validité</strong></li>
+      <li><strong>Justificatif de domicile vietnamien</strong> — contrat de bail signé ou enregistrement de séjour temporaire (<em>sổ tạm trú</em>)</li>
       <li><strong>Numéro de téléphone vietnamien</strong> — une SIM locale suffit (~200 000 ₫ disponible à l'aéroport)</li>
       <li><strong>Premier dépôt</strong> — généralement symbolique (~100 000 à 500 000 ₫ selon la banque)</li>
     </ul>
@@ -378,6 +418,10 @@ include 'header.php';
       </div>
     </div>
 
+    <div class="info-box">
+      <strong>Dans le même dossier :</strong> Pour la gestion complète de ton argent depuis le Vietnam — transferts, fiscalité, protection sociale et statut de travail — lis notre guide central : <a href="travailler-a-distance-depuis-vietnam">travailler à distance depuis le Vietnam</a>.
+    </div>
+
     <!-- ============================
          FAQ
     ============================= -->
@@ -404,7 +448,7 @@ include 'header.php';
         Faut-il parler vietnamien pour ouvrir un compte ?
         <span class="faq-arrow">▼</span>
       </button>
-      <div class="faq-answer">Non, ce n'est pas obligatoire. Les grandes agences Vietcombank et Techcombank à Hanoï et Hô-Chi-Minh-Ville ont l'habitude des clients étrangers, et les applications mobiles sont disponibles en anglais. Avoir un accompagnant vietnamophone facilite tout de même les démarches, en particulier pour remplir les formulaires. Pour communiquer en agence, mon <a href="<?= SITE_URL ?>/go?id=amazon-g7" rel="noopener sponsored" target="_blank">ebook Français-Vietnamien</a> peut t'aider à échanger les bases avec le conseiller.</div>
+      <div class="faq-answer">Non, ce n'est pas obligatoire. Les grandes agences Vietcombank et Techcombank à Hanoï et Hô-Chi-Minh-Ville ont l'habitude des clients étrangers, et les applications mobiles sont disponibles en anglais. Avoir un accompagnant vietnamophone facilite tout de même les démarches, en particulier pour remplir les formulaires. Pour communiquer en agence, mon <a href="<?= SITE_URL ?>/go.php?id=amazon-g7" rel="noopener sponsored" target="_blank">ebook Français-Vietnamien</a> peut t'aider à échanger les bases avec le conseiller.</div>
     </div>
 
     <div class="faq-item">
@@ -453,14 +497,14 @@ include 'header.php';
     <div class="info-box" style="margin-top:3rem;">
       <strong>📚 Pour aller plus loin sur les finances au Vietnam :</strong>
       <ul style="margin:0.75rem 0 0.5rem;padding-left:1.2rem;">
-        <li><a href="compte-joint-franco-vietnamien.php">Ouvrir un compte joint franco-vietnamien — les démarches</a></li>
-        <li><a href="argent-couple-franco-vietnamien.php">L'argent dans un couple franco-vietnamien</a></li>
-        <li><a href="prix-mariage-franco-vietnamien.php">Coût d'un mariage franco-vietnamien : le budget réel</a></li>
-        <li><a href="transferer-argent-vietnam-wise.php">Transférer de l'argent en France → Vietnam avec <strong>Wise</strong></a></li>
+        <li><a href="compte-joint-franco-vietnamien">Ouvrir un compte joint franco-vietnamien — les démarches</a></li>
+        <li><a href="argent-couple-franco-vietnamien">L'argent dans un couple franco-vietnamien</a></li>
+        <li><a href="prix-mariage-franco-vietnamien">Coût d'un mariage franco-vietnamien : le budget réel</a></li>
+        <li><a href="transferer-argent-vietnam-wise">Transférer de l'argent en France → Vietnam avec <strong>Wise</strong></a></li>
       </ul>
       <p style="margin-top:1rem;margin-bottom:0;">
         💡 Pour communiquer avec les conseillers Vietcombank en agence, mon
-        <a href="<?= SITE_URL ?>/go?id=amazon-g7" rel="noopener sponsored" target="_blank"><strong>ebook Français-Vietnamien</strong></a>
+        <a href="<?= SITE_URL ?>/go.php?id=amazon-g7" rel="noopener sponsored" target="_blank"><strong>ebook Français-Vietnamien</strong></a>
         t'aide à maîtriser les bases du vocabulaire bancaire et du quotidien.
       </p>
     </div>
@@ -476,7 +520,7 @@ include 'header.php';
         <input type="email" name="email" placeholder="ton@email.com" required>
         <button type="submit" style="background:var(--ink);">S'inscrire</button>
       </form>
-      <p class="cta-rgpd">Désinscription en un clic. <a href="confidentialite-capvietnam.php">Politique de confidentialité</a>.</p>
+      <p class="cta-rgpd">Désinscription en un clic. <a href="confidentialite-capvietnam">Politique de confidentialité</a>.</p>
     </div>
 
     <!-- ============================
@@ -487,10 +531,10 @@ include 'header.php';
         <img src="<?= PROFILE_PHOTO ?>" alt="Anthony Bouillon — Cap Vietnam" width="72" height="72" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;">
       </div>
       <div class="author-info">
-        <h4>Cap Vietnam</h4>
+        <h4>Anthony Bouillon</h4>
         <p>Français installé au Vietnam avec ma femme vietnamienne. Je partage mes retours d'expérience concrets sur les démarches, les finances et la vie au quotidien — sans inventer ce que je n'ai pas vécu.</p>
         <div class="author-links">
-          <a href="a-propos-capvietnam.php">À propos →</a>
+          <a href="a-propos-capvietnam">À propos →</a>
           <a href="https://www.tiktok.com/@proffrancaisetranger" target="_blank" rel="noopener">TikTok</a>
         </div>
       </div>

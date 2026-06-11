@@ -6,7 +6,7 @@ $page_og_title    = 'Fiscalité expatrié France-Vietnam : ce que vous devez sav
 $page_og_desc     = 'Convention fiscale France-Vietnam 1993, résidence fiscale et obligations déclaratives.';
 $page_og_url      = 'https://www.blog-capvietnam.fr/fiscalite-expat-france-vietnam';
 $page_og_image    = 'https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Fiscalite des expatries : convention France-Vietnam","datePublished":"2026-03-10","dateModified":"2026-03-10","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Cap Vietnam","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=1200&q=80","description":"Convention fiscale France-Vietnam 1993, residence fiscale et obligations declaratives.","timeRequired":"PT9M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/fiscalite-expat-france-vietnam"}';
+$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Fiscalite des expatries : convention France-Vietnam","datePublished":"2026-03-10","dateModified":"2026-03-10","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=1200&q=80","description":"Convention fiscale France-Vietnam 1993, residence fiscale et obligations declaratives.","timeRequired":"PT9M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/fiscalite-expat-france-vietnam"}';
 
 $article_color   = 'amber';
 $article_hero_bg = '#3a2800';
@@ -33,16 +33,17 @@ include 'header.php';
 <header class="article-hero">
   <div class="article-hero-inner">
     <div class="breadcrumb">
-      <a href="blog-capvietnam.php">Accueil</a><span class="breadcrumb-sep">›</span>
-      <a href="articles-capvietnam.php">Argent &amp; Travail</a><span class="breadcrumb-sep">›</span>
+      <a href="blog-capvietnam">Accueil</a><span class="breadcrumb-sep">›</span>
+      <a href="articles-capvietnam">Argent &amp; Travail</a><span class="breadcrumb-sep">›</span>
       <span>Fiscalité expatrié</span>
     </div>
     <span class="article-badge-hero">Argent &amp; Travail</span>
     <h1>Fiscalité expatrié France-Vietnam : convention, résidence fiscale et obligations</h1>
     <div class="article-hero-meta">
-      <span>Par <strong>Cap Vietnam</strong></span>
+      <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
       <span>📅 20 février 2026</span>
       <span>⏱ 10 min de lecture</span>
+      <span>Mis &agrave; jour : Juin 2026</span>
     </div>
   </div>
 </header>
@@ -52,6 +53,7 @@ include 'header.php';
     <div class="toc-label">Sommaire</div>
     <ol class="toc-list">
       <li><a href="#section-1">La convention fiscale France-Vietnam</a></li>
+      <li><a href="#section-1b">Tableau : qui impose quoi</a></li>
       <li><a href="#section-2">Résidence fiscale : France ou Vietnam ?</a></li>
       <li><a href="#section-3">Obligations déclaratives en France</a></li>
       <li><a href="#section-4">Impôt au Vietnam</a></li>
@@ -91,6 +93,63 @@ include 'header.php';
       La convention est publiée au Journal Officiel de la République française. Elle est librement consultable sur le site de la Direction générale des finances publiques (impots.gouv.fr) dans la section "Conventions fiscales internationales".
     </div>
 
+    <h2 id="section-1b">Qui impose quoi ? Tableau par type de revenu</h2>
+    <p>La convention de 1993 répartit les droits d'imposition selon le type de revenu. Voici un résumé pratique :</p>
+    <div class="table-wrap">
+    <table class="comparison-table">
+      <thead>
+        <tr>
+          <th>Type de revenu</th>
+          <th>Imposé où</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Salaire (travail exercé au Vietnam)</td>
+          <td>Vietnam principalement</td>
+          <td>Règle du lieu d'exercice [À VÉRIFIER : art. convention]</td>
+        </tr>
+        <tr>
+          <td>Salaire (télétravail pour employeur FR)</td>
+          <td>Selon résidence fiscale + lieu d'exercice</td>
+          <td>Zone grise — peut être partagé entre les deux pays</td>
+        </tr>
+        <tr>
+          <td>Revenu d'activité indépendante (freelance)</td>
+          <td>Pays de résidence fiscale</td>
+          <td>Sauf établissement stable dans l'autre pays [À VÉRIFIER]</td>
+        </tr>
+        <tr>
+          <td>Revenus immobiliers (loyer)</td>
+          <td>Pays où est situé le bien</td>
+          <td>Loyer d'un appartement en France → imposé en France</td>
+        </tr>
+        <tr>
+          <td>Dividendes</td>
+          <td>Les deux pays (avec crédit d'impôt)</td>
+          <td>Taux réduit prévu par la convention [À VÉRIFIER : % exact]</td>
+        </tr>
+        <tr>
+          <td>Pensions de retraite publiques</td>
+          <td>France (pays versant)</td>
+          <td>Retraite de la fonction publique française → France [À VÉRIFIER]</td>
+        </tr>
+        <tr>
+          <td>Pensions de retraite privées</td>
+          <td>Pays de résidence du bénéficiaire</td>
+          <td>Si résident fiscal vietnamien, le Vietnam impose</td>
+        </tr>
+        <tr>
+          <td>Plus-values (vente d'actions)</td>
+          <td>Pays de résidence fiscale généralement</td>
+          <td>[À VÉRIFIER : article spécifique de la convention]</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <p>Pour le détail de chaque cas et les critères de résidence fiscale qui déterminent tout ça, lis notre article dédié : <a href="residence-fiscale-france-vietnam-183-jours">résidence fiscale France-Vietnam et règle des 183 jours</a>.</p>
+
     <h2 id="section-2">Résidence fiscale : France ou Vietnam ?</h2>
     <p>C'est la question centrale. Tu ne peux être résident fiscal que d'un seul pays à la fois (en principe). La résidence fiscale détermine quel pays a le droit d'imposer l'ensemble de tes revenus mondiaux.</p>
     <p><strong>Selon le droit français (article 4B du CGI)</strong>, tu es résident fiscal français si l'une de ces conditions est remplie :</p>
@@ -104,6 +163,10 @@ include 'header.php';
     <div class="warning-box">
       <strong>⚠️ Erreur courante :</strong>
       Partir au Vietnam ne signifie pas automatiquement perdre sa résidence fiscale française. Si ta famille (conjoint, enfants) reste en France, si tu conserves un logement en France, ou si ton patrimoine principal est en France, tu restes probablement résident fiscal français — et tu dois déclarer tes revenus mondiaux en France.
+    </div>
+
+    <div class="info-box">
+      <strong>Aller plus loin :</strong> La résidence fiscale est un sujet à part entière. Les 4 critères français, la règle des 183 jours au Vietnam, et 3 cas concrets sont détaillés dans → <a href="residence-fiscale-france-vietnam-183-jours">notre guide complet sur la résidence fiscale France-Vietnam</a>.
     </div>
 
     <h2 id="section-3">Obligations déclaratives en France</h2>
@@ -170,6 +233,14 @@ include 'header.php';
       <li><strong>Pôle Emploi</strong> : tu perds les droits ARE (chômage) dès que tu n'es plus salarié en France ou que tu t'installes à l'étranger. Il n'existe pas d'équivalent pour les indépendants.</li>
     </ul>
 
+    <div class="info-box">
+      <strong>Articles du dossier Argent &amp; Travail :</strong><br>
+      → <a href="travailler-a-distance-depuis-vietnam">Guide complet : travailler à distance depuis le Vietnam</a><br>
+      → <a href="portage-salarial-depuis-vietnam">Portage salarial depuis le Vietnam : guide 2026</a><br>
+      → <a href="residence-fiscale-france-vietnam-183-jours">Résidence fiscale et règle des 183 jours (4 critères, 3 cas concrets)</a><br>
+      → <a href="declarer-impots-france-depuis-vietnam">Déclarer ses impôts en France depuis le Vietnam</a>
+    </div>
+
     <h2 id="section-faq">Questions fréquentes</h2>
     <div class="faq-item">
       <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Si je vis au Vietnam mais garde mon compte courant en France, dois-je le déclarer au Vietnam ? <span class="faq-arrow">▼</span></button>
@@ -187,9 +258,9 @@ include 'header.php';
     <div class="author-box">
       <div class="author-avatar" style="overflow:hidden;position:relative;"><img src="assets/img/profile/anthony-profil.jpg" alt="Anthony Bouillon" width="72" height="72" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"></div>
       <div class="author-info">
-        <h4>Cap Vietnam</h4>
+        <h4>Anthony Bouillon</h4>
         <p>Ces informations sont générales et ne constituent pas un conseil fiscal. Pour ta situation spécifique, consulte un expert-comptable ou un avocat fiscaliste spécialisé en expatriation.</p>
-        <div class="author-links"><a href="a-propos-capvietnam.php">À propos →</a></div>
+        <div class="author-links"><a href="a-propos-capvietnam">À propos →</a></div>
       </div>
     </div>
 

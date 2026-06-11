@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 require_once __DIR__ . '/config/site.php';
 $page_title       = 'Mes outils pour vivre au Vietnam — Ressources expat 2026';
 $page_description = 'Les outils que j\'utilise vraiment pour vivre entre le Canada, la France et le Vietnam : banques, VPN, SIM, assurance santé, traduction, transport. Uniquement ce que j\'ai testé.';
@@ -239,7 +239,7 @@ include 'header.php';
         </div>
         <p class="tool-card-desc">Ma femme m'a acheté une SIM locale au Vietnam. Forfait annuel autour de 2 500 000 ₫ (~100€) avec SMS illimités et environ 2 heures d'appel incluses, plus les données mobiles. Beaucoup moins cher qu'un forfait mensuel occidental et bien plus fiable que le roaming.</p>
         <div class="tool-card-meta">Opérateurs principaux : Viettel (meilleure couverture hors des villes), Vinaphone, Mobifone. SIM disponible à l'aéroport ou en boutique (~100 000–200 000 ₫ pour une SIM prépayée).</div>
-        <a class="tool-card-btn btn-gray" href="telephone-vietnam-quelle-sim-choisir.php">Lire mon comparatif SIM →</a>
+        <a class="tool-card-btn btn-gray" href="telephone-vietnam-quelle-sim-choisir">Lire mon comparatif SIM →</a>
       </div>
 
     </div>
@@ -319,7 +319,7 @@ include 'header.php';
         </div>
         <p class="tool-card-desc">J'ai écrit un article complet sur comment trouver des vols Paris–Hanoï au meilleur prix. Les escales, les compagnies, les périodes à éviter.</p>
         <div class="tool-card-meta">Comptez 600–1200€ pour un aller-retour selon la saison.</div>
-        <a class="tool-card-btn btn-gray" href="vol-paris-hanoi-pas-cher.php">Lire mon guide vols →</a>
+        <a class="tool-card-btn btn-gray" href="vol-paris-hanoi-pas-cher">Lire mon guide vols →</a>
       </div>
 
     </div>

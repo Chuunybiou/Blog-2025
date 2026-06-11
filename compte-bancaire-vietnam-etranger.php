@@ -6,7 +6,7 @@ $page_og_title    = 'Ouvrir un compte bancaire au Vietnam en tant qu\'étranger'
 $page_og_desc     = 'Quelle banque choisir au Vietnam pour un expatrié français : Vietcombank, BIDV, HSBC.';
 $page_og_url      = 'https://www.blog-capvietnam.fr/compte-bancaire-vietnam-etranger';
 $page_og_image    = 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Ouvrir un compte bancaire au Vietnam pour un etranger","datePublished":"2026-04-05","dateModified":"2026-04-05","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Cap Vietnam","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1200&q=80","description":"Quelle banque choisir au Vietnam pour un expatrie francais : Vietcombank, BIDV, HSBC.","timeRequired":"PT6M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/compte-bancaire-vietnam-etranger"}';
+$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Ouvrir un compte bancaire au Vietnam pour un etranger","datePublished":"2026-04-05","dateModified":"2026-04-05","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1200&q=80","description":"Quelle banque choisir au Vietnam pour un expatrie francais : Vietcombank, BIDV, HSBC.","timeRequired":"PT6M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/compte-bancaire-vietnam-etranger"}';
 
 $article_color        = 'terracotta';
 $article_hero_bg      = '#3a1a0a';
@@ -32,14 +32,14 @@ include 'header.php';
 <header class="article-hero">
   <div class="article-hero-inner">
     <div class="breadcrumb">
-      <a href="blog-capvietnam.php">Accueil</a><span class="breadcrumb-sep">›</span>
-      <a href="articles-capvietnam.php">Démarches Administratives</a><span class="breadcrumb-sep">›</span>
+      <a href="blog-capvietnam">Accueil</a><span class="breadcrumb-sep">›</span>
+      <a href="articles-capvietnam">Démarches Administratives</a><span class="breadcrumb-sep">›</span>
       <span>Compte bancaire</span>
     </div>
     <span class="article-badge-hero">Démarches Administratives</span>
     <h1>Ouvrir un compte bancaire au Vietnam en tant qu'étranger</h1>
     <div class="article-hero-meta">
-      <span>Par <strong>Cap Vietnam</strong></span>
+      <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
       <span>📅 3 avril 2026</span>
       <span>⏱ 8 min de lecture</span>
     </div>
@@ -212,9 +212,9 @@ include 'header.php';
     <div class="author-box">
       <div class="author-avatar" style="overflow:hidden;position:relative;"><img src="assets/img/profile/anthony-profil.jpg" alt="Anthony Bouillon" width="72" height="72" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"></div>
       <div class="author-info">
-        <h4>Cap Vietnam</h4>
+        <h4>Anthony Bouillon</h4>
         <p>Blog d'un Français installé à Hanoï avec sa femme vietnamienne. Démarches admin, vie quotidienne et finances d'expat — uniquement des informations vérifiées.</p>
-        <div class="author-links"><a href="a-propos-capvietnam.php">À propos →</a></div>
+        <div class="author-links"><a href="a-propos-capvietnam">À propos →</a></div>
       </div>
     </div>
 

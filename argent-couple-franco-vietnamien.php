@@ -6,7 +6,7 @@ $page_og_title    = 'Argent et couple franco-vietnamien : transparence, famille,
 $page_og_desc     = 'Comment gérer l\'argent dans un couple franco-vietnamien : soutien à la famille vietnamienne, partage des dépenses, communication financière. Mon expérience.';
 $page_og_url      = 'https://www.blog-capvietnam.fr/argent-couple-franco-vietnamien';
 $page_og_image    = 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"Article","headline":"Argent et couple franco-vietnamien : ce qu\'on ne dit pas assez","datePublished":"2026-05-15","author":{"@type":"Person","name":"Cap Vietnam","url":"https://www.blog-capvietnam.fr/a-propos-capvietnam.php"},"publisher":{"@type":"Organization","name":"Cap Vietnam"},"mainEntityOfPage":"https://www.blog-capvietnam.fr/argent-couple-franco-vietnamien","inLanguage":"fr","articleSection":"Couple franco-vietnamien"}';
+$page_schema      = '{"@context":"https://schema.org","@type":"Article","headline":"Argent et couple franco-vietnamien : ce qu\'on ne dit pas assez","datePublished":"2026-05-15","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos-capvietnam"},"publisher":{"@type":"Organization","name":"Anthony Bouillon"},"mainEntityOfPage":"https://www.blog-capvietnam.fr/argent-couple-franco-vietnamien","inLanguage":"fr","articleSection":"Couple franco-vietnamien"}';
 
 $article_color        = 'jade';
 $article_hero_bg      = '#0e2a20';
@@ -33,16 +33,17 @@ include 'header.php';
 <header class="article-hero">
   <div class="article-hero-inner">
     <div class="breadcrumb">
-      <a href="blog-capvietnam.php">Accueil</a><span class="breadcrumb-sep">›</span>
-      <a href="articles-capvietnam.php">Couple franco-vietnamien</a><span class="breadcrumb-sep">›</span>
+      <a href="blog-capvietnam">Accueil</a><span class="breadcrumb-sep">›</span>
+      <a href="articles-capvietnam">Couple franco-vietnamien</a><span class="breadcrumb-sep">›</span>
       <span>Argent en couple</span>
     </div>
     <span class="article-badge-hero">Couple franco-vietnamien</span>
     <h1>Argent et couple franco-vietnamien : ce qu'on ne dit pas assez</h1>
     <div class="article-hero-meta">
-      <span>Par <strong>Cap Vietnam</strong></span>
+      <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
       <span>📅 15 mai 2026</span>
       <span>⏱ 10 min de lecture</span>
+      <span>Mis &agrave; jour : Juin 2026</span>
     </div>
   </div>
 </header>
@@ -166,7 +167,7 @@ include 'header.php';
       <li><strong>Des conversations ouvertes avant le mariage</strong> — c'est le facteur qui fait le plus de différence. Poser les règles tôt.</li>
       <li><strong>Un notaire pour le contrat de mariage</strong> — on a choisi la séparation de biens pour simplifier la gestion d'un patrimoine dans deux systèmes juridiques différents.</li>
     </ul>
-    <p>Pour les aspects pratiques du transfert d'argent, notre article sur <a href="transferer-argent-vietnam-wise.php">Wise vs banques classiques</a> couvre les détails techniques. Pour l'organisation du compte bancaire local, voir <a href="compte-joint-franco-vietnamien.php">notre guide sur le compte joint franco-vietnamien</a>.</p>
+    <p>Pour les aspects pratiques du transfert d'argent, notre article sur <a href="transferer-argent-vietnam-wise">Wise vs banques classiques</a> couvre les détails techniques. Pour l'organisation du compte bancaire local, voir <a href="compte-joint-franco-vietnamien">notre guide sur le compte joint franco-vietnamien</a>.</p>
 
     <h2 id="section-faq">Questions fréquentes</h2>
     <div class="faq-item">
@@ -188,22 +189,22 @@ include 'header.php';
 
     <div class="cta-newsletter">
       <h3>Reçois mes prochains articles</h3>
-      <p>Un email par semaine. Désabonnement en un clic.</p>
+      <p>Un email par mois. Désabonnement en un clic.</p>
       <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
         <input type="email" name="email" placeholder="Ton adresse email" required>
         <button type="submit">S'inscrire</button>
       </form>
-      <p class="cta-rgpd">En t'inscrivant, tu acceptes la <a href="confidentialite-capvietnam.php">politique de confidentialité</a>.</p>
+      <p class="cta-rgpd">En t'inscrivant, tu acceptes la <a href="confidentialite-capvietnam">politique de confidentialité</a>.</p>
     </div>
 
     <div class="author-box">
       <div class="author-avatar" style="display:flex;align-items:center;justify-content:center;background:#c0846e;color:#fff;font-weight:700;font-size:1.5rem;border-radius:50%;width:72px;height:72px;flex-shrink:0;">AB</div>
       <div class="author-info">
-        <h4>Cap Vietnam</h4>
+        <h4>Anthony Bouillon</h4>
         <p>Français marié à une Vietnamienne, entre France, Canada et Vietnam. Je partage ce que j'apprends sur la vie de couple franco-vietnamien — sans filtre et sans généraliser.</p>
         <div class="author-links">
           <a href="https://www.tiktok.com/@proffrancaisetranger" target="_blank" rel="noopener">TikTok</a>
-          <a href="a-propos-capvietnam.php">À propos</a>
+          <a href="a-propos-capvietnam">À propos</a>
         </div>
       </div>
     </div>

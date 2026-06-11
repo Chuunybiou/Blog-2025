@@ -6,7 +6,7 @@ $page_og_title    = 'Se marier avec une Vietnamienne : toutes les démarches off
 $page_og_desc     = 'Certificat de capacité matrimoniale, mariage civil au Vietnam, transcription à Nantes.';
 $page_og_url      = 'https://www.blog-capvietnam.fr/se-marier-vietnamienne-demarches-france';
 $page_og_image    = 'https://images.unsplash.com/photo-1537907510278-2a3b01e3de52?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Se marier avec une Vietnamienne : demarches cote France","datePublished":"2026-04-08","dateModified":"2026-04-08","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Cap Vietnam","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1537907510278-2a3b01e3de52?w=1200&q=80","description":"Certificat de capacite matrimoniale, mariage civil au Vietnam, transcription a Nantes.","timeRequired":"PT12M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/se-marier-vietnamienne-demarches-france"}';
+$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Se marier avec une Vietnamienne : demarches cote France","datePublished":"2026-04-08","dateModified":"2026-04-08","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1537907510278-2a3b01e3de52?w=1200&q=80","description":"Certificat de capacite matrimoniale, mariage civil au Vietnam, transcription a Nantes.","timeRequired":"PT12M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/se-marier-vietnamienne-demarches-france"}';
 
 $article_color   = 'terracotta';
 $article_hero_bg = '#3a1a0a';
@@ -33,14 +33,14 @@ include 'header.php';
 <header class="article-hero">
   <div class="article-hero-inner">
     <div class="breadcrumb">
-      <a href="blog-capvietnam.php">Accueil</a><span class="breadcrumb-sep">›</span>
-      <a href="articles-capvietnam.php">Démarches Administratives</a><span class="breadcrumb-sep">›</span>
+      <a href="blog-capvietnam">Accueil</a><span class="breadcrumb-sep">›</span>
+      <a href="articles-capvietnam">Démarches Administratives</a><span class="breadcrumb-sep">›</span>
       <span>Mariage franco-vietnamien</span>
     </div>
     <span class="article-badge-hero">Démarches Administratives</span>
     <h1>Se marier avec une Vietnamienne : démarches en France et au Vietnam</h1>
     <div class="article-hero-meta">
-      <span>Par <strong>Cap Vietnam</strong></span>
+      <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
       <span>📅 6 avril 2026</span>
       <span>⏱ 11 min de lecture</span>
     </div>
@@ -179,9 +179,9 @@ include 'header.php';
     <div class="author-box">
       <div class="author-avatar" style="overflow:hidden;position:relative;"><img src="assets/img/profile/anthony-profil.jpg" alt="Anthony Bouillon" width="72" height="72" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"></div>
       <div class="author-info">
-        <h4>Cap Vietnam</h4>
+        <h4>Anthony Bouillon</h4>
         <p>Informations basées sur le Code civil français, la Loi vietnamienne sur le mariage et la famille n°52/2014/QH13 et la convention consulaire franco-vietnamienne.</p>
-        <div class="author-links"><a href="a-propos-capvietnam.php">À propos →</a></div>
+        <div class="author-links"><a href="a-propos-capvietnam">À propos →</a></div>
       </div>
     </div>
 

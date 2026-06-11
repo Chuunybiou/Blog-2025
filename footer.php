@@ -7,7 +7,7 @@
     <p style="color:rgba(250,248,244,0.65);font-size:1.05rem;line-height:1.7;margin-bottom:0.5rem;">La méthode polyglotte d'Anthony Bouillon pour apprendre le vietnamien naturellement — même sans bases linguistiques.</p>
     <p style="color:rgba(250,248,244,0.4);font-size:0.85rem;margin-bottom:2rem;">Disponible en ebook sur Amazon · Méthode testée sur le terrain à Hanoï</p>
     <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
-      <a href="<?= ($path_prefix ?? '') ?>livre-vietnamien.php" style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.85rem 2rem;background:rgba(184,134,11,0.9);color:#fff;border-radius:6px;text-decoration:none;font-weight:700;font-size:0.95rem;">📕 Découvrir l'ebook</a>
+      <a href="<?= ($path_prefix ?? '') ?>livre-vietnamien" style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.85rem 2rem;background:rgba(184,134,11,0.9);color:#fff;border-radius:6px;text-decoration:none;font-weight:700;font-size:0.95rem;">📕 Découvrir l'ebook</a>
       <a href="https://www.amazon.fr/dp/B0H1CHWKF8" target="_blank" rel="noopener sponsored" style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.85rem 2rem;background:rgba(250,248,244,0.08);color:#faf8f4;border:1px solid rgba(250,248,244,0.2);border-radius:6px;text-decoration:none;font-weight:600;font-size:0.95rem;">Acheter sur Amazon →</a>
     </div>
   </div>
@@ -17,25 +17,25 @@
 <footer>
   <div class="footer-grid">
     <div class="footer-brand">
-      <a href="<?= $path_prefix ?>blog-capvietnam.php" class="nav-logo">Cap<span>Vietnam</span></a>
+      <a href="<?= $path_prefix ?: '/' ?>" class="nav-logo">Cap<span>Vietnam</span></a>
       <p>Le blog du couple franco-vietnamien. Mariage, démarches, argent et vie quotidienne entre la France et le Vietnam.</p>
     </div>
     <div class="footer-col">
       <h4><?= ($page_lang ?? 'fr') === 'vi' ? 'Danh mục' : 'Catégories' ?></h4>
-      <a href="<?= $path_prefix ?>articles-capvietnam.php?cat=couple">💕 Couple franco-vietnamien</a>
-      <a href="<?= $path_prefix ?>articles-capvietnam.php?cat=admin">📋 Démarches &amp; installation</a>
-      <a href="<?= $path_prefix ?>articles-capvietnam.php?cat=argent">💻 Argent &amp; travail à distance</a>
-      <a href="<?= $path_prefix ?>articles-capvietnam.php?cat=voyager">✈️ Vie pratique au Vietnam</a>
+      <a href="<?= $path_prefix ?>articles-capvietnam?cat=couple">💕 Couple franco-vietnamien</a>
+      <a href="<?= $path_prefix ?>articles-capvietnam?cat=admin">📋 Démarches &amp; installation</a>
+      <a href="<?= $path_prefix ?>articles-capvietnam?cat=argent">💻 Argent &amp; travail à distance</a>
+      <a href="<?= $path_prefix ?>articles-capvietnam?cat=voyager">✈️ Vie pratique au Vietnam</a>
     </div>
     <div class="footer-col">
       <h4><?= ($page_lang ?? 'fr') === 'vi' ? 'Liên kết hữu ích' : 'Liens utiles' ?></h4>
-      <a href="<?= $path_prefix ?>a-propos-capvietnam.php">À propos</a>
-      <a href="<?= $path_prefix ?>outils-vivre-vietnam.php">🛠️ Mes outils</a>
-      <a href="<?= $path_prefix ?>blog-capvietnam.php#contact">Contact</a>
-      <a href="<?= $path_prefix ?>blog-capvietnam.php#newsletter">Newsletter mensuelle</a>
-      <a href="<?= $path_prefix ?>livre-vietnamien.php" style="color:var(--terracotta-soft);font-weight:600">📕 Apprendre le vietnamien</a>
-      <a href="<?= $path_prefix ?>mes-livres.php" style="color:rgba(250,248,244,0.55)">📚 Tous mes livres</a>
-      <a href="<?= $path_prefix ?>s-expatrier-vietnam-2026-guide-complet.php" style="color:var(--amber-soft);font-weight:600">📘 Guide expatriation 2026</a>
+      <a href="<?= $path_prefix ?>a-propos-capvietnam">À propos</a>
+      <a href="<?= $path_prefix ?>outils-vivre-vietnam">🛠️ Mes outils</a>
+      <a href="<?= $path_prefix ?>contact-capvietnam">Contact</a>
+      <a href="<?= $path_prefix ?: '/' ?>#newsletter">Newsletter mensuelle</a>
+      <a href="<?= $path_prefix ?>livre-vietnamien" style="color:var(--terracotta-soft);font-weight:600">📕 Apprendre le vietnamien</a>
+      <a href="<?= $path_prefix ?>mes-livres" style="color:rgba(250,248,244,0.55)">📚 Tous mes livres</a>
+      <a href="<?= $path_prefix ?>s-expatrier-vietnam-2026-guide-complet" style="color:var(--amber-soft);font-weight:600">📘 Guide expatriation 2026</a>
       <hr style="border-color:var(--border);margin:0.8rem 0">
       <a href="https://bonusparrainage.com/revolut" target="_blank" rel="noopener" style="color:var(--amber-soft)">💳 Code parrainage Revolut</a>
       <a href="https://bonusparrainage.com" target="_blank" rel="noopener">🎁 BonusParrainage.com</a>
@@ -55,9 +55,9 @@
     </p>
     <span>© <?= SITE_YEAR ?> Blog-CapVietnam. Tous droits réservés.</span>
     <div class="footer-legal">
-      <a href="<?= $path_prefix ?>mentions-legales-capvietnam.php">Mentions légales</a>
-      <a href="<?= $path_prefix ?>confidentialite-capvietnam.php">Confidentialité</a>
-      <a href="<?= $path_prefix ?>cookies-capvietnam.php">Cookies</a>
+      <a href="<?= $path_prefix ?>mentions-legales-capvietnam">Mentions légales</a>
+      <a href="<?= $path_prefix ?>confidentialite-capvietnam">Confidentialité</a>
+      <a href="<?= $path_prefix ?>cookies-capvietnam">Cookies</a>
     </div>
   </div>
 </footer>

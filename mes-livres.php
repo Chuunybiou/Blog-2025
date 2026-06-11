@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 require_once __DIR__ . '/config/site.php';
 
 $page_title       = 'Mes livres — Méthode Polyglotte · Série complète | Cap Vietnam';
@@ -230,7 +230,7 @@ include 'header.php';
 <div style="max-width:1100px;margin:0 auto;padding:0 2rem;">
   <div class="books-note" style="margin-top:3rem;">
     ℹ️ Ces livres sont vendus sur Amazon. Le lien vietnamien est affilié (une commission me revient sans surcoût pour vous).
-    Les autres sont des liens directs. <a href="a-propos-capvietnam.php">En savoir plus sur le projet →</a>
+    Les autres sont des liens directs. <a href="a-propos-capvietnam">En savoir plus sur le projet →</a>
   </div>
 </div>
 
@@ -253,7 +253,7 @@ include 'header.php';
         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 16.35c-0.19-0.2-0.48-0.27-0.76-0.19-2.01 0.61-4.17 0.93-6.41 0.93-3.4 0-6.62-0.91-9.4-2.64-0.26-0.16-0.59-0.12-0.8 0.09-0.21 0.21-0.24 0.54-0.08 0.8 3.06 4.77 8.13 7.62 13.6 7.62 1.89 0 3.78-0.37 5.56-1.1 0.33-0.13 0.52-0.47 0.45-0.82-0.06-0.25-0.23-0.48-0.16-0.69z M19.5 17.5c-5.39 2.93-13.12 3.15-18.01 0.05-0.36-0.21-0.82-0.09-1.03 0.27-0.21 0.36-0.1 0.82 0.27 1.03 2.68 1.6 5.72 2.42 8.82 2.42 3.45 0 6.88-0.97 9.83-2.89 0.35-0.22 0.45-0.68 0.23-1.03-0.22-0.35-0.68-0.45-1.11-0.85z"/></svg>
         Voir sur Amazon
       </a>
-      <a class="btn-amazon-secondary" href="livre-vietnamien.php" <?= $book['asin'] !== 'B0H1CHWKF8' ? 'style="display:none"' : '' ?>>
+      <a class="btn-amazon-secondary" href="livre-vietnamien" <?= $book['asin'] !== 'B0H1CHWKF8' ? 'style="display:none"' : '' ?>>
         En savoir plus →
       </a>
     </div>
@@ -266,7 +266,7 @@ include 'header.php';
     Le livre vietnamien est celui que je recommande en priorité aux lecteurs de ce blog — c'est la langue dont tu as besoin pour vivre au Vietnam.
     Les autres langues de la série sont listées ici pour ceux qui connaissent déjà le projet.
   </p>
-  <a href="livre-vietnamien.php" style="display:inline-block;margin-top:1.5rem;padding:0.9rem 2rem;background:var(--jade);color:#fff;border-radius:6px;font-weight:700;text-decoration:none;">
+  <a href="livre-vietnamien" style="display:inline-block;margin-top:1.5rem;padding:0.9rem 2rem;background:var(--jade);color:#fff;border-radius:6px;font-weight:700;text-decoration:none;">
     📕 Apprendre le vietnamien →
   </a>
 </div>

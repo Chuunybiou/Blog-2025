@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 require_once __DIR__ . '/config/site.php';
 $page_title       = 'S\'expatrier au Vietnam en 2026 : Guide complet pour les Français';
 $page_description = 'Tout ce qu\'il faut savoir pour s\'installer au Vietnam en 2026 : visas, logement, santé, banques, fiscalité, coût de la vie, internet, travail, création d\'entreprise. Guide honnête basé sur le vécu.';
@@ -52,8 +52,8 @@ include 'header.php';
 <header class="article-hero" style="background:linear-gradient(165deg,<?= $article_hero_bg ?> 0%,#1b4a35 50%,#0d2b1f 100%);">
   <div class="article-hero-inner">
     <div class="breadcrumb">
-      <a href="blog-capvietnam.php">Accueil</a><span class="breadcrumb-sep">›</span>
-      <a href="articles-capvietnam.php">Démarches & installation</a><span class="breadcrumb-sep">›</span>
+      <a href="blog-capvietnam">Accueil</a><span class="breadcrumb-sep">›</span>
+      <a href="articles-capvietnam">Démarches & installation</a><span class="breadcrumb-sep">›</span>
       <span>Guide complet expatriation</span>
     </div>
     <span class="article-badge-hero" style="background:<?= $article_badge ?>;color:<?= $article_badge_c ?>">📘 Guide complet</span>
@@ -122,7 +122,7 @@ include 'header.php';
     <p>Si tu travailles pour une entreprise vietnamienne ou une entreprise étrangère avec une entité au Vietnam, tu as besoin d'un permis de travail (<em>giấy phép lao động</em>) et d'un visa DL ou LD. La démarche est initiée par l'employeur.</p>
 
     <div class="info-box">
-      <strong>📖 Article détaillé :</strong> <a href="visa-vietnam-francais-guide-2026.php">Visa Vietnam pour un Français — guide complet 2026</a>
+      <strong>📖 Article détaillé :</strong> <a href="visa-vietnam-francais-guide-2026">Visa Vietnam pour un Français — guide complet 2026</a>
     </div>
 
     <!-- ════════════════════════════════ LOGEMENT ════════════════════════════════ -->
@@ -152,7 +152,7 @@ include 'header.php';
     <p>La caution standard est de 1 à 2 mois de loyer. Elle se paie en cash ou virement. Le contrat peut être en vietnamien — fais-le traduire ou utilise un modèle bilingue. Certains propriétaires acceptent les étrangers sans démarche particulière ; d'autres demandent une copie du passeport et du visa.</p>
 
     <div class="info-box">
-      <strong>📖 Article détaillé :</strong> <a href="louer-appartement-hanoi-etranger.php">Louer un appartement à Hanoï en tant qu'étranger — prix réels et conseils 2026</a>
+      <strong>📖 Article détaillé :</strong> <a href="louer-appartement-hanoi-etranger">Louer un appartement à Hanoï en tant qu'étranger — prix réels et conseils 2026</a>
     </div>
 
     <!-- ════════════════════════════════ SANTÉ ════════════════════════════════ -->
@@ -170,7 +170,7 @@ include 'header.php';
     <p>Je prévois de souscrire chez <strong>Manulife Vietnam</strong>. Ma femme y travaille, ce qui me donne accès à des tarifs avantageux. La couverture de base revient à environ <strong>10 000 000 VND par an (~370€)</strong> — ce n'est pas une assurance internationale complète, mais c'est un filet de sécurité de base. Pour une couverture rapatriement, je complèterai avec une assurance internationale.</p>
 
     <div class="info-box">
-      <strong>📖 Article détaillé :</strong> <a href="assurance-sante-vietnam-expat.php">Assurance santé au Vietnam pour expatriés — comparatif 2026</a>
+      <strong>📖 Article détaillé :</strong> <a href="assurance-sante-vietnam-expat">Assurance santé au Vietnam pour expatriés — comparatif 2026</a>
     </div>
 
     <!-- ════════════════════════════════ BANQUES ════════════════════════════════ -->
@@ -194,8 +194,8 @@ include 'header.php';
 
     <div class="info-box">
       <strong>📖 Articles détaillés :</strong><br>
-      <a href="banque-vietnam-francais.php">Compte bancaire au Vietnam pour un Français</a><br>
-      <a href="transferer-argent-vietnam-wise.php">Transférer de l'argent vers le Vietnam avec Wise</a>
+      <a href="banque-vietnam-francais">Compte bancaire au Vietnam pour un Français</a><br>
+      <a href="transferer-argent-vietnam-wise">Transférer de l'argent vers le Vietnam avec Wise</a>
     </div>
 
     <!-- ════════════════════════════════ FISCALITÉ ════════════════════════════════ -->
@@ -220,7 +220,7 @@ include 'header.php';
     <p>Si tu quittes définitivement la France (fermer ton appartement, déménager officiellement au Vietnam), tu peux demander à quitter la résidence fiscale française. Tes revenus mondiaux seront alors potentiellement imposables au Vietnam selon les règles locales. <strong>Consulte un comptable ou conseiller fiscal avant de prendre cette décision</strong> — les erreurs sont coûteuses.</p>
 
     <div class="info-box">
-      <strong>📖 Article détaillé :</strong> <a href="fiscalite-expat-france-vietnam.php">Fiscalité de l'expatrié en France et au Vietnam — ce que dit la loi</a>
+      <strong>📖 Article détaillé :</strong> <a href="fiscalite-expat-france-vietnam">Fiscalité de l'expatrié en France et au Vietnam — ce que dit la loi</a>
     </div>
 
     <!-- ════════════════════════════════ COÛT DE LA VIE ════════════════════════════════ -->
@@ -253,8 +253,8 @@ include 'header.php';
 
     <div class="info-box">
       <strong>📖 Articles détaillés :</strong><br>
-      <a href="budget-mensuel-hanoi-2026.php">Budget mensuel à Hanoï en 2026 — chiffres réels</a><br>
-      <a href="budget-mensuel-hcmc-2026.php">Budget mensuel à Ho Chi Minh-Ville en 2026</a>
+      <a href="budget-mensuel-hanoi-2026">Budget mensuel à Hanoï en 2026 — chiffres réels</a><br>
+      <a href="budget-mensuel-hcmc-2026">Budget mensuel à Ho Chi Minh-Ville en 2026</a>
     </div>
 
     <!-- ════════════════════════════════ INTERNET ════════════════════════════════ -->
@@ -271,7 +271,7 @@ include 'header.php';
     <p>Certains services sont géographiquement bloqués au Vietnam ou inaccessibles selon les périodes. Un VPN est recommandé pour accéder aux services de streaming, sécuriser sa connexion dans les cafés et contourner les restrictions ponctuelles. J'utilise <strong>CyberGhost</strong>.</p>
 
     <div class="info-box">
-      <strong>📖 Article détaillé :</strong> <a href="telephone-vietnam-quelle-sim-choisir.php">Téléphone au Vietnam : quelle SIM choisir en 2026</a>
+      <strong>📖 Article détaillé :</strong> <a href="telephone-vietnam-quelle-sim-choisir">Téléphone au Vietnam : quelle SIM choisir en 2026</a>
     </div>
 
     <!-- ════════════════════════════════ TRAVAIL ════════════════════════════════ -->
@@ -290,8 +290,8 @@ include 'header.php';
 
     <div class="info-box">
       <strong>📖 Articles détaillés :</strong><br>
-      <a href="travailler-en-ligne-vietnam.php">Travailler en ligne depuis le Vietnam — la réalité en 2026</a><br>
-      <a href="cafes-coworkings-hanoi.php">Meilleurs cafés et coworkings à Hanoï pour les freelances</a>
+      <a href="travailler-en-ligne-vietnam">Travailler en ligne depuis le Vietnam — la réalité en 2026</a><br>
+      <a href="cafes-coworkings-hanoi">Meilleurs cafés et coworkings à Hanoï pour les freelances</a>
     </div>
 
     <!-- ════════════════════════════════ CRÉATION ENTREPRISE ════════════════════════════════ -->
@@ -377,7 +377,7 @@ include 'header.php';
     </ol>
 
     <div class="info-box" style="margin-top:3rem;">
-      <strong>🛠️ Tous mes outils :</strong> <a href="outils-vivre-vietnam.php">Mes outils pour vivre au Vietnam</a> — la page complète avec les services que j'utilise et les liens affiliés clairement signalés.
+      <strong>🛠️ Tous mes outils :</strong> <a href="outils-vivre-vietnam">Mes outils pour vivre au Vietnam</a> — la page complète avec les services que j'utilise et les liens affiliés clairement signalés.
     </div>
 
     <!-- NEWSLETTER -->
@@ -389,7 +389,7 @@ include 'header.php';
         <input type="email" name="email" placeholder="ton@email.com" required>
         <button type="submit" style="background:var(--jade);color:#fff;">S'inscrire</button>
       </form>
-      <p class="cta-rgpd">Désinscription en un clic. <a href="confidentialite-capvietnam.php">Politique de confidentialité</a>.</p>
+      <p class="cta-rgpd">Désinscription en un clic. <a href="confidentialite-capvietnam">Politique de confidentialité</a>.</p>
     </div>
 
     <!-- AUTHOR BOX -->
@@ -401,7 +401,7 @@ include 'header.php';
         <h4>Anthony Bouillon</h4>
         <p>Québécois d'adoption, bientôt installé à Hanoï avec ma femme vietnamienne. Je prépare mon départ depuis septembre 2026 — ce guide est le résumé de tout ce que j'apprends en chemin.</p>
         <div class="author-links">
-          <a href="a-propos-capvietnam.php">À propos →</a>
+          <a href="a-propos-capvietnam">À propos →</a>
           <a href="<?= SITE_TIKTOK ?>" target="_blank" rel="noopener">TikTok</a>
         </div>
       </div>

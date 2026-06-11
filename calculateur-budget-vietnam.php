@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 $page_title       = 'Calculateur de budget mensuel Vietnam 2026 — Cap Vietnam';
 $page_description = 'Simule ton budget mensuel au Vietnam : logement, alimentation, transport, assurance. Résultat instantané en euros et en dong vietnamien, pour Hanoï ou HCMC.';
 $page_canonical   = 'https://www.blog-capvietnam.fr/calculateur-budget-vietnam';
@@ -6,7 +6,7 @@ $page_og_title    = 'Calculateur de budget Vietnam 2026 — Hanoï & HCMC';
 $page_og_desc     = 'Combien coûte la vie au Vietnam ? Configure ton style de vie et obtiens une estimation personnalisée en € et en ₫.';
 $page_og_url      = 'https://www.blog-capvietnam.fr/calculateur-budget-vietnam';
 $page_og_image    = 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"WebApplication","name":"Calculateur de budget mensuel Vietnam 2026","applicationCategory":"FinanceApplication","operatingSystem":"Web","url":"https://www.blog-capvietnam.fr/calculateur-budget-vietnam","description":"Simule ton budget mensuel au Vietnam selon ton style de vie, ta ville et tes habitudes.","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Cap Vietnam","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"inLanguage":"fr","datePublished":"2026-04-26","dateModified":"2026-04-26"}';
+$page_schema      = '{"@context":"https://schema.org","@type":"WebApplication","name":"Calculateur de budget mensuel Vietnam 2026","applicationCategory":"FinanceApplication","operatingSystem":"Web","url":"https://www.blog-capvietnam.fr/calculateur-budget-vietnam","description":"Simule ton budget mensuel au Vietnam selon ton style de vie, ta ville et tes habitudes.","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"inLanguage":"fr","datePublished":"2026-04-26","dateModified":"2026-04-26"}';
 
 $article_color   = 'amber';
 $article_hero_bg = '#3a2800';
@@ -75,14 +75,14 @@ include 'header.php';
 <header class="article-hero">
   <div class="article-hero-inner">
     <div class="breadcrumb">
-      <a href="blog-capvietnam.php">Accueil</a><span class="breadcrumb-sep">›</span>
-      <a href="articles-capvietnam.php">Argent &amp; Travail</a><span class="breadcrumb-sep">›</span>
+      <a href="blog-capvietnam">Accueil</a><span class="breadcrumb-sep">›</span>
+      <a href="articles-capvietnam">Argent &amp; Travail</a><span class="breadcrumb-sep">›</span>
       <span>Calculateur budget</span>
     </div>
     <span class="article-badge-hero">Argent &amp; Travail</span>
     <h1>Calculateur de budget mensuel Vietnam 2026</h1>
     <div class="article-hero-meta">
-      <span>Par <strong>Cap Vietnam</strong></span>
+      <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
       <span>📅 Avril 2026</span>
       <span>⚡ Résultat instantané</span>
     </div>
@@ -341,12 +341,12 @@ include 'header.php';
   <div style="margin-top:3rem;padding-top:2rem;border-top:1px solid var(--border)">
     <div style="font-size:0.65rem;letter-spacing:3px;text-transform:uppercase;color:var(--muted);margin-bottom:1rem;font-weight:600">Pour aller plus loin</div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
-      <a href="budget-mensuel-hanoi-2026.php" style="display:block;padding:1.25rem;background:var(--white);border:1px solid var(--border);border-radius:8px;text-decoration:none;color:var(--ink);transition:box-shadow 0.2s" onmouseover="this.style.boxShadow='var(--shadow-md)'" onmouseout="this.style.boxShadow='none'">
+      <a href="budget-mensuel-hanoi-2026" style="display:block;padding:1.25rem;background:var(--white);border:1px solid var(--border);border-radius:8px;text-decoration:none;color:var(--ink);transition:box-shadow 0.2s" onmouseover="this.style.boxShadow='var(--shadow-md)'" onmouseout="this.style.boxShadow='none'">
         <div style="font-size:1.3rem;margin-bottom:0.4rem">💰</div>
         <div style="font-weight:600;font-size:0.9rem;margin-bottom:0.3rem">Budget détaillé à Hanoï 2026</div>
         <div style="font-size:0.8rem;color:var(--muted)">Chiffres réels mois par mois →</div>
       </a>
-      <a href="budget-mensuel-hcmc-2026.php" style="display:block;padding:1.25rem;background:var(--white);border:1px solid var(--border);border-radius:8px;text-decoration:none;color:var(--ink);transition:box-shadow 0.2s" onmouseover="this.style.boxShadow='var(--shadow-md)'" onmouseout="this.style.boxShadow='none'">
+      <a href="budget-mensuel-hcmc-2026" style="display:block;padding:1.25rem;background:var(--white);border:1px solid var(--border);border-radius:8px;text-decoration:none;color:var(--ink);transition:box-shadow 0.2s" onmouseover="this.style.boxShadow='var(--shadow-md)'" onmouseout="this.style.boxShadow='none'">
         <div style="font-size:1.3rem;margin-bottom:0.4rem">🏙️</div>
         <div style="font-weight:600;font-size:0.9rem;margin-bottom:0.3rem">Budget détaillé à HCMC 2026</div>
         <div style="font-size:0.8rem;color:var(--muted)">Saigon vs Hanoï comparé →</div>

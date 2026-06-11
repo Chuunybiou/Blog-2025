@@ -6,7 +6,7 @@ $page_og_title    = 'Cafés et coworkings à Hanoï : guide pour télétravaille
 $page_og_desc     = 'Sélection des meilleurs espaces pour télétravailler à Hanoï : Toong, Circo, Minna.';
 $page_og_url      = 'https://www.blog-capvietnam.fr/cafes-coworkings-hanoi';
 $page_og_image    = 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Cafes et coworkings a Hanoi : les meilleures adresses 2026","datePublished":"2026-03-22","dateModified":"2026-03-22","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Cap Vietnam","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80","description":"Selection des meilleurs espaces pour teletravailler a Hanoi : Toong, Circo, Minna.","timeRequired":"PT8M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/cafes-coworkings-hanoi"}';
+$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Cafes et coworkings a Hanoi : les meilleures adresses 2026","datePublished":"2026-03-22","dateModified":"2026-03-22","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80","description":"Selection des meilleurs espaces pour teletravailler a Hanoi : Toong, Circo, Minna.","timeRequired":"PT8M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/cafes-coworkings-hanoi"}';
 
 $article_color   = 'amber';
 $article_hero_bg = '#3a2800';
@@ -33,16 +33,17 @@ include 'header.php';
 <header class="article-hero">
   <div class="article-hero-inner">
     <div class="breadcrumb">
-      <a href="blog-capvietnam.php">Accueil</a><span class="breadcrumb-sep">›</span>
-      <a href="articles-capvietnam.php">Argent &amp; Travail</a><span class="breadcrumb-sep">›</span>
+      <a href="blog-capvietnam">Accueil</a><span class="breadcrumb-sep">›</span>
+      <a href="articles-capvietnam">Argent &amp; Travail</a><span class="breadcrumb-sep">›</span>
       <span>Cafés et coworkings à Hanoï</span>
     </div>
     <span class="article-badge-hero">Argent &amp; Travail</span>
     <h1>Cafés et coworkings à Hanoï : les meilleures adresses pour télétravailler en 2026</h1>
     <div class="article-hero-meta">
-      <span>Par <strong>Cap Vietnam</strong></span>
+      <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
       <span>📅 22 mars 2026</span>
       <span>⏱ 8 min de lecture</span>
+      <span>Mis &agrave; jour : Juin 2026</span>
     </div>
   </div>
 </header>
@@ -224,9 +225,9 @@ include '_affiliate-cta.php';
     <div class="author-box">
       <div class="author-avatar" style="overflow:hidden;position:relative;"><img src="assets/img/profile/anthony-profil.jpg" alt="Anthony Bouillon" width="72" height="72" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"></div>
       <div class="author-info">
-        <h4>Cap Vietnam</h4>
+        <h4>Anthony Bouillon</h4>
         <p>Informations pratiques, vécues et vérifiées par notre communauté installée à Hanoï, Hô Chi Minh-Ville et Da Nang.</p>
-        <div class="author-links"><a href="a-propos-capvietnam.php">À propos →</a></div>
+        <div class="author-links"><a href="a-propos-capvietnam">À propos →</a></div>
       </div>
     </div>
 

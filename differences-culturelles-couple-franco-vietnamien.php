@@ -6,7 +6,7 @@ $page_og_title    = 'Différences culturelles dans un couple franco-vietnamien';
 $page_og_desc     = 'Famille, argent, communication : les vraies différences culturelles dans un couple franco-vietnamien.';
 $page_og_url      = 'https://www.blog-capvietnam.fr/differences-culturelles-couple-franco-vietnamien';
 $page_og_image    = 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Differences culturelles en couple franco-vietnamien","datePublished":"2026-03-05","dateModified":"2026-03-05","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Cap Vietnam","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1200&q=80","description":"Famille, argent, communication : les vraies differences culturelles dans un couple franco-vietnamien.","timeRequired":"PT7M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/differences-culturelles-couple-franco-vietnamien"}';
+$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Differences culturelles en couple franco-vietnamien","datePublished":"2026-03-05","dateModified":"2026-03-05","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1200&q=80","description":"Famille, argent, communication : les vraies differences culturelles dans un couple franco-vietnamien.","timeRequired":"PT7M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/differences-culturelles-couple-franco-vietnamien"}';
 
 $article_color   = 'jade';
 $article_hero_bg = '#1a3a1e';
@@ -33,16 +33,17 @@ include 'header.php';
 <header class="article-hero">
   <div class="article-hero-inner">
     <div class="breadcrumb">
-      <a href="blog-capvietnam.php">Accueil</a><span class="breadcrumb-sep">›</span>
-      <a href="articles-capvietnam.php">Couple Mixte</a><span class="breadcrumb-sep">›</span>
+      <a href="blog-capvietnam">Accueil</a><span class="breadcrumb-sep">›</span>
+      <a href="articles-capvietnam">Couple Mixte</a><span class="breadcrumb-sep">›</span>
       <span>Différences culturelles</span>
     </div>
     <span class="article-badge-hero">Couple Mixte</span>
     <h1>Différences culturelles dans un couple franco-vietnamien : ce qui change vraiment</h1>
     <div class="article-hero-meta">
-      <span>Par <strong>Cap Vietnam</strong></span>
+      <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
       <span>📅 25 mars 2026</span>
       <span>⏱ 9 min de lecture</span>
+      <span>Mis &agrave; jour : Juin 2026</span>
     </div>
   </div>
 </header>
@@ -146,9 +147,9 @@ include 'header.php';
     <div class="author-box">
       <div class="author-avatar" style="overflow:hidden;position:relative;"><img src="assets/img/profile/anthony-profil.jpg" alt="Anthony Bouillon" width="72" height="72" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"></div>
       <div class="author-info">
-        <h4>Cap Vietnam</h4>
+        <h4>Anthony Bouillon</h4>
         <p>Cap Vietnam documente la vie d'expatrié au Vietnam — démarches, culture, finances et vie quotidienne. Ce sont des généralités — chaque individu et chaque famille sont uniques.</p>
-        <div class="author-links"><a href="a-propos-capvietnam.php">À propos →</a></div>
+        <div class="author-links"><a href="a-propos-capvietnam">À propos →</a></div>
       </div>
     </div>
 

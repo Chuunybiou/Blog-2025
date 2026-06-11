@@ -50,7 +50,7 @@ $_lbl_map = [
         $_txt  = $_txt_map[$_a['category']] ?? 'text-admin';
         $_lbl  = $_lbl_map[$_a['category']] ?? htmlspecialchars($_a['categoryLabel'] ?? '');
       ?>
-      <a class="related-card" href="<?= htmlspecialchars($_a['slug']) ?>.php">
+      <a class="related-card" href="<?= htmlspecialchars($_a['slug']) ?>">
         <div class="related-card-banner <?= $_bg ?>"><?= htmlspecialchars($_a['emoji'] ?? '📖') ?></div>
         <div class="related-card-body">
           <p class="related-card-badge <?= $_txt ?>"><?= $_lbl ?></p>

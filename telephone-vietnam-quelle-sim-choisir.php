@@ -6,7 +6,7 @@ $page_og_title    = 'Téléphone au Vietnam : SIM locale ou internationale ? Gui
 $page_og_desc     = 'Viettel, Vinaphone, Mobifone, SIM Asie Amazon... Comparatif complet pour rester connecté au Vietnam sans se ruiner.';
 $page_og_url      = 'https://www.blog-capvietnam.fr/telephone-vietnam-quelle-sim-choisir';
 $page_og_image    = 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"Article","headline":"Téléphone au Vietnam : quelle SIM choisir en 2026","datePublished":"2026-05-21","author":{"@type":"Person","name":"Cap Vietnam","url":"https://www.blog-capvietnam.fr/a-propos-capvietnam.php"},"publisher":{"@type":"Organization","name":"Cap Vietnam"},"mainEntityOfPage":"https://www.blog-capvietnam.fr/telephone-vietnam-quelle-sim-choisir","inLanguage":"fr","articleSection":"Vie Pratique"}';
+$page_schema      = '{"@context":"https://schema.org","@type":"Article","headline":"Téléphone au Vietnam : quelle SIM choisir en 2026","datePublished":"2026-05-21","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos-capvietnam"},"publisher":{"@type":"Organization","name":"Anthony Bouillon"},"mainEntityOfPage":"https://www.blog-capvietnam.fr/telephone-vietnam-quelle-sim-choisir","inLanguage":"fr","articleSection":"Vie Pratique"}';
 
 $article_color        = 'amber';
 $article_hero_bg      = '#2a1a00';
@@ -36,16 +36,17 @@ include 'header.php';
 <header class="article-hero">
   <div class="article-hero-inner">
     <div class="breadcrumb">
-      <a href="blog-capvietnam.php">Accueil</a><span class="breadcrumb-sep">›</span>
-      <a href="articles-capvietnam.php">Vie Pratique</a><span class="breadcrumb-sep">›</span>
+      <a href="blog-capvietnam">Accueil</a><span class="breadcrumb-sep">›</span>
+      <a href="articles-capvietnam">Vie Pratique</a><span class="breadcrumb-sep">›</span>
       <span>SIM Vietnam</span>
     </div>
     <span class="article-badge-hero">Vie Pratique</span>
     <h1>Téléphone au Vietnam : quelle SIM choisir en 2026</h1>
     <div class="article-hero-meta">
-      <span>Par <strong>Cap Vietnam</strong></span>
+      <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
       <span>📅 21 mai 2026</span>
       <span>⏱ 7 min de lecture</span>
+      <span>Mis &agrave; jour : Juin 2026</span>
     </div>
   </div>
 </header>
@@ -250,22 +251,22 @@ include 'header.php';
 
     <div class="cta-newsletter">
       <h3>Reçois mes prochains articles</h3>
-      <p>Un email par semaine. Désabonnement en un clic.</p>
+      <p>Un email par mois. Désabonnement en un clic.</p>
       <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
         <input type="email" name="email" placeholder="Ton adresse email" required>
         <button type="submit">S'inscrire</button>
       </form>
-      <p class="cta-rgpd">En t'inscrivant, tu acceptes la <a href="confidentialite-capvietnam.php">politique de confidentialité</a>.</p>
+      <p class="cta-rgpd">En t'inscrivant, tu acceptes la <a href="confidentialite-capvietnam">politique de confidentialité</a>.</p>
     </div>
 
     <div class="author-box">
       <div class="author-avatar" style="display:flex;align-items:center;justify-content:center;background:#c0846e;color:#fff;font-weight:700;font-size:1.5rem;border-radius:50%;width:72px;height:72px;flex-shrink:0;">AB</div>
       <div class="author-info">
-        <h4>Cap Vietnam</h4>
+        <h4>Anthony Bouillon</h4>
         <p>Français marié à une Vietnamienne, entre France, Canada et Vietnam. Je partage ce que j'apprends sur la vie d'expatrié — sans filtre et sans généraliser.</p>
         <div class="author-links">
           <a href="https://www.tiktok.com/@proffrancaisetranger" target="_blank" rel="noopener">TikTok</a>
-          <a href="a-propos-capvietnam.php">À propos</a>
+          <a href="a-propos-capvietnam">À propos</a>
         </div>
       </div>
     </div>

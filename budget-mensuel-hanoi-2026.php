@@ -6,7 +6,7 @@ $page_og_title    = 'Budget mensuel à Hanoï en 2026 : chiffres réels d\'un ex
 $page_og_desc     = 'Loyer, nourriture, transport et loisirs : budget détaillé pour vivre à Hanoï en 2026.';
 $page_og_url      = 'https://www.blog-capvietnam.fr/budget-mensuel-hanoi-2026';
 $page_og_image    = 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Budget mensuel a Hanoi en 2026 : combien ca coute vraiment","datePublished":"2026-04-01","dateModified":"2026-04-01","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Cap Vietnam","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=1200&q=80","description":"Loyer, nourriture, transport et loisirs : budget detaille pour vivre a Hanoi en 2026.","timeRequired":"PT6M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/budget-mensuel-hanoi-2026"}';
+$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Budget mensuel a Hanoi en 2026 : combien ca coute vraiment","datePublished":"2026-04-01","dateModified":"2026-04-01","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=1200&q=80","description":"Loyer, nourriture, transport et loisirs : budget detaille pour vivre a Hanoi en 2026.","timeRequired":"PT6M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/budget-mensuel-hanoi-2026"}';
 
 $article_color   = 'amber';
 $article_hero_bg = '#3a2800';
@@ -31,14 +31,14 @@ include 'header.php';
 <header class="article-hero">
   <div class="article-hero-inner">
     <div class="breadcrumb">
-      <a href="blog-capvietnam.php">Accueil</a><span class="breadcrumb-sep">›</span>
-      <a href="articles-capvietnam.php">Argent &amp; Travail</a><span class="breadcrumb-sep">›</span>
+      <a href="blog-capvietnam">Accueil</a><span class="breadcrumb-sep">›</span>
+      <a href="articles-capvietnam">Argent &amp; Travail</a><span class="breadcrumb-sep">›</span>
       <span>Budget Hanoï 2026</span>
     </div>
     <span class="article-badge-hero">Argent &amp; Travail</span>
     <h1>Budget mensuel à Hanoï en 2026 : chiffres réels d'un expatrié</h1>
     <div class="article-hero-meta">
-      <span>Par <strong>Cap Vietnam</strong></span>
+      <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
       <span>📅 1er avril 2026</span>
       <span>⏱ 8 min de lecture</span>
     </div>
@@ -111,7 +111,7 @@ include 'header.php';
 
     <h2 id="section-4">Santé et assurance</h2>
     <ul>
-      <li><strong>Mutuelle expatriée</strong> : 80 – 150 € / mois (voir <a href="assurance-sante-vietnam-expat.php">notre guide assurance santé</a>)</li>
+      <li><strong>Mutuelle expatriée</strong> : 80 – 150 € / mois (voir <a href="assurance-sante-vietnam-expat">notre guide assurance santé</a>)</li>
       <li><strong>Consultation médecin clinique internationale</strong> : 50 – 100 USD</li>
       <li><strong>Pharmacie courante</strong> : 200 000 – 1 M VND/mois selon besoins</li>
     </ul>
@@ -137,7 +137,7 @@ include 'header.php';
       <div style="font-size:1.8rem;line-height:1;flex-shrink:0">🧮</div>
       <div>
         <strong>Ces chiffres te correspondent-ils ?</strong>
-        Ce tableau donne des moyennes. <a href="calculateur-budget-vietnam.php">Essaie le calculateur de budget interactif →</a> pour obtenir une estimation selon ton profil exact : type de logement, pourcentage de repas locaux, transport et assurance.
+        Ce tableau donne des moyennes. <a href="calculateur-budget-vietnam">Essaie le calculateur de budget interactif →</a> pour obtenir une estimation selon ton profil exact : type de logement, pourcentage de repas locaux, transport et assurance.
       </div>
     </div>
 
@@ -201,6 +201,13 @@ include 'header.php';
     include '_affiliate-cta.php';
     ?>
 
+    <div class="info-box">
+      <strong>Tu travailles en ligne depuis Hanoï ?</strong> → <a href="travailler-a-distance-depuis-vietnam">Statut juridique, résidence fiscale, visa et protection sociale : le guide complet</a>
+    </div>
+    <div class="info-box">
+      <strong>Tu prépares ta retraite à Hanoï ?</strong> → <a href="retraite-vietnam-francais">Guide retraite au Vietnam : visa, pension, santé, fiscalité, budget réaliste</a>
+    </div>
+
     <h2 id="section-faq">Questions fréquentes</h2>
     <div class="faq-item">
       <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Peut-on vraiment vivre confortablement à Hanoï avec 1 000 €/mois ? <span class="faq-arrow">▼</span></button>
@@ -214,9 +221,9 @@ include 'header.php';
     <div class="author-box">
       <div class="author-avatar" style="overflow:hidden;position:relative;"><img src="assets/img/profile/anthony-profil.jpg" alt="Anthony Bouillon" width="72" height="72" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"></div>
       <div class="author-info">
-        <h4>Cap Vietnam</h4>
+        <h4>Anthony Bouillon</h4>
         <p>Chiffres basés sur mes propres dépenses et celles d'amis expatriés à Hanoï en 2026. Mis à jour régulièrement.</p>
-        <div class="author-links"><a href="a-propos-capvietnam.php">À propos →</a></div>
+        <div class="author-links"><a href="a-propos-capvietnam">À propos →</a></div>
       </div>
     </div>
 

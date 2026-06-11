@@ -6,7 +6,7 @@ $page_og_title    = 'Prix d\'un mariage franco-vietnamien : ce que ça coûte vr
 $page_og_desc     = 'Budget détaillé d\'un mariage franco-vietnamien : cérémonie au Vietnam, réception en France, cadeaux familiaux, frais administratifs. Chiffres réels, sans tabous.';
 $page_og_url      = 'https://www.blog-capvietnam.fr/prix-mariage-franco-vietnamien';
 $page_og_image    = 'https://images.unsplash.com/photo-1525772764200-be829a350797?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"Article","headline":"Prix d\'un mariage franco-vietnamien : budget réel et à quoi s\'attendre","datePublished":"2026-05-15","author":{"@type":"Person","name":"Cap Vietnam","url":"https://www.blog-capvietnam.fr/a-propos-capvietnam.php"},"publisher":{"@type":"Organization","name":"Cap Vietnam"},"mainEntityOfPage":"https://www.blog-capvietnam.fr/prix-mariage-franco-vietnamien","inLanguage":"fr","articleSection":"Couple franco-vietnamien"}';
+$page_schema      = '{"@context":"https://schema.org","@type":"Article","headline":"Prix d\'un mariage franco-vietnamien : budget réel et à quoi s\'attendre","datePublished":"2026-05-15","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos-capvietnam"},"publisher":{"@type":"Organization","name":"Anthony Bouillon"},"mainEntityOfPage":"https://www.blog-capvietnam.fr/prix-mariage-franco-vietnamien","inLanguage":"fr","articleSection":"Couple franco-vietnamien"}';
 
 $article_color        = 'jade';
 $article_hero_bg      = '#1a0e2a';
@@ -33,16 +33,17 @@ include 'header.php';
 <header class="article-hero">
   <div class="article-hero-inner">
     <div class="breadcrumb">
-      <a href="blog-capvietnam.php">Accueil</a><span class="breadcrumb-sep">›</span>
-      <a href="articles-capvietnam.php">Couple franco-vietnamien</a><span class="breadcrumb-sep">›</span>
+      <a href="blog-capvietnam">Accueil</a><span class="breadcrumb-sep">›</span>
+      <a href="articles-capvietnam">Couple franco-vietnamien</a><span class="breadcrumb-sep">›</span>
       <span>Prix du mariage</span>
     </div>
     <span class="article-badge-hero">Couple franco-vietnamien</span>
     <h1>Prix d'un mariage franco-vietnamien : budget réel et à quoi s'attendre</h1>
     <div class="article-hero-meta">
-      <span>Par <strong>Cap Vietnam</strong></span>
+      <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
       <span>📅 15 mai 2026</span>
       <span>⏱ 8 min de lecture</span>
+      <span>Mis &agrave; jour : Juin 2026</span>
     </div>
   </div>
 </header>
@@ -135,7 +136,7 @@ include 'header.php';
     </ol>
     <div class="tip-box">
       <strong>💡 La transcription est gratuite :</strong>
-      La transcription de l'acte de mariage au registre consulaire français ne coûte rien en droits. Les frais réels sont ceux des traductions et du dossier administratif. Dans notre cas, les frais de papiers côté France s'élevaient à <strong>50 €</strong> environ. Notre article sur <a href="se-marier-vietnamienne-demarches-france.php">les démarches de mariage côté France</a> détaille tout le dossier.
+      La transcription de l'acte de mariage au registre consulaire français ne coûte rien en droits. Les frais réels sont ceux des traductions et du dossier administratif. Dans notre cas, les frais de papiers côté France s'élevaient à <strong>50 €</strong> environ. Notre article sur <a href="se-marier-vietnamienne-demarches-france">les démarches de mariage côté France</a> détaille tout le dossier.
     </div>
     <p>Budget administratif France : <strong>~50 €</strong> dans notre cas. À quoi s'ajoutent les frais locaux au Vietnam (~8 € de frais informels d'accélération), négligeables mais réels.</p>
 
@@ -194,27 +195,27 @@ include 'header.php';
     </div>
     <div class="faq-item">
       <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Comment gérer les transferts d'argent pour les dépenses de mariage au Vietnam ? <span class="faq-arrow">▼</span></button>
-      <div class="faq-answer">Wise est la meilleure option pour les transferts importants EUR→VND : taux de change réel, frais bas, virement sous 1-2 jours. Pour les dépenses courantes sur place, avoir un compte bancaire local vietnamien simplifie le cash. Notre article sur <a href="compte-joint-franco-vietnamien.php">la gestion financière en couple mixte</a> détaille tout ça.</div>
+      <div class="faq-answer">Wise est la meilleure option pour les transferts importants EUR→VND : taux de change réel, frais bas, virement sous 1-2 jours. Pour les dépenses courantes sur place, avoir un compte bancaire local vietnamien simplifie le cash. Notre article sur <a href="compte-joint-franco-vietnamien">la gestion financière en couple mixte</a> détaille tout ça.</div>
     </div>
 
     <div class="cta-newsletter">
       <h3>Reçois mes prochains articles</h3>
-      <p>Un email par semaine. Désabonnement en un clic.</p>
+      <p>Un email par mois. Désabonnement en un clic.</p>
       <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
         <input type="email" name="email" placeholder="Ton adresse email" required>
         <button type="submit">S'inscrire</button>
       </form>
-      <p class="cta-rgpd">En t'inscrivant, tu acceptes la <a href="confidentialite-capvietnam.php">politique de confidentialité</a>.</p>
+      <p class="cta-rgpd">En t'inscrivant, tu acceptes la <a href="confidentialite-capvietnam">politique de confidentialité</a>.</p>
     </div>
 
     <div class="author-box">
       <div class="author-avatar" style="display:flex;align-items:center;justify-content:center;background:#c0846e;color:#fff;font-weight:700;font-size:1.5rem;border-radius:50%;width:72px;height:72px;flex-shrink:0;">AB</div>
       <div class="author-info">
-        <h4>Cap Vietnam</h4>
+        <h4>Anthony Bouillon</h4>
         <p>Français marié à une Vietnamienne, entre France, Canada et Vietnam. Je partage ce que j'apprends sur la vie de couple franco-vietnamien — sans filtre et sans généraliser.</p>
         <div class="author-links">
           <a href="https://www.tiktok.com/@proffrancaisetranger" target="_blank" rel="noopener">TikTok</a>
-          <a href="a-propos-capvietnam.php">À propos</a>
+          <a href="a-propos-capvietnam">À propos</a>
         </div>
       </div>
     </div>

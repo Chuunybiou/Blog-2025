@@ -6,7 +6,7 @@ $page_og_title    = 'Travailler en ligne depuis le Vietnam : guide légal et pra
 $page_og_desc     = 'Comment travailler en ligne depuis le Vietnam : visa, obligations fiscales et coworkings à Hanoï.';
 $page_og_url      = 'https://www.blog-capvietnam.fr/travailler-en-ligne-vietnam';
 $page_og_image    = 'https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Travailler en ligne depuis le Vietnam : statut legal et vie pratique","datePublished":"2026-03-15","dateModified":"2026-03-15","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Cap Vietnam","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=1200&q=80","description":"Comment travailler en ligne depuis le Vietnam : visa, obligations fiscales et coworkings a Hanoi.","timeRequired":"PT9M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/travailler-en-ligne-vietnam"}';
+$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Travailler en ligne depuis le Vietnam : statut legal et vie pratique","datePublished":"2026-03-15","dateModified":"2026-03-15","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=1200&q=80","description":"Comment travailler en ligne depuis le Vietnam : visa, obligations fiscales et coworkings a Hanoi.","timeRequired":"PT9M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/travailler-en-ligne-vietnam"}';
 
 $article_color   = 'amber';
 $article_hero_bg = '#3a2800';
@@ -31,14 +31,14 @@ include 'header.php';
 <header class="article-hero">
   <div class="article-hero-inner">
     <div class="breadcrumb">
-      <a href="blog-capvietnam.php">Accueil</a><span class="breadcrumb-sep">›</span>
-      <a href="articles-capvietnam.php">Argent &amp; Travail</a><span class="breadcrumb-sep">›</span>
+      <a href="blog-capvietnam">Accueil</a><span class="breadcrumb-sep">›</span>
+      <a href="articles-capvietnam">Argent &amp; Travail</a><span class="breadcrumb-sep">›</span>
       <span>Travailler en ligne Vietnam</span>
     </div>
     <span class="article-badge-hero">Argent &amp; Travail</span>
     <h1>Travailler en ligne depuis le Vietnam : statut légal, impôts et vie pratique</h1>
     <div class="article-hero-meta">
-      <span>Par <strong>Cap Vietnam</strong></span>
+      <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
       <span>📅 15 mars 2026</span>
       <span>⏱ 9 min de lecture</span>
     </div>
@@ -89,7 +89,7 @@ include 'header.php';
     <ul>
       <li><strong>E-visa 90 jours multi-entrées</strong> : accessible en ligne, renouvelable en sortant du pays. Solution utilisée par beaucoup de nomades courts et moyens séjours.</li>
       <li><strong>Visa business (DN/DL)</strong> : délivré pour motif d'affaires, valable 3 à 12 mois selon demande. Mieux adapté aux séjours longs avec activité professionnelle.</li>
-      <li><strong>Carte de résidence temporaire (LĐ, ĐT)</strong> : pour ceux qui ont un contrat local ou qui investissent. Voir notre <a href="carte-residence-temporaire-vietnam.php">guide complet</a>.</li>
+      <li><strong>Carte de résidence temporaire (LĐ, ĐT)</strong> : pour ceux qui ont un contrat local ou qui investissent. Voir notre <a href="carte-residence-temporaire-vietnam">guide complet</a>.</li>
     </ul>
 
     <h2 id="section-3">Obligations fiscales</h2>
@@ -115,7 +115,7 @@ include 'header.php';
       <li><strong>Kafé</strong> (Tây Hồ) : café spécialisé nomades digitaux, WiFi solide, ambiance internationale</li>
       <li><strong>The Coffee House, Highland Coffee</strong> : cafés de chaîne avec WiFi fiable et prises électriques — idéal pour 2 à 3 heures de travail</li>
     </ul>
-    <p>Voir aussi notre <a href="cafes-coworkings-hanoi.php">guide complet des cafés et coworkings à Hanoï</a>.</p>
+    <p>Voir aussi notre <a href="cafes-coworkings-hanoi">guide complet des cafés et coworkings à Hanoï</a>.</p>
 
     <h2 id="section-6">Protection sociale et retraite du nomade digital</h2>
     <p>C'est le point aveugle de beaucoup de nomades digitaux installés au Vietnam. En quittant la France sans situation employeur active, tu perds progressivement tes droits :</p>
@@ -159,7 +159,7 @@ include 'header.php';
       <li><strong>PayPal</strong> : encore utilisé par beaucoup de clients, mais les frais (3,4% + frais fixe) le rendent peu intéressant pour les montants importants. Acceptable pour les petites missions.</li>
       <li><strong>Compte bancaire vietnamien (VCB, TCB)</strong> : pratique pour les dépenses quotidiennes en VND et les virements locaux. Nécessite une carte de résidence pour l'ouverture.</li>
     </ul>
-    <p>Pour la facturation : si tu es auto-entrepreneur français, tu peux facturer tes clients depuis la France avec ton numéro SIRET même depuis le Vietnam. La domiciliation reste en France, les factures sont émises en euros. La règle des 183 jours s'applique pour définir ta résidence fiscale — voir notre <a href="fiscalite-expat-france-vietnam.php">guide sur la fiscalité expatriée</a>.</p>
+    <p>Pour la facturation : si tu es auto-entrepreneur français, tu peux facturer tes clients depuis la France avec ton numéro SIRET même depuis le Vietnam. La domiciliation reste en France, les factures sont émises en euros. La règle des 183 jours s'applique pour définir ta résidence fiscale — voir notre <a href="fiscalite-expat-france-vietnam">guide sur la fiscalité expatriée</a>.</p>
 
     <?php
     $aff_id    = 'wise';
@@ -183,6 +183,10 @@ include 'header.php';
     include '_affiliate-cta.php';
     ?>
 
+    <div class="info-box">
+      <strong>Dossier complet :</strong> → <a href="travailler-a-distance-depuis-vietnam">Travailler à distance depuis le Vietnam : statuts, fiscalité, visa et protection sociale</a>
+    </div>
+
     <h2 id="section-faq">Questions fréquentes</h2>
     <div class="faq-item">
       <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Peut-on travailler depuis un café sans être repéré par les autorités ? <span class="faq-arrow">▼</span></button>
@@ -196,9 +200,9 @@ include 'header.php';
     <div class="author-box">
       <div class="author-avatar" style="overflow:hidden;position:relative;"><img src="assets/img/profile/anthony-profil.jpg" alt="Anthony Bouillon" width="72" height="72" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"></div>
       <div class="author-info">
-        <h4>Cap Vietnam</h4>
+        <h4>Anthony Bouillon</h4>
         <p>Télétravailleur depuis Hanoï depuis 2026. Ces informations ne constituent pas un conseil juridique — consulte un professionnel pour ta situation spécifique.</p>
-        <div class="author-links"><a href="a-propos-capvietnam.php">À propos →</a></div>
+        <div class="author-links"><a href="a-propos-capvietnam">À propos →</a></div>
       </div>
     </div>
 

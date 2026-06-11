@@ -6,7 +6,7 @@ $page_og_title    = 'Compte joint franco-vietnamien : pourquoi c\'est presque im
 $page_og_desc     = 'Aucune banque française n\'accepte un vrai compte joint avec une conjointe vietnamienne non-résidente. Après 2 ans de tests (Boursorama, Fortuneo, Wealthsimple, Wise, Revolut, Vietcombank), voici ma stratégie multi-comptes qui fonctionne en 2026.';
 $page_og_url      = 'https://www.blog-capvietnam.fr/compte-joint-franco-vietnamien';
 $page_og_image    = 'https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"Article","headline":"Compte joint franco-vietnamien : pourquoi c\'est presque impossible et la stratégie multi-comptes qu\'on utilise à la place","datePublished":"2026-05-15","author":{"@type":"Person","name":"Cap Vietnam","url":"https://www.blog-capvietnam.fr/a-propos-capvietnam.php"},"publisher":{"@type":"Organization","name":"Cap Vietnam"},"mainEntityOfPage":"https://www.blog-capvietnam.fr/compte-joint-franco-vietnamien","inLanguage":"fr","articleSection":"Couple franco-vietnamien"}';
+$page_schema      = '{"@context":"https://schema.org","@type":"Article","headline":"Compte joint franco-vietnamien : pourquoi c\'est presque impossible et la stratégie multi-comptes qu\'on utilise à la place","datePublished":"2026-05-15","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos-capvietnam"},"publisher":{"@type":"Organization","name":"Anthony Bouillon"},"mainEntityOfPage":"https://www.blog-capvietnam.fr/compte-joint-franco-vietnamien","inLanguage":"fr","articleSection":"Couple franco-vietnamien"}';
 
 $article_color        = 'jade';
 $article_hero_bg      = '#0e3020';
@@ -33,16 +33,17 @@ include 'header.php';
 <header class="article-hero">
   <div class="article-hero-inner">
     <div class="breadcrumb">
-      <a href="blog-capvietnam.php">Accueil</a><span class="breadcrumb-sep">›</span>
-      <a href="articles-capvietnam.php">Couple franco-vietnamien</a><span class="breadcrumb-sep">›</span>
+      <a href="blog-capvietnam">Accueil</a><span class="breadcrumb-sep">›</span>
+      <a href="articles-capvietnam">Couple franco-vietnamien</a><span class="breadcrumb-sep">›</span>
       <span>Compte joint</span>
     </div>
     <span class="article-badge-hero">Couple franco-vietnamien</span>
     <h1>Compte joint franco-vietnamien : pourquoi c'est (presque) impossible et la stratégie multi-comptes qu'on utilise à la place</h1>
     <div class="article-hero-meta">
-      <span>Par <strong>Cap Vietnam</strong></span>
+      <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
       <span>📅 15 mai 2026</span>
       <span>⏱ 9 min de lecture</span>
+      <span>Mis &agrave; jour : Juin 2026</span>
     </div>
   </div>
 </header>
@@ -186,7 +187,7 @@ include 'header.php';
       <li><strong>10 % part vers mon Fortuneo</strong> : exclusivement pour mon PEA, mon épargne longue.</li>
       <li><strong>20 % passe par Wise</strong> pour rejoindre le Vietnam — surtout vers le compte Vietcombank de ma femme qui gère les dépenses locales du foyer.</li>
     </ul>
-    <p>Pas de pot commun formalisé, pas de budget catégoriel à la française : chacun gère sa partie selon une logique culturellement vietnamienne où la femme administre les finances du foyer. Je développe la dimension culturelle de ce système dans mon <a href="argent-couple-franco-vietnamien.php">article sur l'argent dans le couple franco-vietnamien</a>.</p>
+    <p>Pas de pot commun formalisé, pas de budget catégoriel à la française : chacun gère sa partie selon une logique culturellement vietnamienne où la femme administre les finances du foyer. Je développe la dimension culturelle de ce système dans mon <a href="argent-couple-franco-vietnamien">article sur l'argent dans le couple franco-vietnamien</a>.</p>
 
     <h2 id="section-6">Comparatif des solutions pour un couple mixte franco-vietnamien</h2>
     <table class="comparison-table">
@@ -218,7 +219,7 @@ include 'header.php';
     <p>Certaines démarches bancaires sont plus simples après le mariage (acte de mariage transcrit, statut de conjoint reconnu). Mais les solutions pratiques — Wise, compte local, organisation des dépenses — peuvent et doivent être mises en place bien avant.</p>
     <div class="info-box">
       <strong>Sur la fiscalité :</strong>
-      Si vous transférez régulièrement des sommes importantes vers le Vietnam, documentez vos virements (justificatifs Wise ou relevés bancaires). En cas de contrôle fiscal, pouvoir expliquer l'origine et la destination des fonds évite des complications. Je parle de la fiscalité de l'expat dans notre <a href="fiscalite-expat-france-vietnam.php">article dédié</a>.
+      Si vous transférez régulièrement des sommes importantes vers le Vietnam, documentez vos virements (justificatifs Wise ou relevés bancaires). En cas de contrôle fiscal, pouvoir expliquer l'origine et la destination des fonds évite des complications. Je parle de la fiscalité de l'expat dans notre <a href="fiscalite-expat-france-vietnam">article dédié</a>.
     </div>
 
     <h2 id="section-faq">Questions fréquentes</h2>
@@ -241,22 +242,22 @@ include 'header.php';
 
     <div class="cta-newsletter">
       <h3>Reçois mes prochains articles</h3>
-      <p>Un email par semaine. Désabonnement en un clic.</p>
+      <p>Un email par mois. Désabonnement en un clic.</p>
       <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
         <input type="email" name="email" placeholder="Ton adresse email" required>
         <button type="submit">S'inscrire</button>
       </form>
-      <p class="cta-rgpd">En t'inscrivant, tu acceptes la <a href="confidentialite-capvietnam.php">politique de confidentialité</a>.</p>
+      <p class="cta-rgpd">En t'inscrivant, tu acceptes la <a href="confidentialite-capvietnam">politique de confidentialité</a>.</p>
     </div>
 
     <div class="author-box">
       <div class="author-avatar" style="display:flex;align-items:center;justify-content:center;background:#c0846e;color:#fff;font-weight:700;font-size:1.5rem;border-radius:50%;width:72px;height:72px;flex-shrink:0;">AB</div>
       <div class="author-info">
-        <h4>Cap Vietnam</h4>
+        <h4>Anthony Bouillon</h4>
         <p>Français marié à une Vietnamienne, entre France, Canada et Vietnam. Je partage ce que j'apprends sur la vie de couple franco-vietnamien — sans filtre et sans généraliser.</p>
         <div class="author-links">
           <a href="https://www.tiktok.com/@proffrancaisetranger" target="_blank" rel="noopener">TikTok</a>
-          <a href="a-propos-capvietnam.php">À propos</a>
+          <a href="a-propos-capvietnam">À propos</a>
         </div>
       </div>
     </div>

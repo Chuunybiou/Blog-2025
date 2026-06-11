@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 require_once __DIR__ . '/config/site.php';
 
 // Load articles from JSON
@@ -6,17 +6,25 @@ $_data     = json_decode(file_get_contents(__DIR__ . '/data/articles.json'), tru
 $_all      = $_data['articles'];
 $_featured_slug = $_data['featured_slug'];
 
-// Separate featured from grid
+// Separate featured from grid; filter unpublished; count silos
 $_featured = null;
 $_grid     = [];
+$_silo_vn  = 0;
+$_silo_fr  = 0;
 foreach ($_all as $a) {
+    if (($a['published'] ?? true) === false) continue;
+    if (($a['silo'] ?? 'vietnam') === 'france') $_silo_fr++; else $_silo_vn++;
     if ($a['slug'] === $_featured_slug) $_featured = $a;
     else $_grid[] = $a;
 }
 
-// Stats
-$_count      = count($_all);
-$_categories = count(array_unique(array_column($_all, 'category')));
+// Sort grid by date descending (newest first)
+usort($_grid, fn($a, $b) => strtotime($b['date'] ?? '2000-01-01') <=> strtotime($a['date'] ?? '2000-01-01'));
+
+// Stats — published articles only
+$_published  = array_values(array_filter($_all, fn($a) => ($a['published'] ?? true) !== false));
+$_count      = count($_published);
+$_categories = count(array_unique(array_column($_published, 'category')));
 
 // Category filter from URL
 $_valid_cats = ['admin' => 'Démarches Administratives', 'couple' => 'Couple Mixte & Famille', 'argent' => 'Argent & Travail en Ligne', 'voyager' => 'Voyager au Vietnam', 'vie-pratique' => 'Vie Pratique'];
@@ -103,6 +111,7 @@ $page_extra_css = '
 .card-footer{padding:1rem 1.5rem;border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-between}
 .card-read-time{font-size:0.78rem;color:var(--muted)}
 .card-read-more{font-size:0.8rem;font-weight:600;color:var(--terracotta)}
+.card-new-badge{font-size:0.6rem;letter-spacing:2px;text-transform:uppercase;font-weight:700;padding:2px 7px;border-radius:3px;background:rgba(27,107,82,0.12);color:var(--jade);margin-left:0.4rem;vertical-align:middle}
 .newsletter-band{background:var(--ink);color:var(--cream);padding:4rem 2rem;text-align:center}
 .newsletter-band h2{font-family:"DM Serif Display",serif;font-size:clamp(1.6rem,3vw,2.2rem);margin-bottom:0.5rem}
 .newsletter-band > p{color:rgba(250,248,244,0.5);max-width:420px;margin:0 auto 1.5rem}
@@ -114,6 +123,23 @@ $page_extra_css = '
 .nl-rgpd a{color:rgba(250,248,244,0.45)}
 @media(max-width:1000px){.articles-grid{grid-template-columns:repeat(2,1fr)}.featured-card{grid-template-columns:1fr}.featured-visual{min-height:220px}}
 @media(max-width:640px){.articles-grid{grid-template-columns:1fr}.hero-stats{flex-direction:column;gap:1rem}.search-box input{width:140px}.filters-bar{flex-direction:column;align-items:flex-start}.nl-form{flex-direction:column}}
+.portal-section{max-width:1200px;margin:0 auto;padding:2.5rem 2rem 0}
+.portal-pretitle{font-size:0.72rem;letter-spacing:3px;text-transform:uppercase;color:var(--muted);font-weight:600;margin-bottom:1.25rem}
+.portal-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem}
+.portal-card{display:flex;flex-direction:column;gap:0.5rem;padding:1.75rem;border:1.5px solid var(--border);border-radius:var(--radius);background:var(--white);cursor:pointer;transition:all 0.22s;user-select:none}
+.portal-card:hover{box-shadow:var(--shadow-md);transform:translateY(-2px)}
+.portal-card.active-vn{border-color:var(--jade);background:rgba(27,107,82,0.04);box-shadow:0 0 0 3px rgba(27,107,82,0.12)}
+.portal-card.active-fr{border-color:var(--terracotta);background:rgba(191,74,42,0.04);box-shadow:0 0 0 3px rgba(191,74,42,0.12)}
+.portal-icon{font-size:2rem;line-height:1;margin-bottom:0.2rem}
+.portal-title{font-family:"DM Serif Display",serif;font-size:1.15rem;line-height:1.25;color:var(--ink)}
+.portal-desc{font-size:0.83rem;color:var(--muted);line-height:1.6}
+.portal-count{font-size:0.78rem;font-weight:600;margin-top:0.5rem;padding-top:0.75rem;border-top:1px solid var(--border)}
+.portal-card-vn .portal-count{color:var(--jade)}
+.portal-card-fr .portal-count{color:var(--terracotta)}
+.portal-reset-bar{text-align:center;padding:0.9rem 0 0;display:none}
+.portal-reset-bar button{background:none;border:none;font-family:inherit;font-size:0.85rem;color:var(--muted);cursor:pointer;text-decoration:underline}
+.portal-reset-bar button:hover{color:var(--ink)}
+@media(max-width:640px){.portal-grid{grid-template-columns:1fr}}
 ';
 include 'header.php';
 ?>
@@ -121,12 +147,12 @@ include 'header.php';
 <header class="page-hero">
   <div class="page-hero-inner">
     <div class="breadcrumb">
-      <a href="blog-capvietnam.php">Accueil</a>
+      <a href="blog-capvietnam">Accueil</a>
       <span>›</span>
       <span style="color:rgba(250,248,244,0.6)">Tous les articles</span>
     </div>
     <h1><?= $_cat_label ? htmlspecialchars($_cat_label) : 'Tous les articles' ?></h1>
-    <p><?= $_cat_label ? 'Articles filtrés par catégorie · <a href="articles-capvietnam.php" style="color:rgba(250,248,244,0.5);text-decoration:underline">Voir tous les articles</a>' : 'Guides pratiques, retours d\'expérience et conseils pour réussir ton expatriation au Vietnam.' ?></p>
+    <p><?= $_cat_label ? 'Articles filtrés par catégorie · <a href="articles-capvietnam" style="color:rgba(250,248,244,0.5);text-decoration:underline">Voir tous les articles</a>' : 'Guides pratiques, retours d\'expérience et conseils pour réussir ton expatriation au Vietnam.' ?></p>
     <div class="hero-stats">
       <div>
         <div class="hero-stat-num"><?= $_count ?></div>
@@ -143,6 +169,27 @@ include 'header.php';
     </div>
   </div>
 </header>
+
+<div class="portal-section">
+  <div class="portal-pretitle">Quel est ton projet ?</div>
+  <div class="portal-grid">
+    <div class="portal-card portal-card-vn" id="portalVN" onclick="setSilo('vietnam')" role="button" tabindex="0">
+      <div class="portal-icon">🌏</div>
+      <div class="portal-title">Je m'installe au Vietnam</div>
+      <div class="portal-desc">Visa, logement, budget, travail en ligne, vie de couple au quotidien…</div>
+      <div class="portal-count"><?= $_silo_vn ?> articles</div>
+    </div>
+    <div class="portal-card portal-card-fr" id="portalFR" onclick="setSilo('france')" role="button" tabindex="0">
+      <div class="portal-icon">🇫🇷</div>
+      <div class="portal-title">Mon/ma conjoint(e) vient en France</div>
+      <div class="portal-desc">Visa long séjour, mariage mixte, titre de séjour, démarches administratives…</div>
+      <div class="portal-count"><?= $_silo_fr ?> articles</div>
+    </div>
+  </div>
+  <div class="portal-reset-bar" id="portalResetBar">
+    <button onclick="setSilo('all')">← Voir tous les articles</button>
+  </div>
+</div>
 
 <div class="filters-bar">
   <div class="filter-tabs">
@@ -162,7 +209,7 @@ include 'header.php';
 
 <?php if ($_featured): ?>
 <div class="featured">
-  <a class="featured-card" href="<?= htmlspecialchars($_featured['slug']) ?>.php" data-cat="<?= htmlspecialchars($_featured['category']) ?>">
+  <a class="featured-card" href="<?= htmlspecialchars($_featured['slug']) ?>" data-cat="<?= htmlspecialchars($_featured['category']) ?>" data-silo="<?= htmlspecialchars($_featured['silo'] ?? 'vietnam') ?>">
     <div class="featured-visual" <?= !empty($_featured['image']) ? 'style="background:url(\''.htmlspecialchars($_featured['image']).'\') center/cover no-repeat;background-blend-mode:normal;"' : '' ?>>
       <div class="featured-star">⭐ À la une</div>
       <?= $_featured['emoji'] ?>
@@ -184,11 +231,14 @@ include 'header.php';
 <section class="articles-section">
   <div class="articles-grid" id="articlesGrid">
 
-<?php foreach ($_grid as $a):
-  $cat = htmlspecialchars($a['category']);
-  $kw  = htmlspecialchars($a['keywords'] ?? strtolower($a['title']));
+<?php
+$_now = time();
+foreach ($_grid as $a):
+  $cat   = htmlspecialchars($a['category']);
+  $kw    = htmlspecialchars($a['keywords'] ?? strtolower($a['title']));
+  $isNew = isset($a['date']) && (($_now - strtotime($a['date'])) < 45 * 86400);
 ?>
-    <a class="article-card" href="<?= htmlspecialchars($a['slug']) ?>.php" data-cat="<?= $cat ?>" data-title="<?= $kw ?>">
+    <a class="article-card" href="<?= htmlspecialchars($a['slug']) ?>" data-cat="<?= $cat ?>" data-title="<?= $kw ?>" data-silo="<?= htmlspecialchars($a['silo'] ?? 'vietnam') ?>">
       <?php if (!empty($a['image'])): ?>
       <div class="card-banner" style="background:url('<?= htmlspecialchars($a['image']) ?>') center/cover no-repeat;">
         <span style="position:absolute;bottom:.5rem;right:.6rem;font-size:1.6rem;filter:drop-shadow(0 1px 3px rgba(0,0,0,.4))"><?= $a['emoji'] ?></span>
@@ -201,7 +251,7 @@ include 'header.php';
           <span class="card-badge badge-<?= $cat ?>"><?= htmlspecialchars($a['categoryLabel']) ?></span>
           <span class="card-date"><?= htmlspecialchars($a['dateLabel']) ?></span>
         </div>
-        <h3><?= htmlspecialchars($a['title']) ?></h3>
+        <h3><?= htmlspecialchars($a['title']) ?><?php if ($isNew): ?><span class="card-new-badge">Nouveau</span><?php endif; ?></h3>
         <p><?= htmlspecialchars($a['excerpt']) ?></p>
       </div>
       <div class="card-footer">
@@ -222,16 +272,28 @@ include 'header.php';
     <input type="email" name="email" placeholder="Ton adresse email" required>
     <button type="submit">S'inscrire</button>
   </form>
-  <p class="nl-rgpd">En t'inscrivant, tu acceptes la <a href="confidentialite-capvietnam.php">politique de confidentialité</a>.</p>
+  <p class="nl-rgpd">En t'inscrivant, tu acceptes la <a href="confidentialite-capvietnam">politique de confidentialité</a>.</p>
 </section>
 
 <script>
 let activeFilter = '<?= $_active_cat ?>';
-const tabs = document.querySelectorAll('.filter-tab');
-const cards = document.querySelectorAll('.article-card');
-const featured = document.querySelector('.featured-card');
+let activeSilo   = 'all';
+const tabs         = document.querySelectorAll('.filter-tab');
+const cards        = document.querySelectorAll('.article-card');
+const featured     = document.querySelector('.featured-card');
 const featuredWrap = document.querySelector('.featured');
 const filterClassMap = { admin:'active-admin', couple:'active-couple', argent:'active-argent', voyager:'active-voyager', 'vie-pratique':'active-vie-pratique' };
+
+function setSilo(silo) {
+  activeSilo = silo;
+  document.getElementById('portalVN').classList.toggle('active-vn', silo === 'vietnam');
+  document.getElementById('portalFR').classList.toggle('active-fr', silo === 'france');
+  document.getElementById('portalResetBar').style.display = silo !== 'all' ? '' : 'none';
+  tabs.forEach(t => { t.className = 'filter-tab'; });
+  document.querySelector('.filter-tab[data-filter="all"]').classList.add('active');
+  activeFilter = 'all';
+  filterArticles();
+}
 
 tabs.forEach(tab => {
   tab.addEventListener('click', () => {
@@ -243,7 +305,6 @@ tabs.forEach(tab => {
   });
 });
 
-// Pre-activate tab from URL param
 if (activeFilter !== 'all') {
   tabs.forEach(t => { t.className = 'filter-tab'; });
   const preTab = document.querySelector(`.filter-tab[data-filter="${activeFilter}"]`);
@@ -254,14 +315,18 @@ function filterArticles() {
   const search = document.getElementById('searchInput').value.toLowerCase();
   let count = 0;
   if (featured && featuredWrap) {
-    const featShow = (activeFilter === 'all' || featured.dataset.cat === activeFilter) &&
+    const featSilo = featured.dataset.silo || 'vietnam';
+    const featShow = (activeSilo === 'all' || featSilo === activeSilo) &&
+                     (activeFilter === 'all' || featured.dataset.cat === activeFilter) &&
                      (search === '' || featured.textContent.toLowerCase().includes(search));
     featuredWrap.style.display = featShow ? '' : 'none';
     if (featShow) count++;
   }
   cards.forEach(card => {
-    const title = (card.dataset.title || '') + ' ' + card.textContent.toLowerCase();
-    const show = (activeFilter === 'all' || card.dataset.cat === activeFilter) &&
+    const cardSilo = card.dataset.silo || 'vietnam';
+    const title    = (card.dataset.title || '') + ' ' + card.textContent.toLowerCase();
+    const show = (activeSilo === 'all' || cardSilo === activeSilo) &&
+                 (activeFilter === 'all' || card.dataset.cat === activeFilter) &&
                  (search === '' || title.includes(search));
     card.style.display = show ? '' : 'none';
     if (show) count++;

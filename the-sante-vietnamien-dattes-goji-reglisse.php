@@ -95,16 +95,17 @@ include 'header.php';
 <header class="article-hero" style="background:linear-gradient(165deg,<?= $article_hero_bg ?> 0%,#3d2e00 50%,#2a1800 100%);">
   <div class="article-hero-inner">
     <div class="breadcrumb">
-      <a href="blog-capvietnam.php">Accueil</a><span class="breadcrumb-sep">›</span>
-      <a href="articles-capvietnam.php">Voyager au Vietnam</a><span class="breadcrumb-sep">›</span>
+      <a href="blog-capvietnam">Accueil</a><span class="breadcrumb-sep">›</span>
+      <a href="articles-capvietnam">Voyager au Vietnam</a><span class="breadcrumb-sep">›</span>
       <span>Thé vietnamien</span>
     </div>
     <span class="article-badge-hero" style="background:<?= $article_badge ?>;color:<?= $article_badge_c ?>">🍵 Recette & Culture</span>
     <h1>Le thé de ma belle-mère vietnamienne : dattes, réglisse et goji noir</h1>
     <div class="article-hero-meta">
-      <span>Par <strong>Cap Vietnam</strong></span>
+      <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
       <span>📅 1er juin 2026</span>
       <span>⏱ 6 min de lecture</span>
+      <span>Mis &agrave; jour : Juin 2026</span>
     </div>
   </div>
 </header>
@@ -366,9 +367,9 @@ include 'header.php';
     <div class="info-box" style="margin-top:3rem;">
       <strong>🍵 Articles qui pourraient t'intéresser :</strong>
       <ul style="margin:0.75rem 0 0.5rem;padding-left:1.2rem;">
-        <li><a href="tet-nouvel-an-lunaire-vietnam.php">Mon premier Tết avec la famille de ma femme</a></li>
-        <li><a href="belle-famille-vietnamienne-guide.php">Rencontrer la belle-famille vietnamienne : guide de survie</a></li>
-        <li><a href="differences-culturelles-couple-franco-vietnamien.php">Les différences culturelles qui surprennent en couple franco-vietnamien</a></li>
+        <li><a href="tet-nouvel-an-lunaire-vietnam">Mon premier Tết avec la famille de ma femme</a></li>
+        <li><a href="belle-famille-vietnamienne-guide">Rencontrer la belle-famille vietnamienne : guide de survie</a></li>
+        <li><a href="differences-culturelles-couple-franco-vietnamien">Les différences culturelles qui surprennent en couple franco-vietnamien</a></li>
       </ul>
     </div>
 
@@ -381,7 +382,7 @@ include 'header.php';
         <input type="email" name="email" placeholder="ton@email.com" required>
         <button type="submit" style="background:var(--amber);color:var(--ink);">S'inscrire</button>
       </form>
-      <p class="cta-rgpd">Désinscription en un clic. <a href="confidentialite-capvietnam.php">Politique de confidentialité</a>.</p>
+      <p class="cta-rgpd">Désinscription en un clic. <a href="confidentialite-capvietnam">Politique de confidentialité</a>.</p>
     </div>
 
     <!-- AUTHOR BOX -->
@@ -390,10 +391,10 @@ include 'header.php';
         <img src="<?= PROFILE_PHOTO ?>" alt="Anthony Bouillon — Cap Vietnam" width="72" height="72" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;">
       </div>
       <div class="author-info">
-        <h4>Cap Vietnam</h4>
+        <h4>Anthony Bouillon</h4>
         <p>Français installé à Hanoï avec ma femme vietnamienne. Je raconte l'expatriation telle qu'elle est — avec ses découvertes inattendues, ses galères administratives et ses petites habitudes qui changent la vie.</p>
         <div class="author-links">
-          <a href="a-propos-capvietnam.php">À propos →</a>
+          <a href="a-propos-capvietnam">À propos →</a>
           <a href="<?= SITE_TIKTOK ?>" target="_blank" rel="noopener">TikTok</a>
         </div>
       </div>

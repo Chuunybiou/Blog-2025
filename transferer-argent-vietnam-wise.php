@@ -6,7 +6,7 @@ $page_og_title    = 'Transférer de l\'argent vers le Vietnam avec Wise : guide 
 $page_og_desc     = 'Comparatif des frais Wise vs BNP, Société Générale pour transférer de l\'argent de France au Vietnam.';
 $page_og_url      = 'https://www.blog-capvietnam.fr/transferer-argent-vietnam-wise';
 $page_og_image    = 'https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Transferer son argent au Vietnam : Wise vs banques classiques","datePublished":"2026-03-15","dateModified":"2026-03-15","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Cap Vietnam","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=1200&q=80","description":"Comparatif des frais Wise vs BNP, Societe Generale pour transferer de l argent de France au Vietnam.","timeRequired":"PT5M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/transferer-argent-vietnam-wise"}';
+$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Transferer son argent au Vietnam : Wise vs banques classiques","datePublished":"2026-03-15","dateModified":"2026-03-15","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=1200&q=80","description":"Comparatif des frais Wise vs BNP, Societe Generale pour transferer de l argent de France au Vietnam.","timeRequired":"PT5M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/transferer-argent-vietnam-wise"}';
 
 $article_color        = 'amber';
 $article_hero_bg      = '#3a2800';
@@ -30,14 +30,14 @@ include 'header.php';
 <header class="article-hero">
   <div class="article-hero-inner">
     <div class="breadcrumb">
-      <a href="blog-capvietnam.php">Accueil</a><span class="breadcrumb-sep">›</span>
-      <a href="articles-capvietnam.php">Argent &amp; Travail</a><span class="breadcrumb-sep">›</span>
+      <a href="blog-capvietnam">Accueil</a><span class="breadcrumb-sep">›</span>
+      <a href="articles-capvietnam">Argent &amp; Travail</a><span class="breadcrumb-sep">›</span>
       <span>Wise vers le Vietnam</span>
     </div>
     <span class="article-badge-hero">Argent &amp; Travail</span>
     <h1>Transférer de l'argent vers le Vietnam avec Wise : taux, frais et mode d'emploi</h1>
     <div class="article-hero-meta">
-      <span>Par <strong>Cap Vietnam</strong></span>
+      <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
       <span>📅 22 mars 2026</span>
       <span>⏱ 7 min de lecture</span>
     </div>
@@ -217,9 +217,9 @@ include 'header.php';
     <div class="author-box">
       <div class="author-avatar" style="overflow:hidden;position:relative;"><img src="assets/img/profile/anthony-profil.jpg" alt="Anthony Bouillon" width="72" height="72" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"></div>
       <div class="author-info">
-        <h4>Cap Vietnam</h4>
+        <h4>Anthony Bouillon</h4>
         <p>Utilisateur de Wise depuis 2026 pour mes virements mensuels France → Vietnam. Les frais indiqués sont les miens, mis à jour en 2026.</p>
-        <div class="author-links"><a href="a-propos-capvietnam.php">À propos →</a></div>
+        <div class="author-links"><a href="a-propos-capvietnam">À propos →</a></div>
       </div>
     </div>
 

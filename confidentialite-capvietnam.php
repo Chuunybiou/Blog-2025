@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 require_once __DIR__ . '/config/site.php';
 $page_title       = 'Politique de confidentialité — Cap Vietnam';
 $page_description = 'Politique de confidentialité de Cap Vietnam : collecte des données, cookies, newsletter, droits RGPD des utilisateurs.';
@@ -51,7 +51,7 @@ include 'header.php';
   <p>L'adresse email collectée pour la newsletter est uniquement utilisée pour l'envoi de la newsletter Cap Vietnam. Elle n'est jamais cédée, vendue ou louée à des tiers.</p>
 
   <h2>4. Cookies et traceurs</h2>
-  <p>Cap Vietnam utilise des cookies pour le bon fonctionnement du site et la mesure d'audience. Consultez la <a href="cookies-capvietnam.php">politique de gestion des cookies</a> pour le détail complet.</p>
+  <p>Cap Vietnam utilise des cookies pour le bon fonctionnement du site et la mesure d'audience. Consultez la <a href="cookies-capvietnam">politique de gestion des cookies</a> pour le détail complet.</p>
 
   <h2>5. Liens d'affiliation et tiers</h2>
   <p>Certains liens sur ce blog pointent vers des sites tiers (Wise, Booking, Amazon, etc.). Ces sites ont leurs propres politiques de confidentialité. Cap Vietnam n'est pas responsable du traitement des données effectué par ces tiers.</p>

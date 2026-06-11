@@ -1,10 +1,10 @@
-<?php
+﻿<?php
 require_once __DIR__ . '/../config/site.php';
 
 $path_prefix      = '../';
 $page_lang        = 'vi';
 $page_lang_switch = [
-  'href'  => '../blog-capvietnam.php',
+  'href'  => '../',
   'label' => '🇫🇷 Français',
   'title' => 'Version française',
 ];
@@ -191,7 +191,7 @@ include '../header.php';
   <div class="vi-art-related">
     <h3>📖 Bài viết liên quan</h3>
     <div class="vi-rel-grid">
-      <a class="vi-rel-card" href="loi-phat-am-tieng-phap-nguoi-viet.php">
+      <a class="vi-rel-card" href="loi-phat-am-tieng-phap-nguoi-viet">
         <div class="vi-rel-thumb">
           <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=400&q=80"
                alt="Lỗi phát âm tiếng Pháp" loading="lazy">
@@ -201,7 +201,7 @@ include '../header.php';
           <span>Đọc thêm →</span>
         </div>
       </a>
-      <a class="vi-rel-card" href="hoc-tieng-phap-online-mien-phi.php">
+      <a class="vi-rel-card" href="hoc-tieng-phap-online-mien-phi">
         <div class="vi-rel-thumb">
           <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&q=80"
                alt="Học tiếng Pháp online miễn phí" loading="lazy">

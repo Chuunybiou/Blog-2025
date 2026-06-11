@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 require_once __DIR__ . '/config/site.php';
 $page_title       = 'Merci — Télécharge ton guide Cap Vietnam 2026';
 $page_description = 'Merci pour ton achat. Télécharge maintenant le Guide Cap Vietnam 2026 — PDF immédiat.';
@@ -65,7 +65,7 @@ include 'header.php';
     <div class="step-card">
       <div class="step-num">1</div>
       <h3>Commence par le chapitre Visa</h3>
-      <p>C'est la pièce maîtresse. Complète avec notre <a href="visa-vietnam-francais-guide-2026.php">guide visa gratuit</a> pour les détails récents.</p>
+      <p>C'est la pièce maîtresse. Complète avec notre <a href="visa-vietnam-francais-guide-2026">guide visa gratuit</a> pour les détails récents.</p>
     </div>
     <div class="step-card">
       <div class="step-num">2</div>
@@ -75,7 +75,7 @@ include 'header.php';
     <div class="step-card">
       <div class="step-num">3</div>
       <h3>Lis tous les articles</h3>
-      <p>Visa, mariage, budget, compte bancaire — chaque article complète un chapitre du guide. <a href="articles-capvietnam.php">Tous les articles →</a></p>
+      <p>Visa, mariage, budget, compte bancaire — chaque article complète un chapitre du guide. <a href="articles-capvietnam">Tous les articles →</a></p>
     </div>
   </div>
 </section>

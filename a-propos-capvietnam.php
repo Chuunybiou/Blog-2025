@@ -2,27 +2,31 @@
 require_once __DIR__ . '/config/site.php';
 $page_title       = 'Le couple franco-vietnamien derrière ce blog — Cap Vietnam';
 $page_description = 'Je suis Anthony, Français en couple avec une Vietnamienne. Ce blog est le journal de ce qu\'on a appris, raté, payé, compris entre la France et le Vietnam.';
-$page_canonical   = 'https://www.blog-capvietnam.fr/a-propos';
+$page_canonical   = SITE_URL . '/a-propos-capvietnam';
 $page_og_title    = 'Le couple franco-vietnamien derrière ce blog — Cap Vietnam';
 $page_og_desc     = 'Français en couple avec une Vietnamienne. Ce blog raconte notre expérience commune : démarches, mariage, argent, vie entre Paris et Hanoï.';
-$page_og_url      = 'https://www.blog-capvietnam.fr/a-propos';
+$page_og_url      = SITE_URL . '/a-propos-capvietnam';
 $page_og_image    = SITE_URL . '/assets/img/595605424_755082234270642_7802260515125357552_n.jpg';
-$page_schema      = '{
-  "@context": "https://schema.org",
-  "@type": "AboutPage",
-  "name": "À propos de Cap Vietnam",
-  "url": "https://www.blog-capvietnam.fr/a-propos",
-  "mainEntity": {
-    "@type": "Person",
-    "name": "Anthony Bouillon",
-    "description": "Expatrié français au Vietnam, professeur de français pour vietnamiens, créateur de contenu",
-    "nationality": "French",
-    "knowsLanguage": ["fr","en","vi"],
-    "sameAs": [
-      "https://www.tiktok.com/@proffrancaisetranger"
-    ]
-  }
-}';
+$page_schema      = json_encode([
+  '@context'   => 'https://schema.org',
+  '@type'      => 'ProfilePage',
+  'name'       => 'À propos — Anthony Bouillon',
+  'url'        => SITE_URL . '/a-propos-capvietnam',
+  'mainEntity' => [
+    '@type'       => 'Person',
+    '@id'         => SITE_URL . '/#author',
+    'name'        => SITE_AUTHOR,
+    'url'         => SITE_URL . '/a-propos-capvietnam',
+    'jobTitle'    => 'Expatrié français au Vietnam, auteur & créateur de contenu',
+    'description' => 'Français marié à une Vietnamienne, installé à Hanoï. Auteur de la méthode polyglotte, créateur TikTok @proffrancaisetranger et blogueur sur la vie de couple franco-vietnamien.',
+    'nationality' => 'French',
+    'knowsLanguage' => ['fr', 'en', 'vi'],
+    'sameAs'      => [
+      SITE_TIKTOK,
+      'https://www.amazon.fr/stores/Anthony-Bouillon/author/B0CY93X8H5',
+    ],
+  ],
+], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
 $page_extra_css = '
 .about-hero{padding-top:64px;background:linear-gradient(165deg,#1c1917,#2d2319 50%,#1c1917);position:relative;overflow:hidden}
 .about-hero::before{content:\'\';position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 30% 70%,rgba(191,74,42,0.12),transparent 60%),radial-gradient(ellipse 50% 40% at 70% 30%,rgba(27,107,82,0.08),transparent 60%)}
@@ -245,9 +249,9 @@ include 'header.php';
   <h2>Envie de suivre l'aventure ?</h2>
   <p>Que tu prépares ton expatriation ou que tu sois juste curieux, il y a plein de façons de rester connecté.</p>
   <div class="cta-buttons">
-    <a class="cta-primary" href="articles-capvietnam.php">Lire les articles →</a>
-    <a class="cta-secondary" href="blog-capvietnam.php#contact">Me contacter</a>
-    <a class="cta-secondary" href="blog-capvietnam.php#newsletter">Newsletter mensuelle</a>
+    <a class="cta-primary" href="articles-capvietnam">Lire les articles →</a>
+    <a class="cta-secondary" href="blog-capvietnam#contact">Me contacter</a>
+    <a class="cta-secondary" href="blog-capvietnam#newsletter">Newsletter mensuelle</a>
   </div>
 </section>
 

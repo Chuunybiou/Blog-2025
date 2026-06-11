@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 require_once __DIR__ . '/config/site.php';
 
 $path_prefix      = '';
@@ -694,7 +694,7 @@ include __DIR__ . '/header.php';
         Ce livre, c'est la synthèse de ce qui a réellement marché — pour moi, pour mes amis expats, et pour les lecteurs du blog Cap Vietnam. Pas de promesse magique. Une méthode honnête, exigeante, qui marche si vous y mettez 20 minutes par jour.
       </p>
       <p>
-        <a href="<?= $path_prefix ?>a-propos-capvietnam.php">En savoir plus sur le projet Cap Vietnam →</a>
+        <a href="<?= $path_prefix ?>a-propos-capvietnam">En savoir plus sur le projet Cap Vietnam →</a>
       </p>
     </div>
   </div>
@@ -735,12 +735,12 @@ include __DIR__ . '/header.php';
 
     <div class="faq-item">
       <button class="faq-question" onclick="toggleFaq(this)">Est-ce différent du Guide Cap Vietnam à 9 € ?</button>
-      <div class="faq-answer">Oui, complètement. Le <a href="<?= $path_prefix ?>guide-cap-vietnam-2026.php">Guide Cap Vietnam</a> traite de l'installation pratique : démarches, budget, logement, banque. Le livre vietnamien traite uniquement de l'apprentissage de la langue. Les deux sont complémentaires.</div>
+      <div class="faq-answer">Oui, complètement. Le <a href="<?= $path_prefix ?>guide-cap-vietnam-2026">Guide Cap Vietnam</a> traite de l'installation pratique : démarches, budget, logement, banque. Le livre vietnamien traite uniquement de l'apprentissage de la langue. Les deux sont complémentaires.</div>
     </div>
 
     <div class="faq-item">
       <button class="faq-question" onclick="toggleFaq(this)">Comment puis-je vous contacter avant l'achat ?</button>
-      <div class="faq-answer">Page <a href="<?= $path_prefix ?>contact-capvietnam.php">Contact</a> du blog. Je réponds à tous les messages, généralement sous 48h. N'hésitez pas si vous voulez vous assurer que le livre correspond bien à votre situation.</div>
+      <div class="faq-answer">Page <a href="<?= $path_prefix ?>contact-capvietnam">Contact</a> du blog. Je réponds à tous les messages, généralement sous 48h. N'hésitez pas si vous voulez vous assurer que le livre correspond bien à votre situation.</div>
     </div>
   </div>
 </section>
@@ -774,7 +774,7 @@ include __DIR__ . '/header.php';
     <a href="<?= htmlspecialchars($amazon_url) ?>" target="_blank" rel="noopener noreferrer sponsored" class="btn-primary" data-track="footer">
       Acheter sur Amazon <span>→</span>
     </a>
-    <span class="book-final-cta-note">Pas encore prêt(e) ? <a href="<?= $path_prefix ?>blog-capvietnam.php#newsletter" style="color:rgba(255,255,255,0.85);text-decoration:underline;">Inscrivez-vous à la newsletter</a> — je partage mes notes d'apprentissage chaque semaine.</span>
+    <span class="book-final-cta-note">Pas encore prêt(e) ? <a href="<?= $path_prefix ?>blog-capvietnam#newsletter" style="color:rgba(255,255,255,0.85);text-decoration:underline;">Inscrivez-vous à la newsletter</a> — je partage mes notes d'apprentissage chaque semaine.</span>
   </div>
 </section>
 

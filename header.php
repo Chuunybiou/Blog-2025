@@ -26,8 +26,8 @@ $page_extra_css   = $page_extra_css   ?? '';
 <title><?= htmlspecialchars($page_title) ?></title>
 <meta name='impact-site-verification' value='92815f1a-4182-4e5e-9001-79e777d23b09'>
 <meta name="description" content="<?= htmlspecialchars($page_description) ?>">
-<meta name="author" content="Cap Vietnam">
-<meta name="robots" content="index, follow">
+<meta name="author" content="Anthony Bouillon">
+<meta name="robots" content="<?= ($page_noindex ?? false) ? 'noindex, nofollow' : 'index, follow' ?>">
 <meta name="google-site-verification" content="8oAHVfQ6RoBt-EnNRRPUOwcZOCZibxOHSAKwPsh-AwY" />
 <link rel="canonical" href="<?= htmlspecialchars($page_canonical) ?>">
 <?php foreach ($page_hreflang as $lang => $url): ?>
@@ -361,7 +361,7 @@ footer {
 
 <!-- ═══════ COOKIE BANNER RGPD ═══════ -->
 <div id="cookie-banner">
-  <p>Ce site utilise des cookies pour améliorer votre expérience. Consultez notre <a href="<?= $path_prefix ?>confidentialite-capvietnam.php" onclick="openModal('privacy');return false;">politique de confidentialité</a> pour en savoir plus.</p>
+  <p>Ce site utilise des cookies pour améliorer votre expérience. Consultez notre <a href="<?= $path_prefix ?>confidentialite-capvietnam" onclick="openModal('privacy');return false;">politique de confidentialité</a> pour en savoir plus.</p>
   <button class="cookie-btn cookie-accept" onclick="acceptCookies()">Accepter</button>
   <button class="cookie-btn cookie-refuse" onclick="refuseCookies()">Refuser</button>
 </div>
@@ -369,16 +369,13 @@ footer {
 <!-- ═══════ NAV ═══════ -->
 <nav id="nav">
   <div class="nav-inner">
-    <a href="<?= $path_prefix ?>blog-capvietnam.php" class="nav-logo">Cap<span>Vietnam</span></a>
+    <a href="<?= $path_prefix ?: '/' ?>" class="nav-logo">Cap<span>Vietnam</span></a>
     <ul class="nav-links" id="navLinks">
-      <li><a href="<?= $path_prefix ?>blog-capvietnam.php">Accueil</a></li>
-      <li><a href="<?= $path_prefix ?>articles-capvietnam.php">Articles</a></li>
-      <li><a href="<?= $path_prefix ?>calculateur-budget-vietnam.php">🧮 Calculateur</a></li>
-      <li><a href="<?= $path_prefix ?>a-propos-capvietnam.php">À propos</a></li>
-      <li><a href="<?= $path_prefix ?>apprendre-francais-capvietnam.php">TIKTOK</a></li>
-      <li><a href="<?= $path_prefix ?>contact-capvietnam.php">Contact</a></li>
-      <li><a href="<?= $path_prefix ?>livre-vietnamien.php" class="nav-book-cta" title="Apprendre le vietnamien avec la méthode polyglotte">Livre VN&nbsp;📕</a></li>
-      <li><a href="<?= $path_prefix ?>guide-cap-vietnam-2026.php" class="nav-guide-cta">Guide 📘</a></li>
+      <li><a href="<?= $path_prefix ?: '/' ?>">Accueil</a></li>
+      <li><a href="<?= $path_prefix ?>articles-capvietnam">Articles</a></li>
+      <li><a href="<?= $path_prefix ?>calculateur-budget-vietnam">Calculateur</a></li>
+      <li><a href="<?= $path_prefix ?>guide-cap-vietnam-2026" class="nav-guide-cta">Guide</a></li>
+      <li><a href="<?= $path_prefix ?>a-propos-capvietnam">À propos</a></li>
       <?php if ($page_lang_switch): ?>
       <li><a href="<?= htmlspecialchars($page_lang_switch['href']) ?>" title="<?= htmlspecialchars($page_lang_switch['title']) ?>" class="nav-lang-switch"><?= $page_lang_switch['label'] ?></a></li>
       <?php endif; ?>

@@ -1,10 +1,10 @@
-<?php
+﻿<?php
 require_once __DIR__ . '/../config/site.php';
 
 $path_prefix      = '../';
 $page_lang        = 'vi';
 $page_lang_switch = [
-  'href'  => '../blog-capvietnam.php',
+  'href'  => '../',
   'label' => '🇫🇷 Français',
   'title' => 'Version française',
 ];
@@ -203,7 +203,7 @@ include '../header.php';
   <h2 class="vi-section-title">✍️ Bài viết học tiếng Pháp</h2>
   <p class="vi-section-desc">Hướng dẫn chi tiết bằng tiếng Việt — lý do học, phát âm, tài nguyên miễn phí.</p>
   <div class="vi-articles-grid">
-    <a class="vi-art-preview" href="tai-sao-hoc-tieng-phap.php">
+    <a class="vi-art-preview" href="tai-sao-hoc-tieng-phap">
       <div class="vi-art-preview-img">
         <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600&q=80"
              alt="Tại sao nên học tiếng Pháp" loading="lazy">
@@ -215,7 +215,7 @@ include '../header.php';
         <span class="vi-art-preview-more">Đọc thêm →</span>
       </div>
     </a>
-    <a class="vi-art-preview" href="loi-phat-am-tieng-phap-nguoi-viet.php">
+    <a class="vi-art-preview" href="loi-phat-am-tieng-phap-nguoi-viet">
       <div class="vi-art-preview-img">
         <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=600&q=80"
              alt="Lỗi phát âm tiếng Pháp của người Việt" loading="lazy">
@@ -227,7 +227,7 @@ include '../header.php';
         <span class="vi-art-preview-more">Đọc thêm →</span>
       </div>
     </a>
-    <a class="vi-art-preview" href="hoc-tieng-phap-online-mien-phi.php">
+    <a class="vi-art-preview" href="hoc-tieng-phap-online-mien-phi">
       <div class="vi-art-preview-img">
         <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&q=80"
              alt="Học tiếng Pháp online miễn phí" loading="lazy">
@@ -256,7 +256,7 @@ include '../header.php';
         <span class="vi-res-badge badge-free-vi">Miễn phí — Tải xuống ↓</span>
       </div>
     </a>
-    <a class="vi-res-card" href="../apprendre-francais-capvietnam.php">
+    <a class="vi-res-card" href="../apprendre-francais-capvietnam">
       <div class="vi-res-icon">🎓</div>
       <div class="vi-res-body">
         <h3>Trang học tiếng Pháp đầy đủ</h3>
@@ -264,7 +264,7 @@ include '../header.php';
         <span class="vi-res-badge badge-ext">Xem trang → </span>
       </div>
     </a>
-    <a class="vi-res-card" href="../guide-cap-vietnam-2026.php">
+    <a class="vi-res-card" href="../guide-cap-vietnam-2026">
       <div class="vi-res-icon">📘</div>
       <div class="vi-res-body">
         <h3>Cuốn sách hướng dẫn — 9 €</h3>
@@ -284,7 +284,7 @@ include '../header.php';
       Blog chính của Anthony được viết bằng <strong>tiếng Pháp</strong> — dành cho người Pháp và Pháp ngữ đang sống hoặc chuẩn bị đến Việt Nam.<br>
       Nếu bạn đang học tiếng Pháp, đây là cơ hội tuyệt vời để luyện đọc thực tế!
     </p>
-    <a href="../blog-capvietnam.php" style="display:inline-flex;align-items:center;gap:8px;padding:0.85rem 2rem;background:var(--ink);color:var(--cream);border-radius:4px;text-decoration:none;font-weight:600;transition:0.2s">
+    <a href="../blog-capvietnam" style="display:inline-flex;align-items:center;gap:8px;padding:0.85rem 2rem;background:var(--ink);color:var(--cream);border-radius:4px;text-decoration:none;font-weight:600;transition:0.2s">
       🇫🇷 Đọc blog tiếng Pháp →
     </a>
   </div>

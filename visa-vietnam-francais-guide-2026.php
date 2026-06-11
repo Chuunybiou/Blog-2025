@@ -6,7 +6,7 @@ $page_og_title    = 'Visa Vietnam pour un Français : le guide complet 2026';
 $page_og_desc     = 'E-visa, visa de travail, regroupement familial… Tout savoir sur les visas pour vivre au Vietnam.';
 $page_og_url      = 'https://www.blog-capvietnam.fr/visa-vietnam-francais-guide-2026';
 $page_og_image    = 'https://images.unsplash.com/photo-1555921015-5532091f6026?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"Article","headline":"Visa Vietnam pour un Français : le guide complet 2026","datePublished":"2026-04-01","author":{"@type":"Person","name":"Cap Vietnam","url":"https://www.blog-capvietnam.fr"},"publisher":{"@type":"Organization","name":"Cap Vietnam"},"mainEntityOfPage":"https://www.blog-capvietnam.fr/visa-vietnam-francais-guide-2026","inLanguage":"fr","articleSection":"Démarches Administratives"}';
+$page_schema      = '{"@context":"https://schema.org","@type":"Article","headline":"Visa Vietnam pour un Français : le guide complet 2026","datePublished":"2026-04-01","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr"},"publisher":{"@type":"Organization","name":"Anthony Bouillon"},"mainEntityOfPage":"https://www.blog-capvietnam.fr/visa-vietnam-francais-guide-2026","inLanguage":"fr","articleSection":"Démarches Administratives"}';
 
 $article_color   = 'jade';
 $article_hero_bg = '#1a3a1e';
@@ -31,16 +31,17 @@ include 'header.php';
 <header class="article-hero">
   <div class="article-hero-inner">
     <div class="breadcrumb">
-      <a href="blog-capvietnam.php">Accueil</a><span class="breadcrumb-sep">›</span>
-      <a href="articles-capvietnam.php">Démarches Administratives</a><span class="breadcrumb-sep">›</span>
+      <a href="blog-capvietnam">Accueil</a><span class="breadcrumb-sep">›</span>
+      <a href="articles-capvietnam">Démarches Administratives</a><span class="breadcrumb-sep">›</span>
       <span>Visa Vietnam</span>
     </div>
     <span class="article-badge-hero">Démarches Administratives</span>
     <h1>Visa Vietnam pour un Français : le guide complet 2026</h1>
     <div class="article-hero-meta">
-      <span>Par <strong>Cap Vietnam</strong></span>
+      <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
       <span>📅 1er avril 2026</span>
       <span>⏱ 8 min de lecture</span>
+      <span>Mis &agrave; jour : Juin 2026</span>
     </div>
   </div>
 </header>
@@ -127,7 +128,7 @@ include 'header.php';
     <p>Dans mon cas : j'arrive d'abord avec un e-visa de 90 jours pour m'installer. Pendant ce temps, on prépare le dossier de mariage. Une fois mariés, je bascule sur un visa TT. Je travaille en ligne, activité déclarée en France.</p>
     <div class="tip-box">
       <strong>💡 L'astuce fiscale :</strong>
-      Au-delà de 183 jours de présence au Vietnam, tu deviens résident fiscal vietnamien. C'est un sujet complexe — lire notre <a href="fiscalite-expat-france-vietnam.php">article sur la fiscalité expat</a>.
+      Au-delà de 183 jours de présence au Vietnam, tu deviens résident fiscal vietnamien. C'est un sujet complexe — lire notre <a href="fiscalite-expat-france-vietnam">article sur la fiscalité expat</a>.
     </div>
 
     <h2 id="section-7">L'enregistrement de séjour : une obligation souvent oubliée</h2>
@@ -147,7 +148,14 @@ include 'header.php';
     </ul>
     <div class="tip-box">
       <strong>Règle des 183 jours :</strong>
-      Si tu enchaînes les renouvellements et dépasses 183 jours de présence par an au Vietnam, tu peux être considéré comme résident fiscal vietnamien. Lire notre <a href="fiscalite-expat-france-vietnam.php">guide sur la fiscalité expatriée</a> pour comprendre les implications pratiques.
+      Si tu enchaînes les renouvellements et dépasses 183 jours de présence par an au Vietnam, tu peux être considéré comme résident fiscal vietnamien. Lire notre <a href="fiscalite-expat-france-vietnam">guide sur la fiscalité expatriée</a> pour comprendre les implications pratiques.
+    </div>
+
+    <div class="info-box">
+      <strong>Tu veux télétravailler depuis le Vietnam ?</strong> → <a href="visa-teletravail-digital-nomad-vietnam">Guide honnête sur les options visa pour digital nomads</a> et <a href="travailler-a-distance-depuis-vietnam">le dossier complet travail à distance</a>
+    </div>
+    <div class="info-box">
+      <strong>Tu es retraité(e) ?</strong> → <a href="retraite-vietnam-francais">Guide complet : prendre sa retraite au Vietnam (visa, pension, santé, fiscalité)</a>
     </div>
 
     <h2 id="section-faq">Questions fréquentes</h2>
@@ -162,22 +170,22 @@ include 'header.php';
 
     <div class="cta-newsletter">
       <h3>Reçois mes prochains articles</h3>
-      <p>Un email par semaine. Désabonnement en un clic.</p>
+      <p>Un email par mois. Désabonnement en un clic.</p>
       <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
         <input type="email" name="email" placeholder="Ton adresse email" required>
         <button type="submit">S'inscrire</button>
       </form>
-      <p class="cta-rgpd">En t'inscrivant, tu acceptes la <a href="confidentialite-capvietnam.php">politique de confidentialité</a>.</p>
+      <p class="cta-rgpd">En t'inscrivant, tu acceptes la <a href="confidentialite-capvietnam">politique de confidentialité</a>.</p>
     </div>
 
     <div class="author-box">
       <div class="author-avatar" style="overflow:hidden;position:relative;"><img src="assets/img/profile/anthony-profil.jpg" alt="Anthony Bouillon" width="72" height="72" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"></div>
       <div class="author-info">
-        <h4>Cap Vietnam</h4>
+        <h4>Anthony Bouillon</h4>
         <p>Français expatrié à Hanoï. Je partage mon parcours d'installation au Vietnam : démarches, vie de couple mixte et travail en ligne.</p>
         <div class="author-links">
           <a href="https://www.tiktok.com/@proffrancaisetranger" target="_blank" rel="noopener">TikTok</a>
-          <a href="a-propos-capvietnam.php">À propos</a>
+          <a href="a-propos-capvietnam">À propos</a>
         </div>
       </div>
     </div>

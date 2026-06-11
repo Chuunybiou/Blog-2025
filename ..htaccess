@@ -2,18 +2,19 @@
 
 RewriteEngine On
 
-# Forcer HTTPS
-RewriteCond %{HTTPS} off
-RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# Force HTTPS + www canonique (une seule règle — max 1 redirect HTTP→HTTPS+www)
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^ https://www.blog-capvietnam.fr%{REQUEST_URI} [R=301,L]
 
-# blog-capvietnam.php → /  (canonical home)
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/blog-capvietnam\.php[\s?/] [NC]
+# blog-capvietnam(.php) → /  (canonical home — avec et sans extension)
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/blog-capvietnam(\.php)?[\s?/] [NC]
 RewriteRule ^ / [R=301,L]
 
 # Redirect .php → clean URL (pages publiques seulement)
-# Exclure : go.php, generate-sitemap.php, convert-images-to-webp.php
+# Exclure : go.php + scripts fonctionnels (handlers POST/AJAX/admin)
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/([^/]+)\.php[\s?/] [NC]
-RewriteCond %1 !^(go|generate-sitemap|convert-images-to-webp)$
+RewriteCond %1 !^(go|generate-sitemap|convert-images-to-webp|mailerlite-subscribe|indexnow-ping|setup-indexnow|stats-affilies|lead-magnet)$
 RewriteRule ^([^/]+)\.php$ /$1 [R=301,L]
 
 # Accès racine → blog-capvietnam.php (interne)

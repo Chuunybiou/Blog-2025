@@ -109,7 +109,7 @@
     <p style="color:rgba(250,250,249,0.65);font-size:1.05rem;line-height:1.7;margin-bottom:0.5rem;">La méthode polyglotte d'Anthony Bouillon — 1 100 mots pour couvrir 80 % des conversations quotidiennes.</p>
     <p style="color:rgba(250,250,249,0.4);font-size:0.85rem;margin-bottom:2rem;">Ebook Amazon · Méthode testée sur le terrain à Hanoï</p>
     <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
-      <a href="<?= ($path_prefix ?? '') ?>livre-vietnamien.php"
+      <a href="<?= ($path_prefix ?? '') ?>livre-vietnamien"
          style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.85rem 2rem;background:#c9986a;color:#fff;border-radius:8px;text-decoration:none;font-weight:700;font-size:0.95rem;">
         📕 Découvrir l'ebook
       </a>
@@ -139,7 +139,7 @@
 
     <!-- Brand -->
     <div class="eco-footer-col">
-      <a href="<?= ($path_prefix ?? '') ?>blog-capvietnam.php"
+      <a href="<?= ($path_prefix ?? '') ?>blog-capvietnam"
          style="display:inline-flex;align-items:center;gap:10px;text-decoration:none;margin-bottom:1rem;">
         <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"
              style="width:30px;height:30px;flex-shrink:0;" aria-hidden="true">
@@ -158,19 +158,19 @@
     <!-- Catégories -->
     <div class="eco-footer-col">
       <h4><?= ($page_lang ?? 'fr') === 'vi' ? 'Danh mục' : 'Catégories' ?></h4>
-      <a href="<?= ($path_prefix ?? '') ?>articles-capvietnam.php">💕 Couple franco-vietnamien</a>
-      <a href="<?= ($path_prefix ?? '') ?>articles-capvietnam.php">📋 Démarches &amp; installation</a>
-      <a href="<?= ($path_prefix ?? '') ?>articles-capvietnam.php">💻 Argent &amp; travail à distance</a>
-      <a href="<?= ($path_prefix ?? '') ?>articles-capvietnam.php">✈️ Vie pratique au Vietnam</a>
+      <a href="<?= ($path_prefix ?? '') ?>articles-capvietnam">💕 Couple franco-vietnamien</a>
+      <a href="<?= ($path_prefix ?? '') ?>articles-capvietnam">📋 Démarches &amp; installation</a>
+      <a href="<?= ($path_prefix ?? '') ?>articles-capvietnam">💻 Argent &amp; travail à distance</a>
+      <a href="<?= ($path_prefix ?? '') ?>articles-capvietnam">✈️ Vie pratique au Vietnam</a>
     </div>
 
     <!-- Liens utiles -->
     <div class="eco-footer-col">
       <h4><?= ($page_lang ?? 'fr') === 'vi' ? 'Liên kết hữu ích' : 'Liens utiles' ?></h4>
-      <a href="<?= ($path_prefix ?? '') ?>a-propos-capvietnam.php">À propos</a>
-      <a href="<?= ($path_prefix ?? '') ?>blog-capvietnam.php#contact">Contact</a>
-      <a href="<?= ($path_prefix ?? '') ?>livre-vietnamien.php" class="accent">📕 Apprendre le vietnamien</a>
-      <a href="<?= ($path_prefix ?? '') ?>guide-cap-vietnam-2026.php" class="accent">📘 Guide Cap Vietnam 2026</a>
+      <a href="<?= ($path_prefix ?? '') ?>a-propos-capvietnam">À propos</a>
+      <a href="<?= ($path_prefix ?? '') ?>blog-capvietnam#contact">Contact</a>
+      <a href="<?= ($path_prefix ?? '') ?>livre-vietnamien" class="accent">📕 Apprendre le vietnamien</a>
+      <a href="<?= ($path_prefix ?? '') ?>guide-cap-vietnam-2026" class="accent">📘 Guide Cap Vietnam 2026</a>
       <hr class="eco-footer-hr">
       <a href="https://bonusparrainage.com" target="_blank" rel="noopener" class="accent">💳 Bons Plans Expats</a>
       <a href="https://anthony-bouillon.com" target="_blank" rel="noopener">💻 Service IT francophone</a>
@@ -180,7 +180,7 @@
     <div class="eco-footer-col">
       <h4><?= ($page_lang ?? 'fr') === 'vi' ? 'Mạng xã hội' : 'Réseaux' ?></h4>
       <a href="<?= SITE_TIKTOK ?>" target="_blank" rel="noopener">TikTok</a>
-      <a href="<?= ($path_prefix ?? '') ?>go.php?id=kofi" target="_blank" rel="noopener" class="accent">☕ Soutenir le blog</a>
+      <a href="<?= ($path_prefix ?? '') ?>go?id=kofi" target="_blank" rel="noopener" class="accent">☕ Soutenir le blog</a>
     </div>
   </div>
 
@@ -192,9 +192,9 @@
     <div class="eco-footer-meta">
       <span>© <?= SITE_YEAR ?> Blog-CapVietnam. Tous droits réservés.</span>
       <nav class="eco-footer-legal" aria-label="Liens légaux">
-        <a href="<?= ($path_prefix ?? '') ?>mentions-legales-capvietnam.php">Mentions légales</a>
-        <a href="<?= ($path_prefix ?? '') ?>confidentialite-capvietnam.php">Confidentialité</a>
-        <a href="<?= ($path_prefix ?? '') ?>cookies-capvietnam.php">Cookies</a>
+        <a href="<?= ($path_prefix ?? '') ?>mentions-legales-capvietnam">Mentions légales</a>
+        <a href="<?= ($path_prefix ?? '') ?>confidentialite-capvietnam">Confidentialité</a>
+        <a href="<?= ($path_prefix ?? '') ?>cookies-capvietnam">Cookies</a>
       </nav>
     </div>
   </div>

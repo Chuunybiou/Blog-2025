@@ -6,7 +6,7 @@ $page_og_title    = 'Assurance santé pour expatriés au Vietnam : le guide comp
 $page_og_desc     = 'Comparatif AXA, Cigna, Allianz et CFE pour les expatriés français au Vietnam.';
 $page_og_url      = 'https://www.blog-capvietnam.fr/assurance-sante-vietnam-expat';
 $page_og_image    = 'https://images.unsplash.com/photo-1584982751601-97ddc0e5e15e?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Assurance sante au Vietnam pour expatries francais","datePublished":"2026-03-20","dateModified":"2026-03-20","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Cap Vietnam","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1584982751601-97ddc0e5e15e?w=1200&q=80","description":"Comparatif AXA, Cigna, Allianz et CFE pour les expatries francais au Vietnam.","timeRequired":"PT7M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/assurance-sante-vietnam-expat"}';
+$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Assurance sante au Vietnam pour expatries francais","datePublished":"2026-03-20","dateModified":"2026-03-20","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1584982751601-97ddc0e5e15e?w=1200&q=80","description":"Comparatif AXA, Cigna, Allianz et CFE pour les expatries francais au Vietnam.","timeRequired":"PT7M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/assurance-sante-vietnam-expat"}';
 
 $article_color   = 'terracotta';
 $article_hero_bg = '#3a1a0a';
@@ -33,14 +33,14 @@ include 'header.php';
 <header class="article-hero">
   <div class="article-hero-inner">
     <div class="breadcrumb">
-      <a href="blog-capvietnam.php">Accueil</a><span class="breadcrumb-sep">›</span>
-      <a href="articles-capvietnam.php">Démarches Administratives</a><span class="breadcrumb-sep">›</span>
+      <a href="blog-capvietnam">Accueil</a><span class="breadcrumb-sep">›</span>
+      <a href="articles-capvietnam">Démarches Administratives</a><span class="breadcrumb-sep">›</span>
       <span>Assurance santé</span>
     </div>
     <span class="article-badge-hero">Démarches Administratives</span>
     <h1>Assurance santé pour expatriés au Vietnam : ce qu'il faut vraiment savoir</h1>
     <div class="article-hero-meta">
-      <span>Par <strong>Cap Vietnam</strong></span>
+      <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
       <span>📅 28 mars 2026</span>
       <span>⏱ 9 min de lecture</span>
     </div>
@@ -184,6 +184,10 @@ include 'header.php';
       L'Hôpital de Médecine Traditionnelle de Hanoï (Bệnh viện Y học cổ truyền Hà Nội), 29 Nguyễn Bỉnh Khiêm, Ba Đình, est l'établissement public de référence. Consultations de 50 000 à 200 000 VND. Certaines mutuelles expatriées remboursent l'acupuncture comme médecine complémentaire — vérifier les conditions générales du contrat.
     </div>
 
+    <div class="info-box">
+      <strong>Tu prends ta retraite au Vietnam ?</strong> → <a href="retraite-vietnam-francais">Guide retraite au Vietnam : CFE, pensions, fiscalité, budget</a> — des sections dédiées aux spécificités seniors (tarifs CFE après 60 ans, primes d'assurance).
+    </div>
+
     <h2 id="section-faq">Questions fréquentes</h2>
     <div class="faq-item">
       <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Peut-on utiliser la carte européenne d'assurance maladie (CEAM) au Vietnam ? <span class="faq-arrow">▼</span></button>
@@ -201,9 +205,9 @@ include 'header.php';
     <div class="author-box">
       <div class="author-avatar" style="overflow:hidden;position:relative;"><img src="assets/img/profile/anthony-profil.jpg" alt="Anthony Bouillon" width="72" height="72" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"></div>
       <div class="author-info">
-        <h4>Cap Vietnam</h4>
+        <h4>Anthony Bouillon</h4>
         <p>Blog d'un Français installé à Hanoï. Informations issues de l'expérience personnelle et des textes officiels — aucun conseil médical.</p>
-        <div class="author-links"><a href="a-propos-capvietnam.php">À propos →</a></div>
+        <div class="author-links"><a href="a-propos-capvietnam">À propos →</a></div>
       </div>
     </div>
 

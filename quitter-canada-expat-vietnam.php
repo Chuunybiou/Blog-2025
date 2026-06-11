@@ -6,7 +6,7 @@ $page_og_title    = 'Quitter le Canada pour le Vietnam : le guide complet';
 $page_og_desc     = 'Toutes les démarches administratives pour quitter le Canada et s\'installer au Vietnam.';
 $page_og_url      = 'https://www.blog-capvietnam.fr/quitter-canada-expat-vietnam';
 $page_og_image    = 'https://images.unsplash.com/photo-1488085061387-422e29b40080?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Quitter le Canada pour le Vietnam : guide complet","datePublished":"2026-04-01","dateModified":"2026-04-01","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Cap Vietnam","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1488085061387-422e29b40080?w=1200&q=80","description":"Toutes les demarches administratives pour quitter le Canada et installer au Vietnam.","timeRequired":"PT10M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/quitter-canada-expat-vietnam"}';
+$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Quitter le Canada pour le Vietnam : guide complet","datePublished":"2026-04-01","dateModified":"2026-04-01","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1488085061387-422e29b40080?w=1200&q=80","description":"Toutes les demarches administratives pour quitter le Canada et installer au Vietnam.","timeRequired":"PT10M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/quitter-canada-expat-vietnam"}';
 
 $article_color   = 'terracotta';
 $article_hero_bg = '#3a1a0a';
@@ -33,14 +33,14 @@ include 'header.php';
 <header class="article-hero">
   <div class="article-hero-inner">
     <div class="breadcrumb">
-      <a href="blog-capvietnam.php">Accueil</a><span class="breadcrumb-sep">›</span>
-      <a href="articles-capvietnam.php">Démarches Administratives</a><span class="breadcrumb-sep">›</span>
+      <a href="blog-capvietnam">Accueil</a><span class="breadcrumb-sep">›</span>
+      <a href="articles-capvietnam">Démarches Administratives</a><span class="breadcrumb-sep">›</span>
       <span>Quitter le Canada</span>
     </div>
     <span class="article-badge-hero">Démarches Administratives</span>
     <h1>Quitter le Canada pour le Vietnam : impôts, banque et permis de travail</h1>
     <div class="article-hero-meta">
-      <span>Par <strong>Cap Vietnam</strong></span>
+      <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
       <span>📅 5 avril 2026</span>
       <span>⏱ 10 min de lecture</span>
     </div>
@@ -173,15 +173,15 @@ include 'header.php';
     <div class="author-box">
       <div class="author-avatar" style="overflow:hidden;position:relative;"><img src="assets/img/profile/anthony-profil.jpg" alt="Anthony Bouillon" width="72" height="72" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"></div>
       <div class="author-info">
-        <h4>Cap Vietnam</h4>
+        <h4>Anthony Bouillon</h4>
         <p>Français expatrié à Hanoï. Je partage mon parcours d'installation au Vietnam avec ma femme vietnamienne : démarches administratives, vie de couple mixte et travail en ligne.</p>
-        <div class="author-links"><a href="a-propos-capvietnam.php">À propos →</a></div>
+        <div class="author-links"><a href="a-propos-capvietnam">À propos →</a></div>
       </div>
     </div>
 
     <div class="cta-newsletter">
       <h3>Reçois les prochains articles</h3>
-      <p>Un email par semaine sur l'expatriation au Vietnam. Pas de spam.</p>
+      <p>Un email par mois sur l'expatriation au Vietnam. Pas de spam.</p>
       <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
         <input type="email" name="email" placeholder="Ton adresse email" required>
         <button type="submit">S'inscrire</button>
