@@ -1,12 +1,12 @@
 ﻿<?php
 $page_title       = 'Quitter le Canada pour le Vietnam — Cap Vietnam';
 $page_description = 'Ce qu\'il faut régler avant de quitter le Canada pour le Vietnam : résidence fiscale, comptes bancaires, permis de travail et démarches Service Canada.';
-$page_canonical   = 'https://www.blog-capvietnam.fr/quitter-canada-expat-vietnam';
+$page_canonical   = 'https://blog-capvietnam.fr/quitter-canada-expat-vietnam';
 $page_og_title    = 'Quitter le Canada pour le Vietnam : le guide complet';
 $page_og_desc     = 'Toutes les démarches administratives pour quitter le Canada et s\'installer au Vietnam.';
-$page_og_url      = 'https://www.blog-capvietnam.fr/quitter-canada-expat-vietnam';
+$page_og_url      = 'https://blog-capvietnam.fr/quitter-canada-expat-vietnam';
 $page_og_image    = 'https://images.unsplash.com/photo-1488085061387-422e29b40080?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Quitter le Canada pour le Vietnam : guide complet","datePublished":"2026-04-01","dateModified":"2026-04-01","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1488085061387-422e29b40080?w=1200&q=80","description":"Toutes les demarches administratives pour quitter le Canada et installer au Vietnam.","timeRequired":"PT10M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/quitter-canada-expat-vietnam"}';
+$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Quitter le Canada pour le Vietnam : guide complet","datePublished":"2026-04-01","dateModified":"2026-04-01","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1488085061387-422e29b40080?w=1200&q=80","description":"Toutes les demarches administratives pour quitter le Canada et installer au Vietnam.","timeRequired":"PT10M","inLanguage":"fr","url":"https://blog-capvietnam.fr/quitter-canada-expat-vietnam"}';
 
 $article_color   = 'terracotta';
 $article_hero_bg = '#3a1a0a';
@@ -15,7 +15,7 @@ $article_badge   = 'rgba(191,74,42,0.2)';
 $article_badge_c = 'var(--terracotta-soft)';
 
 $article_category     = 'Démarches Admin';
-$article_category_url = 'https://www.blog-capvietnam.fr/articles-capvietnam';
+$article_category_url = 'https://blog-capvietnam.fr/articles-capvietnam';
 $page_faq = [
   ['q' => 'Dois-je déclarer mes revenus vietnamiens au Canada ?',
    'a' => 'Si tu n\'es plus résident fiscal canadien, tu ne déclares tes revenus étrangers au Canada que s\'ils ont une source canadienne. Tes revenus gagnés au Vietnam n\'ont aucune source canadienne et ne sont donc pas imposables au Canada une fois ta résidence fiscale coupée.'],
@@ -195,7 +195,7 @@ include 'header.php';
 
 <?php
 $current_slug = 'quitter-canada-expat-vietnam';
-$current_cat  = 'admin';
+$current_cat  = 'vie-pratique';
 include '_related-articles.php';
 ?>
 

@@ -1,12 +1,12 @@
 ﻿<?php
 $page_title       = 'Transférer de l\'argent vers le Vietnam avec Wise';
 $page_description = 'Transférer de l\'argent de France vers le Vietnam avec Wise : frais, délais, taux de change et comparaison avec les banques traditionnelles.';
-$page_canonical   = 'https://www.blog-capvietnam.fr/transferer-argent-vietnam-wise';
+$page_canonical   = 'https://blog-capvietnam.fr/transferer-argent-vietnam-wise';
 $page_og_title    = 'Transférer de l\'argent vers le Vietnam avec Wise : guide 2026';
 $page_og_desc     = 'Comparatif des frais Wise vs BNP, Société Générale pour transférer de l\'argent de France au Vietnam.';
-$page_og_url      = 'https://www.blog-capvietnam.fr/transferer-argent-vietnam-wise';
+$page_og_url      = 'https://blog-capvietnam.fr/transferer-argent-vietnam-wise';
 $page_og_image    = 'https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Transferer son argent au Vietnam : Wise vs banques classiques","datePublished":"2026-03-15","dateModified":"2026-03-15","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=1200&q=80","description":"Comparatif des frais Wise vs BNP, Societe Generale pour transferer de l argent de France au Vietnam.","timeRequired":"PT5M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/transferer-argent-vietnam-wise"}';
+$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Transferer son argent au Vietnam : Wise vs banques classiques","datePublished":"2026-03-15","dateModified":"2026-03-15","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=1200&q=80","description":"Comparatif des frais Wise vs BNP, Societe Generale pour transferer de l argent de France au Vietnam.","timeRequired":"PT5M","inLanguage":"fr","url":"https://blog-capvietnam.fr/transferer-argent-vietnam-wise"}';
 
 $article_color        = 'amber';
 $article_hero_bg      = '#3a2800';
@@ -14,7 +14,7 @@ $article_glow         = 'rgba(184,134,11,0.15)';
 $article_badge        = 'rgba(184,134,11,0.25)';
 $article_badge_c      = 'var(--amber-soft)';
 $article_category     = 'Argent &amp; Travail';
-$article_category_url = 'https://www.blog-capvietnam.fr/articles-capvietnam';
+$article_category_url = 'https://blog-capvietnam.fr/articles-capvietnam';
 $page_faq = [
   ['q' => "Peut-on envoyer de l'argent du Vietnam vers la France avec Wise ?",
    'a' => "Oui, dans les deux sens. Pour envoyer des VND vers la France, il faut un compte bancaire vietnamien pour initier le virement. Les conditions sont similaires : taux interbancaire, frais transparents. Délai : 1 à 3 jours ouvrés."],

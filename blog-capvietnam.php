@@ -10,7 +10,17 @@ $_art_all       = $_art_data['articles'];
 $_art_published = array_values(array_filter($_art_all, fn($a) => ($a['published'] ?? true) !== false));
 $_art_count     = count($_art_published);
 usort($_art_published, fn($a, $b) => strcmp($b['date'], $a['date']));
-$_art_latest    = array_slice($_art_published, 0, 6);
+// 1 article le plus récent par catégorie canonique
+$_art_latest = [];
+foreach (['couple','mariage','vivre-ensemble','argent','vie-pratique'] as $_cat_key) {
+    foreach ($_art_published as $_a) {
+        if (($_a['home'] ?? true) === false) continue;
+        if (($_a['category'] ?? '') === $_cat_key) {
+            $_art_latest[] = $_a;
+            break;
+        }
+    }
+}
 
 $page_title       = 'Le blog du couple franco-vietnamien — Cap Vietnam';
 $page_description = 'Le blog d\'un Français en couple avec une Vietnamienne. Démarches mariage, comptes joints, budget couple mixte, vie entre Paris et Hanoï.';
@@ -186,9 +196,12 @@ $page_extra_css = '
 /* ═══════════ CATEGORIES ═══════════ */
 .categories-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5rem;
 }
+@media(max-width:1100px){.categories-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:700px){.categories-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){.categories-grid{grid-template-columns:1fr}}
 .cat-card {
   background: var(--white);
   border-radius: var(--radius);
@@ -201,10 +214,10 @@ $page_extra_css = '
 }
 .cat-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
 .cat-banner {
-  height: 200px;
+  height: 160px;
   display: flex;
   align-items: flex-end;
-  padding: 1.5rem;
+  padding: 1.25rem;
   position: relative;
   overflow: hidden;
 }
@@ -214,20 +227,22 @@ $page_extra_css = '
   inset: 0;
   background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, transparent 70%);
 }
-.cat-banner-admin  { background-image: linear-gradient(to top, rgba(143,47,20,0.82), rgba(191,74,42,0.55), rgba(80,20,8,0.45)), url(\'https://images.unsplash.com/photo-1568992688065-536aad8a12f6?w=600&q=80\'); background-size:cover; background-position:center; }
-.cat-banner-couple { background-image: linear-gradient(to top, rgba(14,74,56,0.82), rgba(27,107,82,0.55), rgba(8,45,32,0.45)), url(\'https://images.unsplash.com/photo-1573495627361-d9b87960b12d?w=600&q=80\'); background-size:cover; background-position:center; }
-.cat-banner-argent { background-image: linear-gradient(to top, rgba(122,85,0,0.82), rgba(184,134,11,0.55), rgba(70,48,0,0.45)), url(\'https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=600&q=80\'); background-size:cover; background-position:center; }
-.cat-banner-voyager{ background-image: linear-gradient(to top, rgba(13,58,87,0.82), rgba(26,95,138,0.55), rgba(8,35,55,0.45)), url(\'https://images.unsplash.com/photo-1573270689103-d7a4e42b609a?w=600&q=80\'); background-size:cover; background-position:center; }
-.cat-icon { position: relative; z-index: 1; font-size: 2.8rem; filter: drop-shadow(0 2px 8px rgba(0,0,0,0.3)); }
-.cat-body { padding: 1.75rem; }
+.cat-banner-couple         { background-image: linear-gradient(to top, rgba(14,74,56,0.82), rgba(27,107,82,0.55), rgba(8,45,32,0.45)), url(\'assets/img/mariage-franco-vietnamien-ceremonie.png\'); background-size:cover; background-position:center top; }
+.cat-banner-mariage        { background-image: linear-gradient(to top, rgba(61,26,58,0.82), rgba(123,63,114,0.55), rgba(40,12,38,0.45)), url(\'assets/img/mariage-franco-vietnamien-ceremonie.png\'); background-size:cover; background-position:center; }
+.cat-banner-vivre-ensemble { background-image: linear-gradient(to top, rgba(143,47,20,0.82), rgba(191,74,42,0.55), rgba(80,20,8,0.45)), url(\'assets/img/CCAM-DOCUMENTS.jpg\'); background-size:cover; background-position:center; }
+.cat-banner-argent         { background-image: linear-gradient(to top, rgba(122,85,0,0.82), rgba(184,134,11,0.55), rgba(70,48,0,0.45)), url(\'assets/img/banh-mi-cafe-couple-hanoi.jpg\'); background-size:cover; background-position:center; }
+.cat-banner-vie-pratique   { background-image: linear-gradient(to top, rgba(26,79,79,0.82), rgba(42,122,122,0.55), rgba(13,50,50,0.45)), url(\'assets/img/lac-ouest-hanoi-rive-ho-tay.jpg\'); background-size:cover; background-position:center; }
+.cat-icon { position: relative; z-index: 1; font-size: 2.5rem; filter: drop-shadow(0 2px 8px rgba(0,0,0,0.3)); }
+.cat-body { padding: 1.4rem; }
 .cat-tag { font-size: 0.65rem; letter-spacing: 3px; text-transform: uppercase; font-weight: 600; margin-bottom: 0.5rem; }
-.cat-tag-admin   { color: var(--terracotta); }
-.cat-tag-couple  { color: var(--jade); }
-.cat-tag-argent  { color: var(--amber); }
-.cat-tag-voyager { color: #1a5f8a; }
-.cat-card h3 { font-family: \'DM Serif Display\', serif; font-size: 1.4rem; margin-bottom: 0.75rem; line-height: 1.3; }
-.cat-card p  { color: var(--muted); font-size: 0.92rem; line-height: 1.7; }
-.cat-count   { margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: 0.8rem; color: var(--muted); font-weight: 500; }
+.cat-tag-couple         { color: var(--jade); }
+.cat-tag-mariage        { color: #7b3f72; }
+.cat-tag-vivre-ensemble { color: var(--terracotta); }
+.cat-tag-argent         { color: var(--amber); }
+.cat-tag-vie-pratique   { color: #2a7a7a; }
+.cat-card h3 { font-family: \'DM Serif Display\', serif; font-size: 1.2rem; margin-bottom: 0.65rem; line-height: 1.3; }
+.cat-card p  { color: var(--muted); font-size: 0.88rem; line-height: 1.65; }
+.cat-count   { margin-top: 1rem; padding-top: 0.85rem; border-top: 1px solid var(--border); font-size: 0.8rem; color: var(--muted); font-weight: 500; }
 
 /* ═══════════ ARTICLES ═══════════ */
 .articles-bg { background: var(--warm-bg); }
@@ -239,10 +254,11 @@ $page_extra_css = '
 .article-top { padding: 1.75rem 1.75rem 0; }
 .article-meta { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; }
 .article-badge { font-size: 0.6rem; letter-spacing: 2px; text-transform: uppercase; font-weight: 700; padding: 3px 10px; border-radius: 3px; }
-.badge-admin   { background: rgba(191,74,42,0.1); color: var(--terracotta); }
-.badge-couple  { background: rgba(27,107,82,0.1); color: var(--jade); }
-.badge-argent  { background: rgba(184,134,11,0.1); color: var(--amber); }
-.badge-voyager { background: rgba(26,95,138,0.1); color: #1a5f8a; }
+.badge-couple         { background: rgba(27,107,82,0.1);   color: var(--jade); }
+.badge-mariage        { background: rgba(123,63,114,0.12); color: #7b3f72; }
+.badge-vivre-ensemble { background: rgba(191,74,42,0.1);  color: var(--terracotta); }
+.badge-argent         { background: rgba(184,134,11,0.1); color: var(--amber); }
+.badge-vie-pratique   { background: rgba(42,122,122,0.12); color: #2a7a7a; }
 .article-date { font-size: 0.8rem; color: var(--muted); }
 .article-card h3 { font-family: \'DM Serif Display\', serif; font-size: 1.25rem; line-height: 1.35; margin-bottom: 0.6rem; }
 .article-card p  { color: var(--muted); font-size: 0.9rem; line-height: 1.7; padding: 0 1.75rem; }
@@ -313,15 +329,15 @@ include 'header.php';
 
 <!-- ═══════ HERO ═══════ -->
 <header class="hero" id="home">
-  <img class="hero-bg-img" src="assets/img/596295808_755082580937274_5977220999229795732_n.jpg" width="1600" height="900" alt="Lac de l'Ouest (Hồ Tây) à Hanoï" loading="eager">
+  <img class="hero-bg-img" src="assets/img/lac-ouest-hanoi-rive-ho-tay.jpg" width="1600" height="900" alt="Lac de l'Ouest (Hồ Tây) à Hanoï" loading="eager">
   <div class="hero-grid"></div>
   <div class="hero-content">
-    <div class="hero-tag">Couple franco-vietnamien · Expatriation Vietnam</div>
+    <div class="hero-tag">Couple franco-vietnamien</div>
     <h1>Le couple franco-vietnamien<br><em>de l'intérieur</em></h1>
-    <p class="hero-desc">Visa, mariage, argent, vie à Hanoï — par quelqu'un qui le vit vraiment avec sa femme vietnamienne.</p>
+    <p class="hero-desc">Se rencontrer, se marier, construire une vie entre la France et le Vietnam. Les démarches, l'argent, la belle-famille — par un Français marié à une Vietnamienne, pas par un guide touristique.</p>
     <div class="hero-ctas">
-      <a href="s-expatrier-vietnam-2026-guide-complet" class="hero-cta">Guide complet →</a>
-      <a href="articles-capvietnam?cat=couple" class="hero-cta hero-cta--ghost">Couple mixte →</a>
+      <a href="se-marier-vietnamienne-demarches-france" class="hero-cta">Se marier franco-vietnamien →</a>
+      <a href="articles-capvietnam?cat=couple" class="hero-cta hero-cta--ghost">La vie de couple mixte →</a>
     </div>
   </div>
   <div class="hero-scroll"></div>
@@ -330,7 +346,7 @@ include 'header.php';
 <!-- ═══════ INTRO SEO ═══════ -->
 <section style="background:var(--warm-bg);padding:2.5rem 2rem;text-align:center;border-bottom:1px solid var(--border);">
   <p style="max-width:720px;margin:0 auto;color:var(--muted);font-size:1.02rem;line-height:1.8;">
-    Ce blog s'adresse aux Français en couple avec une Vietnamienne, et à ceux qui préparent leur installation à Hanoï ou Hô-Chi-Minh-Ville. Ici, pas de contenu touristique : visa, résidence, mariage mixte, gestion de l'argent à l'international, fiscalité expat, vie quotidienne. Du concret, vérifié, mis à jour.
+    Ce blog parle d'un seul sujet : le couple franco-vietnamien. Se rencontrer, traverser la distance, se marier au Vietnam ou en France, faire venir sa femme, gérer l'argent à deux entre deux pays. Tout ici vient du vécu — démarches faites, erreurs commises, chiffres réels. Rien de touristique.
   </p>
 </section>
 
@@ -338,25 +354,35 @@ include 'header.php';
 <section class="section" id="categories">
   <div class="section-label">Explorer</div>
   <h2 class="section-title">Par quoi tu commences ?</h2>
-  <p class="section-desc">Quatre thématiques qui couvrent l'expatriation franco-vietnamienne de A à Z — choisis celle qui correspond à ta situation.</p>
+  <p class="section-desc">Cinq thématiques qui couvrent le couple franco-vietnamien de A à Z — choisis celle qui correspond à ta situation.</p>
 
   <div class="categories-grid">
     <a class="cat-card" href="articles-capvietnam?cat=couple">
-      <div class="cat-banner cat-banner-couple"><div class="cat-icon">💕</div></div>
+      <div class="cat-banner cat-banner-couple"><div class="cat-icon">❤️</div></div>
       <div class="cat-body">
         <div class="cat-tag cat-tag-couple">Couple mixte</div>
-        <h3>Couple franco-vietnamien</h3>
-        <p>Comment on gère les différences culturelles, la belle-famille, l'argent et la distance — vécu de l'intérieur, pas depuis un article de magazine.</p>
+        <h3>Notre histoire &amp; couple</h3>
+        <p>La rencontre, la distance, les différences culturelles, la belle-famille, le Tết — le quotidien d'un couple franco-vietnamien vu de l'intérieur.</p>
         <div class="cat-count">→ Voir les articles</div>
       </div>
     </a>
 
-    <a class="cat-card" href="articles-capvietnam?cat=admin">
-      <div class="cat-banner cat-banner-admin"><div class="cat-icon">📋</div></div>
+    <a class="cat-card" href="articles-capvietnam?cat=mariage">
+      <div class="cat-banner cat-banner-mariage"><div class="cat-icon">💍</div></div>
       <div class="cat-body">
-        <div class="cat-tag cat-tag-admin">Démarches</div>
-        <h3>Démarches &amp; installation</h3>
-        <p>Visa, mariage civil, carte de résidence, banque — toutes les étapes expliquées clairement, sans jargon, par quelqu'un qui les a faites.</p>
+        <div class="cat-tag cat-tag-mariage">Mariage</div>
+        <h3>Se marier</h3>
+        <p>CCAM, mariage au Vietnam ou en France, transcription à Nantes, faire venir son conjoint — toutes les démarches pour officialiser votre union.</p>
+        <div class="cat-count">→ Voir les articles</div>
+      </div>
+    </a>
+
+    <a class="cat-card" href="articles-capvietnam?cat=vivre-ensemble">
+      <div class="cat-banner cat-banner-vivre-ensemble"><div class="cat-icon">🏠</div></div>
+      <div class="cat-body">
+        <div class="cat-tag cat-tag-vivre-ensemble">Installation</div>
+        <h3>Vivre ensemble</h3>
+        <p>Visa conjoint, titre de séjour, s'installer en France ou au Vietnam. Les démarches, les délais, les pièges.</p>
         <div class="cat-count">→ Voir les articles</div>
       </div>
     </a>
@@ -365,18 +391,18 @@ include 'header.php';
       <div class="cat-banner cat-banner-argent"><div class="cat-icon">💰</div></div>
       <div class="cat-body">
         <div class="cat-tag cat-tag-argent">Argent</div>
-        <h3>Argent &amp; travail à distance</h3>
-        <p>Deux pays, deux monnaies, deux systèmes fiscaux. Comment gérer son argent entre la France et le Vietnam sans se faire avoir par les frais.</p>
+        <h3>L'argent à deux</h3>
+        <p>Qui paie quoi, envoyer de l'argent à la belle-famille, financer le mariage, gérer deux pays et deux monnaies sans se faire avoir par les frais.</p>
         <div class="cat-count">→ Voir les articles</div>
       </div>
     </a>
 
-    <a class="cat-card" href="articles-capvietnam?cat=voyager">
-      <div class="cat-banner cat-banner-voyager"><div class="cat-icon">✈️</div></div>
+    <a class="cat-card" href="articles-capvietnam?cat=vie-pratique">
+      <div class="cat-banner cat-banner-vie-pratique"><div class="cat-icon">🌏</div></div>
       <div class="cat-body">
-        <div class="cat-tag cat-tag-voyager">Vie pratique</div>
+        <div class="cat-tag cat-tag-vie-pratique">Vie pratique</div>
         <h3>Vie pratique au Vietnam</h3>
-        <p>L'appartement, le scooter, la SIM locale, le Tết en famille — ce que les blogs touristiques ne montrent pas.</p>
+        <p>Visa, logement, santé, transport et vie quotidienne au Vietnam — tout ce qu'il faut savoir pour vivre là-bas.</p>
         <div class="cat-count">→ Voir les articles</div>
       </div>
     </a>
@@ -405,10 +431,11 @@ include 'header.php';
     <div class="articles-grid">
 <?php
 $_cat_gradients = [
-  'admin'   => 'linear-gradient(135deg,rgba(191,74,42,0.18) 0%,rgba(140,40,10,0.10) 100%)',
-  'couple'  => 'linear-gradient(135deg,rgba(27,107,82,0.18) 0%,rgba(8,60,40,0.10) 100%)',
-  'argent'  => 'linear-gradient(135deg,rgba(184,134,11,0.18) 0%,rgba(120,85,0,0.10) 100%)',
-  'voyager' => 'linear-gradient(135deg,rgba(26,95,138,0.18) 0%,rgba(10,50,90,0.10) 100%)',
+  'couple'         => 'linear-gradient(135deg,rgba(27,107,82,0.18) 0%,rgba(8,60,40,0.10) 100%)',
+  'mariage'        => 'linear-gradient(135deg,rgba(123,63,114,0.18) 0%,rgba(70,25,65,0.10) 100%)',
+  'vivre-ensemble' => 'linear-gradient(135deg,rgba(191,74,42,0.18) 0%,rgba(140,40,10,0.10) 100%)',
+  'argent'         => 'linear-gradient(135deg,rgba(184,134,11,0.18) 0%,rgba(120,85,0,0.10) 100%)',
+  'vie-pratique'   => 'linear-gradient(135deg,rgba(42,122,122,0.18) 0%,rgba(15,70,70,0.10) 100%)',
 ];
 foreach ($_art_latest as $_a):
   $cat = htmlspecialchars($_a['category']);
@@ -445,7 +472,7 @@ foreach ($_art_latest as $_a):
 <section class="section" id="about">
   <div class="about-grid">
     <div class="about-visual">
-      <img src="assets/img/595605424_755082234270642_7802260515125357552_n.jpg" alt="Anthony et sa femme vietnamienne à Hanoï" loading="lazy">
+      <img src="assets/img/banh-mi-cafe-couple-hanoi.jpg" alt="Anthony et sa femme vietnamienne à Hanoï — bánh mì et café" loading="lazy">
     </div>
     <div class="about-text">
       <div class="section-label">À propos</div>

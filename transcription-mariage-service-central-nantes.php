@@ -17,7 +17,7 @@ $page_schema      = json_encode([
   'publisher'       => ['@type' => 'Organization', 'name' => SITE_NAME, 'url' => SITE_URL],
   'mainEntityOfPage'=> SITE_URL . '/transcription-mariage-service-central-nantes',
   'inLanguage'      => 'fr',
-  'articleSection'  => 'Démarches Administratives',
+  'articleSection'  => 'Vivre ensemble : ici ou là-bas',
 ], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
 
 $article_color        = 'terracotta';
@@ -26,17 +26,17 @@ $article_glow         = 'rgba(191,74,42,0.15)';
 $article_badge        = 'rgba(191,74,42,0.25)';
 $article_badge_c      = '#e8856a';
 
-$article_category     = 'Démarches Admin';
-$article_category_url = SITE_URL . '/articles-capvietnam';
+$article_category     = 'Vivre ensemble';
+$article_category_url = SITE_URL . '/articles-capvietnam?cat=mariage';
 $page_faq = [
   ['q' => 'La transcription du mariage à Nantes est-elle obligatoire pour vivre en France ?',
    'a' => 'Oui, si tu veux demander un visa "conjoint de Français" pour ton partenaire vietnamien. La transcription inscrit votre mariage dans les registres français et en fait la preuve légale en France.'],
   ['q' => 'Peut-on initier la transcription depuis le Vietnam ?',
    'a' => 'Oui. La demande peut être transmise par courrier depuis le Vietnam ou déposée via le consulat français compétent. Elle peut aussi être initiée par le partenaire français directement depuis la France. Il n\'est pas nécessaire d\'être en France en personne.'],
   ['q' => 'Quel est le délai de traitement à Nantes ?',
-   'a' => 'Le délai officiel est de [À VÉRIFIER] mois, mais les délais réels constatés sont souvent plus longs selon les périodes de forte activité. En cas d\'urgence absolue, un traitement accéléré peut être demandé mais reste exceptionnel.'],
+   'a' => 'Le délai officiel affiché par le SCEC est de 6 mois, mais les délais réels constatés varient de 6 à 12 mois selon les périodes de charge. En cas d\'urgence absolue, un traitement accéléré peut être demandé mais reste exceptionnel.'],
   ['q' => 'Que faire si Nantes refuse la transcription ?',
-   'a' => 'Le refus doit être motivé. Tu peux déposer un recours auprès du procureur de la République, qui dispose d\'un délai de [À VÉRIFIER] mois pour répondre. En cas de refus confirmé, un recours judiciaire devant le tribunal judiciaire est possible.'],
+   'a' => 'Le refus doit être motivé. Tu peux déposer un recours auprès du procureur de la République, qui dispose d\'un délai de 2 mois pour répondre. En cas de refus confirmé, un recours judiciaire devant le tribunal judiciaire est possible.'],
 ];
 include '_article-css.php';
 include 'header.php';
@@ -48,11 +48,11 @@ include 'header.php';
   <div class="article-hero-inner">
     <div class="breadcrumb">
       <a href="/">Accueil</a><span class="breadcrumb-sep">›</span>
-      <a href="articles-capvietnam">Démarches Administratives</a><span class="breadcrumb-sep">›</span>
+      <a href="articles-capvietnam?cat=mariage">Se marier</a><span class="breadcrumb-sep">›</span>
       <a href="faire-venir-conjointe-vietnamienne-france">Conjoint vietnamien en France</a><span class="breadcrumb-sep">›</span>
       <span>Transcription Nantes</span>
     </div>
-    <span class="article-badge-hero">Démarches Administratives</span>
+    <span class="article-badge-hero">Vivre ensemble</span>
     <h1>Transcription du mariage au Service Central d'État Civil de Nantes : guide 2026</h1>
     <div class="article-hero-meta">
       <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
@@ -89,9 +89,7 @@ include 'header.php';
   <main class="article-content">
     <p><strong>Ton mariage a été célébré au Vietnam — félicitations.</strong> Maintenant commence la partie administrative. La première grande étape côté français, c'est la transcription du mariage au Service Central d'État Civil (SCEC) de Nantes. C'est ce bureau qui tient les registres de l'état civil des Français nés ou mariés à l'étranger, et c'est lui qui va "reconnaître" officiellement ton mariage en France.</p>
 
-    <p>Cet article fait partie du <a href="faire-venir-conjointe-vietnamienne-france">guide complet sur le regroupement familial franco-vietnamien</a>.</p>
-
-    <img class="article-photo" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&q=80" alt="Lettres et documents administratifs" width="1200" height="675" loading="lazy">
+    <p>Cet article fait partie du <a href="faire-venir-conjointe-vietnamienne-france">guide complet : faire venir son conjoint vietnamien en France</a>.</p>
 
     <h2 id="section-1">Qu'est-ce que la transcription d'un mariage ?</h2>
     <p>La transcription est l'inscription d'un acte d'état civil étranger dans les registres français. Elle ne recrée pas l'acte — elle le reconnaît et lui donne force légale en France. Une fois transcrit, ton mariage vietnamien produit les mêmes effets juridiques qu'un mariage célébré en France : droits successoraux, nationalité, visa conjoint…</p>
@@ -115,61 +113,67 @@ include 'header.php';
       <li>Le mariage ne contrevient pas à l'ordre public français (pas de polygamie, consentement libre des deux parties, âge minimum légal respecté)</li>
       <li>Le mariage n'est pas entaché de fraude</li>
     </ul>
-    <p>→ Si tu n'as pas encore le CCAM, lis d'abord <a href="certificat-coutumier-acte-mariage-vietnam-ccam">notre guide sur le CCAM vietnamien</a>.</p>
+    <p>→ Si tu n'as pas encore le CCAM, lis d'abord <a href="certificat-capacite-mariage-vietnam">notre guide sur le CCAM vietnamien</a>.</p>
 
     <h2 id="section-4">Les documents à inclure dans le dossier</h2>
 
-    <table>
+    <div style="overflow-x:auto;border-radius:10px;border:1px solid rgba(232,133,106,0.18);margin:1.5rem 0;">
+    <table style="width:100%;border-collapse:collapse;font-size:0.89rem;">
       <thead>
-        <tr>
-          <th>Document</th>
-          <th>Description</th>
-          <th>Remarque</th>
+        <tr style="background:rgba(191,74,42,0.22);">
+          <th style="padding:0.7rem 1rem;text-align:left;color:#e8856a;font-size:0.7rem;letter-spacing:1.5px;font-weight:700;width:32%;">DOCUMENT</th>
+          <th style="padding:0.7rem 1rem;text-align:left;color:#e8856a;font-size:0.7rem;letter-spacing:1.5px;font-weight:700;width:32%;">DESCRIPTION</th>
+          <th style="padding:0.7rem 1rem;text-align:left;color:#e8856a;font-size:0.7rem;letter-spacing:1.5px;font-weight:700;">REMARQUE</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>Formulaire de demande de transcription</td>
-          <td>Disponible sur le site du ministère</td>
-          <td>[À VÉRIFIER URL actuelle]</td>
+        <tr style="border-bottom:1px solid rgba(250,248,244,0.06);">
+          <td style="padding:0.75rem 1rem;font-weight:600;font-size:0.85rem;">Formulaire de transcription</td>
+          <td style="padding:0.75rem 1rem;font-size:0.85rem;opacity:0.82;">Disponible sur le site du ministère</td>
+          <td style="padding:0.75rem 1rem;font-size:0.82rem;opacity:0.6;"><a href="https://www.service-public.fr/particuliers" target="_blank" rel="noopener">service-public.fr</a></td>
+        </tr>
+        <tr style="background:rgba(255,255,255,0.02);border-bottom:1px solid rgba(250,248,244,0.06);">
+          <td style="padding:0.75rem 1rem;font-weight:600;font-size:0.85rem;">CCAM</td>
+          <td style="padding:0.75rem 1rem;font-size:0.85rem;opacity:0.82;">Certificat de capacité à mariage (document consulaire français)</td>
+          <td style="padding:0.75rem 1rem;font-size:0.82rem;opacity:0.6;">Pas de légalisation requise (doc. français)</td>
+        </tr>
+        <tr style="border-bottom:1px solid rgba(250,248,244,0.06);">
+          <td style="padding:0.75rem 1rem;font-weight:600;font-size:0.85rem;">Acte de mariage vietnamien</td>
+          <td style="padding:0.75rem 1rem;font-size:0.85rem;opacity:0.82;">Extrait officiel vietnamien</td>
+          <td style="padding:0.75rem 1rem;font-size:0.82rem;opacity:0.6;">Légalisation (ou apostille dès le 11/09/2026) + trad. assermentée</td>
+        </tr>
+        <tr style="border-bottom:1px solid rgba(250,248,244,0.06);">
+          <td style="padding:0.75rem 1rem;font-weight:600;font-size:0.85rem;">Acte de naissance du Français</td>
+          <td style="padding:0.75rem 1rem;font-size:0.85rem;opacity:0.82;">Moins de 3 mois · SCEC si né à l'étranger</td>
+          <td style="padding:0.75rem 1rem;font-size:0.82rem;opacity:0.6;">Intégral avec filiation</td>
+        </tr>
+        <tr style="background:rgba(255,255,255,0.02);border-bottom:1px solid rgba(250,248,244,0.06);">
+          <td style="padding:0.75rem 1rem;font-weight:600;font-size:0.85rem;">Acte de naissance du conjoint vietnamien</td>
+          <td style="padding:0.75rem 1rem;font-size:0.85rem;opacity:0.82;">Extrait officiel vietnamien</td>
+          <td style="padding:0.75rem 1rem;font-size:0.82rem;opacity:0.6;">Traduit et légalisé</td>
+        </tr>
+        <tr style="border-bottom:1px solid rgba(250,248,244,0.06);">
+          <td style="padding:0.75rem 1rem;font-weight:600;font-size:0.85rem;">Passeports des deux époux</td>
+          <td style="padding:0.75rem 1rem;font-size:0.85rem;opacity:0.82;">Copie de toutes les pages</td>
+          <td style="padding:0.75rem 1rem;font-size:0.82rem;opacity:0.6;">—</td>
+        </tr>
+        <tr style="background:rgba(255,255,255,0.02);border-bottom:1px solid rgba(250,248,244,0.06);">
+          <td style="padding:0.75rem 1rem;font-weight:600;font-size:0.85rem;">Justificatif de domicile en France</td>
+          <td style="padding:0.75rem 1rem;font-size:0.85rem;opacity:0.82;">Facture de moins de 3 mois</td>
+          <td style="padding:0.75rem 1rem;font-size:0.82rem;opacity:0.6;">Ou attestation de résidence</td>
         </tr>
         <tr>
-          <td>CCAM légalisé/apostillé</td>
-          <td>Certificat de coutume et acte de mariage vietnamien</td>
-          <td>Avec traduction assermentée en français</td>
-        </tr>
-        <tr>
-          <td>Acte de naissance du Français (moins de 3 mois)</td>
-          <td>Obtenu auprès du SCEC si né à l'étranger</td>
-          <td>Intégral avec filiation</td>
-        </tr>
-        <tr>
-          <td>Acte de naissance du conjoint vietnamien</td>
-          <td>Extrait officiel vietnamien</td>
-          <td>Traduit et légalisé</td>
-        </tr>
-        <tr>
-          <td>Copie du passeport du Français</td>
-          <td>Toutes les pages</td>
-          <td>—</td>
-        </tr>
-        <tr>
-          <td>Copie du passeport du conjoint vietnamien</td>
-          <td>Toutes les pages</td>
-          <td>—</td>
-        </tr>
-        <tr>
-          <td>Justificatif de domicile en France</td>
-          <td>Facture de moins de 3 mois</td>
-          <td>Ou attestation de résidence</td>
-        </tr>
-        <tr>
-          <td>Acte de divorce ou de décès (si applicable)</td>
-          <td>Si l'un des époux a été précédemment marié</td>
-          <td>Traduit et légalisé</td>
+          <td style="padding:0.75rem 1rem;font-weight:600;font-size:0.85rem;">Acte de divorce / décès (si applicable)</td>
+          <td style="padding:0.75rem 1rem;font-size:0.85rem;opacity:0.82;">Si l'un des époux a été précédemment marié</td>
+          <td style="padding:0.75rem 1rem;font-size:0.82rem;opacity:0.6;">Traduit et légalisé</td>
         </tr>
       </tbody>
     </table>
+    </div>
+
+    <div class="tip-box">
+      <strong>Légalisation ou apostille ? (2026)</strong> Les documents vietnamiens (acte de mariage, acte de naissance…) nécessitent aujourd'hui une <strong>légalisation consulaire</strong>. À partir du <strong>11 septembre 2026</strong>, l'<strong>apostille</strong> (Convention de La Haye — adhésion du Vietnam déposée le 31/12/2025) remplacera la légalisation. Autorité compétente : MAE vietnamien (Hanoï / HCMV). <a href="https://www.hcch.net/fr/states/authorities/details3/?aid=1596" target="_blank" rel="noopener">Source : hcch.net</a>
+    </div>
 
     <div class="tip-box">
       <strong>Attention aux traductions :</strong> Toutes les pièces en langue étrangère doivent être traduites par un traducteur assermenté près la Cour d'appel de France. Les traductions faites au Vietnam par des agences locales ne sont pas toujours acceptées. Si tu veux être tranquille, utilise un traducteur assermenté en France.
@@ -185,9 +189,9 @@ include 'header.php';
     <p>La voie consulaire est souvent plus sûre si tu es encore au Vietnam : le consulat peut signaler les pièces manquantes avant l'envoi à Nantes.</p>
 
     <h2 id="section-6">Délai de traitement</h2>
-    <p>Le délai officiel affiché par le SCEC est de <strong>[À VÉRIFIER] mois</strong>. Dans les faits, les délais constatés varient selon la période et la qualité du dossier :</p>
+    <p>Le délai officiel affiché par le SCEC est de <strong>6 mois</strong>. Dans les faits, les délais constatés varient selon la période et la qualité du dossier :</p>
     <ul>
-      <li>Dossier complet et sans anomalie : entre [À VÉRIFIER] et [À VÉRIFIER] mois</li>
+      <li>Dossier complet et sans anomalie : entre 6 et 12 mois</li>
       <li>Dossier avec pièce manquante : le SCEC envoie une demande de complément, ce qui rallonge le délai de plusieurs semaines</li>
       <li>En période de forte activité (printemps-été) : prévoir un délai plus long</li>
     </ul>
@@ -197,7 +201,7 @@ include 'header.php';
     <p>Une fois la transcription effectuée, le SCEC te notifie et inscrit le mariage dans ses registres. Tu peux ensuite demander des copies intégrales de l'acte de mariage transcrit, nécessaires notamment pour le dossier de visa de ton conjoint.</p>
     <p>Ces copies s'obtiennent :</p>
     <ul>
-      <li>En ligne sur le site Service Public (démarche gratuite, délai [À VÉRIFIER] jours ouvrés)</li>
+      <li>En ligne sur le site Service Public (démarche gratuite, délai 5 à 10 jours ouvrés)</li>
       <li>Par courrier auprès du SCEC</li>
       <li>Via le consulat si tu es à l'étranger</li>
     </ul>
@@ -232,7 +236,7 @@ include 'header.php';
       <div class="author-avatar" style="overflow:hidden;position:relative;"><img src="assets/img/profile/anthony-profil.jpg" alt="Anthony Bouillon" width="72" height="72" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"></div>
       <div class="author-info">
         <h4>Anthony Bouillon</h4>
-        <p>Français expatrié à Hanoï. Je partage mon parcours d'installation au Vietnam : démarches, vie de couple mixte et travail en ligne.</p>
+        <p>Français marié à une Vietnamienne, installé à Hanoï. Je partage notre parcours : démarches administratives, mariage franco-vietnamien, vie de couple mixte.</p>
         <div class="author-links">
           <a href="https://www.tiktok.com/@proffrancaisetranger" target="_blank" rel="noopener">TikTok</a>
           <a href="a-propos-capvietnam">À propos</a>
@@ -247,7 +251,7 @@ include 'header.php';
 <?php
 require_once __DIR__ . '/config/site.php';
 $current_slug = 'transcription-mariage-service-central-nantes';
-$current_cat  = 'admin';
+$current_cat  = 'mariage';
 include '_related-articles.php';
 ?>
 

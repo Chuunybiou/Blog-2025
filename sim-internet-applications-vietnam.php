@@ -234,7 +234,7 @@ include 'header.php';
 <?php
 require_once __DIR__ . '/config/site.php';
 $current_slug = 'sim-internet-applications-vietnam';
-$current_cat  = 'voyager';
+$current_cat  = 'vie-pratique';
 include '_related-articles.php';
 ?>
 

@@ -208,7 +208,7 @@ include 'header.php';
 <?php
 require_once __DIR__ . '/config/site.php';
 $current_slug = 'pacs-vietnamienne-reconnaissance';
-$current_cat  = 'admin';
+$current_cat  = 'mariage';
 include '_related-articles.php';
 ?>
 

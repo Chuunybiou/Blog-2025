@@ -1,11 +1,11 @@
 ﻿<?php
 $page_title       = 'Vol Paris-Hanoï pas cher : escales, compagnies et comment comparer les prix';
 $page_description = 'Paris-Hanoï en avion : pas de vol direct régulier, mais deux options d\'escale qui reviennent souvent. J\'ai fait le trajet deux fois — via Francfort, puis via Bangkok. Ce que j\'ai appris, et comment comparer les prix.';
-$page_canonical   = 'https://www.blog-capvietnam.fr/vol-paris-hanoi-pas-cher';
+$page_canonical   = 'https://blog-capvietnam.fr/vol-paris-hanoi-pas-cher';
 $page_og_title    = 'Vol Paris-Hanoï pas cher : escales, timing et outil de comparaison';
 $page_og_desc     = 'Comment trouver un vol Paris-Hanoï au meilleur prix : les hubs d\'escale, quand réserver, et l\'outil que j\'utilise pour comparer.';
-$page_og_url      = 'https://www.blog-capvietnam.fr/vol-paris-hanoi-pas-cher';
-$page_og_image    = 'https://www.blog-capvietnam.fr/assets/img/og-capvietnam.png';
+$page_og_url      = 'https://blog-capvietnam.fr/vol-paris-hanoi-pas-cher';
+$page_og_image    = 'https://blog-capvietnam.fr/assets/img/og-capvietnam.png';
 
 $page_schema = '{
   "@context": "https://schema.org",
@@ -14,9 +14,9 @@ $page_schema = '{
   "description": "Guide pratique pour trouver un vol Paris-Hanoï au meilleur prix : hubs d\'escale (Francfort, Bangkok), timing de réservation, Hanoï vs HCMC, et outil de comparaison.",
   "datePublished": "2026-06-07",
   "dateModified": "2026-06-07",
-  "author": {"@type": "Person", "name": "Anthony Bouillon", "url": "https://www.blog-capvietnam.fr/a-propos-capvietnam"},
-  "publisher": {"@type": "Organization", "name": "Cap Vietnam", "url": "https://www.blog-capvietnam.fr"},
-  "mainEntityOfPage": "https://www.blog-capvietnam.fr/vol-paris-hanoi-pas-cher",
+  "author": {"@type": "Person", "name": "Anthony Bouillon", "url": "https://blog-capvietnam.fr/a-propos-capvietnam"},
+  "publisher": {"@type": "Organization", "name": "Cap Vietnam", "url": "https://blog-capvietnam.fr"},
+  "mainEntityOfPage": "https://blog-capvietnam.fr/vol-paris-hanoi-pas-cher",
   "inLanguage": "fr",
   "articleSection": "Voyager au Vietnam"
 }';
@@ -27,7 +27,7 @@ $article_glow         = 'rgba(27,107,82,0.18)';
 $article_badge        = 'var(--jade)';
 $article_badge_c      = '#fff';
 $current_slug         = 'vol-paris-hanoi-pas-cher';
-$current_cat          = 'voyager';
+$current_cat          = 'vie-pratique';
 
 $page_faq = [
   ['q' => 'Y a-t-il des vols directs Paris-Hanoï ?',
@@ -44,7 +44,7 @@ $page_faq = [
 
 $page_extra_head = '
 
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://www.blog-capvietnam.fr"},{"@type":"ListItem","position":2,"name":"Voyager au Vietnam","item":"https://www.blog-capvietnam.fr/articles-capvietnam"},{"@type":"ListItem","position":3,"name":"Vol Paris Hanoï pas cher"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://blog-capvietnam.fr"},{"@type":"ListItem","position":2,"name":"Voyager au Vietnam","item":"https://blog-capvietnam.fr/articles-capvietnam"},{"@type":"ListItem","position":3,"name":"Vol Paris Hanoï pas cher"}]}</script>
 ';
 
 include '_article-css.php';

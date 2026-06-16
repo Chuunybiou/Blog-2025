@@ -1,12 +1,12 @@
 ﻿<?php
 $page_title       = 'Le Tết vietnamien vu de l\'intérieur — Cap Vietnam';
 $page_description = 'Le Tết expliqué de l\'intérieur : traditions, calendrier des festivités, signification culturelle et comment participer en tant qu\'étranger au Vietnam.';
-$page_canonical   = 'https://www.blog-capvietnam.fr/tet-nouvel-an-lunaire-vietnam';
+$page_canonical   = 'https://blog-capvietnam.fr/tet-nouvel-an-lunaire-vietnam';
 $page_og_title    = 'Le Tết vietnamien : traditions, signification et guide pour les étrangers';
 $page_og_desc     = 'Traditions du Tết au Vietnam, enveloppes rouges li xi et repas de famille.';
-$page_og_url      = 'https://www.blog-capvietnam.fr/tet-nouvel-an-lunaire-vietnam';
-$page_og_image    = 'https://www.blog-capvietnam.fr/assets/img/tet-nouvel-an-vietnam-fleurs.jpg';
-$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Le Tet vecu de l interieur avec une famille vietnamienne","datePublished":"2026-02-01","dateModified":"2026-02-01","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://www.blog-capvietnam.fr/assets/img/tet-nouvel-an-vietnam-fleurs.jpg","description":"Traditions du Tet au Vietnam, enveloppes rouges li xi et repas de famille.","timeRequired":"PT9M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/tet-nouvel-an-lunaire-vietnam"}';
+$page_og_url      = 'https://blog-capvietnam.fr/tet-nouvel-an-lunaire-vietnam';
+$page_og_image    = 'https://blog-capvietnam.fr/assets/img/tet-nouvel-an-vietnam-fleurs.jpg';
+$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Le Tet vecu de l interieur avec une famille vietnamienne","datePublished":"2026-02-01","dateModified":"2026-02-01","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://blog-capvietnam.fr/assets/img/tet-nouvel-an-vietnam-fleurs.jpg","description":"Traditions du Tet au Vietnam, enveloppes rouges li xi et repas de famille.","timeRequired":"PT9M","inLanguage":"fr","url":"https://blog-capvietnam.fr/tet-nouvel-an-lunaire-vietnam"}';
 
 $article_color   = 'jade';
 $article_hero_bg = '#1a3a1e';
@@ -15,7 +15,7 @@ $article_badge   = 'rgba(27,107,82,0.25)';
 $article_badge_c = '#4db890';
 
 $article_category     = 'Voyager au Vietnam';
-$article_category_url = 'https://www.blog-capvietnam.fr/articles-capvietnam';
+$article_category_url = 'https://blog-capvietnam.fr/articles-capvietnam';
 $page_faq = [
   ['q' => 'Hanoï est-elle vide pendant le Tết ?',
    'a' => 'Oui, massivement. Environ 70% de la population de Hanoï repart dans sa province d\'origine pour le Tết. La ville est étonnamment calme du 28e au 3e jour. La plupart des restaurants et commerces ferment. Prévois tes courses et repas à l\'avance.'],
@@ -198,7 +198,7 @@ include 'header.php';
 
 <?php
 $current_slug = 'tet-nouvel-an-lunaire-vietnam';
-$current_cat  = 'voyager';
+$current_cat  = 'vie-pratique';
 include '_related-articles.php';
 ?>
 

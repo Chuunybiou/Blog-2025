@@ -9,17 +9,17 @@ $img_service   = IMG_TEA_DIR . 'CWpjA21BdGxe7vlMJAlV0rdbSKNiEvhNZ-q_b1j6BpTD9Tqq
 
 $page_title       = 'Thé aux dattes, réglisse et goji noir : la recette de ma belle-mère vietnamienne';
 $page_description = 'Une couleur jaune dorée, un goût naturellement sucré, des notes de miel et de réglisse — je n\'avais jamais bu quelque chose comme ça. La recette du thé santé vietnamien préparé par ma belle-mère pour les grandes occasions.';
-$page_canonical   = 'https://www.blog-capvietnam.fr/the-sante-vietnamien-dattes-goji-reglisse';
+$page_canonical   = 'https://blog-capvietnam.fr/the-sante-vietnamien-dattes-goji-reglisse';
 $page_og_title    = 'Thé vietnamien aux dattes, réglisse et goji noir — recette de belle-mère';
 $page_og_desc     = 'Un thé doré, sucré naturellement, que je n\'avais jamais goûté en France. Recette, ingrédients, secret de la couleur et où les trouver en épicerie asiatique.';
-$page_og_url      = 'https://www.blog-capvietnam.fr/the-sante-vietnamien-dattes-goji-reglisse';
-$page_og_image    = 'https://www.blog-capvietnam.fr/' . $img_hero;
+$page_og_url      = 'https://blog-capvietnam.fr/the-sante-vietnamien-dattes-goji-reglisse';
+$page_og_image    = 'https://blog-capvietnam.fr/' . $img_hero;
 
 $page_schema = '{
   "@context": "https://schema.org",
   "@type": "Recipe",
   "name": "Thé vietnamien aux dattes rouges, réglisse et goji noir",
-  "image": ["https://www.blog-capvietnam.fr/assets/img/capvietnam-tea.jpg","https://www.blog-capvietnam.fr/assets/img/capvietnam-tea-2.jpg","https://www.blog-capvietnam.fr/assets/img/capvietnam-tea-3.jpg"],
+  "image": ["https://blog-capvietnam.fr/assets/img/capvietnam-tea.jpg","https://blog-capvietnam.fr/assets/img/capvietnam-tea-2.jpg","https://blog-capvietnam.fr/assets/img/capvietnam-tea-3.jpg"],
   "description": "Thé santé traditionnel vietnamien préparé avec des dattes rouges séchées, de la réglisse, des gojis noirs et du jiaogulan. Couleur jaune dorée, goût naturellement sucré.",
   "recipeYield": "3 à 4 tasses",
   "prepTime": "PT5M",
@@ -29,7 +29,7 @@ $page_schema = '{
   "recipeCuisine": "Vietnamienne",
   "keywords": "thé vietnamien dattes rouges réglisse goji noir jiaogulan recette santé",
   "datePublished": "2026-06-01",
-  "author": {"@type": "Person", "name": "Anthony Bouillon", "url": "https://www.blog-capvietnam.fr/a-propos-capvietnam"},
+  "author": {"@type": "Person", "name": "Anthony Bouillon", "url": "https://blog-capvietnam.fr/a-propos-capvietnam"},
   "recipeIngredient": [
     "500 ml d\'eau",
     "5 à 8 dattes rouges séchées (jujubes)",
@@ -51,7 +51,7 @@ $article_glow         = 'rgba(184,134,11,0.18)';
 $article_badge        = 'rgba(184,134,11,0.2)';
 $article_badge_c      = 'var(--amber)';
 $article_category     = 'Voyager au Vietnam';
-$article_category_url = 'https://www.blog-capvietnam.fr/articles-capvietnam';
+$article_category_url = 'https://blog-capvietnam.fr/articles-capvietnam';
 
 $page_faq = [
   ['q' => 'Où trouver des gojis noirs en France ?',
@@ -66,7 +66,7 @@ $page_faq = [
 
 $page_extra_head = '
 
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://www.blog-capvietnam.fr"},{"@type":"ListItem","position":2,"name":"Voyager au Vietnam","item":"https://www.blog-capvietnam.fr/articles-capvietnam"},{"@type":"ListItem","position":3,"name":"Thé vietnamien dattes goji réglisse"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://blog-capvietnam.fr"},{"@type":"ListItem","position":2,"name":"Voyager au Vietnam","item":"https://blog-capvietnam.fr/articles-capvietnam"},{"@type":"ListItem","position":3,"name":"Thé vietnamien dattes goji réglisse"}]}</script>
 <style>
 .recipe-card{background:var(--white);border:2px solid var(--amber);border-radius:var(--radius);padding:2rem;margin:2.5rem 0;box-shadow:var(--shadow-sm)}
 .recipe-card h3{font-family:"DM Serif Display",serif;font-size:1.3rem;margin-bottom:1.2rem;color:var(--ink);display:flex;align-items:center;gap:0.5rem}
@@ -407,7 +407,7 @@ include 'header.php';
 
 <?php
 $current_slug = 'the-sante-vietnamien-dattes-goji-reglisse';
-$current_cat  = 'voyager';
+$current_cat  = 'vie-pratique';
 include '_related-articles.php';
 ?>
 

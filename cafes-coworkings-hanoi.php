@@ -1,12 +1,12 @@
 ﻿<?php
 $page_title       = 'Cafés et coworkings à Hanoï — Cap Vietnam';
 $page_description = 'Meilleures adresses pour télétravailler à Hanoï : coworkings (Toong, Circo, Minna), cafés laptop-friendly, tarifs 2026 et conseils pour nomades.';
-$page_canonical   = 'https://www.blog-capvietnam.fr/cafes-coworkings-hanoi';
+$page_canonical   = 'https://blog-capvietnam.fr/cafes-coworkings-hanoi';
 $page_og_title    = 'Cafés et coworkings à Hanoï : guide pour télétravailleurs 2026';
 $page_og_desc     = 'Sélection des meilleurs espaces pour télétravailler à Hanoï : Toong, Circo, Minna.';
-$page_og_url      = 'https://www.blog-capvietnam.fr/cafes-coworkings-hanoi';
+$page_og_url      = 'https://blog-capvietnam.fr/cafes-coworkings-hanoi';
 $page_og_image    = 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Cafes et coworkings a Hanoi : les meilleures adresses 2026","datePublished":"2026-03-22","dateModified":"2026-03-22","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80","description":"Selection des meilleurs espaces pour teletravailler a Hanoi : Toong, Circo, Minna.","timeRequired":"PT8M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/cafes-coworkings-hanoi"}';
+$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Cafes et coworkings a Hanoi : les meilleures adresses 2026","datePublished":"2026-03-22","dateModified":"2026-03-22","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80","description":"Selection des meilleurs espaces pour teletravailler a Hanoi : Toong, Circo, Minna.","timeRequired":"PT8M","inLanguage":"fr","url":"https://blog-capvietnam.fr/cafes-coworkings-hanoi"}';
 
 $article_color   = 'amber';
 $article_hero_bg = '#3a2800';
@@ -15,7 +15,7 @@ $article_badge   = 'rgba(184,134,11,0.25)';
 $article_badge_c = 'var(--amber-soft)';
 
 $article_category     = 'Voyager au Vietnam';
-$article_category_url = 'https://www.blog-capvietnam.fr/articles-capvietnam';
+$article_category_url = 'https://blog-capvietnam.fr/articles-capvietnam';
 $page_faq = [
   ['q' => 'Peut-on vraiment télétravailler dans un café vietnamien toute la journée ?',
    'a' => 'Pas dans tous les cas. Pour des journées complètes, préférez un coworking ou un café spécialisé comme The Workshop ou Note Coffee. Dans les cafés classiques, limitez-vous à des séquences de 2–3h aux heures creuses (9h–11h30 ou 14h–17h).'],
@@ -247,7 +247,7 @@ include '_affiliate-cta.php';
 
 <?php
 $current_slug = 'cafes-coworkings-hanoi';
-$current_cat  = 'voyager';
+$current_cat  = 'vie-pratique';
 include '_related-articles.php';
 ?>
 

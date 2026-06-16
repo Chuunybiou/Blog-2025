@@ -1,0 +1,33 @@
+Options -Indexes
+RewriteEngine On
+
+# www → non-www (HTTPS géré côté OVH / panel hébergement)
+RewriteCond %{HTTP_HOST} ^www\.blog-capvietnam\.fr$ [NC]
+RewriteRule ^ https://blog-capvietnam.fr%{REQUEST_URI} [R=301,L]
+
+# Racine → page d'accueil
+RewriteRule ^$ blog-capvietnam.php [L]
+
+# go.php — ne jamais réécrire (redirecteur affilié)
+RewriteRule ^go\.php$ - [L]
+
+# 301 slug CCAM renommé
+RewriteRule ^certificat-coutumier-acte-mariage-vietnam-ccam$ /certificat-capacite-mariage-vietnam [R=301,L]
+
+# 301 paramètres de filtre obsolètes → catégories canoniques
+RewriteCond %{QUERY_STRING} ^cat=admin$
+RewriteRule ^articles-capvietnam$ /articles-capvietnam?cat=vivre-ensemble [R=301,L,QSD]
+RewriteCond %{QUERY_STRING} ^cat=voyager$
+RewriteRule ^articles-capvietnam$ /articles-capvietnam?cat=vie-pratique [R=301,L,QSD]
+RewriteCond %{QUERY_STRING} ^tag=mariage$
+RewriteRule ^articles-capvietnam$ /articles-capvietnam?cat=mariage [R=301,L,QSD]
+
+# Redirect slug.php → slug sans extension (301) — THE_REQUEST évite la boucle avec le rewrite interne
+RewriteCond %{THE_REQUEST} \s/(.+)\.php[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+# Réécriture interne : slug → slug.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^([^/]+)$ $1.php [L]

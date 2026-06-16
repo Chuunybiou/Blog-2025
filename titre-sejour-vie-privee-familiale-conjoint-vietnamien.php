@@ -17,7 +17,7 @@ $page_schema      = json_encode([
   'publisher'       => ['@type' => 'Organization', 'name' => SITE_NAME, 'url' => SITE_URL],
   'mainEntityOfPage'=> SITE_URL . '/titre-sejour-vie-privee-familiale-conjoint-vietnamien',
   'inLanguage'      => 'fr',
-  'articleSection'  => 'Démarches Administratives',
+  'articleSection'  => 'Vivre ensemble : ici ou là-bas',
 ], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
 
 $article_color        = 'terracotta';
@@ -26,17 +26,17 @@ $article_glow         = 'rgba(191,74,42,0.15)';
 $article_badge        = 'rgba(191,74,42,0.25)';
 $article_badge_c      = '#e8856a';
 
-$article_category     = 'Démarches Admin';
-$article_category_url = SITE_URL . '/articles-capvietnam';
+$article_category     = 'Vivre ensemble';
+$article_category_url = SITE_URL . '/articles-capvietnam?cat=vivre-ensemble';
 $page_faq = [
   ['q' => 'Quand faut-il demander le titre de séjour après l\'arrivée en France ?',
-   'a' => 'Si ton conjoint est arrivé avec un VLS-TS (visa long séjour valant titre de séjour), il doit le valider auprès de l\'OFII dans les [À VÉRIFIER] jours suivant l\'arrivée. La demande de titre de séjour en préfecture intervient avant l\'expiration du VLS-TS, soit environ [À VÉRIFIER] mois après l\'arrivée.'],
+   'a' => 'Si ton conjoint est arrivé avec un VLS-TS (visa long séjour valant titre de séjour), il doit le valider auprès de l\'OFII dans les 3 mois suivant l\'arrivée. La demande de renouvellement (titre de séjour) s\'effectue sur l\'ANEF entre 4 et 2 mois avant l\'expiration du VLS-TS.'],
   ['q' => 'Mon conjoint peut-il travailler pendant l\'attente du titre de séjour ?',
    'a' => 'Oui, si le VLS-TS est validé OFII et autorise l\'exercice d\'une activité professionnelle. Pendant l\'attente du renouvellement, le récépissé de demande vaut autorisation de séjour et souvent aussi de travail.'],
   ['q' => 'Après combien de temps peut-on demander la carte de résident (10 ans) ?',
-   'a' => 'En général, après [À VÉRIFIER] ans de mariage avec un Français et de résidence régulière en France. Les conditions exactes incluent la vie commune effective et l\'absence de condamnations.'],
+   'a' => 'Après 3 ans de vie commune effective en France depuis le mariage, sous réserve de résidence régulière et d\'absence de condamnation grave.'],
   ['q' => 'Que se passe-t-il si la préfecture perd le dossier ou ne répond pas ?',
-   'a' => 'Si la préfecture ne répond pas dans le délai légal de [À VÉRIFIER] mois après le dépôt, c\'est considéré comme un refus implicite. Tu peux déposer un recours auprès du tribunal administratif ou adresser un courrier recommandé à la préfecture pour relancer le traitement.'],
+   'a' => 'Si la préfecture ne répond pas dans le délai légal de 4 mois après le dépôt, c\'est considéré comme un refus implicite. Tu peux déposer un recours auprès du tribunal administratif ou adresser un courrier recommandé à la préfecture pour relancer le traitement.'],
 ];
 include '_article-css.php';
 include 'header.php';
@@ -48,11 +48,11 @@ include 'header.php';
   <div class="article-hero-inner">
     <div class="breadcrumb">
       <a href="/">Accueil</a><span class="breadcrumb-sep">›</span>
-      <a href="articles-capvietnam">Démarches Administratives</a><span class="breadcrumb-sep">›</span>
+      <a href="articles-capvietnam?cat=vivre-ensemble">Vivre ensemble</a><span class="breadcrumb-sep">›</span>
       <a href="faire-venir-conjointe-vietnamienne-france">Conjoint vietnamien en France</a><span class="breadcrumb-sep">›</span>
       <span>Titre de séjour</span>
     </div>
-    <span class="article-badge-hero">Démarches Administratives</span>
+    <span class="article-badge-hero">Vivre ensemble</span>
     <h1>Titre de séjour "vie privée et familiale" pour conjoint vietnamien en France</h1>
     <div class="article-hero-meta">
       <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
@@ -87,13 +87,11 @@ include 'header.php';
   <main class="article-content">
     <p><strong>Ton conjoint vietnamien vient d'arriver en France avec son visa long séjour.</strong> La grande aventure administrative continue — mais tu es presque au bout. Le titre de séjour "vie privée et familiale" est la pierre angulaire du séjour régulier en France. Ce guide t'explique la chronologie exacte, depuis la validation OFII jusqu'à la carte de résident 10 ans.</p>
 
-    <p>Cet article fait partie du <a href="faire-venir-conjointe-vietnamienne-france">guide complet sur le regroupement familial franco-vietnamien</a>.</p>
-
-    <img class="article-photo" src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1200&q=80" alt="Documents administratifs titre de séjour" width="1200" height="675" loading="lazy">
+    <p>Cet article fait partie du <a href="faire-venir-conjointe-vietnamienne-france">guide complet : faire venir son conjoint vietnamien en France</a>.</p>
 
     <h2 id="section-1">Étape 0 : validation du VLS-TS auprès de l'OFII</h2>
-    <p>Si ton conjoint est entré en France avec un visa long séjour valant titre de séjour (VLS-TS), sa première obligation est de le faire valider par l'OFII (Office Français de l'Immigration et de l'Intégration) dans les <strong>[À VÉRIFIER] jours</strong> suivant son arrivée.</p>
-    <p>La validation se fait en ligne sur le site de l'OFII (ofii.fr). Mon conjoint devra payer une taxe de <strong>[À VÉRIFIER] €</strong> et se présenter à une visite médicale (radiographie pulmonaire). Cette validation est <strong>obligatoire</strong> — sans elle, le visa n'est pas valide en France.</p>
+    <p>Si ton conjoint est entré en France avec un visa long séjour valant titre de séjour (VLS-TS), sa première obligation est de le faire valider par l'OFII (Office Français de l'Immigration et de l'Intégration) dans les <strong>3 mois</strong> suivant son arrivée.</p>
+    <p>La validation se fait en ligne sur le site de l'OFII (ofii.fr). Ton conjoint devra payer la taxe <strong>OFII (250 €)</strong> et se présenter à une visite médicale (radiographie pulmonaire). Cette validation est <strong>obligatoire</strong> — sans elle, le visa n'est pas valide en France.</p>
     <p>La validation OFII déclenche également le Contrat d'Intégration Républicaine (CIR), qui prévoit des formations civiques et linguistiques obligatoires pour les nouveaux arrivants.</p>
 
     <h2 id="section-2">Premier titre de séjour : la carte "vie privée et familiale" 1 an</h2>
@@ -102,48 +100,50 @@ include 'header.php';
 
     <h2 id="section-3">Les documents à préparer</h2>
 
-    <table>
+    <div style="overflow-x:auto;border-radius:10px;border:1px solid rgba(232,133,106,0.18);margin:1.5rem 0;">
+    <table style="width:100%;border-collapse:collapse;font-size:0.9rem;">
       <thead>
-        <tr>
-          <th>Document</th>
-          <th>Remarque</th>
+        <tr style="background:rgba(191,74,42,0.22);">
+          <th style="padding:0.7rem 1rem;text-align:left;color:#e8856a;font-size:0.7rem;letter-spacing:1.5px;font-weight:700;width:48%;">DOCUMENT</th>
+          <th style="padding:0.7rem 1rem;text-align:left;color:#e8856a;font-size:0.7rem;letter-spacing:1.5px;font-weight:700;">REMARQUE</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>Passeport du conjoint vietnamien avec le VLS-TS</td>
-          <td>Original + copie de toutes les pages</td>
+        <tr style="border-bottom:1px solid rgba(250,248,244,0.06);">
+          <td style="padding:0.75rem 1rem;font-weight:600;font-size:0.87rem;">Passeport du conjoint vietnamien avec le VLS-TS</td>
+          <td style="padding:0.75rem 1rem;font-size:0.87rem;opacity:0.82;">Original + copie de toutes les pages</td>
+        </tr>
+        <tr style="border-bottom:1px solid rgba(250,248,244,0.06);background:rgba(255,255,255,0.02);">
+          <td style="padding:0.75rem 1rem;font-weight:600;font-size:0.87rem;">Attestation de validation OFII</td>
+          <td style="padding:0.75rem 1rem;font-size:0.87rem;opacity:0.82;">Obtenue lors de la visite médicale OFII</td>
+        </tr>
+        <tr style="border-bottom:1px solid rgba(250,248,244,0.06);">
+          <td style="padding:0.75rem 1rem;font-weight:600;font-size:0.87rem;">Extrait d'acte de mariage transcrit (Nantes)</td>
+          <td style="padding:0.75rem 1rem;font-size:0.87rem;opacity:0.82;">Moins de 3 mois</td>
+        </tr>
+        <tr style="border-bottom:1px solid rgba(250,248,244,0.06);background:rgba(255,255,255,0.02);">
+          <td style="padding:0.75rem 1rem;font-weight:600;font-size:0.87rem;">Justificatifs de vie commune</td>
+          <td style="padding:0.75rem 1rem;font-size:0.87rem;opacity:0.82;">3 à 6 preuves de résidence commune (bail, factures, etc.)</td>
+        </tr>
+        <tr style="border-bottom:1px solid rgba(250,248,244,0.06);">
+          <td style="padding:0.75rem 1rem;font-weight:600;font-size:0.87rem;">Justificatif de domicile</td>
+          <td style="padding:0.75rem 1rem;font-size:0.87rem;opacity:0.82;">Facture de moins de 3 mois au nom de l'un des époux</td>
+        </tr>
+        <tr style="border-bottom:1px solid rgba(250,248,244,0.06);background:rgba(255,255,255,0.02);">
+          <td style="padding:0.75rem 1rem;font-weight:600;font-size:0.87rem;">CNI ou passeport du conjoint français</td>
+          <td style="padding:0.75rem 1rem;font-size:0.87rem;opacity:0.82;">Copie</td>
+        </tr>
+        <tr style="border-bottom:1px solid rgba(250,248,244,0.06);">
+          <td style="padding:0.75rem 1rem;font-weight:600;font-size:0.87rem;">3 photos d'identité du conjoint vietnamien</td>
+          <td style="padding:0.75rem 1rem;font-size:0.87rem;opacity:0.82;">Format réglementaire</td>
         </tr>
         <tr>
-          <td>Attestation de validation OFII</td>
-          <td>Obtenue lors de la visite médicale OFII</td>
-        </tr>
-        <tr>
-          <td>Extrait d'acte de mariage transcrit (Nantes)</td>
-          <td>Moins de 3 mois</td>
-        </tr>
-        <tr>
-          <td>Justificatifs de vie commune</td>
-          <td>3 à 6 preuves de résidence commune (bail, factures, etc.)</td>
-        </tr>
-        <tr>
-          <td>Justificatif de domicile</td>
-          <td>Facture de moins de 3 mois au nom de l'un des époux</td>
-        </tr>
-        <tr>
-          <td>CNI ou passeport du conjoint français</td>
-          <td>Copie</td>
-        </tr>
-        <tr>
-          <td>3 photos d'identité du conjoint vietnamien</td>
-          <td>Format réglementaire</td>
-        </tr>
-        <tr>
-          <td>Timbre fiscal</td>
-          <td>[À VÉRIFIER] € — achetable en ligne ou en tabac</td>
+          <td style="padding:0.75rem 1rem;font-weight:600;font-size:0.87rem;background:rgba(255,255,255,0.02);">Timbre fiscal</td>
+          <td style="padding:0.75rem 1rem;font-size:0.87rem;opacity:0.82;background:rgba(255,255,255,0.02);">Montant affiché sur l'ANEF au moment du dépôt — achetable en ligne ou en tabac</td>
         </tr>
       </tbody>
     </table>
+    </div>
 
     <h2 id="section-4">La démarche en ligne via l'ANEF</h2>
     <p>Depuis 2022-2023, les demandes de titres de séjour se font en ligne sur le portail de l'ANEF (Administration Numérique pour les Étrangers en France : anef.interieur.gouv.fr). Le dépôt physique en préfecture n'est plus possible dans la majorité des cas.</p>
@@ -154,19 +154,19 @@ include 'header.php';
     </div>
 
     <h2 id="section-5">Le renouvellement du titre de séjour</h2>
-    <p>Le titre de séjour "vie privée et familiale" est renouvelable chaque année. La demande de renouvellement doit être déposée sur l'ANEF <strong>[À VÉRIFIER] mois avant l'expiration</strong> du titre en cours.</p>
+    <p>Le titre de séjour "vie privée et familiale" est renouvelable chaque année. La demande de renouvellement doit être déposée sur l'ANEF <strong>entre 4 et 2 mois avant l'expiration</strong> du titre en cours.</p>
     <p>Pièces généralement demandées pour le renouvellement : mêmes pièces que pour le premier titre, plus les preuves de vie commune de l'année écoulée (relevés bancaires communs, bail, photos…).</p>
 
     <h2 id="section-6">La carte de résident 10 ans</h2>
-    <p>Après <strong>[À VÉRIFIER] ans</strong> de vie commune régulière en France avec un Français, ton conjoint peut demander une carte de résident longue durée valable 10 ans. Cette carte offre une sécurité de séjour bien plus importante.</p>
-    <p>Conditions générales [À VÉRIFIER] :</p>
+    <p>Après <strong>3 ans</strong> de vie commune régulière en France avec un Français, ton conjoint peut demander une carte de résident longue durée valable 10 ans. Cette carte offre une sécurité de séjour bien plus importante.</p>
+    <p>Conditions générales :</p>
     <ul>
-      <li>Durée minimale de vie commune avec le conjoint français</li>
+      <li>3 ans de vie commune effective avec le conjoint français depuis le mariage</li>
       <li>Résidence régulière en France pendant cette période</li>
       <li>Absence de condamnation pénale grave</li>
       <li>Respect des principes de la République</li>
     </ul>
-    <p>La naturalisation française est possible après 5 ans de résidence régulière (ou 2 ans si marié(e) avec un Français). [À VÉRIFIER conditions exactes]</p>
+    <p>La <strong>déclaration de nationalité française</strong> est possible après <strong>4 ans de mariage</strong> avec un Français (Art. 21-2 du Code civil). La durée est portée à 5 ans si les époux n'ont pas résidé ensemble en France pendant au moins 3 ans depuis le mariage.</p>
 
     <h2 id="section-7">Droits attachés au titre de séjour</h2>
     <p>Le titre de séjour "vie privée et familiale" autorise :</p>
@@ -199,7 +199,7 @@ include 'header.php';
       <div class="author-avatar" style="overflow:hidden;position:relative;"><img src="assets/img/profile/anthony-profil.jpg" alt="Anthony Bouillon" width="72" height="72" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"></div>
       <div class="author-info">
         <h4>Anthony Bouillon</h4>
-        <p>Français expatrié à Hanoï. Je partage mon parcours d'installation au Vietnam : démarches, vie de couple mixte et travail en ligne.</p>
+        <p>Français marié à une Vietnamienne, installé à Hanoï. Je partage notre parcours : démarches administratives, mariage franco-vietnamien, vie de couple mixte.</p>
         <div class="author-links">
           <a href="https://www.tiktok.com/@proffrancaisetranger" target="_blank" rel="noopener">TikTok</a>
           <a href="a-propos-capvietnam">À propos</a>
@@ -214,7 +214,7 @@ include 'header.php';
 <?php
 require_once __DIR__ . '/config/site.php';
 $current_slug = 'titre-sejour-vie-privee-familiale-conjoint-vietnamien';
-$current_cat  = 'admin';
+$current_cat  = 'vivre-ensemble';
 include '_related-articles.php';
 ?>
 

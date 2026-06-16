@@ -1,12 +1,12 @@
 ﻿<?php
 $page_title       = 'Visa Vietnam pour un Français : guide complet 2026';
 $page_description = 'E-visa 90 jours, exemption 45 jours, visa travail ou visa TT mariage : tout ce qu\'il faut savoir pour entrer et vivre au Vietnam en 2026.';
-$page_canonical   = 'https://www.blog-capvietnam.fr/visa-vietnam-francais-guide-2026';
+$page_canonical   = 'https://blog-capvietnam.fr/visa-vietnam-francais-guide-2026';
 $page_og_title    = 'Visa Vietnam pour un Français : le guide complet 2026';
 $page_og_desc     = 'E-visa, visa de travail, regroupement familial… Tout savoir sur les visas pour vivre au Vietnam.';
-$page_og_url      = 'https://www.blog-capvietnam.fr/visa-vietnam-francais-guide-2026';
+$page_og_url      = 'https://blog-capvietnam.fr/visa-vietnam-francais-guide-2026';
 $page_og_image    = 'https://images.unsplash.com/photo-1555921015-5532091f6026?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"Article","headline":"Visa Vietnam pour un Français : le guide complet 2026","datePublished":"2026-04-01","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr"},"publisher":{"@type":"Organization","name":"Anthony Bouillon"},"mainEntityOfPage":"https://www.blog-capvietnam.fr/visa-vietnam-francais-guide-2026","inLanguage":"fr","articleSection":"Démarches Administratives"}';
+$page_schema      = '{"@context":"https://schema.org","@type":"Article","headline":"Visa Vietnam pour un Français : le guide complet 2026","datePublished":"2026-04-01","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://blog-capvietnam.fr"},"publisher":{"@type":"Organization","name":"Anthony Bouillon"},"mainEntityOfPage":"https://blog-capvietnam.fr/visa-vietnam-francais-guide-2026","inLanguage":"fr","articleSection":"Démarches Administratives"}';
 
 $article_color   = 'jade';
 $article_hero_bg = '#1a3a1e';
@@ -15,7 +15,7 @@ $article_badge   = 'rgba(191,74,42,0.25)';
 $article_badge_c = '#e8856a';
 
 $article_category     = 'Démarches Admin';
-$article_category_url = 'https://www.blog-capvietnam.fr/articles-capvietnam';
+$article_category_url = 'https://blog-capvietnam.fr/articles-capvietnam';
 $page_faq = [
   ['q' => 'Quel visa pour vivre au Vietnam en tant que Français ?',
    'a' => "Selon ta situation : l'e-visa pour un séjour jusqu'à 90 jours, le visa de travail si tu as un employeur, ou le visa TT si ton conjoint est vietnamien."],
@@ -196,7 +196,7 @@ include 'header.php';
 
 <?php
 $current_slug = 'visa-vietnam-francais-guide-2026';
-$current_cat  = 'admin';
+$current_cat  = 'vie-pratique';
 include '_related-articles.php';
 ?>
 

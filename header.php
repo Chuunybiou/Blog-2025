@@ -6,11 +6,11 @@ $page_hreflang    = $page_hreflang    ?? [];
 $page_lang_switch = $page_lang_switch ?? null;
 $page_title       = $page_title       ?? 'Cap Vietnam — Un Français s\'installe au Vietnam | Blog Expat Hanoï';
 $page_description = $page_description ?? 'Blog d\'un expatrié français au Vietnam. Démarches administratives, vie en couple mixte franco-vietnamien, et gagner sa vie en ligne depuis Hanoï.';
-$page_canonical   = $page_canonical   ?? 'https://www.blog-capvietnam.fr/';
+$page_canonical   = $page_canonical   ?? SITE_URL . '/';
 $page_og_title    = $page_og_title    ?? $page_title;
 $page_og_desc     = $page_og_desc     ?? $page_description;
 $page_og_url      = $page_og_url      ?? $page_canonical;
-$page_og_image    = $page_og_image    ?? 'https://www.blog-capvietnam.fr/assets/img/blog-vietnam.png';
+$page_og_image    = $page_og_image    ?? SITE_URL . '/assets/img/blog-vietnam.png';
 $page_schema      = $page_schema      ?? null;
 $page_extra_head  = $page_extra_head  ?? '';
 $page_extra_css   = $page_extra_css   ?? '';
@@ -40,7 +40,7 @@ $page_extra_css   = $page_extra_css   ?? '';
 <meta property="og:type" content="website">
 <meta property="og:url" content="<?= htmlspecialchars($page_og_url) ?>">
 <meta property="og:image" content="<?= htmlspecialchars($page_og_image) ?>">
-<meta property="og:locale" content="fr_FR">
+<meta property="og:locale" content="<?= htmlspecialchars($page_og_locale ?? 'fr_FR') ?>">
 <meta property="og:site_name" content="Cap Vietnam">
 
 <!-- Twitter Card -->

@@ -1,7 +1,7 @@
 ﻿<?php
 $page_title       = 'Page introuvable — Cap Vietnam';
 $page_description = 'Cette page n\'existe pas ou a été déplacée.';
-$page_canonical   = 'https://www.blog-capvietnam.fr/404';
+$page_canonical   = 'https://blog-capvietnam.fr/404';
 $page_extra_css   = '
 body { background: var(--ink); color: var(--cream); min-height: 100vh; display: flex; flex-direction: column; }
 nav { background: rgba(28,25,23,0.95); border-bottom: 1px solid rgba(255,255,255,0.06); }

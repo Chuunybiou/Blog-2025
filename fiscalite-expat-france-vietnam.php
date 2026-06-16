@@ -1,12 +1,26 @@
 ﻿<?php
+require_once __DIR__ . '/config/site.php';
 $page_title       = 'Fiscalité expatrié France-Vietnam — Cap Vietnam';
 $page_description = 'Fiscalité des expatriés français au Vietnam : convention de non-double imposition, résidence fiscale, déclaration de revenus et obligations depuis l\'étranger.';
-$page_canonical   = 'https://www.blog-capvietnam.fr/fiscalite-expat-france-vietnam';
+$page_canonical   = SITE_URL . '/fiscalite-expat-france-vietnam';
 $page_og_title    = 'Fiscalité expatrié France-Vietnam : ce que vous devez savoir';
 $page_og_desc     = 'Convention fiscale France-Vietnam 1993, résidence fiscale et obligations déclaratives.';
-$page_og_url      = 'https://www.blog-capvietnam.fr/fiscalite-expat-france-vietnam';
+$page_og_url      = SITE_URL . '/fiscalite-expat-france-vietnam';
 $page_og_image    = 'https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Fiscalite des expatries : convention France-Vietnam","datePublished":"2026-03-10","dateModified":"2026-03-10","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=1200&q=80","description":"Convention fiscale France-Vietnam 1993, residence fiscale et obligations declaratives.","timeRequired":"PT9M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/fiscalite-expat-france-vietnam"}';
+$page_schema      = json_encode([
+  '@context'         => 'https://schema.org',
+  '@type'            => 'Article',
+  'headline'         => 'Fiscalité expatrié France-Vietnam : convention, résidence fiscale et obligations',
+  'description'      => 'Convention fiscale France-Vietnam 1993, résidence fiscale et obligations déclaratives.',
+  'image'            => 'https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=1200&q=80',
+  'datePublished'    => '2026-02-20',
+  'dateModified'     => '2026-06-15',
+  'author'           => ['@type' => 'Person', 'name' => 'Anthony Bouillon', 'url' => SITE_URL . '/a-propos-capvietnam'],
+  'publisher'        => ['@type' => 'Organization', 'name' => 'Cap Vietnam', 'url' => SITE_URL],
+  'mainEntityOfPage' => SITE_URL . '/fiscalite-expat-france-vietnam',
+  'inLanguage'       => 'fr',
+  'articleSection'   => 'Argent & Travail',
+], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
 
 $article_color   = 'amber';
 $article_hero_bg = '#3a2800';
@@ -15,7 +29,7 @@ $article_badge   = 'rgba(184,134,11,0.25)';
 $article_badge_c = 'var(--amber-soft)';
 
 $article_category     = 'Argent &amp; Travail';
-$article_category_url = 'https://www.blog-capvietnam.fr/articles-capvietnam';
+$article_category_url = SITE_URL . '/articles-capvietnam';
 $page_faq = [
   ['q' => 'Si je vis au Vietnam mais garde mon compte courant en France, dois-je le déclarer au Vietnam ?',
    'a' => 'Non. L\'obligation de déclarer les comptes étrangers existe en France (pour les non-résidents qui perçoivent des revenus français) — pas au Vietnam. Le Vietnam n\'a pas d\'obligation déclarative similaire pour les comptes étrangers des résidents.'],

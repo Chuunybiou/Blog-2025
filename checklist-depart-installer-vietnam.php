@@ -1,12 +1,12 @@
 ﻿<?php
 $page_title       = 'Checklist complète pour s\'installer au Vietnam depuis la France — Cap Vietnam';
 $page_description = 'La checklist complète pour s\'installer au Vietnam : 3 mois avant le départ jusqu\'à la première semaine sur place. Valise, admin, arrivée, premiers jours.';
-$page_canonical   = 'https://www.blog-capvietnam.fr/checklist-depart-installer-vietnam';
+$page_canonical   = 'https://blog-capvietnam.fr/checklist-depart-installer-vietnam';
 $page_og_title    = 'Checklist installation Vietnam : de la France à Hanoï';
 $page_og_desc     = 'Tout ce qu\'il faut faire avant de partir s\'installer au Vietnam — checklist semaine par semaine.';
-$page_og_url      = 'https://www.blog-capvietnam.fr/checklist-depart-installer-vietnam';
+$page_og_url      = 'https://blog-capvietnam.fr/checklist-depart-installer-vietnam';
 $page_og_image    = 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Checklist complete pour s installer au Vietnam depuis la France","datePublished":"2026-04-26","dateModified":"2026-04-26","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200&q=80","description":"Tout ce qu il faut faire avant de partir s installer au Vietnam — checklist semaine par semaine.","timeRequired":"PT10M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/checklist-depart-installer-vietnam"}';
+$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Checklist complete pour s installer au Vietnam depuis la France","datePublished":"2026-04-26","dateModified":"2026-04-26","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200&q=80","description":"Tout ce qu il faut faire avant de partir s installer au Vietnam — checklist semaine par semaine.","timeRequired":"PT10M","inLanguage":"fr","url":"https://blog-capvietnam.fr/checklist-depart-installer-vietnam"}';
 
 $article_color   = 'terracotta';
 $article_hero_bg = '#3a1a0a';
@@ -15,7 +15,7 @@ $article_badge   = 'rgba(191,74,42,0.2)';
 $article_badge_c = 'var(--terracotta-soft)';
 
 $article_category     = 'Démarches Admin';
-$article_category_url = 'https://www.blog-capvietnam.fr/articles-capvietnam';
+$article_category_url = 'https://blog-capvietnam.fr/articles-capvietnam';
 $page_faq = [
   ['q' => 'Combien de temps à l\'avance faut-il préparer son départ pour le Vietnam ?',
    'a' => 'Idéalement 3 mois. Certaines démarches prennent du temps : vaccins en plusieurs injections, apostille des diplômes (2–3 semaines en préfecture), casier judiciaire (5–10 jours), résiliation de bail (préavis 1 à 3 mois). Avec 1 mois seulement, c\'est faisable mais stressant.'],
@@ -232,7 +232,7 @@ include 'header.php';
 
 <?php
 $current_slug = 'checklist-depart-installer-vietnam';
-$current_cat  = 'admin';
+$current_cat  = 'vie-pratique';
 include '_related-articles.php';
 ?>
 

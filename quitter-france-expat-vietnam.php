@@ -1,12 +1,12 @@
 ﻿<?php
 $page_title       = 'Quitter la France pour le Vietnam — Cap Vietnam';
 $page_description = 'Ce qu\'il faut régler avant de quitter la France pour le Vietnam : résidence fiscale, CPAM, CAF, comptes bancaires et checklist de départ complète.';
-$page_canonical   = 'https://www.blog-capvietnam.fr/quitter-france-expat-vietnam';
+$page_canonical   = 'https://blog-capvietnam.fr/quitter-france-expat-vietnam';
 $page_og_title    = 'Quitter la France pour le Vietnam : le guide complet';
 $page_og_desc     = 'Toutes les démarches administratives pour quitter la France et s\'installer au Vietnam.';
-$page_og_url      = 'https://www.blog-capvietnam.fr/quitter-france-expat-vietnam';
+$page_og_url      = 'https://blog-capvietnam.fr/quitter-france-expat-vietnam';
 $page_og_image    = 'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Quitter la France pour le Vietnam : guide complet","datePublished":"2026-04-25","dateModified":"2026-04-25","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1200&q=80","description":"Toutes les démarches administratives pour quitter la France et s\'installer au Vietnam.","timeRequired":"PT10M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/quitter-france-expat-vietnam"}';
+$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Quitter la France pour le Vietnam : guide complet","datePublished":"2026-04-25","dateModified":"2026-04-25","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1200&q=80","description":"Toutes les démarches administratives pour quitter la France et s\'installer au Vietnam.","timeRequired":"PT10M","inLanguage":"fr","url":"https://blog-capvietnam.fr/quitter-france-expat-vietnam"}';
 
 $article_color   = 'terracotta';
 $article_hero_bg = '#3a1a0a';
@@ -14,7 +14,7 @@ $article_glow    = 'rgba(191,74,42,0.15)';
 $article_badge   = 'rgba(191,74,42,0.2)';
 $article_badge_c      = 'var(--terracotta-soft)';
 $article_category     = 'Démarches Admin';
-$article_category_url = 'https://www.blog-capvietnam.fr/articles-capvietnam';
+$article_category_url = 'https://blog-capvietnam.fr/articles-capvietnam';
 $page_faq = [
   ['q' => 'Dois-je continuer à déclarer mes revenus vietnamiens en France ?',
    'a' => "Si tu n'es plus résident fiscal français, tu ne déclares en France que tes revenus de source française (loyers d'un bien immobilier en France, dividendes d'une société française, etc.). Tes revenus gagnés et perçus au Vietnam ne sont pas imposables en France une fois ta résidence fiscale coupée, grâce à la convention bilatérale de 1993."],
@@ -217,7 +217,7 @@ include 'header.php';
 
 <?php
 $current_slug = 'quitter-france-expat-vietnam';
-$current_cat  = 'admin';
+$current_cat  = 'vie-pratique';
 include '_related-articles.php';
 ?>
 

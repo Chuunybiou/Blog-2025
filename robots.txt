@@ -8,4 +8,4 @@ Disallow: /data/
 Disallow: /go
 Disallow: /go.php
 
-Sitemap: https://www.blog-capvietnam.fr/sitemap.xml
+Sitemap: https://blog-capvietnam.fr/sitemap.xml

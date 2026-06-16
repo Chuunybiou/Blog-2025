@@ -6,14 +6,11 @@ $_data     = json_decode(file_get_contents(__DIR__ . '/data/articles.json'), tru
 $_all      = $_data['articles'];
 $_featured_slug = $_data['featured_slug'];
 
-// Separate featured from grid; filter unpublished; count silos
+// Separate featured from grid; filter unpublished
 $_featured = null;
 $_grid     = [];
-$_silo_vn  = 0;
-$_silo_fr  = 0;
 foreach ($_all as $a) {
     if (($a['published'] ?? true) === false) continue;
-    if (($a['silo'] ?? 'vietnam') === 'france') $_silo_fr++; else $_silo_vn++;
     if ($a['slug'] === $_featured_slug) $_featured = $a;
     else $_grid[] = $a;
 }
@@ -22,27 +19,33 @@ foreach ($_all as $a) {
 usort($_grid, fn($a, $b) => strtotime($b['date'] ?? '2000-01-01') <=> strtotime($a['date'] ?? '2000-01-01'));
 
 // Stats — published articles only
-$_published  = array_values(array_filter($_all, fn($a) => ($a['published'] ?? true) !== false));
-$_count      = count($_published);
-$_categories = count(array_unique(array_column($_published, 'category')));
+require_once __DIR__ . '/config/taxonomy.php';
+$_published       = array_values(array_filter($_all, fn($a) => ($a['published'] ?? true) !== false));
+$_count           = count($_published);
+$_count_couple    = count(array_filter($_published, fn($a) => ($a['category'] ?? '') === 'couple'          || in_array('couple',          $a['tags'] ?? [])));
+$_count_mariage   = count(array_filter($_published, fn($a) => ($a['category'] ?? '') === 'mariage'         || in_array('mariage',         $a['tags'] ?? [])));
+$_count_vivre_ens = count(array_filter($_published, fn($a) => ($a['category'] ?? '') === 'vivre-ensemble'  || in_array('vivre-ensemble',  $a['tags'] ?? [])));
+$_count_argent    = count(array_filter($_published, fn($a) => ($a['category'] ?? '') === 'argent'          || in_array('argent',          $a['tags'] ?? [])));
+$_count_vie_prat  = count(array_filter($_published, fn($a) => ($a['category'] ?? '') === 'vie-pratique'    || in_array('vie-pratique',    $a['tags'] ?? [])));
 
 // Category filter from URL
-$_valid_cats = ['admin' => 'Démarches Administratives', 'couple' => 'Couple Mixte & Famille', 'argent' => 'Argent & Travail en Ligne', 'voyager' => 'Voyager au Vietnam', 'vie-pratique' => 'Vie Pratique'];
+$_valid_cats = array_combine(array_keys(TAXONOMY), array_column(TAXONOMY, 'label'));
 $_active_cat = isset($_GET['cat']) && array_key_exists($_GET['cat'], $_valid_cats) ? $_GET['cat'] : 'all';
 $_cat_label  = $_active_cat !== 'all' ? $_valid_cats[$_active_cat] : null;
+$_initial_filter = $_active_cat;
 
-$page_title       = $_cat_label ? $_cat_label . ' — Cap Vietnam | Blog Expat Hanoï' : 'Tous les articles — Cap Vietnam | Blog Expat Hanoï';
-$page_description = $_cat_label ? 'Articles ' . $_cat_label . ' du blog Cap Vietnam : guides pratiques pour réussir ton expatriation au Vietnam.' : 'Tous les articles du blog Cap Vietnam : démarches administratives, couple mixte franco-vietnamien et travail en ligne depuis le Vietnam.';
+$page_title = $_cat_label ? $_cat_label . ' — Cap Vietnam' : 'Articles couple franco-vietnamien — Cap Vietnam';
+$page_description = 'Se marier avec une Vietnamienne, vivre ensemble entre la France et le Vietnam, la belle-famille, l\'argent à deux — raconté de l\'intérieur par un couple franco-vietnamien.';
 $page_canonical   = SITE_URL . '/articles-capvietnam';
-$page_og_title    = 'Tous les articles — Cap Vietnam';
-$page_og_desc     = 'Démarches, couple mixte, travail en ligne : tous les articles pour réussir son expatriation au Vietnam.';
+$page_og_title    = 'Articles couple franco-vietnamien — Cap Vietnam';
+$page_og_desc     = 'Se marier, faire venir son conjoint, gérer l\'argent à deux, la belle-famille : tous les articles pour les couples franco-vietnamiens.';
 $page_og_url      = $page_canonical;
-$page_og_image    = 'https://images.unsplash.com/photo-1573270689103-d7a4e42b609a?w=1200&q=80';
+$page_og_image    = SITE_URL . '/assets/img/bain-pieds-herbier-spa-vietnam.jpg';
 $page_schema      = json_encode([
   '@context'    => 'https://schema.org',
   '@type'       => 'CollectionPage',
-  'name'        => 'Tous les articles — Cap Vietnam',
-  'description' => "Archive de tous les articles du blog Cap Vietnam sur l'expatriation au Vietnam.",
+  'name'        => 'Articles couple franco-vietnamien — Cap Vietnam',
+  'description' => "Se marier avec une Vietnamienne, vivre ensemble, la belle-famille, l'argent à deux — par un couple franco-vietnamien.",
   'url'         => $page_canonical,
   'isPartOf'    => ['@type' => 'WebSite', 'name' => SITE_NAME, 'url' => SITE_URL],
 ], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
@@ -64,10 +67,10 @@ $page_extra_css = '
 .filter-tab{padding:0.55rem 1.3rem;border-radius:100px;border:1px solid var(--border);background:var(--white);font-family:inherit;font-size:0.85rem;font-weight:500;color:var(--muted);cursor:pointer;transition:all 0.2s}
 .filter-tab:hover{border-color:var(--ink);color:var(--ink)}
 .filter-tab.active{background:var(--ink);color:var(--cream);border-color:var(--ink)}
-.filter-tab.active-admin{background:var(--terracotta);color:#fff;border-color:var(--terracotta)}
 .filter-tab.active-couple{background:var(--jade);color:#fff;border-color:var(--jade)}
+.filter-tab.active-mariage{background:#7b3f72;color:#fff;border-color:#7b3f72}
+.filter-tab.active-vivre-ensemble{background:var(--terracotta);color:#fff;border-color:var(--terracotta)}
 .filter-tab.active-argent{background:var(--amber);color:#fff;border-color:var(--amber)}
-.filter-tab.active-voyager{background:#1a5f8a;color:#fff;border-color:#1a5f8a}
 .filter-tab.active-vie-pratique{background:#2a7a7a;color:#fff;border-color:#2a7a7a}
 .search-box{display:flex;align-items:center;gap:0.5rem;border:1px solid var(--border);border-radius:100px;padding:0.4rem 1rem;background:var(--white)}
 .search-box input{border:none;background:none;font-family:inherit;font-size:0.9rem;color:var(--ink);width:200px;outline:none}
@@ -92,18 +95,18 @@ $page_extra_css = '
 .article-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg)}
 .card-banner{height:160px;display:flex;align-items:center;justify-content:center;font-size:2.8rem;position:relative}
 .card-banner::after{content:"";position:absolute;bottom:0;left:0;right:0;height:60px;background:linear-gradient(to top,rgba(0,0,0,0.15),transparent)}
-.bg-admin{background:linear-gradient(135deg,var(--terracotta),#8b2f14)}
 .bg-couple{background:linear-gradient(135deg,var(--jade),#0e4a38)}
+.bg-mariage{background:linear-gradient(135deg,#7b3f72,#3d1a3a)}
+.bg-vivre-ensemble{background:linear-gradient(135deg,var(--terracotta),#8b2f14)}
 .bg-argent{background:linear-gradient(135deg,var(--amber),#7a5500)}
-.bg-voyager{background:linear-gradient(135deg,#1a5f8a,#0d3a57)}
 .bg-vie-pratique{background:linear-gradient(135deg,#2a7a7a,#1a4f4f)}
 .card-body{padding:1.5rem;flex:1;display:flex;flex-direction:column}
 .card-meta{display:flex;align-items:center;gap:0.6rem;margin-bottom:0.6rem}
 .card-badge{font-size:0.58rem;letter-spacing:2px;text-transform:uppercase;font-weight:700;padding:3px 9px;border-radius:3px}
-.badge-admin{background:rgba(191,74,42,0.1);color:var(--terracotta)}
 .badge-couple{background:rgba(27,107,82,0.1);color:var(--jade)}
+.badge-mariage{background:rgba(123,63,114,0.12);color:#7b3f72}
+.badge-vivre-ensemble{background:rgba(191,74,42,0.1);color:var(--terracotta)}
 .badge-argent{background:rgba(184,134,11,0.1);color:var(--amber)}
-.badge-voyager{background:rgba(26,95,138,0.1);color:#1a5f8a}
 .badge-vie-pratique{background:rgba(42,122,122,0.12);color:#2a7a7a}
 .card-date{font-size:0.78rem;color:var(--muted)}
 .card-body h3{font-family:"DM Serif Display",serif;font-size:1.15rem;line-height:1.3;margin-bottom:0.5rem}
@@ -125,21 +128,17 @@ $page_extra_css = '
 @media(max-width:640px){.articles-grid{grid-template-columns:1fr}.hero-stats{flex-direction:column;gap:1rem}.search-box input{width:140px}.filters-bar{flex-direction:column;align-items:flex-start}.nl-form{flex-direction:column}}
 .portal-section{max-width:1200px;margin:0 auto;padding:2.5rem 2rem 0}
 .portal-pretitle{font-size:0.72rem;letter-spacing:3px;text-transform:uppercase;color:var(--muted);font-weight:600;margin-bottom:1.25rem}
-.portal-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem}
+.portal-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1.25rem}
 .portal-card{display:flex;flex-direction:column;gap:0.5rem;padding:1.75rem;border:1.5px solid var(--border);border-radius:var(--radius);background:var(--white);cursor:pointer;transition:all 0.22s;user-select:none}
 .portal-card:hover{box-shadow:var(--shadow-md);transform:translateY(-2px)}
-.portal-card.active-vn{border-color:var(--jade);background:rgba(27,107,82,0.04);box-shadow:0 0 0 3px rgba(27,107,82,0.12)}
-.portal-card.active-fr{border-color:var(--terracotta);background:rgba(191,74,42,0.04);box-shadow:0 0 0 3px rgba(191,74,42,0.12)}
 .portal-icon{font-size:2rem;line-height:1;margin-bottom:0.2rem}
 .portal-title{font-family:"DM Serif Display",serif;font-size:1.15rem;line-height:1.25;color:var(--ink)}
 .portal-desc{font-size:0.83rem;color:var(--muted);line-height:1.6}
 .portal-count{font-size:0.78rem;font-weight:600;margin-top:0.5rem;padding-top:0.75rem;border-top:1px solid var(--border)}
-.portal-card-vn .portal-count{color:var(--jade)}
-.portal-card-fr .portal-count{color:var(--terracotta)}
 .portal-reset-bar{text-align:center;padding:0.9rem 0 0;display:none}
 .portal-reset-bar button{background:none;border:none;font-family:inherit;font-size:0.85rem;color:var(--muted);cursor:pointer;text-decoration:underline}
 .portal-reset-bar button:hover{color:var(--ink)}
-@media(max-width:640px){.portal-grid{grid-template-columns:1fr}}
+@media(max-width:1100px){.portal-grid{grid-template-columns:repeat(3,1fr)}}@media(max-width:700px){.portal-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:480px){.portal-grid{grid-template-columns:1fr}}
 ';
 include 'header.php';
 ?>
@@ -147,20 +146,20 @@ include 'header.php';
 <header class="page-hero">
   <div class="page-hero-inner">
     <div class="breadcrumb">
-      <a href="blog-capvietnam">Accueil</a>
+      <a href="/">Accueil</a>
       <span>›</span>
       <span style="color:rgba(250,248,244,0.6)">Tous les articles</span>
     </div>
     <h1><?= $_cat_label ? htmlspecialchars($_cat_label) : 'Tous les articles' ?></h1>
-    <p><?= $_cat_label ? 'Articles filtrés par catégorie · <a href="articles-capvietnam" style="color:rgba(250,248,244,0.5);text-decoration:underline">Voir tous les articles</a>' : 'Guides pratiques, retours d\'expérience et conseils pour réussir ton expatriation au Vietnam.' ?></p>
+    <p><?= $_cat_label ? 'Thème filtré · <a href="articles-capvietnam" style="color:rgba(250,248,244,0.5);text-decoration:underline">Voir tous les articles</a>' : 'Se marier, vivre ensemble, la belle-famille, l\'argent à deux — raconté de l\'intérieur.' ?></p>
     <div class="hero-stats">
       <div>
         <div class="hero-stat-num"><?= $_count ?></div>
         <div class="hero-stat-label">Articles publiés</div>
       </div>
       <div>
-        <div class="hero-stat-num"><?= $_categories ?></div>
-        <div class="hero-stat-label">Catégories</div>
+        <div class="hero-stat-num">5</div>
+        <div class="hero-stat-label">Thèmes</div>
       </div>
       <div>
         <div class="hero-stat-num"><?= SITE_YEAR ?></div>
@@ -171,34 +170,49 @@ include 'header.php';
 </header>
 
 <div class="portal-section">
-  <div class="portal-pretitle">Quel est ton projet ?</div>
+  <div class="portal-pretitle">Explorer par thème</div>
   <div class="portal-grid">
-    <div class="portal-card portal-card-vn" id="portalVN" onclick="setSilo('vietnam')" role="button" tabindex="0">
+    <div class="portal-card" onclick="setPortalFilter('couple')" role="button" tabindex="0">
+      <div class="portal-icon">❤️</div>
+      <div class="portal-title">Notre histoire & couple</div>
+      <div class="portal-desc">La rencontre, la belle-famille, les différences culturelles, le quotidien à deux.</div>
+      <div class="portal-count" style="color:var(--jade)"><?= $_count_couple > 0 ? $_count_couple . ' articles' : '🕐 À venir' ?></div>
+    </div>
+    <div class="portal-card" onclick="setPortalFilter('mariage')" role="button" tabindex="0">
+      <div class="portal-icon">💍</div>
+      <div class="portal-title">Se marier</div>
+      <div class="portal-desc">CCAM, cérémonie au Vietnam, transcription Nantes, faire venir son conjoint.</div>
+      <div class="portal-count" style="color:#7b3f72"><?= $_count_mariage > 0 ? $_count_mariage . ' articles' : '🕐 À venir' ?></div>
+    </div>
+    <div class="portal-card" onclick="setPortalFilter('vivre-ensemble')" role="button" tabindex="0">
+      <div class="portal-icon">🏠</div>
+      <div class="portal-title">Vivre ensemble</div>
+      <div class="portal-desc">Visa conjoint, titre de séjour, s'installer en France ou au Vietnam à deux.</div>
+      <div class="portal-count" style="color:var(--terracotta)"><?= $_count_vivre_ens > 0 ? $_count_vivre_ens . ' articles' : '🕐 À venir' ?></div>
+    </div>
+    <div class="portal-card" onclick="setPortalFilter('argent')" role="button" tabindex="0">
+      <div class="portal-icon">💰</div>
+      <div class="portal-title">L'argent à deux</div>
+      <div class="portal-desc">Budgets, transferts, fiscalité et comptes bancaires entre deux pays.</div>
+      <div class="portal-count" style="color:var(--amber)"><?= $_count_argent > 0 ? $_count_argent . ' articles' : '🕐 À venir' ?></div>
+    </div>
+    <div class="portal-card" onclick="setPortalFilter('vie-pratique')" role="button" tabindex="0">
       <div class="portal-icon">🌏</div>
-      <div class="portal-title">Je m'installe au Vietnam</div>
-      <div class="portal-desc">Visa, logement, budget, travail en ligne, vie de couple au quotidien…</div>
-      <div class="portal-count"><?= $_silo_vn ?> articles</div>
+      <div class="portal-title">Vie pratique au Vietnam</div>
+      <div class="portal-desc">Visa, logement, santé, transport et vie quotidienne au Vietnam.</div>
+      <div class="portal-count" style="color:#2a7a7a"><?= $_count_vie_prat > 0 ? $_count_vie_prat . ' articles' : '🕐 À venir' ?></div>
     </div>
-    <div class="portal-card portal-card-fr" id="portalFR" onclick="setSilo('france')" role="button" tabindex="0">
-      <div class="portal-icon">🇫🇷</div>
-      <div class="portal-title">Mon/ma conjoint(e) vient en France</div>
-      <div class="portal-desc">Visa long séjour, mariage mixte, titre de séjour, démarches administratives…</div>
-      <div class="portal-count"><?= $_silo_fr ?> articles</div>
-    </div>
-  </div>
-  <div class="portal-reset-bar" id="portalResetBar">
-    <button onclick="setSilo('all')">← Voir tous les articles</button>
   </div>
 </div>
 
 <div class="filters-bar">
   <div class="filter-tabs">
     <button class="filter-tab active" data-filter="all">Tous</button>
-    <button class="filter-tab" data-filter="admin">📋 Démarches</button>
-    <button class="filter-tab" data-filter="couple">💕 Couple Mixte</button>
-    <button class="filter-tab" data-filter="argent">💻 Argent &amp; Travail</button>
-    <button class="filter-tab" data-filter="voyager">✈️ Voyager au Vietnam</button>
-    <button class="filter-tab" data-filter="vie-pratique">🏠 Vie Pratique</button>
+    <button class="filter-tab" data-filter="couple">❤️ Notre histoire</button>
+    <button class="filter-tab" data-filter="mariage">💍 Se marier</button>
+    <button class="filter-tab" data-filter="vivre-ensemble">🏠 Vivre ensemble</button>
+    <button class="filter-tab" data-filter="argent">💰 L'argent à deux</button>
+    <button class="filter-tab" data-filter="vie-pratique">🌏 Vie pratique</button>
   </div>
   <div class="search-box">
     <span class="search-icon">🔍</span>
@@ -209,7 +223,7 @@ include 'header.php';
 
 <?php if ($_featured): ?>
 <div class="featured">
-  <a class="featured-card" href="<?= htmlspecialchars($_featured['slug']) ?>" data-cat="<?= htmlspecialchars($_featured['category']) ?>" data-silo="<?= htmlspecialchars($_featured['silo'] ?? 'vietnam') ?>">
+  <a class="featured-card" href="<?= htmlspecialchars($_featured['slug']) ?>" data-cat="<?= htmlspecialchars($_featured['category']) ?>" data-silo="<?= htmlspecialchars($_featured['silo'] ?? 'vietnam') ?>" data-tags="<?= htmlspecialchars(implode(',', $_featured['tags'] ?? [])) ?>">
     <div class="featured-visual" <?= !empty($_featured['image']) ? 'style="background:url(\''.htmlspecialchars($_featured['image']).'\') center/cover no-repeat;background-blend-mode:normal;"' : '' ?>>
       <div class="featured-star">⭐ À la une</div>
       <?= $_featured['emoji'] ?>
@@ -238,7 +252,7 @@ foreach ($_grid as $a):
   $kw    = htmlspecialchars($a['keywords'] ?? strtolower($a['title']));
   $isNew = isset($a['date']) && (($_now - strtotime($a['date'])) < 45 * 86400);
 ?>
-    <a class="article-card" href="<?= htmlspecialchars($a['slug']) ?>" data-cat="<?= $cat ?>" data-title="<?= $kw ?>" data-silo="<?= htmlspecialchars($a['silo'] ?? 'vietnam') ?>">
+    <a class="article-card" href="<?= htmlspecialchars($a['slug']) ?>" data-cat="<?= $cat ?>" data-title="<?= $kw ?>" data-silo="<?= htmlspecialchars($a['silo'] ?? 'vietnam') ?>" data-tags="<?= htmlspecialchars(implode(',', $a['tags'] ?? [])) ?>">
       <?php if (!empty($a['image'])): ?>
       <div class="card-banner" style="background:url('<?= htmlspecialchars($a['image']) ?>') center/cover no-repeat;">
         <span style="position:absolute;bottom:.5rem;right:.6rem;font-size:1.6rem;filter:drop-shadow(0 1px 3px rgba(0,0,0,.4))"><?= $a['emoji'] ?></span>
@@ -276,22 +290,27 @@ foreach ($_grid as $a):
 </section>
 
 <script>
-let activeFilter = '<?= $_active_cat ?>';
-let activeSilo   = 'all';
+let activeFilter = '<?= $_initial_filter ?>';
 const tabs         = document.querySelectorAll('.filter-tab');
 const cards        = document.querySelectorAll('.article-card');
 const featured     = document.querySelector('.featured-card');
 const featuredWrap = document.querySelector('.featured');
-const filterClassMap = { admin:'active-admin', couple:'active-couple', argent:'active-argent', voyager:'active-voyager', 'vie-pratique':'active-vie-pratique' };
+const filterClassMap = {
+  couple: 'active-couple', mariage: 'active-mariage',
+  'vivre-ensemble': 'active-vivre-ensemble', argent: 'active-argent', 'vie-pratique': 'active-vie-pratique'
+};
 
-function setSilo(silo) {
-  activeSilo = silo;
-  document.getElementById('portalVN').classList.toggle('active-vn', silo === 'vietnam');
-  document.getElementById('portalFR').classList.toggle('active-fr', silo === 'france');
-  document.getElementById('portalResetBar').style.display = silo !== 'all' ? '' : 'none';
+function matchesFilter(cat, tagsAttr) {
+  if (activeFilter === 'all') return true;
+  if (cat === activeFilter) return true;
+  if (tagsAttr) return tagsAttr.split(',').includes(activeFilter);
+  return false;
+}
+
+function setPortalFilter(f) {
   tabs.forEach(t => { t.className = 'filter-tab'; });
-  document.querySelector('.filter-tab[data-filter="all"]').classList.add('active');
-  activeFilter = 'all';
+  const tab = document.querySelector(`.filter-tab[data-filter="${f}"]`);
+  if (tab) { activeFilter = f; tab.classList.add(filterClassMap[f] || 'active'); }
   filterArticles();
 }
 
@@ -315,23 +334,24 @@ function filterArticles() {
   const search = document.getElementById('searchInput').value.toLowerCase();
   let count = 0;
   if (featured && featuredWrap) {
-    const featSilo = featured.dataset.silo || 'vietnam';
-    const featShow = (activeSilo === 'all' || featSilo === activeSilo) &&
-                     (activeFilter === 'all' || featured.dataset.cat === activeFilter) &&
+    const featShow = matchesFilter(featured.dataset.cat, featured.dataset.tags) &&
                      (search === '' || featured.textContent.toLowerCase().includes(search));
     featuredWrap.style.display = featShow ? '' : 'none';
     if (featShow) count++;
   }
   cards.forEach(card => {
-    const cardSilo = card.dataset.silo || 'vietnam';
-    const title    = (card.dataset.title || '') + ' ' + card.textContent.toLowerCase();
-    const show = (activeSilo === 'all' || cardSilo === activeSilo) &&
-                 (activeFilter === 'all' || card.dataset.cat === activeFilter) &&
-                 (search === '' || title.includes(search));
+    const title = (card.dataset.title || '') + ' ' + card.textContent.toLowerCase();
+    const show  = matchesFilter(card.dataset.cat, card.dataset.tags) &&
+                  (search === '' || title.includes(search));
     card.style.display = show ? '' : 'none';
     if (show) count++;
   });
-  document.getElementById('resultsCount').textContent = count + ' article' + (count > 1 ? 's' : '');
+  const rc = document.getElementById('resultsCount');
+  if (count === 0 && activeFilter !== 'all') {
+    rc.textContent = '🕐 Articles à venir dans cette catégorie';
+  } else {
+    rc.textContent = count + ' article' + (count > 1 ? 's' : '');
+  }
 }
 
 if (activeFilter !== 'all') filterArticles();

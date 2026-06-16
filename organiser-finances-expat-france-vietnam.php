@@ -1,11 +1,11 @@
 ﻿<?php
 $page_title       = 'Organiser ses finances entre France et Vietnam : comptes, outils et stratégie';
 $page_description = 'Wise, Revolut, Fortuneo, Boursobank, compte vietnamien : comment structurer ses finances quand on est expatrié entre la France et le Vietnam. Les outils à avoir, dans quel ordre, et ce qu\'il faut éviter.';
-$page_canonical   = 'https://www.blog-capvietnam.fr/organiser-finances-expat-france-vietnam';
+$page_canonical   = 'https://blog-capvietnam.fr/organiser-finances-expat-france-vietnam';
 $page_og_title    = 'Finances d\'expat France-Vietnam : quels comptes, quels outils, dans quel ordre';
 $page_og_desc     = 'Wise, Revolut, Fortuneo, Boursobank, compte vietnamien : comment structurer ses finances quand on s\'installe entre France et Vietnam.';
-$page_og_url      = 'https://www.blog-capvietnam.fr/organiser-finances-expat-france-vietnam';
-$page_og_image    = 'https://www.blog-capvietnam.fr/assets/img/capvietnam-money.jpg';
+$page_og_url      = 'https://blog-capvietnam.fr/organiser-finances-expat-france-vietnam';
+$page_og_image    = 'https://blog-capvietnam.fr/assets/img/capvietnam-money.jpg';
 
 $page_schema = '{
   "@context": "https://schema.org",
@@ -14,9 +14,9 @@ $page_schema = '{
   "description": "Guide pratique pour structurer ses finances d\'expatrié entre la France et le Vietnam : quel compte France garder, comment transférer, quand ouvrir un compte vietnamien, et les erreurs à éviter.",
   "datePublished": "2026-06-06",
   "dateModified": "2026-06-06",
-  "author": {"@type": "Person", "name": "Anthony Bouillon", "url": "https://www.blog-capvietnam.fr/a-propos-capvietnam"},
-  "publisher": {"@type": "Organization", "name": "Cap Vietnam", "url": "https://www.blog-capvietnam.fr"},
-  "mainEntityOfPage": "https://www.blog-capvietnam.fr/organiser-finances-expat-france-vietnam",
+  "author": {"@type": "Person", "name": "Anthony Bouillon", "url": "https://blog-capvietnam.fr/a-propos-capvietnam"},
+  "publisher": {"@type": "Organization", "name": "Cap Vietnam", "url": "https://blog-capvietnam.fr"},
+  "mainEntityOfPage": "https://blog-capvietnam.fr/organiser-finances-expat-france-vietnam",
   "inLanguage": "fr",
   "articleSection": "Argent & Travail"
 }';
@@ -44,7 +44,7 @@ $page_faq = [
 
 $page_extra_head = '
 
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://www.blog-capvietnam.fr"},{"@type":"ListItem","position":2,"name":"Argent & Travail","item":"https://www.blog-capvietnam.fr/articles-capvietnam"},{"@type":"ListItem","position":3,"name":"Finances expat France Vietnam"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://blog-capvietnam.fr"},{"@type":"ListItem","position":2,"name":"Argent & Travail","item":"https://blog-capvietnam.fr/articles-capvietnam"},{"@type":"ListItem","position":3,"name":"Finances expat France Vietnam"}]}</script>
 ';
 
 include '_article-css.php';

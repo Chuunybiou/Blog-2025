@@ -1,11 +1,11 @@
 ﻿<?php
 $page_title       = 'iGraal : récupérer du cashback sur ses achats français depuis le Vietnam';
 $page_description = 'iGraal est une plateforme de cashback qui fonctionne depuis n\'importe où dans le monde. Utile pour les expats qui achètent encore sur des sites français — services, abonnements, commandes envoyées en France.';
-$page_canonical   = 'https://www.blog-capvietnam.fr/igraal-cashback-expat-france';
+$page_canonical   = 'https://blog-capvietnam.fr/igraal-cashback-expat-france';
 $page_og_title    = 'iGraal depuis le Vietnam : cashback sur vos achats français en ligne';
 $page_og_desc     = 'Comment utiliser iGraal pour récupérer du cashback sur vos achats français depuis l\'étranger. Ce qui fonctionne, ce qui est compliqué, et le lien de parrainage.';
-$page_og_url      = 'https://www.blog-capvietnam.fr/igraal-cashback-expat-france';
-$page_og_image    = 'https://www.blog-capvietnam.fr/assets/img/capvietnam-money.jpg';
+$page_og_url      = 'https://blog-capvietnam.fr/igraal-cashback-expat-france';
+$page_og_image    = 'https://blog-capvietnam.fr/assets/img/capvietnam-money.jpg';
 
 $page_schema = '{
   "@context": "https://schema.org",
@@ -14,9 +14,9 @@ $page_schema = '{
   "description": "Guide pratique iGraal pour expatriés francophones : comment fonctionne le cashback, ce qui est utile depuis le Vietnam, ce qui est compliqué, et le lien de parrainage.",
   "datePublished": "2026-06-06",
   "dateModified": "2026-06-06",
-  "author": {"@type": "Person", "name": "Anthony Bouillon", "url": "https://www.blog-capvietnam.fr/a-propos-capvietnam"},
-  "publisher": {"@type": "Organization", "name": "Cap Vietnam", "url": "https://www.blog-capvietnam.fr"},
-  "mainEntityOfPage": "https://www.blog-capvietnam.fr/igraal-cashback-expat-france",
+  "author": {"@type": "Person", "name": "Anthony Bouillon", "url": "https://blog-capvietnam.fr/a-propos-capvietnam"},
+  "publisher": {"@type": "Organization", "name": "Cap Vietnam", "url": "https://blog-capvietnam.fr"},
+  "mainEntityOfPage": "https://blog-capvietnam.fr/igraal-cashback-expat-france",
   "inLanguage": "fr",
   "articleSection": "Argent & Travail"
 }';
@@ -44,7 +44,7 @@ $page_faq = [
 
 $page_extra_head = '
 
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://www.blog-capvietnam.fr"},{"@type":"ListItem","position":2,"name":"Argent & Travail","item":"https://www.blog-capvietnam.fr/articles-capvietnam"},{"@type":"ListItem","position":3,"name":"iGraal cashback expat"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://blog-capvietnam.fr"},{"@type":"ListItem","position":2,"name":"Argent & Travail","item":"https://blog-capvietnam.fr/articles-capvietnam"},{"@type":"ListItem","position":3,"name":"iGraal cashback expat"}]}</script>
 ';
 
 include '_article-css.php';

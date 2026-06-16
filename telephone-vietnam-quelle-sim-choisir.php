@@ -1,12 +1,26 @@
 ﻿<?php
+require_once __DIR__ . '/config/site.php';
 $page_title       = 'Téléphone au Vietnam : quelle SIM choisir en 2026 (locale vs internationale)';
 $page_description = 'SIM locale Viettel, Vinaphone, Mobifone ou carte SIM internationale pour l\'Asie ? Mon comparatif complet pour choisir la bonne SIM avant de partir au Vietnam.';
-$page_canonical   = 'https://www.blog-capvietnam.fr/telephone-vietnam-quelle-sim-choisir';
+$page_canonical   = SITE_URL . '/telephone-vietnam-quelle-sim-choisir';
 $page_og_title    = 'Téléphone au Vietnam : SIM locale ou internationale ? Guide 2026';
 $page_og_desc     = 'Viettel, Vinaphone, Mobifone, SIM Asie Amazon... Comparatif complet pour rester connecté au Vietnam sans se ruiner.';
-$page_og_url      = 'https://www.blog-capvietnam.fr/telephone-vietnam-quelle-sim-choisir';
+$page_og_url      = SITE_URL . '/telephone-vietnam-quelle-sim-choisir';
 $page_og_image    = 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"Article","headline":"Téléphone au Vietnam : quelle SIM choisir en 2026","datePublished":"2026-05-21","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos-capvietnam"},"publisher":{"@type":"Organization","name":"Anthony Bouillon"},"mainEntityOfPage":"https://www.blog-capvietnam.fr/telephone-vietnam-quelle-sim-choisir","inLanguage":"fr","articleSection":"Vie Pratique"}';
+$page_schema      = json_encode([
+  '@context'         => 'https://schema.org',
+  '@type'            => 'Article',
+  'headline'         => 'Téléphone au Vietnam : quelle SIM choisir en 2026 (locale vs internationale)',
+  'description'      => 'SIM locale Viettel, Vinaphone, Mobifone ou carte SIM internationale pour l\'Asie ? Comparatif complet pour rester connecté au Vietnam.',
+  'image'            => 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1200&q=80',
+  'datePublished'    => '2026-05-21',
+  'dateModified'     => '2026-06-15',
+  'author'           => ['@type' => 'Person', 'name' => 'Anthony Bouillon', 'url' => SITE_URL . '/a-propos-capvietnam'],
+  'publisher'        => ['@type' => 'Organization', 'name' => 'Cap Vietnam', 'url' => SITE_URL],
+  'mainEntityOfPage' => SITE_URL . '/telephone-vietnam-quelle-sim-choisir',
+  'inLanguage'       => 'fr',
+  'articleSection'   => 'Vie Pratique',
+], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
 
 $article_color        = 'amber';
 $article_hero_bg      = '#2a1a00';
@@ -14,7 +28,7 @@ $article_glow         = 'rgba(184,134,11,0.18)';
 $article_badge        = 'rgba(184,134,11,0.22)';
 $article_badge_c      = 'var(--amber-soft)';
 $article_category     = 'Vie Pratique';
-$article_category_url = 'https://www.blog-capvietnam.fr/articles-capvietnam';
+$article_category_url = SITE_URL . '/articles-capvietnam';
 
 $page_faq = [
   ['q' => 'Peut-on utiliser son forfait français au Vietnam ?',
@@ -277,7 +291,7 @@ include 'header.php';
 
 <?php
 $current_slug = 'telephone-vietnam-quelle-sim-choisir';
-$current_cat  = 'pratique';
+$current_cat  = 'vie-pratique';
 include '_related-articles.php';
 ?>
 

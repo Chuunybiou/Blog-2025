@@ -1,12 +1,12 @@
 ﻿<?php
 $page_title       = 'Apprendre le vietnamien en couple mixte — Cap Vietnam';
 $page_description = 'Méthodes et ressources pour apprendre le vietnamien en couple mixte à Hanoï : applis, cours, pratique quotidienne et astuces de motivation.';
-$page_canonical   = 'https://www.blog-capvietnam.fr/apprendre-vietnamien-couple';
+$page_canonical   = 'https://blog-capvietnam.fr/apprendre-vietnamien-couple';
 $page_og_title    = 'Apprendre le vietnamien en couple : méthodes et ressources';
 $page_og_desc     = 'Meilleures méthodes pour apprendre le vietnamien : Pimsleur, Anki, Duolingo.';
-$page_og_url      = 'https://www.blog-capvietnam.fr/apprendre-vietnamien-couple';
-$page_og_image    = 'https://www.blog-capvietnam.fr/assets/img/og-capvietnam.png';
-$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Apprendre le vietnamien en couple : methodes et realite","datePublished":"2026-02-10","dateModified":"2026-02-10","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://www.blog-capvietnam.fr/assets/img/og-capvietnam.png","description":"Meilleures methodes pour apprendre le vietnamien : Pimsleur, Anki, Duolingo.","timeRequired":"PT6M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/apprendre-vietnamien-couple"}';
+$page_og_url      = 'https://blog-capvietnam.fr/apprendre-vietnamien-couple';
+$page_og_image    = 'https://blog-capvietnam.fr/assets/img/og-capvietnam.png';
+$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Apprendre le vietnamien en couple : methodes et realite","datePublished":"2026-02-10","dateModified":"2026-02-10","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://blog-capvietnam.fr/assets/img/og-capvietnam.png","description":"Meilleures methodes pour apprendre le vietnamien : Pimsleur, Anki, Duolingo.","timeRequired":"PT6M","inLanguage":"fr","url":"https://blog-capvietnam.fr/apprendre-vietnamien-couple"}';
 
 $article_color   = 'jade';
 $article_hero_bg = '#1a3a1e';
@@ -15,7 +15,7 @@ $article_badge   = 'rgba(27,107,82,0.25)';
 $article_badge_c = '#4db890';
 
 $article_category     = 'Couple Mixte';
-$article_category_url = 'https://www.blog-capvietnam.fr/articles-capvietnam';
+$article_category_url = 'https://blog-capvietnam.fr/articles-capvietnam';
 $page_faq = [
   ['q' => 'Combien de temps pour avoir une vraie conversation en vietnamien ?',
    'a' => 'Avec 30 minutes de pratique quotidienne sérieuse, compte 6 à 12 mois pour des conversations simples, 2 à 3 ans pour une aisance réelle. La phonologie tonale est le principal obstacle — une fois les tons en place, le reste s\'accélère.'],

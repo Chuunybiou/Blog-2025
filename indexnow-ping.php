@@ -1,8 +1,8 @@
-<?php
+﻿<?php
 /**
  * IndexNow ping — Bing indexation quasi-instantanée
  *
- * Usage CLI : php indexnow-ping.php https://www.blog-capvietnam.fr/nouvel-article
+ * Usage CLI : php indexnow-ping.php https://blog-capvietnam.fr/nouvel-article
  * Usage PHP  : require 'indexnow-ping.php'; ping_indexnow(['https://...', 'https://...']);
  * Usage auto : appelé par generate-sitemap.php après régénération
  */
@@ -12,7 +12,7 @@ require_once __DIR__ . '/config/site.php';
 function ping_indexnow(array $urls): void
 {
     $key  = INDEXNOW_KEY;
-    $host = 'www.blog-capvietnam.fr';
+    $host = 'blog-capvietnam.fr';
     $log  = __DIR__ . '/logs/indexnow.log';
 
     @mkdir(dirname($log), 0755, true);

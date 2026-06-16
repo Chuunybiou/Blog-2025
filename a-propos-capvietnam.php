@@ -116,7 +116,7 @@ include 'header.php';
   <div class="story-text">
     <p>C'est une histoire qui commence à distance, le 9 juin 2025. Je vivais au Québec, elle au Vietnam. On s'est rencontrés en ligne, on a commencé à parler — d'abord en anglais, parfois en vietnamien pour les choses simples. Et très vite, il était clair que c'était sérieux.</p>
 
-    <img src="assets/img/595605424_755082234270642_7802260515125357552_n.jpg" alt="Bánh mì et jus frais à Hanoï — premier voyage au Vietnam" width="800" height="700" loading="lazy" style="width:100%;border-radius:12px;margin:2rem 0;object-fit:cover;max-height:420px;">
+    <img src="assets/img/banh-mi-cafe-couple-hanoi.jpg" alt="Bánh mì et jus frais à Hanoï — premier voyage au Vietnam" width="800" height="700" loading="lazy" style="width:100%;border-radius:12px;margin:2rem 0;object-fit:cover;max-height:420px;">
 
     <p>En novembre 2025, je suis parti au Vietnam pour la première fois, le jour de son anniversaire. Ce voyage avait un objectif clair : vérifier si ce qu'on ressentait à distance tenait la route en vrai, face à face, dans sa vie, avec sa famille. La réponse, c'était oui.</p>
 
@@ -144,17 +144,17 @@ include 'header.php';
     <div style="font-size:0.65rem;letter-spacing:4px;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem;">Mes voyages</div>
     <h2 style="font-family:'DM Serif Display',serif;font-size:2rem;margin-bottom:2rem;">Ce que j'ai vu au Vietnam</h2>
     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;">
-      <img src="assets/img/595546396_755082490937283_1056395525782122860_n.jpg" alt="Pagode du Pilier Unique (Chùa Một Cột) — Hanoï" width="400" height="400" loading="lazy" style="width:100%;aspect-ratio:1;object-fit:cover;border-radius:8px;">
-      <img src="assets/img/595501843_755082200937312_3487841786224209600_n.jpg" alt="Bateaux sur les karsts de Tràng An — Ninh Binh" width="400" height="400" loading="lazy" style="width:100%;aspect-ratio:1;object-fit:cover;border-radius:8px;">
-      <img src="assets/img/596295808_755082580937274_5977220999229795732_n.jpg" alt="Lac de l'Ouest (Hồ Tây) — Hanoï" width="400" height="400" loading="lazy" style="width:100%;aspect-ratio:1;object-fit:cover;border-radius:8px;">
-      <img src="assets/img/596295808_755082164270649_7756524143879926384_n.jpg" alt="Grotte sur la rivière — Tràng An, Ninh Binh" width="400" height="400" loading="lazy" style="width:100%;aspect-ratio:1;object-fit:cover;border-radius:8px;">
-      <img src="assets/img/595604561_755082290937303_8005453321801884597_n.jpg" alt="Bain de pieds en bois au Vietnam — moment de détente en couple" width="400" height="400" loading="lazy" style="width:100%;aspect-ratio:1;object-fit:cover;border-radius:8px;">
-      <img src="assets/img/594561710_755082120937320_5369234175441741259_n.jpg" alt="Pagode illuminée au bord de l'eau — Hanoï la nuit" width="400" height="400" loading="lazy" style="width:100%;aspect-ratio:1;object-fit:cover;border-radius:8px;">
+      <img src="assets/img/pagode-pilier-unique-hanoi.jpg" alt="Pagode du Pilier Unique (Chùa Một Cột) — Hanoï" width="400" height="400" loading="lazy" style="width:100%;aspect-ratio:1;object-fit:cover;border-radius:8px;">
+      <img src="assets/img/bateaux-karsts-trang-an-ninh-binh.jpg" alt="Bateaux sur les karsts de Tràng An — Ninh Binh" width="400" height="400" loading="lazy" style="width:100%;aspect-ratio:1;object-fit:cover;border-radius:8px;">
+      <img src="assets/img/lac-ouest-hanoi-rive-ho-tay.jpg" alt="Lac de l'Ouest (Hồ Tây) — Hanoï" width="400" height="400" loading="lazy" style="width:100%;aspect-ratio:1;object-fit:cover;border-radius:8px;">
+      <img src="assets/img/grotte-barque-ninh-binh.jpg" alt="Grotte sur la rivière — Tràng An, Ninh Binh" width="400" height="400" loading="lazy" style="width:100%;aspect-ratio:1;object-fit:cover;border-radius:8px;">
+      <img src="assets/img/bain-pieds-herbier-spa-vietnam.jpg" alt="Bain de pieds en bois au Vietnam — moment de détente en couple" width="400" height="400" loading="lazy" style="width:100%;aspect-ratio:1;object-fit:cover;border-radius:8px;">
+      <img src="assets/img/pagode-illuminee-fete-nuit-vietnam.jpg" alt="Pagode illuminée au bord de l'eau — Hanoï la nuit" width="400" height="400" loading="lazy" style="width:100%;aspect-ratio:1;object-fit:cover;border-radius:8px;">
     </div>
     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1rem;">
-      <img src="assets/img/595541316_755082374270628_3117767301473988501_n.jpg" alt="Cathédrale Saint-Joseph de Hanoï la nuit" width="400" height="400" loading="lazy" style="width:100%;aspect-ratio:1;object-fit:cover;border-radius:8px;">
-      <img src="assets/img/1618720727-hhhh.jpg" alt="Vieux quartier de Hanoï" width="400" height="400" loading="lazy" style="width:100%;aspect-ratio:1;object-fit:cover;border-radius:8px;">
-      <img src="assets/img/596977934_755082304270635_2963209742693028438_n.jpg" alt="Intérieur d'une pagode bouddhiste dorée au Vietnam" width="400" height="400" loading="lazy" style="width:100%;aspect-ratio:1;object-fit:cover;border-radius:8px;">
+      <img src="assets/img/cathedrale-saint-joseph-hanoi-nuit.jpg" alt="Cathédrale Saint-Joseph de Hanoï la nuit" width="400" height="400" loading="lazy" style="width:100%;aspect-ratio:1;object-fit:cover;border-radius:8px;">
+      <img src="assets/img/vieux-quartier-hanoi-colonial.jpg" alt="Vieux quartier de Hanoï" width="400" height="400" loading="lazy" style="width:100%;aspect-ratio:1;object-fit:cover;border-radius:8px;">
+      <img src="assets/img/interieur-pagode-dome-dore-vietnam.jpg" alt="Intérieur d'une pagode bouddhiste dorée au Vietnam" width="400" height="400" loading="lazy" style="width:100%;aspect-ratio:1;object-fit:cover;border-radius:8px;">
     </div>
   </div>
 </section>

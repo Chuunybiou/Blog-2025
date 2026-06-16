@@ -22,10 +22,12 @@
     </div>
     <div class="footer-col">
       <h4><?= ($page_lang ?? 'fr') === 'vi' ? 'Danh mục' : 'Catégories' ?></h4>
-      <a href="<?= $path_prefix ?>articles-capvietnam?cat=couple">💕 Couple franco-vietnamien</a>
-      <a href="<?= $path_prefix ?>articles-capvietnam?cat=admin">📋 Démarches &amp; installation</a>
-      <a href="<?= $path_prefix ?>articles-capvietnam?cat=argent">💻 Argent &amp; travail à distance</a>
-      <a href="<?= $path_prefix ?>articles-capvietnam?cat=voyager">✈️ Vie pratique au Vietnam</a>
+      <?php $_fl = ($page_lang ?? 'fr') === 'vi'; ?>
+      <a href="<?= $path_prefix ?>articles-capvietnam?cat=couple"><?= $_fl ? '❤️ Câu chuyện của chúng tôi' : '❤️ Notre histoire &amp; couple' ?></a>
+      <a href="<?= $path_prefix ?>articles-capvietnam?cat=mariage"><?= $_fl ? '💍 Kết hôn Pháp-Việt' : '💍 Se marier' ?></a>
+      <a href="<?= $path_prefix ?>articles-capvietnam?cat=vivre-ensemble"><?= $_fl ? '🏠 Sống cùng nhau' : '🏠 Vivre ensemble' ?></a>
+      <a href="<?= $path_prefix ?>articles-capvietnam?cat=argent"><?= $_fl ? '💰 Tài chính đôi lứa' : '💰 L\'argent à deux' ?></a>
+      <a href="<?= $path_prefix ?>articles-capvietnam?cat=vie-pratique"><?= $_fl ? '🌏 Cuộc sống thực tế tại Việt Nam' : '🌏 Vie pratique au Vietnam' ?></a>
     </div>
     <div class="footer-col">
       <h4><?= ($page_lang ?? 'fr') === 'vi' ? 'Liên kết hữu ích' : 'Liens utiles' ?></h4>
@@ -35,11 +37,9 @@
       <a href="<?= $path_prefix ?: '/' ?>#newsletter">Newsletter mensuelle</a>
       <a href="<?= $path_prefix ?>livre-vietnamien" style="color:var(--terracotta-soft);font-weight:600">📕 Apprendre le vietnamien</a>
       <a href="<?= $path_prefix ?>mes-livres" style="color:rgba(250,248,244,0.55)">📚 Tous mes livres</a>
-      <a href="<?= $path_prefix ?>s-expatrier-vietnam-2026-guide-complet" style="color:var(--amber-soft);font-weight:600">📘 Guide expatriation 2026</a>
       <hr style="border-color:var(--border);margin:0.8rem 0">
       <a href="https://bonusparrainage.com/revolut" target="_blank" rel="noopener" style="color:var(--amber-soft)">💳 Code parrainage Revolut</a>
-      <a href="https://bonusparrainage.com" target="_blank" rel="noopener">🎁 BonusParrainage.com</a>
-      <a href="https://anthony-bouillon.com" target="_blank" rel="noopener">💻 Services informatiques</a>
+      <a href="https://anthony-bouillon.com" target="_blank" rel="noopener" style="color:rgba(250,248,244,0.28);font-size:0.78rem">anthony-bouillon.com</a>
     </div>
     <div class="footer-col">
       <h4><?= ($page_lang ?? 'fr') === 'vi' ? 'Mạng xã hội' : 'Réseaux' ?></h4>

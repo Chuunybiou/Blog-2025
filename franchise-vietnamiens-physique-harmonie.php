@@ -1,11 +1,11 @@
 ﻿<?php
 $page_title       = 'Appeler un chat un chat : la franchise des Vietnamiens sur le physique (et leur discrétion sur le reste)';
 $page_description = 'Ma femme m\'appelle son "gros mari" ou son "panda". La belle-famille commente le physique sans détour. Ce n\'est pas de la méchanceté — c\'est culturel. Mais la franchise vietnamienne est aussi beaucoup plus complexe qu\'il n\'y paraît.';
-$page_canonical   = 'https://www.blog-capvietnam.fr/franchise-vietnamiens-physique-harmonie';
+$page_canonical   = 'https://blog-capvietnam.fr/franchise-vietnamiens-physique-harmonie';
 $page_og_title    = 'Panda, gros mari : la franchise des Vietnamiens sur le physique';
 $page_og_desc     = 'Ma femme m\'appelle son "panda". Ce n\'est pas de la méchanceté — c\'est culturel. Mais la franchise vietnamienne cache une nuance que peu d\'articles expliquent.';
-$page_og_url      = 'https://www.blog-capvietnam.fr/franchise-vietnamiens-physique-harmonie';
-$page_og_image    = 'https://www.blog-capvietnam.fr/assets/img/og-capvietnam.png';
+$page_og_url      = 'https://blog-capvietnam.fr/franchise-vietnamiens-physique-harmonie';
+$page_og_image    = 'https://blog-capvietnam.fr/assets/img/og-capvietnam.png';
 
 $page_schema = '{
   "@context": "https://schema.org",
@@ -14,9 +14,9 @@ $page_schema = '{
   "description": "Les Vietnamiens commentent le physique sans filtre. Un gros est un gros. Un moche est un moche. Ce n\'est pas de la méchanceté — mais ce n\'est pas non plus la même franchise qu\'en France. Explication d\'une nuance culturelle importante.",
   "datePublished": "2026-06-06",
   "dateModified": "2026-06-06",
-  "author": {"@type": "Person", "name": "Anthony Bouillon", "url": "https://www.blog-capvietnam.fr/a-propos-capvietnam"},
-  "publisher": {"@type": "Organization", "name": "Cap Vietnam", "url": "https://www.blog-capvietnam.fr"},
-  "mainEntityOfPage": "https://www.blog-capvietnam.fr/franchise-vietnamiens-physique-harmonie",
+  "author": {"@type": "Person", "name": "Anthony Bouillon", "url": "https://blog-capvietnam.fr/a-propos-capvietnam"},
+  "publisher": {"@type": "Organization", "name": "Cap Vietnam", "url": "https://blog-capvietnam.fr"},
+  "mainEntityOfPage": "https://blog-capvietnam.fr/franchise-vietnamiens-physique-harmonie",
   "inLanguage": "fr",
   "articleSection": "Couple Mixte & Famille"
 }';
@@ -42,7 +42,7 @@ $page_faq = [
 
 $page_extra_head = '
 
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://www.blog-capvietnam.fr"},{"@type":"ListItem","position":2,"name":"Couple Mixte & Famille","item":"https://www.blog-capvietnam.fr/articles-capvietnam"},{"@type":"ListItem","position":3,"name":"La franchise des Vietnamiens"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://blog-capvietnam.fr"},{"@type":"ListItem","position":2,"name":"Couple Mixte & Famille","item":"https://blog-capvietnam.fr/articles-capvietnam"},{"@type":"ListItem","position":3,"name":"La franchise des Vietnamiens"}]}</script>
 ';
 
 include '_article-css.php';

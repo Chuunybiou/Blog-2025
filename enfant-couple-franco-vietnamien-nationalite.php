@@ -208,7 +208,7 @@ include 'header.php';
 <?php
 require_once __DIR__ . '/config/site.php';
 $current_slug = 'enfant-couple-franco-vietnamien-nationalite';
-$current_cat  = 'admin';
+$current_cat  = 'vivre-ensemble';
 include '_related-articles.php';
 ?>
 

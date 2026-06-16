@@ -1,12 +1,12 @@
 ﻿<?php
 $page_title       = 'Permis de conduire Vietnam pour étrangers — Cap Vietnam';
 $page_description = 'Obtenir un permis de conduire vietnamien : conversion du permis français, examen local, documents requis et règles de circulation à Hanoï.';
-$page_canonical   = 'https://www.blog-capvietnam.fr/permis-conduire-vietnam';
+$page_canonical   = 'https://blog-capvietnam.fr/permis-conduire-vietnam';
 $page_og_title    = 'Permis de conduire au Vietnam : guide pour expatriés';
 $page_og_desc     = 'Conversion du permis français au Vietnam, catégories de permis et règles de circulation.';
-$page_og_url      = 'https://www.blog-capvietnam.fr/permis-conduire-vietnam';
+$page_og_url      = 'https://blog-capvietnam.fr/permis-conduire-vietnam';
 $page_og_image    = 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Permis de conduire au Vietnam : scooter, moto et voiture","datePublished":"2026-03-10","dateModified":"2026-03-10","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80","description":"Conversion du permis francais au Vietnam, categories de permis et regles de circulation.","timeRequired":"PT5M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/permis-conduire-vietnam"}';
+$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Permis de conduire au Vietnam : scooter, moto et voiture","datePublished":"2026-03-10","dateModified":"2026-03-10","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80","description":"Conversion du permis francais au Vietnam, categories de permis et regles de circulation.","timeRequired":"PT5M","inLanguage":"fr","url":"https://blog-capvietnam.fr/permis-conduire-vietnam"}';
 
 $article_color   = 'terracotta';
 $article_hero_bg = '#3a1a0a';
@@ -15,7 +15,7 @@ $article_badge   = 'rgba(191,74,42,0.2)';
 $article_badge_c = 'var(--terracotta-soft)';
 
 $article_category     = 'Démarches Admin';
-$article_category_url = 'https://www.blog-capvietnam.fr/articles-capvietnam';
+$article_category_url = 'https://blog-capvietnam.fr/articles-capvietnam';
 $page_faq = [
   ['q' => 'Combien coûte la conversion d\'un permis étranger ?',
    'a' => 'Les frais officiels sont d\'environ 135 000 VND. Ajoute la traduction assermentée (300 000–500 000 VND selon le traducteur) et la visite médicale (150 000–250 000 VND). Compte environ 700 000 à 1 000 000 VND au total.'],
@@ -212,7 +212,7 @@ include 'header.php';
 
 <?php
 $current_slug = 'permis-conduire-vietnam';
-$current_cat  = 'admin';
+$current_cat  = 'vie-pratique';
 include '_related-articles.php';
 ?>
 

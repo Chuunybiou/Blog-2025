@@ -1,12 +1,12 @@
 ﻿<?php
 $page_title       = 'Louer un appartement à Hanoï en tant qu\'étranger : guide complet 2026';
 $page_description = 'Comment trouver et louer un appartement à Hanoï en tant qu\'étranger : prix par quartier, contrat, caution, charges et pièges à éviter. Guide mis à jour 2026.';
-$page_canonical   = 'https://www.blog-capvietnam.fr/louer-appartement-hanoi-etranger';
+$page_canonical   = 'https://blog-capvietnam.fr/louer-appartement-hanoi-etranger';
 $page_og_title    = 'Louer un appartement à Hanoï en tant qu\'étranger : prix, quartiers et pièges à éviter';
 $page_og_desc     = 'Budget logement réaliste à Hanoï en 2026, où chercher, comment négocier et signer un contrat en tant qu\'expatrié français.';
-$page_og_url      = 'https://www.blog-capvietnam.fr/louer-appartement-hanoi-etranger';
+$page_og_url      = 'https://blog-capvietnam.fr/louer-appartement-hanoi-etranger';
 $page_og_image    = 'https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Louer un appartement à Hanoï en tant qu\'étranger : guide complet 2026","datePublished":"2026-05-18","dateModified":"2026-05-18","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon"},"image":"https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=1200&q=80","description":"Comment louer un appartement à Hanoï en tant qu\'étranger en 2026 : prix réels par quartier, contrat bilingue, charges et pièges classiques.","timeRequired":"PT9M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/louer-appartement-hanoi-etranger"}';
+$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Louer un appartement à Hanoï en tant qu\'étranger : guide complet 2026","datePublished":"2026-05-18","dateModified":"2026-05-18","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon"},"image":"https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=1200&q=80","description":"Comment louer un appartement à Hanoï en tant qu\'étranger en 2026 : prix réels par quartier, contrat bilingue, charges et pièges classiques.","timeRequired":"PT9M","inLanguage":"fr","url":"https://blog-capvietnam.fr/louer-appartement-hanoi-etranger"}';
 
 $article_color        = 'jade';
 $article_hero_bg      = '#0a2d1a';
@@ -14,7 +14,7 @@ $article_glow         = 'rgba(27,107,82,0.18)';
 $article_badge        = 'rgba(27,107,82,0.22)';
 $article_badge_c      = 'var(--jade)';
 $article_category     = 'Vie Pratique';
-$article_category_url = 'https://www.blog-capvietnam.fr/articles-capvietnam';
+$article_category_url = 'https://blog-capvietnam.fr/articles-capvietnam';
 
 $page_faq = [
   ['q' => 'Les propriétaires vietnamiens acceptent-ils de louer à des étrangers ?',

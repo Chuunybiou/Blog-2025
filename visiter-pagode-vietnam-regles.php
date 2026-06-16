@@ -1,23 +1,23 @@
 ﻿<?php
 $page_title       = 'Visiter une pagode au Vietnam : tenue, chaussures et comportement à adopter';
 $page_description = 'Chaussures à retirer, pas de jupe, couleurs bouddhistes à respecter (jaune et brun), aucune démonstration d\'affection — ce que ma femme bouddhiste m\'a appris avant d\'entrer dans les pagodes de Hanoï et de Ninh Binh.';
-$page_canonical   = 'https://www.blog-capvietnam.fr/visiter-pagode-vietnam-regles';
+$page_canonical   = 'https://blog-capvietnam.fr/visiter-pagode-vietnam-regles';
 $page_og_title    = 'Pagodes au Vietnam : les règles à connaître avant d\'entrer';
 $page_og_desc     = 'Chaussures, tenue, couleurs du bouddhisme (jaune et brun), pas de démonstration d\'affection — ce que ma femme bouddhiste m\'a appris avant de visiter les pagodes de Hanoï et Ninh Binh.';
-$page_og_url      = 'https://www.blog-capvietnam.fr/visiter-pagode-vietnam-regles';
-$page_og_image    = 'https://www.blog-capvietnam.fr/assets/img/596977934_755082304270635_2963209742693028438_n.jpg';
+$page_og_url      = 'https://blog-capvietnam.fr/visiter-pagode-vietnam-regles';
+$page_og_image    = 'https://blog-capvietnam.fr/assets/img/596977934_755082304270635_2963209742693028438_n.jpg';
 
 $page_schema = '{
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Visiter une pagode au Vietnam : tenue, chaussures et comportement",
   "description": "Les règles concrètes pour visiter une pagode au Vietnam sans commettre d\'impair : tenue, chaussures, couleurs à éviter et comportement à l\'intérieur.",
-  "image": "https://www.blog-capvietnam.fr/assets/img/596977934_755082304270635_2963209742693028438_n.jpg",
+  "image": "https://blog-capvietnam.fr/assets/img/596977934_755082304270635_2963209742693028438_n.jpg",
   "datePublished": "2026-06-06",
   "dateModified": "2026-06-06",
-  "author": {"@type": "Person", "name": "Anthony Bouillon", "url": "https://www.blog-capvietnam.fr/a-propos-capvietnam"},
-  "publisher": {"@type": "Organization", "name": "Cap Vietnam", "url": "https://www.blog-capvietnam.fr"},
-  "mainEntityOfPage": "https://www.blog-capvietnam.fr/visiter-pagode-vietnam-regles",
+  "author": {"@type": "Person", "name": "Anthony Bouillon", "url": "https://blog-capvietnam.fr/a-propos-capvietnam"},
+  "publisher": {"@type": "Organization", "name": "Cap Vietnam", "url": "https://blog-capvietnam.fr"},
+  "mainEntityOfPage": "https://blog-capvietnam.fr/visiter-pagode-vietnam-regles",
   "inLanguage": "fr",
   "articleSection": "Voyager au Vietnam"
 }';
@@ -28,7 +28,7 @@ $article_glow         = 'rgba(27,107,82,0.18)';
 $article_badge        = 'var(--jade)';
 $article_badge_c      = '#fff';
 $current_slug         = 'visiter-pagode-vietnam-regles';
-$current_cat          = 'voyager';
+$current_cat          = 'vie-pratique';
 
 $page_faq = [
   ['q' => 'Faut-il être bouddhiste pour visiter une pagode au Vietnam ?',
@@ -45,7 +45,7 @@ $page_faq = [
 
 $page_extra_head = '
 
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://www.blog-capvietnam.fr"},{"@type":"ListItem","position":2,"name":"Voyager au Vietnam","item":"https://www.blog-capvietnam.fr/articles-capvietnam"},{"@type":"ListItem","position":3,"name":"Visiter une pagode au Vietnam"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://blog-capvietnam.fr"},{"@type":"ListItem","position":2,"name":"Voyager au Vietnam","item":"https://blog-capvietnam.fr/articles-capvietnam"},{"@type":"ListItem","position":3,"name":"Visiter une pagode au Vietnam"}]}</script>
 ';
 
 include '_article-css.php';

@@ -1,12 +1,12 @@
 ﻿<?php
 $page_title       = 'Belle-famille vietnamienne : guide d\'intégration';
 $page_description = 'S\'intégrer dans une belle-famille vietnamienne : codes de respect, gestes à connaître, erreurs à éviter et conseils pour créer un lien sincère.';
-$page_canonical   = 'https://www.blog-capvietnam.fr/belle-famille-vietnamienne-guide';
+$page_canonical   = 'https://blog-capvietnam.fr/belle-famille-vietnamienne-guide';
 $page_og_title    = 'S\'intégrer dans une belle-famille vietnamienne : le guide honnête';
 $page_og_desc     = 'Codes à respecter, cadeaux et tabous pour réussir votre première visite à la belle-famille vietnamienne.';
-$page_og_url      = 'https://www.blog-capvietnam.fr/belle-famille-vietnamienne-guide';
+$page_og_url      = 'https://blog-capvietnam.fr/belle-famille-vietnamienne-guide';
 $page_og_image    = 'https://images.unsplash.com/photo-1573495627361-d9b87960b12d?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Rencontrer la belle-famille vietnamienne : guide de survie","datePublished":"2026-03-01","dateModified":"2026-03-01","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1573495627361-d9b87960b12d?w=1200&q=80","description":"Codes a respecter, cadeaux et tabous pour reussir votre premiere visite a la belle-famille vietnamienne.","timeRequired":"PT8M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/belle-famille-vietnamienne-guide"}';
+$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Rencontrer la belle-famille vietnamienne : guide de survie","datePublished":"2026-03-01","dateModified":"2026-03-01","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1573495627361-d9b87960b12d?w=1200&q=80","description":"Codes a respecter, cadeaux et tabous pour reussir votre premiere visite a la belle-famille vietnamienne.","timeRequired":"PT8M","inLanguage":"fr","url":"https://blog-capvietnam.fr/belle-famille-vietnamienne-guide"}';
 
 $article_color   = 'jade';
 $article_hero_bg = '#1a3a1e';
@@ -15,7 +15,7 @@ $article_badge   = 'rgba(27,107,82,0.25)';
 $article_badge_c = '#4db890';
 
 $article_category     = 'Couple Mixte';
-$article_category_url = 'https://www.blog-capvietnam.fr/articles-capvietnam';
+$article_category_url = 'https://blog-capvietnam.fr/articles-capvietnam';
 $page_faq = [
   ['q' => 'Comment réagir quand on ne comprend pas la conversation ?',
    'a' => 'Souris, hoche la tête occasionnellement, regarde les personnes qui parlent. Ta conjointe peut te faire de courts résumés. Avec le temps, tu capteras des mots clés en vietnamien. L\'essentiel est de ne pas sembler indifférent ou ennuyé.'],

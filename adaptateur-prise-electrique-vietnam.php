@@ -1,11 +1,11 @@
 ﻿<?php
 $page_title       = 'Adaptateur prise électrique Vietnam : ce qu\'il faut savoir avant de partir';
 $page_description = 'Au Vietnam, la tension est la même qu\'en France (220 V), mais les prises plates Type A sont très répandues et incompatibles avec les fiches françaises. Quel adaptateur emporter, et comment éviter la prise de tête à l\'arrivée.';
-$page_canonical   = 'https://www.blog-capvietnam.fr/adaptateur-prise-electrique-vietnam';
+$page_canonical   = 'https://blog-capvietnam.fr/adaptateur-prise-electrique-vietnam';
 $page_og_title    = 'Prise électrique au Vietnam : adaptateur nécessaire pour les Français ?';
 $page_og_desc     = '220 V comme en France, mais les prises plates Type A sont partout dans les anciens appartements. Ce que j\'ai découvert à l\'arrivée et l\'adaptateur que j\'utilise depuis.';
-$page_og_url      = 'https://www.blog-capvietnam.fr/adaptateur-prise-electrique-vietnam';
-$page_og_image    = 'https://www.blog-capvietnam.fr/assets/img/capvietnam-prise.jpg';
+$page_og_url      = 'https://blog-capvietnam.fr/adaptateur-prise-electrique-vietnam';
+$page_og_image    = 'https://blog-capvietnam.fr/assets/img/capvietnam-prise.jpg';
 
 $page_schema = '{
   "@context": "https://schema.org",
@@ -14,9 +14,9 @@ $page_schema = '{
   "description": "Au Vietnam, la tension est identique à la France (220 V/50 Hz), mais les prises Type A plates sont très répandues et incompatibles avec les fiches françaises. Guide complet pour partir serein.",
   "datePublished": "2026-06-02",
   "dateModified": "2026-06-02",
-  "author": {"@type": "Person", "name": "Anthony Bouillon", "url": "https://www.blog-capvietnam.fr/a-propos-capvietnam"},
-  "publisher": {"@type": "Organization", "name": "Cap Vietnam", "url": "https://www.blog-capvietnam.fr"},
-  "mainEntityOfPage": "https://www.blog-capvietnam.fr/adaptateur-prise-electrique-vietnam",
+  "author": {"@type": "Person", "name": "Anthony Bouillon", "url": "https://blog-capvietnam.fr/a-propos-capvietnam"},
+  "publisher": {"@type": "Organization", "name": "Cap Vietnam", "url": "https://blog-capvietnam.fr"},
+  "mainEntityOfPage": "https://blog-capvietnam.fr/adaptateur-prise-electrique-vietnam",
   "inLanguage": "fr",
   "articleSection": "Vie pratique au Vietnam"
 }';
@@ -27,7 +27,7 @@ $article_glow         = 'rgba(191,74,42,0.15)';
 $article_badge        = 'rgba(191,74,42,0.2)';
 $article_badge_c      = 'var(--terracotta-soft)';
 $article_category     = 'Vie pratique';
-$article_category_url = 'https://www.blog-capvietnam.fr/articles-capvietnam';
+$article_category_url = 'https://blog-capvietnam.fr/articles-capvietnam';
 
 $page_faq = [
   ['q' => 'Faut-il un adaptateur électrique pour aller au Vietnam ?',
@@ -45,7 +45,7 @@ $page_faq = [
 ];
 
 $page_extra_head = '
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://www.blog-capvietnam.fr"},{"@type":"ListItem","position":2,"name":"Vie pratique","item":"https://www.blog-capvietnam.fr/articles-capvietnam"},{"@type":"ListItem","position":3,"name":"Adaptateur prise électrique Vietnam"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://blog-capvietnam.fr"},{"@type":"ListItem","position":2,"name":"Vie pratique","item":"https://blog-capvietnam.fr/articles-capvietnam"},{"@type":"ListItem","position":3,"name":"Adaptateur prise électrique Vietnam"}]}</script>
 ';
 
 include '_article-css.php';
@@ -349,7 +349,7 @@ include 'header.php';
 
 <?php
 $current_slug = 'adaptateur-prise-electrique-vietnam';
-$current_cat  = 'voyager';
+$current_cat  = 'vie-pratique';
 include '_related-articles.php';
 ?>
 

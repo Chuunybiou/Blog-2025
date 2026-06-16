@@ -1,12 +1,12 @@
 ﻿<?php
 $page_title       = 'Compte joint franco-vietnamien : pourquoi c\'est presque impossible (et ma stratégie multi-comptes 2026)';
 $page_description = 'Aucune banque française n\'accepte un vrai compte joint avec une conjointe vietnamienne non-résidente. Après 2 ans de tests (Boursorama, Fortuneo, Wealthsimple, Wise, Revolut, Vietcombank), voici ma stratégie multi-comptes qui fonctionne en 2026.';
-$page_canonical   = 'https://www.blog-capvietnam.fr/compte-joint-franco-vietnamien';
+$page_canonical   = 'https://blog-capvietnam.fr/compte-joint-franco-vietnamien';
 $page_og_title    = 'Compte joint franco-vietnamien : pourquoi c\'est presque impossible';
 $page_og_desc     = 'Aucune banque française n\'accepte un vrai compte joint avec une conjointe vietnamienne non-résidente. Après 2 ans de tests (Boursorama, Fortuneo, Wealthsimple, Wise, Revolut, Vietcombank), voici ma stratégie multi-comptes qui fonctionne en 2026.';
-$page_og_url      = 'https://www.blog-capvietnam.fr/compte-joint-franco-vietnamien';
+$page_og_url      = 'https://blog-capvietnam.fr/compte-joint-franco-vietnamien';
 $page_og_image    = 'https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"Article","headline":"Compte joint franco-vietnamien : pourquoi c\'est presque impossible et la stratégie multi-comptes qu\'on utilise à la place","datePublished":"2026-05-15","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos-capvietnam"},"publisher":{"@type":"Organization","name":"Anthony Bouillon"},"mainEntityOfPage":"https://www.blog-capvietnam.fr/compte-joint-franco-vietnamien","inLanguage":"fr","articleSection":"Couple franco-vietnamien"}';
+$page_schema      = '{"@context":"https://schema.org","@type":"Article","headline":"Compte joint franco-vietnamien : pourquoi c\'est presque impossible et la stratégie multi-comptes qu\'on utilise à la place","datePublished":"2026-05-15","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://blog-capvietnam.fr/a-propos-capvietnam"},"publisher":{"@type":"Organization","name":"Anthony Bouillon"},"mainEntityOfPage":"https://blog-capvietnam.fr/compte-joint-franco-vietnamien","inLanguage":"fr","articleSection":"Couple franco-vietnamien"}';
 
 $article_color        = 'jade';
 $article_hero_bg      = '#0e3020';
@@ -14,7 +14,7 @@ $article_glow         = 'rgba(27,107,82,0.18)';
 $article_badge        = 'rgba(27,107,82,0.22)';
 $article_badge_c      = '#6bc98a';
 $article_category     = 'Couple franco-vietnamien';
-$article_category_url = 'https://www.blog-capvietnam.fr/articles-capvietnam';
+$article_category_url = 'https://blog-capvietnam.fr/articles-capvietnam';
 
 $page_faq = [
   ['q' => 'Peut-on ouvrir un compte joint en France avec un conjoint vietnamien ?',
@@ -268,7 +268,7 @@ include 'header.php';
 
 <?php
 $current_slug = 'compte-joint-franco-vietnamien';
-$current_cat  = 'couple';
+$current_cat  = 'argent';
 include '_related-articles.php';
 ?>
 

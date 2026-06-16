@@ -1,12 +1,12 @@
 ﻿<?php
 $page_title       = 'Se marier avec une Vietnamienne : toutes les démarches';
 $page_description = 'Se marier avec une ressortissante vietnamienne : certificat de capacité matrimoniale, ambassade, mariage civil au Vietnam et reconnaissance en France.';
-$page_canonical   = 'https://www.blog-capvietnam.fr/se-marier-vietnamienne-demarches-france';
+$page_canonical   = 'https://blog-capvietnam.fr/se-marier-vietnamienne-demarches-france';
 $page_og_title    = 'Se marier avec une Vietnamienne : toutes les démarches officielles';
 $page_og_desc     = 'Certificat de capacité matrimoniale, mariage civil au Vietnam, transcription à Nantes.';
-$page_og_url      = 'https://www.blog-capvietnam.fr/se-marier-vietnamienne-demarches-france';
+$page_og_url      = 'https://blog-capvietnam.fr/se-marier-vietnamienne-demarches-france';
 $page_og_image    = 'https://images.unsplash.com/photo-1537907510278-2a3b01e3de52?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Se marier avec une Vietnamienne : demarches cote France","datePublished":"2026-04-08","dateModified":"2026-04-08","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1537907510278-2a3b01e3de52?w=1200&q=80","description":"Certificat de capacite matrimoniale, mariage civil au Vietnam, transcription a Nantes.","timeRequired":"PT12M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/se-marier-vietnamienne-demarches-france"}';
+$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Se marier avec une Vietnamienne : demarches cote France","datePublished":"2026-04-08","dateModified":"2026-04-08","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1537907510278-2a3b01e3de52?w=1200&q=80","description":"Certificat de capacite matrimoniale, mariage civil au Vietnam, transcription a Nantes.","timeRequired":"PT12M","inLanguage":"fr","url":"https://blog-capvietnam.fr/se-marier-vietnamienne-demarches-france"}';
 
 $article_color   = 'terracotta';
 $article_hero_bg = '#3a1a0a';
@@ -15,7 +15,7 @@ $article_badge   = 'rgba(191,74,42,0.2)';
 $article_badge_c = 'var(--terracotta-soft)';
 
 $article_category     = 'Démarches Admin';
-$article_category_url = 'https://www.blog-capvietnam.fr/articles-capvietnam';
+$article_category_url = 'https://blog-capvietnam.fr/articles-capvietnam';
 $page_faq = [
   ['q' => 'Combien de temps dure l\'ensemble de la procédure ?',
    'a' => 'De l\'obtention du CCM à la transcription complète en France, compte 4 à 7 mois au total dans les cas normaux. Prévois plus de temps si l\'un des conjoints a des documents manquants ou si des délais administratifs s\'accumulent.'],
@@ -201,7 +201,7 @@ include 'header.php';
 
 <?php
 $current_slug = 'se-marier-vietnamienne-demarches-france';
-$current_cat  = 'admin';
+$current_cat  = 'mariage';
 include '_related-articles.php';
 ?>
 

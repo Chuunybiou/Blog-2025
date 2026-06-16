@@ -1,12 +1,12 @@
 ﻿<?php
 $page_title       = 'Thẻ Tạm Trú : carte de résidence temporaire Vietnam';
 $page_description = 'Obtenir la carte de résidence temporaire (thẻ tạm trú) au Vietnam : conditions, documents requis, durée de validité et renouvellement pour expatriés.';
-$page_canonical   = 'https://www.blog-capvietnam.fr/carte-residence-temporaire-vietnam';
+$page_canonical   = 'https://blog-capvietnam.fr/carte-residence-temporaire-vietnam';
 $page_og_title    = 'Carte de résidence temporaire au Vietnam : guide complet 2026';
 $page_og_desc     = 'Comment obtenir la carte de résidence temporaire au Vietnam : types, documents et procédure.';
-$page_og_url      = 'https://www.blog-capvietnam.fr/carte-residence-temporaire-vietnam';
+$page_og_url      = 'https://blog-capvietnam.fr/carte-residence-temporaire-vietnam';
 $page_og_image    = 'https://images.unsplash.com/photo-1568992688065-536aad8a12f6?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"La carte de residence temporaire au Vietnam","datePublished":"2026-02-15","dateModified":"2026-02-15","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1568992688065-536aad8a12f6?w=1200&q=80","description":"Comment obtenir la carte de residence temporaire au Vietnam : types, documents et procedure.","timeRequired":"PT6M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/carte-residence-temporaire-vietnam"}';
+$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"La carte de residence temporaire au Vietnam","datePublished":"2026-02-15","dateModified":"2026-02-15","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1568992688065-536aad8a12f6?w=1200&q=80","description":"Comment obtenir la carte de residence temporaire au Vietnam : types, documents et procedure.","timeRequired":"PT6M","inLanguage":"fr","url":"https://blog-capvietnam.fr/carte-residence-temporaire-vietnam"}';
 
 $article_color   = 'terracotta';
 $article_hero_bg = '#3a1a0a';
@@ -15,7 +15,7 @@ $article_badge   = 'rgba(191,74,42,0.2)';
 $article_badge_c = 'var(--terracotta-soft)';
 
 $article_category     = 'Démarches Admin';
-$article_category_url = 'https://www.blog-capvietnam.fr/articles-capvietnam';
+$article_category_url = 'https://blog-capvietnam.fr/articles-capvietnam';
 $page_faq = [
   ['q' => 'Peut-on obtenir la thẻ tạm trú sans permis de travail ?',
    'a' => 'Oui, si tu es conjoint(e) ou enfant d\'un(e) ressortissant(e) vietnamien(ne), étudiant(e) inscrit(e) dans un établissement au Vietnam, ou investisseur. Sans ces motifs, le permis de travail est généralement requis.'],
@@ -203,7 +203,7 @@ include 'header.php';
 
 <?php
 $current_slug = 'carte-residence-temporaire-vietnam';
-$current_cat  = 'admin';
+$current_cat  = 'vie-pratique';
 include '_related-articles.php';
 ?>
 

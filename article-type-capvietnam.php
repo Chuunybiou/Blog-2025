@@ -1,10 +1,10 @@
 ﻿<?php
 $page_title       = 'Visa Vietnam pour un Français : guide complet 2026';
 $page_description = 'E-visa, visa de travail, visa familial… Quel visa choisir pour vivre au Vietnam en tant que Français ? Guide étape par étape mis à jour en 2026.';
-$page_canonical   = 'https://www.blog-capvietnam.fr/visa-vietnam-francais-guide-2026';
+$page_canonical   = 'https://blog-capvietnam.fr/visa-vietnam-francais-guide-2026';
 $page_og_title    = 'Visa Vietnam pour un Français : le guide complet 2026';
 $page_og_desc     = 'E-visa, visa de travail, regroupement familial… Tout savoir sur les visas pour vivre au Vietnam.';
-$page_og_url      = 'https://www.blog-capvietnam.fr/visa-vietnam-francais-guide-2026';
+$page_og_url      = 'https://blog-capvietnam.fr/visa-vietnam-francais-guide-2026';
 $page_schema      = '{
   "@context": "https://schema.org",
   "@type": "Article",
@@ -12,16 +12,16 @@ $page_schema      = '{
   "description": "Guide complet des visas pour vivre au Vietnam en tant que Français. E-visa, visa de travail, regroupement familial.",
   "datePublished": "2026-04-08",
   "dateModified": "2026-04-08",
-  "author": { "@type": "Person", "name": "Cap Vietnam", "url": "https://www.blog-capvietnam.fr" },
+  "author": { "@type": "Person", "name": "Cap Vietnam", "url": "https://blog-capvietnam.fr" },
   "publisher": { "@type": "Organization", "name": "Cap Vietnam" },
-  "mainEntityOfPage": "https://www.blog-capvietnam.fr/visa-vietnam-francais-guide-2026",
+  "mainEntityOfPage": "https://blog-capvietnam.fr/visa-vietnam-francais-guide-2026",
   "inLanguage": "fr",
   "articleSection": "Démarches Administratives"
 }';
 $page_extra_head  = '
 <meta name="robots" content="noindex, nofollow">
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://www.blog-capvietnam.fr"},{"@type":"ListItem","position":2,"name":"Démarches Administratives","item":"https://www.blog-capvietnam.fr/demarches"},{"@type":"ListItem","position":3,"name":"Visa Vietnam pour un Français"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://blog-capvietnam.fr"},{"@type":"ListItem","position":2,"name":"Démarches Administratives","item":"https://blog-capvietnam.fr/demarches"},{"@type":"ListItem","position":3,"name":"Visa Vietnam pour un Français"}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Quel visa pour vivre au Vietnam en tant que Français ?","acceptedAnswer":{"@type":"Answer","text":"Selon votre situation : l\'e-visa pour un séjour jusqu\'à 90 jours, le visa de travail si vous avez un employeur, ou le visa de regroupement familial si votre conjoint est vietnamien."}},{"@type":"Question","name":"Combien coûte un visa pour le Vietnam en 2026 ?","acceptedAnswer":{"@type":"Answer","text":"L\'e-visa coûte environ 25 USD. Le visa de travail varie entre 100 et 300 USD selon la durée. Le visa de regroupement familial est généralement gratuit ou à faible coût."}},{"@type":"Question","name":"Peut-on travailler au Vietnam avec un e-visa ?","acceptedAnswer":{"@type":"Answer","text":"Non. L\'e-visa est un visa touristique. Pour travailler légalement au Vietnam, vous devez obtenir un visa de travail (DN ou LD) accompagné d\'un permis de travail."}}]}</script>
 ';
 $page_extra_css   = '
@@ -98,10 +98,12 @@ $page_extra_css   = '
 .related-card-badge{font-size:0.6rem;letter-spacing:2px;text-transform:uppercase;font-weight:700;margin-bottom:0.5rem}
 .related-card h3{font-family:"DM Serif Display",serif;font-size:1.1rem;line-height:1.3;margin-bottom:0.5rem}
 .related-card p{font-size:0.85rem;color:var(--muted)}
-.bg-admin{background:linear-gradient(135deg,var(--terracotta),#8b2f14)}
 .bg-couple{background:linear-gradient(135deg,var(--jade),#0e4a38)}
+.bg-mariage{background:linear-gradient(135deg,#7b3f72,#3d1a3a)}
+.bg-vivre-ensemble{background:linear-gradient(135deg,var(--terracotta),#8b2f14)}
 .bg-argent{background:linear-gradient(135deg,var(--amber),#7a5500)}
-.text-admin{color:var(--terracotta)}.text-couple{color:var(--jade)}.text-argent{color:var(--amber)}
+.bg-vie-pratique{background:linear-gradient(135deg,#2a7a7a,#0d4040)}
+.text-couple{color:var(--jade)}.text-mariage{color:#7b3f72}.text-vivre-ensemble{color:var(--terracotta)}.text-argent{color:var(--amber)}.text-vie-pratique{color:#2a7a7a}
 .cta-newsletter{background:var(--ink);color:var(--cream);text-align:center;padding:4rem 2rem;margin:3rem 0;border-radius:var(--radius)}
 .cta-newsletter h3{font-family:"DM Serif Display",serif;font-size:1.6rem;margin-bottom:0.5rem}
 .cta-newsletter p{color:rgba(250,248,244,0.5);margin-bottom:1.5rem}
@@ -325,12 +327,12 @@ include 'header.php';
     <h2 class="related-title">Articles similaires</h2>
     <div class="related-grid">
       <a class="related-card" href="quitter-canada-expat-vietnam">
-        <div class="related-card-banner bg-admin">📋</div>
-        <div class="related-card-body"><div class="related-card-badge text-admin">Démarches</div><h3>Quitter le Canada : impôts, banque et permis de travail</h3><p>Ce que j'ai dû faire avant de partir. Retour d'expérience concret.</p></div>
+        <div class="related-card-banner bg-vie-pratique">📋</div>
+        <div class="related-card-body"><div class="related-card-badge text-vie-pratique">Vie pratique</div><h3>Quitter le Canada : impôts, banque et permis de travail</h3><p>Ce que j'ai dû faire avant de partir. Retour d'expérience concret.</p></div>
       </a>
       <a class="related-card" href="se-marier-vietnamienne-demarches-france">
-        <div class="related-card-banner bg-couple">💕</div>
-        <div class="related-card-body"><div class="related-card-badge text-couple">Couple Mixte</div><h3>Se marier avec une Vietnamienne : les démarches côté France</h3><p>Documents, délais, traductions… Le parcours complet.</p></div>
+        <div class="related-card-banner bg-mariage">💍</div>
+        <div class="related-card-body"><div class="related-card-badge text-mariage">Se marier</div><h3>Se marier avec une Vietnamienne : les démarches côté France</h3><p>Documents, délais, traductions… Le parcours complet.</p></div>
       </a>
       <a class="related-card" href="budget-mensuel-hanoi-2026">
         <div class="related-card-banner bg-argent">💻</div>

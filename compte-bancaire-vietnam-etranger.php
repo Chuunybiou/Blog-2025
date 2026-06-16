@@ -1,12 +1,26 @@
 ﻿<?php
+require_once __DIR__ . '/config/site.php';
 $page_title       = 'Compte bancaire au Vietnam pour étrangers — Cap Vietnam';
 $page_description = 'Ouvrir un compte bancaire au Vietnam : banques acceptant les étrangers, documents requis, comptes VND et USD, et alternatives Wise pour les expatriés.';
-$page_canonical   = 'https://www.blog-capvietnam.fr/compte-bancaire-vietnam-etranger';
+$page_canonical   = SITE_URL . '/compte-bancaire-vietnam-etranger';
 $page_og_title    = 'Ouvrir un compte bancaire au Vietnam en tant qu\'étranger';
 $page_og_desc     = 'Quelle banque choisir au Vietnam pour un expatrié français : Vietcombank, BIDV, HSBC.';
-$page_og_url      = 'https://www.blog-capvietnam.fr/compte-bancaire-vietnam-etranger';
+$page_og_url      = SITE_URL . '/compte-bancaire-vietnam-etranger';
 $page_og_image    = 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Ouvrir un compte bancaire au Vietnam pour un etranger","datePublished":"2026-04-05","dateModified":"2026-04-05","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1200&q=80","description":"Quelle banque choisir au Vietnam pour un expatrie francais : Vietcombank, BIDV, HSBC.","timeRequired":"PT6M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/compte-bancaire-vietnam-etranger"}';
+$page_schema      = json_encode([
+  '@context'         => 'https://schema.org',
+  '@type'            => 'Article',
+  'headline'         => 'Ouvrir un compte bancaire au Vietnam en tant qu\'étranger',
+  'description'      => 'Quelle banque choisir au Vietnam pour un expatrié français : Vietcombank, BIDV, HSBC.',
+  'image'            => 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1200&q=80',
+  'datePublished'    => '2026-04-03',
+  'dateModified'     => '2026-06-15',
+  'author'           => ['@type' => 'Person', 'name' => 'Anthony Bouillon', 'url' => SITE_URL . '/a-propos-capvietnam'],
+  'publisher'        => ['@type' => 'Organization', 'name' => 'Cap Vietnam', 'url' => SITE_URL],
+  'mainEntityOfPage' => SITE_URL . '/compte-bancaire-vietnam-etranger',
+  'inLanguage'       => 'fr',
+  'articleSection'   => 'Démarches Administratives',
+], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
 
 $article_color        = 'terracotta';
 $article_hero_bg      = '#3a1a0a';
@@ -14,7 +28,7 @@ $article_glow         = 'rgba(191,74,42,0.15)';
 $article_badge        = 'rgba(191,74,42,0.2)';
 $article_badge_c      = 'var(--terracotta-soft)';
 $article_category     = 'Démarches Admin';
-$article_category_url = 'https://www.blog-capvietnam.fr/articles-capvietnam';
+$article_category_url = SITE_URL . '/articles-capvietnam';
 $page_faq = [
   ['q' => "Combien de temps faut-il pour ouvrir un compte bancaire au Vietnam ?",
    'a' => "En agence, comptez 30 à 60 minutes. La carte de débit est généralement remise immédiatement ou sous 3 à 5 jours ouvrés. Certaines banques comme Techcombank permettent une pré-inscription en ligne."],
@@ -234,7 +248,7 @@ include 'header.php';
 
 <?php
 $current_slug = 'compte-bancaire-vietnam-etranger';
-$current_cat  = 'admin';
+$current_cat  = 'vie-pratique';
 include '_related-articles.php';
 ?>
 

@@ -1,12 +1,26 @@
 ﻿<?php
+require_once __DIR__ . '/config/site.php';
 $page_title       = 'Compte bancaire au Canada depuis l\'Europe : guide Wealthsimple 2026';
 $page_description = 'Comment ouvrir un compte bancaire canadien depuis la France ou l\'Europe avec Wealthsimple ? CELI, compte chèques, investissement : guide complet pour les expatriés.';
-$page_canonical   = 'https://www.blog-capvietnam.fr/compte-bancaire-canada-europe-wealthsimple';
+$page_canonical   = SITE_URL . '/compte-bancaire-canada-europe-wealthsimple';
 $page_og_title    = 'Ouvrir un compte bancaire au Canada depuis l\'Europe : guide Wealthsimple 2026';
 $page_og_desc     = 'Vous êtes en France et voulez un compte bancaire canadien ? Guide complet pour ouvrir un compte Wealthsimple et gérer vos finances franco-canadiennes.';
-$page_og_url      = 'https://www.blog-capvietnam.fr/compte-bancaire-canada-europe-wealthsimple';
+$page_og_url      = SITE_URL . '/compte-bancaire-canada-europe-wealthsimple';
 $page_og_image    = 'https://images.unsplash.com/photo-1494256997604-768d1f608cac?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"Article","headline":"Compte bancaire au Canada depuis l\'Europe : guide Wealthsimple 2026","datePublished":"2026-05-21","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos-capvietnam"},"publisher":{"@type":"Organization","name":"Anthony Bouillon"},"mainEntityOfPage":"https://www.blog-capvietnam.fr/compte-bancaire-canada-europe-wealthsimple","inLanguage":"fr","articleSection":"Argent & Travail"}';
+$page_schema      = json_encode([
+  '@context'         => 'https://schema.org',
+  '@type'            => 'Article',
+  'headline'         => 'Compte bancaire au Canada depuis l\'Europe : guide Wealthsimple 2026',
+  'description'      => 'Comment ouvrir un compte bancaire canadien depuis la France ou l\'Europe avec Wealthsimple ? CELI, compte chèques, investissement.',
+  'image'            => 'https://images.unsplash.com/photo-1494256997604-768d1f608cac?w=1200&q=80',
+  'datePublished'    => '2026-05-21',
+  'dateModified'     => '2026-06-15',
+  'author'           => ['@type' => 'Person', 'name' => 'Anthony Bouillon', 'url' => SITE_URL . '/a-propos-capvietnam'],
+  'publisher'        => ['@type' => 'Organization', 'name' => 'Cap Vietnam', 'url' => SITE_URL],
+  'mainEntityOfPage' => SITE_URL . '/compte-bancaire-canada-europe-wealthsimple',
+  'inLanguage'       => 'fr',
+  'articleSection'   => 'Argent & Travail',
+], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
 
 $article_color        = 'amber';
 $article_hero_bg      = '#1a2a00';
@@ -14,7 +28,7 @@ $article_glow         = 'rgba(80,150,50,0.18)';
 $article_badge        = 'rgba(80,150,50,0.22)';
 $article_badge_c      = '#8ecb6a';
 $article_category     = 'Argent &amp; Travail';
-$article_category_url = 'https://www.blog-capvietnam.fr/articles-capvietnam';
+$article_category_url = SITE_URL . '/articles-capvietnam';
 
 $page_faq = [
   ['q' => 'Peut-on ouvrir un compte Wealthsimple depuis la France ?',

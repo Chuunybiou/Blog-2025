@@ -30,7 +30,7 @@ $article_category     = 'Démarches Admin';
 $article_category_url = SITE_URL . '/articles-capvietnam';
 $page_faq = [
   ['q' => 'Est-ce que le mariage au Vietnam est reconnu en France ?',
-   'a' => 'Oui, à condition d\'avoir fait transcrire le mariage au Service Central d\'État Civil de Nantes et d\'avoir obtenu au préalable le CCAM (certificat de coutume et acte de mariage). Sans transcription, le mariage n\'a aucun effet légal en France.'],
+   'a' => 'Oui, à condition d\'avoir obtenu le CCAM (Certificat de Capacité à Mariage) auprès du consulat français <em>avant</em> le mariage, et d\'avoir ensuite fait transcrire l\'acte de mariage au Service Central d\'État Civil de Nantes. Sans transcription, le mariage n\'a aucun effet légal en France.'],
   ['q' => 'Dois-je être présent physiquement au Vietnam pour le mariage ?',
    'a' => 'Oui, obligatoirement. Les deux époux doivent être physiquement présents lors de la cérémonie civile au comité populaire. Le mariage par procuration n\'est pas possible pour un mariage franco-vietnamien.'],
   ['q' => 'Combien de temps dure la procédure au Vietnam de bout en bout ?',
@@ -96,22 +96,22 @@ include 'header.php';
       <li>Constituer les dossiers des deux côtés</li>
       <li>Se présenter ensemble au comité populaire pour la cérémonie</li>
     </ol>
-    <p>Après le mariage, d'autres démarches permettront de faire reconnaître ce mariage en France (CCAM, transcription à Nantes). → <a href="faire-venir-conjointe-vietnamienne-france">Guide complet du regroupement familial franco-vietnamien</a></p>
+    <p>Après le mariage, la transcription de l'acte auprès du Service Central d'État Civil de Nantes lui donnera sa pleine valeur légale en France. → <a href="faire-venir-conjointe-vietnamienne-france">Guide complet : faire venir son conjoint vietnamien en France</a></p>
 
     <h2 id="section-2">Le certificat de capacité matrimoniale : la démarche française</h2>
-    <p>Le certificat de capacité matrimoniale (CCM) est un document délivré par l'ambassade de France à Hanoï (ou le consulat à Hô Chi Minh-Ville) qui atteste que tu n'as pas d'empêchement à te marier selon la loi française.</p>
-    <p>Documents à fournir à l'ambassade [À VÉRIFIER la liste complète] :</p>
+    <p>Le certificat de capacité matrimoniale — aussi appelé <strong>CCAM (Certificat de Capacité à Mariage)</strong> — est délivré par le consulat français à Hanoï ou à Hô Chi Minh-Ville. Il atteste que tu n'as aucun empêchement à te marier selon la loi française. Ce document est <strong>obligatoire avant la cérémonie</strong> au comité populaire et doit donc être demandé plusieurs semaines à l'avance.</p>
+    <p>Documents à fournir au consulat :</p>
     <ul>
-      <li>Acte de naissance de moins de 6 mois (obtenu au SCEC de Nantes si né à l'étranger)</li>
-      <li>Attestation de célibat (ou acte de divorce, si précédemment marié)</li>
-      <li>Passeport français</li>
-      <li>Formulaire de demande</li>
+      <li>Acte de naissance intégral de moins de 6 mois (obtenu au SCEC de Nantes si né à l'étranger)</li>
+      <li>Attestation de célibat ou acte de divorce (si précédemment marié)</li>
+      <li>Passeport français en cours de validité</li>
+      <li>Justificatif de résidence au Vietnam</li>
+      <li>Formulaire de demande fourni par le consulat</li>
     </ul>
-    <p>Délai : <strong>[À VÉRIFIER] semaines</strong> après dépôt du dossier complet. Coût : <strong>[À VÉRIFIER] €</strong>.</p>
-    <p>La publication de bans à l'ambassade est obligatoire avant la délivrance du certificat. L'affichage dure [À VÉRIFIER] jours.</p>
+    <p>Délai : <strong>4 à 6 semaines</strong> (10 jours ouvrés de publication des bans + instruction). Coût : <strong>gratuit</strong>. Validité : <strong>1 an</strong>.</p>
 
     <div class="tip-box">
-      <strong>Anticipe !</strong> Si tu n'as pas encore ton acte de naissance récent, commande-le en ligne sur le site du SCEC (Service Central d'État Civil de Nantes) ou via Service Public. Délai : [À VÉRIFIER] jours ouvrés.
+      <strong>Anticipe !</strong> Commande ton acte de naissance récent au SCEC de Nantes dès que possible — délai : 5 à 10 jours ouvrés. Pour le détail complet des étapes et documents CCAM : <a href="certificat-capacite-mariage-vietnam">Guide complet du CCAM</a>.
     </div>
 
     <h2 id="section-3">Les documents requis côté vietnamien</h2>
@@ -134,9 +134,9 @@ include 'header.php';
       </thead>
       <tbody>
         <tr>
-          <td>Certificat de capacité matrimoniale (Français)</td>
-          <td>Ambassade de France</td>
-          <td>[À VÉRIFIER] semaines</td>
+          <td>CCAM — Certificat de Capacité à Mariage (Français)</td>
+          <td>Consulat français (Hanoï ou HCMV)</td>
+          <td>4 à 6 semaines</td>
         </tr>
         <tr>
           <td>Attestation de célibat (Vietnamien)</td>
@@ -146,7 +146,7 @@ include 'header.php';
         <tr>
           <td>Acte de naissance (Français)</td>
           <td>SCEC Nantes</td>
-          <td>[À VÉRIFIER] jours</td>
+          <td>5 à 10 jours ouvrés</td>
         </tr>
         <tr>
           <td>Dossier de mariage complet</td>
@@ -170,11 +170,13 @@ include 'header.php';
     <h2 id="section-5">Ce qu'il faut faire après le mariage</h2>
     <p>Le mariage est célébré — félicitations ! Mais côté administratif, il reste du travail :</p>
     <ol>
-      <li><strong>Obtenir le CCAM</strong> (certificat de coutume et acte de mariage) auprès d'un notaire vietnamien → <a href="certificat-coutumier-acte-mariage-vietnam-ccam">Guide CCAM</a></li>
       <li><strong>Faire transcrire le mariage</strong> au Service Central d'État Civil de Nantes → <a href="transcription-mariage-service-central-nantes">Guide transcription Nantes</a></li>
-      <li>Si ton conjoint veut venir en France : <strong>demander le visa long séjour</strong> → <a href="visa-long-sejour-conjoint-vietnamien-france">Guide visa conjoint</a></li>
-      <li>Si tu restes au Vietnam : mettre à jour votre situation légale côté vietnam (enregistrement domicile, etc.)</li>
+      <li>Si ton conjoint veut venir en France : <strong>demander le visa long séjour conjoint de Français</strong> → <a href="visa-long-sejour-conjoint-vietnamien-france">Guide visa conjoint</a></li>
+      <li>Si tu restes au Vietnam : mettre à jour votre situation légale côté Vietnam (enregistrement de domicile, etc.)</li>
     </ol>
+    <div class="tip-box">
+      <strong>Le CCAM était une étape AVANT le mariage.</strong> Le Certificat de Capacité à Mariage est obtenu au consulat français avant la cérémonie au comité populaire (voir section 2 ci-dessus). Une fois marié, il n'y a rien de plus à faire avec ce document.
+    </div>
 
     <h2 id="section-6">La cérémonie traditionnelle : séparée ou combinée ?</h2>
     <p>La cérémonie civile au comité populaire n'a rien de festif. La plupart des couples franco-vietnamiens organisent une <strong>cérémonie traditionnelle séparée</strong> (lễ cưới) avec les familles, avant ou après le mariage civil. Cette cérémonie n'a pas de valeur légale mais elle est culturellement très importante au Vietnam.</p>
@@ -217,7 +219,7 @@ include 'header.php';
 <?php
 require_once __DIR__ . '/config/site.php';
 $current_slug = 'se-marier-vietnam-procedure-comite-populaire';
-$current_cat  = 'admin';
+$current_cat  = 'mariage';
 include '_related-articles.php';
 ?>
 

@@ -1,12 +1,26 @@
 ﻿<?php
+require_once __DIR__ . '/config/site.php';
 $page_title       = 'Budget mensuel à Hô-Chi-Minh-Ville 2026 — Cap Vietnam';
 $page_description = 'Budget réel d\'un expatrié à Hô-Chi-Minh-Ville en 2026 : loyer par quartier, nourriture, transports Grab, loisirs et comparatif complet avec Hanoï.';
-$page_canonical   = 'https://www.blog-capvietnam.fr/budget-mensuel-hcmc-2026';
+$page_canonical   = SITE_URL . '/budget-mensuel-hcmc-2026';
 $page_og_title    = 'Budget mensuel à Hô-Chi-Minh-Ville 2026 : chiffres réels';
 $page_og_desc     = 'Loyer, transport, loisirs et coût de la vie à Saigon en 2026 — comparatif avec Hanoï.';
-$page_og_url      = 'https://www.blog-capvietnam.fr/budget-mensuel-hcmc-2026';
+$page_og_url      = SITE_URL . '/budget-mensuel-hcmc-2026';
 $page_og_image    = 'https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Budget mensuel a Ho-Chi-Minh-Ville en 2026 : combien ca coute vraiment","datePublished":"2026-04-26","dateModified":"2026-04-26","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=1200&q=80","description":"Loyer, transport, loisirs et cout de la vie a Saigon en 2026 — comparatif avec Hanoi.","timeRequired":"PT8M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/budget-mensuel-hcmc-2026"}';
+$page_schema      = json_encode([
+  '@context'         => 'https://schema.org',
+  '@type'            => 'Article',
+  'headline'         => 'Budget mensuel à Hô-Chi-Minh-Ville 2026 : chiffres réels',
+  'description'      => 'Loyer, transport, loisirs et coût de la vie à Saigon en 2026 — comparatif avec Hanoï.',
+  'image'            => 'https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=1200&q=80',
+  'datePublished'    => '2026-04-26',
+  'dateModified'     => '2026-06-15',
+  'author'           => ['@type' => 'Person', 'name' => 'Anthony Bouillon', 'url' => SITE_URL . '/a-propos-capvietnam'],
+  'publisher'        => ['@type' => 'Organization', 'name' => 'Cap Vietnam', 'url' => SITE_URL],
+  'mainEntityOfPage' => SITE_URL . '/budget-mensuel-hcmc-2026',
+  'inLanguage'       => 'fr',
+  'articleSection'   => 'Argent & Travail',
+], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
 
 $article_color   = 'amber';
 $article_hero_bg = '#3a2800';
@@ -15,7 +29,7 @@ $article_badge   = 'rgba(184,134,11,0.25)';
 $article_badge_c = 'var(--amber-soft)';
 
 $article_category     = 'Argent &amp; Travail';
-$article_category_url = 'https://www.blog-capvietnam.fr/articles-capvietnam';
+$article_category_url = SITE_URL . '/articles-capvietnam';
 $page_faq = [
   ['q' => 'HCMC est-elle vraiment plus chère que Hanoï ?',
    'a' => 'Oui, en moyenne de 15 à 25% selon le quartier et le style de vie. Le logement est le poste le plus impacté dans les quartiers expats comme Thao Dien (District 2). La nourriture de rue et les services locaux restent comparables. La grande différence est le transport : sans scooter, les courses Grab s\'accumulent vite dans une ville aussi étendue.'],

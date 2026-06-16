@@ -1,12 +1,26 @@
 ﻿<?php
+require_once __DIR__ . '/config/site.php';
 $page_title       = 'Ramener des produits français au Vietnam : ce qu\'on peut (et ne peut pas) en 2026';
 $page_description = 'Fromages, vins, médicaments, cosmétiques, électronique : ce qu\'on peut ramener de France au Vietnam dans ses valises sans problèmes douaniers. Guide pratique et liste concrète.';
-$page_canonical   = 'https://www.blog-capvietnam.fr/ramener-produits-francais-vietnam';
+$page_canonical   = SITE_URL . '/ramener-produits-francais-vietnam';
 $page_og_title    = 'Ramener des produits français au Vietnam : guide douane 2026';
 $page_og_desc     = 'Ce qu\'on peut ramener dans ses bagages de France au Vietnam : alimentation, cosmétiques, médicaments, électronique. Limites douanières et conseils pratiques.';
-$page_og_url      = 'https://www.blog-capvietnam.fr/ramener-produits-francais-vietnam';
+$page_og_url      = SITE_URL . '/ramener-produits-francais-vietnam';
 $page_og_image    = 'https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"Article","headline":"Ramener des produits français au Vietnam : ce qu\'on peut et ne peut pas en 2026","datePublished":"2026-05-21","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos-capvietnam"},"publisher":{"@type":"Organization","name":"Anthony Bouillon"},"mainEntityOfPage":"https://www.blog-capvietnam.fr/ramener-produits-francais-vietnam","inLanguage":"fr","articleSection":"Vie Pratique"}';
+$page_schema      = json_encode([
+  '@context'         => 'https://schema.org',
+  '@type'            => 'Article',
+  'headline'         => 'Ramener des produits français au Vietnam : ce qu\'on peut (et ne peut pas) en 2026',
+  'description'      => 'Fromages, vins, médicaments, cosmétiques, électronique : ce qu\'on peut ramener de France au Vietnam dans ses valises sans problèmes douaniers.',
+  'image'            => 'https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?w=1200&q=80',
+  'datePublished'    => '2026-05-21',
+  'dateModified'     => '2026-06-15',
+  'author'           => ['@type' => 'Person', 'name' => 'Anthony Bouillon', 'url' => SITE_URL . '/a-propos-capvietnam'],
+  'publisher'        => ['@type' => 'Organization', 'name' => 'Cap Vietnam', 'url' => SITE_URL],
+  'mainEntityOfPage' => SITE_URL . '/ramener-produits-francais-vietnam',
+  'inLanguage'       => 'fr',
+  'articleSection'   => 'Vie Pratique',
+], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
 
 $article_color        = 'terracotta';
 $article_hero_bg      = '#2a1008';
@@ -14,7 +28,7 @@ $article_glow         = 'rgba(191,74,42,0.18)';
 $article_badge        = 'rgba(191,74,42,0.22)';
 $article_badge_c      = 'var(--terracotta-soft)';
 $article_category     = 'Vie Pratique';
-$article_category_url = 'https://www.blog-capvietnam.fr/articles-capvietnam';
+$article_category_url = SITE_URL . '/articles-capvietnam';
 
 $page_faq = [
   ['q' => 'Peut-on ramener du fromage français au Vietnam dans ses bagages ?',
@@ -258,7 +272,7 @@ include 'header.php';
 
 <?php
 $current_slug = 'ramener-produits-francais-vietnam';
-$current_cat  = 'pratique';
+$current_cat  = 'vie-pratique';
 include '_related-articles.php';
 ?>
 

@@ -1,12 +1,12 @@
 ﻿<?php
 $page_title       = 'Couple franco-vietnamien : différences culturelles';
 $page_description = 'Les vraies différences culturelles dans un couple franco-vietnamien : famille, argent, rapport au temps et aux émotions. Témoignage et conseils pratiques.';
-$page_canonical   = 'https://www.blog-capvietnam.fr/differences-culturelles-couple-franco-vietnamien';
+$page_canonical   = 'https://blog-capvietnam.fr/differences-culturelles-couple-franco-vietnamien';
 $page_og_title    = 'Différences culturelles dans un couple franco-vietnamien';
 $page_og_desc     = 'Famille, argent, communication : les vraies différences culturelles dans un couple franco-vietnamien.';
-$page_og_url      = 'https://www.blog-capvietnam.fr/differences-culturelles-couple-franco-vietnamien';
+$page_og_url      = 'https://blog-capvietnam.fr/differences-culturelles-couple-franco-vietnamien';
 $page_og_image    = 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Differences culturelles en couple franco-vietnamien","datePublished":"2026-03-05","dateModified":"2026-03-05","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1200&q=80","description":"Famille, argent, communication : les vraies differences culturelles dans un couple franco-vietnamien.","timeRequired":"PT7M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/differences-culturelles-couple-franco-vietnamien"}';
+$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Differences culturelles en couple franco-vietnamien","datePublished":"2026-03-05","dateModified":"2026-03-05","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1200&q=80","description":"Famille, argent, communication : les vraies differences culturelles dans un couple franco-vietnamien.","timeRequired":"PT7M","inLanguage":"fr","url":"https://blog-capvietnam.fr/differences-culturelles-couple-franco-vietnamien"}';
 
 $article_color   = 'jade';
 $article_hero_bg = '#1a3a1e';
@@ -15,7 +15,7 @@ $article_badge   = 'rgba(27,107,82,0.25)';
 $article_badge_c = '#4db890';
 
 $article_category     = 'Couple Mixte';
-$article_category_url = 'https://www.blog-capvietnam.fr/articles-capvietnam';
+$article_category_url = 'https://blog-capvietnam.fr/articles-capvietnam';
 $page_faq = [
   ['q' => 'Apprendre quelques mots de vietnamien change-t-il vraiment quelque chose ?',
    'a' => 'Oui, massivement. Même bonjour (xin chào) et merci (cảm ơn) prononcés avec l\'effort sincère d\'un étranger déclenchent un sourire immédiat et ouvrent les portes de la belle-famille bien plus vite que n\'importe quel cadeau.'],

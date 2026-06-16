@@ -1,12 +1,12 @@
 ﻿<?php
 $page_title       = 'Prix d\'un mariage franco-vietnamien : budget réel et à quoi s\'attendre';
 $page_description = 'Combien coûte vraiment un mariage avec une Vietnamienne ? Cérémonie au Vietnam, réception en France, cadeaux, dot… Mon budget détaillé sans tabous.';
-$page_canonical   = 'https://www.blog-capvietnam.fr/prix-mariage-franco-vietnamien';
+$page_canonical   = 'https://blog-capvietnam.fr/prix-mariage-franco-vietnamien';
 $page_og_title    = 'Prix d\'un mariage franco-vietnamien : ce que ça coûte vraiment';
 $page_og_desc     = 'Budget détaillé d\'un mariage franco-vietnamien : cérémonie au Vietnam, réception en France, cadeaux familiaux, frais administratifs. Chiffres réels, sans tabous.';
-$page_og_url      = 'https://www.blog-capvietnam.fr/prix-mariage-franco-vietnamien';
+$page_og_url      = 'https://blog-capvietnam.fr/prix-mariage-franco-vietnamien';
 $page_og_image    = 'https://images.unsplash.com/photo-1525772764200-be829a350797?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"Article","headline":"Prix d\'un mariage franco-vietnamien : budget réel et à quoi s\'attendre","datePublished":"2026-05-15","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos-capvietnam"},"publisher":{"@type":"Organization","name":"Anthony Bouillon"},"mainEntityOfPage":"https://www.blog-capvietnam.fr/prix-mariage-franco-vietnamien","inLanguage":"fr","articleSection":"Couple franco-vietnamien"}';
+$page_schema      = '{"@context":"https://schema.org","@type":"Article","headline":"Prix d\'un mariage franco-vietnamien : budget réel et à quoi s\'attendre","datePublished":"2026-05-15","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://blog-capvietnam.fr/a-propos-capvietnam"},"publisher":{"@type":"Organization","name":"Anthony Bouillon"},"mainEntityOfPage":"https://blog-capvietnam.fr/prix-mariage-franco-vietnamien","inLanguage":"fr","articleSection":"Couple franco-vietnamien"}';
 
 $article_color        = 'jade';
 $article_hero_bg      = '#1a0e2a';
@@ -14,7 +14,7 @@ $article_glow         = 'rgba(180,60,120,0.15)';
 $article_badge        = 'rgba(27,107,82,0.22)';
 $article_badge_c      = '#6bc98a';
 $article_category     = 'Couple franco-vietnamien';
-$article_category_url = 'https://www.blog-capvietnam.fr/articles-capvietnam';
+$article_category_url = 'https://blog-capvietnam.fr/articles-capvietnam';
 
 $page_faq = [
   ['q' => 'Combien coûte un mariage franco-vietnamien en moyenne ?',
@@ -226,7 +226,7 @@ include 'header.php';
 
 <?php
 $current_slug = 'prix-mariage-franco-vietnamien';
-$current_cat  = 'couple';
+$current_cat  = 'mariage';
 include '_related-articles.php';
 ?>
 

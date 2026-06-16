@@ -1,12 +1,12 @@
 ﻿<?php
 $page_title       = 'Créer un blog expat rentable depuis le Vietnam';
 $page_description = 'Comment créer un blog expat rentable depuis le Vietnam : niche, SEO, monétisation (affiliation, sponsoring, infoproduits), hébergement et fiscalité.';
-$page_canonical   = 'https://www.blog-capvietnam.fr/creer-blog-expat-rentable';
+$page_canonical   = 'https://blog-capvietnam.fr/creer-blog-expat-rentable';
 $page_og_title    = 'Créer un blog expat rentable depuis le Vietnam : guide complet 2026';
 $page_og_desc     = 'Comment créer un blog expatrié rentable : niche, SEO, WordPress, affiliation.';
-$page_og_url      = 'https://www.blog-capvietnam.fr/creer-blog-expat-rentable';
+$page_og_url      = 'https://blog-capvietnam.fr/creer-blog-expat-rentable';
 $page_og_image    = 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Creer un blog expat rentable depuis le Vietnam","datePublished":"2026-04-01","dateModified":"2026-04-01","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=1200&q=80","description":"Comment creer un blog expatrie rentable : niche, SEO, WordPress, affiliation.","timeRequired":"PT10M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/creer-blog-expat-rentable"}';
+$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Creer un blog expat rentable depuis le Vietnam","datePublished":"2026-04-01","dateModified":"2026-04-01","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=1200&q=80","description":"Comment creer un blog expatrie rentable : niche, SEO, WordPress, affiliation.","timeRequired":"PT10M","inLanguage":"fr","url":"https://blog-capvietnam.fr/creer-blog-expat-rentable"}';
 
 $article_color   = 'amber';
 $article_hero_bg = '#3a2800';
@@ -15,7 +15,7 @@ $article_badge   = 'rgba(184,134,11,0.25)';
 $article_badge_c = 'var(--amber-soft)';
 
 $article_category     = 'Argent &amp; Travail';
-$article_category_url = 'https://www.blog-capvietnam.fr/articles-capvietnam';
+$article_category_url = 'https://blog-capvietnam.fr/articles-capvietnam';
 $page_faq = [
   ['q' => 'Combien de temps faut-il pour qu\'un blog expat devienne rentable ?',
    'a' => 'En publiant 2 à 4 articles optimisés SEO par mois, les premiers revenus significatifs (50–200 €/mois) apparaissent généralement entre 6 et 12 mois. Un revenu confortable (500–2 000 €/mois) nécessite 18 à 36 mois de travail régulier. Les blogs qui réussissent le plus vite ont une niche précise, un calendrier éditorial tenu et une vraie stratégie SEO dès le départ.'],

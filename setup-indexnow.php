@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Setup IndexNow — à exécuter UNE SEULE FOIS via CLI ou navigateur
  * Usage : php setup-indexnow.php
@@ -37,6 +37,6 @@ echo "✅ IndexNow configuré !\n";
 echo "Clé : {$key}\n";
 echo "Fichier créé : {$key}.txt\n";
 echo "\nÉtapes suivantes :\n";
-echo "1. Déployer sur le serveur (le fichier {$key}.txt doit être accessible via https://www.blog-capvietnam.fr/{$key}.txt)\n";
+echo "1. Déployer sur le serveur (le fichier {$key}.txt doit être accessible via https://blog-capvietnam.fr/{$key}.txt)\n";
 echo "2. Soumettre dans Bing Webmaster Tools → IndexNow\n";
 echo "3. Utiliser indexnow-ping.php pour pinguer après chaque publication\n";

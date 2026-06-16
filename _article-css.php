@@ -140,11 +140,12 @@ $page_extra_css = "
 .related-card-banner{height:140px;display:flex;align-items:center;justify-content:center;font-size:2.5rem}
 .related-card-body{padding:1.5rem}.related-card-badge{font-size:0.6rem;letter-spacing:2px;text-transform:uppercase;font-weight:700;margin-bottom:0.5rem}
 .related-card h3{font-family:\"DM Serif Display\",serif;font-size:1.1rem;line-height:1.3;margin-bottom:0.5rem}.related-card p{font-size:0.85rem;color:var(--muted)}
-.bg-admin{background:linear-gradient(135deg,var(--terracotta),#8b2f14)}
 .bg-couple{background:linear-gradient(135deg,var(--jade),#0e4a38)}
+.bg-mariage{background:linear-gradient(135deg,#7b3f72,#3d1a3a)}
+.bg-vivre-ensemble{background:linear-gradient(135deg,var(--terracotta),#8b2f14)}
 .bg-argent{background:linear-gradient(135deg,var(--amber),#7a5500)}
-.bg-voyager{background:linear-gradient(135deg,#1a5f8a,#0d3a56)}
-.text-admin{color:var(--terracotta)}.text-couple{color:var(--jade)}.text-argent{color:var(--amber)}.text-voyager{color:#1a5f8a}
+.bg-vie-pratique{background:linear-gradient(135deg,#2a7a7a,#0d4040)}
+.text-couple{color:var(--jade)}.text-mariage{color:#7b3f72}.text-vivre-ensemble{color:var(--terracotta)}.text-argent{color:var(--amber)}.text-vie-pratique{color:#2a7a7a}
 .cta-newsletter{background:var(--ink);color:var(--cream);text-align:center;padding:4rem 2rem;margin:3rem 0;border-radius:var(--radius)}
 .cta-newsletter h3{font-family:\"DM Serif Display\",serif;font-size:1.6rem;margin-bottom:0.5rem}
 .cta-newsletter p{color:rgba(250,248,244,0.5);margin-bottom:1.5rem}

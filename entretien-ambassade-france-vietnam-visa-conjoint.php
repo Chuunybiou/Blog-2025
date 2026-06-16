@@ -17,7 +17,7 @@ $page_schema      = json_encode([
   'publisher'       => ['@type' => 'Organization', 'name' => SITE_NAME, 'url' => SITE_URL],
   'mainEntityOfPage'=> SITE_URL . '/entretien-ambassade-france-vietnam-visa-conjoint',
   'inLanguage'      => 'fr',
-  'articleSection'  => 'Démarches Administratives',
+  'articleSection'  => 'Vivre ensemble : ici ou là-bas',
 ], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
 
 $article_color        = 'jade';
@@ -26,13 +26,13 @@ $article_glow         = 'rgba(27,107,82,0.15)';
 $article_badge        = 'rgba(191,74,42,0.25)';
 $article_badge_c      = '#e8856a';
 
-$article_category     = 'Démarches Admin';
-$article_category_url = SITE_URL . '/articles-capvietnam';
+$article_category     = 'Vivre ensemble';
+$article_category_url = SITE_URL . '/articles-capvietnam?cat=vivre-ensemble';
 $page_faq = [
   ['q' => 'Est-ce que l\'entretien est systématique pour les conjoints vietnamiens ?',
    'a' => 'Non, il n\'est pas automatique mais il est fréquent. L\'ambassade de France au Vietnam convoque notamment les demandeurs dont le dossier présente des points à éclaircir ou pour lesquels la réalité de la vie commune mérite d\'être vérifiée.'],
   ['q' => 'Dans quelle langue se déroule l\'entretien ?',
-   'a' => 'En français ou en anglais selon le niveau du demandeur. Un interprète peut être présent si nécessaire [À VÉRIFIER selon les règles actuelles de l\'ambassade]. L\'entretien peut aussi se dérouler partiellement en vietnamien.'],
+   'a' => 'En français ou en anglais selon le niveau du demandeur. L\'entretien peut également se dérouler partiellement en vietnamien. Un interprète peut être autorisé — renseigne-toi auprès de l\'ambassade au moment de la convocation.'],
   ['q' => 'Mon conjoint peut-il être accompagné lors de l\'entretien ?',
    'a' => 'En général non : l\'entretien est individuel et le conjoint français n\'est pas admis. L\'objectif est de vérifier la sincérité du mariage en posant des questions séparément aux deux époux si nécessaire.'],
   ['q' => 'Que se passe-t-il si mon conjoint répond mal à une question ?',
@@ -48,11 +48,11 @@ include 'header.php';
   <div class="article-hero-inner">
     <div class="breadcrumb">
       <a href="/">Accueil</a><span class="breadcrumb-sep">›</span>
-      <a href="articles-capvietnam">Démarches Administratives</a><span class="breadcrumb-sep">›</span>
+      <a href="articles-capvietnam?cat=vivre-ensemble">Vivre ensemble</a><span class="breadcrumb-sep">›</span>
       <a href="faire-venir-conjointe-vietnamienne-france">Conjoint vietnamien en France</a><span class="breadcrumb-sep">›</span>
       <span>Entretien ambassade</span>
     </div>
-    <span class="article-badge-hero">Démarches Administratives</span>
+    <span class="article-badge-hero">Vivre ensemble</span>
     <h1>Entretien à l'ambassade de France au Vietnam pour visa conjoint : se préparer efficacement</h1>
     <div class="article-hero-meta">
       <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
@@ -87,9 +87,7 @@ include 'header.php';
   <main class="article-content">
     <p><strong>La convocation à l'entretien à l'ambassade fait souvent peur.</strong> C'est normal — c'est l'étape où tu as le moins de contrôle direct. Pourtant, si votre mariage est sincère et votre dossier solide, cet entretien ne devrait pas poser de problème. Ce guide te dit exactement comment préparer ton conjoint pour qu'il arrive confiant et bien préparé.</p>
 
-    <p>Cet article fait partie du <a href="faire-venir-conjointe-vietnamienne-france">guide complet sur le regroupement familial franco-vietnamien</a>.</p>
-
-    <img class="article-photo" src="https://images.unsplash.com/photo-1560472355-109703aa3edc?w=1200&q=80" alt="Entretien officiel documents" width="1200" height="675" loading="lazy">
+    <p>Cet article fait partie du <a href="faire-venir-conjointe-vietnamienne-france">guide complet : faire venir son conjoint vietnamien en France</a>.</p>
 
     <h2 id="section-1">Pourquoi l'ambassade organise-t-elle un entretien ?</h2>
     <p>Le visa "conjoint de Français" est une voie d'installation régulière très demandée. L'ambassade est chargée de vérifier que le mariage est bien réel et non de convenance — un mariage de convenance étant défini comme un mariage contracté dans le seul but d'obtenir un droit au séjour, sans vie commune réelle.</p>
@@ -115,40 +113,42 @@ include 'header.php';
     <h2 id="section-3">Questions types posées lors de l'entretien</h2>
     <p>Ces questions sont compilées à partir de retours de couples franco-vietnamiens — elles ne sont pas officielles et peuvent varier [TON EXPÉRIENCE ICI si tu as passé cet entretien] :</p>
 
-    <table>
+    <div style="overflow-x:auto;border-radius:10px;border:1px solid rgba(77,200,160,0.18);margin:1.5rem 0;">
+    <table style="width:100%;border-collapse:collapse;font-size:0.9rem;">
       <thead>
-        <tr>
-          <th>Thème</th>
-          <th>Questions possibles</th>
+        <tr style="background:rgba(27,107,82,0.25);">
+          <th style="padding:0.7rem 1rem;text-align:left;color:#4dc8a0;font-size:0.7rem;letter-spacing:1.5px;font-weight:700;width:28%;">THÈME</th>
+          <th style="padding:0.7rem 1rem;text-align:left;color:#4dc8a0;font-size:0.7rem;letter-spacing:1.5px;font-weight:700;">QUESTIONS POSSIBLES</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>Votre rencontre</td>
-          <td>Comment vous vous êtes rencontrés ? Quand ? Où ? Par l'intermédiaire de qui ?</td>
+        <tr style="border-bottom:1px solid rgba(250,248,244,0.06);">
+          <td style="padding:0.75rem 1rem;font-weight:600;font-size:0.87rem;color:#4dc8a0;">Votre rencontre</td>
+          <td style="padding:0.75rem 1rem;font-size:0.87rem;opacity:0.85;">Comment vous vous êtes rencontrés ? Quand ? Où ? Par l'intermédiaire de qui ?</td>
+        </tr>
+        <tr style="background:rgba(255,255,255,0.02);border-bottom:1px solid rgba(250,248,244,0.06);">
+          <td style="padding:0.75rem 1rem;font-weight:600;font-size:0.87rem;color:#4dc8a0;">Votre relation</td>
+          <td style="padding:0.75rem 1rem;font-size:0.87rem;opacity:0.85;">Depuis combien de temps êtes-vous ensemble ? Combien de fois vous êtes-vous vus en personne ?</td>
+        </tr>
+        <tr style="border-bottom:1px solid rgba(250,248,244,0.06);">
+          <td style="padding:0.75rem 1rem;font-weight:600;font-size:0.87rem;color:#4dc8a0;">Votre conjoint</td>
+          <td style="padding:0.75rem 1rem;font-size:0.87rem;opacity:0.85;">Où est-il né ? Que fait-il dans la vie ? Combien gagne-t-il environ ? Où habite-t-il ?</td>
+        </tr>
+        <tr style="background:rgba(255,255,255,0.02);border-bottom:1px solid rgba(250,248,244,0.06);">
+          <td style="padding:0.75rem 1rem;font-weight:600;font-size:0.87rem;color:#4dc8a0;">Le mariage</td>
+          <td style="padding:0.75rem 1rem;font-size:0.87rem;opacity:0.85;">Qui a fait la demande en mariage ? Où et quand a eu lieu le mariage ?</td>
+        </tr>
+        <tr style="border-bottom:1px solid rgba(250,248,244,0.06);">
+          <td style="padding:0.75rem 1rem;font-weight:600;font-size:0.87rem;color:#4dc8a0;">La vie en France</td>
+          <td style="padding:0.75rem 1rem;font-size:0.87rem;opacity:0.85;">Où allez-vous habiter ? Vous a-t-il déjà présenté à sa famille ?</td>
         </tr>
         <tr>
-          <td>Votre relation</td>
-          <td>Depuis combien de temps êtes-vous ensemble ? Combien de fois vous êtes-vous vus en personne ?</td>
-        </tr>
-        <tr>
-          <td>Votre conjoint</td>
-          <td>Où est-il né ? Que fait-il dans la vie ? Combien gagne-t-il environ ? Où habite-t-il ?</td>
-        </tr>
-        <tr>
-          <td>Le mariage</td>
-          <td>Qui a fait la demande en mariage ? Où et quand a eu lieu le mariage ?</td>
-        </tr>
-        <tr>
-          <td>La vie en France</td>
-          <td>Où allez-vous habiter ? Vous a-t-il déjà présenté à sa famille ?</td>
-        </tr>
-        <tr>
-          <td>Le futur</td>
-          <td>Qu'est-ce que vous comptez faire en France ? Avez-vous des projets d'enfants ?</td>
+          <td style="padding:0.75rem 1rem;font-weight:600;font-size:0.87rem;color:#4dc8a0;">Le futur</td>
+          <td style="padding:0.75rem 1rem;font-size:0.87rem;opacity:0.85;">Qu'est-ce que vous comptez faire en France ? Avez-vous des projets d'enfants ?</td>
         </tr>
       </tbody>
     </table>
+    </div>
 
     <div class="tip-box">
       <strong>Ne récitez pas un script.</strong> Les agents sont formés pour repérer les réponses mémorisées. Préparez les faits, pas les réponses mot pour mot. La fluidité naturelle vaut mieux que la précision mécanique.
@@ -162,7 +162,7 @@ include 'header.php';
       <li><strong>Captures d'écran de conversations</strong> (WhatsApp, Zalo…) sur une longue période</li>
       <li><strong>Preuves de transferts d'argent</strong> si vous vous êtes soutenus financièrement</li>
       <li><strong>Lettres ou emails</strong> échangés</li>
-      <li><strong>Témoignages</strong> écrits de proches qui vous ont vus ensemble [À VÉRIFIER si acceptés par l'ambassade]</li>
+      <li><strong>Témoignages</strong> écrits de proches qui vous ont vus ensemble (valeur indicative — non officiellement requis mais peuvent renforcer le dossier)</li>
     </ul>
 
     <h2 id="section-5">Le déroulement du jour de l'entretien</h2>
@@ -202,7 +202,7 @@ include 'header.php';
       <div class="author-avatar" style="overflow:hidden;position:relative;"><img src="assets/img/profile/anthony-profil.jpg" alt="Anthony Bouillon" width="72" height="72" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"></div>
       <div class="author-info">
         <h4>Anthony Bouillon</h4>
-        <p>Français expatrié à Hanoï. Je partage mon parcours d'installation au Vietnam : démarches, vie de couple mixte et travail en ligne.</p>
+        <p>Français marié à une Vietnamienne, installé à Hanoï. Je partage notre parcours : démarches administratives, mariage franco-vietnamien, vie de couple mixte.</p>
         <div class="author-links">
           <a href="https://www.tiktok.com/@proffrancaisetranger" target="_blank" rel="noopener">TikTok</a>
           <a href="a-propos-capvietnam">À propos</a>
@@ -217,7 +217,7 @@ include 'header.php';
 <?php
 require_once __DIR__ . '/config/site.php';
 $current_slug = 'entretien-ambassade-france-vietnam-visa-conjoint';
-$current_cat  = 'admin';
+$current_cat  = 'vivre-ensemble';
 include '_related-articles.php';
 ?>
 

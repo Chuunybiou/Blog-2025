@@ -1,10 +1,10 @@
 ﻿<?php
 $page_title       = 'Compte bancaire au Vietnam pour Français — Vietcombank, Techcombank, Wise';
 $page_description = 'Faut-il vraiment ouvrir un compte bancaire au Vietnam quand on a un visa touriste 90 jours ? Mon analyse + comparatif Vietcombank, Techcombank, HSBC, et pourquoi j\'utilise Wise à la place.';
-$page_canonical   = 'https://www.blog-capvietnam.fr/banque-vietnam-francais';
+$page_canonical   = 'https://blog-capvietnam.fr/banque-vietnam-francais';
 $page_og_title    = 'Compte bancaire Vietnam pour Français : Vietcombank, Techcombank ou pas du tout ?';
 $page_og_desc     = 'Mon analyse + comparatif des banques vietnamiennes. Pourquoi je n\'ai pas ouvert de compte local malgré plusieurs séjours, et comment je gère mes finances au quotidien.';
-$page_og_url      = 'https://www.blog-capvietnam.fr/banque-vietnam-francais';
+$page_og_url      = 'https://blog-capvietnam.fr/banque-vietnam-francais';
 
 $page_schema = '{
   "@context": "https://schema.org",
@@ -13,9 +13,9 @@ $page_schema = '{
   "description": "Faut-il ouvrir un compte bancaire au Vietnam avec un visa touriste 90 jours ? Analyse personnelle + comparatif Vietcombank, Techcombank, HSBC.",
   "datePublished": "2026-06-01",
   "dateModified": "2026-06-01",
-  "author": {"@type": "Person", "name": "Anthony Bouillon", "url": "https://www.blog-capvietnam.fr/a-propos-capvietnam"},
-  "publisher": {"@type": "Organization", "name": "Cap Vietnam", "url": "https://www.blog-capvietnam.fr"},
-  "mainEntityOfPage": "https://www.blog-capvietnam.fr/banque-vietnam-francais",
+  "author": {"@type": "Person", "name": "Anthony Bouillon", "url": "https://blog-capvietnam.fr/a-propos-capvietnam"},
+  "publisher": {"@type": "Organization", "name": "Cap Vietnam", "url": "https://blog-capvietnam.fr"},
+  "mainEntityOfPage": "https://blog-capvietnam.fr/banque-vietnam-francais",
   "inLanguage": "fr",
   "articleSection": "Argent & travail à distance"
 }';
@@ -26,7 +26,7 @@ $article_glow         = 'rgba(191,74,42,0.15)';
 $article_badge        = 'rgba(191,74,42,0.2)';
 $article_badge_c      = 'var(--terracotta-soft)';
 $article_category     = 'Argent & travail à distance';
-$article_category_url = 'https://www.blog-capvietnam.fr/articles-capvietnam';
+$article_category_url = 'https://blog-capvietnam.fr/articles-capvietnam';
 
 $page_faq = [
   ['q' => "Est-ce vraiment possible d'ouvrir un compte bancaire au Vietnam avec un visa touriste 90 jours ?",

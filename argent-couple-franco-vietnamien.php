@@ -1,12 +1,12 @@
 ﻿<?php
 $page_title       = 'Argent et couple franco-vietnamien : ce qu\'on ne dit pas assez';
 $page_description = 'Transparence financière, soutien à la famille, qui paie quoi… Comment on gère l\'argent dans notre couple franco-vietnamien. Mon expérience honnête, sans généraliser.';
-$page_canonical   = 'https://www.blog-capvietnam.fr/argent-couple-franco-vietnamien';
+$page_canonical   = 'https://blog-capvietnam.fr/argent-couple-franco-vietnamien';
 $page_og_title    = 'Argent et couple franco-vietnamien : transparence, famille, et ce qu\'on ne dit pas assez';
 $page_og_desc     = 'Comment gérer l\'argent dans un couple franco-vietnamien : soutien à la famille vietnamienne, partage des dépenses, communication financière. Mon expérience.';
-$page_og_url      = 'https://www.blog-capvietnam.fr/argent-couple-franco-vietnamien';
+$page_og_url      = 'https://blog-capvietnam.fr/argent-couple-franco-vietnamien';
 $page_og_image    = 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"Article","headline":"Argent et couple franco-vietnamien : ce qu\'on ne dit pas assez","datePublished":"2026-05-15","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos-capvietnam"},"publisher":{"@type":"Organization","name":"Anthony Bouillon"},"mainEntityOfPage":"https://www.blog-capvietnam.fr/argent-couple-franco-vietnamien","inLanguage":"fr","articleSection":"Couple franco-vietnamien"}';
+$page_schema      = '{"@context":"https://schema.org","@type":"Article","headline":"Argent et couple franco-vietnamien : ce qu\'on ne dit pas assez","datePublished":"2026-05-15","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://blog-capvietnam.fr/a-propos-capvietnam"},"publisher":{"@type":"Organization","name":"Anthony Bouillon"},"mainEntityOfPage":"https://blog-capvietnam.fr/argent-couple-franco-vietnamien","inLanguage":"fr","articleSection":"Couple franco-vietnamien"}';
 
 $article_color        = 'jade';
 $article_hero_bg      = '#0e2a20';
@@ -14,7 +14,7 @@ $article_glow         = 'rgba(27,107,82,0.18)';
 $article_badge        = 'rgba(27,107,82,0.22)';
 $article_badge_c      = '#6bc98a';
 $article_category     = 'Couple franco-vietnamien';
-$article_category_url = 'https://www.blog-capvietnam.fr/articles-capvietnam';
+$article_category_url = 'https://blog-capvietnam.fr/articles-capvietnam';
 
 $page_faq = [
   ['q' => 'Comment gérer le soutien financier à la famille vietnamienne dans un couple mixte ?',

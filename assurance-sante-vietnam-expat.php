@@ -1,12 +1,12 @@
 ﻿<?php
 $page_title       = 'Assurance santé expatriés Vietnam — Cap Vietnam';
 $page_description = 'Assurance santé expatriés au Vietnam : mutuelles internationales, assurance sociale vietnamienne, hôpitaux privés à Hanoï et coûts réels 2026.';
-$page_canonical   = 'https://www.blog-capvietnam.fr/assurance-sante-vietnam-expat';
+$page_canonical   = 'https://blog-capvietnam.fr/assurance-sante-vietnam-expat';
 $page_og_title    = 'Assurance santé pour expatriés au Vietnam : le guide complet';
 $page_og_desc     = 'Comparatif AXA, Cigna, Allianz et CFE pour les expatriés français au Vietnam.';
-$page_og_url      = 'https://www.blog-capvietnam.fr/assurance-sante-vietnam-expat';
+$page_og_url      = 'https://blog-capvietnam.fr/assurance-sante-vietnam-expat';
 $page_og_image    = 'https://images.unsplash.com/photo-1584982751601-97ddc0e5e15e?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Assurance sante au Vietnam pour expatries francais","datePublished":"2026-03-20","dateModified":"2026-03-20","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1584982751601-97ddc0e5e15e?w=1200&q=80","description":"Comparatif AXA, Cigna, Allianz et CFE pour les expatries francais au Vietnam.","timeRequired":"PT7M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/assurance-sante-vietnam-expat"}';
+$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Assurance sante au Vietnam pour expatries francais","datePublished":"2026-03-20","dateModified":"2026-03-20","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1584982751601-97ddc0e5e15e?w=1200&q=80","description":"Comparatif AXA, Cigna, Allianz et CFE pour les expatries francais au Vietnam.","timeRequired":"PT7M","inLanguage":"fr","url":"https://blog-capvietnam.fr/assurance-sante-vietnam-expat"}';
 
 $article_color   = 'terracotta';
 $article_hero_bg = '#3a1a0a';
@@ -15,7 +15,7 @@ $article_badge   = 'rgba(191,74,42,0.2)';
 $article_badge_c = 'var(--terracotta-soft)';
 
 $article_category     = 'Démarches Admin';
-$article_category_url = 'https://www.blog-capvietnam.fr/articles-capvietnam';
+$article_category_url = 'https://blog-capvietnam.fr/articles-capvietnam';
 $page_faq = [
   ['q' => 'Peut-on utiliser la carte européenne d\'assurance maladie (CEAM) au Vietnam ?',
    'a' => 'Non. La CEAM ne fonctionne que dans les pays de l\'Union européenne et quelques États associés. Elle ne couvre pas les soins au Vietnam.'],
@@ -227,7 +227,7 @@ include 'header.php';
 
 <?php
 $current_slug = 'assurance-sante-vietnam-expat';
-$current_cat  = 'admin';
+$current_cat  = 'vie-pratique';
 include '_related-articles.php';
 ?>
 

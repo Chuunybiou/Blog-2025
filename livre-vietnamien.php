@@ -5,7 +5,7 @@ $path_prefix      = '';
 $page_lang        = 'fr';
 $page_title       = 'Apprendre le vietnamien sans cours ni application — Méthode polyglotte 1100 mots | Cap Vietnam';
 $page_description = 'Ebook Amazon : méthode polyglotte A0→B1 basée sur les 1100 mots les plus fréquents du vietnamien. Conçue pour les couples mixtes et les expats francophones.';
-$page_canonical   = 'https://www.blog-capvietnam.fr/livre-vietnamien';
+$page_canonical   = 'https://blog-capvietnam.fr/livre-vietnamien';
 $page_og_title    = 'Apprendre le Vietnamien — la méthode polyglotte pour francophones';
 $page_og_desc     = 'Démarrez le vietnamien avec une méthode qui marche : 1 100 mots les plus fréquents, logique tonale expliquée, dialogues du quotidien. Disponible sur Amazon.';
 $page_og_image    = 'https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=1200&q=80';
@@ -23,7 +23,7 @@ $page_schema = json_encode([
   'author'      => [
     '@type' => 'Person',
     'name'  => defined('SITE_AUTHOR') ? SITE_AUTHOR : 'Cap Vietnam',
-    'url'   => 'https://www.blog-capvietnam.fr/a-propos-capvietnam.php'
+    'url'   => 'https://blog-capvietnam.fr/a-propos-capvietnam.php'
   ],
   'publisher'   => [
     '@type' => 'Organization',
@@ -683,7 +683,7 @@ include __DIR__ . '/header.php';
 <!-- ═══════ AUTEUR ═══════ -->
 <section class="book-author">
   <div class="book-author-inner">
-    <div class="author-photo"><img alt="" src="https://www.blog-capvietnam.fr/assets/img/profile/anthony-profil.jpg" class="img-fluid rounded-circle" width="150px" style="border-radius: 100%!important; "></div>
+    <div class="author-photo"><img alt="" src="https://blog-capvietnam.fr/assets/img/profile/anthony-profil.jpg" class="img-fluid rounded-circle" width="150px" style="border-radius: 100%!important; "></div>
     <div class="book-author-content">
       <div class="eyebrow">L'auteur</div>
       <h2>Français marié à une Vietnamienne, installé à Hanoï</h2>

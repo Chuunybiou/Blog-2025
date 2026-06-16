@@ -217,7 +217,7 @@ include 'header.php';
 <?php
 require_once __DIR__ . '/config/site.php';
 $current_slug = 'visa-tt-carte-residence-trc-mariage';
-$current_cat  = 'admin';
+$current_cat  = 'vivre-ensemble';
 include '_related-articles.php';
 ?>
 

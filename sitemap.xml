@@ -4,101 +4,97 @@
 
   <!-- ═══════════ PAGES PRINCIPALES ═══════════ -->
   <url>
-    <loc>https://www.blog-capvietnam.fr/</loc>
+    <loc>https://blog-capvietnam.fr/</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.blog-capvietnam.fr/"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://www.blog-capvietnam.fr/vi/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://blog-capvietnam.fr/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://blog-capvietnam.fr/vi/"/>
   </url>
   <url>
-    <loc>https://www.blog-capvietnam.fr/articles-capvietnam</loc>
+    <loc>https://blog-capvietnam.fr/articles-capvietnam</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.blog-capvietnam.fr/guide-cap-vietnam-2026</loc>
+    <loc>https://blog-capvietnam.fr/guide-cap-vietnam-2026</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.blog-capvietnam.fr/livre-vietnamien</loc>
+    <loc>https://blog-capvietnam.fr/livre-vietnamien</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.blog-capvietnam.fr/calculateur-budget-vietnam</loc>
+    <loc>https://blog-capvietnam.fr/calculateur-budget-vietnam</loc>
     <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+
   <url>
-    <loc>https://www.blog-capvietnam.fr/apprendre-francais-capvietnam</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.blog-capvietnam.fr/a-propos-capvietnam</loc>
+    <loc>https://blog-capvietnam.fr/a-propos-capvietnam</loc>
     <lastmod>2026-06-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-  <url>
-    <loc>https://www.blog-capvietnam.fr/photos-videos-capvietnam</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
+
 
   <!-- ═══════════ DÉMARCHES ADMINISTRATIVES ═══════════ -->
   <url>
-    <loc>https://www.blog-capvietnam.fr/visa-vietnam-francais-guide-2026</loc>
+    <loc>https://blog-capvietnam.fr/visa-vietnam-francais-guide-2026</loc>
     <lastmod>2026-04-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.blog-capvietnam.fr/quitter-france-expat-vietnam</loc>
+    <loc>https://blog-capvietnam.fr/quitter-france-expat-vietnam</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.blog-capvietnam.fr/quitter-canada-expat-vietnam</loc>
+    <loc>https://blog-capvietnam.fr/quitter-canada-expat-vietnam</loc>
     <lastmod>2026-04-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.blog-capvietnam.fr/se-marier-vietnamienne-demarches-france</loc>
+    <loc>https://blog-capvietnam.fr/se-marier-vietnamienne-demarches-france</loc>
     <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.blog-capvietnam.fr/carte-residence-temporaire-vietnam</loc>
+    <loc>https://blog-capvietnam.fr/faire-venir-conjointe-vietnamienne-france</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://blog-capvietnam.fr/carte-residence-temporaire-vietnam</loc>
     <lastmod>2026-02-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.blog-capvietnam.fr/assurance-sante-vietnam-expat</loc>
+    <loc>https://blog-capvietnam.fr/assurance-sante-vietnam-expat</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.blog-capvietnam.fr/permis-conduire-vietnam</loc>
+    <loc>https://blog-capvietnam.fr/permis-conduire-vietnam</loc>
     <lastmod>2026-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.blog-capvietnam.fr/checklist-depart-installer-vietnam</loc>
+    <loc>https://blog-capvietnam.fr/checklist-depart-installer-vietnam</loc>
     <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -106,43 +102,43 @@
 
   <!-- ═══════════ COUPLE MIXTE ═══════════ -->
   <url>
-    <loc>https://www.blog-capvietnam.fr/differences-culturelles-couple-franco-vietnamien</loc>
+    <loc>https://blog-capvietnam.fr/differences-culturelles-couple-franco-vietnamien</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.blog-capvietnam.fr/belle-famille-vietnamienne-guide</loc>
+    <loc>https://blog-capvietnam.fr/belle-famille-vietnamienne-guide</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.blog-capvietnam.fr/prix-mariage-franco-vietnamien</loc>
+    <loc>https://blog-capvietnam.fr/prix-mariage-franco-vietnamien</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.blog-capvietnam.fr/compte-joint-franco-vietnamien</loc>
+    <loc>https://blog-capvietnam.fr/compte-joint-franco-vietnamien</loc>
     <lastmod>2026-05-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.blog-capvietnam.fr/argent-couple-franco-vietnamien</loc>
+    <loc>https://blog-capvietnam.fr/argent-couple-franco-vietnamien</loc>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.blog-capvietnam.fr/tet-nouvel-an-lunaire-vietnam</loc>
+    <loc>https://blog-capvietnam.fr/tet-nouvel-an-lunaire-vietnam</loc>
     <lastmod>2026-02-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.blog-capvietnam.fr/apprendre-vietnamien-couple</loc>
+    <loc>https://blog-capvietnam.fr/apprendre-vietnamien-couple</loc>
     <lastmod>2026-02-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -150,55 +146,55 @@
 
   <!-- ═══════════ ARGENT & TRAVAIL ═══════════ -->
   <url>
-    <loc>https://www.blog-capvietnam.fr/budget-mensuel-hanoi-2026</loc>
+    <loc>https://blog-capvietnam.fr/budget-mensuel-hanoi-2026</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.blog-capvietnam.fr/budget-mensuel-hcmc-2026</loc>
+    <loc>https://blog-capvietnam.fr/budget-mensuel-hcmc-2026</loc>
     <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.blog-capvietnam.fr/transferer-argent-vietnam-wise</loc>
+    <loc>https://blog-capvietnam.fr/transferer-argent-vietnam-wise</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.blog-capvietnam.fr/compte-bancaire-vietnam-etranger</loc>
+    <loc>https://blog-capvietnam.fr/compte-bancaire-vietnam-etranger</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.blog-capvietnam.fr/travailler-en-ligne-vietnam</loc>
+    <loc>https://blog-capvietnam.fr/travailler-en-ligne-vietnam</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.blog-capvietnam.fr/fiscalite-expat-france-vietnam</loc>
+    <loc>https://blog-capvietnam.fr/fiscalite-expat-france-vietnam</loc>
     <lastmod>2026-02-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.blog-capvietnam.fr/compte-bancaire-canada-europe-wealthsimple</loc>
+    <loc>https://blog-capvietnam.fr/compte-bancaire-canada-europe-wealthsimple</loc>
     <lastmod>2026-04-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.blog-capvietnam.fr/cafes-coworkings-hanoi</loc>
+    <loc>https://blog-capvietnam.fr/cafes-coworkings-hanoi</loc>
     <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.blog-capvietnam.fr/creer-blog-expat-rentable</loc>
+    <loc>https://blog-capvietnam.fr/creer-blog-expat-rentable</loc>
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -206,205 +202,47 @@
 
   <!-- ═══════════ VIE PRATIQUE ═══════════ -->
   <url>
-    <loc>https://www.blog-capvietnam.fr/louer-appartement-hanoi-etranger</loc>
+    <loc>https://blog-capvietnam.fr/louer-appartement-hanoi-etranger</loc>
     <lastmod>2026-03-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.blog-capvietnam.fr/telephone-vietnam-quelle-sim-choisir</loc>
+    <loc>https://blog-capvietnam.fr/telephone-vietnam-quelle-sim-choisir</loc>
     <lastmod>2026-03-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.blog-capvietnam.fr/ramener-produits-francais-vietnam</loc>
+    <loc>https://blog-capvietnam.fr/ramener-produits-francais-vietnam</loc>
     <lastmod>2026-02-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
-  <!-- ═══════════ CONJOINT(E) VIETNAMIEN(NE) EN FRANCE — SILO ═══════════ -->
-  <url>
-    <loc>https://www.blog-capvietnam.fr/faire-venir-conjointe-vietnamienne-france</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.blog-capvietnam.fr/visa-long-sejour-conjoint-vietnamien-france</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.blog-capvietnam.fr/certificat-coutumier-acte-mariage-vietnam-ccam</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.blog-capvietnam.fr/transcription-mariage-service-central-nantes</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.blog-capvietnam.fr/titre-sejour-vie-privee-familiale-conjoint-vietnamien</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.blog-capvietnam.fr/entretien-ambassade-france-vietnam-visa-conjoint</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.blog-capvietnam.fr/visa-schengen-belle-famille-vietnamienne</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- ═══════════ ARTICLES THÉMATIQUES (GAP-FILL) ═══════════ -->
-  <url>
-    <loc>https://www.blog-capvietnam.fr/se-marier-vietnam-procedure-comite-populaire</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.blog-capvietnam.fr/visa-tt-carte-residence-trc-mariage</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.blog-capvietnam.fr/hopitaux-medecins-francophones-vietnam</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.blog-capvietnam.fr/sim-internet-applications-vietnam</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.blog-capvietnam.fr/hanoi-vs-ho-chi-minh-ville-installation</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.blog-capvietnam.fr/retraite-vietnam-francais</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.blog-capvietnam.fr/enfant-couple-franco-vietnamien-nationalite</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.blog-capvietnam.fr/pacs-vietnamienne-reconnaissance</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- ═══════════ ARGENT & TRAVAIL — CLUSTER TÉLÉTRAVAIL ═══════════ -->
-  <url>
-    <loc>https://www.blog-capvietnam.fr/travailler-a-distance-depuis-vietnam</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.blog-capvietnam.fr/portage-salarial-depuis-vietnam</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.blog-capvietnam.fr/portage-salarial-ou-micro-entreprise-vietnam</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.blog-capvietnam.fr/residence-fiscale-france-vietnam-183-jours</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.blog-capvietnam.fr/declarer-impots-france-depuis-vietnam</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.blog-capvietnam.fr/visa-teletravail-digital-nomad-vietnam</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.blog-capvietnam.fr/protection-sociale-cfe-retraite-vietnam</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- ═══════════ BUDGETS VILLES ═══════════ -->
-  <url>
-    <loc>https://www.blog-capvietnam.fr/budget-mensuel-da-nang-2026</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.blog-capvietnam.fr/budget-mensuel-nha-trang-2026</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.blog-capvietnam.fr/budget-mensuel-hue-2026</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
   <!-- ═══════════ VERSION VIETNAMIENNE /vi/ ═══════════ -->
   <url>
-    <loc>https://www.blog-capvietnam.fr/vi/</loc>
+    <loc>https://blog-capvietnam.fr/vi/</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://www.blog-capvietnam.fr/vi/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.blog-capvietnam.fr/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://blog-capvietnam.fr/vi/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://blog-capvietnam.fr/"/>
   </url>
   <url>
-    <loc>https://www.blog-capvietnam.fr/vi/tai-sao-hoc-tieng-phap</loc>
+    <loc>https://blog-capvietnam.fr/vi/tai-sao-hoc-tieng-phap</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.blog-capvietnam.fr/vi/loi-phat-am-tieng-phap-nguoi-viet</loc>
+    <loc>https://blog-capvietnam.fr/vi/loi-phat-am-tieng-phap-nguoi-viet</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.blog-capvietnam.fr/vi/hoc-tieng-phap-online-mien-phi</loc>
+    <loc>https://blog-capvietnam.fr/vi/hoc-tieng-phap-online-mien-phi</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

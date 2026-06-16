@@ -7,6 +7,7 @@
 require_once __DIR__ . '/config/site.php';
 
 $destinations = [
+    'italki'     => AFF_ITALKI,
     'wise'       => AFF_WISE,
     'revolut'    => AFF_REVOLUT,
     'amazon-g7'  => AFF_AMAZON_G7,

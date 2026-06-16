@@ -1,12 +1,26 @@
 ﻿<?php
+require_once __DIR__ . '/config/site.php';
 $page_title       = 'Travailler en ligne depuis le Vietnam — Cap Vietnam';
 $page_description = 'Travailler en ligne depuis le Vietnam légalement : statut juridique, obligations fiscales, visas adaptés et vie de nomade digital à Hanoï.';
-$page_canonical   = 'https://www.blog-capvietnam.fr/travailler-en-ligne-vietnam';
+$page_canonical   = SITE_URL . '/travailler-en-ligne-vietnam';
 $page_og_title    = 'Travailler en ligne depuis le Vietnam : guide légal et pratique';
 $page_og_desc     = 'Comment travailler en ligne depuis le Vietnam : visa, obligations fiscales et coworkings à Hanoï.';
-$page_og_url      = 'https://www.blog-capvietnam.fr/travailler-en-ligne-vietnam';
+$page_og_url      = SITE_URL . '/travailler-en-ligne-vietnam';
 $page_og_image    = 'https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Travailler en ligne depuis le Vietnam : statut legal et vie pratique","datePublished":"2026-03-15","dateModified":"2026-03-15","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=1200&q=80","description":"Comment travailler en ligne depuis le Vietnam : visa, obligations fiscales et coworkings a Hanoi.","timeRequired":"PT9M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/travailler-en-ligne-vietnam"}';
+$page_schema      = json_encode([
+  '@context'         => 'https://schema.org',
+  '@type'            => 'Article',
+  'headline'         => 'Travailler en ligne depuis le Vietnam : statut légal, impôts et vie pratique',
+  'description'      => 'Comment travailler en ligne depuis le Vietnam : visa, obligations fiscales et coworkings à Hanoï.',
+  'image'            => 'https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=1200&q=80',
+  'datePublished'    => '2026-03-15',
+  'dateModified'     => '2026-06-15',
+  'author'           => ['@type' => 'Person', 'name' => 'Anthony Bouillon', 'url' => SITE_URL . '/a-propos-capvietnam'],
+  'publisher'        => ['@type' => 'Organization', 'name' => 'Cap Vietnam', 'url' => SITE_URL],
+  'mainEntityOfPage' => SITE_URL . '/travailler-en-ligne-vietnam',
+  'inLanguage'       => 'fr',
+  'articleSection'   => 'Argent & Travail',
+], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
 
 $article_color   = 'amber';
 $article_hero_bg = '#3a2800';
@@ -15,7 +29,7 @@ $article_badge   = 'rgba(184,134,11,0.25)';
 $article_badge_c = 'var(--amber-soft)';
 
 $article_category     = 'Argent &amp; Travail';
-$article_category_url = 'https://www.blog-capvietnam.fr/articles-capvietnam';
+$article_category_url = SITE_URL . '/articles-capvietnam';
 $page_faq = [
   ['q' => 'Peut-on travailler depuis un café sans être repéré par les autorités ?',
    'a' => 'Oui, aucun contrôle n\'existe pour ce type d\'usage. Les autorités vietnamiennes ne surveillent pas les cafés pour repérer des nomades digitaux étrangers. La préoccupation légale est plutôt fiscale (dans ton pays d\'origine) que policière (au Vietnam).'],
@@ -149,6 +163,10 @@ include 'header.php';
     <div class="tip-box">
       <strong>Stratégie recommandée :</strong>
       Commence sur Malt si tu cibles les clients français (profils vérifiés, facturation automatique, TVA gérée). Développe en parallèle un réseau LinkedIn avec mention de ta localisation Vietnam — l'exotisme joue souvent en faveur dans les appels d'offres tech et conseil.
+    </div>
+
+    <div class="tip-box">
+      <strong>💬 Enseigner le français en ligne depuis Hanoï :</strong> Si tu es francophone, <a href="go.php?id=italki" rel="noopener sponsored">italki</a> te permet de donner des cours particuliers à des apprenants du monde entier — depuis un café ou ton appartement. Pas de diplôme requis en tant que tuteur communautaire. Revenus typiques : 10–25 €/h selon ta réputation. Une option concrète pour compléter tes revenus dès ton arrivée au Vietnam.
     </div>
 
     <h2 id="section-8">Gérer ses revenus multi-pays depuis le Vietnam</h2>

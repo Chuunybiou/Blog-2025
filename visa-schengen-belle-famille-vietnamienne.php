@@ -17,7 +17,7 @@ $page_schema      = json_encode([
   'publisher'       => ['@type' => 'Organization', 'name' => SITE_NAME, 'url' => SITE_URL],
   'mainEntityOfPage'=> SITE_URL . '/visa-schengen-belle-famille-vietnamienne',
   'inLanguage'      => 'fr',
-  'articleSection'  => 'Démarches Administratives',
+  'articleSection'  => 'Vivre ensemble : ici ou là-bas',
 ], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
 
 $article_color        = 'jade';
@@ -26,15 +26,15 @@ $article_glow         = 'rgba(27,107,82,0.15)';
 $article_badge        = 'rgba(191,74,42,0.25)';
 $article_badge_c      = '#e8856a';
 
-$article_category     = 'Démarches Admin';
-$article_category_url = SITE_URL . '/articles-capvietnam';
+$article_category     = 'Vivre ensemble';
+$article_category_url = SITE_URL . '/articles-capvietnam?cat=vivre-ensemble';
 $page_faq = [
   ['q' => 'Quel est le taux de refus de visa Schengen pour les Vietnamiens ?',
-   'a' => 'Le taux de refus de visa Schengen pour les ressortissants vietnamiens est parmi les plus élevés d\'Asie du Sud-Est — les chiffres officiels varient selon les années et les postes consulaires, mais il dépasse souvent [À VÉRIFIER] %. Un dossier solide est indispensable.'],
-  ['q' => 'Est-ce que l\'attestation d\'hébergement est obligatoire ?',
-   'a' => 'Non, mais elle est fortement conseillée si les parents logent chez vous. Elle est établie par la mairie de ton domicile en France et est gratuite. Elle prouve officiellement que tu te portes garant de l\'hébergement.'],
+   'a' => 'Le taux de refus pour les ressortissants vietnamiens est parmi les plus élevés d\'Asie du Sud-Est. Les chiffres officiels sont publiés par la Commission européenne (ec.europa.eu/home-affairs) et varient selon les années et les postes. Un dossier solide reste indispensable.'],
+  ['q' => 'Est-ce que l\'attestation d\'accueil est obligatoire ?',
+   'a' => 'Non, mais elle est fortement conseillée si les parents logent chez vous. Elle est établie par la mairie de ton domicile en France (timbre fiscal : 30 €) et prouve officiellement que tu te portes garant de l\'accueil. Validité : 1 an.'],
   ['q' => 'Combien de temps à l\'avance faut-il déposer la demande de visa ?',
-   'a' => 'La demande peut être déposée jusqu\'à [À VÉRIFIER] mois avant le départ prévu. Le délai de traitement est de [À VÉRIFIER] jours ouvrés officiellement, mais prévois [À VÉRIFIER] semaines de marge selon la période.'],
+   'a' => 'La demande peut être déposée jusqu\'à 6 mois avant le départ prévu. Le délai de traitement officiel est de 15 jours ouvrés, mais prévois 3 à 4 semaines de marge en haute saison (juin-août, décembre).'],
   ['q' => 'Peut-on faire venir la belle-famille pour un mariage en France ?',
    'a' => 'Oui, et une invitation à un mariage peut être un motif de visa recevable. Dans ce cas, inclus dans le dossier une preuve de la cérémonie (faire-part, attestation du lieu de réception…) et une lettre d\'invitation personnalisée.'],
 ];
@@ -48,11 +48,11 @@ include 'header.php';
   <div class="article-hero-inner">
     <div class="breadcrumb">
       <a href="/">Accueil</a><span class="breadcrumb-sep">›</span>
-      <a href="articles-capvietnam">Démarches Administratives</a><span class="breadcrumb-sep">›</span>
+      <a href="articles-capvietnam?cat=vivre-ensemble">Vivre ensemble</a><span class="breadcrumb-sep">›</span>
       <a href="faire-venir-conjointe-vietnamienne-france">Conjoint vietnamien en France</a><span class="breadcrumb-sep">›</span>
       <span>Visa Schengen belle-famille</span>
     </div>
-    <span class="article-badge-hero">Démarches Administratives</span>
+    <span class="article-badge-hero">Vivre ensemble</span>
     <h1>Visa Schengen pour la belle-famille vietnamienne : dossier et conseils 2026</h1>
     <div class="article-hero-meta">
       <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
@@ -71,7 +71,7 @@ include 'header.php';
       <li><a href="#section-2">Qui peut demander ?</a></li>
       <li><a href="#section-3">Le dossier côté Vietnam</a></li>
       <li><a href="#section-4">Le dossier côté France</a></li>
-      <li><a href="#section-5">L'attestation d'hébergement</a></li>
+      <li><a href="#section-5">L'attestation d'accueil</a></li>
       <li><a href="#section-6">Le dépôt via VFS Global</a></li>
       <li><a href="#section-7">En cas de refus</a></li>
       <li><a href="#section-faq">Questions fréquentes</a></li>
@@ -88,9 +88,7 @@ include 'header.php';
   <main class="article-content">
     <p><strong>Faire venir ses beaux-parents vietnamiens en France, c'est un désir légitime — et un vrai parcours du combattant.</strong> Le taux de refus de visa Schengen pour les Vietnamiens est élevé, et les agents consulaires sont attentifs aux dossiers qui présentent un risque d'immigration irrégulière. Ce guide t'aide à construire un dossier solide qui répond aux attentes du consulat.</p>
 
-    <p>Cet article fait partie du <a href="faire-venir-conjointe-vietnamienne-france">guide complet sur le regroupement familial franco-vietnamien</a>.</p>
-
-    <img class="article-photo" src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&q=80" alt="Famille vietnam france" width="1200" height="675" loading="lazy">
+    <p>Cet article fait partie du <a href="faire-venir-conjointe-vietnamienne-france">guide complet : faire venir son conjoint vietnamien en France</a>.</p>
 
     <h2 id="section-1">Pourquoi le visa Schengen est difficile à obtenir pour les Vietnamiens</h2>
     <p>Le visa Schengen de court séjour (type C, 90 jours max dans l'espace Schengen) est délivré pour des visites privées, du tourisme, ou des séjours familiaux. Pour les ressortissants vietnamiens, les critères sont stricts car le consulat cherche à éviter :</p>
@@ -107,113 +105,117 @@ include 'header.php';
 
     <h2 id="section-3">Le dossier côté Vietnam (le demandeur)</h2>
 
-    <table>
+    <div style="overflow-x:auto;border-radius:10px;border:1px solid rgba(77,200,160,0.18);margin:1.5rem 0;">
+    <table style="width:100%;border-collapse:collapse;font-size:0.9rem;">
       <thead>
-        <tr>
-          <th>Document</th>
-          <th>Remarque</th>
+        <tr style="background:rgba(27,107,82,0.25);">
+          <th style="padding:0.7rem 1rem;text-align:left;color:#4dc8a0;font-size:0.7rem;letter-spacing:1.5px;font-weight:700;width:42%;">DOCUMENT</th>
+          <th style="padding:0.7rem 1rem;text-align:left;color:#4dc8a0;font-size:0.7rem;letter-spacing:1.5px;font-weight:700;">REMARQUE</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>Passeport valide</td>
-          <td>Validité min [À VÉRIFIER] mois après la fin du séjour envisagé</td>
+        <tr style="border-bottom:1px solid rgba(250,248,244,0.06);">
+          <td style="padding:0.75rem 1rem;font-weight:600;font-size:0.87rem;">Passeport valide</td>
+          <td style="padding:0.75rem 1rem;font-size:0.87rem;opacity:0.82;">Validité min <strong>3 mois après la date de retour</strong> prévue</td>
+        </tr>
+        <tr style="background:rgba(255,255,255,0.02);border-bottom:1px solid rgba(250,248,244,0.06);">
+          <td style="padding:0.75rem 1rem;font-weight:600;font-size:0.87rem;">Photos d'identité biométriques</td>
+          <td style="padding:0.75rem 1rem;font-size:0.87rem;opacity:0.82;">Format Schengen réglementaire</td>
+        </tr>
+        <tr style="border-bottom:1px solid rgba(250,248,244,0.06);">
+          <td style="padding:0.75rem 1rem;font-weight:600;font-size:0.87rem;">Formulaire de demande de visa Schengen</td>
+          <td style="padding:0.75rem 1rem;font-size:0.87rem;opacity:0.82;">Disponible sur le site du consulat / VFS Global</td>
+        </tr>
+        <tr style="background:rgba(255,255,255,0.02);border-bottom:1px solid rgba(250,248,244,0.06);">
+          <td style="padding:0.75rem 1rem;font-weight:600;font-size:0.87rem;">Preuve d'attachement au Vietnam</td>
+          <td style="padding:0.75rem 1rem;font-size:0.87rem;opacity:0.82;">Titre de propriété, livret de retraite, actes de naissance d'autres enfants restés au Vietnam…</td>
+        </tr>
+        <tr style="border-bottom:1px solid rgba(250,248,244,0.06);">
+          <td style="padding:0.75rem 1rem;font-weight:600;font-size:0.87rem;">Justificatifs de ressources propres (si dispo.)</td>
+          <td style="padding:0.75rem 1rem;font-size:0.87rem;opacity:0.82;">Relevés bancaires des 3 derniers mois, pension de retraite…</td>
+        </tr>
+        <tr style="background:rgba(255,255,255,0.02);border-bottom:1px solid rgba(250,248,244,0.06);">
+          <td style="padding:0.75rem 1rem;font-weight:600;font-size:0.87rem;">Assurance voyage</td>
+          <td style="padding:0.75rem 1rem;font-size:0.87rem;opacity:0.82;">Couverture min <strong>30 000 €</strong> · espace Schengen · toute la durée</td>
         </tr>
         <tr>
-          <td>Photos d'identité biométriques</td>
-          <td>Format Schengen réglementaire</td>
-        </tr>
-        <tr>
-          <td>Formulaire de demande de visa Schengen</td>
-          <td>Disponible sur le site du consulat / VFS Global</td>
-        </tr>
-        <tr>
-          <td>Preuve d'attachement au Vietnam</td>
-          <td>Titre de propriété, livret de retraite, actes de naissance d'autres enfants restés au Vietnam…</td>
-        </tr>
-        <tr>
-          <td>Justificatifs de ressources propres (si disponibles)</td>
-          <td>Relevés bancaires des 3 derniers mois, pension de retraite…</td>
-        </tr>
-        <tr>
-          <td>Assurance voyage</td>
-          <td>Couverture min [À VÉRIFIER] € pour toute la durée du séjour et l'espace Schengen</td>
-        </tr>
-        <tr>
-          <td>Billets d'avion (aller-retour)</td>
-          <td>Recommandé d'en avoir la preuve ou une réservation non-remboursable</td>
+          <td style="padding:0.75rem 1rem;font-weight:600;font-size:0.87rem;">Billets d'avion (aller-retour)</td>
+          <td style="padding:0.75rem 1rem;font-size:0.87rem;opacity:0.82;">Recommandé : preuve de réservation non-remboursable</td>
         </tr>
       </tbody>
     </table>
+    </div>
 
     <h2 id="section-4">Le dossier côté France (toi, le garant)</h2>
 
-    <table>
+    <div style="overflow-x:auto;border-radius:10px;border:1px solid rgba(77,200,160,0.18);margin:1.5rem 0;">
+    <table style="width:100%;border-collapse:collapse;font-size:0.9rem;">
       <thead>
-        <tr>
-          <th>Document</th>
-          <th>Remarque</th>
+        <tr style="background:rgba(27,107,82,0.25);">
+          <th style="padding:0.7rem 1rem;text-align:left;color:#4dc8a0;font-size:0.7rem;letter-spacing:1.5px;font-weight:700;width:42%;">DOCUMENT</th>
+          <th style="padding:0.7rem 1rem;text-align:left;color:#4dc8a0;font-size:0.7rem;letter-spacing:1.5px;font-weight:700;">REMARQUE</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>Lettre d'invitation personnalisée</td>
-          <td>Expliquer le lien familial, la durée du séjour, les activités prévues</td>
+        <tr style="border-bottom:1px solid rgba(250,248,244,0.06);">
+          <td style="padding:0.75rem 1rem;font-weight:600;font-size:0.87rem;">Lettre d'invitation personnalisée</td>
+          <td style="padding:0.75rem 1rem;font-size:0.87rem;opacity:0.82;">Expliquer le lien familial, la durée du séjour, les activités prévues</td>
+        </tr>
+        <tr style="background:rgba(255,255,255,0.02);border-bottom:1px solid rgba(250,248,244,0.06);">
+          <td style="padding:0.75rem 1rem;font-weight:600;font-size:0.87rem;">Attestation d'hébergement (mairie)</td>
+          <td style="padding:0.75rem 1rem;font-size:0.87rem;opacity:0.82;">Gratuite, délivrée par la mairie de ton domicile</td>
+        </tr>
+        <tr style="border-bottom:1px solid rgba(250,248,244,0.06);">
+          <td style="padding:0.75rem 1rem;font-weight:600;font-size:0.87rem;">Copie de ta CNI ou passeport</td>
+          <td style="padding:0.75rem 1rem;font-size:0.87rem;opacity:0.82;">—</td>
+        </tr>
+        <tr style="background:rgba(255,255,255,0.02);border-bottom:1px solid rgba(250,248,244,0.06);">
+          <td style="padding:0.75rem 1rem;font-weight:600;font-size:0.87rem;">Justificatif de domicile</td>
+          <td style="padding:0.75rem 1rem;font-size:0.87rem;opacity:0.82;">Facture de moins de 3 mois</td>
+        </tr>
+        <tr style="border-bottom:1px solid rgba(250,248,244,0.06);">
+          <td style="padding:0.75rem 1rem;font-weight:600;font-size:0.87rem;">3 derniers bulletins de salaire</td>
+          <td style="padding:0.75rem 1rem;font-size:0.87rem;opacity:0.82;">Prouve ta capacité à subvenir aux besoins des visiteurs</td>
+        </tr>
+        <tr style="background:rgba(255,255,255,0.02);border-bottom:1px solid rgba(250,248,244,0.06);">
+          <td style="padding:0.75rem 1rem;font-weight:600;font-size:0.87rem;">Acte de mariage avec ton conjoint vietnamien</td>
+          <td style="padding:0.75rem 1rem;font-size:0.87rem;opacity:0.82;">Prouve le lien familial avec les demandeurs</td>
         </tr>
         <tr>
-          <td>Attestation d'hébergement (mairie)</td>
-          <td>Gratuite, délivrée par la mairie de ton domicile</td>
-        </tr>
-        <tr>
-          <td>Copie de ta CNI ou passeport</td>
-          <td>—</td>
-        </tr>
-        <tr>
-          <td>Justificatif de domicile</td>
-          <td>Facture de moins de 3 mois</td>
-        </tr>
-        <tr>
-          <td>3 derniers bulletins de salaire</td>
-          <td>Prouve ta capacité à subvenir aux besoins des visiteurs</td>
-        </tr>
-        <tr>
-          <td>Acte de mariage avec ton conjoint vietnamien (si applicable)</td>
-          <td>Prouve le lien familial avec les demandeurs</td>
-        </tr>
-        <tr>
-          <td>Titre de séjour de ton conjoint</td>
-          <td>Si ton conjoint est déjà en France</td>
+          <td style="padding:0.75rem 1rem;font-weight:600;font-size:0.87rem;">Titre de séjour de ton conjoint</td>
+          <td style="padding:0.75rem 1rem;font-size:0.87rem;opacity:0.82;">Si ton conjoint est déjà en France</td>
         </tr>
       </tbody>
     </table>
+    </div>
 
-    <h2 id="section-5">L'attestation d'hébergement : comment l'obtenir</h2>
-    <p>L'attestation d'hébergement (également appelée "attestation d'accueil" dans certains contextes) est un document officiel délivré par la mairie de ta commune de résidence. Elle certifie que tu t'engages à héberger les demandeurs à ton domicile pendant leur séjour.</p>
+    <h2 id="section-5">L'attestation d'accueil : comment l'obtenir</h2>
+    <p>L'<strong>attestation d'accueil</strong> (terme légal exact — ne pas confondre avec "attestation d'hébergement") est un document officiel délivré par la mairie de ta commune de résidence. Elle certifie que tu t'engages à accueillir et héberger les demandeurs à ton domicile pendant leur séjour.</p>
     <p>Pour l'obtenir :</p>
     <ol>
       <li>Rends-toi à la mairie de ton domicile (ou utilise le service en ligne si disponible)</li>
       <li>Apporte : ta pièce d'identité, un justificatif de domicile, les informations sur les personnes invitées (nom, prénom, date de naissance, numéro de passeport)</li>
-      <li>Paye les droits : <strong>[À VÉRIFIER] €</strong> par demande</li>
+      <li>Paye le timbre fiscal : <strong>30 €</strong> par attestation</li>
     </ol>
-    <p>L'attestation est délivrée sur place ou dans un délai de quelques jours. Elle est valable [À VÉRIFIER] mois.</p>
+    <p>L'attestation est délivrée sur place ou dans un délai de quelques jours. Elle est valable <strong>1 an</strong>.</p>
 
     <div class="tip-box">
-      <strong>Surface habitable :</strong> La mairie vérifie que ton logement est suffisamment grand pour accueillir les visiteurs. Il faut généralement [À VÉRIFIER] m² par personne supplémentaire hébergée. [À VÉRIFIER selon ta commune]
+      <strong>Surface habitable :</strong> La mairie vérifie que ton logement est suffisamment grand. La norme réglementaire (Code de l'action sociale et des familles, art. R.211-12) est d'environ <strong>9 m²</strong> pour la première personne hébergée, puis <strong>7 m² par personne supplémentaire</strong>. Certaines mairies appliquent des critères locaux légèrement différents.
     </div>
 
     <h2 id="section-6">Le dépôt via VFS Global et les délais</h2>
     <p>La demande est déposée au centre VFS Global le plus proche du domicile des demandeurs au Vietnam (Hanoï, Hô Chi Minh-Ville, Da Nang [À VÉRIFIER disponibilité]). La prise de rendez-vous se fait en ligne.</p>
     <p>Frais :</p>
     <ul>
-      <li>Droits de visa Schengen : <strong>[À VÉRIFIER] €</strong> (non remboursable en cas de refus)</li>
-      <li>Frais de service VFS Global : <strong>[À VÉRIFIER] €</strong></li>
+      <li>Droits de visa Schengen : <strong>90 €</strong> (non remboursable en cas de refus)</li>
+      <li>Frais de service VFS Global : consulter <a href="https://www.vfsglobal.com/france/vietnam/" target="_blank" rel="noopener">vfsglobal.com/france/vietnam</a></li>
     </ul>
-    <p>Délai de traitement : <strong>[À VÉRIFIER] jours ouvrés</strong> officiellement, mais prévois [À VÉRIFIER] semaines en haute saison (juin-août, décembre).</p>
+    <p>Délai de traitement : <strong>15 jours ouvrés</strong> officiellement, mais prévois <strong>3 à 4 semaines</strong> en haute saison (juin-août, décembre).</p>
 
     <h2 id="section-7">Que faire en cas de refus ?</h2>
     <p>Un refus de visa Schengen mentionne un motif parmi une liste de codes standard (ressources insuffisantes, doute sur le retour, dossier incomplet…). Tu peux :</p>
     <ul>
-      <li>Déposer un recours gracieux auprès du consulat dans un délai de <strong>[À VÉRIFIER] mois</strong></li>
+      <li>Déposer un recours gracieux auprès du consulat dans un délai de <strong>2 mois</strong></li>
       <li>Redéposer un dossier renforcé après avoir corrigé les points faibles identifiés dans le refus</li>
       <li>Attendre quelques mois et redéposer : un historique de visas accordés précédemment joue positivement</li>
     </ul>
@@ -241,7 +243,7 @@ include 'header.php';
       <div class="author-avatar" style="overflow:hidden;position:relative;"><img src="assets/img/profile/anthony-profil.jpg" alt="Anthony Bouillon" width="72" height="72" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"></div>
       <div class="author-info">
         <h4>Anthony Bouillon</h4>
-        <p>Français expatrié à Hanoï. Je partage mon parcours d'installation au Vietnam : démarches, vie de couple mixte et travail en ligne.</p>
+        <p>Français marié à une Vietnamienne, installé à Hanoï. Je partage notre parcours : démarches administratives, mariage franco-vietnamien, vie de couple mixte.</p>
         <div class="author-links">
           <a href="https://www.tiktok.com/@proffrancaisetranger" target="_blank" rel="noopener">TikTok</a>
           <a href="a-propos-capvietnam">À propos</a>
@@ -256,7 +258,7 @@ include 'header.php';
 <?php
 require_once __DIR__ . '/config/site.php';
 $current_slug = 'visa-schengen-belle-famille-vietnamienne';
-$current_cat  = 'admin';
+$current_cat  = 'vivre-ensemble';
 include '_related-articles.php';
 ?>
 

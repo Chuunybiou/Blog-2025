@@ -1,12 +1,12 @@
 ﻿<?php
 $page_title       = 'Budget mensuel à Hanoï 2026 — Cap Vietnam';
 $page_description = 'Budget réel d\'un expatrié à Hanoï en 2026 : loyer, nourriture, transports, loisirs et santé. Chiffres concrets pour différents styles de vie.';
-$page_canonical   = 'https://www.blog-capvietnam.fr/budget-mensuel-hanoi-2026';
+$page_canonical   = 'https://blog-capvietnam.fr/budget-mensuel-hanoi-2026';
 $page_og_title    = 'Budget mensuel à Hanoï en 2026 : chiffres réels d\'un expatrié';
 $page_og_desc     = 'Loyer, nourriture, transport et loisirs : budget détaillé pour vivre à Hanoï en 2026.';
-$page_og_url      = 'https://www.blog-capvietnam.fr/budget-mensuel-hanoi-2026';
+$page_og_url      = 'https://blog-capvietnam.fr/budget-mensuel-hanoi-2026';
 $page_og_image    = 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Budget mensuel a Hanoi en 2026 : combien ca coute vraiment","datePublished":"2026-04-01","dateModified":"2026-04-01","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://www.blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://www.blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=1200&q=80","description":"Loyer, nourriture, transport et loisirs : budget detaille pour vivre a Hanoi en 2026.","timeRequired":"PT6M","inLanguage":"fr","url":"https://www.blog-capvietnam.fr/budget-mensuel-hanoi-2026"}';
+$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Budget mensuel a Hanoi en 2026 : combien ca coute vraiment","datePublished":"2026-04-01","dateModified":"2026-04-01","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=1200&q=80","description":"Loyer, nourriture, transport et loisirs : budget detaille pour vivre a Hanoi en 2026.","timeRequired":"PT6M","inLanguage":"fr","url":"https://blog-capvietnam.fr/budget-mensuel-hanoi-2026"}';
 
 $article_color   = 'amber';
 $article_hero_bg = '#3a2800';
@@ -15,7 +15,7 @@ $article_badge   = 'rgba(184,134,11,0.25)';
 $article_badge_c = 'var(--amber-soft)';
 
 $article_category     = 'Argent &amp; Travail';
-$article_category_url = 'https://www.blog-capvietnam.fr/articles-capvietnam';
+$article_category_url = 'https://blog-capvietnam.fr/articles-capvietnam';
 $page_faq = [
   ['q' => 'Peut-on vraiment vivre confortablement à Hanoï avec 1 000 €/mois ?',
    'a' => 'Oui, avec un appartement correct dans un quartier résidentiel, une alimentation mixte local/restaurants, un scooter et une assurance santé de base. Ce n\'est pas du luxe mais c\'est une vie très confortable comparée à Paris avec ce budget.'],

@@ -1,11 +1,11 @@
 ﻿<?php
 $page_title       = 'Fortuneo en expatriation : ce qu\'on peut garder et ce qu\'il faut vérifier avant de partir';
 $page_description = 'J\'ai un compte Fortuneo et je pars vivre à l\'étranger. Quels services restent accessibles ? Que faire du PEA ? Ce qu\'il faut vérifier avant de quitter la France — et le code parrainage 13036009.';
-$page_canonical   = 'https://www.blog-capvietnam.fr/fortuneo-expat-compte-france';
+$page_canonical   = 'https://blog-capvietnam.fr/fortuneo-expat-compte-france';
 $page_og_title    = 'Fortuneo et expatriation : ce que vous pouvez garder depuis l\'étranger';
 $page_og_desc     = 'Compte courant, livret, investissements : ce que Fortuneo permet depuis l\'étranger, ce qui est bloqué, et les questions à se poser avant de partir.';
-$page_og_url      = 'https://www.blog-capvietnam.fr/fortuneo-expat-compte-france';
-$page_og_image    = 'https://www.blog-capvietnam.fr/assets/img/capvietnam-money.jpg';
+$page_og_url      = 'https://blog-capvietnam.fr/fortuneo-expat-compte-france';
+$page_og_image    = 'https://blog-capvietnam.fr/assets/img/capvietnam-money.jpg';
 
 $page_schema = '{
   "@context": "https://schema.org",
@@ -14,9 +14,9 @@ $page_schema = '{
   "description": "Guide pratique pour les expatriés français qui ont un compte Fortuneo ou souhaitent en ouvrir un avant de partir : compte courant, investissements, PEA et code parrainage 13036009.",
   "datePublished": "2026-06-06",
   "dateModified": "2026-06-06",
-  "author": {"@type": "Person", "name": "Anthony Bouillon", "url": "https://www.blog-capvietnam.fr/a-propos-capvietnam"},
-  "publisher": {"@type": "Organization", "name": "Cap Vietnam", "url": "https://www.blog-capvietnam.fr"},
-  "mainEntityOfPage": "https://www.blog-capvietnam.fr/fortuneo-expat-compte-france",
+  "author": {"@type": "Person", "name": "Anthony Bouillon", "url": "https://blog-capvietnam.fr/a-propos-capvietnam"},
+  "publisher": {"@type": "Organization", "name": "Cap Vietnam", "url": "https://blog-capvietnam.fr"},
+  "mainEntityOfPage": "https://blog-capvietnam.fr/fortuneo-expat-compte-france",
   "inLanguage": "fr",
   "articleSection": "Argent & Travail"
 }';
@@ -44,7 +44,7 @@ $page_faq = [
 
 $page_extra_head = '
 
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://www.blog-capvietnam.fr"},{"@type":"ListItem","position":2,"name":"Argent & Travail","item":"https://www.blog-capvietnam.fr/articles-capvietnam"},{"@type":"ListItem","position":3,"name":"Fortuneo expatriation"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://blog-capvietnam.fr"},{"@type":"ListItem","position":2,"name":"Argent & Travail","item":"https://blog-capvietnam.fr/articles-capvietnam"},{"@type":"ListItem","position":3,"name":"Fortuneo expatriation"}]}</script>
 ';
 
 include '_article-css.php';
