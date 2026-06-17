@@ -295,8 +295,8 @@
             "slug": "carte-residence-temporaire-vietnam",
             "title": "La carte de résidence temporaire au Vietnam",
             "excerpt": "Comment l'obtenir, combien ça coûte, et pourquoi c'est mieux qu'un simple visa.",
-            "category": "vie-pratique",
-            "categoryLabel": "Vie pratique au Vietnam",
+            "category": "vivre-ensemble",
+            "categoryLabel": "Vivre ensemble",
             "date": "2026-02-15",
             "dateLabel": "Fév 2026",
             "readTime": "6 min",
@@ -554,8 +554,8 @@
             "slug": "faire-venir-conjointe-vietnamienne-france",
             "title": "Faire venir son conjoint(e) vietnamien(ne) en France : le guide complet 2026",
             "excerpt": "Du CCAM consulaire jusqu'au titre de séjour : toutes les étapes pour faire venir ton conjoint vietnamien en France. Procédures, délais et coûts expliqués.",
-            "category": "mariage",
-            "categoryLabel": "Se marier",
+            "category": "vivre-ensemble",
+            "categoryLabel": "Vivre ensemble",
             "date": "2026-06-01",
             "dateLabel": "Juin 2026",
             "readTime": "12 min",
@@ -583,7 +583,7 @@
             "imageAlt": "Documents visa long séjour",
             "keywords": "visa long sejour conjoint francais vietnamien vfs global dossier",
             "silo": "france",
-            "published": false
+            "published": true
         },
         {
             "slug": "certificat-capacite-mariage-vietnam",
@@ -602,7 +602,7 @@
             "tags": [
                 "mariage"
             ],
-            "published": false
+            "published": true
         },
         {
             "slug": "transcription-mariage-service-central-nantes",
@@ -621,7 +621,7 @@
             "tags": [
                 "mariage"
             ],
-            "published": false
+            "published": true
         },
         {
             "slug": "titre-sejour-vie-privee-familiale-conjoint-vietnamien",
@@ -637,7 +637,7 @@
             "imageAlt": "Titre de séjour vie privée familiale",
             "keywords": "titre sejour vie privee familiale conjoint vietnamien france anef prefecture",
             "silo": "france",
-            "published": false
+            "published": true
         },
         {
             "slug": "entretien-ambassade-france-vietnam-visa-conjoint",
@@ -653,7 +653,7 @@
             "imageAlt": "Entretien ambassade France Vietnam",
             "keywords": "entretien ambassade france vietnam visa conjoint mariage sincere questions",
             "silo": "france",
-            "published": false
+            "published": true
         },
         {
             "slug": "visa-schengen-belle-famille-vietnamienne",
@@ -669,7 +669,7 @@
             "imageAlt": "Famille franco-vietnamienne France",
             "keywords": "visa schengen belle famille vietnamienne france invitation hebergement attestation",
             "silo": "france",
-            "published": false
+            "published": true
         },
         {
             "slug": "se-marier-vietnam-procedure-comite-populaire",

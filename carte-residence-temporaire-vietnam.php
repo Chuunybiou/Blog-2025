@@ -14,8 +14,8 @@ $article_glow    = 'rgba(191,74,42,0.15)';
 $article_badge   = 'rgba(191,74,42,0.2)';
 $article_badge_c = 'var(--terracotta-soft)';
 
-$article_category     = 'Démarches Admin';
-$article_category_url = 'https://blog-capvietnam.fr/articles-capvietnam';
+$article_category     = 'Vivre ensemble';
+$article_category_url = 'https://blog-capvietnam.fr/articles-capvietnam?cat=vivre-ensemble';
 $page_faq = [
   ['q' => 'Peut-on obtenir la thẻ tạm trú sans permis de travail ?',
    'a' => 'Oui, si tu es conjoint(e) ou enfant d\'un(e) ressortissant(e) vietnamien(ne), étudiant(e) inscrit(e) dans un établissement au Vietnam, ou investisseur. Sans ces motifs, le permis de travail est généralement requis.'],
@@ -34,10 +34,10 @@ include 'header.php';
   <div class="article-hero-inner">
     <div class="breadcrumb">
       <a href="blog-capvietnam">Accueil</a><span class="breadcrumb-sep">›</span>
-      <a href="articles-capvietnam">Démarches Administratives</a><span class="breadcrumb-sep">›</span>
+      <a href="articles-capvietnam?cat=vivre-ensemble">Vivre ensemble</a><span class="breadcrumb-sep">›</span>
       <span>Carte de résidence temporaire</span>
     </div>
-    <span class="article-badge-hero">Démarches Administratives</span>
+    <span class="article-badge-hero">Vivre ensemble</span>
     <h1>Carte de résidence temporaire au Vietnam (Thẻ Tạm Trú) : comment l'obtenir</h1>
     <div class="article-hero-meta">
       <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
@@ -203,7 +203,7 @@ include 'header.php';
 
 <?php
 $current_slug = 'carte-residence-temporaire-vietnam';
-$current_cat  = 'vie-pratique';
+$current_cat  = 'vivre-ensemble';
 include '_related-articles.php';
 ?>
 

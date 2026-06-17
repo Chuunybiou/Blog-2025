@@ -17,7 +17,7 @@ $page_schema      = json_encode([
   'publisher'       => ['@type' => 'Organization', 'name' => SITE_NAME, 'url' => SITE_URL],
   'mainEntityOfPage'=> SITE_URL . '/transcription-mariage-service-central-nantes',
   'inLanguage'      => 'fr',
-  'articleSection'  => 'Vivre ensemble : ici ou là-bas',
+  'articleSection'  => 'Se marier',
 ], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
 
 $article_color        = 'terracotta';
@@ -26,7 +26,7 @@ $article_glow         = 'rgba(191,74,42,0.15)';
 $article_badge        = 'rgba(191,74,42,0.25)';
 $article_badge_c      = '#e8856a';
 
-$article_category     = 'Vivre ensemble';
+$article_category     = 'Se marier';
 $article_category_url = SITE_URL . '/articles-capvietnam?cat=mariage';
 $page_faq = [
   ['q' => 'La transcription du mariage à Nantes est-elle obligatoire pour vivre en France ?',
@@ -52,7 +52,7 @@ include 'header.php';
       <a href="faire-venir-conjointe-vietnamienne-france">Conjoint vietnamien en France</a><span class="breadcrumb-sep">›</span>
       <span>Transcription Nantes</span>
     </div>
-    <span class="article-badge-hero">Vivre ensemble</span>
+    <span class="article-badge-hero">Se marier</span>
     <h1>Transcription du mariage au Service Central d'État Civil de Nantes : guide 2026</h1>
     <div class="article-hero-meta">
       <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
@@ -103,7 +103,7 @@ include 'header.php';
 
     <h2 id="section-2">Pourquoi le SCEC de Nantes ?</h2>
     <p>Le Service Central d'État Civil de Nantes est le seul organisme habilité en France à recevoir et traiter les demandes de transcription des mariages contractés à l'étranger par des ressortissants français. Il est rattaché au ministère de l'Europe et des Affaires étrangères.</p>
-    <p>Adresse : Service Central d'État Civil, 11 rue de la Maison Blanche, 44941 Nantes Cedex 9. Les dossiers s'envoient par courrier ou via le service en ligne du ministère (si disponible à la date de ta demande) [À VÉRIFIER].</p>
+    <p>Adresse : Service Central d'État Civil, 11 rue de la Maison Blanche, 44941 Nantes Cedex 9. Les dossiers s'envoient par voie postale ou via le consulat — il n'existe pas de dépôt en ligne.</p>
 
     <h2 id="section-3">Conditions préalables à la transcription</h2>
     <p>Pour que la transcription soit possible, les conditions suivantes doivent être remplies :</p>
@@ -180,12 +180,11 @@ include 'header.php';
     </div>
 
     <h2 id="section-5">Comment envoyer le dossier à Nantes</h2>
-    <p>Le dossier peut être transmis de trois manières :</p>
-    <ol>
-      <li><strong>Par courrier recommandé</strong> directement au SCEC de Nantes depuis la France ou depuis l'étranger (joindre une enveloppe de retour avec les timbres)</li>
-      <li><strong>Via le consulat français compétent</strong> au Vietnam (Hanoï ou Hô Chi Minh-Ville) qui transmet le dossier au SCEC</li>
-      <li><strong>Via le service en ligne du SCEC</strong> si disponible à la date de ta démarche [À VÉRIFIER]</li>
-    </ol>
+    <p>Le dossier peut être transmis de deux manières :</p>
+    <ul>
+      <li><strong>Si tu résides à l'étranger (Vietnam) :</strong> dépose le dossier auprès du consulat ou de l'ambassade de France au Vietnam, qui le transmet au SCEC de Nantes pour traitement (et création du livret de famille).</li>
+      <li><strong>Si tu résides en France :</strong> envoie ta demande directement par voie postale au Service Central d'État Civil de Nantes (Ministère de l'Europe et des Affaires étrangères).</li>
+    </ul>
     <p>La voie consulaire est souvent plus sûre si tu es encore au Vietnam : le consulat peut signaler les pièces manquantes avant l'envoi à Nantes.</p>
 
     <h2 id="section-6">Délai de traitement</h2>

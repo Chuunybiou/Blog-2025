@@ -37,7 +37,7 @@ include 'header.php';
     <p class="error-desc">Comme un scooter dans le vieux quartier, tu as pris un mauvais virage. Mais pas de panique — voici quelques pistes pour retrouver ton chemin.</p>
 
     <div class="error-suggestions">
-      <a class="suggestion" href="blog-capvietnam">
+      <a class="suggestion" href="/">
         <span class="suggestion-icon">🏠</span>
         <span class="suggestion-text">Retourner à l'accueil</span>
         <span class="suggestion-arrow">→</span>
@@ -47,14 +47,10 @@ include 'header.php';
         <span class="suggestion-text">Voir tous les articles</span>
         <span class="suggestion-arrow">→</span>
       </a>
-      <a class="suggestion" href="photos-videos-capvietnam">
-        <span class="suggestion-icon">📸</span>
-        <span class="suggestion-text">Photos &amp; Vidéos</span>
-        <span class="suggestion-arrow">→</span>
-      </a>
-      <a class="suggestion" href="apprendre-francais-capvietnam">
+
+      <a class="suggestion" href="vi">
         <span class="suggestion-icon">🇫🇷</span>
-        <span class="suggestion-text">Học tiếng Pháp — Apprendre le français</span>
+        <span class="suggestion-text">Bạn lấy chồng Pháp</span>
         <span class="suggestion-arrow">→</span>
       </a>
     </div>

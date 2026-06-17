@@ -109,7 +109,7 @@ include 'header.php';
     </div>
 
     <h2 id="section-3">La liste des documents à préparer</h2>
-    <p>La liste officielle est publiée sur le site de France Visas [À VÉRIFIER la liste actuelle]. Voici les documents habituellement demandés :</p>
+    <p>La liste officielle est disponible sur <a href="https://france-visas.gouv.fr" target="_blank" rel="noopener">france-visas.gouv.fr</a>. Voici les documents habituellement demandés :</p>
 
     <table>
       <thead>

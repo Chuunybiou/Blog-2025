@@ -111,7 +111,7 @@ include 'header.php';
     </ul>
 
     <h2 id="section-3">Questions types posées lors de l'entretien</h2>
-    <p>Ces questions sont compilées à partir de retours de couples franco-vietnamiens — elles ne sont pas officielles et peuvent varier [TON EXPÉRIENCE ICI si tu as passé cet entretien] :</p>
+    <p>Ces questions sont compilées à partir de retours de couples franco-vietnamiens — elles ne sont pas officielles et peuvent varier.</p>
 
     <div style="overflow-x:auto;border-radius:10px;border:1px solid rgba(77,200,160,0.18);margin:1.5rem 0;">
     <table style="width:100%;border-collapse:collapse;font-size:0.9rem;">

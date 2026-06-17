@@ -18,7 +18,7 @@ $page_schema      = json_encode([
   'mainEntityOfPage'=> SITE_URL . '/certificat-capacite-mariage-vietnam',
   'image'           => SITE_URL . '/assets/img/CCAM-DOCUMENTS.jpg',
   'inLanguage'      => 'fr',
-  'articleSection'  => 'Vivre ensemble : ici ou là-bas',
+  'articleSection'  => 'Se marier',
 ], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
 
 $article_color        = 'terracotta';
@@ -27,7 +27,7 @@ $article_glow         = 'rgba(191,74,42,0.15)';
 $article_badge        = 'rgba(191,74,42,0.25)';
 $article_badge_c      = '#e8856a';
 
-$article_category     = 'Vivre ensemble';
+$article_category     = 'Se marier';
 $article_category_url = SITE_URL . '/articles-capvietnam?cat=mariage';
 $page_faq = [
   ['q' => 'Qu\'est-ce que le CCAM exactement ?',
@@ -53,7 +53,7 @@ include 'header.php';
       <a href="faire-venir-conjointe-vietnamienne-france">Conjoint vietnamien en France</a><span class="breadcrumb-sep">›</span>
       <span>CCAM</span>
     </div>
-    <span class="article-badge-hero">Vivre ensemble</span>
+    <span class="article-badge-hero">Se marier</span>
     <h1>Le CCAM : certificat de capacité à mariage — comment l'obtenir au consulat de France</h1>
     <div class="article-hero-meta">
       <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>

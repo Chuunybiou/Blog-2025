@@ -151,7 +151,7 @@ include '../header.php';
       <div class="vi-profile-name"><?= SITE_AUTHOR ?></div>
       <div class="vi-profile-role">🇫🇷 Người Pháp • 💍 Có vợ người Việt • 📍 Hà Nội</div>
       <p class="vi-profile-text">
-        Mình đến Việt Nam năm <?= SITE_YEAR ?> và lấy vợ người Việt.<br>
+        Mình đến Việt Nam năm 2025 và lấy vợ người Việt.<br>
         Blog tiếng Pháp của mình giải thích từng bước thủ tục — để cặp đôi cùng chuẩn bị hành trình sang Pháp.
       </p>
       <div class="vi-profile-tags">

@@ -150,7 +150,7 @@ include 'header.php';
     <p>Ton conjoint crée un compte sur l'ANEF, remplit le formulaire en ligne et télécharge les pièces justificatives scannées. Un récépissé électronique lui est remis, qui prouve la régularité de son séjour pendant le traitement.</p>
 
     <div class="tip-box">
-      <strong>Blocage sur l'ANEF ?</strong> Le portail est parfois saturé ou bugué. En cas d'impossibilité persistante de déposer en ligne, une attestation de dépôt peut être demandée à la préfecture. [À VÉRIFIER selon ta préfecture]
+      <strong>Blocage sur l'ANEF ?</strong> Le portail est parfois saturé ou bugué. En cas d'impossibilité persistante de déposer en ligne, contacter directement la préfecture. Selon les préfectures, une attestation de dépôt peut être délivrée.
     </div>
 
     <h2 id="section-5">Le renouvellement du titre de séjour</h2>

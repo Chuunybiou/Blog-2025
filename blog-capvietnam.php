@@ -426,7 +426,7 @@ include 'header.php';
   <section class="section" id="articles">
     <div class="section-label">Derniers articles</div>
     <h2 class="section-title">Récemment publié</h2>
-    <p class="section-desc">Les derniers articles pour préparer et réussir ton expatriation au Vietnam.</p>
+    <p class="section-desc">Les derniers articles pour les couples franco-vietnamiens — démarches, argent, vie quotidienne.</p>
 
     <div class="articles-grid">
 <?php

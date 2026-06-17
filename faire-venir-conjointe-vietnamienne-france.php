@@ -60,7 +60,7 @@ $article_badge        = 'rgba(191,74,42,0.25)';
 $article_badge_c      = '#e8856a';
 
 $article_category     = 'Vivre ensemble';
-$article_category_url = SITE_URL . '/articles-capvietnam?cat=mariage';
+$article_category_url = SITE_URL . '/articles-capvietnam?cat=vivre-ensemble';
 $page_faq = [
   ['q' => 'Combien de temps faut-il pour faire venir son conjoint vietnamien en France ?',
    'a' => 'Compte en moyenne 12 à 24 mois au total : quelques mois pour le CCAM, le mariage et la transcription au Vietnam, puis 2 à 3 mois de traitement du visa long séjour à l\'ambassade de France à Hanoï ou Hô Chi Minh-Ville.'],
@@ -85,7 +85,7 @@ include 'header.php';
   <div class="article-hero-inner">
     <div class="breadcrumb">
       <a href="/">Accueil</a><span class="breadcrumb-sep">›</span>
-      <a href="articles-capvietnam?cat=mariage">Se marier</a><span class="breadcrumb-sep">›</span>
+      <a href="articles-capvietnam?cat=vivre-ensemble">Vivre ensemble</a><span class="breadcrumb-sep">›</span>
       <span>Faire venir son conjoint vietnamien</span>
     </div>
     <span class="article-badge-hero">Vivre ensemble</span>

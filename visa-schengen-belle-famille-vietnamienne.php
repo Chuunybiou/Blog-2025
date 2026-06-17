@@ -162,8 +162,8 @@ include 'header.php';
           <td style="padding:0.75rem 1rem;font-size:0.87rem;opacity:0.82;">Expliquer le lien familial, la durée du séjour, les activités prévues</td>
         </tr>
         <tr style="background:rgba(255,255,255,0.02);border-bottom:1px solid rgba(250,248,244,0.06);">
-          <td style="padding:0.75rem 1rem;font-weight:600;font-size:0.87rem;">Attestation d'hébergement (mairie)</td>
-          <td style="padding:0.75rem 1rem;font-size:0.87rem;opacity:0.82;">Gratuite, délivrée par la mairie de ton domicile</td>
+          <td style="padding:0.75rem 1rem;font-weight:600;font-size:0.87rem;">Attestation d'accueil (mairie)</td>
+          <td style="padding:0.75rem 1rem;font-size:0.87rem;opacity:0.82;">30 € (timbre fiscal) · délivrée par ta mairie · valable 1 an</td>
         </tr>
         <tr style="border-bottom:1px solid rgba(250,248,244,0.06);">
           <td style="padding:0.75rem 1rem;font-weight:600;font-size:0.87rem;">Copie de ta CNI ou passeport</td>
@@ -204,7 +204,7 @@ include 'header.php';
     </div>
 
     <h2 id="section-6">Le dépôt via VFS Global et les délais</h2>
-    <p>La demande est déposée au centre VFS Global le plus proche du domicile des demandeurs au Vietnam (Hanoï, Hô Chi Minh-Ville, Da Nang [À VÉRIFIER disponibilité]). La prise de rendez-vous se fait en ligne.</p>
+    <p>Le dépôt se fait au centre VFS Global compétent au Vietnam — consulter la liste à jour des centres sur <a href="https://www.vfsglobal.com/france/vietnam/" target="_blank" rel="noopener">vfsglobal.com/france/vietnam</a>. La prise de rendez-vous se fait en ligne.</p>
     <p>Frais :</p>
     <ul>
       <li>Droits de visa Schengen : <strong>90 €</strong> (non remboursable en cas de refus)</li>
@@ -215,7 +215,7 @@ include 'header.php';
     <h2 id="section-7">Que faire en cas de refus ?</h2>
     <p>Un refus de visa Schengen mentionne un motif parmi une liste de codes standard (ressources insuffisantes, doute sur le retour, dossier incomplet…). Tu peux :</p>
     <ul>
-      <li>Déposer un recours gracieux auprès du consulat dans un délai de <strong>2 mois</strong></li>
+      <li>Saisir la <strong>Commission de recours contre les refus de visa (CRRV)</strong> dans un délai de <strong>2 mois</strong> (recours préalable obligatoire avant tout recours contentieux)</li>
       <li>Redéposer un dossier renforcé après avoir corrigé les points faibles identifiés dans le refus</li>
       <li>Attendre quelques mois et redéposer : un historique de visas accordés précédemment joue positivement</li>
     </ul>
