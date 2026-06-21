@@ -215,6 +215,48 @@ nav.scrolled { box-shadow: var(--shadow-md); }
 .nav-lang-switch { font-size: 0.85rem !important; padding: 0.35rem 0.9rem !important; border-radius: 100px !important; background: #2d2d2d !important; color: #fff !important; font-weight: 700 !important; text-transform: none !important; letter-spacing: 0 !important; transition: background 0.2s, transform 0.2s !important; line-height: 1 !important; }
 .nav-lang-switch:hover { background: #444 !important; transform: translateY(-1px); }
 
+/* ═══ DROPDOWN OUTILS ═══ */
+.nav-dropdown { position: relative; }
+.nav-dropdown > button {
+  background: none; border: none; cursor: pointer; padding: 0;
+  color: var(--muted); font-size: 0.85rem; font-weight: 500;
+  letter-spacing: 0.5px; text-transform: uppercase; font-family: inherit;
+  display: flex; align-items: center; gap: 3px; transition: color 0.2s;
+}
+.nav-dropdown > button:hover { color: var(--ink); }
+.nav-dropdown > button::after { content: "▾"; font-size: 0.65rem; opacity: 0.55; margin-top: 1px; }
+.nav-dd-menu {
+  position: absolute; top: calc(100% + 14px); left: 50%; transform: translateX(-50%) translateY(-6px);
+  background: #fff; border: 1px solid var(--border); border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(28,25,23,0.12); min-width: 230px; padding: 0.5rem 0;
+  opacity: 0; visibility: hidden; pointer-events: none;
+  transition: opacity 0.15s, transform 0.15s; z-index: 200;
+}
+.nav-dropdown:hover .nav-dd-menu,
+.nav-dropdown.open .nav-dd-menu {
+  opacity: 1; visibility: visible; pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+.nav-dd-menu a {
+  display: block; padding: 0.55rem 1.1rem;
+  color: var(--ink) !important; font-size: 0.85rem !important;
+  text-transform: none !important; letter-spacing: 0 !important;
+  font-weight: 500 !important; text-decoration: none; transition: background 0.12s; white-space: nowrap;
+}
+.nav-dd-menu a:hover { background: var(--warm-bg); }
+.nav-dd-sep { height: 1px; background: var(--border); margin: 0.4rem 0.8rem; }
+@media (max-width: 640px) {
+  .nav-dropdown > button { color: var(--muted); }
+  .nav-dd-menu {
+    position: static; transform: none; box-shadow: none; border: none;
+    background: transparent; padding: 0 0 0 1rem; opacity: 1; visibility: visible;
+    pointer-events: auto; min-width: auto; display: none;
+  }
+  .nav-dropdown.open .nav-dd-menu { display: block; }
+  .nav-dd-menu a { padding: 0.3rem 0; font-size: 0.82rem !important; }
+  .nav-dd-sep { display: none; }
+}
+
 /* ═══════════ SECTIONS ═══════════ */
 .section {
   max-width: 1200px;
@@ -369,11 +411,21 @@ footer {
 <!-- ═══════ NAV ═══════ -->
 <nav id="nav">
   <div class="nav-inner">
-    <a href="<?= $path_prefix ?: '/' ?>" class="nav-logo">Cap<span>Vietnam</span></a>
+    <a href="<?= $path_prefix ?: '/' ?>" class="nav-logo">Blog Cap<span>Vietnam</span></a>
     <ul class="nav-links" id="navLinks">
       <li><a href="<?= $path_prefix ?: '/' ?>">Accueil</a></li>
       <li><a href="<?= $path_prefix ?>articles-capvietnam">Articles</a></li>
-      <li><a href="<?= $path_prefix ?>calculateur-budget-vietnam">Calculateur</a></li>
+      <li class="nav-dropdown">
+        <button aria-haspopup="true" aria-expanded="false">🛠️ Outils</button>
+        <div class="nav-dd-menu" role="menu">
+          <a href="<?= $path_prefix ?>outils-vivre-vietnam">🛠️ Tous les outils</a>
+          <div class="nav-dd-sep"></div>
+          <a href="<?= $path_prefix ?>parcours-couple-franco-vietnamien">🗺️ Parcours guidé</a>
+          <a href="<?= $path_prefix ?>simulateur-retroplanning-conjoint">📅 Rétroplanning conjoint</a>
+          <a href="<?= $path_prefix ?>simulateur-installation-vietnam">⏱️ Rétroplanning Vietnam</a>
+          <a href="<?= $path_prefix ?>calculateur-budget-vietnam">💰 Calculateur de budget</a>
+        </div>
+      </li>
       <li><a href="<?= $path_prefix ?>guide-cap-vietnam-2026" class="nav-guide-cta">Guide</a></li>
       <li><a href="<?= $path_prefix ?>a-propos-capvietnam">À propos</a></li>
       <?php if ($page_lang_switch): ?>

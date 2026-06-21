@@ -1,0 +1,287 @@
+<!--
+  Blog CapVietnam — Simulateur « S'installer au Vietnam » (conjoint de Vietnamien)
+  Fichier autonome (HTML + CSS + JS). À déposer par ex. en /simulateur-installation-vietnam.
+  - Sélecteur « Vous vous mariez où ? » : 🇻🇳 au Vietnam (CCAM requis) ou 🇫🇷 en France
+    (pas de CCAM, mais reconnaissance du mariage au Vietnam). Même suite ensuite.
+  - localStorage avec repli mémoire : aucun plantage. Durées dans les tableaux STEPS_*.
+-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=Spline+Sans+Mono:wght@500;600&display=swap" rel="stylesheet">
+
+<div id="capv-vn">
+<style>
+  #capv-vn{
+    --encre:#1c1917; --papier:#FBF8F3; --papier-2:#F3ECE2;
+    --laque:#C8102E; --laque-fonce:#9e0c23; --or:#E4A11B; --jade:#3F7A6D;
+    --ardoise:#6B635B; --trait:#E2D8C9;
+    --serif:'Fraunces',Georgia,serif; --sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    --mono:'Spline Sans Mono',Consolas,monospace;
+    background:var(--papier);color:var(--encre);font-family:var(--sans);line-height:1.55;
+    -webkit-font-smoothing:antialiased;border-radius:18px;overflow:hidden;max-width:880px;margin:0 auto;
+    box-shadow:0 1px 0 var(--trait),0 30px 60px -40px rgba(28,25,23,.5);
+  }
+  #capv-vn *{box-sizing:border-box}
+  #capv-vn .wrap{padding:clamp(22px,4vw,40px)}
+  #capv-vn .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--laque);display:flex;align-items:center;gap:8px;margin:0 0 14px}
+  #capv-vn .eyebrow::before{content:"";width:26px;height:1px;background:var(--laque)}
+  #capv-vn h1{font-family:var(--serif);font-weight:500;font-size:clamp(26px,5vw,40px);
+    line-height:1.08;letter-spacing:-.01em;margin:0 0 10px}
+  #capv-vn h1 em{font-style:italic;color:var(--laque)}
+  #capv-vn .lede{color:var(--ardoise);font-size:16px;max-width:60ch;margin:0}
+  #capv-vn .lede.alt{margin-top:10px;font-size:14px}
+  #capv-vn .lede.alt a{color:var(--laque);font-weight:600}
+
+  #capv-vn .panel{margin-top:26px;background:#fff;border:1px solid var(--trait);border-radius:14px;padding:20px}
+  #capv-vn .pick{margin-bottom:18px}
+  #capv-vn .pick .q{font-size:13px;font-weight:600;margin:0 0 8px}
+  #capv-vn .seg{display:inline-flex;gap:6px;background:var(--papier-2);border:1px solid var(--trait);border-radius:11px;padding:5px}
+  #capv-vn .seg button{font:600 14px var(--sans);padding:10px 18px;border-radius:8px;border:0;cursor:pointer;
+    background:transparent;color:var(--encre);transition:.18s}
+  #capv-vn .seg button[aria-pressed="true"]{background:var(--encre);color:var(--papier)}
+  #capv-vn .seg button:focus-visible{outline:2px solid var(--laque);outline-offset:2px}
+  @media(max-width:460px){#capv-vn .seg{display:flex;width:100%}#capv-vn .seg button{flex:1}}
+  #capv-vn .field label{display:block;font-size:13px;font-weight:600;margin-bottom:7px}
+  #capv-vn .field .hint{font-size:12px;color:var(--ardoise);font-weight:400}
+  #capv-vn input[type=date]{width:100%;max-width:280px;font-family:var(--mono);font-size:15px;padding:11px 12px;
+    border:1px solid var(--trait);border-radius:9px;background:var(--papier);color:var(--encre)}
+  #capv-vn input[type=date]:focus-visible{outline:2px solid var(--laque);outline-offset:2px}
+
+  #capv-vn .verdict{margin-top:24px;background:var(--encre);color:var(--papier);border-radius:14px;
+    padding:22px 24px;position:relative;overflow:hidden}
+  #capv-vn .verdict::after{content:"🇻🇳";position:absolute;right:-6px;bottom:-14px;font-size:84px;opacity:.10}
+  #capv-vn .verdict .k{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--or);margin:0 0 6px}
+  #capv-vn .verdict .v{font-family:var(--serif);font-size:clamp(18px,3.2vw,24px);line-height:1.28;margin:0;max-width:50ch}
+  #capv-vn .verdict .v b{color:var(--or);font-weight:600}
+
+  #capv-vn .timeline{margin-top:30px;position:relative}
+  #capv-vn .step{position:relative;display:grid;grid-template-columns:56px 1fr;gap:18px;padding:0 0 26px 0}
+  #capv-vn .step::before{content:"";position:absolute;left:27px;top:46px;bottom:-6px;width:2px;
+    background:repeating-linear-gradient(var(--trait) 0 6px,transparent 6px 12px)}
+  #capv-vn .step:last-child::before{display:none}
+  #capv-vn .seal{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;
+    border:2px dashed var(--laque);color:var(--laque);font-family:var(--mono);font-weight:600;font-size:18px;
+    background:var(--papier);transform:rotate(-4deg);position:relative;z-index:1}
+  #capv-vn .step.is-start .seal{border-style:solid;background:var(--encre);color:var(--papier);transform:rotate(0)}
+  #capv-vn .step.is-perm .seal{border-color:var(--jade);color:var(--jade)}
+  #capv-vn .step .body{padding-top:4px}
+  #capv-vn .step h3{font-family:var(--serif);font-weight:600;font-size:18px;margin:0 0 4px;line-height:1.2}
+  #capv-vn .step .emo{font-size:16px;margin-right:4px}
+  #capv-vn .dates{display:inline-flex;align-items:center;gap:10px;flex-wrap:wrap;margin:6px 0 8px;
+    font-family:var(--mono);font-size:13.5px}
+  #capv-vn .dates .pill{background:var(--papier-2);border:1px solid var(--trait);border-radius:999px;
+    padding:4px 11px;white-space:nowrap}
+  #capv-vn .dates .pill b{color:var(--laque-fonce);font-weight:600}
+  #capv-vn .dates .pill.solo b{color:var(--encre)}
+  #capv-vn .dates .arrow{color:var(--ardoise)}
+  #capv-vn .step p{margin:0;color:var(--ardoise);font-size:14px;max-width:56ch}
+  #capv-vn .step a.read{display:inline-block;margin-top:8px;font-size:13px;font-weight:600;color:var(--laque);
+    text-decoration:none;border-bottom:1.5px solid transparent;transition:border-color .15s}
+  #capv-vn .step a.read:hover{border-color:var(--laque)}
+
+  #capv-vn .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+  #capv-vn .btn{font:600 14px var(--sans);padding:13px 18px;border-radius:10px;cursor:pointer;
+    text-decoration:none;display:inline-flex;align-items:center;gap:8px;border:1px solid transparent}
+  #capv-vn .btn-pri{background:var(--laque);color:#fff}
+  #capv-vn .btn-pri:hover{background:var(--laque-fonce)}
+  #capv-vn .btn-sec{background:transparent;color:var(--encre);border-color:var(--trait)}
+  #capv-vn .btn-sec:hover{border-color:var(--encre)}
+
+  #capv-vn .foot{margin-top:26px;border-top:1px solid var(--trait);padding-top:16px;font-size:12.5px;color:var(--ardoise)}
+  #capv-vn .foot b{color:var(--encre)}
+  @media print{#capv-vn{box-shadow:none;border-radius:0}#capv-vn .actions{display:none}}
+  @media (prefers-reduced-motion:reduce){#capv-vn *{transition:none!important;animation:none!important}}
+  @media(max-width:560px){#capv-vn .step{grid-template-columns:46px 1fr;gap:14px}
+    #capv-vn .seal{width:46px;height:46px;font-size:16px}#capv-vn .step::before{left:22px}}
+</style>
+
+  <div class="wrap">
+    <p class="eyebrow">Outil interactif · Blog CapVietnam</p>
+    <h1>Ton <em>rétroplanning</em> pour t'installer au Vietnam</h1>
+    <p class="lede">Marié(e) ou en passe de l'être avec un(e) Vietnamien(ne), et tu veux vivre là-bas ? Choisis où vous vous mariez, entre ta date de départ, et l'outil projette tout jusqu'à la résidence permanente. Des estimations, pas une garantie de l'immigration.</p>
+    <p class="lede alt">🇫🇷 Tu veux plutôt <b>faire venir ton conjoint en France</b> ? <a href="https://blog-capvietnam.fr/simulateur-retroplanning-conjoint">Utilise l'autre rétroplanning →</a></p>
+
+    <div class="panel">
+      <div class="pick">
+        <p class="q">Vous vous mariez où ?</p>
+        <div class="seg" role="group" aria-label="Lieu du mariage">
+          <button data-branch="vietnam" aria-pressed="true">🇻🇳 Au Vietnam</button>
+          <button data-branch="france" aria-pressed="false">🇫🇷 En France</button>
+        </div>
+      </div>
+      <div class="field">
+        <label for="capv-vn-start">Ta date de départ
+          <span class="hint" id="capv-vn-hint">= le jour où tu réserves ton rendez-vous au consulat (pour le CCAM)</span>
+        </label>
+        <input type="date" id="capv-vn-start">
+      </div>
+    </div>
+
+    <div class="verdict" id="capv-vn-verdict" hidden>
+      <p class="k">Ta trajectoire de résidence</p>
+      <p class="v" id="capv-vn-verdict-txt"></p>
+    </div>
+
+    <div class="timeline" id="capv-vn-timeline"></div>
+
+    <div class="actions">
+      <a class="btn btn-pri" href="https://blog-capvietnam.fr/#newsletter">📩 Recevoir les alertes immigration</a>
+      <button class="btn btn-sec" id="capv-vn-print">🖨️ Imprimer mon rétroplanning</button>
+      <a class="btn btn-sec" href="https://blog-capvietnam.fr/carte-residence-temporaire-vietnam">🪪 La carte de résidence</a>
+    </div>
+
+    <p class="foot"><b>À lire avec recul.</b> Les règles d'immigration vietnamiennes évoluent (loi 47/2014/QH13 ; VNeID obligatoire depuis 2025). Cet outil couvre la voie « conjoint de citoyen vietnamien » — les voies travail ou investissement diffèrent. Pour un mariage célébré en France, la reconnaissance au Vietnam (légalisation, traduction, enregistrement) est requise avant le visa : délais à confirmer auprès des autorités. Ce n'est pas un conseil juridique.</p>
+  </div>
+</div>
+
+<script>
+(function(){
+  var root=document.getElementById('capv-vn'); if(!root) return;
+  var mem={};
+  var store={
+    get:function(k){try{return localStorage.getItem(k);}catch(e){return (k in mem)?mem[k]:null;}},
+    set:function(k,v){try{localStorage.setItem(k,v);}catch(e){mem[k]=v;}}
+  };
+
+  var TAIL_NOTE_TT="Souvent une conversion depuis un e-visa touriste, avec le parrainage de ton conjoint vietnamien.";
+  var TAIL_NOTE_TRC="Valable jusqu'à 3 ans (plafonnée par la validité du passeport, qui doit dépasser 13 mois). 1 à 2 mois de préparation des pièces, puis ~5 à 10 jours ouvrés d'instruction. Ouvre compte bancaire, location et services.";
+  var TAIL_NOTE_PERM="Après 3 années consécutives de résidence temporaire, sous condition de logement légal et de revenus stables, parrainé par ton conjoint. La carte permanente se renouvelle ensuite tous les 10 ans.";
+  var URL_VISA="https://blog-capvietnam.fr/visa-vietnam-francais-guide-2026";
+  var URL_TRC="https://blog-capvietnam.fr/carte-residence-temporaire-vietnam";
+
+  /* Jours CUMULÉS depuis la date de départ (min = optimiste, max = prudent). */
+  var BRANCHES={
+    vietnam:{
+      hint:"= le jour où tu réserves ton rendez-vous au consulat (pour le CCAM)",
+      steps:[
+        {emo:"📅", t:"Prendre rendez-vous au consulat", start:true,
+         note:"Réserve ton créneau sur le site officiel de l'ambassade de France à Hanoï — les places partent vite. Le CCAM est exigé par le comité populaire pour t'enregistrer.",
+         url:"https://consulat.gouv.fr/ambassade-de-france-a-hanoi/rendez-vous"},
+        {emo:"📄", t:"CCAM délivré par le consulat", min:30, max:120,
+         note:"Le Certificat de Capacité à Mariage est OBLIGATOIRE avant le mariage : sans lui, le comité populaire n'enregistre pas l'union. Traitement 4 à 6 semaines, mais le rendez-vous rallonge souvent à 3–4 mois.",
+         url:"https://blog-capvietnam.fr/certificat-capacite-mariage-vietnam"},
+        {emo:"💍", t:"Mariage civil au comité populaire", min:60, max:210,
+         note:"L'acte de mariage (giấy chứng nhận đăng ký kết hôn) ouvre ton droit au séjour comme conjoint de citoyen vietnamien.",
+         url:"https://blog-capvietnam.fr/se-marier-vietnamienne-demarches-france"},
+        {emo:"🛂", t:"Visa TT (conjoint de Vietnamien)", min:74, max:255, note:TAIL_NOTE_TT, url:URL_VISA},
+        {emo:"🪪", t:"Carte de résidence temporaire (thẻ tạm trú)", min:105, max:330, trc:true, note:TAIL_NOTE_TRC, url:URL_TRC},
+        {emo:"🏠", t:"Éligible à la résidence permanente", min:1200, max:1425, perm:true, note:TAIL_NOTE_PERM, url:URL_TRC}
+      ]
+    },
+    france:{
+      hint:"= le jour de ton mariage civil en France (mairie)",
+      steps:[
+        {emo:"💍", t:"Mariage civil en France (mairie)", start:true,
+         note:"Pas de CCAM ici : il ne sert qu'à se marier à l'étranger. Le mariage est directement valable en France.",
+         url:"https://blog-capvietnam.fr/se-marier-vietnamienne-demarches-france"},
+        {emo:"🏛️", t:"Reconnaissance du mariage au Vietnam", min:30, max:120,
+         note:"Avant tout droit au séjour, l'acte français doit être légalisé, traduit et enregistré au Vietnam (l'équivalent de la transcription de Nantes). Délais variables — à confirmer auprès des autorités.",
+         url:URL_VISA},
+        {emo:"🛂", t:"Visa TT (conjoint de Vietnamien)", min:44, max:165, note:TAIL_NOTE_TT, url:URL_VISA},
+        {emo:"🪪", t:"Carte de résidence temporaire (thẻ tạm trú)", min:75, max:240, trc:true, note:TAIL_NOTE_TRC, url:URL_TRC},
+        {emo:"🏠", t:"Éligible à la résidence permanente", min:1170, max:1335, perm:true, note:TAIL_NOTE_PERM, url:URL_TRC}
+      ]
+    }
+  };
+
+  var startEl=document.getElementById('capv-vn-start');
+  var hintEl=document.getElementById('capv-vn-hint');
+  var tl=document.getElementById('capv-vn-timeline');
+  var verdict=document.getElementById('capv-vn-verdict');
+  var verdictT=document.getElementById('capv-vn-verdict-txt');
+
+  var fmt=new Intl.DateTimeFormat('fr-FR',{day:'numeric',month:'long',year:'numeric'});
+  var fmtShort=new Intl.DateTimeFormat('fr-FR',{month:'short',year:'numeric'});
+  function addDays(d,n){var x=new Date(d.getTime());x.setDate(x.getDate()+n);return x;}
+  function parse(v){if(!v)return null;var p=v.split('-');return new Date(+p[0],+p[1]-1,+p[2]);}
+
+  var branch=store.get('capv_vn_branch')||'vietnam';
+  if(!BRANCHES[branch]) branch='vietnam';
+  function steps(){ return BRANCHES[branch].steps; }
+  function findStep(flag){ var s=steps(); for(var i=0;i<s.length;i++){ if(s[i][flag]) return s[i]; } return null; }
+  function stepDates(start,s){ if(s.start) return null; return {min:addDays(start,s.min),max:addDays(start,s.max)}; }
+
+  function render(){
+    hintEl.textContent=BRANCHES[branch].hint;
+    var start=parse(startEl.value);
+    if(!start){ tl.innerHTML=''; verdict.hidden=true; return; }
+    store.set('capv_vn_start', startEl.value);
+
+    var trc=stepDates(start,findStep('trc'));
+    var perm=stepDates(start,findStep('perm'));
+    verdict.hidden=false;
+    verdictT.innerHTML='Carte de résidence temporaire estimée vers <b>'+fmtShort.format(trc.min)+'</b>–<b>'+fmtShort.format(trc.max)+'</b>, '
+      +'puis résidence permanente envisageable à partir de <b>'+fmtShort.format(perm.min)+'</b>.';
+
+    var html='';
+    steps().forEach(function(s,i){
+      var datesHtml;
+      if(s.start){ datesHtml='<span class="pill solo"><b>'+fmt.format(start)+'</b></span>'; }
+      else { var d=stepDates(start,s); var lab=s.perm?'éligible dès':'au plus tôt';
+        datesHtml='<span class="pill">'+lab+' <b>'+fmt.format(d.min)+'</b></span>'
+          +'<span class="arrow">→</span><span class="pill">au plus tard <b>'+fmt.format(d.max)+'</b></span>'; }
+      var cls='step'+(s.start?' is-start':'')+(s.perm?' is-perm':'');
+      html+='<div class="'+cls+'"><div class="seal">'+(i+1)+'</div>'
+        +'<div class="body"><h3><span class="emo">'+s.emo+'</span>'+s.t+'</h3>'
+        +'<div class="dates">'+datesHtml+'</div><p>'+s.note+'</p>'
+        +'<a class="read" href="'+s.url+'">En savoir plus →</a></div></div>';
+    });
+    tl.innerHTML=html;
+  }
+
+  function printRetro(){
+    var start=parse(startEl.value); if(!start) return;
+    var rows='';
+    steps().forEach(function(s,i){
+      var cell; if(s.start){ cell=fmt.format(start); }
+      else { var d=stepDates(start,s); cell=fmt.format(d.min)+'<br>→ '+fmt.format(d.max); }
+      rows+='<tr><td class="n">'+(i+1)+'</td><td><b>'+s.emo+' '+s.t+'</b><br><span class="note">'+s.note+'</span></td>'
+        +'<td class="d">'+cell+'</td></tr>';
+    });
+    var lieu=(branch==='france')?'mariage en France':'mariage au Vietnam';
+    var w=window.open('','_blank','width=820,height=900');
+    if(!w){ window.print(); return; }
+    w.document.write('<!doctype html><html lang="fr"><head><meta charset="utf-8">'
+      +'<title>Mon rétroplanning Vietnam — Blog CapVietnam</title><style>'
+      +'body{font-family:Georgia,serif;color:#1c1917;max-width:720px;margin:24px auto;padding:0 18px;line-height:1.5}'
+      +'h1{font-size:23px;margin:0 0 4px}.sub{color:#6B635B;font-size:13px;margin:0 0 18px}'
+      +'.verdict{background:#1c1917;color:#fff;padding:14px 16px;border-radius:8px;margin:0 0 18px;font-size:15px}'
+      +'.verdict b{color:#E4A11B}table{width:100%;border-collapse:collapse;font-family:Arial,Helvetica,sans-serif;font-size:13px}'
+      +'td{border-top:1px solid #E2D8C9;padding:10px 6px;vertical-align:top}'
+      +'.n{font-weight:700;color:#C8102E;width:22px}.d{white-space:nowrap;font-family:monospace;font-size:11.5px;color:#9e0c23;text-align:right}'
+      +'.note{color:#6B635B;font-size:11.5px}.foot{margin-top:18px;font-size:11px;color:#6B635B;border-top:1px solid #E2D8C9;padding-top:10px}'
+      +'.noprint{margin-top:16px;padding:9px 16px;border:1px solid #1c1917;border-radius:7px;background:#fff;cursor:pointer;font-size:13px}'
+      +'@media print{.noprint{display:none}}</style></head><body>'
+      +'<h1>Mon rétroplanning — installation au Vietnam</h1>'
+      +'<p class="sub">Blog CapVietnam · '+lieu+' · départ : '+fmt.format(start)+'</p>'
+      +'<div class="verdict">'+verdictT.innerHTML+'</div>'
+      +'<table>'+rows+'</table>'
+      +'<p class="foot">Estimations indicatives — les règles d\'immigration vietnamiennes varient. Ne remplace ni les sources officielles ni un conseil juridique. © Blog CapVietnam · blog-capvietnam.fr</p>'
+      +'<button class="noprint" onclick="window.print()">🖨️ Imprimer / enregistrer en PDF</button>'
+      +'</body></html>');
+    w.document.close(); w.focus();
+    setTimeout(function(){ try{ w.print(); }catch(e){} }, 350);
+  }
+
+  // init sélecteur
+  root.querySelectorAll('.seg button').forEach(function(btn){
+    btn.setAttribute('aria-pressed', btn.getAttribute('data-branch')===branch ? 'true':'false');
+    btn.addEventListener('click',function(){
+      branch=this.getAttribute('data-branch'); store.set('capv_vn_branch',branch);
+      root.querySelectorAll('.seg button').forEach(function(b){ b.setAttribute('aria-pressed', b===btn?'true':'false'); });
+      render();
+    });
+  });
+
+  var saved=store.get('capv_vn_start');
+  if(saved){ startEl.value=saved; } else { startEl.value=new Date().toISOString().slice(0,10); }
+  startEl.addEventListener('change',render);
+  startEl.addEventListener('input',render);
+  document.getElementById('capv-vn-print').addEventListener('click',printRetro);
+  render();
+})();
+</script>

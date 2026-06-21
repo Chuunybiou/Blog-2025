@@ -350,6 +350,45 @@ include 'header.php';
   </p>
 </section>
 
+<!-- ═══════ OUTILS INTERACTIFS ═══════ -->
+<section style="background:#fff;padding:4rem 2rem;border-bottom:1px solid var(--border)">
+  <div style="max-width:1200px;margin:0 auto">
+    <div class="section-label">Outils interactifs</div>
+    <h2 class="section-title">Planifie ton projet</h2>
+    <p class="section-desc">Trois outils pour visualiser ta situation et projeter les étapes importantes.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem">
+      <a href="parcours-couple-franco-vietnamien" style="text-decoration:none;color:inherit;background:var(--warm-bg);border:1px solid var(--border);border-radius:10px;padding:1.75rem;display:flex;flex-direction:column;gap:0.75rem;transition:box-shadow 0.2s,border-color 0.2s" onmouseover="this.style.boxShadow='var(--shadow-md)';this.style.borderColor='var(--terracotta)'" onmouseout="this.style.boxShadow='none';this.style.borderColor='var(--border)'">
+        <div style="font-size:2rem">🗺️</div>
+        <div style="font-size:0.62rem;letter-spacing:2px;text-transform:uppercase;font-weight:700;color:var(--terracotta)">Parcours guidé</div>
+        <h3 style="font-family:'DM Serif Display',serif;font-size:1.1rem;line-height:1.3;margin:0">Le parcours du couple franco-vietnamien</h3>
+        <p style="font-size:0.88rem;color:var(--muted);line-height:1.6;margin:0;flex:1">De la rencontre à la vie installée — coche chaque étape, choisis ta branche France ou Vietnam.</p>
+        <span style="font-size:0.85rem;font-weight:700;color:var(--terracotta);margin-top:0.5rem">Commencer →</span>
+      </a>
+      <a href="simulateur-retroplanning-conjoint" style="text-decoration:none;color:inherit;background:var(--warm-bg);border:1px solid var(--border);border-radius:10px;padding:1.75rem;display:flex;flex-direction:column;gap:0.75rem;transition:box-shadow 0.2s,border-color 0.2s" onmouseover="this.style.boxShadow='var(--shadow-md)';this.style.borderColor='var(--jade)'" onmouseout="this.style.boxShadow='none';this.style.borderColor='var(--border)'">
+        <div style="font-size:2rem">📅</div>
+        <div style="font-size:0.62rem;letter-spacing:2px;text-transform:uppercase;font-weight:700;color:var(--jade)">Simulateur</div>
+        <h3 style="font-family:'DM Serif Display',serif;font-size:1.1rem;line-height:1.3;margin:0">Rétroplanning — faire venir son conjoint</h3>
+        <p style="font-size:0.88rem;color:var(--muted);line-height:1.6;margin:0;flex:1">Entre ta date de lancement CCAM, obtiens chaque échéance jusqu'à l'arrivée en France.</p>
+        <span style="font-size:0.85rem;font-weight:700;color:var(--jade);margin-top:0.5rem">Calculer mes délais →</span>
+      </a>
+      <a href="simulateur-installation-vietnam" style="text-decoration:none;color:inherit;background:var(--warm-bg);border:1px solid var(--border);border-radius:10px;padding:1.75rem;display:flex;flex-direction:column;gap:0.75rem;transition:box-shadow 0.2s,border-color 0.2s" onmouseover="this.style.boxShadow='var(--shadow-md)';this.style.borderColor='var(--amber)'" onmouseout="this.style.boxShadow='none';this.style.borderColor='var(--border)'">
+        <div style="font-size:2rem">⏱️</div>
+        <div style="font-size:0.62rem;letter-spacing:2px;text-transform:uppercase;font-weight:700;color:var(--amber)">Simulateur</div>
+        <h3 style="font-family:'DM Serif Display',serif;font-size:1.1rem;line-height:1.3;margin:0">Rétroplanning — s'installer au Vietnam</h3>
+        <p style="font-size:0.88rem;color:var(--muted);line-height:1.6;margin:0;flex:1">Entre ta date de départ, obtiens ton plan d'action personnalisé semaine par semaine.</p>
+        <span style="font-size:0.85rem;font-weight:700;color:var(--amber);margin-top:0.5rem">Lancer le simulateur →</span>
+      </a>
+      <a href="calculateur-budget-vietnam" style="text-decoration:none;color:inherit;background:var(--warm-bg);border:1px solid var(--border);border-radius:10px;padding:1.75rem;display:flex;flex-direction:column;gap:0.75rem;transition:box-shadow 0.2s,border-color 0.2s" onmouseover="this.style.boxShadow='var(--shadow-md)';this.style.borderColor='var(--jade)'" onmouseout="this.style.boxShadow='none';this.style.borderColor='var(--border)'">
+        <div style="font-size:2rem">💰</div>
+        <div style="font-size:0.62rem;letter-spacing:2px;text-transform:uppercase;font-weight:700;color:var(--jade)">Calculateur</div>
+        <h3 style="font-family:'DM Serif Display',serif;font-size:1.1rem;line-height:1.3;margin:0">Calculateur — coût de la vie au Vietnam</h3>
+        <p style="font-size:0.88rem;color:var(--muted);line-height:1.6;margin:0;flex:1">Estime ton budget mensuel à Hanoï ou Hô Chi Minh-Ville avec des chiffres réels.</p>
+        <span style="font-size:0.85rem;font-weight:700;color:var(--jade);margin-top:0.5rem">Calculer mon budget →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
 <!-- ═══════ CATEGORIES ═══════ -->
 <section class="section" id="categories">
   <div class="section-label">Explorer</div>

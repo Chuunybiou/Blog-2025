@@ -227,6 +227,16 @@ include '../header.php';
   </div>
 </section>
 
+<!-- ══ BANNER HÀNH TRÌNH TƯƠNG TÁC ══ -->
+<section style="background:linear-gradient(135deg,#1c0a05 0%,#3a1206 50%,#1c0a05 100%);padding:3.5rem 2rem;text-align:center">
+  <div style="max-width:760px;margin:0 auto">
+    <span style="display:inline-block;font-size:0.62rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;padding:4px 14px;border-radius:3px;background:rgba(232,133,106,0.18);color:#e8856a;border:1px solid rgba(232,133,106,0.22);margin-bottom:1.5rem">🗺️ Công cụ tương tác</span>
+    <h2 style="font-family:'DM Serif Display',serif;font-size:clamp(1.6rem,4vw,2.2rem);color:#faf8f4;line-height:1.25;margin-bottom:1rem">Hành trình của bạn — từng bước, có thể tích</h2>
+    <p style="color:rgba(250,248,244,0.55);font-size:1rem;line-height:1.75;margin-bottom:2rem">Từ CCAM đến thẻ cư trú tại Pháp — đánh dấu từng bước đã hoàn thành, chọn nhánh của mình (sang Pháp hay ở Việt Nam). Tiến độ được lưu trên thiết bị của bạn.</p>
+    <a href="hanh-trinh-doi.html" style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.9rem 2rem;background:rgba(191,74,42,0.9);color:#fff;border-radius:5px;text-decoration:none;font-weight:700;font-size:0.95rem">🗺️ Xem lộ trình đầy đủ →</a>
+  </div>
+</section>
+
 <!-- ══ TIKTOK BÀI HỌC ══ -->
 <section class="vi-section" id="bai-hoc" style="background:var(--cream)">
   <div class="vi-section-label">Học tiếng Pháp / Intégration</div>

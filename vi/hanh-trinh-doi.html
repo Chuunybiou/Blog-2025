@@ -1,0 +1,307 @@
+<!--
+  Blog CapVietnam — Hành trình của cặp đôi Franco-Việt (phiên bản tiếng Việt)
+  Tệp độc lập (HTML + CSS + JS). Dành cho độc giả người Việt.
+  - Hành trình chia nhánh sau lễ kết hôn : nhánh 🇫🇷 "Sang Pháp" hoặc nhánh 🇻🇳 "Ở lại Việt Nam".
+  - Tiến độ và lựa chọn được lưu trên thiết bị (localStorage).
+-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hành trình cặp đôi Franco-Việt — từng bước một | Cap Vietnam</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=Spline+Sans+Mono:wght@500;600&display=swap" rel="stylesheet">
+
+<div id="capv-parcours">
+<style>
+  #capv-parcours{
+    --encre:#1c1917; --papier:#FBF8F3; --papier-2:#F3ECE2;
+    --laque:#C8102E; --laque-fonce:#9e0c23; --or:#E4A11B; --jade:#3F7A6D;
+    --ardoise:#6B635B; --trait:#E2D8C9;
+    --serif:'Fraunces',Georgia,serif; --sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    --mono:'Spline Sans Mono',Consolas,monospace;
+    background:var(--papier);color:var(--encre);font-family:var(--sans);line-height:1.55;
+    -webkit-font-smoothing:antialiased;border-radius:18px;overflow:hidden;max-width:900px;margin:0 auto;
+    box-shadow:0 1px 0 var(--trait),0 30px 60px -40px rgba(28,25,23,.5);
+  }
+  #capv-parcours *{box-sizing:border-box}
+  #capv-parcours .wrap{padding:clamp(22px,4vw,44px)}
+
+  #capv-parcours .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--laque);display:flex;align-items:center;gap:8px;margin:0 0 14px}
+  #capv-parcours .eyebrow::before{content:"";width:26px;height:1px;background:var(--laque)}
+  #capv-parcours h1{font-family:var(--serif);font-weight:500;font-size:clamp(27px,5vw,42px);
+    line-height:1.06;letter-spacing:-.01em;margin:0 0 12px}
+  #capv-parcours h1 em{font-style:italic;color:var(--laque)}
+  #capv-parcours .lede{color:var(--ardoise);font-size:16px;max-width:62ch;margin:0}
+
+  #capv-parcours .progress{
+    position:sticky;top:0;z-index:5;background:var(--encre);color:var(--papier);
+    margin:26px 0 8px;border-radius:12px;padding:14px 18px;
+    display:flex;align-items:center;gap:16px;flex-wrap:wrap;
+  }
+  #capv-parcours .progress .label{font-family:var(--mono);font-size:12px;letter-spacing:.08em;
+    text-transform:uppercase;color:var(--or);white-space:nowrap}
+  #capv-parcours .bar{flex:1;min-width:140px;height:8px;border-radius:99px;background:rgba(251,248,243,.18);overflow:hidden}
+  #capv-parcours .bar>span{display:block;height:100%;width:0;border-radius:99px;
+    background:linear-gradient(90deg,var(--or),#f2c14e);transition:width .5s cubic-bezier(.2,.7,.2,1)}
+  #capv-parcours .progress .count{font-family:var(--mono);font-size:14px;white-space:nowrap}
+  #capv-parcours .progress button{background:none;border:0;color:var(--papier);opacity:.65;
+    font:500 12px var(--sans);cursor:pointer;text-decoration:underline;padding:0}
+  #capv-parcours .progress button:hover{opacity:1}
+
+  #capv-parcours .phase{
+    display:grid;grid-template-columns:60px 1fr;gap:20px;padding:26px 0;
+    border-bottom:1px solid var(--trait);position:relative;
+  }
+  #capv-parcours .num{
+    width:60px;height:60px;border-radius:14px;display:grid;place-items:center;
+    font-family:var(--serif);font-weight:600;font-size:24px;color:var(--laque);
+    background:#fff;border:1px solid var(--trait);transition:.25s;position:relative;
+  }
+  #capv-parcours .phase.done .num{background:var(--jade);color:#fff;border-color:var(--jade)}
+  #capv-parcours .ph-body h2{font-family:var(--serif);font-weight:600;font-size:21px;margin:2px 0 4px;line-height:1.18}
+  #capv-parcours .ph-body .when{font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;
+    text-transform:uppercase;color:var(--ardoise);margin:0 0 8px}
+  #capv-parcours .ph-body p{margin:0 0 12px;color:var(--ardoise);font-size:14.5px;max-width:58ch}
+  #capv-parcours .ph-note{background:var(--papier-2);border-left:3px solid var(--or);padding:9px 13px;
+    border-radius:6px;font-size:13px;color:var(--encre);margin:0 0 13px;max-width:58ch}
+  #capv-parcours .ph-note b{color:var(--laque-fonce)}
+  #capv-parcours .links{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+  #capv-parcours .links a{
+    font-size:13px;font-weight:500;color:var(--encre);text-decoration:none;
+    background:var(--papier-2);border:1px solid var(--trait);border-radius:99px;padding:6px 13px;transition:.15s}
+  #capv-parcours .links a:hover{border-color:var(--laque);color:var(--laque-fonce)}
+  #capv-parcours .check{
+    display:inline-flex;align-items:center;gap:9px;cursor:pointer;font-size:13.5px;font-weight:600;
+    color:var(--encre);user-select:none}
+  #capv-parcours .check input{appearance:none;-webkit-appearance:none;width:20px;height:20px;
+    border:2px solid var(--ardoise);border-radius:6px;display:grid;place-items:center;cursor:pointer;transition:.15s}
+  #capv-parcours .check input:checked{background:var(--jade);border-color:var(--jade)}
+  #capv-parcours .check input:checked::after{content:"\2713";color:#fff;font-size:13px;font-weight:700}
+  #capv-parcours .check input:focus-visible{outline:2px solid var(--laque);outline-offset:2px}
+
+  #capv-parcours .fork{
+    margin:30px 0 4px;background:#fff;border:1px solid var(--trait);border-radius:14px;
+    padding:20px;text-align:center;
+  }
+  #capv-parcours .fork .q{font-family:var(--serif);font-weight:600;font-size:19px;margin:0 0 4px}
+  #capv-parcours .fork .sub{font-size:13.5px;color:var(--ardoise);margin:0 0 16px}
+  #capv-parcours .seg{display:inline-flex;gap:8px;background:var(--papier-2);border:1px solid var(--trait);
+    border-radius:12px;padding:5px}
+  #capv-parcours .seg button{
+    font:600 14.5px var(--sans);padding:11px 20px;border-radius:9px;border:0;cursor:pointer;
+    background:transparent;color:var(--encre);transition:.18s}
+  #capv-parcours .seg button[aria-pressed="true"]{background:var(--encre);color:var(--papier)}
+  #capv-parcours .seg button:focus-visible{outline:2px solid var(--laque);outline-offset:2px}
+  @media(max-width:460px){#capv-parcours .seg{flex-direction:column;width:100%}}
+
+  #capv-parcours .insert{
+    background:var(--encre);color:var(--papier);border-radius:14px;padding:22px 24px;margin:26px 0;
+    display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}
+  #capv-parcours .insert h3{font-family:var(--serif);font-weight:500;font-size:19px;margin:0 0 4px}
+  #capv-parcours .insert p{margin:0;font-size:14px;color:#d8cfc2;max-width:46ch}
+  #capv-parcours .insert .btn{background:var(--or);color:var(--encre);font:600 14px var(--sans);
+    padding:12px 18px;border-radius:10px;text-decoration:none;white-space:nowrap}
+  #capv-parcours .insert .btn:hover{filter:brightness(1.06)}
+  #capv-parcours .insert.tool{background:linear-gradient(135deg,#23201d,#1c1917)}
+  #capv-parcours .insert.note{background:var(--papier-2);color:var(--encre);border:1px dashed var(--ardoise)}
+  #capv-parcours .insert.note p{color:var(--ardoise);max-width:60ch}
+
+  #capv-parcours .end{text-align:center;padding:30px 10px 6px}
+  #capv-parcours .end h3{font-family:var(--serif);font-size:23px;margin:0 0 8px}
+  #capv-parcours .end p{color:var(--ardoise);font-size:15px;margin:0 auto 18px;max-width:48ch}
+  #capv-parcours .end .row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  #capv-parcours .end .btn{font:600 14px var(--sans);padding:13px 20px;border-radius:10px;text-decoration:none}
+  #capv-parcours .end .btn-pri{background:var(--laque);color:#fff}
+  #capv-parcours .end .btn-pri:hover{background:var(--laque-fonce)}
+  #capv-parcours .end .btn-sec{background:#fff;color:var(--encre);border:1px solid var(--trait)}
+
+  @media(max-width:560px){
+    #capv-parcours .phase{grid-template-columns:46px 1fr;gap:14px}
+    #capv-parcours .num{width:46px;height:46px;font-size:19px}
+  }
+  @media (prefers-reduced-motion:reduce){#capv-parcours *{transition:none!important}}
+</style>
+
+  <div class="wrap">
+    <p class="eyebrow">Lộ trình · từ khi gặp nhau đến khi ổn định cuộc sống</p>
+    <h1>Xây dựng cuộc sống đôi lứa, <em>từng bước một</em></h1>
+    <p class="lede">Một cặp đôi Franco-Việt không chỉ là một bài viết để đọc : đó là một hành trình. Sau lễ kết hôn, con đường chia làm hai tùy theo nơi bạn muốn sống. Tích vào những gì đã làm xong — tiến độ được lưu trên thiết bị này.</p>
+
+    <div class="progress">
+      <span class="label">Tiến độ của bạn</span>
+      <div class="bar"><span id="capv-fill"></span></div>
+      <span class="count" id="capv-count">0 / 8</span>
+      <button id="capv-reset">đặt lại</button>
+    </div>
+
+    <div id="capv-flow"></div>
+
+    <div class="end">
+      <h3>Bạn đã biết toàn bộ hành trình.</h3>
+      <p>Nhận thông báo khi có thay đổi về thời hạn hoặc thủ tục — cùng bộ tài liệu gồm mẫu thư và checklist có thể in.</p>
+      <div class="row">
+        <a class="btn btn-pri" href="https://blog-capvietnam.fr/#newsletter">📩 Đăng ký bản tin</a>
+        <a class="btn btn-sec" href="https://blog-capvietnam.fr/vi/dua-vo-chong-viet-sang-phap">📘 Đọc lại hướng dẫn chính</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var root=document.getElementById('capv-parcours'); if(!root) return;
+  var mem={};
+  var store={
+    get:function(k){try{return localStorage.getItem(k);}catch(e){return (k in mem)?mem[k]:null;}},
+    set:function(k,v){try{localStorage.setItem(k,v);}catch(e){mem[k]=v;}}
+  };
+
+  var BEFORE=[
+    {id:"comprendre", when:"Trước khi làm thủ tục", t:"Thực sự hiểu nhau",
+     d:"Khoảng cách địa lý, gia đình nhà chồng, tiền bạc, tính thẳng thắn của người Việt : những khác biệt có thể gắn kết hoặc phá vỡ một cặp đôi. Đây là nền tảng, trước khi lo bất kỳ giấy tờ nào.",
+     links:[["Khác biệt văn hóa Franco-Việt","https://blog-capvietnam.fr/differences-culturelles-couple-franco-vietnamien"],
+            ["Học tiếng Việt cùng nhau","https://blog-capvietnam.fr/apprendre-vietnamien-couple"]]},
+    {id:"ccam", when:"Tháng 1 — Việt Nam", t:"CCAM : Giấy phép kết hôn lãnh sự",
+     d:"Giấy phép kết hôn lãnh sự (CCAM) do Lãnh sự quán Pháp cấp trước lễ kết hôn. Hành động đầu tiên : đặt lịch tại Lãnh sự quán, vì lịch trống rất hiếm. Không có CCAM, không UBND nào đăng ký hôn thú. Cần chuẩn bị trước 4 tháng.",
+     note:"<b>Kết hôn tại Pháp?</b> Trường hợp đó không cần CCAM : giấy này chỉ dùng cho hôn lễ tổ chức ở nước ngoài. Bạn đăng ký trực tiếp tại mairie của Pháp.",
+     links:[["📅 Đặt lịch tại Lãnh sự quán","https://consulat.gouv.fr/ambassade-de-france-a-hanoi/rendez-vous"],
+            ["Thủ tục từ phía Pháp","https://blog-capvietnam.fr/se-marier-vietnamienne-demarches-france"],
+            ["Hướng dẫn CCAM chi tiết","https://blog-capvietnam.fr/vi/giay-phep-ket-hon-lanh-su-phap-ccam"]]},
+    {id:"ceremonie", when:"Song song — tiệc cưới", t:"Lễ cưới truyền thống & Chi phí",
+     d:"Lễ ăn hỏi, đám cưới, tiệc mừng, phong bì. Phần lễ hội và gia đình. Không có giá trị hành chính — nhưng rất quan trọng với gia đình hai bên.",
+     links:[["Chi phí thực tế của một đám cưới","https://blog-capvietnam.fr/prix-mariage-franco-vietnamien"],
+            ["Gặp gỡ gia đình nhà chồng","https://blog-capvietnam.fr/belle-famille-vietnamienne-guide"]]},
+    {id:"mariage-civil", when:"Tháng 2–4 — Việt Nam", t:"Đăng ký kết hôn tại UBND",
+     d:"Đăng ký tại UBND — và chỉ tại đó — mới tạo ra giấy chứng nhận đăng ký kết hôn có giá trị pháp lý. Chính ngày này mới quan trọng cho tất cả các bước tiếp theo : chuyển hộ tịch, visa, thẻ cư trú. Không phải ngày tổ chức tiệc.",
+     note:"<b>Chưa kết hôn?</b> PACS và chung sống không được cấp visa 'vợ/chồng người Pháp' : chỉ có hôn nhân hợp pháp mới đủ điều kiện. Đây là điều kiện bắt buộc, không thể thay thế.",
+     links:[["Đăng ký kết hôn tại UBND","https://blog-capvietnam.fr/vi/dang-ky-ket-hon-ubnd"]]}
+  ];
+
+  var BRANCHES={
+    france:{
+      intro:{cls:"tool",h:"Xem các mốc thời gian thực của bạn",p:"Nhập ngày bắt đầu làm CCAM, nhận từng thời hạn dự kiến cho đến khi sang Pháp.",b:["Mở công cụ tính thời gian","https://blog-capvietnam.fr/simulateur-retroplanning-conjoint"]},
+      phases:[
+        {id:"fr-transcription", when:"Tháng 8–16 — Pháp", t:"Chuyển hộ tịch về Nantes",
+         d:"Đăng ký hôn thú với Trung tâm Hộ tịch Trung ương (SCEC) tại Nantes để Pháp công nhận. Nộp hồ sơ ngay khi có giấy đăng ký kết hôn : đây là bước dài nhất và khó dự đoán nhất.",
+         links:[["Chuyển hộ tịch về Nantes","https://blog-capvietnam.fr/vi/chuyen-ho-tich-nantes"]]},
+        {id:"fr-visa", when:"Tháng 10–22 — Việt Nam", t:"Visa dài hạn (VLS-TS)",
+         d:"Visa 'vợ/chồng người Pháp' nộp qua VFS Global, thường có thêm phỏng vấn tại Đại sứ quán về thực tế cuộc sống chung. Hồ sơ cần chuẩn bị kỹ từ trước.",
+         links:[["Visa dài hạn vợ/chồng người Pháp","https://blog-capvietnam.fr/vi/visa-dai-han-vo-chong-sang-phap"],
+                ["Chuẩn bị phỏng vấn Đại sứ quán","https://blog-capvietnam.fr/entretien-ambassade-france-vietnam-visa-conjoint"]]},
+        {id:"fr-titre", when:"Khi đến Pháp", t:"OFII & Thẻ cư trú",
+         d:"Xác nhận visa với OFII trong vòng 3 tháng sau khi nhập cảnh, rồi xin thẻ cư trú qua cổng ANEF trước khi visa hết hạn. Hai người cuối cùng được đoàn tụ hợp pháp.",
+         links:[["Hướng dẫn đưa vợ/chồng Việt sang Pháp","https://blog-capvietnam.fr/vi/dua-vo-chong-viet-sang-phap"],
+                ["Thẻ cư trú tại Pháp","https://blog-capvietnam.fr/vi/the-cu-tru-tai-phap"]]}
+      ]
+    },
+    vietnam:{
+      intro:{cls:"note",h:"Lưu ý trước khi tiếp tục",p:"Ở đây, chuyển hộ tịch về Nantes là tùy chọn : hữu ích để Pháp công nhận hôn nhân, nhưng không bắt buộc để sống tại Việt Nam. Nhiều người vào bằng e-visa du lịch rồi chuyển sang visa vợ/chồng sau khi kết hôn.",b:["Chọn loại visa Việt Nam","https://blog-capvietnam.fr/visa-vietnam-francais-guide-2026"]},
+      phases:[
+        {id:"vn-visa", when:"Sau kết hôn — Việt Nam", t:"Visa TT (vợ/chồng người Việt)",
+         d:"Visa ký hiệu TT dành riêng cho vợ/chồng của công dân Việt Nam. Thường chuyển đổi từ e-visa du lịch khi đã có giấy đăng ký kết hôn, với sự bảo lãnh của vợ/chồng người Việt.",
+         links:[["Chọn loại visa Việt Nam","https://blog-capvietnam.fr/visa-vietnam-francais-guide-2026"]]},
+        {id:"vn-trc", when:"Tiếp theo — Việt Nam", t:"Thẻ tạm trú (ký hiệu TT)",
+         d:"Thẻ tạm trú ký hiệu TT có giá trị tối đa 3 năm (giới hạn bởi hạn hộ chiếu, phải còn hơn 13 tháng). Cần 1–2 tháng chuẩn bị hồ sơ rồi khoảng 5–10 ngày làm việc để được cấp. Tránh gia hạn visa liên tục, mở được tài khoản ngân hàng và các dịch vụ.",
+         links:[["Thẻ tạm trú tại Việt Nam","https://blog-capvietnam.fr/carte-residence-temporaire-vietnam"]]},
+        {id:"vn-installation", when:"Tại chỗ — Việt Nam", t:"Thực sự định cư",
+         d:"Đăng ký cư trú tại phường, nhận VNeID (bắt buộc từ 2025), tìm nhà, mở tài khoản ngân hàng, mua bảo hiểm sức khỏe : cuộc sống thực sau khi có thẻ cư trú.",
+         links:[["Hướng dẫn sống tại Việt Nam 2026","https://blog-capvietnam.fr/s-expatrier-vietnam-2026-guide-complet"],
+                ["Thuê căn hộ tại Hà Nội","https://blog-capvietnam.fr/louer-appartement-hanoi-etranger"]]},
+        {id:"vn-permanent", when:"Sau 3 năm — Việt Nam", t:"Trở thành cư dân thường trú",
+         d:"Sau 3 năm cư trú tạm trú liên tiếp, người vợ/chồng nước ngoài có thể xin thẻ thường trú với sự bảo lãnh của vợ/chồng người Việt, kèm điều kiện về nơi ở hợp pháp và thu nhập ổn định. Gia hạn 10 năm một lần.",
+         links:[["Thẻ tạm trú tại Việt Nam","https://blog-capvietnam.fr/carte-residence-temporaire-vietnam"]]}
+      ]
+    }
+  };
+
+  var AFTER=[
+    {id:"argent", when:"Tiếp theo — cuộc sống thực", t:"Xây dựng tài chính chung",
+     d:"Tài khoản ngân hàng hai quốc gia, hỗ trợ gia đình vợ/chồng, ai trả khoản gì. Phần mà không ai nói đến, nhưng kéo dài lâu hơn rất nhiều so với các thủ tục giấy tờ.",
+     links:[["Tiền bạc trong cặp đôi","https://blog-capvietnam.fr/argent-couple-franco-vietnamien"],
+            ["Tài khoản chung Franco-Việt","https://blog-capvietnam.fr/compte-joint-franco-vietnamien"]]}
+  ];
+
+  var CALC={cls:"",h:"Chi phí sinh hoạt ở đó là bao nhiêu?",p:"Ước tính ngân sách hàng tháng tại Hà Nội hoặc TP. Hồ Chí Minh.",b:["Mở công cụ tính ngân sách","https://blog-capvietnam.fr/calculateur-budget-vietnam"]};
+
+  var DONE_KEY='capv_parcours_vi_done_v1';
+  var BRANCH_KEY='capv_parcours_vi_branch';
+  var done={}; try{ done=JSON.parse(store.get(DONE_KEY)||'{}')||{}; }catch(e){ done={}; }
+  var branch=store.get(BRANCH_KEY)||'france';
+  if(!BRANCHES[branch]) branch='france';
+
+  var flow=document.getElementById('capv-flow');
+  var fill=document.getElementById('capv-fill');
+  var count=document.getElementById('capv-count');
+
+  function activePhases(){ return BEFORE.concat(BRANCHES[branch].phases, AFTER); }
+
+  function paint(){
+    var list=activePhases(), n=0;
+    list.forEach(function(p){ if(done[p.id]) n++; });
+    var total=list.length;
+    fill.style.width=Math.round(n/total*100)+'%';
+    count.textContent=n+' / '+total;
+  }
+
+  function phaseHTML(p,num){
+    var isDone=!!done[p.id];
+    return '<div class="phase'+(isDone?' done':'')+'" data-id="'+p.id+'">'
+      +'<div class="num">'+num+'</div>'
+      +'<div class="ph-body">'
+      +'<p class="when">'+p.when+'</p><h2>'+p.t+'</h2><p>'+p.d+'</p>'
+      +(p.note?'<p class="ph-note">'+p.note+'</p>':'')
+      +'<div class="links">'+p.links.map(function(l){return '<a href="'+l[1]+'">'+l[0]+'</a>';}).join('')+'</div>'
+      +'<label class="check"><input type="checkbox" '+(isDone?'checked':'')+' data-id="'+p.id+'"> <span>'+(isDone?'Đã hoàn thành ✓':'Đánh dấu đã làm')+'</span></label>'
+      +'</div></div>';
+  }
+  function insertHTML(ins){
+    return '<div class="insert '+ins.cls+'"><div><h3>'+ins.h+'</h3><p>'+ins.p+'</p></div>'
+      +'<a class="btn" href="'+ins.b[1]+'">'+ins.b[0]+' →</a></div>';
+  }
+  function forkHTML(){
+    return '<div class="fork"><p class="q">Bạn dự định sống ở đâu?</p>'
+      +'<p class="sub">Sau lễ kết hôn, hành trình chia làm hai. Chọn con đường của bạn — có thể thay đổi bất cứ lúc nào.</p>'
+      +'<div class="seg" role="group" aria-label="Chọn quốc gia định cư">'
+      +'<button data-branch="france" aria-pressed="'+(branch==='france')+'">🇫🇷 Sang Pháp</button>'
+      +'<button data-branch="vietnam" aria-pressed="'+(branch==='vietnam')+'">🇻🇳 Ở lại Việt Nam</button>'
+      +'</div></div>';
+  }
+
+  function build(){
+    var html='', num=0;
+    BEFORE.forEach(function(p){ num++; html+=phaseHTML(p,num); });
+    html+=forkHTML();
+    html+=insertHTML(BRANCHES[branch].intro);
+    BRANCHES[branch].phases.forEach(function(p){ num++; html+=phaseHTML(p,num); });
+    AFTER.forEach(function(p){ num++; html+=phaseHTML(p,num); });
+    html+=insertHTML(CALC);
+    flow.innerHTML=html;
+
+    flow.querySelectorAll('input[type=checkbox]').forEach(function(box){
+      box.addEventListener('change',function(){
+        var id=this.getAttribute('data-id');
+        if(this.checked) done[id]=1; else delete done[id];
+        store.set(DONE_KEY,JSON.stringify(done));
+        var card=this.closest('.phase'); card.classList.toggle('done',this.checked);
+        card.querySelector('.check span').textContent=this.checked?'Đã hoàn thành ✓':'Đánh dấu đã làm';
+        paint();
+      });
+    });
+    flow.querySelectorAll('.seg button').forEach(function(btn){
+      btn.addEventListener('click',function(){
+        branch=this.getAttribute('data-branch');
+        store.set(BRANCH_KEY,branch);
+        build();
+      });
+    });
+    paint();
+  }
+
+  document.getElementById('capv-reset').addEventListener('click',function(){
+    done={}; store.set(DONE_KEY,'{}'); build();
+  });
+
+  build();
+})();
+</script>

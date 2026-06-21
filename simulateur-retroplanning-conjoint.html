@@ -1,0 +1,363 @@
+<!--
+  Blog CapVietnam — Simulateur de rétroplanning « démarches conjoint »
+  Fichier autonome (HTML + CSS + JS). À déposer tel quel sur le site OVH,
+  par ex. en page /simulateur-retroplanning-conjoint.
+  - Aucune dépendance de build. Polices via Google Fonts (fallback système inclus).
+  - La date saisie est mémorisée localement (localStorage) avec repli en mémoire
+    si le stockage est indisponible : aucun plantage possible.
+  - Les durées proviennent de ton pilier « Faire venir son conjoint ». Modifie-les
+    dans le tableau STEPS ci-dessous si l'administration change ses délais.
+-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=Spline+Sans+Mono:wght@500;600&display=swap" rel="stylesheet">
+
+<div id="capv-retro">
+<style>
+  #capv-retro{
+    /* Palette ancrée sur la marque Blog CapVietnam */
+    --encre:#1c1917;        /* theme-color du site */
+    --papier:#FBF8F3;       /* papier dossier, chaud */
+    --papier-2:#F3ECE2;
+    --laque:#C8102E;        /* rouge laque / drapeau VN */
+    --laque-fonce:#9e0c23;
+    --or:#E4A11B;           /* étoile du drapeau, atténuée */
+    --jade:#3F7A6D;         /* vert jade discret */
+    --ardoise:#6B635B;      /* texte secondaire chaud */
+    --trait:#E2D8C9;
+
+    --serif:'Fraunces',Georgia,'Times New Roman',serif;
+    --sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    --mono:'Spline Sans Mono','SFMono-Regular',Consolas,monospace;
+
+    background:var(--papier);
+    color:var(--encre);
+    font-family:var(--sans);
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+    border-radius:18px;
+    overflow:hidden;
+    max-width:880px;
+    margin:0 auto;
+    box-shadow:0 1px 0 var(--trait),0 30px 60px -40px rgba(28,25,23,.5);
+  }
+  #capv-retro *{box-sizing:border-box}
+  #capv-retro .wrap{padding:clamp(22px,4vw,40px)}
+
+  /* — En-tête — */
+  #capv-retro .eyebrow{
+    font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--laque);display:flex;align-items:center;gap:8px;margin:0 0 14px;
+  }
+  #capv-retro .eyebrow::before{content:"";width:26px;height:1px;background:var(--laque)}
+  #capv-retro h1{
+    font-family:var(--serif);font-weight:500;font-size:clamp(26px,5vw,40px);
+    line-height:1.08;letter-spacing:-.01em;margin:0 0 10px;
+  }
+  #capv-retro h1 em{font-style:italic;color:var(--laque)}
+  #capv-retro .lede{color:var(--ardoise);font-size:16px;max-width:60ch;margin:0}
+
+  /* — Carte de contrôle — */
+  #capv-retro .panel{
+    margin-top:28px;background:#fff;border:1px solid var(--trait);border-radius:14px;
+    padding:20px;display:grid;gap:18px;grid-template-columns:1fr 1fr;
+  }
+  @media(max-width:620px){#capv-retro .panel{grid-template-columns:1fr}}
+  #capv-retro .field label{
+    display:block;font-size:13px;font-weight:600;margin-bottom:7px;color:var(--encre);
+  }
+  #capv-retro .field .hint{font-size:12px;color:var(--ardoise);font-weight:400}
+  #capv-retro input[type=date]{
+    width:100%;font-family:var(--mono);font-size:15px;padding:11px 12px;
+    border:1px solid var(--trait);border-radius:9px;background:var(--papier);color:var(--encre);
+  }
+  #capv-retro input[type=date]:focus-visible{outline:2px solid var(--laque);outline-offset:2px}
+
+  /* — Bannière résultat — */
+  #capv-retro .verdict{
+    margin-top:24px;background:var(--encre);color:var(--papier);border-radius:14px;
+    padding:22px 24px;position:relative;overflow:hidden;
+  }
+  #capv-retro .verdict::after{
+    content:"🇻🇳";position:absolute;right:-6px;bottom:-14px;font-size:84px;opacity:.10;
+  }
+  #capv-retro .verdict .k{font-family:var(--mono);font-size:11px;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--or);margin:0 0 6px}
+  #capv-retro .verdict .v{font-family:var(--serif);font-size:clamp(19px,3.4vw,25px);
+    line-height:1.25;margin:0;max-width:46ch}
+  #capv-retro .verdict .v b{color:var(--or);font-weight:600}
+
+  /* — Frise / timeline — */
+  #capv-retro .timeline{margin-top:30px;position:relative;padding-left:8px}
+  #capv-retro .step{
+    position:relative;display:grid;grid-template-columns:56px 1fr;gap:18px;
+    padding:0 0 26px 0;
+  }
+  #capv-retro .step::before{ /* rail vertical */
+    content:"";position:absolute;left:27px;top:46px;bottom:-6px;width:2px;
+    background:repeating-linear-gradient(var(--trait) 0 6px,transparent 6px 12px);
+  }
+  #capv-retro .step:last-child::before{display:none}
+  #capv-retro .seal{
+    width:56px;height:56px;border-radius:50%;display:grid;place-items:center;
+    border:2px dashed var(--laque);color:var(--laque);font-family:var(--mono);font-weight:600;
+    font-size:18px;background:var(--papier);transform:rotate(-4deg);
+    position:relative;z-index:1;
+  }
+  #capv-retro .step .body{padding-top:4px}
+  #capv-retro .step h3{
+    font-family:var(--serif);font-weight:600;font-size:18px;margin:0 0 4px;line-height:1.2;
+  }
+  #capv-retro .step .emo{font-size:16px;margin-right:4px}
+  #capv-retro .dates{
+    display:inline-flex;align-items:center;gap:10px;flex-wrap:wrap;margin:6px 0 8px;
+    font-family:var(--mono);font-size:13.5px;
+  }
+  #capv-retro .dates .pill{
+    background:var(--papier-2);border:1px solid var(--trait);border-radius:999px;
+    padding:4px 11px;white-space:nowrap;
+  }
+  #capv-retro .dates .pill b{color:var(--laque-fonce);font-weight:600}
+  #capv-retro .dates .arrow{color:var(--ardoise)}
+  #capv-retro .step p{margin:0;color:var(--ardoise);font-size:14px;max-width:54ch}
+  #capv-retro .step a.read{
+    display:inline-block;margin-top:8px;font-size:13px;font-weight:600;color:var(--laque);
+    text-decoration:none;border-bottom:1.5px solid transparent;transition:border-color .15s;
+  }
+  #capv-retro .step a.read:hover{border-color:var(--laque)}
+  #capv-retro .step.is-arrival .seal{border-style:solid;background:var(--or);color:var(--encre);transform:rotate(0)}
+  #capv-retro .step.is-final .seal{border-color:var(--jade);color:var(--jade)}
+  #capv-retro .step.is-start .seal{border-style:solid;background:var(--encre);color:var(--papier);transform:rotate(0)}
+  #capv-retro .dates .pill.solo b{color:var(--encre)}
+
+  /* — Carte inverse — */
+  #capv-retro .reverse{
+    margin-top:22px;border:1px dashed var(--trait);border-radius:12px;padding:16px 18px;
+    background:#fff;
+  }
+  #capv-retro .reverse h4{font-family:var(--serif);font-size:16px;margin:0 0 4px}
+  #capv-retro .reverse .row{display:flex;gap:14px;align-items:flex-end;flex-wrap:wrap;margin-top:8px}
+  #capv-retro .reverse .out{font-family:var(--mono);font-size:14px;color:var(--encre)}
+  #capv-retro .reverse .out b{color:var(--laque-fonce)}
+
+  /* — Actions / CTA — */
+  #capv-retro .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+  #capv-retro .btn{
+    font:600 14px/1 var(--sans);padding:13px 18px;border-radius:10px;cursor:pointer;
+    text-decoration:none;display:inline-flex;align-items:center;gap:8px;border:1px solid transparent;
+  }
+  #capv-retro .btn-pri{background:var(--laque);color:#fff}
+  #capv-retro .btn-pri:hover{background:var(--laque-fonce)}
+  #capv-retro .btn-sec{background:transparent;color:var(--encre);border-color:var(--trait)}
+  #capv-retro .btn-sec:hover{border-color:var(--encre)}
+
+  #capv-retro .foot{
+    margin-top:26px;border-top:1px solid var(--trait);padding-top:16px;
+    font-size:12.5px;color:var(--ardoise);
+  }
+  #capv-retro .foot b{color:var(--encre)}
+
+  @media print{
+    #capv-retro{box-shadow:none;border-radius:0}
+    #capv-retro .actions,#capv-retro .reverse{display:none}
+  }
+  @media (prefers-reduced-motion:reduce){#capv-retro *{transition:none!important;animation:none!important}}
+</style>
+
+  <div class="wrap">
+    <p class="eyebrow">Outil interactif · Blog CapVietnam</p>
+    <h1>Ton <em>rétroplanning</em> pour faire venir ton conjoint en France</h1>
+    <p class="lede">Entre la date où tu déposes ton dossier CCAM. Le simulateur projette chaque étape — du certificat au titre de séjour — avec une fourchette « au plus tôt / au plus tard ». Des estimations, pas une promesse de l'administration.</p>
+    <p class="lede" style="margin-top:10px;font-size:14px;">🇻🇳 Tu comptes plutôt <b>vivre au Vietnam</b> ? Ce parcours-là est bien plus court — <a href="https://blog-capvietnam.fr/simulateur-installation-vietnam" style="color:var(--laque);font-weight:600;">utilise le rétroplanning « s'installer au Vietnam » →</a></p>
+
+    <div class="panel">
+      <div class="field">
+        <label for="capv-start">Date où tu lances tes démarches
+          <span class="hint">= le jour où tu réserves ton rendez-vous au consulat</span>
+        </label>
+        <input type="date" id="capv-start">
+      </div>
+      <div class="field">
+        <label for="capv-target">Tu vises une date d'arrivée ? <span class="hint">(facultatif — calcule la date limite pour démarrer)</span></label>
+        <input type="date" id="capv-target">
+      </div>
+    </div>
+
+    <div class="verdict" id="capv-verdict" hidden>
+      <p class="k">Arrivée estimée en France</p>
+      <p class="v" id="capv-verdict-txt"></p>
+    </div>
+
+    <div class="reverse" id="capv-reverse" hidden>
+      <h4>🎯 Pour viser ta date cible</h4>
+      <div class="row">
+        <div class="out" id="capv-reverse-out"></div>
+      </div>
+    </div>
+
+    <div class="timeline" id="capv-timeline"></div>
+
+    <div class="actions">
+      <a class="btn btn-pri" href="https://blog-capvietnam.fr/#newsletter">📩 Recevoir les alertes démarches</a>
+      <button class="btn btn-sec" id="capv-print">🖨️ Imprimer mon rétroplanning</button>
+      <a class="btn btn-sec" href="https://blog-capvietnam.fr/faire-venir-conjointe-vietnamienne-france">📘 Le guide complet</a>
+    </div>
+
+    <p class="foot"><b>À lire avec recul.</b> Les délais des administrations (consulat, SCEC de Nantes, préfecture) varient selon la période et la qualité du dossier. Ce simulateur donne un ordre de grandeur fondé sur des cas réels — il ne remplace ni le consulat ni un conseil juridique. Vérifie toujours les délais à jour auprès des sources officielles.</p>
+  </div>
+</div>
+
+<script>
+(function(){
+  var root = document.getElementById('capv-retro');
+  if(!root) return;
+
+  /* Stockage tolérant : localStorage si dispo, sinon mémoire (jamais de plantage) */
+  var mem = {};
+  var store = {
+    get:function(k){ try{ return localStorage.getItem(k); }catch(e){ return (k in mem)?mem[k]:null; } },
+    set:function(k,v){ try{ localStorage.setItem(k,v); }catch(e){ mem[k]=v; } }
+  };
+
+  /* Étapes : durées CUMULÉES en jours depuis la prise de rendez-vous (min = optimiste, max = prudent).
+     Ajuste librement si l'administration change ses délais. */
+  var STEPS = [
+    {emo:"📅", t:"Prendre rendez-vous au consulat", start:true,
+     note:"Réserve ton créneau sur le site officiel de l'ambassade de France à Hanoï — les places partent vite, et c'est souvent ce qui rallonge le plus le parcours. C'est le point de départ.",
+     url:"https://consulat.gouv.fr/ambassade-de-france-a-hanoi/rendez-vous"},
+    {emo:"📄", t:"CCAM délivré par le consulat", min:30,  max:120,
+     note:"Traitement annoncé : 4 à 6 semaines (bans de 10 jours inclus). Mais l'attente d'un rendez-vous consulaire allonge souvent le total à 3–4 mois. À lancer 4 mois avant le mariage.",
+     url:"https://blog-capvietnam.fr/certificat-capacite-mariage-vietnam"},
+    {emo:"💍", t:"Mariage civil au comité populaire", min:60, max:210,
+     note:"Au comité populaire (UBND) du district de ton conjoint. Le CCAM y est exigé pour enregistrer le mariage. Ta présence au Vietnam est requise.",
+     url:"https://blog-capvietnam.fr/se-marier-vietnamienne-demarches-france"},
+    {emo:"🏛️", t:"Transcription du mariage à Nantes", min:240, max:575,
+     note:"Service Central d'État Civil. C'est l'étape la plus longue et la plus variable du parcours.",
+     url:"https://blog-capvietnam.fr/transcription-mariage-service-central-nantes"},
+    {emo:"🛂", t:"Visa long séjour (VLS-TS) accordé", min:300, max:665,
+     note:"Catégorie « conjoint de Français », déposé via VFS Global. Entretien à l'ambassade possible.",
+     url:"https://blog-capvietnam.fr/visa-long-sejour-conjoint-vietnamien-france", arrival:true},
+    {emo:"🇫🇷", t:"Arrivée en France + validation OFII", min:300, max:665,
+     note:"Validation OFII obligatoire dans les 3 mois suivant l'entrée (taxe 250 €).",
+     url:"https://blog-capvietnam.fr/faire-venir-conjointe-vietnamienne-france", ofii:true},
+    {emo:"🪪", t:"Premier titre de séjour (ANEF)", min:null, max:null,
+     note:"Demande 2 à 4 mois avant l'expiration du VLS (valable 1 an). Un récépissé maintient le séjour légal pendant l'instruction.",
+     url:"https://blog-capvietnam.fr/titre-sejour-vie-privee-familiale-conjoint-vietnamien", final:true}
+  ];
+
+  var startEl  = document.getElementById('capv-start');
+  var targetEl = document.getElementById('capv-target');
+  var tl       = document.getElementById('capv-timeline');
+  var verdict  = document.getElementById('capv-verdict');
+  var verdictT = document.getElementById('capv-verdict-txt');
+  var rev      = document.getElementById('capv-reverse');
+  var revOut   = document.getElementById('capv-reverse-out');
+
+  var fmt = new Intl.DateTimeFormat('fr-FR',{day:'numeric',month:'long',year:'numeric'});
+  var fmtShort = new Intl.DateTimeFormat('fr-FR',{month:'short',year:'numeric'});
+  function addDays(d,n){ var x=new Date(d.getTime()); x.setDate(x.getDate()+n); return x; }
+  function parse(v){ if(!v) return null; var p=v.split('-'); return new Date(+p[0],+p[1]-1,+p[2]); }
+
+  function render(){
+    var start = parse(startEl.value);
+    if(!start){ tl.innerHTML=''; verdict.hidden=true; return; }
+    store.set('capv_retro_start', startEl.value);
+
+    var arrivalStep = null;
+    for(var ai=0; ai<STEPS.length; ai++){ if(STEPS[ai].arrival){ arrivalStep=STEPS[ai]; break; } }
+    var arrMin = addDays(start, arrivalStep.min);
+    var arrMax = addDays(start, arrivalStep.max);
+    verdict.hidden=false;
+    verdictT.innerHTML = 'Si tout s\'enchaîne, ton conjoint pourrait poser le pied en France entre <b>'+fmtShort.format(arrMin)+'</b> et <b>'+fmtShort.format(arrMax)+'</b>.';
+
+    var html='';
+    STEPS.forEach(function(s,i){
+      var datesHtml;
+      if(s.start){
+        datesHtml='<span class="pill solo"><b>'+fmt.format(start)+'</b></span>';
+      } else if(s.final){
+        var fMin=addDays(arrMin,395), fMax=addDays(arrMax,545);
+        datesHtml='<span class="pill">au plus tôt <b>'+fmt.format(fMin)+'</b></span><span class="arrow">→</span><span class="pill">au plus tard <b>'+fmt.format(fMax)+'</b></span>';
+      } else {
+        var dMin=addDays(start,s.min), dMax=addDays(start,s.max);
+        datesHtml='<span class="pill">au plus tôt <b>'+fmt.format(dMin)+'</b></span><span class="arrow">→</span><span class="pill">au plus tard <b>'+fmt.format(dMax)+'</b></span>';
+      }
+      var cls='step'+(s.start?' is-start':'')+(s.arrival?' is-arrival':'')+(s.final?' is-final':'');
+      html+='<div class="'+cls+'">'
+          +   '<div class="seal">'+(i+1)+'</div>'
+          +   '<div class="body">'
+          +     '<h3><span class="emo">'+s.emo+'</span>'+s.t+'</h3>'
+          +     '<div class="dates">'+datesHtml+'</div>'
+          +     '<p>'+s.note+'</p>'
+          +     '<a class="read" href="'+s.url+'">Lire l\'étape en détail →</a>'
+          +   '</div>'
+          + '</div>';
+    });
+    tl.innerHTML=html;
+
+    // Mode inverse : date cible -> date limite pour déposer le CCAM
+    var target = parse(targetEl.value);
+    if(target){
+      rev.hidden=false;
+      var latest   = addDays(target, -arrivalStep.max); // scénario prudent
+      var typical  = addDays(target, -Math.round((arrivalStep.min+arrivalStep.max)/2));
+      revOut.innerHTML = 'Pour une arrivée vers <b>'+fmt.format(target)+'</b> :<br>'
+        + '• Dépôt CCAM <b>au plus tard le '+fmt.format(latest)+'</b> (scénario prudent)<br>'
+        + '• Idéalement <b>avant le '+fmt.format(typical)+'</b> pour garder de la marge.';
+    } else { rev.hidden=true; }
+  }
+
+  // valeurs par défaut
+  var saved = store.get('capv_retro_start');
+  if(saved){ startEl.value = saved; }
+  else { startEl.value = new Date().toISOString().slice(0,10); }
+
+  startEl.addEventListener('change', render);
+  startEl.addEventListener('input', render);
+  targetEl.addEventListener('change', render);
+  targetEl.addEventListener('input', render);
+  function printRetro(){
+    var start=parse(startEl.value);
+    if(!start) return;
+    var aStep=null; for(var ai=0;ai<STEPS.length;ai++){ if(STEPS[ai].arrival){ aStep=STEPS[ai]; break; } }
+    var arrMin=addDays(start,aStep.min), arrMax=addDays(start,aStep.max);
+    var rows='';
+    STEPS.forEach(function(s,i){
+      var cell;
+      if(s.start){ cell=fmt.format(start); }
+      else if(s.final){ cell=fmt.format(addDays(arrMin,395))+'<br>→ '+fmt.format(addDays(arrMax,545)); }
+      else { cell=fmt.format(addDays(start,s.min))+'<br>→ '+fmt.format(addDays(start,s.max)); }
+      rows+='<tr><td class="n">'+(i+1)+'</td>'
+          + '<td><b>'+s.emo+' '+s.t+'</b><br><span class="note">'+s.note+'</span></td>'
+          + '<td class="d">'+cell+'</td></tr>';
+    });
+    var w=window.open('','_blank','width=820,height=900');
+    if(!w){ window.print(); return; } // si la fenêtre est bloquée, repli sur l'impression standard
+    w.document.write('<!doctype html><html lang="fr"><head><meta charset="utf-8">'
+      +'<title>Mon rétroplanning — Blog CapVietnam</title><style>'
+      +'body{font-family:Georgia,serif;color:#1c1917;max-width:720px;margin:24px auto;padding:0 18px;line-height:1.5}'
+      +'h1{font-size:23px;margin:0 0 4px}.sub{color:#6B635B;font-size:13px;margin:0 0 18px}'
+      +'.verdict{background:#1c1917;color:#fff;padding:14px 16px;border-radius:8px;margin:0 0 18px;font-size:15px}'
+      +'.verdict b{color:#E4A11B}table{width:100%;border-collapse:collapse;font-family:Arial,Helvetica,sans-serif;font-size:13px}'
+      +'td{border-top:1px solid #E2D8C9;padding:10px 6px;vertical-align:top}'
+      +'.n{font-weight:700;color:#C8102E;width:22px}.d{white-space:nowrap;font-family:monospace;font-size:11.5px;color:#9e0c23;text-align:right}'
+      +'.note{color:#6B635B;font-size:11.5px}.foot{margin-top:18px;font-size:11px;color:#6B635B;border-top:1px solid #E2D8C9;padding-top:10px}'
+      +'.noprint{margin-top:16px;padding:9px 16px;border:1px solid #1c1917;border-radius:7px;background:#fff;cursor:pointer;font-size:13px}'
+      +'@media print{.noprint{display:none}}</style></head><body>'
+      +'<h1>Mon rétroplanning — démarches conjoint</h1>'
+      +'<p class="sub">Blog CapVietnam · point de départ : '+fmt.format(start)+'</p>'
+      +'<div class="verdict">'+verdictT.innerHTML+'</div>'
+      +'<table>'+rows+'</table>'
+      +'<p class="foot">Estimations indicatives — les délais des administrations varient et ce document ne remplace ni les sources officielles ni un conseil juridique. © Blog CapVietnam · blog-capvietnam.fr</p>'
+      +'<button class="noprint" onclick="window.print()">🖨️ Imprimer / enregistrer en PDF</button>'
+      +'</body></html>');
+    w.document.close(); w.focus();
+    setTimeout(function(){ try{ w.print(); }catch(e){} }, 350);
+  }
+  document.getElementById('capv-print').addEventListener('click', printRetro);
+
+  render();
+})();
+</script>

@@ -1,0 +1,315 @@
+<!--
+  Blog CapVietnam — Page « Parcours guidé du couple franco-vietnamien »
+  Fichier autonome (HTML + CSS + JS). À déposer par ex. en /parcours-couple-franco-vietnamien.
+  - Le parcours bifurque après le mariage civil : branche 🇫🇷 « vivre en France »
+    ou branche 🇻🇳 « vivre au Vietnam ». Le choix et la progression sont mémorisés
+    localement (localStorage) avec repli mémoire : aucun plantage.
+  - Tous les liens pointent vers tes slugs réels. Adapte si tu renommes des articles.
+-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=Spline+Sans+Mono:wght@500;600&display=swap" rel="stylesheet">
+
+<div id="capv-parcours">
+<style>
+  #capv-parcours{
+    --encre:#1c1917; --papier:#FBF8F3; --papier-2:#F3ECE2;
+    --laque:#C8102E; --laque-fonce:#9e0c23; --or:#E4A11B; --jade:#3F7A6D;
+    --ardoise:#6B635B; --trait:#E2D8C9;
+    --serif:'Fraunces',Georgia,serif; --sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    --mono:'Spline Sans Mono',Consolas,monospace;
+    background:var(--papier);color:var(--encre);font-family:var(--sans);line-height:1.55;
+    -webkit-font-smoothing:antialiased;border-radius:18px;overflow:hidden;max-width:900px;margin:0 auto;
+    box-shadow:0 1px 0 var(--trait),0 30px 60px -40px rgba(28,25,23,.5);
+  }
+  #capv-parcours *{box-sizing:border-box}
+  #capv-parcours .wrap{padding:clamp(22px,4vw,44px)}
+
+  #capv-parcours .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--laque);display:flex;align-items:center;gap:8px;margin:0 0 14px}
+  #capv-parcours .eyebrow::before{content:"";width:26px;height:1px;background:var(--laque)}
+  #capv-parcours h1{font-family:var(--serif);font-weight:500;font-size:clamp(27px,5vw,42px);
+    line-height:1.06;letter-spacing:-.01em;margin:0 0 12px}
+  #capv-parcours h1 em{font-style:italic;color:var(--laque)}
+  #capv-parcours .lede{color:var(--ardoise);font-size:16px;max-width:62ch;margin:0}
+
+  /* — Barre de progression collante — */
+  #capv-parcours .progress{
+    position:sticky;top:0;z-index:5;background:var(--encre);color:var(--papier);
+    margin:26px 0 8px;border-radius:12px;padding:14px 18px;
+    display:flex;align-items:center;gap:16px;flex-wrap:wrap;
+  }
+  #capv-parcours .progress .label{font-family:var(--mono);font-size:12px;letter-spacing:.08em;
+    text-transform:uppercase;color:var(--or);white-space:nowrap}
+  #capv-parcours .bar{flex:1;min-width:140px;height:8px;border-radius:99px;background:rgba(251,248,243,.18);overflow:hidden}
+  #capv-parcours .bar>span{display:block;height:100%;width:0;border-radius:99px;
+    background:linear-gradient(90deg,var(--or),#f2c14e);transition:width .5s cubic-bezier(.2,.7,.2,1)}
+  #capv-parcours .progress .count{font-family:var(--mono);font-size:14px;white-space:nowrap}
+  #capv-parcours .progress button{background:none;border:0;color:var(--papier);opacity:.65;
+    font:500 12px var(--sans);cursor:pointer;text-decoration:underline;padding:0}
+  #capv-parcours .progress button:hover{opacity:1}
+
+  /* — Étapes — */
+  #capv-parcours .phase{
+    display:grid;grid-template-columns:60px 1fr;gap:20px;padding:26px 0;
+    border-bottom:1px solid var(--trait);position:relative;
+  }
+  #capv-parcours .num{
+    width:60px;height:60px;border-radius:14px;display:grid;place-items:center;
+    font-family:var(--serif);font-weight:600;font-size:24px;color:var(--laque);
+    background:#fff;border:1px solid var(--trait);transition:.25s;position:relative;
+  }
+  #capv-parcours .phase.done .num{background:var(--jade);color:#fff;border-color:var(--jade)}
+  #capv-parcours .ph-body h2{font-family:var(--serif);font-weight:600;font-size:21px;margin:2px 0 4px;line-height:1.18}
+  #capv-parcours .ph-body .when{font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;
+    text-transform:uppercase;color:var(--ardoise);margin:0 0 8px}
+  #capv-parcours .ph-body p{margin:0 0 12px;color:var(--ardoise);font-size:14.5px;max-width:58ch}
+  #capv-parcours .ph-note{background:var(--papier-2);border-left:3px solid var(--or);padding:9px 13px;
+    border-radius:6px;font-size:13px;color:var(--encre);margin:0 0 13px;max-width:58ch}
+  #capv-parcours .ph-note b{color:var(--laque-fonce)}
+  #capv-parcours .links{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+  #capv-parcours .links a{
+    font-size:13px;font-weight:500;color:var(--encre);text-decoration:none;
+    background:var(--papier-2);border:1px solid var(--trait);border-radius:99px;padding:6px 13px;transition:.15s}
+  #capv-parcours .links a:hover{border-color:var(--laque);color:var(--laque-fonce)}
+  #capv-parcours .check{
+    display:inline-flex;align-items:center;gap:9px;cursor:pointer;font-size:13.5px;font-weight:600;
+    color:var(--encre);user-select:none}
+  #capv-parcours .check input{appearance:none;-webkit-appearance:none;width:20px;height:20px;
+    border:2px solid var(--ardoise);border-radius:6px;display:grid;place-items:center;cursor:pointer;transition:.15s}
+  #capv-parcours .check input:checked{background:var(--jade);border-color:var(--jade)}
+  #capv-parcours .check input:checked::after{content:"\2713";color:#fff;font-size:13px;font-weight:700}
+  #capv-parcours .check input:focus-visible{outline:2px solid var(--laque);outline-offset:2px}
+
+  /* — Sélecteur de branche — */
+  #capv-parcours .fork{
+    margin:30px 0 4px;background:#fff;border:1px solid var(--trait);border-radius:14px;
+    padding:20px;text-align:center;
+  }
+  #capv-parcours .fork .q{font-family:var(--serif);font-weight:600;font-size:19px;margin:0 0 4px}
+  #capv-parcours .fork .sub{font-size:13.5px;color:var(--ardoise);margin:0 0 16px}
+  #capv-parcours .seg{display:inline-flex;gap:8px;background:var(--papier-2);border:1px solid var(--trait);
+    border-radius:12px;padding:5px}
+  #capv-parcours .seg button{
+    font:600 14.5px var(--sans);padding:11px 20px;border-radius:9px;border:0;cursor:pointer;
+    background:transparent;color:var(--encre);transition:.18s}
+  #capv-parcours .seg button[aria-pressed="true"]{background:var(--encre);color:var(--papier)}
+  #capv-parcours .seg button:focus-visible{outline:2px solid var(--laque);outline-offset:2px}
+  @media(max-width:460px){#capv-parcours .seg{flex-direction:column;width:100%}}
+
+  /* — Encarts intercalés — */
+  #capv-parcours .insert{
+    background:var(--encre);color:var(--papier);border-radius:14px;padding:22px 24px;margin:26px 0;
+    display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}
+  #capv-parcours .insert h3{font-family:var(--serif);font-weight:500;font-size:19px;margin:0 0 4px}
+  #capv-parcours .insert p{margin:0;font-size:14px;color:#d8cfc2;max-width:46ch}
+  #capv-parcours .insert .btn{background:var(--or);color:var(--encre);font:600 14px var(--sans);
+    padding:12px 18px;border-radius:10px;text-decoration:none;white-space:nowrap}
+  #capv-parcours .insert .btn:hover{filter:brightness(1.06)}
+  #capv-parcours .insert.tool{background:linear-gradient(135deg,#23201d,#1c1917)}
+  #capv-parcours .insert.note{background:var(--papier-2);color:var(--encre);border:1px dashed var(--ardoise)}
+  #capv-parcours .insert.note p{color:var(--ardoise);max-width:60ch}
+
+  #capv-parcours .end{text-align:center;padding:30px 10px 6px}
+  #capv-parcours .end h3{font-family:var(--serif);font-size:23px;margin:0 0 8px}
+  #capv-parcours .end p{color:var(--ardoise);font-size:15px;margin:0 auto 18px;max-width:48ch}
+  #capv-parcours .end .row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  #capv-parcours .end .btn{font:600 14px var(--sans);padding:13px 20px;border-radius:10px;text-decoration:none}
+  #capv-parcours .end .btn-pri{background:var(--laque);color:#fff}
+  #capv-parcours .end .btn-pri:hover{background:var(--laque-fonce)}
+  #capv-parcours .end .btn-sec{background:#fff;color:var(--encre);border:1px solid var(--trait)}
+
+  @media(max-width:560px){
+    #capv-parcours .phase{grid-template-columns:46px 1fr;gap:14px}
+    #capv-parcours .num{width:46px;height:46px;font-size:19px}
+  }
+  @media (prefers-reduced-motion:reduce){#capv-parcours *{transition:none!important}}
+</style>
+
+  <div class="wrap">
+    <p class="eyebrow">Le parcours · de la rencontre à la vie installée</p>
+    <h1>Construire une vie à deux, <em>étape par étape</em></h1>
+    <p class="lede">Un couple franco-vietnamien, ce n'est pas un article à lire : c'est un parcours. Après le mariage, le chemin se sépare en deux selon l'endroit où vous voulez vivre. Coche ce que tu as déjà fait — ta progression est gardée sur cet appareil.</p>
+
+    <div class="progress">
+      <span class="label">Ta progression</span>
+      <div class="bar"><span id="capv-fill"></span></div>
+      <span class="count" id="capv-count">0 / 8</span>
+      <button id="capv-reset">réinitialiser</button>
+    </div>
+
+    <div id="capv-flow"></div>
+
+    <div class="end">
+      <h3>Tu connais maintenant tout le chemin.</h3>
+      <p>Reçois une alerte quand un délai ou une démarche change — et l'accès au pack qui réunit modèles de courriers et checklists imprimables.</p>
+      <div class="row">
+        <a class="btn btn-pri" href="https://blog-capvietnam.fr/#newsletter">📩 Rejoindre la newsletter</a>
+        <a class="btn btn-sec" href="https://blog-capvietnam.fr/faire-venir-conjointe-vietnamienne-france">📘 Relire le guide pilier</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var root=document.getElementById('capv-parcours'); if(!root) return;
+  var mem={};
+  var store={
+    get:function(k){try{return localStorage.getItem(k);}catch(e){return (k in mem)?mem[k]:null;}},
+    set:function(k,v){try{localStorage.setItem(k,v);}catch(e){mem[k]=v;}}
+  };
+
+  /* Étapes communes AVANT la bifurcation (texte validé, ne pas modifier) */
+  var BEFORE=[
+    {id:"comprendre", when:"Avant les démarches", t:"Se comprendre vraiment",
+     d:"La distance, la belle-famille, l'argent, la franchise vietnamienne : les différences qui font ou défont un couple mixte. C'est le socle, avant toute paperasse.",
+     links:[["Différences culturelles","https://blog-capvietnam.fr/differences-culturelles-couple-franco-vietnamien"],
+            ["Apprendre le vietnamien à deux","https://blog-capvietnam.fr/apprendre-vietnamien-couple"]]},
+    {id:"ccam", when:"Mois 1 — Vietnam", t:"Le CCAM : la capacité à mariage",
+     d:"Le Certificat de Capacité à Mariage, délivré par le consulat avant tout mariage. Première action concrète : réserver ton rendez-vous au consulat, car les créneaux sont rares. Sans CCAM, aucun comité populaire n'enregistre l'union. À lancer 4 mois à l'avance.",
+     note:"<b>Vous vous mariez en France ?</b> Pas de CCAM dans ce cas : ce certificat ne sert que pour un mariage célébré à l'étranger. Vous passez directement par la mairie française.",
+     links:[["📅 Prendre rendez-vous au consulat","https://consulat.gouv.fr/ambassade-de-france-a-hanoi/rendez-vous"],
+            ["Démarches côté France","https://blog-capvietnam.fr/se-marier-vietnamienne-demarches-france"],
+            ["Le CCAM en détail","https://blog-capvietnam.fr/certificat-capacite-mariage-vietnam"]]},
+    {id:"ceremonie", when:"En parallèle — la fête", t:"La cérémonie traditionnelle & le budget",
+     d:"Lễ ăn hỏi (fiançailles), đám cưới (cérémonie), réception, cadeaux. La partie festive et familiale. Elle peut précéder ou suivre l'enregistrement civil et n'a aucune valeur administrative — mais elle compte énormément pour la belle-famille.",
+     links:[["Budget réel d'un mariage","https://blog-capvietnam.fr/prix-mariage-franco-vietnamien"],
+            ["Rencontrer la belle-famille","https://blog-capvietnam.fr/belle-famille-vietnamienne-guide"]]},
+    {id:"mariage-civil", when:"Mois 2–4 — Vietnam", t:"Le mariage civil au comité populaire",
+     d:"L'enregistrement au comité populaire (UBND) — et lui seul — produit l'acte de mariage juridiquement valable (giấy chứng nhận đăng ký kết hôn). C'est CETTE date qui compte pour toute la suite : transcription, visa, titre de séjour. Pas celle de la fête.",
+     note:"<b>Pas mariés ?</b> Le PACS et le concubinage n'ouvrent pas le visa « conjoint de Français » : seul le mariage le permet. C'est la condition non négociable de toute la branche France.",
+     links:[["Se marier : le parcours complet","https://blog-capvietnam.fr/se-marier-vietnamienne-demarches-france"]]}
+  ];
+
+  /* Branches après le mariage */
+  var BRANCHES={
+    france:{
+      intro:{cls:"tool",h:"Visualise tes dates réelles",p:"Entre ta date de lancement CCAM, obtiens chaque échéance projetée jusqu'à l'arrivée en France.",b:["Ouvrir le simulateur","https://blog-capvietnam.fr/simulateur-retroplanning-conjoint"]},
+      phases:[
+        {id:"fr-transcription", when:"Mois 8–16 — France", t:"La transcription à Nantes",
+         d:"Faire reconnaître le mariage en France auprès du Service Central d'État Civil. On lance le dossier dès l'acte de mariage en main : c'est l'étape la plus longue et la plus variable.",
+         links:[["Transcription à Nantes","https://blog-capvietnam.fr/transcription-mariage-service-central-nantes"]]},
+        {id:"fr-visa", when:"Mois 10–22 — Vietnam", t:"Le visa long séjour",
+         d:"Visa « conjoint de Français » déposé via VFS Global, souvent suivi d'un entretien à l'ambassade sur la réalité de la vie commune. Le dossier se prépare en amont.",
+         links:[["Le visa long séjour conjoint","https://blog-capvietnam.fr/visa-long-sejour-conjoint-vietnamien-france"],
+                ["Préparer l'entretien","https://blog-capvietnam.fr/entretien-ambassade-france-vietnam-visa-conjoint"]]},
+        {id:"fr-titre", when:"À l'arrivée — France", t:"OFII & titre de séjour",
+         d:"Validation OFII dans les 3 mois après l'entrée, puis demande de titre de séjour sur l'ANEF avant l'expiration du visa. Le couple est enfin réuni et en règle.",
+         links:[["Le guide complet « faire venir »","https://blog-capvietnam.fr/faire-venir-conjointe-vietnamienne-france"],
+                ["Le titre de séjour","https://blog-capvietnam.fr/titre-sejour-vie-privee-familiale-conjoint-vietnamien"]]}
+      ]
+    },
+    vietnam:{
+      intro:{cls:"note",h:"Bon à savoir avant de continuer",p:"Ici, la transcription à Nantes devient optionnelle : utile pour que la France reconnaisse le mariage, mais pas nécessaire pour vivre au Vietnam. Beaucoup entrent avec un e-visa touriste, puis basculent vers le visa conjoint une fois mariés.",b:["Quel visa Vietnam choisir","https://blog-capvietnam.fr/visa-vietnam-francais-guide-2026"]},
+      phases:[
+        {id:"vn-visa", when:"Après le mariage — Vietnam", t:"Le visa TT (conjoint de Vietnamien)",
+         d:"Le visa symbole TT est réservé aux conjoints de citoyens vietnamiens. On le convertit souvent depuis un e-visa touriste, une fois l'acte de mariage en main, avec le parrainage du conjoint vietnamien.",
+         links:[["Quel visa Vietnam choisir","https://blog-capvietnam.fr/visa-vietnam-francais-guide-2026"]]},
+        {id:"vn-trc", when:"Dans la foulée — Vietnam", t:"La carte de résidence temporaire (thẻ tạm trú)",
+         d:"La TRC symbole TT est valable jusqu'à 3 ans (plafonnée par la validité du passeport, qui doit dépasser 13 mois). Compte 1 à 2 mois de préparation des pièces puis ~5 à 10 jours ouvrés d'instruction. Elle évite les renouvellements de visa et ouvre compte bancaire, location et services.",
+         links:[["La carte de résidence temporaire","https://blog-capvietnam.fr/carte-residence-temporaire-vietnam"]]},
+        {id:"vn-installation", when:"Sur place — Vietnam", t:"S'installer vraiment",
+         d:"Enregistrement de résidence au quartier, identité numérique VNeID (obligatoire depuis 2025), logement, banque, assurance santé : la vie quotidienne une fois la résidence en poche.",
+         links:[["Le guide s'expatrier 2026","https://blog-capvietnam.fr/s-expatrier-vietnam-2026-guide-complet"],
+                ["Louer un appartement à Hanoï","https://blog-capvietnam.fr/louer-appartement-hanoi-etranger"]]},
+        {id:"vn-permanent", when:"Après 3 ans — Vietnam", t:"Devenir résident permanent",
+         d:"Après 3 années consécutives de résidence temporaire, le conjoint étranger peut demander la carte de résidence permanente (thẻ thường trú), parrainé par le conjoint vietnamien, sous condition de logement légal et de revenus stables. Elle se renouvelle tous les 10 ans — c'est l'aboutissement de la voie Vietnam.",
+         links:[["La carte de résidence temporaire","https://blog-capvietnam.fr/carte-residence-temporaire-vietnam"]]}
+      ]
+    }
+  };
+
+  /* Étape commune APRÈS, quelle que soit la branche */
+  var AFTER=[
+    {id:"argent", when:"Ensuite — la vraie vie", t:"Construire l'argent à deux",
+     d:"Comptes entre deux pays, soutien à la famille, qui paie quoi. La partie dont personne ne parle, et qui dure bien plus longtemps que les démarches.",
+     links:[["L'argent dans le couple","https://blog-capvietnam.fr/argent-couple-franco-vietnamien"],
+            ["Le « compte joint » impossible","https://blog-capvietnam.fr/compte-joint-franco-vietnamien"]]}
+  ];
+
+  var CALC={cls:"",h:"Combien ça coûte de vivre là-bas ?",p:"Estime ton budget mensuel à Hanoï ou Hô Chi Minh-Ville.",b:["Ouvrir le calculateur","https://blog-capvietnam.fr/calculateur-budget-vietnam"]};
+
+  var DONE_KEY='capv_parcours_done_v3';
+  var BRANCH_KEY='capv_parcours_branch';
+  var done={}; try{ done=JSON.parse(store.get(DONE_KEY)||'{}')||{}; }catch(e){ done={}; }
+  var branch=store.get(BRANCH_KEY)||'france';
+  if(!BRANCHES[branch]) branch='france';
+
+  var flow=document.getElementById('capv-flow');
+  var fill=document.getElementById('capv-fill');
+  var count=document.getElementById('capv-count');
+
+  function activePhases(){ return BEFORE.concat(BRANCHES[branch].phases, AFTER); }
+
+  function paint(){
+    var list=activePhases(), n=0;
+    list.forEach(function(p){ if(done[p.id]) n++; });
+    var total=list.length;
+    fill.style.width=Math.round(n/total*100)+'%';
+    count.textContent=n+' / '+total;
+  }
+
+  function phaseHTML(p,num){
+    var isDone=!!done[p.id];
+    return '<div class="phase'+(isDone?' done':'')+'" data-id="'+p.id+'">'
+      +'<div class="num">'+num+'</div>'
+      +'<div class="ph-body">'
+      +'<p class="when">'+p.when+'</p><h2>'+p.t+'</h2><p>'+p.d+'</p>'
+      +(p.note?'<p class="ph-note">'+p.note+'</p>':'')
+      +'<div class="links">'+p.links.map(function(l){return '<a href="'+l[1]+'">'+l[0]+'</a>';}).join('')+'</div>'
+      +'<label class="check"><input type="checkbox" '+(isDone?'checked':'')+' data-id="'+p.id+'"> <span>'+(isDone?'Étape franchie':'Marquer comme fait')+'</span></label>'
+      +'</div></div>';
+  }
+  function insertHTML(ins){
+    return '<div class="insert '+ins.cls+'"><div><h3>'+ins.h+'</h3><p>'+ins.p+'</p></div>'
+      +'<a class="btn" href="'+ins.b[1]+'">'+ins.b[0]+' →</a></div>';
+  }
+  function forkHTML(){
+    return '<div class="fork"><p class="q">Vous vous installez où ?</p>'
+      +'<p class="sub">Après le mariage, le parcours se sépare. Choisis ta voie — tu peux changer à tout moment.</p>'
+      +'<div class="seg" role="group" aria-label="Choix du pays d\'installation">'
+      +'<button data-branch="france" aria-pressed="'+(branch==='france')+'">🇫🇷 En France</button>'
+      +'<button data-branch="vietnam" aria-pressed="'+(branch==='vietnam')+'">🇻🇳 Au Vietnam</button>'
+      +'</div></div>';
+  }
+
+  function build(){
+    var html='', num=0;
+    BEFORE.forEach(function(p){ num++; html+=phaseHTML(p,num); });
+    html+=forkHTML();
+    html+=insertHTML(BRANCHES[branch].intro);
+    BRANCHES[branch].phases.forEach(function(p){ num++; html+=phaseHTML(p,num); });
+    AFTER.forEach(function(p){ num++; html+=phaseHTML(p,num); });
+    html+=insertHTML(CALC);
+    flow.innerHTML=html;
+
+    flow.querySelectorAll('input[type=checkbox]').forEach(function(box){
+      box.addEventListener('change',function(){
+        var id=this.getAttribute('data-id');
+        if(this.checked) done[id]=1; else delete done[id];
+        store.set(DONE_KEY,JSON.stringify(done));
+        var card=this.closest('.phase'); card.classList.toggle('done',this.checked);
+        card.querySelector('.check span').textContent=this.checked?'Étape franchie':'Marquer comme fait';
+        paint();
+      });
+    });
+    flow.querySelectorAll('.seg button').forEach(function(btn){
+      btn.addEventListener('click',function(){
+        branch=this.getAttribute('data-branch');
+        store.set(BRANCH_KEY,branch);
+        build();
+      });
+    });
+    paint();
+  }
+
+  document.getElementById('capv-reset').addEventListener('click',function(){
+    done={}; store.set(DONE_KEY,'{}'); build();
+  });
+
+  build();
+})();
+</script>

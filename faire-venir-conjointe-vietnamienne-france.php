@@ -132,6 +132,15 @@ include 'header.php';
       <strong>Ce guide est un pilier.</strong> Chaque étape a son propre article détaillé (lié dans chaque section). Lis d'abord cette vue d'ensemble, puis plonge dans les articles spécifiques pour les détails et les documents requis.
     </div>
 
+    <div style="background:linear-gradient(135deg,#0d2b1f,#1b4a35);border-radius:10px;padding:1.5rem 2rem;margin:1.5rem 0;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap">
+      <div>
+        <div style="font-size:0.62rem;letter-spacing:2px;text-transform:uppercase;font-weight:700;color:#6ee7b7;margin-bottom:0.4rem">📅 Outil interactif</div>
+        <h3 style="font-family:'DM Serif Display',serif;font-size:1.05rem;color:#faf8f4;margin-bottom:0.25rem">Calcule tes délais réels</h3>
+        <p style="font-size:0.87rem;color:rgba(250,248,244,0.55);margin:0">Entre ta date de lancement CCAM, obtiens chaque échéance jusqu'à l'arrivée en France.</p>
+      </div>
+      <a href="simulateur-retroplanning-conjoint" style="flex-shrink:0;display:inline-flex;align-items:center;gap:0.5rem;padding:0.7rem 1.4rem;background:#4db890;color:#0d2b1f;border-radius:5px;font-weight:700;font-size:0.87rem;text-decoration:none;white-space:nowrap">Ouvrir le simulateur →</a>
+    </div>
+
     <h2 id="section-1">Vue d'ensemble du parcours</h2>
     <p>Faire venir son conjoint vietnamien en France nécessite de valider plusieurs étapes dans un ordre précis. On ne peut pas sauter d'étape — chaque document ouvre la porte à la suivante.</p>
 

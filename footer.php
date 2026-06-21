@@ -175,6 +175,24 @@ if (localStorage.getItem('cookies_consent')) {
   document.getElementById('cookie-banner').classList.add('hidden');
 }
 
+// Dropdown outils
+(function(){
+  var dds = document.querySelectorAll('.nav-dropdown');
+  dds.forEach(function(dd){
+    var btn = dd.querySelector('button');
+    if(!btn) return;
+    btn.addEventListener('click', function(e){
+      var open = dd.classList.contains('open');
+      dds.forEach(function(d){ d.classList.remove('open'); d.querySelector('button') && (d.querySelector('button').setAttribute('aria-expanded','false')); });
+      if(!open){ dd.classList.add('open'); btn.setAttribute('aria-expanded','true'); }
+      e.stopPropagation();
+    });
+  });
+  document.addEventListener('click', function(){
+    dds.forEach(function(d){ d.classList.remove('open'); d.querySelector('button') && (d.querySelector('button').setAttribute('aria-expanded','false')); });
+  });
+})();
+
 // Nav scroll effect
 window.addEventListener('scroll', () => {
   document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 50);
