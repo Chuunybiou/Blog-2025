@@ -418,7 +418,7 @@ footer {
       <li class="nav-dropdown">
         <button aria-haspopup="true" aria-expanded="false">🛠️ Outils</button>
         <div class="nav-dd-menu" role="menu">
-          <a href="<?= $path_prefix ?>outils-vivre-vietnam">🛠️ Tous les outils</a>
+          <a href="<?= $path_prefix ?>outils-vivre-vietnam">🛠️ Services recommandés</a>
           <div class="nav-dd-sep"></div>
           <a href="<?= $path_prefix ?>parcours-couple-franco-vietnamien">🗺️ Parcours guidé</a>
           <a href="<?= $path_prefix ?>simulateur-retroplanning-conjoint">📅 Rétroplanning conjoint</a>
