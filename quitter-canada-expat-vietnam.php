@@ -1,7 +1,9 @@
 ﻿<?php
+require_once __DIR__ . '/config/site.php';
+
 $page_title       = 'Quitter le Canada pour le Vietnam — Cap Vietnam';
 $page_description = 'Ce qu\'il faut régler avant de quitter le Canada pour le Vietnam : résidence fiscale, comptes bancaires, permis de travail et démarches Service Canada.';
-$page_canonical   = 'https://blog-capvietnam.fr/quitter-canada-expat-vietnam';
+$page_canonical   = SITE_URL . '/quitter-canada-expat-vietnam';
 $page_og_title    = 'Quitter le Canada pour le Vietnam : le guide complet';
 $page_og_desc     = 'Toutes les démarches administratives pour quitter le Canada et s\'installer au Vietnam.';
 $page_og_url      = 'https://blog-capvietnam.fr/quitter-canada-expat-vietnam';
@@ -183,10 +185,11 @@ include 'header.php';
       <h3>Reçois les prochains articles</h3>
       <p>Un email par mois sur l'expatriation au Vietnam. Pas de spam.</p>
       <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
+        <input type="hidden" name="_next" value="<?= SITE_URL ?>/merci-guide">
         <input type="email" name="email" placeholder="Ton adresse email" required>
         <button type="submit">S'inscrire</button>
       </form>
-      <p class="cta-rgpd">Pas de spam. Désinscription en un clic.</p>
+      <p class="cta-rgpd">Pas de spam. Désinscription en un clic — <a href="pack-gratuit" style="color:#4db890">voir le pack →</a></p>
     </div>
   </main>
 </div>

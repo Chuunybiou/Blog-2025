@@ -1,7 +1,9 @@
 ﻿<?php
-$page_title       = 'Appeler un chat un chat : la franchise des Vietnamiens sur le physique (et leur discrétion sur le reste)';
+require_once __DIR__ . '/config/site.php';
+
+$page_title       = 'Pourquoi les Vietnamiens commentent votre physique';
 $page_description = 'Ma femme m\'appelle son "gros mari" ou son "panda". La belle-famille commente le physique sans détour. Ce n\'est pas de la méchanceté — c\'est culturel. Mais la franchise vietnamienne est aussi beaucoup plus complexe qu\'il n\'y paraît.';
-$page_canonical   = 'https://blog-capvietnam.fr/franchise-vietnamiens-physique-harmonie';
+$page_canonical   = SITE_URL . '/franchise-vietnamiens-physique-harmonie';
 $page_og_title    = 'Panda, gros mari : la franchise des Vietnamiens sur le physique';
 $page_og_desc     = 'Ma femme m\'appelle son "panda". Ce n\'est pas de la méchanceté — c\'est culturel. Mais la franchise vietnamienne cache une nuance que peu d\'articles expliquent.';
 $page_og_url      = 'https://blog-capvietnam.fr/franchise-vietnamiens-physique-harmonie';
@@ -199,11 +201,12 @@ include 'header.php';
       <h3>📥 Alertes admin &amp; bons plans du mois</h3>
       <p>Culture, couple mixte, vie d'expatrié — ce que je vis vraiment, sans enjoliver.</p>
       <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
+        <input type="hidden" name="_next" value="<?= SITE_URL ?>/merci-guide">
         <input type="hidden" name="_subject" value="Newsletter Cap Vietnam — franchise-vietnamiens">
         <input type="email" name="email" placeholder="ton@email.com" required>
         <button type="submit" style="background:var(--amber);color:var(--ink);">S'inscrire</button>
       </form>
-      <p class="cta-rgpd">Désinscription en un clic. <a href="confidentialite-capvietnam">Politique de confidentialité</a>.</p>
+      <p class="cta-rgpd">Pas de spam. Désinscription en un clic — <a href="pack-gratuit" style="color:#4db890">voir le pack →</a></p>
     </div>
 
     <!-- AUTHOR BOX -->

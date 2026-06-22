@@ -1,12 +1,12 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
-$page_title       = 'Merci — Télécharge ton guide Cap Vietnam 2026';
-$page_description = 'Merci pour ton achat. Télécharge maintenant le Guide Cap Vietnam 2026 — PDF immédiat.';
+$page_title       = 'Télécharge ton guide Cap Vietnam 2026 — gratuit';
+$page_description = 'Ton guide PDF gratuit est prêt. Mariage, visa, budget, installation au Vietnam — tout ce qu\'il faut pour préparer ton parcours.';
 $page_canonical   = SITE_URL . '/merci-guide';
-$page_og_title    = 'Télécharge ton guide Cap Vietnam 2026';
-$page_og_desc     = 'Merci pour ton achat. Ton guide PDF est prêt.';
+$page_og_title    = 'Guide Cap Vietnam 2026 — PDF gratuit';
+$page_og_desc     = 'Ton guide PDF est prêt. Mariage, visa, budget, installation — le parcours complet du couple franco-vietnamien.';
 $page_og_url      = SITE_URL . '/merci-guide';
-$page_og_image    = 'https://images.unsplash.com/photo-1573270689103-d7a4e42b609a?w=1200&q=80';
+$page_og_image    = 'https://blog-capvietnam.fr/assets/img/mariage-franco-vietnamien-ceremonie.png';
 $page_extra_css   = '
 .merci-hero{padding-top:64px;min-height:70vh;background:linear-gradient(160deg,#0d1829 0%,#1a2744 60%,#0d1829 100%);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
 .merci-hero::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 60% 60% at 50% 50%,rgba(212,168,75,0.06),transparent 70%)}
@@ -45,45 +45,80 @@ include 'header.php';
 <div class="merci-hero">
   <div class="merci-inner">
     <div class="merci-check">✓</div>
-    <h1>Paiement reçu —<br>bienvenue au <em>Vietnam</em> !</h1>
-    <p>Ton guide Cap Vietnam 2026 est prêt. 9 chapitres, 47 checklists — tout ce qu'il te faut pour préparer ton installation.</p>
-    <a class="dl-btn" href="assets/guide-cap-vietnam-2026.pdf" download="Guide-Cap-Vietnam-2026.pdf">
+    <h1>Ton guide est <em>prêt</em></h1>
+    <p>Mariage au Vietnam, visa conjoint, installation, budget réel — le parcours complet du couple franco-vietnamien en un seul PDF gratuit.</p>
+    <a class="dl-btn" href="/Guide_Se_marier_et_vivre_au_Vietnam-1.pdf" download="Guide-Cap-Vietnam-2026.pdf">
       📥 Télécharger le guide PDF
     </a>
-    <span class="dl-note">PDF · 32 pages · Édition 2026 · Mise à jour 2027 incluse</span>
-    <!-- [À FOURNIR PAR MOI : mettre le chemin réel du PDF ici] -->
-    <a class="dl-btn" href="/Checklist-Vietnam-CapVietnam.pdf" download="Checklist-Vietnam-CapVietnam.pdf" style="margin-top:1rem;background:#bf4a2a">
-      📋 Télécharger la checklist (PDF)
-    </a>
+    <span class="dl-note">PDF · Édition 2026 · Gratuit</span>
+    <div style="margin-top:1.75rem;background:rgba(255,255,255,0.06);border-radius:8px;padding:1.25rem 1.5rem;text-align:left;max-width:420px;margin-left:auto;margin-right:auto">
+      <p style="font-size:0.72rem;color:rgba(250,248,244,0.4);margin:0 0 0.4rem;text-transform:uppercase;letter-spacing:1.5px;font-weight:700">✅ Checklist — À imprimer</p>
+      <p style="font-size:1rem;color:#faf8f4;font-weight:700;margin:0 0 0.4rem;line-height:1.3">Départ au Vietnam : les 10 démarches à ne pas oublier</p>
+      <p style="font-size:0.8rem;color:rgba(250,248,244,0.4);margin:0 0 1rem;line-height:1.6">Visa, assurance santé internationale, compte bancaire multi-devise, SIM locale, logement… Cases à cocher, dans le bon ordre. À imprimer et compléter au fur et à mesure.</p>
+      <a class="dl-btn" href="/Checklist-Vietnam-CapVietnam.pdf" download="Checklist-Vietnam-CapVietnam.pdf" style="background:#1b4a35;font-size:0.88rem;padding:0.7rem 1.4rem;margin:0">
+        📋 Télécharger la checklist
+      </a>
+    </div>
   </div>
 </div>
 
+<section style="background:#f5f3ef;padding:3rem 2rem">
+  <div style="max-width:700px;margin:0 auto;text-align:center">
+    <div style="font-size:0.62rem;letter-spacing:2px;text-transform:uppercase;font-weight:700;color:#1b4a35;margin-bottom:0.5rem">📄 Modèles de lettres</div>
+    <h2 style="font-family:'DM Serif Display',serif;font-size:1.5rem;color:#1a1206;margin-bottom:0.5rem">Pack de modèles — à imprimer ou enregistrer en PDF</h2>
+    <p style="color:#888;font-size:0.9rem;margin-bottom:2rem">Remplissez les champs, puis Ctrl+P → "Enregistrer en PDF" depuis votre navigateur.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;text-align:left">
+      <a href="/modeles/lettre-ccam" style="background:#fff;border:1px solid #e0ddd8;border-radius:8px;padding:1.25rem;text-decoration:none;color:inherit;display:flex;gap:0.75rem;align-items:flex-start">
+        <span style="font-size:1.5rem">✉️</span>
+        <div>
+          <strong style="display:block;font-size:0.9rem;color:#1a1206">Lettre demande CCAM</strong>
+          <span style="font-size:0.8rem;color:#888">À envoyer au consulat</span>
+        </div>
+      </a>
+      <a href="/modeles/lettre-suivi-ambassade" style="background:#fff;border:1px solid #e0ddd8;border-radius:8px;padding:1.25rem;text-decoration:none;color:inherit;display:flex;gap:0.75rem;align-items:flex-start">
+        <span style="font-size:1.5rem">📬</span>
+        <div>
+          <strong style="display:block;font-size:0.9rem;color:#1a1206">Lettre de relance ambassade</strong>
+          <span style="font-size:0.8rem;color:#888">Si pas de nouvelles après 2 mois</span>
+        </div>
+      </a>
+      <a href="/modeles/checklist-ccam" style="background:#fff;border:1px solid #e0ddd8;border-radius:8px;padding:1.25rem;text-decoration:none;color:inherit;display:flex;gap:0.75rem;align-items:flex-start">
+        <span style="font-size:1.5rem">✅</span>
+        <div>
+          <strong style="display:block;font-size:0.9rem;color:#1a1206">Checklist CCAM complète</strong>
+          <span style="font-size:0.8rem;color:#888">Tous les documents à rassembler</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
 <section class="next-steps">
-  <h2>Prochaines étapes recommandées</h2>
-  <p class="ns-sub">Pour bien démarrer ton installation au Vietnam.</p>
+  <h2>Par où commencer ?</h2>
+  <p class="ns-sub">Les trois premières lectures recommandées selon ta situation.</p>
   <div class="steps-grid">
     <div class="step-card">
       <div class="step-num">1</div>
-      <h3>Commence par le chapitre Visa</h3>
-      <p>C'est la pièce maîtresse. Complète avec notre <a href="visa-vietnam-francais-guide-2026">guide visa gratuit</a> pour les détails récents.</p>
+      <h3>Tu veux faire venir ton conjoint en France</h3>
+      <p>Commence par le <a href="faire-venir-conjointe-vietnamienne-france">guide complet visa conjoint</a> — CCAM, VLS-TS, titre de séjour.</p>
     </div>
     <div class="step-card">
       <div class="step-num">2</div>
-      <h3>Ouvre un compte Wise</h3>
-      <p>Indispensable avant le départ — transferts EUR → VND au taux interbancaire. <a href="go.php?id=wise" rel="noopener sponsored">Premier transfert offert →</a></p>
+      <h3>Tu veux t'installer au Vietnam</h3>
+      <p>Le <a href="s-expatrier-vietnam-2026-guide-complet">guide d'expatriation</a> couvre visa, logement, banques et budget réel.</p>
     </div>
     <div class="step-card">
       <div class="step-num">3</div>
-      <h3>Lis tous les articles</h3>
-      <p>Visa, mariage, budget, compte bancaire — chaque article complète un chapitre du guide. <a href="articles-capvietnam">Tous les articles →</a></p>
+      <h3>Tu veux gérer les finances du couple</h3>
+      <p>Wise, compte vietnamien, transferts EUR→VND — voir <a href="organiser-finances-expat-france-vietnam">organiser ses finances</a>.</p>
     </div>
   </div>
 </section>
 
 <section class="wise-upsell">
   <div class="wise-upsell-inner">
-    <h3>💸 L'outil du chapitre 5 : Wise</h3>
-    <p>Transférer tes euros vers le Vietnam au taux interbancaire, sans les frais abusifs des banques classiques.</p>
+    <h3>💸 L'outil indispensable : Wise</h3>
+    <p>Transférer des euros vers le Vietnam au taux interbancaire, sans les frais des banques classiques. Utilisé par tous les expats sérieux.</p>
     <a href="go.php?id=wise" class="wu-btn" rel="noopener sponsored">Ouvrir Wise gratuitement →</a>
     <p class="wu-note">Lien affilié — commission perçue si tu effectues un premier transfert, sans coût pour toi.</p>
   </div>

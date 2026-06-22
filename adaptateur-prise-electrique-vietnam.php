@@ -1,7 +1,9 @@
 ﻿<?php
+require_once __DIR__ . '/config/site.php';
+
 $page_title       = 'Adaptateur prise électrique Vietnam : ce qu\'il faut savoir avant de partir';
-$page_description = 'Au Vietnam, la tension est la même qu\'en France (220 V), mais les prises plates Type A sont très répandues et incompatibles avec les fiches françaises. Quel adaptateur emporter, et comment éviter la prise de tête à l\'arrivée.';
-$page_canonical   = 'https://blog-capvietnam.fr/adaptateur-prise-electrique-vietnam';
+$page_description = 'Au Vietnam, prises Type A incompatibles avec les fiches françaises malgré le 220 V commun. Quel adaptateur universel emporter pour éviter les problèmes dès l\'arrivée.';
+$page_canonical   = SITE_URL . '/adaptateur-prise-electrique-vietnam';
 $page_og_title    = 'Prise électrique au Vietnam : adaptateur nécessaire pour les Français ?';
 $page_og_desc     = '220 V comme en France, mais les prises plates Type A sont partout dans les anciens appartements. Ce que j\'ai découvert à l\'arrivée et l\'adaptateur que j\'utilise depuis.';
 $page_og_url      = 'https://blog-capvietnam.fr/adaptateur-prise-electrique-vietnam';
@@ -320,11 +322,12 @@ include 'header.php';
       <h3>📥 Vous préparez un voyage ou une installation au Vietnam ?</h3>
       <p>Un email par mois avec mes retours d'expérience concrets — pas de spam, désinscription en un clic.</p>
       <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
+        <input type="hidden" name="_next" value="<?= SITE_URL ?>/merci-guide">
         <input type="hidden" name="_subject" value="Newsletter Cap Vietnam — adaptateur-prise-electrique">
         <input type="email" name="email" placeholder="ton@email.com" required>
         <button type="submit">S'inscrire</button>
       </form>
-      <p class="cta-rgpd">Désinscription en un clic. <a href="confidentialite-capvietnam">Politique de confidentialité</a>.</p>
+      <p class="cta-rgpd">Pas de spam. Désinscription en un clic — <a href="pack-gratuit" style="color:#4db890">voir le pack →</a></p>
     </div>
 
     <!-- AUTHOR BOX -->

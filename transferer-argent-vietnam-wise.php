@@ -1,7 +1,9 @@
 ﻿<?php
+require_once __DIR__ . '/config/site.php';
+
 $page_title       = 'Transférer de l\'argent vers le Vietnam avec Wise';
 $page_description = 'Transférer de l\'argent de France vers le Vietnam avec Wise : frais, délais, taux de change et comparaison avec les banques traditionnelles.';
-$page_canonical   = 'https://blog-capvietnam.fr/transferer-argent-vietnam-wise';
+$page_canonical   = SITE_URL . '/transferer-argent-vietnam-wise';
 $page_og_title    = 'Transférer de l\'argent vers le Vietnam avec Wise : guide 2026';
 $page_og_desc     = 'Comparatif des frais Wise vs BNP, Société Générale pour transférer de l\'argent de France au Vietnam.';
 $page_og_url      = 'https://blog-capvietnam.fr/transferer-argent-vietnam-wise';
@@ -225,12 +227,13 @@ include 'header.php';
 
     <div class="cta-newsletter">
       <h3>Reçois les prochains guides</h3>
-      <p>Finances, vie pratique et démarches admin à Hanoï — dans ta boîte mail.</p>
+      <p>📥 <strong>Guide PDF + 3 modèles de lettres offerts</strong> dès l'inscription. Un email par mois, désinscription en 1 clic.</p>
       <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
+        <input type="hidden" name="_next" value="<?= SITE_URL ?>/merci-guide">
         <input type="email" name="email" placeholder="ton@email.com" required>
         <button type="submit">S'inscrire</button>
       </form>
-      <p class="cta-rgpd">Pas de spam. Désinscription en un clic.</p>
+      <p class="cta-rgpd">Pas de spam. Désinscription en un clic — <a href="pack-gratuit" style="color:#4db890">voir le pack →</a></p>
     </div>
   </main>
 </div>

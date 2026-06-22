@@ -1,7 +1,9 @@
 ﻿<?php
+require_once __DIR__ . '/config/site.php';
+
 $page_title       = 'Budget mensuel à Hanoï 2026 — Cap Vietnam';
 $page_description = 'Budget réel d\'un expatrié à Hanoï en 2026 : loyer, nourriture, transports, loisirs et santé. Chiffres concrets pour différents styles de vie.';
-$page_canonical   = 'https://blog-capvietnam.fr/budget-mensuel-hanoi-2026';
+$page_canonical   = SITE_URL . '/budget-mensuel-hanoi-2026';
 $page_og_title    = 'Budget mensuel à Hanoï en 2026 : chiffres réels d\'un expatrié';
 $page_og_desc     = 'Loyer, nourriture, transport et loisirs : budget détaillé pour vivre à Hanoï en 2026.';
 $page_og_url      = 'https://blog-capvietnam.fr/budget-mensuel-hanoi-2026';
@@ -152,7 +154,7 @@ include 'header.php';
     </ul>
 
     <h2 id="section-7">Hanoï vs Hô-Chi-Minh-Ville : différences de coût</h2>
-    <p>Si tu hésites entre les deux grandes villes, le budget est un facteur à considérer :</p>
+    <p>Si tu hésites entre les deux grandes villes, le budget est un facteur à considérer. Pour des budgets détaillés dans d'autres villes : <a href="budget-mensuel-hue-2026">budget mensuel à Huế</a> et <a href="budget-mensuel-nha-trang-2026">budget mensuel à Nha Trang</a>.</p>
     <table class="comparison-table">
       <thead><tr><th>Poste</th><th>Hanoï</th><th>Hô-Chi-Minh-Ville</th></tr></thead>
       <tbody>
@@ -229,12 +231,13 @@ include 'header.php';
 
     <div class="cta-newsletter">
       <h3>Reçois les prochains guides</h3>
-      <p>Finances, vie pratique et démarches admin à Hanoï — dans ta boîte mail.</p>
+      <p>📥 <strong>Guide PDF + 3 modèles de lettres offerts</strong> dès l'inscription. Un email par mois, désinscription en 1 clic.</p>
       <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
+        <input type="hidden" name="_next" value="<?= SITE_URL ?>/merci-guide">
         <input type="email" name="email" placeholder="ton@email.com" required>
         <button type="submit">S'inscrire</button>
       </form>
-      <p class="cta-rgpd">Pas de spam. Désinscription en un clic.</p>
+      <p class="cta-rgpd">Pas de spam. Désinscription en un clic — <a href="pack-gratuit" style="color:#4db890">voir le pack →</a></p>
     </div>
   </main>
 </div>

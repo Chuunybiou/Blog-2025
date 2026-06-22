@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 require_once __DIR__ . '/../config/site.php';
 
 $path_prefix      = '../';
@@ -315,8 +315,72 @@ include '../header.php';
   </div>
 </section>
 
+<!-- ══ SỐNG Ở PHÁP ══ -->
+<section class="vi-section" style="background:var(--warm-bg)" id="song-o-phap">
+  <div class="vi-section-label">Định cư / Vivre en France</div>
+  <h2 class="vi-section-title">🏠 Sống ở Pháp — hướng dẫn thực tế</h2>
+  <p class="vi-section-desc">Những điều người Việt cần biết khi chuyển sang Pháp sống cùng vợ/chồng người Pháp. Không tô hồng, không phóng đại.</p>
+  <div class="vi-articles-grid">
+    <a class="vi-art-preview" href="cuoc-song-thuc-te-o-phap">
+      <div class="vi-art-preview-img">
+        <div class="tt-thumb bg-convo" style="height:180px;border-radius:0"><span class="tt-lesson-num">Thực tế</span><div class="tt-thumb-emoji">🌧️</div></div>
+      </div>
+      <div class="vi-art-preview-body">
+        <div class="vi-art-preview-cat">Chuẩn bị</div>
+        <h3>Cuộc Sống Thực Tế Ở Pháp — Không Phải Như Trong Phim</h3>
+        <p>Thời tiết, nỗi cô đơn, thủ tục hành chính, chi phí sinh hoạt — sự thật mà ít người nói.</p>
+        <span class="vi-art-preview-more">Đọc thêm →</span>
+      </div>
+    </a>
+    <a class="vi-art-preview" href="caf-cpam-demarches-arrivee-france">
+      <div class="vi-art-preview-img">
+        <div class="tt-thumb bg-vocab" style="height:180px;border-radius:0"><span class="tt-lesson-num">Hành chính</span><div class="tt-thumb-emoji">🏥</div></div>
+      </div>
+      <div class="vi-art-preview-body">
+        <div class="vi-art-preview-cat">Đến Pháp</div>
+        <h3>Đăng Ký CAF và CPAM Khi Mới Đến Pháp — Từng Bước</h3>
+        <p>OFII, bảo hiểm y tế, trợ cấp nhà ở — thứ tự đúng và giấy tờ cần thiết.</p>
+        <span class="vi-art-preview-more">Đọc thêm →</span>
+      </div>
+    </a>
+    <a class="vi-art-preview" href="droits-femme-vietnamienne-france">
+      <div class="vi-art-preview-img">
+        <div class="tt-thumb bg-grammar" style="height:180px;border-radius:0"><span class="tt-lesson-num">Quyền lợi</span><div class="tt-thumb-emoji">⚖️</div></div>
+      </div>
+      <div class="vi-art-preview-body">
+        <div class="vi-art-preview-cat">Quyền lợi</div>
+        <h3>Quyền Lợi Của Phụ Nữ Việt Nam Khi Sống Ở Pháp</h3>
+        <p>Quyền làm việc, bảo vệ trước bạo lực, bảo hiểm y tế, trợ cấp — những điều bạn cần biết.</p>
+        <span class="vi-art-preview-more">Đọc thêm →</span>
+      </div>
+    </a>
+    <a class="vi-art-preview" href="apprendre-francais-avant-darriver">
+      <div class="vi-art-preview-img">
+        <div class="tt-thumb bg-vocab" style="height:180px;border-radius:0"><span class="tt-lesson-num">Tiếng Pháp</span><div class="tt-thumb-emoji">📚</div></div>
+      </div>
+      <div class="vi-art-preview-body">
+        <div class="vi-art-preview-cat">Chuẩn bị</div>
+        <h3>Học Tiếng Pháp Từ Việt Nam — Những Gì Thực Sự Có Ích</h3>
+        <p>Alliance Française, DELF A2 và B1, ứng dụng — trình độ nào cần thiết và học ở đâu.</p>
+        <span class="vi-art-preview-more">Đọc thêm →</span>
+      </div>
+    </a>
+    <a class="vi-art-preview" href="emploi-diplome-vietnamien-france">
+      <div class="vi-art-preview-img">
+        <div class="tt-thumb bg-convo" style="height:180px;border-radius:0"><span class="tt-lesson-num">Việc làm</span><div class="tt-thumb-emoji">💼</div></div>
+      </div>
+      <div class="vi-art-preview-body">
+        <div class="vi-art-preview-cat">Việc làm</div>
+        <h3>Tìm Việc Ở Pháp Với Bằng Cấp Việt Nam — Thực Tế 2026</h3>
+        <p>Ngành nào dễ, ngành nào khó, VAE, ENIC-NARIC — hướng dẫn thực tế không tô hồng.</p>
+        <span class="vi-art-preview-more">Đọc thêm →</span>
+      </div>
+    </a>
+  </div>
+</section>
+
 <!-- ══ TÀI LIỆU ══ -->
-<section class="vi-section" style="background:var(--warm-bg)">
+<section class="vi-section" style="background:var(--white)">
   <div class="vi-section-label">Tài liệu / Ressources</div>
   <h2 class="vi-section-title">📚 Tài liệu học tiếng Pháp miễn phí</h2>
   <p class="vi-section-desc">Tài liệu bổ sung cho các video TikTok — tất cả miễn phí.</p>
@@ -329,11 +393,11 @@ include '../header.php';
         <span class="vi-res-badge badge-free-vi">Miễn phí — Tải xuống ↓</span>
       </div>
     </a>
-    <a class="vi-res-card" href="../apprendre-francais-capvietnam">
+    <a class="vi-res-card" href="hoc-tieng-phap-online-mien-phi">
       <div class="vi-res-icon">🎓</div>
       <div class="vi-res-body">
-        <h3>Trang học tiếng Pháp đầy đủ</h3>
-        <p>Xem tất cả video theo cấp độ (Cơ bản → Trung cấp → Nâng cao) và tài liệu học tập trên trang đầy đủ.</p>
+        <h3>Học tiếng Pháp online miễn phí</h3>
+        <p>7 nguồn học tiếng Pháp tốt nhất năm 2026 — TikTok, YouTube, ứng dụng và tài liệu theo cấp độ từ cơ bản đến nâng cao.</p>
         <span class="vi-res-badge badge-ext">Xem trang →</span>
       </div>
     </a>
@@ -355,6 +419,7 @@ include '../header.php';
   <h2>Nhận bài viết qua email ✉️</h2>
   <p>Đăng ký nhận hướng dẫn mới — miễn phí, không spam.</p>
   <form class="vi-nl-form" action="<?= SITE_FORMSPREE ?>" method="POST">
+        <input type="hidden" name="_next" value="<?= SITE_URL ?>/vi/merci">
     <input type="hidden" name="_subject" value="Newsletter VI — Cap Vietnam">
     <input type="hidden" name="source" value="vi/index">
     <input type="email" name="email" placeholder="Email của bạn…" required>

@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 require_once __DIR__ . '/../config/site.php';
 
 $path_prefix      = '../';
@@ -20,7 +20,7 @@ $page_canonical   = SITE_URL . '/vi/giay-phep-ket-hon-lanh-su-phap-ccam';
 $page_og_title    = 'CCAM — Giấy Phép Kết Hôn Lãnh Sự Pháp : hướng dẫn 2026';
 $page_og_desc     = $page_description;
 $page_og_url      = $page_canonical;
-$page_og_image    = SITE_URL . '/assets/img/CCAM-DOCUMENTS.jpg';
+$page_og_image    = 'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1200&q=80';
 
 $page_schema = json_encode([
   '@context'         => 'https://schema.org',
@@ -84,7 +84,7 @@ include '../header.php';
     </p>
   </div>
   <div class="vi-art-hero-img-wrap">
-    <img src="../assets/img/CCAM-DOCUMENTS.jpg"
+    <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1200&q=80"
          alt="Hồ sơ CCAM kết hôn Pháp-Việt"
          width="1200" height="420" loading="eager" decoding="async">
   </div>

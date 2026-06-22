@@ -327,6 +327,18 @@ include 'header.php';
 
 </div>
 
+<!-- OUTILS DÉMARCHES -->
+<section style="max-width:900px;margin:0 auto;padding:2rem 2rem 0;text-align:center">
+  <div style="background:linear-gradient(135deg,#0d2b1f,#1b4a35);border-radius:12px;padding:1.75rem 2rem;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;text-align:left">
+    <div>
+      <div style="font-size:0.62rem;letter-spacing:2px;text-transform:uppercase;font-weight:700;color:#6ee7b7;margin-bottom:0.4rem">🗂️ Outils interactifs</div>
+      <h3 style="font-family:'DM Serif Display',serif;font-size:1.05rem;color:#faf8f4;margin-bottom:0.25rem">Tu fais venir ton conjoint ou vous installez-vous au Vietnam ?</h3>
+      <p style="font-size:0.87rem;color:rgba(250,248,244,0.55);margin:0">Rétroplanning, parcours guidé, calculateur — 4 outils gratuits pour les démarches administratives du couple franco-vietnamien.</p>
+    </div>
+    <a href="page-mes-outils-couple" style="flex-shrink:0;display:inline-flex;align-items:center;gap:0.5rem;padding:0.7rem 1.4rem;background:#4db890;color:#0d2b1f;border-radius:5px;font-weight:700;font-size:0.87rem;text-decoration:none;white-space:nowrap">Voir les outils démarches →</a>
+  </div>
+</section>
+
 <!-- HONESTY -->
 <section class="tools-honesty">
   <div class="tools-honesty-inner">

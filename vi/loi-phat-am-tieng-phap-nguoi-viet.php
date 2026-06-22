@@ -19,7 +19,7 @@ $page_canonical   = SITE_URL . '/vi/loi-phat-am-tieng-phap-nguoi-viet';
 $page_og_title    = '7 Lỗi Phát Âm Tiếng Pháp Của Người Việt (Và Cách Sửa)';
 $page_og_desc     = $page_description;
 $page_og_url      = $page_canonical;
-$page_og_image    = 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=1200&q=80';
+$page_og_image    = 'https://blog-capvietnam.fr/assets/img/og-capvietnam.png';
 
 $page_schema = json_encode([
   '@context'         => 'https://schema.org',
@@ -105,7 +105,7 @@ include '../header.php';
     </p>
   </div>
   <div class="vi-art-hero-img-wrap">
-    <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=1400&q=80"
+    <img src="https://blog-capvietnam.fr/assets/img/og-capvietnam.png"
          alt="Sách học tiếng Pháp — lỗi phát âm của người Việt"
          width="1400" height="420" loading="eager" decoding="async">
   </div>
@@ -239,7 +239,7 @@ include '../header.php';
     <div class="vi-rel-grid">
       <a class="vi-rel-card" href="tai-sao-hoc-tieng-phap">
         <div class="vi-rel-thumb">
-          <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=400&q=80"
+          <img src="https://blog-capvietnam.fr/assets/img/og-capvietnam.png"
                alt="Tại sao nên học tiếng Pháp" loading="lazy">
         </div>
         <div class="vi-rel-body">
@@ -249,7 +249,7 @@ include '../header.php';
       </a>
       <a class="vi-rel-card" href="hoc-tieng-phap-online-mien-phi">
         <div class="vi-rel-thumb">
-          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&q=80"
+          <img src="https://blog-capvietnam.fr/assets/img/og-capvietnam.png"
                alt="Học tiếng Pháp online miễn phí" loading="lazy">
         </div>
         <div class="vi-rel-body">
@@ -262,3 +262,5 @@ include '../header.php';
 </div>
 
 <?php include '../footer.php'; ?>
+
+

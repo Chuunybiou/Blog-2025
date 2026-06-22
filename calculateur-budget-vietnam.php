@@ -1,11 +1,13 @@
 ﻿<?php
+require_once __DIR__ . '/config/site.php';
+
 $page_title       = 'Calculateur de budget mensuel Vietnam 2026 — Cap Vietnam';
 $page_description = 'Simule ton budget mensuel au Vietnam : logement, alimentation, transport, assurance. Résultat instantané en euros et en dong vietnamien, pour Hanoï ou HCMC.';
-$page_canonical   = 'https://blog-capvietnam.fr/calculateur-budget-vietnam';
+$page_canonical   = SITE_URL . '/calculateur-budget-vietnam';
 $page_og_title    = 'Calculateur de budget Vietnam 2026 — Hanoï & HCMC';
 $page_og_desc     = 'Combien coûte la vie au Vietnam ? Configure ton style de vie et obtiens une estimation personnalisée en € et en ₫.';
 $page_og_url      = 'https://blog-capvietnam.fr/calculateur-budget-vietnam';
-$page_og_image    = 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=1200&q=80';
+$page_og_image    = 'https://blog-capvietnam.fr/assets/img/capvietnam-money.jpg';
 $page_schema      = '{"@context":"https://schema.org","@type":"WebApplication","name":"Calculateur de budget mensuel Vietnam 2026","applicationCategory":"FinanceApplication","operatingSystem":"Web","url":"https://blog-capvietnam.fr/calculateur-budget-vietnam","description":"Simule ton budget mensuel au Vietnam selon ton style de vie, ta ville et tes habitudes.","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://blog-capvietnam.fr/logo-entreprise.png"}},"inLanguage":"fr","datePublished":"2026-04-26","dateModified":"2026-04-26"}';
 
 $article_color   = 'amber';
@@ -440,3 +442,4 @@ include '_related-articles.php';
 ?>
 
 <?php include 'footer.php'; ?>
+

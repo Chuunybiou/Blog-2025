@@ -1,4 +1,6 @@
 ﻿<?php
+require_once __DIR__ . '/config/site.php';
+
 // Raccourcis pour les noms de fichiers images (éviter la répétition des longs hashs)
 define('IMG_TEA_DIR', 'assets/img/recette-tea/');
 $img_hero      = 'assets/img/capvietnam-tea.jpg';
@@ -7,9 +9,9 @@ $img_mijotage  = IMG_TEA_DIR . '9fXxLDpCcUQPCd0cxOOB1oHbGOZ3Zr8L-YWDg9YDj6aK3qPD
 $img_dore      = 'assets/img/capvietnam-tea-2.jpg';
 $img_service   = IMG_TEA_DIR . 'CWpjA21BdGxe7vlMJAlV0rdbSKNiEvhNZ-q_b1j6BpTD9Tqq7MqoYJzVbupza3nOWw0Dw_3yxPiXNPxnIvcIsrxw6XGGimenIlYmNTGkfM9WPFk6m1Z6Bn-40dFcbByp1R_ACpnM5RSwBVcuyhvoeztffs3XcKFWO4SCMrYZswwWQZm4lQawTDBKT0PBWJ4g.jpg';
 
-$page_title       = 'Thé aux dattes, réglisse et goji noir : la recette de ma belle-mère vietnamienne';
+$page_title       = 'Thé dattes-goji-réglisse : recette de ma belle-mère vietnamienne';
 $page_description = 'Une couleur jaune dorée, un goût naturellement sucré, des notes de miel et de réglisse — je n\'avais jamais bu quelque chose comme ça. La recette du thé santé vietnamien préparé par ma belle-mère pour les grandes occasions.';
-$page_canonical   = 'https://blog-capvietnam.fr/the-sante-vietnamien-dattes-goji-reglisse';
+$page_canonical   = SITE_URL . '/the-sante-vietnamien-dattes-goji-reglisse';
 $page_og_title    = 'Thé vietnamien aux dattes, réglisse et goji noir — recette de belle-mère';
 $page_og_desc     = 'Un thé doré, sucré naturellement, que je n\'avais jamais goûté en France. Recette, ingrédients, secret de la couleur et où les trouver en épicerie asiatique.';
 $page_og_url      = 'https://blog-capvietnam.fr/the-sante-vietnamien-dattes-goji-reglisse';
@@ -378,11 +380,12 @@ include 'header.php';
       <h3>📥 Alertes admin &amp; bons plans du mois</h3>
       <p>Recettes, démarches, vie de couple mixte — mes vraies découvertes, sans filtre ni spam.</p>
       <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
+        <input type="hidden" name="_next" value="<?= SITE_URL ?>/merci-guide">
         <input type="hidden" name="_subject" value="Newsletter Cap Vietnam — the-sante-vietnamien">
         <input type="email" name="email" placeholder="ton@email.com" required>
         <button type="submit" style="background:var(--amber);color:var(--ink);">S'inscrire</button>
       </form>
-      <p class="cta-rgpd">Désinscription en un clic. <a href="confidentialite-capvietnam">Politique de confidentialité</a>.</p>
+      <p class="cta-rgpd">Pas de spam. Désinscription en un clic — <a href="pack-gratuit" style="color:#4db890">voir le pack →</a></p>
     </div>
 
     <!-- AUTHOR BOX -->

@@ -1,7 +1,9 @@
 ﻿<?php
+require_once __DIR__ . '/config/site.php';
+
 $page_title       = 'Gestion des cookies — Cap Vietnam';
 $page_description = 'Politique de gestion des cookies de Cap Vietnam : types de cookies utilisés, durée de conservation et comment les gérer.';
-$page_canonical   = 'https://blog-capvietnam.fr/cookies';
+$page_canonical   = SITE_URL . '/cookies';
 $page_extra_css   = '
 .page-hero{padding:120px 2rem 4rem;background:linear-gradient(160deg,#1c1917,#2d2319);text-align:center}
 .page-hero h1{font-family:\'DM Serif Display\',serif;font-size:clamp(2rem,4vw,3rem);color:#faf8f4;margin-bottom:0.5rem}

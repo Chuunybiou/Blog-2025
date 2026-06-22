@@ -1,7 +1,9 @@
 ﻿<?php
+require_once __DIR__ . '/config/site.php';
+
 $page_title       = 'Belle-famille vietnamienne : guide d\'intégration';
 $page_description = 'S\'intégrer dans une belle-famille vietnamienne : codes de respect, gestes à connaître, erreurs à éviter et conseils pour créer un lien sincère.';
-$page_canonical   = 'https://blog-capvietnam.fr/belle-famille-vietnamienne-guide';
+$page_canonical   = SITE_URL . '/belle-famille-vietnamienne-guide';
 $page_og_title    = 'S\'intégrer dans une belle-famille vietnamienne : le guide honnête';
 $page_og_desc     = 'Codes à respecter, cadeaux et tabous pour réussir votre première visite à la belle-famille vietnamienne.';
 $page_og_url      = 'https://blog-capvietnam.fr/belle-famille-vietnamienne-guide';
@@ -90,6 +92,7 @@ include 'header.php';
       <li><strong>Bố</strong> (beau-père) et <strong>Mẹ</strong> (belle-mère) : les appeler ainsi dès le début est un geste très apprécié. Certains étrangers attendent le mariage — mais commencer tôt crée un lien fort.</li>
       <li>Ne jamais les appeler par leur prénom — c'est irrespectueux.</li>
       <li>Pour les oncles et tantes : demande à ta conjointe les termes exacts selon l'âge relatif.</li>
+      <li>Apprendre quelques mots en vietnamien montre un effort sincère. Voir notre guide : <a href="apprendre-vietnamien-couple">apprendre le vietnamien en couple</a>.</li>
     </ul>
     <div class="tip-box">
       <strong>Astuce :</strong>
@@ -182,12 +185,13 @@ include 'header.php';
 
     <div class="cta-newsletter">
       <h3>Reçois les prochains guides</h3>
-      <p>Couple mixte, vie à Hanoï, démarches admin — dans ta boîte mail.</p>
+      <p>📥 <strong>Guide PDF + 3 modèles de lettres offerts</strong> dès l'inscription. Un email par mois, désinscription en 1 clic.</p>
       <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
+        <input type="hidden" name="_next" value="<?= SITE_URL ?>/merci-guide">
         <input type="email" name="email" placeholder="ton@email.com" required>
         <button type="submit">S'inscrire</button>
       </form>
-      <p class="cta-rgpd">Pas de spam. Désinscription en un clic.</p>
+      <p class="cta-rgpd">Pas de spam. Désinscription en un clic — <a href="pack-gratuit" style="color:#4db890">voir le pack →</a></p>
     </div>
   </main>
 </div>

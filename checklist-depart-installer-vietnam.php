@@ -1,7 +1,9 @@
 ﻿<?php
+require_once __DIR__ . '/config/site.php';
+
 $page_title       = 'Checklist complète pour s\'installer au Vietnam depuis la France — Cap Vietnam';
 $page_description = 'La checklist complète pour s\'installer au Vietnam : 3 mois avant le départ jusqu\'à la première semaine sur place. Valise, admin, arrivée, premiers jours.';
-$page_canonical   = 'https://blog-capvietnam.fr/checklist-depart-installer-vietnam';
+$page_canonical   = SITE_URL . '/checklist-depart-installer-vietnam';
 $page_og_title    = 'Checklist installation Vietnam : de la France à Hanoï';
 $page_og_desc     = 'Tout ce qu\'il faut faire avant de partir s\'installer au Vietnam — checklist semaine par semaine.';
 $page_og_url      = 'https://blog-capvietnam.fr/checklist-depart-installer-vietnam';
@@ -75,7 +77,7 @@ include 'header.php';
 
     <div class="info-box">
       <strong>Cet article se concentre sur la logistique pratique.</strong>
-      Pour les démarches administratives (résidence fiscale, CPAM, CAF, auto-entreprise), consulte notre guide complet <a href="quitter-france-expat-vietnam">Quitter la France pour le Vietnam</a>.
+      Pour les démarches administratives (résidence fiscale, CPAM, CAF, auto-entreprise), consulte notre guide complet <a href="quitter-france-expat-vietnam">Quitter la France pour le Vietnam</a>. Tu peux aussi consulter le <a href="s-expatrier-vietnam-2026-guide-complet">guide complet pour s'expatrier au Vietnam</a>.
     </div>
 
     <img class="article-photo" src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200&q=80" alt="Préparation départ voyage Vietnam" width="1200" height="675" loading="lazy">
@@ -122,7 +124,7 @@ include 'header.php';
       Documents originaux • Médicaments sur ordonnance • Matériel professionnel spécialisé • Lunettes/lentilles • Chaussures (pointures >43 difficiles à trouver au Vietnam) • Vêtements chauds si retours France prévus en hiver (trop encombrant à acheter là-bas) • Disque dur de sauvegarde. Tout le reste : les vêtements basiques, l'électronique courante, les articles de toilette — disponibles à Hanoï ou HCMC pour moins cher qu'en France.
     </div>
 
-    <h2 id="section-4">Le jour J et le vol</h2>
+    <h2 id="section-4">Le jour J et le vol — <a href="vol-paris-hanoi-pas-cher" style="color:inherit">comparer les billets Paris-Hanoï</a></h2>
     <ul>
       <li>☐ <strong>Bagage cabine prioritaire</strong> : passeport, médicaments, ordonnances, assurance santé (carte), téléphone chargé, vêtements de rechange, argent cash. Si ta valise soute est perdue, tu dois pouvoir survivre 72h sans elle.</li>
       <li>☐ <strong>Télécharger les apps offline</strong> avant d'embarquer : Grab (VTC), Google Maps avec carte Vietnam offline, Google Translate (pack langue vietnamien offline), VDict (dictionnaire).</li>
@@ -218,12 +220,13 @@ include 'header.php';
 
     <div class="cta-newsletter">
       <h3>Reçois les prochains guides</h3>
-      <p>Démarches admin, finances, vie pratique au Vietnam — dans ta boîte mail.</p>
+      <p>📥 <strong>Guide PDF + 3 modèles de lettres offerts</strong> dès l'inscription. Un email par mois, désinscription en 1 clic.</p>
       <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
+        <input type="hidden" name="_next" value="<?= SITE_URL ?>/merci-guide">
         <input type="email" name="email" placeholder="ton@email.com" required>
         <button type="submit">S'inscrire</button>
       </form>
-      <p class="cta-rgpd">Pas de spam. Désinscription en un clic.</p>
+      <p class="cta-rgpd">Pas de spam. Désinscription en un clic — <a href="pack-gratuit" style="color:#4db890">voir le pack →</a></p>
     </div>
   </main>
 </div>

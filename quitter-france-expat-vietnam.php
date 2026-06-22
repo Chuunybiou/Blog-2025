@@ -1,7 +1,9 @@
 ﻿<?php
+require_once __DIR__ . '/config/site.php';
+
 $page_title       = 'Quitter la France pour le Vietnam — Cap Vietnam';
 $page_description = 'Ce qu\'il faut régler avant de quitter la France pour le Vietnam : résidence fiscale, CPAM, CAF, comptes bancaires et checklist de départ complète.';
-$page_canonical   = 'https://blog-capvietnam.fr/quitter-france-expat-vietnam';
+$page_canonical   = SITE_URL . '/quitter-france-expat-vietnam';
 $page_og_title    = 'Quitter la France pour le Vietnam : le guide complet';
 $page_og_desc     = 'Toutes les démarches administratives pour quitter la France et s\'installer au Vietnam.';
 $page_og_url      = 'https://blog-capvietnam.fr/quitter-france-expat-vietnam';
@@ -74,6 +76,10 @@ include 'header.php';
 
     <img class="article-photo" src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1200&q=80" alt="Tour Eiffel, Paris" width="1200" height="675" loading="lazy">
 
+    <div class="info-box">
+      <strong>📌 Avant les démarches administratives :</strong> Si tu n'as pas encore ton billet, compare les vols Paris-Hanoï sur <a href="vol-paris-hanoi-pas-cher">notre guide vol Paris-Hanoï</a>. Et pour l'installation côté Vietnam, consulte le <a href="s-expatrier-vietnam-2026-guide-complet">guide complet s'expatrier au Vietnam</a>.
+    </div>
+
     <h2 id="section-1">Prévenir les administrations françaises</h2>
     <p>Le premier réflexe est d'informer les organismes qui gèrent tes droits sociaux. Il n'existe pas de guichet unique « départ à l'étranger » en France — il faut contacter chaque organisme séparément.</p>
     <ul>
@@ -135,6 +141,15 @@ include 'header.php';
     <div class="warning-box">
       <strong>⚠️ URSSAF et cotisations sociales :</strong>
       Tant que ton auto-entreprise est active, l'URSSAF prélève des cotisations même si tu vis au Vietnam. Si tu oublies de radier avant de partir et que tu continues à déclarer des revenus, tu cotises à des caisses françaises sans en bénéficier.
+    </div>
+
+    <div style="background:linear-gradient(135deg,#0d2b1f,#1b4a35);border-radius:10px;padding:1.5rem 2rem;margin:1.5rem 0;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap">
+      <div>
+        <div style="font-size:0.62rem;letter-spacing:2px;text-transform:uppercase;font-weight:700;color:#6ee7b7;margin-bottom:0.4rem">🧮 Outil interactif</div>
+        <h3 style="font-family:'DM Serif Display',serif;font-size:1.05rem;color:#faf8f4;margin-bottom:0.25rem">Simulateur — budget et installation au Vietnam</h3>
+        <p style="font-size:0.87rem;color:rgba(250,248,244,0.55);margin:0">Estimez votre budget mensuel et planifiez votre installation</p>
+      </div>
+      <a href="simulateur-installation-vietnam" style="flex-shrink:0;display:inline-flex;align-items:center;gap:0.5rem;padding:0.7rem 1.4rem;background:#4db890;color:#0d2b1f;border-radius:5px;font-weight:700;font-size:0.87rem;text-decoration:none;white-space:nowrap">Voir le simulateur →</a>
     </div>
 
     <h2 id="section-6">Checklist complète avant le départ</h2>
@@ -205,10 +220,11 @@ include 'header.php';
       <h3>Reçois les prochains articles</h3>
       <p>Un email par mois sur l'expatriation au Vietnam. Pas de spam.</p>
       <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
+        <input type="hidden" name="_next" value="<?= SITE_URL ?>/merci-guide">
         <input type="email" name="email" placeholder="Ton adresse email" required>
         <button type="submit">S'inscrire</button>
       </form>
-      <p class="cta-rgpd">Pas de spam. Désinscription en un clic.</p>
+      <p class="cta-rgpd">Pas de spam. Désinscription en un clic — <a href="pack-gratuit" style="color:#4db890">voir le pack →</a></p>
     </div>
   </main>
 </div>

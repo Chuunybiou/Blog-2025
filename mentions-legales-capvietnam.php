@@ -2,7 +2,7 @@
 require_once __DIR__ . '/config/site.php';
 $page_title       = 'Mentions légales — Cap Vietnam';
 $page_description = 'Mentions légales du blog Cap Vietnam : éditeur, hébergeur, propriété intellectuelle et responsabilité.';
-$page_canonical   = 'https://blog-capvietnam.fr/mentions-legales';
+$page_canonical   = SITE_URL . '/mentions-legales';
 $page_extra_css   = '
 .page-hero{padding:120px 2rem 4rem;background:linear-gradient(160deg,#1c1917,#2d2319);text-align:center}
 .page-hero h1{font-family:\'DM Serif Display\',serif;font-size:clamp(2rem,4vw,3rem);color:#faf8f4;margin-bottom:0.5rem}

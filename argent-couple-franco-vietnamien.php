@@ -1,7 +1,9 @@
 ﻿<?php
+require_once __DIR__ . '/config/site.php';
+
 $page_title       = 'Argent et couple franco-vietnamien : ce qu\'on ne dit pas assez';
 $page_description = 'Transparence financière, soutien à la famille, qui paie quoi… Comment on gère l\'argent dans notre couple franco-vietnamien. Mon expérience honnête, sans généraliser.';
-$page_canonical   = 'https://blog-capvietnam.fr/argent-couple-franco-vietnamien';
+$page_canonical   = SITE_URL . '/argent-couple-franco-vietnamien';
 $page_og_title    = 'Argent et couple franco-vietnamien : transparence, famille, et ce qu\'on ne dit pas assez';
 $page_og_desc     = 'Comment gérer l\'argent dans un couple franco-vietnamien : soutien à la famille vietnamienne, partage des dépenses, communication financière. Mon expérience.';
 $page_og_url      = 'https://blog-capvietnam.fr/argent-couple-franco-vietnamien';
@@ -189,12 +191,13 @@ include 'header.php';
 
     <div class="cta-newsletter">
       <h3>Reçois mes prochains articles</h3>
-      <p>Un email par mois. Désabonnement en un clic.</p>
+      <p>📥 <strong>Guide PDF + 3 modèles de lettres offerts</strong> dès l'inscription. Un email par mois, désinscription en 1 clic.</p>
       <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
+        <input type="hidden" name="_next" value="<?= SITE_URL ?>/merci-guide">
         <input type="email" name="email" placeholder="Ton adresse email" required>
         <button type="submit">S'inscrire</button>
       </form>
-      <p class="cta-rgpd">En t'inscrivant, tu acceptes la <a href="confidentialite-capvietnam">politique de confidentialité</a>.</p>
+      <p class="cta-rgpd">En t'inscrivant, tu acceptes la <a href="confidentialite-capvietnam">politique de confidentialité</a> — <a href="pack-gratuit" style="color:#4db890">voir le pack →</a></p>
     </div>
 
     <div class="author-box">

@@ -1,7 +1,9 @@
 ﻿<?php
+require_once __DIR__ . '/config/site.php';
+
 $page_title       = 'Le Tết vietnamien vu de l\'intérieur — Cap Vietnam';
 $page_description = 'Le Tết expliqué de l\'intérieur : traditions, calendrier des festivités, signification culturelle et comment participer en tant qu\'étranger au Vietnam.';
-$page_canonical   = 'https://blog-capvietnam.fr/tet-nouvel-an-lunaire-vietnam';
+$page_canonical   = SITE_URL . '/tet-nouvel-an-lunaire-vietnam';
 $page_og_title    = 'Le Tết vietnamien : traditions, signification et guide pour les étrangers';
 $page_og_desc     = 'Traditions du Tết au Vietnam, enveloppes rouges li xi et repas de famille.';
 $page_og_url      = 'https://blog-capvietnam.fr/tet-nouvel-an-lunaire-vietnam';
@@ -184,12 +186,13 @@ include 'header.php';
 
     <div class="cta-newsletter">
       <h3>Reçois les prochains guides</h3>
-      <p>Couple mixte, vie à Hanoï, démarches admin — dans ta boîte mail.</p>
+      <p>📥 <strong>Guide PDF + 3 modèles de lettres offerts</strong> dès l'inscription. Un email par mois, désinscription en 1 clic.</p>
       <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
+        <input type="hidden" name="_next" value="<?= SITE_URL ?>/merci-guide">
         <input type="email" name="email" placeholder="ton@email.com" required>
         <button type="submit">S'inscrire</button>
       </form>
-      <p class="cta-rgpd">Pas de spam. Désinscription en un clic.</p>
+      <p class="cta-rgpd">Pas de spam. Désinscription en un clic — <a href="pack-gratuit" style="color:#4db890">voir le pack →</a></p>
     </div>
   </main>
 </div>

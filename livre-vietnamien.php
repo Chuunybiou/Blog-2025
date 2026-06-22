@@ -5,13 +5,13 @@ $path_prefix      = '';
 $page_lang        = 'fr';
 $page_title       = 'Apprendre le vietnamien sans cours ni application — Méthode polyglotte 1100 mots | Cap Vietnam';
 $page_description = 'Ebook Amazon : méthode polyglotte A0→B1 basée sur les 1100 mots les plus fréquents du vietnamien. Conçue pour les couples mixtes et les expats francophones.';
-$page_canonical   = 'https://blog-capvietnam.fr/livre-vietnamien';
+$page_canonical   = SITE_URL . '/livre-vietnamien';
 $page_og_title    = 'Apprendre le Vietnamien — la méthode polyglotte pour francophones';
 $page_og_desc     = 'Démarrez le vietnamien avec une méthode qui marche : 1 100 mots les plus fréquents, logique tonale expliquée, dialogues du quotidien. Disponible sur Amazon.';
-$page_og_image    = 'https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=1200&q=80';
+$page_og_image    = 'https://blog-capvietnam.fr/assets/img/livre-vietnamien-methode-polyglotte.jpg';
 
 /* Lien Amazon — pense à ajouter ton tag d'affiliation Amazon Partenaires si tu en as un (?tag=tonid-21) */
-$amazon_url       = 'https://www.amazon.fr/dp/B0H1CHWKF8';
+$amazon_url       = 'https://amzn.to/4oIJnsK';
 
 /* Schema.org Book — améliore les rich results Google */
 $page_schema = json_encode([
@@ -734,8 +734,8 @@ include __DIR__ . '/header.php';
     </div>
 
     <div class="faq-item">
-      <button class="faq-question" onclick="toggleFaq(this)">Est-ce différent du Guide Cap Vietnam à 9 € ?</button>
-      <div class="faq-answer">Oui, complètement. Le <a href="<?= $path_prefix ?>guide-cap-vietnam-2026">Guide Cap Vietnam</a> traite de l'installation pratique : démarches, budget, logement, banque. Le livre vietnamien traite uniquement de l'apprentissage de la langue. Les deux sont complémentaires.</div>
+      <button class="faq-question" onclick="toggleFaq(this)">Est-ce différent du Guide Cap Vietnam (gratuit) ?</button>
+      <div class="faq-answer">Oui, complètement. Le <a href="<?= $path_prefix ?>pack-gratuit">Guide Cap Vietnam</a> (offert gratuitement avec la newsletter) traite de l'installation pratique : démarches administratives, visa, budget, logement, banque. Le livre vietnamien traite uniquement de l'apprentissage de la langue. Les deux sont complémentaires, mais indépendants.</div>
     </div>
 
     <div class="faq-item">
@@ -762,7 +762,7 @@ include __DIR__ . '/header.php';
       </div>
       <p style="color:var(--ink-muted);line-height:1.75;font-size:0.97rem;margin:0;">"Franchement surpris par la qualité du livre. J'avais essayé plusieurs méthodes avant, mais souvent c'était soit trop scolaire, soit impossible à suivre quand on débute vraiment. Là, c'est beaucoup plus fluide et motivant."</p>
     </div>
-    <a href="https://www.amazon.fr/dp/B0H1CHWKF8#customerReviews" target="_blank" rel="noopener sponsored" style="display:inline-block;margin-top:1.25rem;font-size:0.85rem;color:var(--muted);text-decoration:underline;">Voir tous les avis sur Amazon →</a>
+    <a href="https://amzn.to/4oIJnsK" target="_blank" rel="noopener sponsored" style="display:inline-block;margin-top:1.25rem;font-size:0.85rem;color:var(--muted);text-decoration:underline;">Voir tous les avis sur Amazon →</a>
   </div>
 </section>
 
@@ -789,3 +789,4 @@ function toggleFaq(btn) {
 </script>
 
 <?php include __DIR__ . '/footer.php'; ?>
+

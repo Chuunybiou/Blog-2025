@@ -1,7 +1,9 @@
 ﻿<?php
+require_once __DIR__ . '/config/site.php';
+
 $page_title       = 'Prix d\'un mariage franco-vietnamien : budget réel et à quoi s\'attendre';
 $page_description = 'Combien coûte vraiment un mariage avec une Vietnamienne ? Cérémonie au Vietnam, réception en France, cadeaux, dot… Mon budget détaillé sans tabous.';
-$page_canonical   = 'https://blog-capvietnam.fr/prix-mariage-franco-vietnamien';
+$page_canonical   = SITE_URL . '/prix-mariage-franco-vietnamien';
 $page_og_title    = 'Prix d\'un mariage franco-vietnamien : ce que ça coûte vraiment';
 $page_og_desc     = 'Budget détaillé d\'un mariage franco-vietnamien : cérémonie au Vietnam, réception en France, cadeaux familiaux, frais administratifs. Chiffres réels, sans tabous.';
 $page_og_url      = 'https://blog-capvietnam.fr/prix-mariage-franco-vietnamien';
@@ -200,12 +202,13 @@ include 'header.php';
 
     <div class="cta-newsletter">
       <h3>Reçois mes prochains articles</h3>
-      <p>Un email par mois. Désabonnement en un clic.</p>
+      <p>📥 <strong>Guide PDF + 3 modèles de lettres offerts</strong> dès l'inscription. Un email par mois, désinscription en 1 clic.</p>
       <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
+        <input type="hidden" name="_next" value="<?= SITE_URL ?>/merci-guide">
         <input type="email" name="email" placeholder="Ton adresse email" required>
         <button type="submit">S'inscrire</button>
       </form>
-      <p class="cta-rgpd">En t'inscrivant, tu acceptes la <a href="confidentialite-capvietnam">politique de confidentialité</a>.</p>
+      <p class="cta-rgpd">En t'inscrivant, tu acceptes la <a href="confidentialite-capvietnam">politique de confidentialité</a> — <a href="pack-gratuit" style="color:#4db890">voir le pack →</a></p>
     </div>
 
     <div class="author-box">

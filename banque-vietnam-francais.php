@@ -1,7 +1,9 @@
 ﻿<?php
+require_once __DIR__ . '/config/site.php';
+
 $page_title       = 'Compte bancaire au Vietnam pour Français — Vietcombank, Techcombank, Wise';
 $page_description = 'Faut-il vraiment ouvrir un compte bancaire au Vietnam quand on a un visa touriste 90 jours ? Mon analyse + comparatif Vietcombank, Techcombank, HSBC, et pourquoi j\'utilise Wise à la place.';
-$page_canonical   = 'https://blog-capvietnam.fr/banque-vietnam-francais';
+$page_canonical   = SITE_URL . '/banque-vietnam-francais';
 $page_og_title    = 'Compte bancaire Vietnam pour Français : Vietcombank, Techcombank ou pas du tout ?';
 $page_og_desc     = 'Mon analyse + comparatif des banques vietnamiennes. Pourquoi je n\'ai pas ouvert de compte local malgré plusieurs séjours, et comment je gère mes finances au quotidien.';
 $page_og_url      = 'https://blog-capvietnam.fr/banque-vietnam-francais';
@@ -516,11 +518,12 @@ include 'header.php';
       <h3>📥 Tu prépares ton installation au Vietnam ?</h3>
       <p>Inscris-toi à ma newsletter mensuelle — un email par mois avec mes vraies retours d'expérience entre la France et le Vietnam. Pas de spam.</p>
       <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
+        <input type="hidden" name="_next" value="<?= SITE_URL ?>/merci-guide">
         <input type="hidden" name="_subject" value="Newsletter Cap Vietnam — banque-vietnam-francais">
         <input type="email" name="email" placeholder="ton@email.com" required>
         <button type="submit" style="background:var(--ink);">S'inscrire</button>
       </form>
-      <p class="cta-rgpd">Désinscription en un clic. <a href="confidentialite-capvietnam">Politique de confidentialité</a>.</p>
+      <p class="cta-rgpd">Pas de spam. Désinscription en un clic — <a href="pack-gratuit" style="color:#4db890">voir le pack →</a></p>
     </div>
 
     <!-- ============================

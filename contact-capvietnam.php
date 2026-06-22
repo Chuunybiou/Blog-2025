@@ -90,6 +90,7 @@ include 'header.php';
 
     <div class="contact-form-box">
       <form action="<?= SITE_FORMSPREE ?>" method="POST">
+        <input type="hidden" name="_next" value="<?= SITE_URL ?>/merci-guide">
         <input type="hidden" name="_subject" value="Nouveau message — Cap Vietnam">
         <div class="form-row">
           <div class="form-group">

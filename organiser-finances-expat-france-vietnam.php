@@ -1,7 +1,9 @@
 ﻿<?php
+require_once __DIR__ . '/config/site.php';
+
 $page_title       = 'Organiser ses finances entre France et Vietnam : comptes, outils et stratégie';
-$page_description = 'Wise, Revolut, Fortuneo, Boursobank, compte vietnamien : comment structurer ses finances quand on est expatrié entre la France et le Vietnam. Les outils à avoir, dans quel ordre, et ce qu\'il faut éviter.';
-$page_canonical   = 'https://blog-capvietnam.fr/organiser-finances-expat-france-vietnam';
+$page_description = 'Wise, Fortuneo, Revolut, compte vietnamien : comment structurer ses finances entre France et Vietnam. Les outils à ouvrir, dans quel ordre.';
+$page_canonical   = SITE_URL . '/organiser-finances-expat-france-vietnam';
 $page_og_title    = 'Finances d\'expat France-Vietnam : quels comptes, quels outils, dans quel ordre';
 $page_og_desc     = 'Wise, Revolut, Fortuneo, Boursobank, compte vietnamien : comment structurer ses finances quand on s\'installe entre France et Vietnam.';
 $page_og_url      = 'https://blog-capvietnam.fr/organiser-finances-expat-france-vietnam';
@@ -258,11 +260,12 @@ include 'header.php';
       <h3>📥 Alertes admin &amp; bons plans du mois</h3>
       <p>Finances d'expat, démarches, vie entre deux pays — ce que je vis concrètement.</p>
       <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
+        <input type="hidden" name="_next" value="<?= SITE_URL ?>/merci-guide">
         <input type="hidden" name="_subject" value="Newsletter Cap Vietnam — finances-expat">
         <input type="email" name="email" placeholder="ton@email.com" required>
         <button type="submit" style="background:var(--amber);color:var(--ink);">S'inscrire</button>
       </form>
-      <p class="cta-rgpd">Désinscription en un clic. <a href="confidentialite-capvietnam">Politique de confidentialité</a>.</p>
+      <p class="cta-rgpd">Pas de spam. Désinscription en un clic — <a href="pack-gratuit" style="color:#4db890">voir le pack →</a></p>
     </div>
 
     <!-- AUTHOR BOX -->

@@ -100,6 +100,15 @@ include 'header.php';
     </ul>
     <p>Attention : l'entretien n'est pas systématique. Il est convoqué selon le profil du dossier.</p>
 
+    <div style="background:linear-gradient(135deg,#0d2b1f,#1b4a35);border-radius:10px;padding:1.5rem 2rem;margin:1.5rem 0;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap">
+      <div>
+        <div style="font-size:0.62rem;letter-spacing:2px;text-transform:uppercase;font-weight:700;color:#6ee7b7;margin-bottom:0.4rem">📅 Outil interactif</div>
+        <h3 style="font-family:'DM Serif Display',serif;font-size:1.05rem;color:#faf8f4;margin-bottom:0.25rem">Rétroplanning — de la CCAM au visa</h3>
+        <p style="font-size:0.87rem;color:rgba(250,248,244,0.55);margin:0">Planifiez vos démarches pour ne rien rater avant l'entretien</p>
+      </div>
+      <a href="simulateur-retroplanning-conjoint" style="flex-shrink:0;display:inline-flex;align-items:center;gap:0.5rem;padding:0.7rem 1.4rem;background:#4db890;color:#0d2b1f;border-radius:5px;font-weight:700;font-size:0.87rem;text-decoration:none;white-space:nowrap">Voir le simulateur →</a>
+    </div>
+
     <h2 id="section-2">Comment préparer ton conjoint à l'entretien</h2>
     <p>La meilleure préparation, c'est la sincérité — mais ça ne suffit pas. Il faut que ton conjoint connaisse les informations de base sur toi, sur vous, et sur le projet commun. Voici ce qu'il doit maîtriser :</p>
     <ul>
@@ -190,12 +199,13 @@ include 'header.php';
 
     <div class="cta-newsletter">
       <h3>Reçois mes prochains articles</h3>
-      <p>Un email par mois. Désabonnement en un clic.</p>
+      <p>📥 <strong>Guide PDF + 3 modèles de lettres offerts</strong> dès l'inscription. Un email par mois, désinscription en 1 clic.</p>
       <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
+        <input type="hidden" name="_next" value="<?= SITE_URL ?>/merci-guide">
         <input type="email" name="email" placeholder="Ton adresse email" required>
         <button type="submit">S'inscrire</button>
       </form>
-      <p class="cta-rgpd">En t'inscrivant, tu acceptes la <a href="confidentialite-capvietnam">politique de confidentialité</a>.</p>
+      <p class="cta-rgpd">En t'inscrivant, tu acceptes la <a href="confidentialite-capvietnam">politique de confidentialité</a> — <a href="pack-gratuit" style="color:#4db890">voir le pack →</a></p>
     </div>
 
     <div class="author-box">

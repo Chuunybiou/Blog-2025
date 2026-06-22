@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 require_once __DIR__ . '/../config/site.php';
 
 $path_prefix      = '../';
@@ -20,7 +20,7 @@ $page_canonical   = SITE_URL . '/vi/the-cu-tru-tai-phap';
 $page_og_title    = 'Thẻ Cư Trú tại Pháp cho vợ/chồng Việt : gia hạn & thẻ 10 năm 2026';
 $page_og_desc     = $page_description;
 $page_og_url      = $page_canonical;
-$page_og_image    = SITE_URL . '/assets/img/CCAM-DOCUMENTS.jpg';
+$page_og_image    = 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1200&q=80';
 
 $page_schema = json_encode([
   '@context'         => 'https://schema.org',
@@ -88,7 +88,7 @@ include '../header.php';
     </p>
   </div>
   <div class="vi-art-hero-img-wrap">
-    <img src="../assets/img/CCAM-DOCUMENTS.jpg"
+    <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1200&q=80"
          alt="Thẻ cư trú Pháp cho vợ/chồng Việt"
          width="1200" height="380" loading="eager" decoding="async">
   </div>

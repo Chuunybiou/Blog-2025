@@ -1,6 +1,6 @@
 ﻿<?php
 require_once __DIR__ . '/config/site.php';
-$page_title       = 'Hôpitaux et médecins francophones au Vietnam : guide santé pour expatriés 2026';
+$page_title       = 'Médecins et hôpitaux francophones au Vietnam (2026)';
 $page_description = 'Où consulter en français au Vietnam ? Hôpitaux internationaux à Hanoï et Hô Chi Minh-Ville, médecins francophones, assurance santé expat et urgences : tout ce qu\'il faut savoir.';
 $page_canonical   = SITE_URL . '/hopitaux-medecins-francophones-vietnam';
 $page_og_title    = 'Hôpitaux et médecins francophones au Vietnam : le guide expatrié 2026';
@@ -208,12 +208,13 @@ include 'header.php';
 
     <div class="cta-newsletter">
       <h3>Reçois mes prochains articles</h3>
-      <p>Un email par mois. Désabonnement en un clic.</p>
+      <p>📥 <strong>Guide PDF + 3 modèles de lettres offerts</strong> dès l'inscription. Un email par mois, désinscription en 1 clic.</p>
       <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
+        <input type="hidden" name="_next" value="<?= SITE_URL ?>/merci-guide">
         <input type="email" name="email" placeholder="Ton adresse email" required>
         <button type="submit">S'inscrire</button>
       </form>
-      <p class="cta-rgpd">En t'inscrivant, tu acceptes la <a href="confidentialite-capvietnam">politique de confidentialité</a>.</p>
+      <p class="cta-rgpd">En t'inscrivant, tu acceptes la <a href="confidentialite-capvietnam">politique de confidentialité</a> — <a href="pack-gratuit" style="color:#4db890">voir le pack →</a></p>
     </div>
 
     <div class="author-box">

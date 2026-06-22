@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 require_once __DIR__ . '/config/site.php';
 $page_title       = 'CCAM — Certificat de Capacité à Mariage : comment l\'obtenir au consulat de France';
 $page_description = 'Le CCAM (Certificat de Capacité à Mariage) est délivré par le consulat français AVANT le mariage au Vietnam. À demander 4 mois avant : mode d\'emploi complet, documents, délais.';
@@ -6,7 +6,7 @@ $page_canonical   = SITE_URL . '/certificat-capacite-mariage-vietnam';
 $page_og_title    = 'CCAM — Certificat de Capacité à Mariage au Vietnam : guide complet 2026';
 $page_og_desc     = 'Le CCAM est délivré par l\'ambassade de France AVANT le mariage. Étapes, documents, délais et coûts pour le couple franco-vietnamien.';
 $page_og_url      = SITE_URL . '/certificat-capacite-mariage-vietnam';
-$page_og_image    = SITE_URL . '/assets/img/CCAM-DOCUMENTS.jpg';
+$page_og_image    = 'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1200&q=80';
 $page_schema      = json_encode([
   '@context'        => 'https://schema.org',
   '@type'           => 'Article',
@@ -16,7 +16,7 @@ $page_schema      = json_encode([
   'author'          => ['@type' => 'Person', 'name' => SITE_AUTHOR, 'url' => SITE_URL . '/a-propos-capvietnam'],
   'publisher'       => ['@type' => 'Organization', 'name' => SITE_NAME, 'url' => SITE_URL],
   'mainEntityOfPage'=> SITE_URL . '/certificat-capacite-mariage-vietnam',
-  'image'           => SITE_URL . '/assets/img/CCAM-DOCUMENTS.jpg',
+  'image'           => 'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1200&q=80',
   'inLanguage'      => 'fr',
   'articleSection'  => 'Se marier',
 ], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
@@ -91,7 +91,7 @@ include 'header.php';
 
     <p>Cet article fait partie du <a href="faire-venir-conjointe-vietnamienne-france">guide complet : faire venir son conjoint vietnamien en France</a>.</p>
 
-    <img class="article-photo" src="assets/img/CCAM-DOCUMENTS.jpg" alt="Documents CCAM mariage franco-vietnamien" width="1200" height="675" loading="lazy">
+    <img class="article-photo" src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1200&q=80" alt="Paris — certificat de capacité à mariage au consulat de France" width="1200" height="675" loading="lazy">
 
     <h2 id="section-1">C'est quoi le CCAM ?</h2>
     <p>Le CCAM est l'acronyme de <strong>Certificat de Capacité à Mariage</strong> (aussi appelé Certificat de Capacité Matrimoniale). C'est un document officiel <strong>français</strong>, délivré par <strong>l'ambassade de France à Hanoï</strong> ou le <strong>consulat général à Hô Chi Minh-Ville</strong>.</p>
@@ -135,6 +135,15 @@ include 'header.php';
       <li><strong>Mariage au comité populaire</strong> : tu remets le CCAM aux autorités vietnamiennes le jour du mariage</li>
     </ol>
     <p>Durée de validité du CCAM : <strong>1 an</strong>. S'il expire avant le mariage, tu dois en redemander un.</p>
+
+    <div style="background:linear-gradient(135deg,#0d2b1f,#1b4a35);border-radius:10px;padding:1.5rem 2rem;margin:1.5rem 0;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap">
+      <div>
+        <div style="font-size:0.62rem;letter-spacing:2px;text-transform:uppercase;font-weight:700;color:#6ee7b7;margin-bottom:0.4rem">📅 Outil interactif</div>
+        <h3 style="font-family:'DM Serif Display',serif;font-size:1.05rem;color:#faf8f4;margin-bottom:0.25rem">Rétroplanning — CCAM et visa conjoint</h3>
+        <p style="font-size:0.87rem;color:rgba(250,248,244,0.55);margin:0">Calculez les délais de vos démarches étape par étape</p>
+      </div>
+      <a href="simulateur-retroplanning-conjoint" style="flex-shrink:0;display:inline-flex;align-items:center;gap:0.5rem;padding:0.7rem 1.4rem;background:#4db890;color:#0d2b1f;border-radius:5px;font-weight:700;font-size:0.87rem;text-decoration:none;white-space:nowrap">Voir le simulateur →</a>
+    </div>
 
     <h2 id="section-5">Documents à fournir au consulat</h2>
     <p>La liste exacte est publiée sur le site de l'ambassade de France à Hanoï (ambafrance-vn.org). Voici les pièces habituellement demandées :</p>
@@ -232,12 +241,13 @@ include 'header.php';
 
     <div class="cta-newsletter">
       <h3>Reçois mes prochains articles</h3>
-      <p>Un email par mois. Désabonnement en un clic.</p>
+      <p>📥 <strong>Guide PDF + 3 modèles de lettres offerts</strong> dès l'inscription. Un email par mois, désinscription en 1 clic.</p>
       <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
+        <input type="hidden" name="_next" value="<?= SITE_URL ?>/merci-guide">
         <input type="email" name="email" placeholder="Ton adresse email" required>
         <button type="submit">S'inscrire</button>
       </form>
-      <p class="cta-rgpd">En t'inscrivant, tu acceptes la <a href="confidentialite-capvietnam">politique de confidentialité</a>.</p>
+      <p class="cta-rgpd">En t'inscrivant, tu acceptes la <a href="confidentialite-capvietnam">politique de confidentialité</a> — <a href="pack-gratuit" style="color:#4db890">voir le pack →</a></p>
     </div>
 
     <div class="author-box">

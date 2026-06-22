@@ -1,7 +1,9 @@
 ﻿<?php
+require_once __DIR__ . '/config/site.php';
+
 $page_title       = 'Assurance santé expatriés Vietnam — Cap Vietnam';
 $page_description = 'Assurance santé expatriés au Vietnam : mutuelles internationales, assurance sociale vietnamienne, hôpitaux privés à Hanoï et coûts réels 2026.';
-$page_canonical   = 'https://blog-capvietnam.fr/assurance-sante-vietnam-expat';
+$page_canonical   = SITE_URL . '/assurance-sante-vietnam-expat';
 $page_og_title    = 'Assurance santé pour expatriés au Vietnam : le guide complet';
 $page_og_desc     = 'Comparatif AXA, Cigna, Allianz et CFE pour les expatriés français au Vietnam.';
 $page_og_url      = 'https://blog-capvietnam.fr/assurance-sante-vietnam-expat';
@@ -213,12 +215,13 @@ include 'header.php';
 
     <div class="cta-newsletter">
       <h3>Reçois les prochains guides</h3>
-      <p>Démarches admin, finances, vie pratique à Hanoï — dans ta boîte mail.</p>
+      <p>📥 <strong>Guide PDF + 3 modèles de lettres offerts</strong> dès l'inscription. Un email par mois, désinscription en 1 clic.</p>
       <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
+        <input type="hidden" name="_next" value="<?= SITE_URL ?>/merci-guide">
         <input type="email" name="email" placeholder="ton@email.com" required>
         <button type="submit">S'inscrire</button>
       </form>
-      <p class="cta-rgpd">Pas de spam. Désinscription en un clic.</p>
+      <p class="cta-rgpd">Pas de spam. Désinscription en un clic — <a href="pack-gratuit" style="color:#4db890">voir le pack →</a></p>
     </div>
   </main>
 </div>

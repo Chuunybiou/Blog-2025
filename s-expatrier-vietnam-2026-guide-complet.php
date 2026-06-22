@@ -128,7 +128,7 @@ include 'header.php';
     <!-- ════════════════════════════════ LOGEMENT ════════════════════════════════ -->
     <h2 id="logement">2. Logement — trouver un appartement à Hanoï</h2>
 
-    <p>Trouver un appartement au Vietnam est moins compliqué qu'en France. Pas besoin de CDI ni de garant : un visa valide et une caution en cash suffisent. En revanche, <strong>le marché locatif a beaucoup évolué depuis 2020</strong> — les prix ont augmenté de 25 à 40% dans les quartiers expats.</p>
+    <p>Trouver un appartement au Vietnam est moins compliqué qu'en France. Guide détaillé : <a href="louer-appartement-hanoi-etranger">louer un appartement à Hanoï en tant qu'étranger</a>. Et pour <a href="apprendre-vietnamien-couple">apprendre le vietnamien</a> — utile pour négocier et communiquer avec les propriétaires. Pas besoin de CDI ni de garant : un visa valide et une caution en cash suffisent. En revanche, <strong>le marché locatif a beaucoup évolué depuis 2020</strong> — les prix ont augmenté de 25 à 40% dans les quartiers expats.</p>
 
     <h3>Prix réels à Hanoï en 2026</h3>
     <p>Référence rapide : <strong>1 million de VND (1 M₫) ≈ 37 €</strong> en juin 2026.</p>
@@ -372,11 +372,24 @@ include 'header.php';
       <li><strong>Assurance santé</strong> : ne jamais arriver sans couverture rapatriement</li>
       <li><strong>Résidence fiscale</strong> : décider et formaliser avec un conseiller</li>
       <li><strong>VPN</strong> : installer avant le départ</li>
-      <li><strong>Permis de conduire</strong> : permis international reconnu, ou passer le local pour une moto</li>
+      <li><strong>Permis de conduire</strong> : permis international reconnu, ou passer le local pour une moto — voir le <a href="permis-conduire-vietnam">guide permis de conduire Vietnam</a></li>
       <li><strong>Zalo</strong> : télécharger — tout le monde communique par là au Vietnam</li>
     </ol>
 
     <div class="info-box" style="margin-top:3rem;">
+      <strong>✈️ Trouver son billet :</strong> Pas de vol direct Paris-Hanoï. Consulte notre <a href="vol-paris-hanoi-pas-cher">guide vol Paris-Hanoï pas cher</a> pour comparer les escales et les prix.
+    </div>
+
+    <div style="background:linear-gradient(135deg,#0d2b1f,#1b4a35);border-radius:10px;padding:1.5rem 2rem;margin:1.5rem 0;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap">
+      <div>
+        <div style="font-size:0.62rem;letter-spacing:2px;text-transform:uppercase;font-weight:700;color:#6ee7b7;margin-bottom:0.4rem">🧮 Outil interactif</div>
+        <h3 style="font-family:'DM Serif Display',serif;font-size:1.05rem;color:#faf8f4;margin-bottom:0.25rem">Simulateur — budget et installation au Vietnam</h3>
+        <p style="font-size:0.87rem;color:rgba(250,248,244,0.55);margin:0">Estimez votre budget mensuel et planifiez votre installation</p>
+      </div>
+      <a href="simulateur-installation-vietnam" style="flex-shrink:0;display:inline-flex;align-items:center;gap:0.5rem;padding:0.7rem 1.4rem;background:#4db890;color:#0d2b1f;border-radius:5px;font-weight:700;font-size:0.87rem;text-decoration:none;white-space:nowrap">Voir le simulateur →</a>
+    </div>
+
+    <div class="info-box">
       <strong>🛠️ Tous mes outils :</strong> <a href="outils-vivre-vietnam">Mes outils pour vivre au Vietnam</a> — la page complète avec les services que j'utilise et les liens affiliés clairement signalés.
     </div>
 
@@ -385,11 +398,12 @@ include 'header.php';
       <h3>📥 Alertes admin &amp; bons plans du mois</h3>
       <p>Ce guide est mis à jour régulièrement. Inscris-toi pour recevoir les changements importants (nouvelles règles visa, évolutions bancaires, bons plans expats) — un email par mois, pas de spam.</p>
       <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
+        <input type="hidden" name="_next" value="<?= SITE_URL ?>/merci-guide">
         <input type="hidden" name="_subject" value="Newsletter Cap Vietnam — guide-expatriation-vietnam-2026">
         <input type="email" name="email" placeholder="ton@email.com" required>
         <button type="submit" style="background:var(--jade);color:#fff;">S'inscrire</button>
       </form>
-      <p class="cta-rgpd">Désinscription en un clic. <a href="confidentialite-capvietnam">Politique de confidentialité</a>.</p>
+      <p class="cta-rgpd">Pas de spam. Désinscription en un clic — <a href="pack-gratuit" style="color:#4db890">voir le pack →</a></p>
     </div>
 
     <!-- AUTHOR BOX -->

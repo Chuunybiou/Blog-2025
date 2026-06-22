@@ -1,7 +1,9 @@
 ﻿<?php
+require_once __DIR__ . '/config/site.php';
+
 $page_title       = 'Louer un appartement à Hanoï en tant qu\'étranger : guide complet 2026';
 $page_description = 'Comment trouver et louer un appartement à Hanoï en tant qu\'étranger : prix par quartier, contrat, caution, charges et pièges à éviter. Guide mis à jour 2026.';
-$page_canonical   = 'https://blog-capvietnam.fr/louer-appartement-hanoi-etranger';
+$page_canonical   = SITE_URL . '/louer-appartement-hanoi-etranger';
 $page_og_title    = 'Louer un appartement à Hanoï en tant qu\'étranger : prix, quartiers et pièges à éviter';
 $page_og_desc     = 'Budget logement réaliste à Hanoï en 2026, où chercher, comment négocier et signer un contrat en tant qu\'expatrié français.';
 $page_og_url      = 'https://blog-capvietnam.fr/louer-appartement-hanoi-etranger';
@@ -233,7 +235,7 @@ include 'header.php';
       <li><strong>Pression d'eau</strong> : ouvre les robinets, tire la chasse d'eau. Les problèmes de pression sont courants dans les vieux bâtiments.</li>
       <li><strong>Bruit</strong> : visite si possible à plusieurs moments de la journée. Les rues de Hanoï peuvent être très bruyantes le matin (klaxons, vendeurs ambulants avec haut-parleurs).</li>
       <li><strong>Compteur électrique</strong> : demande à voir le compteur et note l'index. Certains propriétaires facturent l'électricité sur un compteur partagé.</li>
-      <li><strong>Parking scooter</strong> : indispensable si tu as ou prévois d'avoir un scooter. Demande si c'est inclus dans le loyer.</li>
+      <li><strong>Parking scooter</strong> : indispensable si tu as ou prévois d'avoir un scooter. Demande si c'est inclus dans le loyer. Note : pour conduire légalement au Vietnam, il faut un <a href="permis-conduire-vietnam">permis vietnamien ou international</a>.</li>
       <li><strong>État général</strong> : moisissures, fissures, fuites sous l'évier — note tout avant de signer et prends des photos horodatées.</li>
     </ul>
 
@@ -409,12 +411,13 @@ include 'header.php';
 
     <div class="cta-newsletter">
       <h3>Reçois les prochains guides</h3>
-      <p>Logement, vie pratique et démarches à Hanoï — dans ta boîte mail.</p>
+      <p>📥 <strong>Guide PDF + 3 modèles de lettres offerts</strong> dès l'inscription. Un email par mois, désinscription en 1 clic.</p>
       <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
+        <input type="hidden" name="_next" value="<?= SITE_URL ?>/merci-guide">
         <input type="email" name="email" placeholder="ton@email.com" required>
         <button type="submit">S'inscrire</button>
       </form>
-      <p class="cta-rgpd">Pas de spam. Désinscription en un clic.</p>
+      <p class="cta-rgpd">Pas de spam. Désinscription en un clic — <a href="pack-gratuit" style="color:#4db890">voir le pack →</a></p>
     </div>
 
   </main>

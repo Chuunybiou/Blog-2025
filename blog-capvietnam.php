@@ -28,6 +28,7 @@ $page_canonical   = SITE_URL . '/';
 $page_og_title    = 'Cap Vietnam — Le blog du couple franco-vietnamien';
 $page_og_desc     = 'Mariage, démarches, argent et vie quotidienne entre la France et le Vietnam — par un Français en couple avec une Vietnamienne.';
 $page_og_url      = SITE_URL . '/';
+$page_og_image    = SITE_URL . '/assets/img/og-capvietnam.png';
 $page_schema      = json_encode([
   '@context' => 'https://schema.org',
   '@graph'   => [
@@ -229,7 +230,7 @@ $page_extra_css = '
 }
 .cat-banner-couple         { background-image: linear-gradient(to top, rgba(14,74,56,0.82), rgba(27,107,82,0.55), rgba(8,45,32,0.45)), url(\'assets/img/mariage-franco-vietnamien-ceremonie.png\'); background-size:cover; background-position:center top; }
 .cat-banner-mariage        { background-image: linear-gradient(to top, rgba(61,26,58,0.82), rgba(123,63,114,0.55), rgba(40,12,38,0.45)), url(\'assets/img/mariage-franco-vietnamien-ceremonie.png\'); background-size:cover; background-position:center; }
-.cat-banner-vivre-ensemble { background-image: linear-gradient(to top, rgba(143,47,20,0.82), rgba(191,74,42,0.55), rgba(80,20,8,0.45)), url(\'assets/img/CCAM-DOCUMENTS.jpg\'); background-size:cover; background-position:center; }
+.cat-banner-vivre-ensemble { background-image: linear-gradient(to top, rgba(143,47,20,0.82), rgba(191,74,42,0.55), rgba(80,20,8,0.45)), url(\'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800&q=80\'); background-size:cover; background-position:center; }
 .cat-banner-argent         { background-image: linear-gradient(to top, rgba(122,85,0,0.82), rgba(184,134,11,0.55), rgba(70,48,0,0.45)), url(\'assets/img/banh-mi-cafe-couple-hanoi.jpg\'); background-size:cover; background-position:center; }
 .cat-banner-vie-pratique   { background-image: linear-gradient(to top, rgba(26,79,79,0.82), rgba(42,122,122,0.55), rgba(13,50,50,0.45)), url(\'assets/img/lac-ouest-hanoi-rive-ho-tay.jpg\'); background-size:cover; background-position:center; }
 .cat-icon { position: relative; z-index: 1; font-size: 2.5rem; filter: drop-shadow(0 2px 8px rgba(0,0,0,0.3)); }
@@ -529,13 +530,32 @@ foreach ($_art_latest as $_a):
 
 <!-- ═══════ NEWSLETTER ═══════ -->
 <section class="newsletter-section" id="newsletter">
-  <h2>La Newsletter Mensuelle</h2>
-  <p>Alertes administratives et bons plans du mois — démarches, finances, vie pratique au Vietnam. Un email par mois. Pas de spam. Désabonnement en un clic.</p>
+  <div style="font-size:0.62rem;letter-spacing:2px;text-transform:uppercase;font-weight:700;color:#6ee7b7;margin-bottom:0.75rem">📦 Pack gratuit</div>
+  <h2>4 ressources offertes dès l'inscription</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:0.75rem;max-width:700px;margin:1.5rem auto;text-align:left">
+    <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:1rem 1.1rem;display:flex;gap:0.75rem;align-items:flex-start">
+      <span style="font-size:1.3rem;line-height:1">📘</span>
+      <div><strong style="display:block;font-size:0.85rem;color:#faf8f4;margin-bottom:0.2rem">Guide PDF — Mariage & Visa</strong><span style="font-size:0.78rem;color:rgba(250,248,244,0.45)">Le parcours complet A→Z</span></div>
+    </div>
+    <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:1rem 1.1rem;display:flex;gap:0.75rem;align-items:flex-start">
+      <span style="font-size:1.3rem;line-height:1">✉️</span>
+      <div><strong style="display:block;font-size:0.85rem;color:#faf8f4;margin-bottom:0.2rem">Lettre CCAM au consulat</strong><span style="font-size:0.78rem;color:rgba(250,248,244,0.45)">Modèle officiel à compléter</span></div>
+    </div>
+    <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:1rem 1.1rem;display:flex;gap:0.75rem;align-items:flex-start">
+      <span style="font-size:1.3rem;line-height:1">📬</span>
+      <div><strong style="display:block;font-size:0.85rem;color:#faf8f4;margin-bottom:0.2rem">Lettre relance ambassade</strong><span style="font-size:0.78rem;color:rgba(250,248,244,0.45)">Si pas de réponse après 2 mois</span></div>
+    </div>
+    <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:1rem 1.1rem;display:flex;gap:0.75rem;align-items:flex-start">
+      <span style="font-size:1.3rem;line-height:1">✅</span>
+      <div><strong style="display:block;font-size:0.85rem;color:#faf8f4;margin-bottom:0.2rem">Checklist CCAM complète</strong><span style="font-size:0.78rem;color:rgba(250,248,244,0.45)">Tous les documents, dans l'ordre</span></div>
+    </div>
+  </div>
   <form class="newsletter-form" action="<?= SITE_FORMSPREE ?>" method="POST">
+    <input type="hidden" name="_next" value="<?= SITE_URL ?>/merci-guide">
     <input type="email" name="email" placeholder="Ton adresse email" required>
-    <button type="submit">S'inscrire</button>
+    <button type="submit">📥 Recevoir le pack</button>
   </form>
-  <p class="newsletter-rgpd">En t'inscrivant, tu acceptes de recevoir mes emails. Tes données sont traitées conformément à la <a href="confidentialite-capvietnam" onclick="openModal('privacy');return false;">politique de confidentialité</a>. Tu peux te désinscrire à tout moment.</p>
+  <p class="newsletter-rgpd">Gratuit · Accès immédiat · <a href="pack-gratuit" style="color:rgba(250,248,244,0.5)">Voir le détail du pack →</a> · <a href="confidentialite-capvietnam" onclick="openModal('privacy');return false;" style="color:rgba(250,248,244,0.35)">Confidentialité</a></p>
 </section>
 
 <!-- ═══════ CONTACT ═══════ -->
@@ -550,7 +570,5 @@ foreach ($_art_latest as $_a):
   </div>
   <p style="color:var(--muted);font-size:0.85rem;"><?= SITE_EMAIL ?></p>
 </section>
-
-<?php include 'lead-magnet.php'; ?>
 
 <?php include 'footer.php'; ?>

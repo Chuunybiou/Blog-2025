@@ -282,6 +282,7 @@ foreach ($_grid as $a):
   <h2>La Newsletter Mensuelle</h2>
   <p>Alertes administratives et bons plans du mois. Un email par mois, pas de spam.</p>
   <form class="nl-form" action="<?= SITE_FORMSPREE ?>" method="POST">
+        <input type="hidden" name="_next" value="<?= SITE_URL ?>/merci-guide">
     <input type="hidden" name="_subject" value="Inscription newsletter — Cap Vietnam">
     <input type="email" name="email" placeholder="Ton adresse email" required>
     <button type="submit">S'inscrire</button>

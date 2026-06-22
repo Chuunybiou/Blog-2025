@@ -1,6 +1,6 @@
-<?php
+﻿<?php
 require_once __DIR__ . '/config/site.php';
-$page_title       = 'CFE, protection sociale et retraite quand on travaille depuis le Vietnam : guide 2026';
+$page_title       = 'CFE, sécu et retraite : guide pour les expats au Vietnam';
 $page_description = 'Que se passe-t-il pour la Sécurité sociale, la retraite et la CFE quand on s\'installe au Vietnam ? Ce que tu perds, ce que tu gardes, les options pour ne pas se retrouver sans couverture.';
 $page_canonical   = SITE_URL . '/protection-sociale-cfe-retraite-vietnam';
 $page_og_title    = 'CFE, Sécu et retraite au Vietnam : ce que tout expat doit savoir en 2026';
@@ -238,12 +238,13 @@ include 'header.php';
 
     <div class="cta-newsletter">
       <h3>Reçois mes prochains articles</h3>
-      <p>Un email par mois. Désabonnement en un clic.</p>
+      <p>📥 <strong>Guide PDF + 3 modèles de lettres offerts</strong> dès l'inscription. Un email par mois, désinscription en 1 clic.</p>
       <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
+        <input type="hidden" name="_next" value="<?= SITE_URL ?>/merci-guide">
         <input type="email" name="email" placeholder="Ton adresse email" required>
         <button type="submit">S'inscrire</button>
       </form>
-      <p class="cta-rgpd">En t'inscrivant, tu acceptes la <a href="confidentialite-capvietnam">politique de confidentialité</a>.</p>
+      <p class="cta-rgpd">En t'inscrivant, tu acceptes la <a href="confidentialite-capvietnam">politique de confidentialité</a> — <a href="pack-gratuit" style="color:#4db890">voir le pack →</a></p>
     </div>
 
     <div class="author-box">

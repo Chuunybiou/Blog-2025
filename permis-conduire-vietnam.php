@@ -1,7 +1,9 @@
 ﻿<?php
+require_once __DIR__ . '/config/site.php';
+
 $page_title       = 'Permis de conduire Vietnam pour étrangers — Cap Vietnam';
 $page_description = 'Obtenir un permis de conduire vietnamien : conversion du permis français, examen local, documents requis et règles de circulation à Hanoï.';
-$page_canonical   = 'https://blog-capvietnam.fr/permis-conduire-vietnam';
+$page_canonical   = SITE_URL . '/permis-conduire-vietnam';
 $page_og_title    = 'Permis de conduire au Vietnam : guide pour expatriés';
 $page_og_desc     = 'Conversion du permis français au Vietnam, catégories de permis et règles de circulation.';
 $page_og_url      = 'https://blog-capvietnam.fr/permis-conduire-vietnam';
@@ -198,12 +200,13 @@ include 'header.php';
 
     <div class="cta-newsletter">
       <h3>Reçois les prochains guides</h3>
-      <p>Démarches admin, finances, vie pratique à Hanoï — dans ta boîte mail.</p>
+      <p>📥 <strong>Guide PDF + 3 modèles de lettres offerts</strong> dès l'inscription. Un email par mois, désinscription en 1 clic.</p>
       <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
+        <input type="hidden" name="_next" value="<?= SITE_URL ?>/merci-guide">
         <input type="email" name="email" placeholder="ton@email.com" required>
         <button type="submit">S'inscrire</button>
       </form>
-      <p class="cta-rgpd">Pas de spam. Désinscription en un clic.</p>
+      <p class="cta-rgpd">Pas de spam. Désinscription en un clic — <a href="pack-gratuit" style="color:#4db890">voir le pack →</a></p>
     </div>
   </main>
 </div>

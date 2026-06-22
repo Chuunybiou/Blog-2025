@@ -1,7 +1,9 @@
 ﻿<?php
+require_once __DIR__ . '/config/site.php';
+
 $page_title       = 'iGraal : récupérer du cashback sur ses achats français depuis le Vietnam';
 $page_description = 'iGraal est une plateforme de cashback qui fonctionne depuis n\'importe où dans le monde. Utile pour les expats qui achètent encore sur des sites français — services, abonnements, commandes envoyées en France.';
-$page_canonical   = 'https://blog-capvietnam.fr/igraal-cashback-expat-france';
+$page_canonical   = SITE_URL . '/igraal-cashback-expat-france';
 $page_og_title    = 'iGraal depuis le Vietnam : cashback sur vos achats français en ligne';
 $page_og_desc     = 'Comment utiliser iGraal pour récupérer du cashback sur vos achats français depuis l\'étranger. Ce qui fonctionne, ce qui est compliqué, et le lien de parrainage.';
 $page_og_url      = 'https://blog-capvietnam.fr/igraal-cashback-expat-france';
@@ -197,11 +199,12 @@ include 'header.php';
       <h3>📥 Alertes admin &amp; bons plans du mois</h3>
       <p>Finances d'expat, bons plans, vie quotidienne — ce que je vis concrètement.</p>
       <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
+        <input type="hidden" name="_next" value="<?= SITE_URL ?>/merci-guide">
         <input type="hidden" name="_subject" value="Newsletter Cap Vietnam — igraal-cashback">
         <input type="email" name="email" placeholder="ton@email.com" required>
         <button type="submit" style="background:var(--jade);color:#fff;">S'inscrire</button>
       </form>
-      <p class="cta-rgpd">Désinscription en un clic. <a href="confidentialite-capvietnam">Politique de confidentialité</a>.</p>
+      <p class="cta-rgpd">Pas de spam. Désinscription en un clic — <a href="pack-gratuit" style="color:#4db890">voir le pack →</a></p>
     </div>
 
     <!-- AUTHOR BOX -->

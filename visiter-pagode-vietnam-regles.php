@@ -1,7 +1,9 @@
 ﻿<?php
+require_once __DIR__ . '/config/site.php';
+
 $page_title       = 'Visiter une pagode au Vietnam : tenue, chaussures et comportement à adopter';
-$page_description = 'Chaussures à retirer, pas de jupe, couleurs bouddhistes à respecter (jaune et brun), aucune démonstration d\'affection — ce que ma femme bouddhiste m\'a appris avant d\'entrer dans les pagodes de Hanoï et de Ninh Binh.';
-$page_canonical   = 'https://blog-capvietnam.fr/visiter-pagode-vietnam-regles';
+$page_description = 'Tenue, chaussures, couleurs bouddhistes : ce qu\'il faut savoir avant de visiter une pagode au Vietnam. Ce que ma femme bouddhiste m\'a appris à Hanoï.';
+$page_canonical   = SITE_URL . '/visiter-pagode-vietnam-regles';
 $page_og_title    = 'Pagodes au Vietnam : les règles à connaître avant d\'entrer';
 $page_og_desc     = 'Chaussures, tenue, couleurs du bouddhisme (jaune et brun), pas de démonstration d\'affection — ce que ma femme bouddhiste m\'a appris avant de visiter les pagodes de Hanoï et Ninh Binh.';
 $page_og_url      = 'https://blog-capvietnam.fr/visiter-pagode-vietnam-regles';
@@ -216,11 +218,12 @@ include 'header.php';
       <h3>📥 Alertes admin &amp; bons plans du mois</h3>
       <p>Culture, démarches, vie de couple mixte — mes vraies découvertes, sans filtre ni spam.</p>
       <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
+        <input type="hidden" name="_next" value="<?= SITE_URL ?>/merci-guide">
         <input type="hidden" name="_subject" value="Newsletter Cap Vietnam — pagodes-vietnam">
         <input type="email" name="email" placeholder="ton@email.com" required>
         <button type="submit" style="background:var(--jade);color:#fff;">S'inscrire</button>
       </form>
-      <p class="cta-rgpd">Désinscription en un clic. <a href="confidentialite-capvietnam">Politique de confidentialité</a>.</p>
+      <p class="cta-rgpd">Pas de spam. Désinscription en un clic — <a href="pack-gratuit" style="color:#4db890">voir le pack →</a></p>
     </div>
 
     <!-- AUTHOR BOX -->

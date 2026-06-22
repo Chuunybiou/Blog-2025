@@ -1,7 +1,9 @@
 ﻿<?php
+require_once __DIR__ . '/config/site.php';
+
 $page_title       = 'Cafés et coworkings à Hanoï — Cap Vietnam';
 $page_description = 'Meilleures adresses pour télétravailler à Hanoï : coworkings (Toong, Circo, Minna), cafés laptop-friendly, tarifs 2026 et conseils pour nomades.';
-$page_canonical   = 'https://blog-capvietnam.fr/cafes-coworkings-hanoi';
+$page_canonical   = SITE_URL . '/cafes-coworkings-hanoi';
 $page_og_title    = 'Cafés et coworkings à Hanoï : guide pour télétravailleurs 2026';
 $page_og_desc     = 'Sélection des meilleurs espaces pour télétravailler à Hanoï : Toong, Circo, Minna.';
 $page_og_url      = 'https://blog-capvietnam.fr/cafes-coworkings-hanoi';
@@ -235,10 +237,11 @@ include '_affiliate-cta.php';
       <h3>Le guide pratique de l'expat au Vietnam</h3>
       <p>Adresses, bons plans et conseils chaque semaine dans votre boîte mail.</p>
       <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
+        <input type="hidden" name="_next" value="<?= SITE_URL ?>/merci-guide">
         <input type="email" name="email" placeholder="votre@email.com" required>
         <button type="submit">M'inscrire</button>
       </form>
-      <p class="cta-rgpd">Pas de spam. Désinscription en un clic.</p>
+      <p class="cta-rgpd">Pas de spam. Désinscription en un clic — <a href="pack-gratuit" style="color:#4db890">voir le pack →</a></p>
     </div>
   </main>
 </div>

@@ -1,7 +1,9 @@
 ﻿<?php
+require_once __DIR__ . '/config/site.php';
+
 $page_title       = 'Visa Vietnam pour un Français : guide complet 2026';
 $page_description = 'E-visa 90 jours, exemption 45 jours, visa travail ou visa TT mariage : tout ce qu\'il faut savoir pour entrer et vivre au Vietnam en 2026.';
-$page_canonical   = 'https://blog-capvietnam.fr/visa-vietnam-francais-guide-2026';
+$page_canonical   = SITE_URL . '/visa-vietnam-francais-guide-2026';
 $page_og_title    = 'Visa Vietnam pour un Français : le guide complet 2026';
 $page_og_desc     = 'E-visa, visa de travail, regroupement familial… Tout savoir sur les visas pour vivre au Vietnam.';
 $page_og_url      = 'https://blog-capvietnam.fr/visa-vietnam-francais-guide-2026';
@@ -73,6 +75,10 @@ include 'header.php';
     <p><strong>Tu veux t'installer au Vietnam mais tu ne sais pas quel visa choisir ?</strong> Normal — entre l'e-visa, le visa de travail, le visa de regroupement familial et les multiples sous-catégories, c'est un vrai casse-tête. Dans cet article, je te résume tout ce que j'ai appris en préparant ma propre expatriation.</p>
 
     <img class="article-photo" src="https://images.unsplash.com/photo-1573270689103-d7a4e42b609a?w=1200&q=80" alt="Baie d'Ha Long, Vietnam" width="1200" height="675" loading="lazy">
+
+    <div class="info-box">
+      <strong>💡 Tu prévois de t'installer durablement ?</strong> Ce guide couvre les visas. Pour tout ce qui suit l'arrivée (logement, banque, santé, fiscalité), consulte le <a href="s-expatrier-vietnam-2026-guide-complet">guide complet s'expatrier au Vietnam 2026</a>.
+    </div>
 
     <h2 id="section-1">Les différents types de visa pour le Vietnam</h2>
     <p>Le Vietnam propose plusieurs catégories de visa aux ressortissants français. Le bon choix dépend de ta situation : tu viens en touriste, pour travailler, ou pour rejoindre ton conjoint vietnamien.</p>
@@ -170,12 +176,13 @@ include 'header.php';
 
     <div class="cta-newsletter">
       <h3>Reçois mes prochains articles</h3>
-      <p>Un email par mois. Désabonnement en un clic.</p>
+      <p>📥 <strong>Guide PDF + 3 modèles de lettres offerts</strong> dès l'inscription. Un email par mois, désinscription en 1 clic.</p>
       <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
+        <input type="hidden" name="_next" value="<?= SITE_URL ?>/merci-guide">
         <input type="email" name="email" placeholder="Ton adresse email" required>
         <button type="submit">S'inscrire</button>
       </form>
-      <p class="cta-rgpd">En t'inscrivant, tu acceptes la <a href="confidentialite-capvietnam">politique de confidentialité</a>.</p>
+      <p class="cta-rgpd">En t'inscrivant, tu acceptes la <a href="confidentialite-capvietnam">politique de confidentialité</a> — <a href="pack-gratuit" style="color:#4db890">voir le pack →</a></p>
     </div>
 
     <div class="author-box">

@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 require_once __DIR__ . '/config/site.php';
 $page_title       = 'Faire venir son conjoint(e) vietnamien(ne) en France : guide complet 2026';
 $page_description = 'CCAM, mariage au Vietnam, transcription Nantes, visa long séjour, titre de séjour : toutes les étapes pour faire venir ton conjoint vietnamien en France. Procédures, délais et coûts.';
@@ -6,7 +6,7 @@ $page_canonical   = SITE_URL . '/faire-venir-conjointe-vietnamienne-france';
 $page_og_title    = 'Faire venir son conjoint vietnamien en France : le guide complet 2026';
 $page_og_desc     = 'Du CCAM consulaire jusqu\'au titre de séjour en France : toutes les étapes détaillées pour un couple franco-vietnamien.';
 $page_og_url      = SITE_URL . '/faire-venir-conjointe-vietnamienne-france';
-$page_og_image    = SITE_URL . '/assets/img/CCAM-DOCUMENTS.jpg';
+$page_og_image    = 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1200&q=80';
 $page_schema      = json_encode([
   '@context'        => 'https://schema.org',
   '@type'           => 'Article',
@@ -16,7 +16,7 @@ $page_schema      = json_encode([
   'author'          => ['@type' => 'Person', 'name' => SITE_AUTHOR, 'url' => SITE_URL . '/a-propos-capvietnam'],
   'publisher'       => ['@type' => 'Organization', 'name' => SITE_NAME, 'url' => SITE_URL],
   'mainEntityOfPage'=> SITE_URL . '/faire-venir-conjointe-vietnamienne-france',
-  'image'           => SITE_URL . '/assets/img/CCAM-DOCUMENTS.jpg',
+  'image'           => 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1200&q=80',
   'inLanguage'      => 'fr',
   'articleSection'  => 'Vivre ensemble : ici ou là-bas',
 ], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
@@ -126,7 +126,7 @@ include 'header.php';
   <main class="article-content">
     <p><strong>Tu es en couple avec un(e) Vietnamien(ne) et tu veux construire votre vie commune en France ?</strong> La procédure est longue, parfois frustrante, mais elle est bien balisée. J'ai moi-même traversé ce parcours avec ma femme originaire de Hanoï. Dans ce guide, je te donne la carte complète du chemin — du CCAM consulaire jusqu'au titre de séjour en France.</p>
 
-    <img class="article-photo" src="assets/img/CCAM-DOCUMENTS.jpg" alt="Documents CCAM et mariage franco-vietnamien" width="1200" height="675" loading="lazy">
+    <img class="article-photo" src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1200&q=80" alt="Aéroport — faire venir son conjoint vietnamien en France" width="1200" height="675" loading="lazy">
 
     <div class="tip-box">
       <strong>Ce guide est un pilier.</strong> Chaque étape a son propre article détaillé (lié dans chaque section). Lis d'abord cette vue d'ensemble, puis plonge dans les articles spécifiques pour les détails et les documents requis.
@@ -277,12 +277,13 @@ include 'header.php';
 
     <div class="cta-newsletter">
       <h3>Reçois mes prochains articles</h3>
-      <p>Un email par mois. Désabonnement en un clic.</p>
+      <p>📥 <strong>Guide PDF + 3 modèles de lettres offerts</strong> dès l'inscription. Un email par mois, désinscription en 1 clic.</p>
       <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
+        <input type="hidden" name="_next" value="<?= SITE_URL ?>/merci-guide">
         <input type="email" name="email" placeholder="Ton adresse email" required>
         <button type="submit">S'inscrire</button>
       </form>
-      <p class="cta-rgpd">En t'inscrivant, tu acceptes la <a href="confidentialite-capvietnam">politique de confidentialité</a>.</p>
+      <p class="cta-rgpd">En t'inscrivant, tu acceptes la <a href="confidentialite-capvietnam">politique de confidentialité</a> — <a href="pack-gratuit" style="color:#4db890">voir le pack →</a></p>
     </div>
 
     <div class="author-box">

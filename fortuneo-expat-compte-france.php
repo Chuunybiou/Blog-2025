@@ -1,7 +1,9 @@
 ﻿<?php
-$page_title       = 'Fortuneo en expatriation : ce qu\'on peut garder et ce qu\'il faut vérifier avant de partir';
-$page_description = 'J\'ai un compte Fortuneo et je pars vivre à l\'étranger. Quels services restent accessibles ? Que faire du PEA ? Ce qu\'il faut vérifier avant de quitter la France — et le code parrainage 13036009.';
-$page_canonical   = 'https://blog-capvietnam.fr/fortuneo-expat-compte-france';
+require_once __DIR__ . '/config/site.php';
+
+$page_title       = 'Fortuneo depuis l\'étranger : ce qui change en expatriation';
+$page_description = 'Compte Fortuneo depuis le Vietnam ou l\'étranger : quels services restent accessibles, que faire du PEA, ce qu\'il faut vérifier avant de partir.';
+$page_canonical   = SITE_URL . '/fortuneo-expat-compte-france';
 $page_og_title    = 'Fortuneo et expatriation : ce que vous pouvez garder depuis l\'étranger';
 $page_og_desc     = 'Compte courant, livret, investissements : ce que Fortuneo permet depuis l\'étranger, ce qui est bloqué, et les questions à se poser avant de partir.';
 $page_og_url      = 'https://blog-capvietnam.fr/fortuneo-expat-compte-france';
@@ -272,11 +274,12 @@ include 'header.php';
       <h3>📥 Alertes admin &amp; bons plans du mois</h3>
       <p>Finances d'expat, démarches, vie en couple mixte — ce que je vis concrètement.</p>
       <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
+        <input type="hidden" name="_next" value="<?= SITE_URL ?>/merci-guide">
         <input type="hidden" name="_subject" value="Newsletter Cap Vietnam — fortuneo-expat">
         <input type="email" name="email" placeholder="ton@email.com" required>
         <button type="submit" style="background:var(--terracotta);color:#fff;">S'inscrire</button>
       </form>
-      <p class="cta-rgpd">Désinscription en un clic. <a href="confidentialite-capvietnam">Politique de confidentialité</a>.</p>
+      <p class="cta-rgpd">Pas de spam. Désinscription en un clic — <a href="pack-gratuit" style="color:#4db890">voir le pack →</a></p>
     </div>
 
     <!-- AUTHOR BOX -->

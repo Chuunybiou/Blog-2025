@@ -1,7 +1,9 @@
 ﻿<?php
+require_once __DIR__ . '/config/site.php';
+
 $page_title       = 'Créer un blog expat rentable depuis le Vietnam';
 $page_description = 'Comment créer un blog expat rentable depuis le Vietnam : niche, SEO, monétisation (affiliation, sponsoring, infoproduits), hébergement et fiscalité.';
-$page_canonical   = 'https://blog-capvietnam.fr/creer-blog-expat-rentable';
+$page_canonical   = SITE_URL . '/creer-blog-expat-rentable';
 $page_og_title    = 'Créer un blog expat rentable depuis le Vietnam : guide complet 2026';
 $page_og_desc     = 'Comment créer un blog expatrié rentable : niche, SEO, WordPress, affiliation.';
 $page_og_url      = 'https://blog-capvietnam.fr/creer-blog-expat-rentable';
@@ -251,10 +253,11 @@ include 'header.php';
       <h3>Tout ce qu'il faut savoir pour vivre au Vietnam</h3>
       <p>Guides pratiques, adresses et conseils chaque semaine dans votre boîte mail.</p>
       <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
+        <input type="hidden" name="_next" value="<?= SITE_URL ?>/merci-guide">
         <input type="email" name="email" placeholder="votre@email.com" required>
         <button type="submit">M'inscrire</button>
       </form>
-      <p class="cta-rgpd">Pas de spam. Désinscription en un clic.</p>
+      <p class="cta-rgpd">Pas de spam. Désinscription en un clic — <a href="pack-gratuit" style="color:#4db890">voir le pack →</a></p>
     </div>
   </main>
 </div>

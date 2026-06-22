@@ -1,7 +1,9 @@
 ﻿<?php
+require_once __DIR__ . '/config/site.php';
+
 $page_title       = 'Vol Paris-Hanoï pas cher : escales, compagnies et comment comparer les prix';
 $page_description = 'Paris-Hanoï en avion : pas de vol direct régulier, mais deux options d\'escale qui reviennent souvent. J\'ai fait le trajet deux fois — via Francfort, puis via Bangkok. Ce que j\'ai appris, et comment comparer les prix.';
-$page_canonical   = 'https://blog-capvietnam.fr/vol-paris-hanoi-pas-cher';
+$page_canonical   = SITE_URL . '/vol-paris-hanoi-pas-cher';
 $page_og_title    = 'Vol Paris-Hanoï pas cher : escales, timing et outil de comparaison';
 $page_og_desc     = 'Comment trouver un vol Paris-Hanoï au meilleur prix : les hubs d\'escale, quand réserver, et l\'outil que j\'utilise pour comparer.';
 $page_og_url      = 'https://blog-capvietnam.fr/vol-paris-hanoi-pas-cher';
@@ -237,11 +239,12 @@ include 'header.php';
       <h3>📥 Alertes admin &amp; bons plans du mois</h3>
       <p>Bons plans, préparer son départ, vie quotidienne — ce que je vis et ce que j'aurais voulu savoir avant.</p>
       <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
+        <input type="hidden" name="_next" value="<?= SITE_URL ?>/merci-guide">
         <input type="hidden" name="_subject" value="Newsletter Cap Vietnam — vol-paris-hanoi">
         <input type="email" name="email" placeholder="ton@email.com" required>
         <button type="submit" style="background:var(--jade);color:#fff;">S'inscrire</button>
       </form>
-      <p class="cta-rgpd">Désinscription en un clic. <a href="confidentialite-capvietnam">Politique de confidentialité</a>.</p>
+      <p class="cta-rgpd">Pas de spam. Désinscription en un clic — <a href="pack-gratuit" style="color:#4db890">voir le pack →</a></p>
     </div>
 
     <!-- AUTHOR BOX -->

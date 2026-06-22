@@ -1,7 +1,9 @@
 ﻿<?php
+require_once __DIR__ . '/config/site.php';
+
 $page_title       = 'Couple franco-vietnamien : différences culturelles';
 $page_description = 'Les vraies différences culturelles dans un couple franco-vietnamien : famille, argent, rapport au temps et aux émotions. Témoignage et conseils pratiques.';
-$page_canonical   = 'https://blog-capvietnam.fr/differences-culturelles-couple-franco-vietnamien';
+$page_canonical   = SITE_URL . '/differences-culturelles-couple-franco-vietnamien';
 $page_og_title    = 'Différences culturelles dans un couple franco-vietnamien';
 $page_og_desc     = 'Famille, argent, communication : les vraies différences culturelles dans un couple franco-vietnamien.';
 $page_og_url      = 'https://blog-capvietnam.fr/differences-culturelles-couple-franco-vietnamien';
@@ -96,6 +98,8 @@ include 'header.php';
       Pour les événements importants (mariage, démarches officielles, rendez-vous médical), soyez explicites : "il faut arriver à l'heure exacte pour cette raison précise". Pour les dîners familiaux, adopte le rythme local — ça réduira ton stress et améliorera ton intégration.
     </div>
 
+    <div class="tip-box">💡 Un effort concret que les belles-familles vietnamiennes apprécient beaucoup : apprendre quelques mots de vietnamien. Voir notre guide : <a href="apprendre-vietnamien-couple">apprendre le vietnamien en couple</a>.</div>
+
     <h2 id="section-5">Les rôles de genre</h2>
     <p>La société vietnamienne a des attentes genrées plus marquées qu'en France, bien que cela évolue rapidement dans les milieux urbains éduqués. La femme est souvent responsable du foyer et de l'éducation des enfants, même si elle travaille à plein temps. L'homme est attendu comme pourvoyeur financier principal.</p>
     <p>Dans un couple franco-vietnamien vivant au Vietnam, ces attentes sont souvent assouplies par le contexte interculturel. Mais elles réapparaissent dans les interactions avec la belle-famille. Clarifier tôt avec ta conjointe la répartition des tâches et des responsabilités — et s'y tenir — évite bien des tensions.</p>
@@ -155,12 +159,13 @@ include 'header.php';
 
     <div class="cta-newsletter">
       <h3>Reçois les prochains guides</h3>
-      <p>Couple mixte, vie à Hanoï, démarches admin — dans ta boîte mail.</p>
+      <p>📥 <strong>Guide PDF + 3 modèles de lettres offerts</strong> dès l'inscription. Un email par mois, désinscription en 1 clic.</p>
       <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
+        <input type="hidden" name="_next" value="<?= SITE_URL ?>/merci-guide">
         <input type="email" name="email" placeholder="ton@email.com" required>
         <button type="submit">S'inscrire</button>
       </form>
-      <p class="cta-rgpd">Pas de spam. Désinscription en un clic.</p>
+      <p class="cta-rgpd">Pas de spam. Désinscription en un clic — <a href="pack-gratuit" style="color:#4db890">voir le pack →</a></p>
     </div>
   </main>
 </div>
