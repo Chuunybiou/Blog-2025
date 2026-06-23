@@ -134,16 +134,29 @@ include 'header.php';
 <section class="pack-section" id="inscription">
   <div class="signup-box">
     <h2>Recevoir le pack maintenant</h2>
-    <p>Gratuit · Accès immédiat · Désabonnement en 1 clic</p>
-    <form class="signup-form" action="<?= SITE_FORMSPREE ?>" method="POST">
-      <input type="hidden" name="_next" value="<?= SITE_URL ?>/merci-guide">
+    <p>Gratuit · Désabonnement en 1 clic</p>
+    <form class="signup-form" id="pack-form" action="<?= SITE_FORMSPREE ?>" method="POST">
       <input type="hidden" name="_subject" value="Pack gratuit — inscription Cap Vietnam">
       <input type="email" name="email" placeholder="Ton adresse email" required>
-      <button type="submit">📥 Recevoir le pack</button>
+      <button type="submit" id="pack-btn">📥 Recevoir le pack</button>
     </form>
     <p class="signup-rgpd">En t'inscrivant, tu acceptes la <a href="confidentialite-capvietnam" style="color:rgba(255,255,255,0.4)">politique de confidentialité</a>. Pas de spam.</p>
   </div>
 </section>
+<script>
+document.getElementById('pack-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  var btn = document.getElementById('pack-btn');
+  var go  = function() { window.location.href = '<?= SITE_URL ?>/merci-guide'; };
+  btn.textContent = '⏳ Envoi…';
+  btn.disabled = true;
+  fetch(this.action, {
+    method: 'POST',
+    body: new FormData(this),
+    headers: { 'Accept': 'application/json' }
+  }).then(go).catch(go);
+});
+</script>
 
 <!-- STATS PROOF -->
 <div class="pack-proof">

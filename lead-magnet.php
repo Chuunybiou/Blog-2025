@@ -29,7 +29,7 @@ $lm_id = 'lm-' . ($lm_context === 'popup' ? 'popup' : 'inline');
         <div style="display:flex;gap:.75rem;flex-wrap:wrap;margin-bottom:.6rem">
           <input type="email" name="email" placeholder="ton@email.com" required
             style="flex:1;min-width:200px;padding:.7rem 1rem;border:none;border-radius:6px;font-size:.95rem;background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.2)">
-          <button type="submit"
+          <button type="submit" id="<?= $lm_id ?>-btn"
             style="padding:.7rem 1.5rem;background:#4db890;color:#0d2b1f;border:none;border-radius:6px;font-weight:700;cursor:pointer;white-space:nowrap">
             📥 Recevoir le pack
           </button>
@@ -39,6 +39,23 @@ $lm_id = 'lm-' . ($lm_context === 'popup' ? 'popup' : 'inline');
           <span>J'accepte de recevoir ce pack et des emails occasionnels de Cap Vietnam. <a href="<?= $path_prefix ?? '' ?>confidentialite-capvietnam" style="color:rgba(255,255,255,.5)">Politique de confidentialité</a>. — <a href="<?= $path_prefix ?? '' ?>pack-gratuit" style="color:#4db890">voir le pack →</a></span>
         </label>
       </form>
+      <script>
+      (function(){
+        var form = document.getElementById('<?= $lm_id ?>-form');
+        if(!form) return;
+        form.addEventListener('submit', function(e){
+          e.preventDefault();
+          var btn = document.getElementById('<?= $lm_id ?>-btn');
+          if(btn){ btn.textContent='⏳'; btn.disabled=true; }
+          var go = function(){ window.location.href = '<?= SITE_URL ?>/merci-guide'; };
+          fetch(form.action, {
+            method:'POST',
+            body: new FormData(form),
+            headers:{'Accept':'application/json'}
+          }).then(go).catch(go);
+        });
+      })();
+      </script>
     </div>
   </div>
 </div>
