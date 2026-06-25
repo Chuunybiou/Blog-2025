@@ -347,7 +347,7 @@ include 'header.php';
 <!-- ═══════ INTRO SEO ═══════ -->
 <section style="background:var(--warm-bg);padding:2.5rem 2rem;text-align:center;border-bottom:1px solid var(--border);">
   <p style="max-width:720px;margin:0 auto;color:var(--muted);font-size:1.02rem;line-height:1.8;">
-    Ce blog parle d'un seul sujet : le couple franco-vietnamien. Se rencontrer, traverser la distance, se marier au Vietnam ou en France, faire venir sa femme, gérer l'argent à deux entre deux pays. Tout ici vient du vécu — démarches faites, erreurs commises, chiffres réels. Rien de touristique.
+    Mariage franco-vietnamien, démarches administratives et vie pratique entre France et Vietnam. Tout vient du vécu — démarches faites, erreurs commises, chiffres réels. Rien de touristique.
   </p>
 </section>
 
@@ -356,7 +356,7 @@ include 'header.php';
   <div style="max-width:1200px;margin:0 auto">
     <div class="section-label">Outils interactifs</div>
     <h2 class="section-title">Planifie ton projet</h2>
-    <p class="section-desc">Trois outils pour visualiser ta situation et projeter les étapes importantes.</p>
+    <p class="section-desc">Quatre outils pour visualiser ta situation et projeter les étapes importantes.</p>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem">
       <a href="parcours-couple-franco-vietnamien" style="text-decoration:none;color:inherit;background:var(--warm-bg);border:1px solid var(--border);border-radius:10px;padding:1.75rem;display:flex;flex-direction:column;gap:0.75rem;transition:box-shadow 0.2s,border-color 0.2s" onmouseover="this.style.boxShadow='var(--shadow-md)';this.style.borderColor='var(--terracotta)'" onmouseout="this.style.boxShadow='none';this.style.borderColor='var(--border)'">
         <div style="font-size:2rem">🗺️</div>
@@ -365,17 +365,17 @@ include 'header.php';
         <p style="font-size:0.88rem;color:var(--muted);line-height:1.6;margin:0;flex:1">De la rencontre à la vie installée — coche chaque étape, choisis ta branche France ou Vietnam.</p>
         <span style="font-size:0.85rem;font-weight:700;color:var(--terracotta);margin-top:0.5rem">Commencer →</span>
       </a>
-      <a href="simulateur-retroplanning-conjoint" style="text-decoration:none;color:inherit;background:var(--warm-bg);border:1px solid var(--border);border-radius:10px;padding:1.75rem;display:flex;flex-direction:column;gap:0.75rem;transition:box-shadow 0.2s,border-color 0.2s" onmouseover="this.style.boxShadow='var(--shadow-md)';this.style.borderColor='var(--jade)'" onmouseout="this.style.boxShadow='none';this.style.borderColor='var(--border)'">
+      <a href="retroplanning-faire-venir-conjoint" style="text-decoration:none;color:inherit;background:var(--warm-bg);border:1px solid var(--border);border-radius:10px;padding:1.75rem;display:flex;flex-direction:column;gap:0.75rem;transition:box-shadow 0.2s,border-color 0.2s" onmouseover="this.style.boxShadow='var(--shadow-md)';this.style.borderColor='var(--jade)'" onmouseout="this.style.boxShadow='none';this.style.borderColor='var(--border)'">
         <div style="font-size:2rem">📅</div>
         <div style="font-size:0.62rem;letter-spacing:2px;text-transform:uppercase;font-weight:700;color:var(--jade)">Simulateur</div>
-        <h3 style="font-family:'DM Serif Display',serif;font-size:1.1rem;line-height:1.3;margin:0">Rétroplanning — faire venir son conjoint</h3>
+        <h3 style="font-family:'DM Serif Display',serif;font-size:1.1rem;line-height:1.3;margin:0">Rétroplanning — visa &amp; titre de séjour conjoint</h3>
         <p style="font-size:0.88rem;color:var(--muted);line-height:1.6;margin:0;flex:1">Entre ta date de lancement CCAM, obtiens chaque échéance jusqu'à l'arrivée en France.</p>
         <span style="font-size:0.85rem;font-weight:700;color:var(--jade);margin-top:0.5rem">Calculer mes délais →</span>
       </a>
-      <a href="simulateur-installation-vietnam" style="text-decoration:none;color:inherit;background:var(--warm-bg);border:1px solid var(--border);border-radius:10px;padding:1.75rem;display:flex;flex-direction:column;gap:0.75rem;transition:box-shadow 0.2s,border-color 0.2s" onmouseover="this.style.boxShadow='var(--shadow-md)';this.style.borderColor='var(--amber)'" onmouseout="this.style.boxShadow='none';this.style.borderColor='var(--border)'">
+      <a href="simulateur-residence-vietnam" style="text-decoration:none;color:inherit;background:var(--warm-bg);border:1px solid var(--border);border-radius:10px;padding:1.75rem;display:flex;flex-direction:column;gap:0.75rem;transition:box-shadow 0.2s,border-color 0.2s" onmouseover="this.style.boxShadow='var(--shadow-md)';this.style.borderColor='var(--amber)'" onmouseout="this.style.boxShadow='none';this.style.borderColor='var(--border)'">
         <div style="font-size:2rem">⏱️</div>
         <div style="font-size:0.62rem;letter-spacing:2px;text-transform:uppercase;font-weight:700;color:var(--amber)">Simulateur</div>
-        <h3 style="font-family:'DM Serif Display',serif;font-size:1.1rem;line-height:1.3;margin:0">Rétroplanning — s'installer au Vietnam</h3>
+        <h3 style="font-family:'DM Serif Display',serif;font-size:1.1rem;line-height:1.3;margin:0">Rétroplanning — résidence et installation Vietnam</h3>
         <p style="font-size:0.88rem;color:var(--muted);line-height:1.6;margin:0;flex:1">Entre ta date de départ, obtiens ton plan d'action personnalisé semaine par semaine.</p>
         <span style="font-size:0.85rem;font-weight:700;color:var(--amber);margin-top:0.5rem">Lancer le simulateur →</span>
       </a>
@@ -466,7 +466,7 @@ include 'header.php';
   <section class="section" id="articles">
     <div class="section-label">Derniers articles</div>
     <h2 class="section-title">Récemment publié</h2>
-    <p class="section-desc">Les derniers articles pour les couples franco-vietnamiens — démarches, argent, vie quotidienne.</p>
+    <p class="section-desc">Les derniers articles — démarches pour vivre ensemble, vie pratique au Vietnam et finances à deux.</p>
 
     <div class="articles-grid">
 <?php
@@ -565,7 +565,7 @@ foreach ($_art_latest as $_a):
   <p style="color:var(--muted);max-width:480px;margin:0 auto 2rem;line-height:1.7;">Rejoins la communauté pour discuter avec d'autres expats, ou écris-moi directement.</p>
   <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1.5rem;">
     <a href="https://www.facebook.com/groups/vivreauvietnamcouplefrancovietnamiencap/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.8rem 1.5rem;background:#1877f2;color:#fff;border-radius:5px;font-weight:600;text-decoration:none;font-size:0.9rem;">💬 Groupe Facebook</a>
-    <a href="https://discord.gg/MdDVNb7QZz" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.8rem 1.5rem;background:#5865f2;color:#fff;border-radius:5px;font-weight:600;text-decoration:none;font-size:0.9rem;">🎮 Discord expats</a>
+    <a href="https://discord.gg/bJGHy7ZE7" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.8rem 1.5rem;background:#5865f2;color:#fff;border-radius:5px;font-weight:600;text-decoration:none;font-size:0.9rem;">🎮 Discord expats</a>
     <a href="contact-capvietnam" style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.8rem 1.5rem;background:var(--warm-bg);color:var(--ink);border:1px solid var(--border);border-radius:5px;font-weight:600;text-decoration:none;font-size:0.9rem;">✉️ Formulaire de contact</a>
   </div>
   <p style="color:var(--muted);font-size:0.85rem;"><?= SITE_EMAIL ?></p>

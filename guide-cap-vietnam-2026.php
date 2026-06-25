@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 require_once __DIR__ . '/config/site.php';
 $page_title       = 'Guide complet — couple franco-vietnamien au Vietnam 2026';
 $page_description = 'Mariage, visa, budget réel, travail en ligne, couple mixte — 42 articles + outils interactifs. Écrit par un Français vivant à Hanoï depuis 2025.';
@@ -225,7 +225,7 @@ include 'header.php';
     <div>
       <h4>Rétroplanning conjoint — outil interactif gratuit</h4>
       <p>Planifie les étapes du mariage et du visa en sens inverse à partir de ta date cible. Génère un PDF avec toutes tes deadlines.</p>
-      <a href="simulateur-retroplanning-conjoint" class="btn">Lancer le simulateur →</a>
+      <a href="retroplanning-faire-venir-conjoint" class="btn">Lancer le simulateur →</a>
     </div>
   </div>
 
@@ -319,7 +319,7 @@ include 'header.php';
     <div>
       <h4>Rétroplanning installation Vietnam — outil interactif</h4>
       <p>Calcule le planning de ton installation à rebours depuis ta date d'arrivée : SIM, compte bancaire, logement, immatriculation, déclaration fiscale.</p>
-      <a href="simulateur-installation-vietnam" class="btn">Voir le rétroplanning →</a>
+      <a href="simulateur-residence-vietnam" class="btn">Voir le rétroplanning →</a>
     </div>
   </div>
 </section>
@@ -452,13 +452,13 @@ include 'header.php';
         <span class="tool-card-desc">Réponds à 6 questions sur ta situation et obtiens un plan d'action personnalisé : mariage, visa, démarches dans le bon ordre.</span>
         <span class="tool-card-badge">Interactif · ~5 min</span>
       </a>
-      <a href="simulateur-retroplanning-conjoint" class="tool-card">
+      <a href="retroplanning-faire-venir-conjoint" class="tool-card">
         <span class="tool-card-icon">📅</span>
         <span class="tool-card-title">Rétroplanning — visa conjoint</span>
         <span class="tool-card-desc">Saisis ta date d'arrivée en France souhaitée, génère un calendrier inversé avec toutes les deadlines du dossier conjoint.</span>
         <span class="tool-card-badge">Interactif · PDF téléchargeable</span>
       </a>
-      <a href="simulateur-installation-vietnam" class="tool-card">
+      <a href="simulateur-residence-vietnam" class="tool-card">
         <span class="tool-card-icon">⏱️</span>
         <span class="tool-card-title">Rétroplanning — installation Vietnam</span>
         <span class="tool-card-desc">À partir de ta date d'arrivée à Hanoï ou HCMC, planifie les 90 premiers jours d'installation étape par étape.</span>

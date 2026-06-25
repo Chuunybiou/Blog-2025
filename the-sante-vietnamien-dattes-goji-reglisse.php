@@ -12,7 +12,7 @@ $img_service   = IMG_TEA_DIR . 'CWpjA21BdGxe7vlMJAlV0rdbSKNiEvhNZ-q_b1j6BpTD9Tqq
 $page_title       = 'Thé dattes-goji-réglisse : recette de ma belle-mère vietnamienne';
 $page_description = 'Une couleur jaune dorée, un goût naturellement sucré, des notes de miel et de réglisse — je n\'avais jamais bu quelque chose comme ça. La recette du thé santé vietnamien préparé par ma belle-mère pour les grandes occasions.';
 $page_canonical   = SITE_URL . '/the-sante-vietnamien-dattes-goji-reglisse';
-$page_og_title    = 'Thé vietnamien aux dattes, réglisse et goji noir — recette de belle-mère';
+$page_og_title    = 'Thé vietnamien aux dattes, réglisse et goji rouge — recette de belle-mère';
 $page_og_desc     = 'Un thé doré, sucré naturellement, que je n\'avais jamais goûté en France. Recette, ingrédients, secret de la couleur et où les trouver en épicerie asiatique.';
 $page_og_url      = 'https://blog-capvietnam.fr/the-sante-vietnamien-dattes-goji-reglisse';
 $page_og_image    = 'https://blog-capvietnam.fr/' . $img_hero;
@@ -20,30 +20,64 @@ $page_og_image    = 'https://blog-capvietnam.fr/' . $img_hero;
 $page_schema = '{
   "@context": "https://schema.org",
   "@type": "Recipe",
-  "name": "Thé vietnamien aux dattes rouges, réglisse et goji noir",
+  "name": "Thé vietnamien aux dattes rouges, réglisse et goji rouge",
   "image": ["https://blog-capvietnam.fr/assets/img/capvietnam-tea.jpg","https://blog-capvietnam.fr/assets/img/capvietnam-tea-2.jpg","https://blog-capvietnam.fr/assets/img/capvietnam-tea-3.jpg"],
-  "description": "Thé santé traditionnel vietnamien préparé avec des dattes rouges séchées, de la réglisse, des gojis noirs et du jiaogulan. Couleur jaune dorée, goût naturellement sucré.",
+  "description": "Thé santé traditionnel vietnamien préparé avec des dattes rouges séchées, de la réglisse, des gojis rouges et du jiaogulan. Couleur jaune dorée, goût naturellement sucré.",
   "recipeYield": "3 à 4 tasses",
   "prepTime": "PT5M",
   "cookTime": "PT30M",
   "totalTime": "PT40M",
   "recipeCategory": "Boisson",
   "recipeCuisine": "Vietnamienne",
-  "keywords": "thé vietnamien dattes rouges réglisse goji noir jiaogulan recette santé",
+  "keywords": "thé vietnamien dattes rouges réglisse goji rouge jiaogulan recette santé",
   "datePublished": "2026-06-01",
   "author": {"@type": "Person", "name": "Anthony Bouillon", "url": "https://blog-capvietnam.fr/a-propos-capvietnam"},
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 tasse (125 ml)",
+    "calories": "55 kcal",
+    "carbohydrateContent": "13 g",
+    "sugarContent": "11 g",
+    "proteinContent": "0.4 g",
+    "fatContent": "0.1 g",
+    "fiberContent": "0.5 g"
+  },
   "recipeIngredient": [
     "500 ml d\'eau",
-    "5 à 8 dattes rouges séchées (jujubes)",
+    "10 dattes rouges séchées (jujubes)",
     "2 à 3 rondelles de réglisse séchée (~5 g)",
-    "1 petite pincée de gojis noirs (5 à 8 baies max)",
+    "1 poignée de gojis rouges (10 à 15 baies)",
     "1 à 1,5 g de Gynostemma pentaphyllum (jiaogulan) séché"
   ],
   "recipeInstructions": [
-    {"@type": "HowToStep", "text": "Verser 500 ml d\'eau froide dans une casserole. Ajouter les dattes rouges, les rondelles de réglisse et le jiaogulan séché."},
-    {"@type": "HowToStep", "text": "Porter à frémissement puis laisser mijoter à feu doux pendant 20 à 30 minutes."},
-    {"@type": "HowToStep", "text": "Éteindre le feu. Ajouter les gojis noirs. Laisser infuser 5 à 10 minutes."},
-    {"@type": "HowToStep", "text": "Filtrer si souhaité ou servir tel quel, chaud ou sur glaçons."}
+    {
+      "@type": "HowToStep",
+      "name": "Préparer la casserole",
+      "url": "https://blog-capvietnam.fr/the-sante-vietnamien-dattes-goji-reglisse#section-3",
+      "image": "https://blog-capvietnam.fr/assets/img/capvietnam-tea.jpg",
+      "text": "Verser 500 ml d\'eau froide dans une casserole. Ajouter les dattes rouges, les rondelles de réglisse et le jiaogulan séché."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Mijoter à feu doux",
+      "url": "https://blog-capvietnam.fr/the-sante-vietnamien-dattes-goji-reglisse#section-3",
+      "image": "https://blog-capvietnam.fr/assets/img/capvietnam-tea-3.jpg",
+      "text": "Porter à frémissement puis laisser mijoter à feu doux pendant 20 à 30 minutes."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Infuser les gojis rouges",
+      "url": "https://blog-capvietnam.fr/the-sante-vietnamien-dattes-goji-reglisse#section-3",
+      "image": "https://blog-capvietnam.fr/assets/img/capvietnam-tea-2.jpg",
+      "text": "Éteindre le feu. Ajouter les gojis rouges. Laisser infuser 5 à 10 minutes."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Servir",
+      "url": "https://blog-capvietnam.fr/the-sante-vietnamien-dattes-goji-reglisse#section-3",
+      "image": "https://blog-capvietnam.fr/assets/img/capvietnam-tea-2.jpg",
+      "text": "Filtrer si souhaité ou servir tel quel, chaud ou sur glaçons."
+    }
   ]
 }';
 
@@ -56,12 +90,12 @@ $article_category     = 'Voyager au Vietnam';
 $article_category_url = 'https://blog-capvietnam.fr/articles-capvietnam';
 
 $page_faq = [
-  ['q' => 'Où trouver des gojis noirs en France ?',
-   'a' => 'Dans les grandes épiceries asiatiques (Paris 13e, Lyon Part-Dieu, Belleville…) ou sur Amazon et les boutiques de produits naturels en ligne. Cherchez « black wolfberry » ou « goji noir séché ». Ils sont moins courants que les gojis rouges mais de plus en plus disponibles.'],
-  ['q' => 'Quelle est la différence entre goji rouge et goji noir ?',
-   'a' => 'Le goji rouge (Lycium barbarum) est le plus courant en Occident. Le goji noir (Lycium ruthenicum) contient des anthocyanes qui lui donnent sa couleur foncée. Ajouté en petite quantité après cuisson, il ne teinte pas le thé — trop bouilli, il virerait le liquide au violet ou au gris.'],
+  ['q' => 'Où trouver des gojis rouges en France ?',
+   'a' => 'Les gojis rouges sont faciles à trouver en France : en épicerie asiatique, en magasin bio, sur Amazon. Cherchez « baies de goji séchées » ou « wolfberry ». C\'est l\'un des ingrédients les plus simples à trouver de cette recette.'],
+  ['q' => 'Peut-on mettre plus de 10 dattes ?',
+   'a' => 'Oui, la quantité est ajustable selon le goût. Avec 10 dattes pour 500 ml, le thé est naturellement sucré et bien coloré. En mettre davantage rend la boisson plus sucrée et la couleur plus ambrée. En dessous de 8, le goût est plus léger.'],
   ['q' => 'Peut-on ajouter du miel ou du sucre ?',
-   'a' => 'Les dattes rouges donnent déjà une douceur naturelle à la tisane. Si tu veux plus de douceur, ajoute une petite cuillère de miel toutes fleurs hors du feu, ou simplement du sucre. Goûte d\'abord — souvent ce n\'est pas nécessaire.'],
+   'a' => 'Les dattes rouges donnent déjà une douceur naturelle à la tisane. Si tu veux plus de douceur, ajoute une petite cuillère de miel toutes fleurs hors du feu. Goûte d\'abord — souvent ce n\'est pas nécessaire.'],
   ['q' => 'Ce thé contient-il de la caféine ?',
    'a' => 'Non. Aucun des ingrédients (dattes, réglisse, goji, jiaogulan) ne contient de caféine. C\'est une tisane, pas un thé à proprement parler — idéale en soirée ou pour les personnes sensibles à la caféine.'],
 ];
@@ -102,7 +136,7 @@ include 'header.php';
       <span>Thé vietnamien</span>
     </div>
     <span class="article-badge-hero" style="background:<?= $article_badge ?>;color:<?= $article_badge_c ?>">🍵 Recette & Culture</span>
-    <h1>Le thé de ma belle-mère vietnamienne : dattes, réglisse et goji noir</h1>
+    <h1>Le thé de ma belle-mère vietnamienne : dattes, réglisse et goji rouge</h1>
     <div class="article-hero-meta">
       <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
       <span>📅 1er juin 2026</span>
@@ -177,10 +211,9 @@ include 'header.php';
         <h4>Ce qu'il faut</h4>
         <ul class="ingredient-list">
           <li>500 ml d'eau</li>
-          <li><a href="https://amzn.to/4dxe7Jd" rel="noopener sponsored" target="_blank">5 à 8 dattes rouges séchées ↗</a></li>
+          <li><a href="https://amzn.to/4dxe7Jd" rel="noopener sponsored" target="_blank">10 dattes rouges séchées ↗</a></li>
           <li><a href="https://amzn.to/3PFOehg" rel="noopener sponsored" target="_blank">2–3 rondelles de réglisse séchée ↗</a></li>
-          <li><a href="https://amzn.to/4wSsKOS" rel="noopener sponsored" target="_blank">5 à 8 gojis noirs (pas plus) ↗</a></li>
-          <li><a href="https://amzn.to/42T9iUx" rel="noopener sponsored" target="_blank">Stévia BIO — feuilles ou poudre ↗</a></li>
+          <li><a href="https://www.amazon.fr/Amazon-BAIES-GOJI-D%C3%89SHYDRAT%C3%89ES-200g/dp/B0CCV4LQN7" rel="noopener sponsored" target="_blank">Gojis rouges séchés ↗</a></li>
           <li><a href="https://amzn.to/4nZhQme" rel="noopener sponsored" target="_blank">1–1,5 g Jiaogulan séché ↗</a></li>
         </ul>
         <p style="font-size:0.78rem;color:var(--muted);margin-top:0.75rem;">↗ Liens Amazon affiliés — prix identiques pour toi.</p>
@@ -191,7 +224,7 @@ include 'header.php';
 
     <p><strong>La réglisse séchée</strong> apporte les notes anisées et la profondeur aromatique. En très petite quantité, elle se fond dans l'ensemble sans dominer. C'est elle qui crée l'arrière-goût floral qu'on a du mal à identifier au premier essai.</p>
 
-    <p><strong>Les gojis noirs</strong> — et là, c'est le détail qui change tout. Pas les gojis rouges qu'on trouve en supermarché. Les gojis noirs (<em>Lycium ruthenicum</em>) ont une couleur profonde et une discrétion de saveur qui n'altère pas le profil aromatique général — mais leur quantité et leur moment d'ajout sont <em>cruciaux</em> pour la couleur finale. On y revient.</p>
+    <p><strong>Les gojis rouges</strong> (<em>Lycium barbarum</em>) — les baies orangées qu'on trouve en épicerie bio ou asiatique. Une poignée pour 500 ml, ajoutée hors du feu pour qu'elles restent tendres. Elles ne modifient pas le profil aromatique mais apportent une note douce et se mangent directement dans la tasse.</p>
 
     <p><strong>Le jiaogulan</strong> (<em>Gynostemma pentaphyllum</em>) — c'est celui que j'ai découvert plus tard, en cherchant comment enrichir la recette. Une petite herbe séchée, 1 à 1,5 g suffit, qu'on ajoute en début de cuisson avec les dattes et la réglisse. Son goût est discret, légèrement herbacé, et il se fond dans l'ensemble sans modifier la couleur dorée. Dans la médecine traditionnelle asiatique, il est surnommé « herbe de l'immortalité » — une réputation qui ne manque pas d'ambition.</p>
 
@@ -220,7 +253,7 @@ include 'header.php';
           <li>
             <div class="step-num">3</div>
             <div class="step-text">
-              <strong>Éteindre le feu.</strong> C'est seulement là qu'on ajoute les gojis noirs. On ne les cuit pas — on les <strong>infuse</strong> dans le liquide chaud hors du feu.
+              <strong>Éteindre le feu.</strong> C'est seulement là qu'on ajoute les gojis rouges. On ne les cuit pas — on les <strong>infuse</strong> dans le liquide chaud hors du feu.
               <div class="step-sub">Couvrir la casserole et laisser infuser 5 à 10 minutes.</div>
             </div>
           </li>
@@ -246,12 +279,12 @@ include 'header.php';
     <ul>
       <li><strong>Les dattes rouges bouillies longuement</strong> libèrent des pigments caroténoïdes et des sucres naturels qui teintent l'eau en jaune ambré — plus elles mijotent, plus la couleur s'intensifie</li>
       <li><strong>La réglisse</strong> apporte ses propres composés (glycyrrhizine) qui contribuent à la teinte chaude</li>
-      <li><strong>Les gojis noirs ajoutés hors du feu</strong> — et c'est tout le secret : si les gojis noirs cuisent trop longtemps, leurs anthocyanes (pigments violets-bleus) migrent dans le liquide. Le thé vire au <strong>violet, au bleu, ou au gris foncé</strong>. Ajoutés seulement en infusion à la fin, en petite quantité, ils ne perturbent pas la couleur dorée des dattes.</li>
+      <li><strong>Les gojis rouges ajoutés hors du feu</strong> — ils se réhydratent dans le liquide chaud sans cuire, restent tendres et se mangent directement dans la tasse. Leurs caroténoïdes n'altèrent pas la couleur dorée des dattes.</li>
     </ul>
 
     <div class="tip-box">
-      <strong>💡 La règle des gojis noirs :</strong>
-      Très peu (5 à 8 baies pour 500 ml) + ajout seulement hors du feu = couleur dorée préservée. Trop de gojis ou ajoutés pendant la cuisson = thé qui vire au violet-gris. L'erreur est facile à faire la première fois.
+      <strong>💡 Gojis rouges dans la tasse :</strong>
+      On les ajoute toujours hors du feu — ils gonflent, restent moelleux et sont très bons à manger. Une petite poignée (10 à 15 baies) pour 500 ml suffit.
     </div>
 
     <!-- H2 #5 -->
@@ -265,7 +298,7 @@ include 'header.php';
 
     <p><strong>La réglisse</strong> est connue pour ses vertus apaisantes sur les voies respiratoires et digestives. En petite quantité dans une tisane, elle aide à adoucir la gorge — d'où sa présence dans beaucoup de remèdes traditionnels contre les rhumes.</p>
 
-    <p><strong>Les gojis noirs</strong> sont particulièrement riches en anthocyanes — les mêmes antioxydants présents dans les myrtilles ou le cassis. Plus récemment étudiés que leur cousin rouge, ils suscitent un intérêt croissant dans la recherche sur le stress oxydatif.</p>
+    <p><strong>Les gojis rouges</strong> (<em>wolfberry</em>) sont riches en zéaxanthine, en bêta-carotène et en vitamine C. Utilisés depuis des siècles dans la médecine traditionnelle asiatique, ils sont l'un des ingrédients les mieux documentés de la pharmacopée orientale.</p>
 
     <p><strong>Le jiaogulan</strong> (<em>Gynostemma pentaphyllum</em>) est l'un des adaptogènes les plus étudiés en Asie du Sud-Est. Surnommé « herbe de l'immortalité » dans la littérature traditionnelle chinoise, il est réputé pour ses propriétés antioxydantes et son soutien au système cardiovasculaire. Des recherches préliminaires s'y intéressent, notamment pour ses saponines (les gypenosides) qui en font un profil proche de certains ginsénosides du ginseng.</p>
 
@@ -302,10 +335,10 @@ include 'header.php';
       </div>
 
       <div style="border:1px solid var(--border);border-radius:var(--radius);padding:1.2rem;background:var(--white);">
-        <div style="font-size:1.5rem;margin-bottom:0.5rem;">⚫</div>
-        <p style="font-weight:700;font-size:0.95rem;margin-bottom:0.3rem;">Gojis noirs (Black Wolfberry)</p>
-        <p style="font-size:0.83rem;color:var(--muted);margin-bottom:0.8rem;">Le plus difficile à trouver en magasin. 100 g dure très longtemps — on en met très peu.</p>
-        <a href="https://amzn.to/4wSsKOS" rel="noopener sponsored" target="_blank"
+        <div style="font-size:1.5rem;margin-bottom:0.5rem;">🔴</div>
+        <p style="font-weight:700;font-size:0.95rem;margin-bottom:0.3rem;">Gojis rouges séchés (Wolfberry)</p>
+        <p style="font-size:0.83rem;color:var(--muted);margin-bottom:0.8rem;">Faciles à trouver en bio ou épicerie asiatique. Sur Amazon, 200 g dure très longtemps.</p>
+        <a href="https://www.amazon.fr/Amazon-BAIES-GOJI-D%C3%89SHYDRAT%C3%89ES-200g/dp/B0CCV4LQN7" rel="noopener sponsored" target="_blank"
            style="display:inline-block;padding:0.5rem 1rem;background:var(--amber);color:var(--ink);border-radius:4px;font-size:0.82rem;font-weight:700;text-decoration:none;">
           Voir sur Amazon →
         </a>
@@ -335,18 +368,18 @@ include 'header.php';
 
     <div class="faq-item">
       <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
-        Où trouver des gojis noirs en France ?
+        Où trouver des gojis rouges en France ?
         <span class="faq-arrow">▼</span>
       </button>
-      <div class="faq-answer">Dans les grandes épiceries asiatiques (Paris 13e, Lyon Part-Dieu, Belleville…) ou sur Amazon et les boutiques de produits naturels en ligne. Cherchez « black wolfberry » ou « goji noir séché ». Ils sont moins courants que les gojis rouges mais de plus en plus disponibles.</div>
+      <div class="faq-answer">Les gojis rouges sont faciles à trouver : en épicerie bio, en épicerie asiatique, sur Amazon. Cherchez « baies de goji séchées » ou « wolfberry ». C'est l'ingrédient le plus accessible de la recette.</div>
     </div>
 
     <div class="faq-item">
       <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
-        Quelle différence entre goji rouge et goji noir ?
+        Peut-on mettre plus de 10 dattes ?
         <span class="faq-arrow">▼</span>
       </button>
-      <div class="faq-answer">Le goji rouge (Lycium barbarum) est le plus courant en Occident. Le goji noir (Lycium ruthenicum) est plus riche en anthocyanes. Ajouté en petite quantité après cuisson, il ne teinte pas le thé — mais trop bouilli, il virerait le liquide au violet ou au gris foncé.</div>
+      <div class="faq-answer">Oui, la quantité est ajustable. Avec 10 dattes pour 500 ml, le thé est naturellement sucré et bien coloré. En mettre davantage rend la boisson plus sucrée et la couleur plus ambrée. En dessous de 8, le goût est plus léger.</div>
     </div>
 
     <div class="faq-item">

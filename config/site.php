@@ -14,13 +14,13 @@ define('PROFILE_PHOTO',   'assets/img/profile/anthony-profil.jpg');
 // Générer : php -r "echo bin2hex(random_bytes(16));"
 // Puis créer {CLE}.txt à la racine contenant uniquement la clé
 // Puis lancer setup-indexnow.php pour tout configurer automatiquement
-define('INDEXNOW_KEY', '');
+define('INDEXNOW_KEY', '7d29396d42642e6d2f805c89af08d000');
 // MAILERLITE_API_KEY supprimée — MailerLite remplacé par Formspree
 
 // Affiliate links
 define('AFF_ITALKI',    'https://www.italki.com/fr/i/ref/AeEH6bH?hl=fr&utm_medium=user_referral&utm_source=copylink_share');
 define('AFF_WISE',      'https://wise.com/invite/dic/anthonyrolandb');
-define('AFF_REVOLUT',   'https://revolut.com/referral/?referral-code=anthonfytu!JUN1-26-VR-FR&geo-redirect');
+define('AFF_REVOLUT',   'https://revolut.com/referral/?referral-code=anthonfytu!JUL1-26-VR-FR&geo-redirect');
 define('AFF_VIETCOMBANK', 'https://digibank.vietcombank.com.vn/invite/DGAS6ZI5PE');
 define('AFF_FORTUNEO',    'https://www.fortuneo.fr');
 define('AFF_WEALTHSIMPLE', 'https://www.wealthsimple.com/invite/HTBVCA');

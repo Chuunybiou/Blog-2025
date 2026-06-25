@@ -106,7 +106,7 @@ include 'header.php';
         <h3 style="font-family:'DM Serif Display',serif;font-size:1.05rem;color:#faf8f4;margin-bottom:0.25rem">Rétroplanning — de la CCAM au visa</h3>
         <p style="font-size:0.87rem;color:rgba(250,248,244,0.55);margin:0">Planifiez vos démarches pour ne rien rater avant l'entretien</p>
       </div>
-      <a href="simulateur-retroplanning-conjoint" style="flex-shrink:0;display:inline-flex;align-items:center;gap:0.5rem;padding:0.7rem 1.4rem;background:#4db890;color:#0d2b1f;border-radius:5px;font-weight:700;font-size:0.87rem;text-decoration:none;white-space:nowrap">Voir le simulateur →</a>
+      <a href="retroplanning-faire-venir-conjoint" style="flex-shrink:0;display:inline-flex;align-items:center;gap:0.5rem;padding:0.7rem 1.4rem;background:#4db890;color:#0d2b1f;border-radius:5px;font-weight:700;font-size:0.87rem;text-decoration:none;white-space:nowrap">Voir le simulateur →</a>
     </div>
 
     <h2 id="section-2">Comment préparer ton conjoint à l'entretien</h2>

@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 require_once __DIR__ . '/config/site.php';
 $page_title       = 'Mes outils gratuits pour le couple franco-vietnamien — Cap Vietnam';
 $page_description = 'Rétroplannings, parcours guidé et calculateur de budget : 4 outils interactifs gratuits pour faire venir son conjoint en France ou s\'installer au Vietnam.';
@@ -82,18 +82,18 @@ include 'header.php';
       <span class="go">Suivre le parcours →</span>
     </a>
 
-    <a class="card" href="simulateur-retroplanning-conjoint">
+    <a class="card" href="retroplanning-faire-venir-conjoint">
       <span class="free">Gratuit</span>
       <span class="ico">📅</span>
-      <h3>Rétroplanning · venir en France</h3>
+      <h3>Faire venir mon conjoint vietnamien en France</h3>
       <p>Entre ta date, obtiens chaque échéance pour faire venir ton conjoint : rendez-vous, CCAM, mariage, transcription, visa, titre de séjour.</p>
       <span class="go">Calculer mes dates →</span>
     </a>
 
-    <a class="card" href="simulateur-installation-vietnam">
+    <a class="card" href="simulateur-residence-vietnam">
       <span class="free">Gratuit</span>
       <span class="ico">⏱️</span>
-      <h3>Rétroplanning · s'installer au Vietnam</h3>
+      <h3>S'installer au Vietnam — résidence étape par étape</h3>
       <p>Visa TT, carte de résidence temporaire, puis résidence permanente : ta trajectoire de résidence projetée, selon où vous vous mariez.</p>
       <span class="go">Calculer mes dates →</span>
     </a>
@@ -101,7 +101,7 @@ include 'header.php';
     <a class="card" href="calculateur-budget-vietnam">
       <span class="free">Gratuit</span>
       <span class="ico">💰</span>
-      <h3>Calculateur de budget</h3>
+      <h3>Budget mensuel au Vietnam</h3>
       <p>Estime ton budget mensuel à Hanoï ou Hô Chi Minh-Ville selon ton train de vie. Pour savoir combien il te faut, vraiment.</p>
       <span class="go">Estimer mon budget →</span>
     </a>

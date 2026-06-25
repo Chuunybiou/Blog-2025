@@ -39,7 +39,7 @@
       <a href="<?= $path_prefix ?>livre-vietnamien" style="color:var(--terracotta-soft);font-weight:600">📕 Apprendre le vietnamien</a>
       <a href="<?= $path_prefix ?>mes-livres" style="color:rgba(250,248,244,0.55)">📚 Tous mes livres</a>
       <hr style="border-color:var(--border);margin:0.8rem 0">
-      <a href="https://bonusparrainage.com/revolut" target="_blank" rel="noopener" style="color:var(--amber-soft)">💳 Code parrainage Revolut</a>
+      <a href="https://bonusparrainage.com" target="_blank" rel="noopener" style="color:rgba(250,248,244,0.28);font-size:0.78rem">bonusparrainage.com</a>
       <a href="https://anthony-bouillon.com" target="_blank" rel="noopener" style="color:rgba(250,248,244,0.28);font-size:0.78rem">anthony-bouillon.com</a>
     </div>
     <div class="footer-col">
