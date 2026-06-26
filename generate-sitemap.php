@@ -66,6 +66,7 @@ $pages = [
   ['louer-appartement-hanoi-etranger',         '2026-03-10', 'monthly', '0.7'],
   ['telephone-vietnam-quelle-sim-choisir',     '2026-03-15', 'monthly', '0.7'],
   ['ramener-produits-francais-vietnam',        '2026-02-28', 'monthly', '0.6'],
+  ['sim-internet-applications-vietnam',        '2026-06-25', 'monthly', '0.8'],
 ];
 
 $xml = '<?xml version="1.0" encoding="UTF-8"?>' . "\n";

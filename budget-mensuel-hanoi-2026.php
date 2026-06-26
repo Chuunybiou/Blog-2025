@@ -86,7 +86,7 @@ include 'header.php';
         <tr><td>Serviced apartment</td><td>20 – 50 M VND/mois</td><td>—</td></tr>
       </tbody>
     </table>
-    <p>Les charges (électricité, eau, internet) s'ajoutent : compte 1 à 3 M VND/mois selon la consommation de climatisation. L'internet fibre optique est excellent et peu cher (150 000 à 300 000 VND/mois pour 100 Mb/s).</p>
+    <p>Les charges (électricité, eau, internet) s'ajoutent : compte 1 à 3 M VND/mois selon la consommation de climatisation. L'internet fibre optique est excellent et peu cher (150 000 à 300 000 VND/mois pour 100 Mb/s). Pour le mobile, une SIM prépayée locale coûte entre 100 000 et 200 000 VND/mois — voir le <a href="sim-internet-applications-vietnam">guide complet SIM et internet au Vietnam</a>.</p>
 
     <h2 id="section-2">Alimentation</h2>
     <p>C'est là que Hanoï brille par rapport à Paris. Les options vont de l'ultra-économique au restaurant gastronomique :</p>

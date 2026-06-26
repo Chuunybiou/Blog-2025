@@ -271,7 +271,9 @@ include 'header.php';
     <p>Certains services sont géographiquement bloqués au Vietnam ou inaccessibles selon les périodes. Un VPN est recommandé pour accéder aux services de streaming, sécuriser sa connexion dans les cafés et contourner les restrictions ponctuelles. J'utilise <strong>CyberGhost</strong>.</p>
 
     <div class="info-box">
-      <strong>📖 Article détaillé :</strong> <a href="telephone-vietnam-quelle-sim-choisir">Téléphone au Vietnam : quelle SIM choisir en 2026</a>
+      <strong>📖 Articles détaillés :</strong><br>
+      <a href="telephone-vietnam-quelle-sim-choisir">Téléphone au Vietnam : quelle SIM choisir en 2026</a><br>
+      <a href="sim-internet-applications-vietnam">SIM, internet et applications au Vietnam — Viettel, Mobifone, 5G, Zalo, Grab (guide 2026)</a>
     </div>
 
     <!-- ════════════════════════════════ TRAVAIL ════════════════════════════════ -->

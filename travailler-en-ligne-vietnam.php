@@ -202,7 +202,8 @@ include 'header.php';
     ?>
 
     <div class="info-box">
-      <strong>Dossier complet :</strong> → <a href="travailler-a-distance-depuis-vietnam">Travailler à distance depuis le Vietnam : statuts, fiscalité, visa et protection sociale</a>
+      <strong>Dossier complet :</strong> → <a href="travailler-a-distance-depuis-vietnam">Travailler à distance depuis le Vietnam : statuts, fiscalité, visa et protection sociale</a><br>
+      <strong>📱 Rester connecté :</strong> → <a href="sim-internet-applications-vietnam">SIM, internet et applications au Vietnam — Viettel, Mobifone, Zalo, Grab (guide 2026)</a>
     </div>
 
     <h2 id="section-faq">Questions fréquentes</h2>
