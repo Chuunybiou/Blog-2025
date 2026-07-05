@@ -6,7 +6,7 @@ $page_canonical   = SITE_URL . '/sim-internet-applications-vietnam';
 $page_og_title    = 'SIM, internet et applications au Vietnam : tout ce qu\'il faut savoir';
 $page_og_desc     = 'Viettel, Mobifone, Vietnamobile, eSIM : quelle SIM choisir au Vietnam ? Quelles apps installer ? Le guide 2026 pour rester connecté.';
 $page_og_url      = SITE_URL . '/sim-internet-applications-vietnam';
-$page_og_image    = 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1200&q=80';
+$page_og_image    = SITE_URL . '/assets/img/sim-viettel-5g-esim-vietnam.jpg';
 $page_schema      = json_encode([
   '@context'        => 'https://schema.org',
   '@type'           => 'Article',
@@ -192,9 +192,12 @@ include 'header.php';
   <aside class="toc">
     <div class="toc-label">Sommaire</div>
     <ol class="toc-list">
+      <li><a href="#section-francais">Forfait français au Vietnam</a></li>
       <li><a href="#section-1">Opérateurs et qualité du réseau</a></li>
       <li><a href="#section-2">SIM locale ou eSIM ?</a></li>
       <li><a href="#section-3">Comparatif des forfaits</a></li>
+      <li><a href="#section-int">SIM internationale multi-pays</a></li>
+      <li><a href="#section-profil">Choisir selon ton profil</a></li>
       <li><a href="#section-4">Internet fixe et WiFi</a></li>
       <li><a href="#section-5">Applications indispensables</a></li>
       <li><a href="#section-6">VPN et accès aux contenus</a></li>
@@ -212,7 +215,19 @@ include 'header.php';
   <main class="article-content">
     <p><strong>Dès que tu poses le pied au Vietnam, la première question pratique c'est souvent : comment rester connecté ?</strong> La bonne nouvelle : le Vietnam a une couverture 4G/5G solide dans les villes et les zones touristiques, les forfaits sont parmi les moins chers d'Asie, et les applications locales facilitent vraiment le quotidien. Ce guide te donne tout ce qu'il faut savoir pour choisir ta SIM et t'équiper dès le premier jour.</p>
 
-    <img class="article-photo" src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1200&q=80" alt="Smartphone SIM Vietnam internet" width="1200" height="675" loading="lazy">
+    <img class="article-photo" src="assets/img/sim-viettel-5g-esim-vietnam.jpg" alt="Carte SIM Viettel 5G et eSIM au Vietnam" width="1200" height="675" loading="lazy">
+
+    <h2 id="section-francais">Utiliser ton forfait français au Vietnam : à quel prix ?</h2>
+    <p>Techniquement, ça fonctionne. La plupart des opérateurs français (Orange, SFR, Bouygues, Free) proposent du roaming en Asie. Mais les conditions varient considérablement :</p>
+    <ul>
+      <li><strong>Free Mobile</strong> — propose du roaming dans certaines destinations, mais le Vietnam n'est généralement pas inclus. À vérifier sur ton espace client avant le départ.</li>
+      <li><strong>Orange, SFR, Bouygues</strong> — des options roaming à la journée (5–10 €/jour) ou à la semaine, avec un volume de données limité.</li>
+    </ul>
+    <div class="warning-box">
+      <strong>⚠️ Attention aux frais cachés :</strong>
+      Sans option activée, les tarifs de roaming hors forfait peuvent atteindre <strong>plusieurs euros par mégaoctet</strong>. Vérifie ton contrat avant le départ et active une option roaming si tu comptes sur ton forfait français les premiers jours.
+    </div>
+    <p><strong>Verdict :</strong> utile pour les premières heures après l'atterrissage (Grab, hôtel, WhatsApp), mais pas viable sur la durée. Pour un séjour de plus de 3 jours, une SIM locale sera toujours bien plus économique.</p>
 
     <h2 id="section-1">Les opérateurs vietnamiens et la qualité du réseau</h2>
     <p>Trois opérateurs dominent le marché mobile vietnamien :</p>
@@ -242,6 +257,11 @@ include 'header.php';
     <div style="background:#f5eedf;border-left:4px solid #d39a2a;padding:1.25rem 1.5rem;border-radius:8px;margin:1.5rem 0;font-size:.92rem;line-height:1.7">
       <strong style="display:block;margin-bottom:.4rem">📱 Mon expérience personnelle</strong>
       À Hanoï, j'ai opté pour la formule annuelle la plus simple : <strong>2 500 000 VND à l'année</strong>. Elle inclut 2 heures d'appels (pas illimités) et les SMS illimités, mais sans data incluse. Comme j'ai le WiFi chez moi et dans les cafés que je fréquente, ça me suffit largement pour les appels occasionnels. Je recharge un pack data ponctuel quand je suis en déplacement. Simple, économique, sans abonnement mensuel à surveiller.
+    </div>
+
+    <div class="tip-box">
+      <strong>💡 Double SIM : le combo gagnant pour les expatriés :</strong>
+      Si ton téléphone est double SIM, garde ta SIM française pour les appels et les authentifications (banque, impôts, Ameli) et mets la SIM vietnamienne pour les données et le quotidien local. C'est ce que je fais depuis des années — les deux SIM actives en parallèle, zéro compromis.
     </div>
 
     <h2 id="section-3">Comparatif des forfaits data</h2>
@@ -454,6 +474,75 @@ include 'header.php';
       <strong>Recharge en ligne :</strong> Tu peux recharger ta SIM via l'application de ton opérateur, dans les supermarchés (Vinmart, Co.opmart) ou sur des sites comme <em>naptienhanh.vn</em>. Pratique pour éviter de chercher un point de vente physique.
     </div>
 
+    <h2 id="section-int">SIM internationale multi-pays pour l'Asie</h2>
+    <p>Si tu visites plusieurs pays d'Asie en un seul voyage (Vietnam + Thaïlande, Singapour, Bali...), une SIM internationale peut simplifier la logistique — pas besoin de racheter une SIM à chaque frontière.</p>
+
+    <div class="aff-cta aff-cta--amber">
+      <div class="aff-cta__icon">📶</div>
+      <div class="aff-cta__body">
+        <div class="aff-cta__title">SIM prépayée Asie-Pacifique — 12 pays dont Vietnam, Thaïlande, Singapour</div>
+        <div class="aff-cta__text">Données illimitées avec 7 Go en haut débit, valable 7 jours dans 12 pays d'Asie-Pacifique dont le Vietnam, Singapour, la Malaisie, l'Indonésie et la Thaïlande. Idéal pour un circuit multi-destinations sans gérer les SIM locales à chaque étape.</div>
+        <a href="https://amzn.to/43oxUEG" target="_blank" rel="noopener sponsored" class="aff-cta__btn">Voir la SIM Asie sur Amazon →</a>
+        <p class="aff-cta__note">Lien affilié Amazon — prix et disponibilité à vérifier avant commande.</p>
+      </div>
+    </div>
+
+    <ul>
+      <li>✅ Fonctionne dès l'arrivée — pas de file d'attente à l'aéroport</li>
+      <li>✅ Valable dans 12 pays — un seul achat pour un circuit Asie</li>
+      <li>✅ À commander depuis la France avant le départ</li>
+      <li>⚠️ Haut débit limité à 7 Go — au-delà, le débit est réduit</li>
+      <li>⚠️ Pas de numéro de téléphone vietnamien local — impossible de s'inscrire sur Grab ou Zalo avec ce seul numéro</li>
+      <li>⚠️ Valable 7 jours — pour un séjour plus long, tu auras besoin d'une SIM locale ensuite</li>
+    </ul>
+
+    <h3>Comparatif : forfait français vs SIM locale vs SIM internationale</h3>
+    <table class="comparison-table">
+      <thead>
+        <tr><th>Solution</th><th>Prix</th><th>Données</th><th>Numéro VN local</th><th>Multi-pays</th><th>Idéal pour</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Forfait français (roaming)</strong></td>
+          <td>5–15 €/jour</td>
+          <td>Variable</td>
+          <td>Non</td>
+          <td>Oui</td>
+          <td>Dépannage 1–2 jours</td>
+        </tr>
+        <tr>
+          <td><strong>SIM locale Viettel/Mobifone</strong></td>
+          <td>4–8 € / 30 jours</td>
+          <td>20–60 Go/mois</td>
+          <td>Oui</td>
+          <td>Non (VN uniquement)</td>
+          <td>Séjour &gt; 1 semaine</td>
+        </tr>
+        <tr>
+          <td><strong><a href="https://amzn.to/43oxUEG" target="_blank" rel="noopener sponsored">SIM Asie multi-pays</a></strong></td>
+          <td>~15–25 € / 7 jours</td>
+          <td>7 Go haut débit</td>
+          <td>Non</td>
+          <td>Oui (12 pays)</td>
+          <td>Circuit Asie multi-pays</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 id="section-profil">Mon choix selon ton profil</h2>
+
+    <h3>Tu arrives pour la première fois, séjour de 1 à 2 semaines</h3>
+    <p>Achète une SIM locale à l'aéroport dès l'arrivée. Compte 5–10 minutes en boutique Viettel ou Mobifone. Tu repars avec un numéro local, 30 Go de données et Grab installé — tout ce qu'il faut pour les 30 premiers jours.</p>
+
+    <h3>Tu fais l'Asie du Sud-Est en plusieurs étapes</h3>
+    <p>Une SIM internationale commandée en avance simplifie la logistique. Tu la branches à l'atterrissage — pas de file à l'aéroport, couverture dans tous tes pays d'escale. Limitée à 7 jours, donc si tu restes plus longtemps au Vietnam, passe ensuite sur une SIM locale Viettel.</p>
+
+    <h3>Tu t'installes au Vietnam pour plusieurs mois</h3>
+    <p>SIM locale Viettel sans hésitation. Renouvelable mensuellement, très bon marché, numéro local indispensable pour les démarches et les applications locales. La formule annuelle (2 500 000 VND/an, SMS illimités + 2h d'appels) est particulièrement économique si tu as le WiFi chez toi.</p>
+
+    <h3>Ton téléphone est compatible eSIM</h3>
+    <p>Les trois grands opérateurs proposent des eSIM depuis 2023–2024. La procédure d'activation est un peu plus complexe qu'une SIM physique, mais si ton appareil est compatible (iPhone XS et ultérieurs, certains Android récents), c'est une option sans manipulation physique — pratique si ton téléphone n'a qu'un seul slot.</p>
+
     <h2 id="section-4">Internet fixe à domicile</h2>
     <p>Pour un appartement, la fibre optique est disponible dans la quasi-totalité des villes via trois grands fournisseurs : <strong>FPT</strong>, <strong>Viettel Home</strong> et <strong>VNPT</strong>. Les débits sont excellents — 100 à 200 Mbps en utilisation réelle — et les tarifs très attractifs pour un Européen :</p>
     <ul>
@@ -570,25 +659,10 @@ include 'header.php';
         </div>
       </div>
     </div>
-    <div style="background:linear-gradient(135deg,#1a1a2e 0%,#16213e 100%);border-radius:14px;padding:2.25rem 2rem;text-align:center;margin:2rem 0">
-      <div style="font-size:2.25rem;margin-bottom:.65rem">💬</div>
-      <div style="color:#faf8f4;font-weight:700;font-size:1.1rem;margin-bottom:.5rem">Rejoins la communauté</div>
-      <div style="color:rgba(250,248,244,.65);font-size:.88rem;line-height:1.65;margin-bottom:1.25rem;max-width:460px;margin-left:auto;margin-right:auto">Discute avec d'autres expats et couples franco-vietnamiens — questions SIM, opérateurs, applications locales.</div>
-      <div style="display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap">
-      <a href="https://www.facebook.com/groups/capvietnam" target="_blank" rel="noopener"
-         style="display:inline-flex;align-items:center;gap:.5rem;background:#1877f2;color:#fff;padding:.6rem 1.2rem;border-radius:8px;font-size:.88rem;font-weight:600;text-decoration:none">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
-        Groupe Facebook privé
-      </a>
-      <a href="https://discord.gg/bJGHy7ZE7" target="_blank" rel="noopener"
-         style="display:inline-flex;align-items:center;gap:.5rem;background:#5865f2;color:#fff;padding:.6rem 1.2rem;border-radius:8px;font-size:.88rem;font-weight:600;text-decoration:none">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0"><path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03z"/></svg>
-        Serveur Discord
-      </a>
-      </div>
-    </div>
   </main>
 </div>
+
+<?php include '_article-comments.php'; ?>
 
 <?php
 require_once __DIR__ . '/config/site.php';

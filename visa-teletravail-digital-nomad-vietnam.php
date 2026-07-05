@@ -226,6 +226,14 @@ include 'header.php';
     </div>
     <?php endforeach; ?>
 
+    <div class="tip-box" style="margin-bottom:2rem;">
+      <strong>🏥 Assurance santé au Vietnam</strong> La Sécurité sociale française ne couvre pas les soins au Vietnam. En tant que digital nomad ou télétravailler en mobilité, couvres-toi dès l'arrivée avec une assurance voyage étendue. Je recommande <strong>ACS</strong> (partenaire du blog) :
+      <ul style="margin:0.75rem 0 0;padding-left:1.2rem;">
+        <li><a href="https://www.acs-ami.com/fr/assurance-voyage/globe-traveller/?part=blogcapvietnam&utm_source=blog-capvietnam&utm_medium=aff-link" target="_blank" rel="noopener sponsored"><strong>Globe Traveller</strong></a> — jusqu'à 66 ans, couverture médicale jusqu'à 500 000 €, jusqu'à 12 mois, à partir de 25 €</li>
+        <li><a href="https://www.acs-ami.com/fr/assurance-voyage/globe-partner/?part=blogcapvietnam&utm_source=blog-capvietnam&utm_medium=aff-link" target="_blank" rel="noopener sponsored"><strong>Globe Partner</strong></a> — moins de 40 ans, à partir de 16,50 €, idéal budget nomade</li>
+      </ul>
+    </div>
+
     <div class="cta-newsletter">
       <h3>Reçois mes prochains articles</h3>
       <p>📥 <strong>Guide PDF + 3 modèles de lettres offerts</strong> dès l'inscription. Un email par mois, désinscription en 1 clic.</p>

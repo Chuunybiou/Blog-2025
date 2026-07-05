@@ -7,8 +7,8 @@ $page_canonical   = SITE_URL . '/cafes-coworkings-hanoi';
 $page_og_title    = 'Cafés et coworkings à Hanoï : guide pour télétravailleurs 2026';
 $page_og_desc     = 'Sélection des meilleurs espaces pour télétravailler à Hanoï : Toong, Circo, Minna.';
 $page_og_url      = 'https://blog-capvietnam.fr/cafes-coworkings-hanoi';
-$page_og_image    = 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Cafes et coworkings a Hanoi : les meilleures adresses 2026","datePublished":"2026-03-22","dateModified":"2026-03-22","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80","description":"Selection des meilleurs espaces pour teletravailler a Hanoi : Toong, Circo, Minna.","timeRequired":"PT8M","inLanguage":"fr","url":"https://blog-capvietnam.fr/cafes-coworkings-hanoi"}';
+$page_og_image    = SITE_URL . '/assets/img/cafe-trung-nguyen-legend-vietnam.jpg';
+$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Cafes et coworkings a Hanoi : les meilleures adresses 2026","datePublished":"2026-03-22","dateModified":"2026-03-22","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://blog-capvietnam.fr/logo-entreprise.png"}},"image":"assets/img/cafe-trung-nguyen-legend-vietnam.jpg","description":"Selection des meilleurs espaces pour teletravailler a Hanoi : Toong, Circo, Minna.","timeRequired":"PT8M","inLanguage":"fr","url":"https://blog-capvietnam.fr/cafes-coworkings-hanoi"}';
 
 $article_color   = 'amber';
 $article_hero_bg = '#3a2800';
@@ -73,7 +73,7 @@ include 'header.php';
   <main class="article-content">
     <p><strong>Hanoï concentre un écosystème de travail à distance de qualité.</strong> Entre coworkings modernes, cafés au style indochinois et spots secrets dans les ruelles du Vieux Quartier, la ville offre de nombreuses options pour allier productivité et cadre de vie. Voici notre sélection testée sur le terrain.</p>
 
-    <img class="article-photo" src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80" alt="Espace de coworking moderne à Hanoï" width="1200" height="675" loading="lazy">
+    <img class="article-photo" src="assets/img/cafe-trung-nguyen-legend-vietnam.jpg" alt="Café Trung Nguyên Legend — télétravailler dans un café au Vietnam" width="1200" height="675" loading="lazy">
 
     <h2 id="section-1">Les critères pour bien choisir son spot de travail</h2>
     <p>Un bon espace de travail à Hanoï doit répondre à plusieurs exigences pratiques avant d'être photogénique :</p>

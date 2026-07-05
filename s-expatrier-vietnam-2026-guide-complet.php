@@ -173,6 +173,10 @@ include 'header.php';
       <strong>📖 Article détaillé :</strong> <a href="assurance-sante-vietnam-expat">Assurance santé au Vietnam pour expatriés — comparatif 2026</a>
     </div>
 
+    <div class="tip-box">
+      <strong>💼 Pour les premiers mois ou un séjour inférieur à 12 mois :</strong> Une assurance voyage étendue est la solution la plus rapide à souscrire avant le départ. Je recommande <strong>ACS</strong> (partenaire du blog) : <a href="https://www.acs-ami.com/fr/assurance-voyage/globe-traveller/?part=blogcapvietnam&utm_source=blog-capvietnam&utm_medium=aff-link" target="_blank" rel="noopener sponsored"><strong>Globe Traveller</strong></a> (jusqu'à 66 ans, à partir de 25€) ou <a href="https://www.acs-ami.com/fr/assurance-voyage/globe-partner/?part=blogcapvietnam&utm_source=blog-capvietnam&utm_medium=aff-link" target="_blank" rel="noopener sponsored"><strong>Globe Partner</strong></a> (moins de 40 ans, à partir de 16,50€). Rapatriement inclus, souscription immédiate.
+    </div>
+
     <!-- ════════════════════════════════ BANQUES ════════════════════════════════ -->
     <h2 id="banques">4. Banques — gérer son argent depuis la France ou le Canada</h2>
 
@@ -425,6 +429,8 @@ include 'header.php';
 
   </main>
 </div>
+
+<?php include '_article-comments.php'; ?>
 
 <?php include '_related-articles.php'; ?>
 <?php include '_article-js.php'; ?>

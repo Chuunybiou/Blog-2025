@@ -234,6 +234,15 @@ include 'header.php';
       </ul>
     </div>
 
+    <!-- ASSURANCE ACS -->
+    <div class="tip-box" style="margin-top:2rem;">
+      <strong>✈️ Et l'assurance voyage ?</strong> Ne pars pas sans couverture médicale — les hôpitaux internationaux à Hanoï facturent en dollars et la Sécu française ne rembourse pas hors UE. Deux options recommandées chez <strong>ACS</strong> (partenaire du blog) :
+      <ul style="margin:0.75rem 0 0;padding-left:1.2rem;">
+        <li><a href="https://www.acs-ami.com/fr/assurance-voyage/globe-traveller/?part=blogcapvietnam&utm_source=blog-capvietnam&utm_medium=aff-link" target="_blank" rel="noopener sponsored"><strong>Globe Traveller</strong></a> — tous voyageurs jusqu'à 66 ans, à partir de 25 €, jusqu'à 12 mois</li>
+        <li><a href="https://www.acs-ami.com/fr/assurance-voyage/globe-partner/?part=blogcapvietnam&utm_source=blog-capvietnam&utm_medium=aff-link" target="_blank" rel="noopener sponsored"><strong>Globe Partner</strong></a> — moins de 40 ans, à partir de 16,50 €, idéal pour un voyage long ou une première installation</li>
+      </ul>
+    </div>
+
     <!-- CTA NEWSLETTER -->
     <div class="cta-newsletter" style="background:linear-gradient(135deg,#001a0d,#003a1a);margin-top:3rem;">
       <h3>📥 Alertes admin &amp; bons plans du mois</h3>
@@ -258,6 +267,8 @@ include 'header.php';
 
   </article>
 </div>
+
+<?php include '_article-comments.php'; ?>
 
 <?php include '_article-js.php'; ?>
 <?php include 'footer.php'; ?>

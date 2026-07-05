@@ -7,14 +7,14 @@ $page_canonical   = SITE_URL . '/achat-immobilier-vietnam-couple-mixte';
 $page_og_title    = 'Acheter au Vietnam en couple franco-vietnamien : ce que la loi dit vraiment (2026)';
 $page_og_desc     = 'Droit d\'usage 50 ans, achat au nom du conjoint vietnamien, risques en cas de divorce ou décès — tout ce qu\'un couple franco-vietnamien doit savoir avant d\'acheter au Vietnam.';
 $page_og_url      = $page_canonical;
-$page_og_image    = 'https://images.unsplash.com/photo-1583417267826-aebc4d1542e1?w=1200&q=80';
+$page_og_image    = SITE_URL . '/assets/img/maison-communale-nuit-ninh-binh.jpg';
 
 $page_schema = json_encode([
   '@context'         => 'https://schema.org',
   '@type'            => 'Article',
   'headline'         => 'Acheter un bien immobilier au Vietnam en couple franco-vietnamien (2026)',
   'description'      => $page_description,
-  'image'            => 'https://images.unsplash.com/photo-1583417267826-aebc4d1542e1?w=1200&q=80',
+  'image'            => 'assets/img/maison-communale-nuit-ninh-binh.jpg',
   'datePublished'    => '2026-06-22',
   'dateModified'     => '2026-06-22',
   'author'           => ['@type' => 'Person', 'name' => SITE_AUTHOR, 'url' => SITE_URL . '/a-propos-capvietnam'],
@@ -98,7 +98,7 @@ include 'header.php';
 
     <p>L'immobilier au Vietnam est un sujet qui revient souvent dans les couples franco-vietnamiens qui envisagent de s'installer là-bas. La réponse honnête : c'est possible, mais les règles sont complexes, en constante évolution, et les risques pour le conjoint étranger sont réels. Voici ce que j'ai compris après avoir épluché la loi foncière vietnamienne.</p>
 
-    <img class="article-photo" src="https://images.unsplash.com/photo-1583417267826-aebc4d1542e1?w=1200&q=80" alt="Immeubles résidentiels à Hanoï — achat immobilier Vietnam couple mixte" width="1200" height="675" loading="lazy">
+    <img class="article-photo" src="assets/img/maison-communale-nuit-ninh-binh.jpg" alt="Maison communale vietnamienne la nuit à Ninh Binh — patrimoine et immobilier au Vietnam" width="1200" height="675" loading="lazy">
 
     <div class="info-box">
       <strong>⚠️ Ce guide est informatif, pas juridique.</strong> Le droit foncier vietnamien change régulièrement (loi de 2014, amendements 2022-2023, réforme en cours). Avant tout achat, consultez un avocat vietnamien agréé ou un notaire local. Ce guide vous donne les bases — il ne remplace pas un conseil professionnel.
@@ -207,6 +207,8 @@ include 'header.php';
   </article>
 
 </div>
+
+<?php include '_article-comments.php'; ?>
 
 <?php include '_article-js.php'; ?>
 <?php include 'footer.php'; ?>

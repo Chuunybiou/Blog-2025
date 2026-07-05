@@ -7,8 +7,8 @@ $page_canonical   = SITE_URL . '/differences-culturelles-couple-franco-vietnamie
 $page_og_title    = 'Différences culturelles dans un couple franco-vietnamien';
 $page_og_desc     = 'Famille, argent, communication : les vraies différences culturelles dans un couple franco-vietnamien.';
 $page_og_url      = 'https://blog-capvietnam.fr/differences-culturelles-couple-franco-vietnamien';
-$page_og_image    = 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Differences culturelles en couple franco-vietnamien","datePublished":"2026-03-05","dateModified":"2026-03-05","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1200&q=80","description":"Famille, argent, communication : les vraies differences culturelles dans un couple franco-vietnamien.","timeRequired":"PT7M","inLanguage":"fr","url":"https://blog-capvietnam.fr/differences-culturelles-couple-franco-vietnamien"}';
+$page_og_image    = SITE_URL . '/assets/img/repas-bun-boeuf-vietnam.jpg';
+$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Differences culturelles en couple franco-vietnamien","datePublished":"2026-03-05","dateModified":"2026-03-05","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://blog-capvietnam.fr/logo-entreprise.png"}},"image":"assets/img/repas-bun-boeuf-vietnam.jpg","description":"Famille, argent, communication : les vraies differences culturelles dans un couple franco-vietnamien.","timeRequired":"PT7M","inLanguage":"fr","url":"https://blog-capvietnam.fr/differences-culturelles-couple-franco-vietnamien"}';
 
 $article_color   = 'jade';
 $article_hero_bg = '#1a3a1e';
@@ -73,7 +73,7 @@ include 'header.php';
   <main class="article-content">
     <p><strong>Un couple franco-vietnamien, c'est deux visions du monde qui cohabitent.</strong> Pas uniquement deux langues, deux cuisines ou deux paysages — deux façons fondamentalement différentes de concevoir la famille, l'argent, les émotions et le temps. Après 5 ans de vie commune à Hanoï, voici ce que j'ai appris.</p>
 
-    <img class="article-photo" src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1200&q=80&fit=crop" alt="Couple dans les rues de Hanoï" width="1200" height="675" loading="lazy">
+    <img class="article-photo" src="assets/img/repas-bun-boeuf-vietnam.jpg&fit=crop" alt="Bún bò — repas partagé en famille au Vietnam, au cœur des différences culturelles" width="1200" height="675" loading="lazy">
 
     <h2 id="section-1">La famille : collectif avant individu</h2>
     <p>C'est probablement la différence la plus profonde et la plus quotidienne. En France, l'individu est l'unité de base : tu prends tes décisions, tu assumes tes choix, tu vis ta vie. Au Vietnam, la famille élargie est le centre de gravité. Les décisions importantes — où vivre, quelle voiture acheter, quand avoir des enfants — se prennent en consultation avec les parents, parfois les grands-parents.</p>

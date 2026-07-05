@@ -19,13 +19,17 @@ $page_extra_css   = $page_extra_css   ?? '';
 <html lang="<?= htmlspecialchars($page_lang) ?>">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title><?= htmlspecialchars($page_title) ?></title>
+<meta name="description" content="<?= htmlspecialchars($page_description) ?>">
+<meta name='impact-site-verification' value='92815f1a-4182-4e5e-9001-79e777d23b09'>
+<!-- Preconnect tiers -->
+<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+<link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com" crossorigin>
 <!-- Google Analytics 4 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-6Q6E8EEN7F"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-6Q6E8EEN7F');</script>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title><?= htmlspecialchars($page_title) ?></title>
-<meta name='impact-site-verification' value='92815f1a-4182-4e5e-9001-79e777d23b09'>
-<meta name="description" content="<?= htmlspecialchars($page_description) ?>">
 <meta name="author" content="Anthony Bouillon">
 <meta name="robots" content="<?= ($page_noindex ?? false) ? 'noindex, nofollow' : 'index, follow' ?>">
 <meta name="google-site-verification" content="8oAHVfQ6RoBt-EnNRRPUOwcZOCZibxOHSAKwPsh-AwY" />
@@ -428,9 +432,22 @@ footer {
       </li>
       <li><a href="<?= $path_prefix ?>guide-cap-vietnam-2026" class="nav-guide-cta">Guide</a></li>
       <li><a href="<?= $path_prefix ?>a-propos-capvietnam">À propos</a></li>
-      <?php if ($page_lang_switch): ?>
-      <li><a href="<?= htmlspecialchars($page_lang_switch['href']) ?>" title="<?= htmlspecialchars($page_lang_switch['title']) ?>" class="nav-lang-switch"><?= $page_lang_switch['label'] ?></a></li>
-      <?php endif; ?>
+      <?php
+      if ($page_lang_switch) {
+        $_l_href  = htmlspecialchars($page_lang_switch['href']);
+        $_l_label = $page_lang_switch['label'];
+        $_l_title = htmlspecialchars($page_lang_switch['title']);
+      } elseif (($page_lang ?? 'fr') === 'vi') {
+        $_l_href  = SITE_URL . '/';
+        $_l_label = '🇫🇷 Français';
+        $_l_title = 'Version française';
+      } else {
+        $_l_href  = SITE_URL . '/vi/';
+        $_l_label = '🇻🇳 Tiếng Việt';
+        $_l_title = 'Phiên bản tiếng Việt';
+      }
+      ?>
+      <li><a href="<?= $_l_href ?>" title="<?= $_l_title ?>" class="nav-lang-switch"><?= $_l_label ?></a></li>
     </ul>
     <button class="nav-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu">
       <span></span><span></span><span></span>

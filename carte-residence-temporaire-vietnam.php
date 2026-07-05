@@ -7,8 +7,8 @@ $page_canonical   = SITE_URL . '/carte-residence-temporaire-vietnam';
 $page_og_title    = 'Carte de résidence temporaire au Vietnam : guide complet 2026';
 $page_og_desc     = 'Comment obtenir la carte de résidence temporaire au Vietnam : types, documents et procédure.';
 $page_og_url      = 'https://blog-capvietnam.fr/carte-residence-temporaire-vietnam';
-$page_og_image    = 'https://images.unsplash.com/photo-1568992688065-536aad8a12f6?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"La carte de residence temporaire au Vietnam","datePublished":"2026-02-15","dateModified":"2026-02-15","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1568992688065-536aad8a12f6?w=1200&q=80","description":"Comment obtenir la carte de residence temporaire au Vietnam : types, documents et procedure.","timeRequired":"PT6M","inLanguage":"fr","url":"https://blog-capvietnam.fr/carte-residence-temporaire-vietnam"}';
+$page_og_image    = SITE_URL . '/assets/img/village-enfant-velo-montagne-vietnam.jpg';
+$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"La carte de residence temporaire au Vietnam","datePublished":"2026-02-15","dateModified":"2026-02-15","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://blog-capvietnam.fr/logo-entreprise.png"}},"image":"assets/img/village-enfant-velo-montagne-vietnam.jpg","description":"Comment obtenir la carte de residence temporaire au Vietnam : types, documents et procedure.","timeRequired":"PT6M","inLanguage":"fr","url":"https://blog-capvietnam.fr/carte-residence-temporaire-vietnam"}';
 
 $article_color   = 'terracotta';
 $article_hero_bg = '#3a1a0a';
@@ -80,7 +80,7 @@ include 'header.php';
 
     <p><strong>La carte de résidence temporaire est le sésame de l'expatrié au Vietnam.</strong> Elle remplace les allers-retours aux frontières, simplifie l'ouverture d'un compte bancaire, l'obtention d'un permis de conduire et les démarches administratives au quotidien. Voici comment l'obtenir selon la Loi sur l'entrée, la sortie, le transit et la résidence des étrangers (Loi n°51/2019/QH14).</p>
 
-    <img class="article-photo" src="https://images.unsplash.com/photo-1568992688065-536aad8a12f6?w=1200&q=80" alt="Documents administratifs au Vietnam" width="1200" height="675" loading="lazy">
+    <img class="article-photo" src="assets/img/village-enfant-velo-montagne-vietnam.jpg" alt="Enfant à vélo dans un village de montagne au Vietnam — vie quotidienne et résidence" width="1200" height="675" loading="lazy">
 
     <h2 id="section-1">Qu'est-ce que la thẻ tạm trú ?</h2>
     <p>La <em>thẻ tạm trú</em> (carte de résidence temporaire) est un titre de séjour délivré aux étrangers résidant légalement au Vietnam pour une durée déterminée. Elle est distincte du visa (qui autorise l'entrée) et de la <em>thẻ thường trú</em> (résidence permanente, réservée aux étrangers mariant un(e) ressortissant(e) vietnamien(ne) ou après 3 ans de résidence temporaire continue).</p>

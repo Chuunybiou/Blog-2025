@@ -83,6 +83,9 @@ include 'header.php';
       <li><a href="#section-3">Comment je gère sans compte local</a></li>
       <li><a href="#section-4">Les 2 cas où c'est indispensable</a></li>
       <li><a href="#section-5">Comparatif des banques</a></li>
+      <li><a href="#section-mobile">Paiements mobiles</a></li>
+      <li><a href="#section-vnd">Compte VND ou USD ?</a></li>
+      <li><a href="#section-securite">Sécurité bancaire</a></li>
       <li><a href="#section-6">Documents et conditions</a></li>
       <li><a href="#section-7">Côté France : quel compte garder</a></li>
       <li><a href="#section-faq">Questions fréquentes</a></li>
@@ -312,6 +315,55 @@ include 'header.php';
     <p>Source et vérification : <a href="https://www.vietcombank.com.vn/en" rel="noopener" target="_blank">Vietcombank.com.vn/en</a></p>
 
     <p>Et si tu as besoin de gérer des flux internationaux en parallèle de ton compte vietnamien (recevoir depuis la France, envoyer à des clients étrangers), <a href="<?= SITE_URL ?>/go.php?id=wise" rel="noopener sponsored" target="_blank"><strong>Wise reste plus avantageux</strong></a> qu'un virement bancaire classique depuis le Vietnam.</p>
+
+    <!-- ============================
+         H2 MOBILE — Paiements mobiles
+    ============================= -->
+    <h2 id="section-mobile">Paiements mobiles : MoMo, ZaloPay et VNPay</h2>
+
+    <p>En complément du système VietQR (détaillé en section 2), trois applications de portefeuille électronique dominent le marché des petits paiements au Vietnam :</p>
+    <ul>
+      <li><strong>MoMo</strong> : le leader incontesté avec plus de 30 millions d'utilisateurs. Accepté dans la quasi-totalité des restaurants, supermarchés, pharmacies et services. Nécessite un numéro de téléphone vietnamien et peut être lié à un compte bancaire local ou rechargé en espèces chez un agent MoMo.</li>
+      <li><strong>ZaloPay</strong> : intégré à l'application de messagerie Zalo — l'équivalent vietnamien de WhatsApp. Très pratique pour les paiements entre particuliers et dans les commerces partenaires.</li>
+      <li><strong>VNPay</strong> : solution inter-bancaire large, notamment acceptée pour régler les factures d'eau et d'électricité en ligne, les transports en commun et les achats e-commerce.</li>
+    </ul>
+    <div class="info-box">
+      <strong>📱 L'accès à ces apps sans compte local :</strong>
+      MoMo et ZaloPay nécessitent un numéro de téléphone vietnamien pour l'inscription. Si tu passes par le compte de ta femme ou d'un partenaire local pour les paiements QR du quotidien, ces applications s'offrent naturellement à eux. Sans compte local ni numéro vietnamien, elles restent inaccessibles — c'est une limite concrète du setup "sans compte VN".
+    </div>
+
+    <!-- ============================
+         H2 VND — Compte VND ou USD
+    ============================= -->
+    <h2 id="section-vnd">Compte VND ou compte USD ?</h2>
+
+    <p>Si tu ouvres un compte au Vietnam, tu peux ouvrir les deux simultanément dans la même banque. Voici la logique :</p>
+    <ul>
+      <li><strong>Compte VND</strong> : pour toutes les dépenses quotidiennes (loyer, courses, restaurants, transports). C'est le compte principal si tu vis au Vietnam — les transactions courantes doivent se faire en dong.</li>
+      <li><strong>Compte USD</strong> : pour recevoir des virements internationaux ou des revenus en devises. Les intérêts sur dépôt USD sont proches de 0 % depuis 2023 selon la réglementation de la Banque d'État du Vietnam — l'intérêt est dans la flexibilité, pas dans le rendement.</li>
+    </ul>
+    <div class="warning-box">
+      <strong>⚠️ Réglementation sur les devises :</strong>
+      La réglementation vietnamienne (Ordonnance sur les changes de 2005, modifiée en 2013) interdit en principe les transactions courantes en devises entre résidents sur le territoire. Loyers, salaires et achats courants doivent se faire en VND. Le compte USD sert principalement à recevoir et convertir de l'argent étranger — pas à payer ton loyer en dollars.
+    </div>
+
+    <!-- ============================
+         H2 SECURITE — Sécurité bancaire
+    ============================= -->
+    <h2 id="section-securite">Sécurité bancaire : les règles à ne jamais oublier</h2>
+
+    <p>Les fraudes bancaires au Vietnam ciblent principalement les transactions en ligne et les faux SMS (smishing). Quelques règles fondamentales :</p>
+    <ul>
+      <li><strong>Ne jamais partager ton OTP</strong> (code à usage unique) par téléphone ou SMS — aucune banque ne te le demandera jamais</li>
+      <li><strong>Activer les notifications push/SMS</strong> sur toutes les transactions : tu es alerté en temps réel de tout mouvement sur le compte</li>
+      <li><strong>Configurer un plafond quotidien</strong> de virement en ligne pour limiter les dommages en cas de compromission du compte</li>
+      <li><strong>Carte virtuelle</strong> : Techcombank et VPBank proposent des cartes virtuelles pour les achats en ligne — jamais le numéro de ta carte physique sur internet</li>
+      <li><strong>Inspecter les DAB visuellement</strong> avant d'insérer ta carte (les skimmers existent, même rares). Préfère les DAB situés dans les agences bancaires officielles.</li>
+    </ul>
+    <div class="tip-box">
+      <strong>💡 En cas de fraude — numéros d'urgence 24h/24 :</strong>
+      Appelle immédiatement ta banque pour bloquer ta carte. <strong>Vietcombank : 1800 545 413 — Techcombank : 1800 588 822 — HSBC : 1800 588 822</strong>. Dépose une plainte à la police locale dans les 24h pour lancer la procédure de remboursement.
+    </div>
 
     <!-- ============================
          H2 #6 — Documents

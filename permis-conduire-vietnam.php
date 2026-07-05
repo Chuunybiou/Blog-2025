@@ -7,8 +7,8 @@ $page_canonical   = SITE_URL . '/permis-conduire-vietnam';
 $page_og_title    = 'Permis de conduire au Vietnam : guide pour expatriés';
 $page_og_desc     = 'Conversion du permis français au Vietnam, catégories de permis et règles de circulation.';
 $page_og_url      = 'https://blog-capvietnam.fr/permis-conduire-vietnam';
-$page_og_image    = 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80';
-$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Permis de conduire au Vietnam : scooter, moto et voiture","datePublished":"2026-03-10","dateModified":"2026-03-10","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://blog-capvietnam.fr/logo-entreprise.png"}},"image":"https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80","description":"Conversion du permis francais au Vietnam, categories de permis et regles de circulation.","timeRequired":"PT5M","inLanguage":"fr","url":"https://blog-capvietnam.fr/permis-conduire-vietnam"}';
+$page_og_image    = SITE_URL . '/assets/img/vieux-quartier-hanoi-intersection.jpg';
+$page_schema      = '{"@context":"https://schema.org","@type":"BlogPosting","headline":"Permis de conduire au Vietnam : scooter, moto et voiture","datePublished":"2026-03-10","dateModified":"2026-03-10","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://blog-capvietnam.fr/a-propos"},"publisher":{"@type":"Organization","name":"Anthony Bouillon","logo":{"@type":"ImageObject","url":"https://blog-capvietnam.fr/logo-entreprise.png"}},"image":"assets/img/vieux-quartier-hanoi-intersection.jpg","description":"Conversion du permis francais au Vietnam, categories de permis et regles de circulation.","timeRequired":"PT5M","inLanguage":"fr","url":"https://blog-capvietnam.fr/permis-conduire-vietnam"}';
 
 $article_color   = 'terracotta';
 $article_hero_bg = '#3a1a0a';
@@ -75,7 +75,7 @@ include 'header.php';
   <main class="article-content">
     <p><strong>Conduire à Hanoï est une expérience à part entière.</strong> Scooters partout, klaxons constants, carrefours sans feux... Mais avec le bon permis et quelques règles de base, tu t'y feras. Voici comment être en règle avec la réglementation vietnamienne (Loi sur la circulation routière n°23/2008/QH12, modifiée en 2022).</p>
 
-    <img class="article-photo" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80" alt="Circulation à Hanoï" width="1200" height="675" loading="lazy">
+    <img class="article-photo" src="assets/img/vieux-quartier-hanoi-intersection.jpg" alt="Intersection dans le vieux quartier de Hanoï — circulation et permis de conduire au Vietnam" width="1200" height="675" loading="lazy">
 
     <h2 id="section-1">Peut-on conduire avec son permis français ?</h2>
     <p>Le permis français n'est <strong>pas reconnu directement au Vietnam</strong>. La France et le Vietnam n'ont pas signé d'accord de reconnaissance mutuelle des permis de conduire. En théorie, le Permis International (PI — Convention de Vienne de 1968) est reconnu, mais son application pratique au Vietnam est limitée et les forces de l'ordre peuvent ne pas l'accepter pour certains types de véhicules.</p>

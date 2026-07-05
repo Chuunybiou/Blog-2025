@@ -7,7 +7,7 @@ $page_canonical   = SITE_URL . '/argent-couple-franco-vietnamien';
 $page_og_title    = 'Argent et couple franco-vietnamien : transparence, famille, et ce qu\'on ne dit pas assez';
 $page_og_desc     = 'Comment gérer l\'argent dans un couple franco-vietnamien : soutien à la famille vietnamienne, partage des dépenses, communication financière. Mon expérience.';
 $page_og_url      = 'https://blog-capvietnam.fr/argent-couple-franco-vietnamien';
-$page_og_image    = 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=1200&q=80';
+$page_og_image    = SITE_URL . '/assets/img/repas-lau-saumon-vietnam.jpg';
 $page_schema      = '{"@context":"https://schema.org","@type":"Article","headline":"Argent et couple franco-vietnamien : ce qu\'on ne dit pas assez","datePublished":"2026-05-15","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://blog-capvietnam.fr/a-propos-capvietnam"},"publisher":{"@type":"Organization","name":"Anthony Bouillon"},"mainEntityOfPage":"https://blog-capvietnam.fr/argent-couple-franco-vietnamien","inLanguage":"fr","articleSection":"Couple franco-vietnamien"}';
 
 $article_color        = 'jade';
@@ -82,7 +82,7 @@ include 'header.php';
       Tout ce que j'écris ici reflète mon expérience personnelle avec ma femme et nos deux familles. Il serait absurde d'en faire une règle universelle. Chaque couple est différent. Chaque famille est différente. Lisez ceci comme un témoignage, pas comme un guide culturel.
     </div>
 
-    <img class="article-photo" src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=1200&q=80" alt="Budget et finances couple expatrié" width="1200" height="675" loading="lazy">
+    <img class="article-photo" src="assets/img/repas-lau-saumon-vietnam.jpg" alt="Lẩu cá hồi — repas en famille partagé au Vietnam, finances à deux" width="1200" height="675" loading="lazy">
 
     <h2 id="section-1">Le sujet qu'on évite — et pourquoi c'est une erreur</h2>
     <p>Quand on est au début d'une relation et que tout va bien, on n'a pas envie de parler d'argent. C'est casse-pieds, ça fait sérieux, ça peut créer des tensions là où il n'y en a pas encore. Alors on reporte. Et on reporte encore.</p>

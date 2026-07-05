@@ -35,6 +35,26 @@ if (!$id || !isset($destinations[$id])) {
     exit;
 }
 
+// ── Détection robots ─────────────────────────────────────────
+function is_bot(string $ua): bool {
+    if (empty(trim($ua))) return true;
+    $lower = strtolower($ua);
+    foreach (['bot', 'spider', 'crawl', 'slurp', 'curl', 'wget', 'python',
+              'scrapy', 'semrush', 'ahrefs', 'mj12', 'dotbot', 'petalbot',
+              'sistrix', 'facebookexternalhit', 'applebot', 'twitterbot',
+              'linkedinbot', 'whatsapp', 'telegram', 'discord', 'slack',
+              'preview', 'monitor', 'pingdom', 'uptimerobot'] as $kw) {
+        if (str_contains($lower, $kw)) return true;
+    }
+    return false;
+}
+
+// Ne pas loguer : robot OU propriétaire connecté (cookie _bco posé à la connexion stats)
+if (is_bot($_SERVER['HTTP_USER_AGENT'] ?? '') || !empty($_COOKIE['_bco'])) {
+    header('Location: ' . $destinations[$id], true, 302);
+    exit;
+}
+
 // Log click (best-effort — never block the redirect)
 $log_file = __DIR__ . '/data/clicks.json';
 try {

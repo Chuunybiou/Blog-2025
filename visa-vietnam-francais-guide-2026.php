@@ -7,7 +7,7 @@ $page_canonical   = SITE_URL . '/visa-vietnam-francais-guide-2026';
 $page_og_title    = 'Visa Vietnam pour un Français : le guide complet 2026';
 $page_og_desc     = 'E-visa, visa de travail, regroupement familial… Tout savoir sur les visas pour vivre au Vietnam.';
 $page_og_url      = 'https://blog-capvietnam.fr/visa-vietnam-francais-guide-2026';
-$page_og_image    = 'https://images.unsplash.com/photo-1555921015-5532091f6026?w=1200&q=80';
+$page_og_image    = SITE_URL . '/assets/img/village-route-karsts-phong-nha.jpg';
 $page_schema      = '{"@context":"https://schema.org","@type":"Article","headline":"Visa Vietnam pour un Français : le guide complet 2026","datePublished":"2026-04-01","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://blog-capvietnam.fr"},"publisher":{"@type":"Organization","name":"Anthony Bouillon"},"mainEntityOfPage":"https://blog-capvietnam.fr/visa-vietnam-francais-guide-2026","inLanguage":"fr","articleSection":"Démarches Administratives"}';
 
 $article_color   = 'jade';
@@ -74,7 +74,7 @@ include 'header.php';
   <main class="article-content">
     <p><strong>Tu veux t'installer au Vietnam mais tu ne sais pas quel visa choisir ?</strong> Normal — entre l'e-visa, le visa de travail, le visa de regroupement familial et les multiples sous-catégories, c'est un vrai casse-tête. Dans cet article, je te résume tout ce que j'ai appris en préparant ma propre expatriation.</p>
 
-    <img class="article-photo" src="https://images.unsplash.com/photo-1573270689103-d7a4e42b609a?w=1200&q=80" alt="Baie d'Ha Long, Vietnam" width="1200" height="675" loading="lazy">
+    <img class="article-photo" src="assets/img/village-route-karsts-phong-nha.jpg" alt="Village et route au milieu des karsts à Phong Nha — Vietnam" width="1200" height="675" loading="lazy">
 
     <div class="info-box">
       <strong>💡 Tu prévois de t'installer durablement ?</strong> Ce guide couvre les visas. Pour tout ce qui suit l'arrivée (logement, banque, santé, fiscalité), consulte le <a href="s-expatrier-vietnam-2026-guide-complet">guide complet s'expatrier au Vietnam 2026</a>.

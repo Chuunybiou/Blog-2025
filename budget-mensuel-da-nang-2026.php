@@ -6,7 +6,7 @@ $page_canonical   = SITE_URL . '/budget-mensuel-da-nang-2026';
 $page_og_title    = 'Budget mensuel à Da Nang 2026 : chiffres concrets pour les expatriés';
 $page_og_desc     = 'Combien coûte la vie à Da Nang ? Loyer, resto, plage, internet : budget détaillé pour 2026.';
 $page_og_url      = SITE_URL . '/budget-mensuel-da-nang-2026';
-$page_og_image    = 'https://images.unsplash.com/photo-1559592413-7cbb6e42f800?w=1200&q=80';
+$page_og_image    = SITE_URL . '/assets/img/pont-dragon-nuit-da-nang.jpg';
 $page_schema      = json_encode([
   '@context'        => 'https://schema.org',
   '@type'           => 'Article',
@@ -85,7 +85,7 @@ include 'header.php';
   <main class="article-content">
     <p><strong>Da Nang est en train de devenir la ville préférée des expatriés qui ne veulent pas vivre dans une mégapole.</strong> Mer, montagne, taille humaine, aéroport international, internet rapide et coût de la vie raisonnable — c'est la combinaison idéale pour beaucoup de nomades et d'expatriés. Voici ce que ça coûte vraiment d'y vivre en 2026.</p>
 
-    <img class="article-photo" src="https://images.unsplash.com/photo-1559592413-7cbb6e42f800?w=1200&q=80" alt="Da Nang plage Vietnam" width="1200" height="675" loading="lazy">
+    <img class="article-photo" src="assets/img/pont-dragon-nuit-da-nang.jpg" alt="Pont du Dragon illuminé la nuit, Da Nang — Vietnam" width="1200" height="675" loading="lazy">
 
     <div class="tip-box">
       <strong>Comparatif :</strong> Voir aussi <a href="budget-mensuel-hanoi-2026">Budget Hanoï</a> et <a href="budget-mensuel-hcmc-2026">Budget HCMV</a> pour comparer les trois grandes villes.

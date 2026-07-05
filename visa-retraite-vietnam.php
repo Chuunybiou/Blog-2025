@@ -6,7 +6,7 @@ $page_canonical   = SITE_URL . '/visa-retraite-vietnam';
 $page_og_title    = 'Visa retraite au Vietnam : quelles options pour les Français ?';
 $page_og_desc     = 'Visa DL, visa TT conjoint, visa électronique renouvelable — comment rester longtemps au Vietnam en tant que retraité français.';
 $page_og_url      = SITE_URL . '/visa-retraite-vietnam';
-$page_og_image    = 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80';
+$page_og_image    = SITE_URL . '/assets/img/rue-village-karsts-phong-nha.jpg';
 $page_schema      = json_encode([
   '@context'        => 'https://schema.org',
   '@type'           => 'Article',
@@ -38,6 +38,8 @@ include 'header.php';
 <div style="padding:4rem 2rem;text-align:center;color:#999">
   <p>🚧 Article en cours de rédaction</p>
 </div>
+
+<?php include '_article-comments.php'; ?>
 
 <?php include '_article-js.php'; ?>
 <?php include 'footer.php'; ?>

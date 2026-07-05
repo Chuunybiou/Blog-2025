@@ -1,7 +1,13 @@
 ﻿<?php
 require_once __DIR__ . '/config/site.php';
+
+// Compte dynamique d'articles publiés
+$_guide_articles_data  = json_decode(file_get_contents(__DIR__ . '/data/articles.json'), true);
+$_guide_article_count  = count(array_filter($_guide_articles_data['articles'] ?? [], fn($a) => ($a['published'] ?? true) !== false));
+unset($_guide_articles_data);
+
 $page_title       = 'Guide complet — couple franco-vietnamien au Vietnam 2026';
-$page_description = 'Mariage, visa, budget réel, travail en ligne, couple mixte — 42 articles + outils interactifs. Écrit par un Français vivant à Hanoï depuis 2025.';
+$page_description = 'Mariage, visa, budget réel, travail en ligne, couple mixte — ' . $_guide_article_count . ' articles + outils interactifs. Écrit par un Français vivant à Hanoï depuis 2025.';
 $page_canonical   = SITE_URL . '/guide-cap-vietnam-2026';
 $page_og_title    = 'Guide complet — S\'installer au Vietnam en couple franco-vietnamien';
 $page_og_desc     = 'Visa TT, mariage franco-vietnamien, budget 2026, travail en ligne, couple mixte — tout ce que j\'ai appris en le vivant à Hanoï, réuni en un guide gratuit.';
@@ -134,7 +140,7 @@ include 'header.php';
 <header class="guide-hero">
   <div class="guide-hero-inner">
     <div class="guide-hero-text">
-      <div class="guide-badge">📖 Guide gratuit · 42 articles · Mis à jour 2026</div>
+      <div class="guide-badge">📖 Guide gratuit · <?= $_guide_article_count ?> articles · Mis à jour 2026</div>
       <h1>Le guide complet pour vivre au Vietnam en <em>couple franco-vietnamien</em></h1>
       <p class="guide-hero-sub">Visa TT, mariage, budget réel à Hanoï, travail en ligne, belle-famille, couple mixte — tout ce que j'ai appris en le vivant, réuni en un seul endroit.</p>
       <p class="guide-meta">Par Anthony Bouillon · Français à Hanoï depuis 2025 · ~30 min de lecture</p>
@@ -479,7 +485,7 @@ include 'header.php';
   <h2>Questions fréquentes</h2>
   <div class="faq-item">
     <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Ce guide est-il vraiment gratuit ? <span class="faq-arrow">▼</span></button>
-    <div class="faq-answer">Oui, intégralement. Les 42 articles, les 4 outils interactifs et tous les guides de démarches sont accessibles gratuitement sur ce site, sans inscription.</div>
+    <div class="faq-answer">Oui, intégralement. Les <?= $_guide_article_count ?> articles, les 4 outils interactifs et tous les guides de démarches sont accessibles gratuitement sur ce site, sans inscription.</div>
   </div>
   <div class="faq-item">
     <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Les démarches décrites s'appliquent à toute la France ou seulement à Hanoï ? <span class="faq-arrow">▼</span></button>

@@ -1,6 +1,53 @@
 Options -Indexes
 ErrorDocument 404 /404-capvietnam.php
+
+# ── Cache navigateur ────────────────────────────────────────────────────────
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpeg        "access plus 1 year"
+  ExpiresByType image/png         "access plus 1 year"
+  ExpiresByType image/webp        "access plus 1 year"
+  ExpiresByType image/gif         "access plus 1 year"
+  ExpiresByType image/svg+xml     "access plus 1 year"
+  ExpiresByType image/x-icon      "access plus 1 year"
+  ExpiresByType font/woff2        "access plus 1 year"
+  ExpiresByType font/woff         "access plus 1 year"
+  ExpiresByType text/css          "access plus 6 months"
+  ExpiresByType application/javascript "access plus 6 months"
+  ExpiresByType text/javascript   "access plus 6 months"
+</IfModule>
+<IfModule mod_headers.c>
+  <FilesMatch "\.(jpg|jpeg|png|gif|webp|svg|ico)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  <FilesMatch "\.(woff2|woff|ttf|eot)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  <FilesMatch "\.(css|js)$">
+    Header set Cache-Control "public, max-age=15552000"
+  </FilesMatch>
+</IfModule>
+
+# ── En-têtes de sécurité ────────────────────────────────────────────────────
+<IfModule mod_headers.c>
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set X-Content-Type-Options "nosniff"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  Header set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+  Header set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
+</IfModule>
+
+# ── Compression Gzip ────────────────────────────────────────────────────────
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript text/javascript application/json text/xml application/xml
+</IfModule>
+
 RewriteEngine On
+
+# HTTP → HTTPS (production uniquement, pas en local)
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} blog-capvietnam\.fr [NC]
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
 # www → non-www
 RewriteCond %{HTTP_HOST} ^www\.blog-capvietnam\.fr$ [NC]
@@ -11,6 +58,13 @@ RewriteRule ^$ blog-capvietnam.php [L]
 
 # go.php — ne jamais réécrire
 RewriteRule ^go\.php$ - [L]
+
+# a-propos-capvietnam.html → URL canonique (vieux lien externe)
+RewriteRule ^a-propos-capvietnam\.html$ /a-propos-capvietnam [R=301,L]
+
+# Articles fusionnés — redirections canoniques
+RewriteRule ^telephone-vietnam-quelle-sim-choisir$ /sim-internet-applications-vietnam [R=301,L]
+RewriteRule ^compte-bancaire-vietnam-etranger$ /banque-vietnam-francais [R=301,L]
 
 # Redirect slug.php → slug sans extension (301)
 RewriteCond %{THE_REQUEST} \s/(.+)\.php[\s?] [NC]

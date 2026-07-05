@@ -2,6 +2,21 @@
     "featured_slug": "se-marier-vietnamienne-demarches-france",
     "articles": [
         {
+            "slug": "assurance-voyage-vietnam",
+            "title": "Assurance voyage Vietnam 2026 : Globe Traveller ou Globe Partner (ACS) ?",
+            "excerpt": "Quelle assurance voyage choisir pour le Vietnam ? Comparatif ACS Globe Traveller vs Globe Partner : garanties, tarifs réels, ce qui est couvert (dengue, rapatriement, moto) et comment souscrire en 5 minutes.",
+            "category": "vie-pratique",
+            "categoryLabel": "Vie pratique au Vietnam",
+            "date": "2026-07-03",
+            "dateLabel": "Juillet 2026",
+            "readTime": "7 min",
+            "emoji": "🛡️",
+            "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80",
+            "imageAlt": "Assurance voyage Vietnam — Globe Traveller et Globe Partner ACS",
+            "keywords": "assurance voyage vietnam 2026 globe traveller globe partner ACS comparatif garanties tarifs rapatriement dengue",
+            "published": true
+        },
+        {
             "slug": "declaration-pre-arrivee-vietnam-pai-2026",
             "title": "Déclaration pré-arrivée Vietnam (PAI) : la nouvelle formalité obligatoire 2026",
             "excerpt": "Depuis avril 2026, tous les voyageurs arrivant à HCMV, Hanoï, Da Nang ou Phu Quoc doivent remplir un formulaire PAI gratuit dans les 72h avant leur vol. Mode d'emploi complet.",
@@ -28,7 +43,7 @@
             "dateLabel": "Juin 2026",
             "readTime": "9 min",
             "emoji": "🇫🇷",
-            "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800&q=80",
+            "image": "assets/img/documents-ccam-mariage-etranger.jpg",
             "imageAlt": "Paris — naturalisation du conjoint vietnamien en France",
             "keywords": "naturalisation conjoint vietnamien france conditions dossier niveau francais B1 mariage"
         },
@@ -56,8 +71,8 @@
             "dateLabel": "Juin 2026",
             "readTime": "10 min",
             "emoji": "🏠",
-            "image": "https://images.unsplash.com/photo-1583417267826-aebc4d1542e1?w=800&q=80",
-            "imageAlt": "Immeubles résidentiels à Hanoï — achat immobilier Vietnam couple mixte",
+            "image": "assets/img/maison-communale-nuit-ninh-binh.jpg",
+            "imageAlt": "Maison communale vietnamienne la nuit à Ninh Binh — patrimoine et immobilier au Vietnam",
             "keywords": "achat immobilier vietnam couple mixte franco-vietnamien droit usage etranger loi"
         },
         {
@@ -242,8 +257,8 @@
             "dateLabel": "Mai 2026",
             "readTime": "8 min",
             "emoji": "🧳",
-            "image": "",
-            "imageAlt": "Produits français à ramener au Vietnam — bagages douane",
+            "image": "assets/img/com-tam-assiette-vietnam.jpg",
+            "imageAlt": "Assiette de cơm tấm — repas typique au Vietnam",
             "keywords": "ramener produits francais vietnam valise douane fromage vin medicaments cosmetiques"
         },
         {
@@ -258,7 +273,8 @@
             "emoji": "📱",
             "image": "assets/img/sim-viettel-5g-esim-vietnam.jpg",
             "imageAlt": "Carte SIM Viettel 5G eSIM au Vietnam",
-            "keywords": "telephone vietnam sim choisir viettel vinaphone mobifone sim internationale asie 4g"
+            "keywords": "telephone vietnam sim choisir viettel vinaphone mobifone sim internationale asie 4g",
+            "published": false
         },
         {
             "slug": "compte-bancaire-canada-europe-wealthsimple",
@@ -299,8 +315,8 @@
             "dateLabel": "Avril 2026",
             "readTime": "8 min",
             "emoji": "📋",
-            "image": "https://images.unsplash.com/photo-1555921015-5532091f6026?w=600&q=80",
-            "imageAlt": "Passeport et visa pour le Vietnam",
+            "image": "assets/img/village-route-karsts-phong-nha.jpg",
+            "imageAlt": "Village et route au milieu des karsts à Phong Nha — Vietnam",
             "keywords": "visa vietnam francais guide 2026"
         },
         {
@@ -362,7 +378,8 @@
             "emoji": "🏦",
             "image": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=600&q=80",
             "imageAlt": "Compte bancaire au Vietnam",
-            "keywords": "ouvrir compte bancaire vietnam etranger"
+            "keywords": "ouvrir compte bancaire vietnam etranger",
+            "published": false
         },
         {
             "slug": "assurance-sante-vietnam-expat",
@@ -388,8 +405,8 @@
             "dateLabel": "Fév 2026",
             "readTime": "6 min",
             "emoji": "🪪",
-            "image": "https://images.unsplash.com/photo-1568992688065-536aad8a12f6?w=600&q=80",
-            "imageAlt": "Documents officiels carte de résidence Vietnam",
+            "image": "assets/img/village-enfant-velo-montagne-vietnam.jpg",
+            "imageAlt": "Enfant à vélo dans un village de montagne au Vietnam — vie quotidienne et résidence",
             "keywords": "carte residence temporaire vietnam"
         },
         {
@@ -402,8 +419,8 @@
             "dateLabel": "Mars 2026",
             "readTime": "5 min",
             "emoji": "🛵",
-            "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
-            "imageAlt": "Scooter dans les rues de Hanoï",
+            "image": "assets/img/vieux-quartier-hanoi-intersection.jpg",
+            "imageAlt": "Intersection dans le vieux quartier de Hanoï — circulation et permis de conduire au Vietnam",
             "keywords": "permis conduire vietnam scooter moto"
         },
         {
@@ -416,8 +433,8 @@
             "dateLabel": "Mai 2026",
             "readTime": "10 min",
             "emoji": "💰",
-            "image": "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=600&q=80",
-            "imageAlt": "Budget finances couple franco-vietnamien",
+            "image": "assets/img/repas-lau-saumon-vietnam.jpg",
+            "imageAlt": "Lẩu cá hồi — repas en famille partagé au Vietnam, finances à deux",
             "keywords": "argent couple franco vietnamien finances transparence famille soutien"
         },
         {
@@ -464,8 +481,8 @@
             "dateLabel": "Mars 2026",
             "readTime": "7 min",
             "emoji": "🌏",
-            "image": "assets/img/mariage-franco-vietnamien-ceremonie.png",
-            "imageAlt": "Couple franco-vietnamien lors de leur mariage — différences culturelles",
+            "image": "assets/img/repas-bun-boeuf-vietnam.jpg",
+            "imageAlt": "Bún bò — repas partagé en famille au Vietnam, au cœur des différences culturelles",
             "keywords": "differences culturelles couple franco vietnamien"
         },
         {
@@ -506,8 +523,8 @@
             "dateLabel": "Fév 2026",
             "readTime": "9 min",
             "emoji": "🧧",
-            "image": "assets/img/tet-nouvel-an-vietnam-fleurs.jpg",
-            "imageAlt": "Fleurs de pêcher et décorations du Tết au Vietnam",
+            "image": "assets/img/plateau-poulet-riz-gluant-vietnam.jpg",
+            "imageAlt": "Plateau de poulet et riz gluant — repas traditionnel du Tết au Vietnam",
             "keywords": "tet nouvel an lunaire famille vietnamienne"
         },
         {
@@ -605,7 +622,7 @@
             "dateLabel": "Avril 2026",
             "readTime": "Outil interactif",
             "emoji": "🧮",
-            "image": "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=600&q=80",
+            "image": "assets/img/repas-lau-saumon-vietnam.jpg",
             "imageAlt": "Calculateur budget Vietnam expatrié",
             "keywords": "calculateur budget vietnam mensuel euros vnd expatrie"
         },
@@ -682,7 +699,7 @@
             "dateLabel": "Juin 2026",
             "readTime": "7 min",
             "emoji": "📜",
-            "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800&q=80",
+            "image": "assets/img/documents-ccam-mariage-etranger.jpg",
             "imageAlt": "Documents CCAM mariage franco-vietnamien",
             "keywords": "ccam certificat capacite mariage vietnam consulat france avant mariage gratuit",
             "silo": "france",
@@ -847,8 +864,8 @@
             "dateLabel": "Juin 2026",
             "readTime": "9 min",
             "emoji": "🏖️",
-            "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80",
-            "imageAlt": "Retraite au Vietnam plage",
+            "image": "assets/img/rue-village-karsts-phong-nha.jpg",
+            "imageAlt": "Village et karsts à Phong Nha — paysages du Vietnam pour la retraite",
             "keywords": "visa retraite vietnam francais conditions sejour long visa DL visa TT expatrie",
             "published": false
         },
@@ -987,8 +1004,8 @@
             "dateLabel": "Juin 2026",
             "readTime": "7 min",
             "emoji": "🏯",
-            "image": "https://images.unsplash.com/photo-1540261007661-d2c56aec1b2a?w=600&q=80",
-            "imageAlt": "Hué citadelle impériale Vietnam expatriés",
+            "image": "assets/img/mi-bo-soupe-boeuf-vietnam.jpg",
+            "imageAlt": "Soupe de bœuf mì bò — repas quotidien à Hué",
             "keywords": "budget hue 2026 expatrie francais ancienne capitale logement cout vie",
             "published": false
         },

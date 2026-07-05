@@ -6,7 +6,7 @@ $page_canonical   = SITE_URL . '/budget-mensuel-nha-trang-2026';
 $page_og_title    = 'Budget mensuel à Nha Trang 2026 : ce que ça coûte vraiment';
 $page_og_desc     = 'Combien coûte la vie à Nha Trang en 2026 ? Loyer, nourriture, mer et transports — le budget complet.';
 $page_og_url      = SITE_URL . '/budget-mensuel-nha-trang-2026';
-$page_og_image    = 'https://images.unsplash.com/photo-1559592413-7cbb6e42f800?w=1200&q=80';
+$page_og_image    = SITE_URL . '/assets/img/baie-bateaux-galets-nha-trang.jpg';
 $page_schema      = json_encode([
   '@context'        => 'https://schema.org',
   '@type'           => 'Article',
@@ -85,7 +85,7 @@ include 'header.php';
   <main class="article-content">
     <p><strong>Nha Trang est la station balnéaire de référence du Vietnam.</strong> Plages de sable blanc, baie turquoise, îles à explorer en bateau — c'est une carte postale permanente. Mais qu'est-ce que ça donne quand on y vit à l'année ? Combien ça coûte, et est-ce que ça conviendrait à un expatrié français ? Voici les chiffres bruts de 2026.</p>
 
-    <img class="article-photo" src="https://images.unsplash.com/photo-1559592413-7cbb6e42f800?w=1200&q=80" alt="Nha Trang baie Vietnam" width="1200" height="675" loading="lazy">
+    <img class="article-photo" src="assets/img/baie-bateaux-galets-nha-trang.jpg" alt="Petite baie avec bateaux de pêche à Nha Trang — Vietnam" width="1200" height="675" loading="lazy">
 
     <div class="tip-box">
       <strong>Comparatif :</strong> <a href="budget-mensuel-da-nang-2026">Budget Da Nang</a> | <a href="budget-mensuel-hue-2026">Budget Hué</a> | <a href="budget-mensuel-hanoi-2026">Budget Hanoï</a>

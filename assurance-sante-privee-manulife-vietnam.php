@@ -39,5 +39,7 @@ include 'header.php';
   <p>🚧 Article en cours de rédaction</p>
 </div>
 
+<?php include '_article-comments.php'; ?>
+
 <?php include '_article-js.php'; ?>
 <?php include 'footer.php'; ?>

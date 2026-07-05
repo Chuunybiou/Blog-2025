@@ -90,8 +90,22 @@ include 'header.php';
   <!-- ═══ ASSURANCES ═══ -->
   <section class="res-section">
     <h2>🏥 Assurances santé — expat et conjoint étranger</h2>
-    <p class="res-intro">Pour les Français installés au Vietnam (avant affiliation à la CFE) et pour les conjoints vietnamiens pendant leurs premiers mois en France (avant affiliation à la CPAM).</p>
+    <p class="res-intro">Pour les Français installés au Vietnam (avant affiliation à la CFE) et pour les conjoints vietnamiens pendant leurs premiers mois en France (avant affiliation à la CPAM). Les liens ACS ci-dessous sont des liens partenaires — ils ne changent pas le tarif pour vous.</p>
     <div class="res-grid">
+      <div class="res-card">
+        <div class="res-tag">Partenaire · Voyage &amp; expat · -66 ans</div>
+        <div class="res-card-icon">✈️</div>
+        <h3>ACS — Globe Traveller</h3>
+        <p>Assurance voyage multirisques jusqu'à 12 mois, pour tous les voyageurs de moins de 66 ans. Frais médicaux couverts dès le 1er euro, rapatriement, RC jusqu'à 4,5 M€, bagages. À partir de 25 €. Souscription immédiate en ligne.</p>
+        <a class="res-link" href="https://www.acs-ami.com/fr/assurance-voyage/globe-traveller/?part=blogcapvietnam&utm_source=blog-capvietnam&utm_medium=aff-link" target="_blank" rel="noopener sponsored">Voir Globe Traveller →</a>
+      </div>
+      <div class="res-card">
+        <div class="res-tag">Partenaire · Backpackers · -40 ans</div>
+        <div class="res-card-icon">🎒</div>
+        <h3>ACS — Globe Partner</h3>
+        <p>La formule abordable pour les moins de 40 ans. Idéal pour un tour du monde, un stage ou une première installation au Vietnam. À partir de 16,50 €, jusqu'à 12 mois, couverture médicale complète dès le 1er euro.</p>
+        <a class="res-link" href="https://www.acs-ami.com/fr/assurance-voyage/globe-partner/?part=blogcapvietnam&utm_source=blog-capvietnam&utm_medium=aff-link" target="_blank" rel="noopener sponsored">Voir Globe Partner →</a>
+      </div>
       <div class="res-card">
         <div class="res-tag">Français à l'étranger · Officiel</div>
         <div class="res-card-icon">🛡️</div>
@@ -104,14 +118,7 @@ include 'header.php';
         <div class="res-card-icon">🌏</div>
         <h3>April International</h3>
         <p>Assurance santé internationale pour expatriés. Couverture France et Vietnam, comparateur en ligne, plusieurs niveaux de garantie. Devis gratuit et immédiat sur leur site.</p>
-        <a class="res-link" href="https://www.april-international.com" target="_blank" rel="noopener sponsored">Obtenir un devis →</a>
-      </div>
-      <div class="res-card">
-        <div class="res-tag">Voyage et expatriation</div>
-        <div class="res-card-icon">✈️</div>
-        <h3>Chapka Assurances</h3>
-        <p>Assurance voyage et expatriation adaptée aux séjours au Vietnam. Bonne option pour les premières semaines ou les allers-retours fréquents France–Vietnam avant une installation définitive.</p>
-        <a class="res-link" href="https://www.chapkassurances.fr" target="_blank" rel="noopener">Voir les offres Chapka →</a>
+        <a class="res-link" href="https://www.april-international.com" target="_blank" rel="noopener">Obtenir un devis →</a>
       </div>
     </div>
   </section>

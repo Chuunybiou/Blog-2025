@@ -16,6 +16,9 @@ session_start();
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['pwd'])) {
     if ($_POST['pwd'] === $password) {
         $_SESSION['stats_ok'] = true;
+        // Cookie longue durée — go.php l'utilise pour ignorer les clics du propriétaire
+        $secure = !empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off';
+        setcookie('_bco', '1', time() + 365 * 24 * 3600, '/', '', $secure, true);
     } else {
         $error = true;
     }
@@ -65,6 +68,23 @@ if (file_exists($clicks_file)) {
     $raw = file_get_contents($clicks_file);
     $clicks = json_decode($raw, true) ?: [];
 }
+
+// ── Filtrage robots (sur les données déjà stockées) ───────────
+function is_bot(string $ua): bool {
+    if (empty(trim($ua))) return true;
+    $lower = strtolower($ua);
+    foreach (['bot', 'spider', 'crawl', 'slurp', 'curl', 'wget', 'python',
+              'scrapy', 'semrush', 'ahrefs', 'mj12', 'dotbot', 'petalbot',
+              'sistrix', 'facebookexternalhit', 'applebot', 'twitterbot',
+              'linkedinbot', 'whatsapp', 'telegram', 'discord', 'slack',
+              'preview', 'monitor', 'pingdom', 'uptimerobot'] as $kw) {
+        if (str_contains($lower, $kw)) return true;
+    }
+    return false;
+}
+$total_raw     = count($clicks);
+$clicks        = array_values(array_filter($clicks, fn($c) => !is_bot($c['ua'] ?? '')));
+$bots_filtered = $total_raw - count($clicks);
 
 // Agrégation par ID
 $by_id = [];
@@ -157,6 +177,9 @@ foreach ($clicks as $c) {
 
 <div class="topbar">
   <h1>📊 Stats affiliés — Cap Vietnam</h1>
+  <span style="font-size:.78rem;color:rgba(250,248,244,.45)">
+    🤖 <?= $bots_filtered ?> robots filtrés · 🙋 tes clics exclus en temps réel
+  </span>
   <a href="?logout=1">Déconnexion</a>
 </div>
 

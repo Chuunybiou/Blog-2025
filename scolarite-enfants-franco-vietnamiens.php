@@ -196,5 +196,7 @@ include 'header.php';
 
 </div>
 
+<?php include '_article-comments.php'; ?>
+
 <?php include '_article-js.php'; ?>
 <?php include 'footer.php'; ?>

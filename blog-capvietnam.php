@@ -29,6 +29,7 @@ $page_og_title    = 'Cap Vietnam — Le blog du couple franco-vietnamien';
 $page_og_desc     = 'Mariage, démarches, argent et vie quotidienne entre la France et le Vietnam — par un Français en couple avec une Vietnamienne.';
 $page_og_url      = SITE_URL . '/';
 $page_og_image    = SITE_URL . '/assets/img/og-capvietnam.png';
+$page_extra_head  = '<link rel="preload" as="image" href="/assets/img/lac-ouest-hanoi-rive-ho-tay.jpg" fetchpriority="high">';
 $page_schema      = json_encode([
   '@context' => 'https://schema.org',
   '@graph'   => [
@@ -330,7 +331,7 @@ include 'header.php';
 
 <!-- ═══════ HERO ═══════ -->
 <header class="hero" id="home">
-  <img class="hero-bg-img" src="assets/img/lac-ouest-hanoi-rive-ho-tay.jpg" width="1600" height="900" alt="Lac de l'Ouest (Hồ Tây) à Hanoï" loading="eager">
+  <img class="hero-bg-img" src="assets/img/lac-ouest-hanoi-rive-ho-tay.jpg" width="1600" height="900" alt="Lac de l'Ouest (Hồ Tây) à Hanoï" loading="eager" fetchpriority="high">
   <div class="hero-grid"></div>
   <div class="hero-content">
     <div class="hero-tag">Couple franco-vietnamien</div>

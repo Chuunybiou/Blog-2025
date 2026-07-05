@@ -6,7 +6,7 @@ $page_canonical   = SITE_URL . '/budget-mensuel-hue-2026';
 $page_og_title    = 'Budget mensuel à Hué 2026 : vivre à l\'ancienne capitale du Vietnam';
 $page_og_desc     = 'Hué est l\'une des villes les plus abordables du Vietnam. Voici ce que ça coûte d\'y vivre en 2026.';
 $page_og_url      = SITE_URL . '/budget-mensuel-hue-2026';
-$page_og_image    = 'https://images.unsplash.com/photo-1540261007661-d2c56aec1b2a?w=1200&q=80';
+$page_og_image    = SITE_URL . '/assets/img/mi-bo-soupe-boeuf-vietnam.jpg';
 $page_schema      = json_encode([
   '@context'        => 'https://schema.org',
   '@type'           => 'Article',
@@ -85,7 +85,7 @@ include 'header.php';
   <main class="article-content">
     <p><strong>Hué est la ville que beaucoup de voyageurs traversent en deux jours — et regrettent de ne pas y avoir passé deux semaines.</strong> Ancienne capitale impériale, classée UNESCO, baignée par la rivière des Parfums, réputée pour sa gastronomie unique et son rythme tranquille — c'est aussi l'une des villes les moins chères du Vietnam pour y vivre. Ce guide te donne les chiffres bruts.</p>
 
-    <img class="article-photo" src="https://images.unsplash.com/photo-1540261007661-d2c56aec1b2a?w=1200&q=80" alt="Hué citadelle impériale Vietnam" width="1200" height="675" loading="lazy">
+    <img class="article-photo" src="assets/img/mi-bo-soupe-boeuf-vietnam.jpg" alt="Soupe de bœuf mì bò — repas quotidien à Hué" width="1200" height="675" loading="lazy">
 
     <div class="tip-box">
       <strong>Comparatif :</strong> <a href="budget-mensuel-da-nang-2026">Budget Da Nang</a> | <a href="budget-mensuel-nha-trang-2026">Budget Nha Trang</a> | <a href="budget-mensuel-hanoi-2026">Budget Hanoï</a>

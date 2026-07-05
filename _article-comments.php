@@ -1,4 +1,6 @@
-<div style="max-width:800px;margin:0 auto;padding:0 2rem 1rem">
+<?php include __DIR__ . '/_community-cta.php'; ?>
+<div class="article-layout" style="padding-top:0;padding-bottom:0">
+<div></div><!-- TOC column placeholder -->
 <section class="comments-section">
   <h3>Une question sur cet article ?</h3>
   <p>Écris-moi directement — je réponds à chaque message sous 48h.</p>

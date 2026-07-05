@@ -56,6 +56,7 @@ include 'header.php';
       <li><a href="#section-1">Pourquoi une assurance privée ?</a></li>
       <li><a href="#section-2">Assurance sociale vietnamienne</a></li>
       <li><a href="#section-3">Mutuelles internationales</a></li>
+      <li><a href="#section-acs">Assurance voyage ACS</a></li>
       <li><a href="#section-4">Hôpitaux à Hanoï</a></li>
       <li><a href="#section-5">Coûts réels</a></li>
       <li><a href="#section-6">La CFE en détail</a></li>
@@ -120,6 +121,36 @@ include 'header.php';
     <div class="tip-box">
       <strong>💡 La CFE, l'option souvent oubliée :</strong>
       La Caisse des Français de l'Étranger (CFE) te permet de continuer à cotiser au régime général de la Sécurité sociale française depuis l'étranger. Combinée à une mutuelle complémentaire, c'est souvent la solution la plus économique pour les séjours longs.
+    </div>
+
+    <h2 id="section-acs">Assurance voyage ACS : la solution pour les courts séjours et la transition</h2>
+    <p>Si tu viens au Vietnam pour un séjour de <strong>moins de 12 mois</strong> — test d'expatriation, voyage long, stage, volontariat — ou si tu es en transition avant de souscrire une mutuelle expatriée classique, une <strong>assurance voyage étendue</strong> est souvent le meilleur choix : pas de durée minimale, souscription immédiate en ligne, sans engagement long terme.</p>
+    <p>Je suis partenaire d'<strong>ACS</strong>, courtier spécialisé en mobilité internationale depuis plus de 40 ans. Deux formules selon ton profil :</p>
+
+    <table class="comparison-table">
+      <thead><tr><th>Formule ACS</th><th>Pour qui ?</th><th>Prix de départ</th><th>Points forts</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong><a href="https://www.acs-ami.com/fr/assurance-voyage/globe-traveller/?part=blogcapvietnam&utm_source=blog-capvietnam&utm_medium=aff-link" target="_blank" rel="noopener sponsored">Globe Traveller ↗</a></strong></td>
+          <td>Tous voyageurs jusqu'à 66 ans</td>
+          <td>à partir de 25 €</td>
+          <td>Plafond jusqu'à 500 000 €, sports à risques en option, VPN 20 Go/mois offert</td>
+        </tr>
+        <tr>
+          <td><strong><a href="https://www.acs-ami.com/fr/assurance-voyage/globe-partner/?part=blogcapvietnam&utm_source=blog-capvietnam&utm_medium=aff-link" target="_blank" rel="noopener sponsored">Globe Partner ↗</a></strong></td>
+          <td>Backpackers et jeunes expats jusqu'à 40 ans</td>
+          <td>à partir de 16,50 €</td>
+          <td>Tarif très accessible, frais médicaux dès le 1er €, idéal budget serré</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="tip-box">
+      <strong>✅ Ce que couvre ACS au Vietnam :</strong> Frais médicaux 100% dès le 1er euro (hospitalisation sans avance de frais), rapatriement sanitaire (coût réel), responsabilité civile jusqu'à 4,5 M€, indemnisation bagages jusqu'à 2 000 €. Assistance multilingue 24h/24 — 7j/7. Souscription en quelques minutes, certificat par email immédiat.
+    </div>
+
+    <div class="info-box">
+      <strong>Quand basculer vers une mutuelle expatriée ?</strong> Si tu prévois de rester <strong>plus d'un an</strong> au Vietnam, une mutuelle classique (AXA, Cigna, Allianz, CFE) devient plus avantageuse : couverture continue, suivi médical long terme, option maternité. Stratégie courante : démarrer avec ACS à l'arrivée, puis souscrire une mutuelle une fois installé.
     </div>
 
     <h2 id="section-4">Les hôpitaux internationaux à Hanoï</h2>

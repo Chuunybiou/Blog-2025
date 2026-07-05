@@ -6,13 +6,13 @@ $page_canonical   = SITE_URL . '/ramener-produits-francais-vietnam';
 $page_og_title    = 'Ramener des produits français au Vietnam : guide douane 2026';
 $page_og_desc     = 'Ce qu\'on peut ramener dans ses bagages de France au Vietnam : alimentation, cosmétiques, médicaments, électronique. Limites douanières et conseils pratiques.';
 $page_og_url      = SITE_URL . '/ramener-produits-francais-vietnam';
-$page_og_image    = 'https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?w=1200&q=80';
+$page_og_image    = SITE_URL . '/assets/img/com-tam-assiette-vietnam.jpg';
 $page_schema      = json_encode([
   '@context'         => 'https://schema.org',
   '@type'            => 'Article',
   'headline'         => 'Ramener des produits français au Vietnam : ce qu\'on peut (et ne peut pas) en 2026',
   'description'      => 'Fromages, vins, médicaments, cosmétiques, électronique : ce qu\'on peut ramener de France au Vietnam dans ses valises sans problèmes douaniers.',
-  'image'            => 'https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?w=1200&q=80',
+  'image'            => 'assets/img/com-tam-assiette-vietnam.jpg',
   'datePublished'    => '2026-05-21',
   'dateModified'     => '2026-06-15',
   'author'           => ['@type' => 'Person', 'name' => 'Anthony Bouillon', 'url' => SITE_URL . '/a-propos-capvietnam'],
@@ -90,7 +90,7 @@ include 'header.php';
   <main class="article-content">
     <p><strong>Chaque aller-retour entre la France et le Vietnam, ma valise ressemble à une épicerie fine mélangée à une pharmacie.</strong> Fromages sous vide, chocolats, parfums, crèmes, médicaments, quelques vêtements. Et à chaque fois, la même question : qu'est-ce que la douane vietnamienne va laisser passer ? Voici ce que j'ai appris au fil des années — avec quelques expériences mémorables à la douane.</p>
 
-    <img class="article-photo" src="https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?w=1200&q=80" alt="Valise et cadeaux pour le Vietnam" width="1200" height="675" loading="lazy">
+    <img class="article-photo" src="assets/img/com-tam-assiette-vietnam.jpg" alt="Assiette de cơm tấm — repas typique au Vietnam" width="1200" height="675" loading="lazy">
 
     <h2 id="section-1">La réalité des cadeaux "quà" dans un couple franco-vietnamien</h2>
     <p>Dans la culture vietnamienne, rapporter des produits étrangers lors d'un retour de voyage est une marque d'attention importante envers la famille. Le mot <em>quà</em> (cadeau) couvre tout — de la petite tablette de chocolat au sac de marque. Ce n'est pas un caprice : c'est une façon d'entretenir les liens familiaux et de montrer qu'on pense aux siens.</p>
