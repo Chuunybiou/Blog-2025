@@ -1,0 +1,31 @@
+name: Deploy to OVH FTP
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Deploy via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: /www4/
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            .claude/**
+            logs/**
+            AUDIT*.md
+            CHANGELOG*.md
+            IMAGES_TODO.md
