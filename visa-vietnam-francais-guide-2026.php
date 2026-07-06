@@ -100,6 +100,11 @@ include 'header.php';
       L'e-visa ne te permet PAS de travailler au Vietnam, même en freelance. Travailler en ligne depuis le Vietnam avec un e-visa est dans une zone grise juridique.
     </div>
 
+    <div class="tip-box">
+      <strong>📋 Nouveau depuis avril 2026 — la déclaration pré-arrivée (PAI)</strong>
+      Quel que soit ton visa, tous les voyageurs arrivant à <b>Hanoï, Hô Chi Minh-Ville, Đà Nẵng ou Phú Quốc</b> doivent remplir un formulaire PAI (Pre-Arrival Information) en ligne dans les <b>72h avant le vol</b>. Gratuit, obligatoire, en ligne sur le portail officiel des douanes vietnamiennes. Oubli ou refus : risque de refoulement à l'aéroport. → <a href="declaration-pre-arrivee-vietnam-pai-2026">Guide complet PAI 2026</a>
+    </div>
+
     <h2 id="section-3">Le visa de travail : pour travailler légalement</h2>
     <p>Si tu as un employeur au Vietnam ou si tu crées une entreprise sur place, tu auras besoin d'un visa de travail. C'est le visa <strong>DN</strong> (business) ou <strong>LD</strong> (travailleur), accompagné d'un permis de travail.</p>
     <ol>

@@ -162,12 +162,12 @@ include 'header.php';
           <td style="padding:0.75rem 1rem;font-size:0.87rem;opacity:0.82;">Disponible sur le site de l'ambassade / consulat</td>
         </tr>
         <tr style="background:rgba(255,255,255,0.02);border-bottom:1px solid rgba(250,248,244,0.06);">
-          <td style="padding:0.75rem 1rem;font-weight:600;font-size:0.87rem;">Acte de naissance intégral du Français</td>
-          <td style="padding:0.75rem 1rem;font-size:0.87rem;opacity:0.82;">Moins de 3 mois · avec apostille si requis</td>
+          <td style="padding:0.75rem 1rem;font-weight:600;font-size:0.87rem;">Acte de naissance intégral du Français (copie intégrale)</td>
+          <td style="padding:0.75rem 1rem;font-size:0.87rem;opacity:0.82;">Moins de 3 mois · la copie intégrale fait office de justificatif de situation matrimoniale (le certificat de célibat a été supprimé en France en 2000) · si divorcé(e) : joindre aussi le jugement de divorce · si veuf/ve : acte de décès du conjoint précédent</td>
         </tr>
         <tr style="border-bottom:1px solid rgba(250,248,244,0.06);">
-          <td style="padding:0.75rem 1rem;font-weight:600;font-size:0.87rem;">Justificatif de situation matrimoniale</td>
-          <td style="padding:0.75rem 1rem;font-size:0.87rem;opacity:0.82;">Certificat de célibat de la mairie — ou acte de divorce / décès si précédemment marié</td>
+          <td style="padding:0.75rem 1rem;font-weight:600;font-size:0.87rem;">Justificatif de domicile</td>
+          <td style="padding:0.75rem 1rem;font-size:0.87rem;opacity:0.82;">Moins de 6 mois à ton nom (facture EDF, quittance de loyer…)</td>
         </tr>
         <tr style="background:rgba(255,255,255,0.02);border-bottom:1px solid rgba(250,248,244,0.06);">
           <td style="padding:0.75rem 1rem;font-weight:600;font-size:0.87rem;">Passeport du Français (original + copie)</td>
@@ -175,11 +175,19 @@ include 'header.php';
         </tr>
         <tr style="border-bottom:1px solid rgba(250,248,244,0.06);">
           <td style="padding:0.75rem 1rem;font-weight:600;font-size:0.87rem;">Passeport du conjoint vietnamien (copie)</td>
-          <td style="padding:0.75rem 1rem;font-size:0.87rem;opacity:0.82;">—</td>
+          <td style="padding:0.75rem 1rem;font-size:0.87rem;opacity:0.82;">Page d'identité + pages avec cachets/visas</td>
+        </tr>
+        <tr style="background:rgba(255,255,255,0.02);border-bottom:1px solid rgba(250,248,244,0.06);">
+          <td style="padding:0.75rem 1rem;font-weight:600;font-size:0.87rem;">Acte de naissance du conjoint vietnamien</td>
+          <td style="padding:0.75rem 1rem;font-size:0.87rem;opacity:0.82;">Bản sao — délivré par le service judiciaire · traduit en français par traducteur assermenté</td>
+        </tr>
+        <tr style="border-bottom:1px solid rgba(250,248,244,0.06);">
+          <td style="padding:0.75rem 1rem;font-weight:600;font-size:0.87rem;">Certificat de situation matrimoniale du conjoint vietnamien</td>
+          <td style="padding:0.75rem 1rem;font-size:0.87rem;opacity:0.82;">Giấy xác nhận tình trạng hôn nhân — délivré par la mairie vietnamienne · traduit en français</td>
         </tr>
         <tr>
-          <td style="padding:0.75rem 1rem;font-weight:600;font-size:0.87rem;">Acte de naissance du conjoint vietnamien</td>
-          <td style="padding:0.75rem 1rem;font-size:0.87rem;opacity:0.82;">Traduit en français par traducteur assermenté</td>
+          <td style="padding:0.75rem 1rem;font-weight:600;font-size:0.87rem;">Attestation de résidence du conjoint vietnamien</td>
+          <td style="padding:0.75rem 1rem;font-size:0.87rem;opacity:0.82;">Modèle CT07 — délivré par la police locale · certifiée conforme et traduite en français</td>
         </tr>
       </tbody>
     </table>
@@ -191,7 +199,7 @@ include 'header.php';
 
     <h2 id="section-6">Légalisation et apostille des documents vietnamiens (2026)</h2>
     <div class="tip-box">
-      <strong>Légalisation ou apostille ?</strong> Les documents vietnamiens utilisés en France (acte de mariage, acte de naissance…) nécessitent aujourd'hui une <strong>légalisation consulaire</strong>. À partir du <strong>11 septembre 2026</strong>, l'<strong>apostille</strong> (Convention de La Haye — adhésion du Vietnam déposée le 31/12/2025) remplacera la légalisation. Autorité compétente pour l'apostille : MAE vietnamien (Hanoï / HCMV). <a href="https://www.hcch.net/fr/states/authorities/details3/?aid=1596" target="_blank" rel="noopener">Source : hcch.net</a>
+      <strong>Légalisation ou apostille ?</strong> Les documents vietnamiens utilisés en France (acte de mariage, acte de naissance…) nécessitent aujourd'hui une <b>légalisation consulaire</b>. À partir du <b>11 septembre 2026</b>, l'<b>apostille</b> (Convention de La Haye — adhésion du Vietnam déposée le 31/12/2025) remplacera la légalisation. Autorité compétente pour l'apostille : MAE vietnamien (Hanoï / HCMV). <a href="https://www.hcch.net/fr/states/authorities/details3/?aid=1596" target="_blank" rel="noopener">Source : hcch.net</a> — <a href="apostille-vietnam-francais-2026">Guide complet sur l'apostille au Vietnam</a>
     </div>
     <p>Note : le CCAM lui-même est un document officiel français — il ne nécessite aucune légalisation ni apostille. C'est l'acte de mariage vietnamien (émis après la cérémonie) qui devra être légalisé ou apostillé pour être utilisé en France dans le cadre de la transcription à Nantes.</p>
 

@@ -125,6 +125,11 @@ include 'header.php';
       <strong>📖 Article détaillé :</strong> <a href="visa-vietnam-francais-guide-2026">Visa Vietnam pour un Français — guide complet 2026</a>
     </div>
 
+    <div class="warning-box">
+      <strong>⚠️ Nouveau depuis avril 2026 — déclaration pré-arrivée (PAI) obligatoire</strong>
+      Quel que soit ton visa, tous les voyageurs arrivant à <b>Hanoï, HCMC, Đà Nẵng ou Phú Quốc</b> doivent remplir un formulaire PAI en ligne dans les <b>72h avant le vol</b>. Gratuit mais obligatoire — refus ou oubli = risque de refoulement. À faire sur le portail officiel des douanes vietnamiennes. → <a href="declaration-pre-arrivee-vietnam-pai-2026">Guide complet du formulaire PAI 2026</a>
+    </div>
+
     <!-- ════════════════════════════════ LOGEMENT ════════════════════════════════ -->
     <h2 id="logement">2. Logement — trouver un appartement à Hanoï</h2>
 

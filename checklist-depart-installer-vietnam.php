@@ -111,6 +111,10 @@ include 'header.php';
     </div>
 
     <h2 id="section-3">2 semaines avant le départ</h2>
+    <div class="warning-box">
+      <strong>⚠️ PAI obligatoire depuis avril 2026 — à ne pas oublier</strong>
+      Si tu arrives à <b>Hanoï, HCMC, Đà Nẵng ou Phú Quốc</b>, tu dois remplir une <b>déclaration pré-arrivée (PAI)</b> en ligne dans les <b>72h avant ton vol</b>. Gratuit, en ligne, mais obligatoire — risque de refoulement sans. Note la date dans ton agenda : 3 jours avant l'embarquement. → <a href="declaration-pre-arrivee-vietnam-pai-2026">Mode d'emploi complet du formulaire PAI</a>
+    </div>
     <ul>
       <li>☐ <strong>Prévenir sa banque française</strong> du départ à l'étranger : évite les blocages automatiques de carte lors des premières transactions depuis le Vietnam.</li>
       <li>☐ <strong>Annuler les prélèvements automatiques</strong> qui continueraient sans raison (salle de sport, presse, services en ligne français).</li>
@@ -126,6 +130,7 @@ include 'header.php';
 
     <h2 id="section-4">Le jour J et le vol — <a href="vol-paris-hanoi-pas-cher" style="color:inherit">comparer les billets Paris-Hanoï</a></h2>
     <ul>
+      <li>☐ <strong>Formulaire PAI soumis</strong> (obligatoire dans les 72h avant le vol si arrivée à Hanoï, HCMC, Đà Nẵng ou Phú Quốc) — <a href="declaration-pre-arrivee-vietnam-pai-2026">voir le guide PAI</a></li>
       <li>☐ <strong>Bagage cabine prioritaire</strong> : passeport, médicaments, ordonnances, assurance santé (carte), téléphone chargé, vêtements de rechange, argent cash. Si ta valise soute est perdue, tu dois pouvoir survivre 72h sans elle.</li>
       <li>☐ <strong>Télécharger les apps offline</strong> avant d'embarquer : Grab (VTC), Google Maps avec carte Vietnam offline, Google Translate (pack langue vietnamien offline), VDict (dictionnaire).</li>
       <li>☐ <strong>Charger toutes les batteries</strong> : téléphone, ordinateur, batterie externe. Les prises sont en Type A et C au Vietnam (compatibles françaises avec adaptateur).

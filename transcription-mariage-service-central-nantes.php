@@ -172,7 +172,7 @@ include 'header.php';
     </div>
 
     <div class="tip-box">
-      <strong>Légalisation ou apostille ? (2026)</strong> Les documents vietnamiens (acte de mariage, acte de naissance…) nécessitent aujourd'hui une <strong>légalisation consulaire</strong>. À partir du <strong>11 septembre 2026</strong>, l'<strong>apostille</strong> (Convention de La Haye — adhésion du Vietnam déposée le 31/12/2025) remplacera la légalisation. Autorité compétente : MAE vietnamien (Hanoï / HCMV). <a href="https://www.hcch.net/fr/states/authorities/details3/?aid=1596" target="_blank" rel="noopener">Source : hcch.net</a>
+      <strong>Légalisation ou apostille ? (2026)</strong> Les documents vietnamiens (acte de mariage, acte de naissance…) nécessitent aujourd'hui une <b>légalisation consulaire</b>. À partir du <b>11 septembre 2026</b>, l'<b>apostille</b> (Convention de La Haye — adhésion du Vietnam déposée le 31/12/2025) remplacera la légalisation. Autorité compétente : MAE vietnamien (Hanoï / HCMV). <a href="https://www.hcch.net/fr/states/authorities/details3/?aid=1596" target="_blank" rel="noopener">Source : hcch.net</a> — <a href="apostille-vietnam-francais-2026">Guide complet sur l'apostille au Vietnam</a>
     </div>
 
     <div class="tip-box">
