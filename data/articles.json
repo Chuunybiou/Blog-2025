@@ -2,6 +2,51 @@
     "featured_slug": "se-marier-vietnamienne-demarches-france",
     "articles": [
         {
+            "slug": "vivre-hanoi-avec-enfant-ecole-creche",
+            "title": "Vivre à Hanoï avec un enfant : crèches, école française et vie pratique en 2026",
+            "excerpt": "LFAY, La Petite École, Acacia : frais de scolarité, procédure d'inscription EDUKA, crèches bilingues et vie quotidienne pour les familles franco-vietnamiennes à Hanoï.",
+            "category": "vie-pratique",
+            "categoryLabel": "Vie Pratique",
+            "date": "2026-07-06",
+            "dateLabel": "Juillet 2026",
+            "readTime": "7 min",
+            "emoji": "🏫",
+            "image": "https://images.unsplash.com/photo-1497486751825-1233686d5d80?w=600&q=80",
+            "imageAlt": "Enfants en classe école française à Hanoï",
+            "keywords": "hanoi enfant ecole française lfay lycée alexandre yersin creche lpe inscription eduka aefe frais scolarite",
+            "published": true
+        },
+        {
+            "slug": "grossesse-vietnam-hopital-cout-demarches",
+            "title": "Grossesse au Vietnam : choisir son hôpital, coûts réels et démarches en 2026",
+            "excerpt": "HFH Hanoi, Vinmec, FV Hospital HCMV : tarifs vérifiés des maternités, comparatif public/privé, démarches et assurance santé pour une grossesse au Vietnam.",
+            "category": "vivre-ensemble",
+            "categoryLabel": "Vivre Ensemble",
+            "date": "2026-07-06",
+            "dateLabel": "Juillet 2026",
+            "readTime": "8 min",
+            "emoji": "🤰",
+            "image": "https://images.unsplash.com/photo-1476703993599-0035a21b17a9?w=600&q=80",
+            "imageAlt": "Famille bébé grossesse Vietnam",
+            "keywords": "grossesse vietnam hopital vinmec fv hospital hfh hanoi hcmv accouchement cout cesarienne assurance",
+            "published": true
+        },
+        {
+            "slug": "associations-franco-vietnamiennes-france",
+            "title": "Associations franco-vietnamiennes en France : UGVF, AAFV et autres ressources",
+            "excerpt": "UGVF, AAFV, cours de vietnamien, fêtes culturelles et réseau d'entraide : comment les associations franco-vietnamiennes peuvent aider votre conjoint(e) à s'intégrer en France.",
+            "category": "vivre-ensemble",
+            "categoryLabel": "Vivre Ensemble",
+            "date": "2026-07-06",
+            "dateLabel": "Juillet 2026",
+            "readTime": "6 min",
+            "emoji": "🤝",
+            "image": "https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=600&q=80",
+            "imageAlt": "Événement communautaire franco-vietnamien en France",
+            "keywords": "associations franco vietnamiennes france ugvf aafv diaspora vietnamienne conjoint intégration",
+            "published": true
+        },
+        {
             "slug": "apostille-vietnam-francais-2026",
             "title": "Apostille au Vietnam dès le 11 septembre 2026 : ce qui change pour les Français",
             "excerpt": "Le Vietnam rejoint la Convention de La Haye sur l'apostille le 11 septembre 2026. Fini la double légalisation consulaire — ce qui change concrètement pour les couples franco-vietnamiens, expats et voyageurs.",
@@ -958,7 +1003,7 @@
             "imageAlt": "Enfant famille franco-vietnamienne nationalité",
             "keywords": "nationalite enfant couple franco vietnamien double nationalite declaration naissance passeport",
             "silo": "france",
-            "published": false
+            "published": true
         },
         {
             "slug": "pacs-vietnamienne-reconnaissance",

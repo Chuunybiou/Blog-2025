@@ -424,7 +424,7 @@ footer {
         <div class="nav-dd-menu" role="menu">
           <a href="<?= $path_prefix ?>outils-vivre-vietnam">🛠️ Services recommandés</a>
           <div class="nav-dd-sep"></div>
-          <a href="<?= $path_prefix ?>parcours-couple-franco-vietnamien">🗺️ Parcours couple franco-vietnamien</a>
+          <a href="<?= $path_prefix ?>par-ou-commencer-couple-franco-vietnamien">🗺️ Par où commencer ?</a>
           <a href="<?= $path_prefix ?>retroplanning-faire-venir-conjoint">📅 Faire venir mon conjoint en France</a>
           <a href="<?= $path_prefix ?>simulateur-residence-vietnam">⏱️ S'installer au Vietnam</a>
           <a href="<?= $path_prefix ?>calculateur-budget-vietnam">💰 Budget mensuel au Vietnam</a>

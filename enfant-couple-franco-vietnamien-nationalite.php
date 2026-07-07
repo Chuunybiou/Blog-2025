@@ -30,11 +30,11 @@ $article_category     = 'Démarches Admin';
 $article_category_url = SITE_URL . '/articles-capvietnam';
 $page_faq = [
   ['q' => 'Un enfant né au Vietnam d\'un père français et d\'une mère vietnamienne est-il automatiquement français ?',
-   'a' => 'Oui, par filiation paternelle. Mais il ne sera pas automatiquement inscrit dans les registres français — une déclaration de naissance doit être faite auprès de l\'ambassade ou du consulat français au Vietnam dans un délai de [À VÉRIFIER] jours suivant la naissance.'],
+   'a' => 'Oui, par filiation paternelle. Mais il ne sera pas automatiquement inscrit dans les registres français — une déclaration de naissance doit être faite auprès de l\'ambassade ou du consulat français au Vietnam dans un délai de 30 jours calendaires suivant la naissance. Passé ce délai, il faut passer par la transcription (sans délai limite, gratuite, par courrier possible).'],
   ['q' => 'La double nationalité franco-vietnamienne est-elle légalement reconnue ?',
    'a' => 'La France accepte la double nationalité sans restriction. Le Vietnam ne reconnaît pas officiellement la double nationalité mais la tolère dans les faits. Ton enfant peut donc avoir les deux passeports, mais en pratique les autorités vietnamiennes le considèrent comme vietnamien sur le sol vietnamien.'],
   ['q' => 'Peut-on choisir la nationalité de l\'enfant ?',
-   'a' => 'Non, la nationalité française se transmet automatiquement si l\'un des parents est français. La nationalité vietnamienne dépend du droit vietnamien — en général elle est attribuée si l\'un des parents est vietnamien et l\'enfant est né au Vietnam ou enregistré selon les règles vietnamiennes. [À VÉRIFIER]'],
+   'a' => 'Non, la nationalité française est automatique dès lors qu\'un parent est français — il n\'y a pas de choix à faire pour cela. En revanche, la nationalité vietnamienne n\'est pas automatique pour un enfant de couple mixte : selon l\'article 16 de la loi vietnamienne sur la nationalité (2008), les deux parents doivent exprimer leur accord pour que l\'enfant soit enregistré comme vietnamien lors de la déclaration de naissance auprès des autorités vietnamiennes. Sans cet accord formalisé, l\'enfant n\'obtient pas la nationalité vietnamienne.'],
 ];
 include '_article-css.php';
 include 'header.php';
@@ -100,21 +100,40 @@ include 'header.php';
       <li>Un acte de naissance vietnamien (déclaré au comité populaire)</li>
       <li>Un acte de naissance français (transcrit au consulat puis au SCEC de Nantes)</li>
       <li>Un passeport français</li>
-      <li>Un passeport vietnamien [À VÉRIFIER les conditions d'obtention]</li>
+      <li>Un passeport vietnamien — si les deux parents ont choisi la nationalité vietnamienne lors de la déclaration au comité populaire (accord formalisé requis, art. 16 de la loi vietnamienne 2008)</li>
     </ul>
     <p>Attention : sur le sol vietnamien, les autorités considèrent en général ton enfant comme vietnamien et lui appliquent le droit vietnamien. En France, il est français.</p>
 
     <h2 id="section-3">Déclarer la naissance côté français</h2>
-    <p>Si l'enfant naît au Vietnam, tu dois déclarer sa naissance à l'ambassade de France à Hanoï (ou au consulat général à HCMV) dans les <strong>[À VÉRIFIER] jours</strong> suivant la naissance. Cette déclaration est gratuite.</p>
-    <p>Documents à fournir à l'ambassade [À VÉRIFIER liste complète] :</p>
+    <p>Si l'enfant naît au Vietnam, tu dois déclarer sa naissance à l'ambassade de France à Hanoï (ou au consulat général à HCMV) dans les <strong>30 jours calendaires</strong> suivant la naissance. Cette déclaration est gratuite.</p>
+
+    <div class="tip-box">
+      <strong>Déclaration vs. transcription</strong>
+      <b>Déclaration</b> : dans les 30 jours, sur place au consulat. <b>Transcription</b> : après ce délai (ou si tu vis déjà en France), sans délai limite, gratuite, possible par courrier. Dans les deux cas, l'acte est transmis au SCEC de Nantes.
+    </div>
+
+    <h3>Documents pour la déclaration (dans les 30 jours)</h3>
+    <p>Source : <a href="https://vn.diplomatie.gouv.fr/fr/etat-civil/" target="_blank" rel="noopener">vn.diplomatie.gouv.fr</a></p>
     <ul>
-      <li>Extrait d'acte de naissance vietnamien de l'enfant (délivré par l'hôpital ou le comité populaire)</li>
-      <li>Acte de mariage des parents (si mariés) — transcrit ou légalisé</li>
-      <li>CNI ou passeport du parent français</li>
-      <li>Carte d'identité ou passeport du parent vietnamien</li>
-      <li>Formulaire de déclaration de naissance (fourni par l'ambassade)</li>
+      <li>Formulaire de déclaration de naissance (fourni par le consulat)</li>
+      <li>Certificat original de naissance délivré par l'établissement de soins + copie certifiée</li>
+      <li>Preuve de nationalité française du parent français (CNI ou passeport)</li>
+      <li>Pièces d'identité des deux parents (original + copie)</li>
+      <li>Acte de mariage des parents si mariés (moins de 6 mois)</li>
+      <li>Livret de famille français à mettre à jour, si tu en as déjà un</li>
     </ul>
-    <p>Le consul enregistre la naissance dans les registres consulaires. L'acte est ensuite transmis au Service Central d'État Civil de Nantes pour inscription dans les registres français.</p>
+    <p>L'enfant n'a pas besoin d'être présent. Le consul enregistre la naissance dans les registres consulaires, puis transmet au Service Central d'État Civil de Nantes.</p>
+
+    <h3>Documents pour la transcription (après 30 jours ou par courrier)</h3>
+    <ul>
+      <li>Formulaire de demande de transcription</li>
+      <li>Acte de naissance vietnamien original + traduction assermentée en français</li>
+      <li>Preuve de nationalité française du parent français</li>
+      <li>Copies des pièces d'identité des deux parents</li>
+      <li>Acte de naissance intégral du parent français (moins de 3 mois)</li>
+      <li>Acte de naissance intégral du parent vietnamien (moins de 6 mois)</li>
+      <li>Acte de mariage original si parents mariés (moins de 3 mois)</li>
+    </ul>
 
     <h2 id="section-4">Documents à obtenir pour l'enfant</h2>
 
@@ -157,7 +176,7 @@ include 'header.php';
       <li>Photos d'identité de l'enfant (format réglementaire)</li>
       <li>Présence du parent français (et de l'enfant si exigé)</li>
     </ul>
-    <p>Le passeport français d'un mineur est valable [À VÉRIFIER] ans.</p>
+    <p>Le passeport français d'un mineur est valable <strong>5 ans</strong>. Coût : 30 € pour les moins de 15 ans, 55 € pour les 15-17 ans (source : <a href="https://www.service-public.fr/particuliers/vosdroits/F35154" target="_blank" rel="noopener">service-public.fr</a>).</p>
 
     <h2 id="section-6">L'enfant en France vs au Vietnam</h2>
     <p>Si l'enfant réside en France :</p>

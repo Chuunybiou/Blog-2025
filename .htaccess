@@ -65,6 +65,7 @@ RewriteRule ^a-propos-capvietnam\.html$ /a-propos-capvietnam [R=301,L]
 # Articles fusionnés — redirections canoniques
 RewriteRule ^telephone-vietnam-quelle-sim-choisir$ /sim-internet-applications-vietnam [R=301,L]
 RewriteRule ^compte-bancaire-vietnam-etranger$ /banque-vietnam-francais [R=301,L]
+RewriteRule ^parcours-couple-franco-vietnamien$ /par-ou-commencer-couple-franco-vietnamien [R=301,L]
 
 # Redirect slug.php → slug sans extension (301)
 RewriteCond %{THE_REQUEST} \s/(.+)\.php[\s?] [NC]
