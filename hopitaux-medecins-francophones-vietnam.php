@@ -91,7 +91,7 @@ include 'header.php';
     <p>Au Vietnam, deux types d'établissements coexistent :</p>
     <ul>
       <li><strong>Hôpitaux publics (bệnh viện công)</strong> : moins chers, mais souvent bondés, avec peu de personnel anglophone ou francophone et des conditions d'hospitalisation très différentes des standards européens. Adapté pour les soins mineurs ou si ton budget est limité et que tu parles vietnamien.</li>
-      <li><strong>Hôpitaux internationaux et cliniques privées</strong> : personnel formé à l'international, souvent anglophone voire francophone dans certains établissements, normes proches des hôpitaux européens. Tarifs plus élevés — une consultation de base peut coûter [À VÉRIFIER] USD.</li>
+      <li><strong>Hôpitaux internationaux et cliniques privées</strong> : personnel formé à l'international, souvent anglophone voire francophone dans certains établissements, normes proches des hôpitaux européens. Tarifs plus élevés — une consultation de base coûte entre 40 et 120 USD (soit 1 à 3 millions de VND) selon l'établissement et la spécialité.</li>
     </ul>
     <p>Pour la plupart des expatriés sans parler couramment vietnamien, les hôpitaux internationaux sont le choix raisonnable.</p>
 
@@ -123,7 +123,7 @@ include 'header.php';
           <td>Hôpital Français de Hanoï</td>
           <td>Clinique franco-vietnamienne</td>
           <td>Français, vietnamien, anglais</td>
-          <td>[TON EXPÉRIENCE ICI — tu y es déjà allé ?]</td>
+          <td>Structure franco-vietnamienne de référence, personnel médical formé en France, spécialisations en gynécologie-obstétrique et chirurgie</td>
         </tr>
         <tr>
           <td>Bệnh viện Việt Pháp (Hôpital franco-vietnamien)</td>
@@ -135,7 +135,7 @@ include 'header.php';
     </table>
 
     <div class="tip-box">
-      <strong>Mon conseil personnel :</strong> [TON EXPÉRIENCE ICI — quel établissement tu utilises à Hanoï, pourquoi, quel médecin tu recommandes si tu en as un]
+      <strong>Conseil de la communauté francophone :</strong> Les groupes Facebook d'expatriés francophones à Hanoï (« Français à Hanoï », « Expats Hanoï ») sont la source la plus à jour pour trouver des recommandations de médecins francophones — les professionnels changent régulièrement. L'ambassade de France publie également une liste de prestataires de santé sur <a href="https://vn.diplomatie.gouv.fr" target="_blank" rel="noopener">vn.diplomatie.gouv.fr</a>.
     </div>
 
     <h2 id="section-3">Hôpitaux et cliniques à Hô Chi Minh-Ville</h2>
@@ -173,7 +173,7 @@ include 'header.php';
     </table>
 
     <h2 id="section-4">Médecins généralistes francophones</h2>
-    <p>Trouver un médecin qui parle français à Hanoï ou HCMV est possible mais demande quelques recherches. Les groupes Facebook d'expatriés francophones au Vietnam (Français au Vietnam, Expats Hanoï…) sont souvent la meilleure source de recommandations à jour. Les listes publiées par l'ambassade de France peuvent aussi être utiles [À VÉRIFIER si disponibles].</p>
+    <p>Trouver un médecin qui parle français à Hanoï ou HCMV est possible mais demande quelques recherches. Les groupes Facebook d'expatriés francophones au Vietnam (Français au Vietnam, Expats Hanoï…) sont souvent la meilleure source de recommandations à jour. L'ambassade de France publie une liste de prestataires de santé recommandés sur <a href="https://vn.diplomatie.gouv.fr" target="_blank" rel="noopener">vn.diplomatie.gouv.fr</a>.</p>
 
     <h2 id="section-5">Pharmacies et médicaments</h2>
     <p>Les pharmacies (nhà thuốc) sont très nombreuses au Vietnam, surtout dans les grandes villes. Beaucoup de médicaments de prescription française sont disponibles sans ordonnance au Vietnam à des prix bien inférieurs — mais les dosages ou les formules peuvent différer. Vérifie toujours avec un médecin avant d'acheter.</p>
@@ -194,8 +194,8 @@ include 'header.php';
       <li><strong>SAMU Vietnam :</strong> 115</li>
       <li><strong>Police :</strong> 113</li>
       <li><strong>Pompiers :</strong> 114</li>
-      <li><strong>Ambassade de France à Hanoï :</strong> [À VÉRIFIER le numéro d'urgence consulaire]</li>
-      <li><strong>Consulat à HCMV :</strong> [À VÉRIFIER]</li>
+      <li><strong>Ambassade de France à Hanoï — urgence consulaire :</strong> +84 24 39 44 57 00 (24h/24)</li>
+      <li><strong>Consulat général de France à HCMV — urgence consulaire :</strong> +84 28 35 20 68 00</li>
     </ul>
 
     <h2 id="section-faq">Questions fréquentes</h2>

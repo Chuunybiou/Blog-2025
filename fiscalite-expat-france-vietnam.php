@@ -132,7 +132,7 @@ include 'header.php';
         <tr>
           <td>Revenu d'activité indépendante (freelance)</td>
           <td>Pays de résidence fiscale</td>
-          <td>Sauf établissement stable dans l'autre pays [À VÉRIFIER]</td>
+          <td>Sauf établissement stable dans l'autre pays (art. 14 de la convention franco-vietnamienne du 10 fév. 1993)</td>
         </tr>
         <tr>
           <td>Revenus immobiliers (loyer)</td>
@@ -142,12 +142,12 @@ include 'header.php';
         <tr>
           <td>Dividendes</td>
           <td>Les deux pays (avec crédit d'impôt)</td>
-          <td>Taux réduit prévu par la convention [À VÉRIFIER : % exact]</td>
+          <td>Retenue à la source Vietnam max 15% du brut (10% si détention >10% du capital, 7% si >25%) — crédit d'impôt en France (art. 10 convention 1993)</td>
         </tr>
         <tr>
           <td>Pensions de retraite publiques</td>
           <td>France (pays versant)</td>
-          <td>Retraite de la fonction publique française → France [À VÉRIFIER]</td>
+          <td>Retraite de la fonction publique française → imposée en France (art. 12 convention 1993, pays versant)</td>
         </tr>
         <tr>
           <td>Pensions de retraite privées</td>
@@ -157,7 +157,7 @@ include 'header.php';
         <tr>
           <td>Plus-values (vente d'actions)</td>
           <td>Pays de résidence fiscale généralement</td>
-          <td>[À VÉRIFIER : article spécifique de la convention]</td>
+          <td>Imposées dans le pays de résidence fiscale (art. 13 convention 1993) — sauf immeubles, imposés dans le pays où est situé le bien</td>
         </tr>
       </tbody>
     </table>

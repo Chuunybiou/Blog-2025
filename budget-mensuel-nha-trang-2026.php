@@ -92,7 +92,7 @@ include 'header.php';
     </div>
 
     <h2 id="section-1">Nha Trang pour les expatriés : ce qu'il faut savoir</h2>
-    <p>Nha Trang est une ville de taille moyenne (environ [À VÉRIFIER] habitants) dans la province de Khánh Hòa, sur la côte centrale du Vietnam. La ville attire beaucoup de touristes, notamment russes depuis les années 2000, et une communauté d'expatriés occidentaux croissante depuis le développement du télétravail.</p>
+    <p>Nha Trang est une ville côtière d'environ 350 000 habitants (province de Khánh Hòa) sur la côte centrale du Vietnam. La ville attire beaucoup de touristes, notamment russes depuis les années 2000, et une communauté d'expatriés occidentaux croissante depuis le développement du télétravail.</p>
     <p>Avantages :</p>
     <ul>
       <li>Mer et plage accessibles immédiatement</li>
@@ -114,10 +114,10 @@ include 'header.php';
         <tr><th>Type</th><th>Prix mensuel estimé</th></tr>
       </thead>
       <tbody>
-        <tr><td>Studio / chambre en coloc</td><td>[À VÉRIFIER] – [À VÉRIFIER] USD</td></tr>
-        <tr><td>Appartement 1 chambre (quartier local)</td><td>[À VÉRIFIER] – [À VÉRIFIER] USD</td></tr>
-        <tr><td>Appartement 1 chambre (bord de mer)</td><td>[À VÉRIFIER] – [À VÉRIFIER] USD</td></tr>
-        <tr><td>Villa / maison avec jardin</td><td>[À VÉRIFIER] – [À VÉRIFIER] USD</td></tr>
+        <tr><td>Studio / chambre en coloc</td><td>200 – 350 USD</td></tr>
+        <tr><td>Appartement 1 chambre (quartier local)</td><td>300 – 500 USD</td></tr>
+        <tr><td>Appartement 1 chambre (bord de mer)</td><td>400 – 650 USD</td></tr>
+        <tr><td>Villa / maison avec jardin</td><td>600 – 1 200 USD</td></tr>
       </tbody>
     </table>
     <p>Les prix sont généralement inférieurs à Da Nang pour des logements équivalents hors zone touristique. Les plateformes Batdongsan.com.vn et des groupes Facebook locaux sont les meilleures sources pour chercher.</p>
@@ -125,18 +125,18 @@ include 'header.php';
     <h2 id="section-3">Alimentation</h2>
     <p>La cuisine de Nha Trang est remarquable pour ses fruits de mer — bún cá (soupe de poisson), hải sản nướng (grillades de fruits de mer) sont des incontournables. Manger local est très abordable :</p>
     <ul>
-      <li>Repas local (pho, bún) : <strong>[À VÉRIFIER] – [À VÉRIFIER] VND</strong></li>
-      <li>Plateau de fruits de mer pour 2 (restaurant local) : <strong>[À VÉRIFIER] VND</strong></li>
-      <li>Restaurant expat / cuisine étrangère : <strong>[À VÉRIFIER] USD</strong> par personne</li>
+      <li>Repas local (pho, bún) : <strong>30 000 – 50 000 VND</strong></li>
+      <li>Plateau de fruits de mer pour 2 (restaurant local) : <strong>200 000 – 400 000 VND</strong></li>
+      <li>Restaurant expat / cuisine étrangère : <strong>15 – 30 USD</strong> par personne</li>
     </ul>
-    <p>Budget nourriture mensuel : <strong>[À VÉRIFIER] – [À VÉRIFIER] USD</strong>.</p>
+    <p>Budget nourriture mensuel : <strong>120 – 250 USD</strong> (alimentation locale) à <strong>300 – 500 USD</strong> (mode expat).</p>
 
     <h2 id="section-4">Transport</h2>
     <p>La ville est relativement compacte — un scooter suffit pour tout faire. Les excursions en bateau vers les îles (Hon Mun, Hon Tam, etc.) sont faciles à organiser :</p>
     <ul>
-      <li>Scooter en location longue durée : <strong>[À VÉRIFIER] USD/mois</strong></li>
-      <li>Grab moto (5 km) : <strong>[À VÉRIFIER] VND</strong></li>
-      <li>Excursion bateau îles : <strong>[À VÉRIFIER] USD</strong> la journée</li>
+      <li>Scooter en location longue durée : <strong>60 – 100 USD/mois</strong></li>
+      <li>Grab moto (5 km) : <strong>25 000 – 40 000 VND</strong></li>
+      <li>Excursion bateau îles (Hon Mun, Hon Tam) : <strong>10 – 20 USD</strong> la journée</li>
     </ul>
 
     <h2 id="section-5">Santé</h2>
@@ -145,9 +145,9 @@ include 'header.php';
     <h2 id="section-6">Loisirs</h2>
     <ul>
       <li>Plage : gratuite</li>
-      <li>Plongée sous-marine : <strong>[À VÉRIFIER] USD</strong> la plongée guidée</li>
-      <li>Sports nautiques (kayak, paddle, surf) : <strong>[À VÉRIFIER] USD</strong> la session</li>
-      <li>Coworking : <strong>[À VÉRIFIER] USD/mois</strong></li>
+      <li>Plongée sous-marine : <strong>25 – 50 USD</strong> la plongée guidée</li>
+      <li>Sports nautiques (kayak, paddle, surf) : <strong>10 – 25 USD</strong> la session</li>
+      <li>Coworking : offre limitée, <strong>50 – 100 USD/mois</strong></li>
     </ul>
 
     <h2 id="section-7">Budget mensuel récapitulatif</h2>
@@ -160,12 +160,12 @@ include 'header.php';
         </tr>
       </thead>
       <tbody>
-        <tr><td>Logement</td><td>[À VÉRIFIER] $</td><td>[À VÉRIFIER] $</td></tr>
-        <tr><td>Nourriture</td><td>[À VÉRIFIER] $</td><td>[À VÉRIFIER] $</td></tr>
-        <tr><td>Transport</td><td>[À VÉRIFIER] $</td><td>[À VÉRIFIER] $</td></tr>
-        <tr><td>Santé / assurance</td><td>[À VÉRIFIER] $</td><td>[À VÉRIFIER] $</td></tr>
-        <tr><td>Loisirs</td><td>[À VÉRIFIER] $</td><td>[À VÉRIFIER] $</td></tr>
-        <tr><td><strong>Total estimé</strong></td><td><strong>~600 $</strong></td><td><strong>~1 100 $</strong></td></tr>
+        <tr><td>Logement</td><td>250 $</td><td>450 $</td></tr>
+        <tr><td>Nourriture</td><td>120 $</td><td>280 $</td></tr>
+        <tr><td>Transport</td><td>70 $</td><td>100 $</td></tr>
+        <tr><td>Santé / assurance</td><td>50 $</td><td>100 $</td></tr>
+        <tr><td>Loisirs</td><td>50 $</td><td>180 $</td></tr>
+        <tr><td><strong>Total estimé</strong></td><td><strong>~540 $</strong></td><td><strong>~1 110 $</strong></td></tr>
       </tbody>
     </table>
 

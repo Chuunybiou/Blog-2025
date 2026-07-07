@@ -34,7 +34,7 @@ $page_faq = [
   ['q' => 'Y a-t-il une communauté française à Da Nang ?',
    'a' => 'Oui, Da Nang a une communauté d\'expatriés occidentaux en croissance, dont des Français. Des groupes Facebook et des associations existent. La ville est de plus en plus populaire auprès des nomades digitaux et des expatriés qui veulent éviter les grandes métropoles.'],
   ['q' => 'Quel est le meilleur quartier pour un expatrié à Da Nang ?',
-   'a' => 'Le quartier Mỹ Khê (bord de mer) est prisé des expats mais plus cher. Les quartiers Hải Châu et An Hải Bắc offrent un bon compromis entre prix et commodités. [TON EXPÉRIENCE ICI si tu connais Da Nang]'],
+   'a' => 'Le quartier Mỹ Khê (bord de mer) est prisé des expats mais plus cher. Le quartier Hải Châu (centre-ville) est bien desservi et plus abordable. An Hải Bắc et Mỹ An offrent un bon compromis entre vie de quartier locale et proximité de la plage.'],
 ];
 include '_article-css.php';
 include 'header.php';
@@ -102,10 +102,10 @@ include 'header.php';
         <tr><th>Type de logement</th><th>Fourchette de prix mensuelle</th></tr>
       </thead>
       <tbody>
-        <tr><td>Studio/1 pièce (quartier local)</td><td>[À VÉRIFIER] – [À VÉRIFIER] USD</td></tr>
-        <tr><td>Appartement 1 chambre (expat)</td><td>[À VÉRIFIER] – [À VÉRIFIER] USD</td></tr>
-        <tr><td>Appartement 2 chambres (bord de mer)</td><td>[À VÉRIFIER] – [À VÉRIFIER] USD</td></tr>
-        <tr><td>Villa avec piscine partagée</td><td>[À VÉRIFIER] – [À VÉRIFIER] USD</td></tr>
+        <tr><td>Studio/1 pièce (quartier local)</td><td>350 – 500 USD</td></tr>
+        <tr><td>Appartement 1 chambre (expat)</td><td>400 – 700 USD</td></tr>
+        <tr><td>Appartement 2 chambres (bord de mer)</td><td>700 – 1 200 USD</td></tr>
+        <tr><td>Villa avec piscine partagée</td><td>1 000 – 2 000 USD</td></tr>
       </tbody>
     </table>
     <p>Les quartiers proches de la plage Mỹ Khê sont plus chers mais très demandés. Les quartiers résidentiels comme Hòa Cường Bắc ou An Hải Bắc sont moins chers et bien desservis.</p>
@@ -113,18 +113,18 @@ include 'header.php';
     <h2 id="section-3">Alimentation</h2>
     <p>Da Nang est réputée pour sa cuisine locale (bánh mì, mì Quảng, bánh xèo, fruits de mer frais). Manger local est très bon marché :</p>
     <ul>
-      <li>Repas de rue / cantine locale : <strong>[À VÉRIFIER] – [À VÉRIFIER] VND</strong></li>
-      <li>Café avec gâteaux : <strong>[À VÉRIFIER] VND</strong></li>
-      <li>Restaurant mi-gamme pour 2 personnes : <strong>[À VÉRIFIER] VND</strong></li>
+      <li>Repas de rue / cantine locale : <strong>30 000 – 60 000 VND</strong></li>
+      <li>Café : <strong>30 000 – 50 000 VND</strong></li>
+      <li>Restaurant mi-gamme pour 2 personnes : <strong>150 000 – 350 000 VND</strong></li>
       <li>Supermarché (produits importés) : prix proches de Hanoï</li>
     </ul>
-    <p>Budget nourriture mensuel réaliste : <strong>[À VÉRIFIER] – [À VÉRIFIER] USD</strong> selon ton mode de vie.</p>
+    <p>Budget nourriture mensuel réaliste : <strong>150 – 300 USD</strong> (alimentation locale) à <strong>350 – 600 USD</strong> (mode expat).</p>
 
     <h2 id="section-4">Transport</h2>
     <p>Da Nang est une ville à taille humaine — moins dense que Hanoï ou HCMV. Les déplacements sont plus faciles :</p>
     <ul>
-      <li>Scooter en location longue durée : <strong>[À VÉRIFIER] USD/mois</strong></li>
-      <li>Grab (moto) : <strong>[À VÉRIFIER] VND</strong> pour 5 km</li>
+      <li>Scooter en location longue durée : <strong>80 – 120 USD/mois</strong></li>
+      <li>Grab (moto) : <strong>25 000 – 40 000 VND</strong> pour 5 km</li>
       <li>Taxi/Grab voiture : disponible mais moins utilisé</li>
       <li>Vélo électrique : option croissante pour les distances courtes</li>
     </ul>
@@ -137,10 +137,10 @@ include 'header.php';
     <p>C'est là où Da Nang se distingue :</p>
     <ul>
       <li>Plage gratuite, accès permanent — pas de frais d'entrée</li>
-      <li>Sports nautiques (surf, paddle, plongée) : <strong>[À VÉRIFIER] USD</strong> la session</li>
+      <li>Sports nautiques (surf, paddle, plongée) : <strong>15 – 40 USD</strong> la session</li>
       <li>Randonnée dans les montagnes (Bà Nà, Sơn Trà) : gratuite ou très bon marché</li>
-      <li>Coworking : <strong>[À VÉRIFIER] USD/mois</strong> pour un espace ouvert</li>
-      <li>Sortie bar / restaurant western : <strong>[À VÉRIFIER] USD</strong> pour une soirée</li>
+      <li>Coworking : <strong>70 – 150 USD/mois</strong> (hot desk)</li>
+      <li>Sortie bar / restaurant western : <strong>20 – 50 USD</strong> pour une soirée</li>
     </ul>
 
     <h2 id="section-7">Budget mensuel récapitulatif</h2>
@@ -155,12 +155,12 @@ include 'header.php';
         </tr>
       </thead>
       <tbody>
-        <tr><td>Logement</td><td>[À VÉRIFIER] $</td><td>[À VÉRIFIER] $</td><td>[À VÉRIFIER] $</td></tr>
-        <tr><td>Nourriture</td><td>[À VÉRIFIER] $</td><td>[À VÉRIFIER] $</td><td>[À VÉRIFIER] $</td></tr>
-        <tr><td>Transport</td><td>[À VÉRIFIER] $</td><td>[À VÉRIFIER] $</td><td>[À VÉRIFIER] $</td></tr>
-        <tr><td>Santé / assurance</td><td>[À VÉRIFIER] $</td><td>[À VÉRIFIER] $</td><td>[À VÉRIFIER] $</td></tr>
-        <tr><td>Loisirs / activités</td><td>[À VÉRIFIER] $</td><td>[À VÉRIFIER] $</td><td>[À VÉRIFIER] $</td></tr>
-        <tr><td><strong>Total estimé</strong></td><td><strong>~700 $</strong></td><td><strong>~1 200 $</strong></td><td><strong>~2 000 $</strong></td></tr>
+        <tr><td>Logement</td><td>350 $</td><td>500 $</td><td>1 000 $</td></tr>
+        <tr><td>Nourriture</td><td>150 $</td><td>300 $</td><td>500 $</td></tr>
+        <tr><td>Transport</td><td>80 $</td><td>100 $</td><td>150 $</td></tr>
+        <tr><td>Santé / assurance</td><td>50 $</td><td>100 $</td><td>200 $</td></tr>
+        <tr><td>Loisirs / activités</td><td>50 $</td><td>200 $</td><td>400 $</td></tr>
+        <tr><td><strong>Total estimé</strong></td><td><strong>~680 $</strong></td><td><strong>~1 200 $</strong></td><td><strong>~2 250 $</strong></td></tr>
       </tbody>
     </table>
 

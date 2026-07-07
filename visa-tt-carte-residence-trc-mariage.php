@@ -30,13 +30,13 @@ $article_category     = 'Démarches Admin';
 $article_category_url = SITE_URL . '/articles-capvietnam';
 $page_faq = [
   ['q' => 'Quelle est la différence entre le visa TT et la TRC ?',
-   'a' => 'Le visa TT (thị thực TT) est un visa long séjour délivré pour les conjoints de Vietnamiens. La TRC (thẻ tạm trú — carte de résidence temporaire) est une carte physique délivrée par le Département de l\'Immigration qui remplace le visa pour les séjours de plus de [À VÉRIFIER] mois. La TRC est plus pratique au quotidien.'],
+   'a' => 'Le visa TT (thị thực TT) est un visa long séjour délivré pour les conjoints de Vietnamiens, apposé dans le passeport. La TRC (thẻ tạm trú — carte de résidence temporaire) est une carte physique distincte délivrée par le Département de l\'Immigration, valable jusqu\'à 3 ans. Elle remplace le visa et évite les renouvellements fréquents. La TRC est plus pratique au quotidien pour les démarches administratives locales.'],
   ['q' => 'Combien de temps dure la TRC pour conjoint de Vietnamien ?',
-   'a' => 'La TRC pour conjoint de Vietnamien est généralement accordée pour [À VÉRIFIER] ans, renouvelable. La durée peut varier selon le Département de l\'Immigration local.'],
+   'a' => 'La TRC pour conjoint de Vietnamien est délivrée pour une durée maximale de 3 ans, renouvelable tant que le mariage est en vigueur. La durée effective peut être inférieure si la validité restante du passeport est insuffisante.'],
   ['q' => 'Peut-on travailler avec un visa TT ou une TRC ?',
-   'a' => 'Le visa TT et la TRC n\'autorisent pas automatiquement à travailler au Vietnam. Pour exercer une activité salariée, un permis de travail (giấy phép lao động) reste nécessaire dans la plupart des cas. Des exemptions existent — [À VÉRIFIER selon ta situation].'],
+   'a' => 'Le visa TT et la TRC n\'autorisent pas automatiquement à travailler au Vietnam. Pour exercer une activité salariée pour un employeur vietnamien, un permis de travail (giấy phép lao động) reste nécessaire. Des exemptions existent pour certains profils (dirigeants d\'entreprise ayant investi au Vietnam, certaines catégories d\'experts). Pour le télétravail pour un employeur étranger, la situation reste dans une zone grise légale — consulte un avocat spécialisé.'],
   ['q' => 'Que se passe-t-il si le mariage est dissous ?',
-   'a' => 'En cas de divorce, la TRC basée sur le mariage perd sa justification et doit être annulée ou convertie vers un autre type de visa. Il faut en informer le Département de l\'Immigration dans un délai [À VÉRIFIER].'],
+   'a' => 'En cas de divorce, la TRC basée sur le mariage perd sa justification légale. Il faut en informer le Département de l\'Immigration dès que possible et demander soit l\'annulation de la TRC, soit sa conversion vers un autre type de titre de séjour (visa touriste, visa travail, etc.) si les conditions sont remplies. Ne pas signaler un divorce peut créer des complications administratives sérieuses.'],
 ];
 include '_article-css.php';
 include 'header.php';
@@ -109,8 +109,8 @@ include 'header.php';
         </tr>
         <tr>
           <td>Durée</td>
-          <td>[À VÉRIFIER] mois max</td>
-          <td>[À VÉRIFIER] ans</td>
+          <td>12 mois maximum (renouvelable)</td>
+          <td>3 ans maximum (renouvelable)</td>
         </tr>
         <tr>
           <td>Délivré par</td>
@@ -136,15 +136,15 @@ include 'header.php';
     <ul>
       <li>Être légalement marié(e) à un(e) ressortissant(e) vietnamien(ne)</li>
       <li>Avoir un acte de mariage reconnu au Vietnam (acte du comité populaire)</li>
-      <li>Ne pas avoir de casier judiciaire incompatible avec le séjour [À VÉRIFIER]</li>
+      <li>Ne pas faire l'objet d'une interdiction d'entrée ou de séjour sur le territoire vietnamien</li>
       <li>Avoir un passeport valide</li>
     </ul>
-    <p>Attention : si le mariage a eu lieu à l'étranger (en France par exemple), il faut que ce mariage soit reconnu au Vietnam. Une démarche de reconnaissance peut être nécessaire. [À VÉRIFIER]</p>
+    <p>Attention : si le mariage a eu lieu à l'étranger (en France par exemple), il doit être enregistré au Vietnam via la procédure de <strong>ghi chú kết hôn</strong> (enregistrement de mariage étranger) auprès du Service de justice (Sở Tư pháp) de la province ou de la ville de résidence. Cette démarche est obligatoire pour que le mariage soit reconnu dans les actes administratifs vietnamiens.</p>
 
     <h2 id="section-3">Documents à préparer</h2>
     <ul>
       <li>Formulaire de demande de TRC ou de visa TT (fourni par le Département de l'Immigration)</li>
-      <li>Passeport valide (validité > [À VÉRIFIER] mois)</li>
+      <li>Passeport valide (validité restante supérieure à la durée de la TRC demandée + au moins 30 jours)</li>
       <li>Photos d'identité</li>
       <li>Acte de mariage vietnamien original (giấy chứng nhận đăng ký kết hôn)</li>
       <li>Carte d'identité nationale (CCCD) ou livret de famille (sổ hộ khẩu) du conjoint vietnamien</li>
@@ -154,16 +154,16 @@ include 'header.php';
 
     <h2 id="section-4">Faire la demande</h2>
     <p>La demande se dépose au <strong>Département de l'Immigration (Cục Quản lý Xuất nhập cảnh)</strong> de la province ou de la ville où tu résides — à Hanoï ou à Hô Chi Minh-Ville, selon ton lieu de résidence.</p>
-    <p>La présence physique du demandeur est généralement requise. Ton conjoint vietnamien peut t'accompagner mais n'est pas toujours obligatoire [À VÉRIFIER selon le bureau local].</p>
-    <p>Délai de traitement : <strong>[À VÉRIFIER] jours ouvrés</strong>. Coût : <strong>[À VÉRIFIER] USD ou VND équivalent</strong>.</p>
+    <p>La présence physique du demandeur est généralement requise. Le conjoint vietnamien peut accompagner mais n'est pas systématiquement obligatoire — vérifier auprès du département local.</p>
+    <p>Délai de traitement : <strong>5 à 15 jours ouvrés</strong> selon le département de l'immigration. Coût gouvernemental : <strong>variable selon la province</strong> — généralement entre 200 000 et 600 000 VND pour la carte. Des frais de traduction et de légalisation s'ajoutent selon les documents.</p>
 
     <div class="tip-box">
       <strong>Conseil pratique :</strong> Fais l'enregistrement de résidence temporaire (đăng ký tạm trú) AVANT de déposer la demande de TRC — le Département de l'Immigration le demande souvent. Cet enregistrement se fait au comité populaire de ton quartier avec ton contrat de bail et le passeport.
     </div>
 
     <h2 id="section-5">Durée de validité et renouvellement</h2>
-    <p>La TRC pour conjoint de Vietnamien est délivrée pour une durée de <strong>[À VÉRIFIER] ans</strong>. Elle est renouvelable aussi longtemps que le mariage est en vigueur.</p>
-    <p>Le renouvellement doit être initié <strong>[À VÉRIFIER] mois avant</strong> l'expiration de la TRC actuelle. Les documents à fournir sont similaires à la première demande.</p>
+    <p>La TRC pour conjoint de Vietnamien est délivrée pour une durée de <strong>3 ans maximum</strong>. Elle est renouvelable aussi longtemps que le mariage est en vigueur.</p>
+    <p>Le renouvellement doit être initié <strong>au moins 30 jours avant</strong> l'expiration de la TRC actuelle. Les documents à fournir sont similaires à la première demande.</p>
 
     <h2 id="section-6">Ce que tu peux (et ne peux pas) faire avec la TRC</h2>
     <p>Avec la TRC conjoint de Vietnamien :</p>
@@ -177,7 +177,7 @@ include 'header.php';
     <ul>
       <li>Travailler pour un employeur vietnamien (un permis de travail reste souvent requis)</li>
       <li>Exercer certaines professions libérales réglementées</li>
-      <li>Acheter des biens immobiliers dans les mêmes conditions qu'un Vietnamien [À VÉRIFIER]</li>
+      <li>Acheter des biens immobiliers dans les mêmes conditions qu'un Vietnamien — les étrangers avec TRC peuvent acheter des appartements (quota max 30% par immeuble, loi sur l'immobilier 2024) mais pas de terrain ni de maison individuelle dans certaines zones</li>
     </ul>
 
     <h2 id="section-faq">Questions fréquentes</h2>

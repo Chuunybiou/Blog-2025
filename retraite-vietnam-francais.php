@@ -219,7 +219,7 @@ include 'header.php';
     <h3>Côté caisses de retraite</h3>
     <ul>
       <li><strong>Prévenir la CNAV et tes caisses complémentaires</strong> de ton départ à l'étranger — ils mettront à jour ton dossier et t'indiqueront la procédure pour le certificat de vie</li>
-      <li><strong>Récupérer le formulaire de certificat de vie</strong> et noter les délais de remise [À VÉRIFIER]</li>
+      <li><strong>Récupérer le formulaire de certificat de vie</strong> et noter les délais de remise — généralement annuel, à renvoyer dans les délais indiqués par ta caisse (souvent avant le 31 mars ou 30 juin selon les caisses)</li>
       <li><strong>Vérifier ton relevé de carrière</strong> sur <a href="https://www.info-retraite.fr" target="_blank" rel="noopener">info-retraite.fr</a> avant de partir — corriger les anomalies depuis la France est beaucoup plus simple</li>
       <li><strong>Mettre à jour l'IBAN de versement</strong> si tu changes de compte bancaire français</li>
     </ul>
@@ -235,7 +235,8 @@ include 'header.php';
     <p>→ Lire : <a href="quitter-france-expat-vietnam">Quitter la France : impôts, Sécu et démarches de départ</a> + <a href="checklist-depart-installer-vietnam">Checklist complète pour s'installer au Vietnam</a>. Ces deux articles couvrent les démarches CPAM, CAF, résidence fiscale, banques — je ne les répète pas ici.</p>
 
     <h2 id="section-8">Vivre sa retraite au Vietnam au quotidien</h2>
-    <p><strong>[TON EXPÉRIENCE ICI : ce que tu observes chez les retraités français autour de toi à Hanoï — leurs difficultés non anticipées, ce qu'ils apprécient, ce qui les surprend.]</strong></p>
+    <?php /* À COMPLÉTER par Anthony — observations sur les retraités français à Hanoï */ ?>
+    <p><em>Section à venir — des témoignages de retraités français installés au Vietnam.</em></p>
 
     <p>Quelques réalités que je vois souvent :</p>
 

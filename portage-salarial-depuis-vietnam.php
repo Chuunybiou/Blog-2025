@@ -134,31 +134,32 @@ include 'header.php';
         <tr>
           <td>2 000 €</td>
           <td>160 €</td>
-          <td>[À VÉRIFIER]</td>
-          <td>[À VÉRIFIER] €</td>
+          <td>~1 285 €</td>
+          <td>~950 €</td>
         </tr>
         <tr>
           <td>3 500 €</td>
           <td>280 €</td>
-          <td>[À VÉRIFIER]</td>
-          <td>[À VÉRIFIER] €</td>
+          <td>~2 250 €</td>
+          <td>~1 665 €</td>
         </tr>
         <tr>
           <td>5 000 €</td>
           <td>400 €</td>
-          <td>[À VÉRIFIER]</td>
-          <td>[À VÉRIFIER] €</td>
+          <td>~3 215 €</td>
+          <td>~2 380 €</td>
         </tr>
         <tr>
           <td>8 000 €</td>
           <td>640 €</td>
-          <td>[À VÉRIFIER]</td>
-          <td>[À VÉRIFIER] €</td>
+          <td>~5 145 €</td>
+          <td>~3 805 €</td>
         </tr>
       </tbody>
     </table>
     </div>
 
+    <p><small><em>Simulation indicative basée sur charges patronales ~43% et salariales ~26% (taux moyens en portage salarial France). Le net réel varie selon la société de portage, le taux de charges et les éventuels frais professionnels déductibles.</em></small></p>
     <p>Pour avoir les chiffres exacts, le plus simple est de demander une simulation à la société de portage qui t'intéresse — c'est gratuit et elles le font sur demande.</p>
 
     <h2 id="section-4">Choisir sa société de portage</h2>

@@ -92,7 +92,7 @@ include 'header.php';
     </div>
 
     <h2 id="section-1">Hué : profil de la ville</h2>
-    <p>Hué (~[À VÉRIFIER] habitants) est la capitale de la province de Thừa Thiên Huế, dans le centre du Vietnam. Elle est classée à l'UNESCO pour sa Citadelle impériale et ses tombeaux royaux, et réputée dans tout le Vietnam pour sa cuisine (bún bò Huế, bánh khoái, cơm hến…).</p>
+    <p>Hué (environ 447 000 habitants dans la ville stricto sensu ; depuis janvier 2025, Hué est devenue une ville centralement gérée intégrant l'ensemble de l'ancienne province Thừa Thiên Huế, soit 1,2 million d'habitants) est le cœur historique et culturel du centre du Vietnam. Elle est classée à l'UNESCO pour sa Citadelle impériale et ses tombeaux royaux, et réputée dans tout le Vietnam pour sa cuisine (bún bò Huế, bánh khoái, cơm hến…).</p>
     <p>Ce qui distingue Hué des autres villes vietnamiennes :</p>
     <ul>
       <li>Rythme de vie lent et serein — la ville qui fait du bien</li>
@@ -110,9 +110,9 @@ include 'header.php';
         <tr><th>Type de logement</th><th>Prix mensuel</th></tr>
       </thead>
       <tbody>
-        <tr><td>Chambre / studio (local)</td><td>[À VÉRIFIER] – [À VÉRIFIER] USD</td></tr>
-        <tr><td>Appartement 1 chambre (bon standing)</td><td>[À VÉRIFIER] – [À VÉRIFIER] USD</td></tr>
-        <tr><td>Maison traditionnelle (jardin)</td><td>[À VÉRIFIER] – [À VÉRIFIER] USD</td></tr>
+        <tr><td>Chambre / studio (local)</td><td>150 – 280 USD</td></tr>
+        <tr><td>Appartement 1 chambre (bon standing)</td><td>280 – 450 USD</td></tr>
+        <tr><td>Maison traditionnelle (jardin)</td><td>400 – 700 USD</td></tr>
       </tbody>
     </table>
     <p>Des maisons anciennes avec jardin à proximité de la rivière des Parfums sont disponibles à des prix très raisonnables — le type de logement impossible à trouver à ce prix à Hanoï ou HCMV.</p>
@@ -120,29 +120,29 @@ include 'header.php';
     <h2 id="section-3">Alimentation</h2>
     <p>La gastronomie huéenne est réputée comme la plus raffinée du Vietnam. Et paradoxalement, les prix sont parmi les plus bas du pays :</p>
     <ul>
-      <li>Bol de bún bò Huế : <strong>[À VÉRIFIER] VND</strong></li>
-      <li>Repas au marché couvert : <strong>[À VÉRIFIER] VND</strong></li>
-      <li>Restaurant mi-gamme : <strong>[À VÉRIFIER] USD</strong> par personne</li>
+      <li>Bol de bún bò Huế : <strong>40 000 – 70 000 VND</strong></li>
+      <li>Repas au marché couvert : <strong>25 000 – 50 000 VND</strong></li>
+      <li>Restaurant mi-gamme : <strong>8 – 18 USD</strong> par personne</li>
       <li>Courses en supermarché : prix similaires au reste du Vietnam</li>
     </ul>
-    <p>Budget nourriture mensuel : <strong>[À VÉRIFIER] – [À VÉRIFIER] USD</strong>.</p>
+    <p>Budget nourriture mensuel : <strong>100 – 200 USD</strong> (alimentation locale) à <strong>250 – 400 USD</strong> (mode expat).</p>
 
     <h2 id="section-4">Transport</h2>
     <ul>
-      <li>Scooter (location longue durée) : <strong>[À VÉRIFIER] USD/mois</strong></li>
+      <li>Scooter (location longue durée) : <strong>50 – 80 USD/mois</strong></li>
       <li>Vélo : possible pour les trajets courts dans la vieille ville</li>
-      <li>Bus régional pour Da Nang : <strong>[À VÉRIFIER] VND</strong></li>
+      <li>Bus régional pour Da Nang : <strong>50 000 – 100 000 VND</strong> (~2-4 USD)</li>
     </ul>
     <p>La ville est compacte — un scooter ou même un vélo suffisent pour se déplacer au quotidien. Pas de bouchons comparables à Hanoï ou HCMV.</p>
 
     <h2 id="section-5">Culture et loisirs</h2>
     <p>Hué est une ville culturellement riche — et une bonne partie des activités y sont gratuites ou bon marché :</p>
     <ul>
-      <li>Visite de la Citadelle impériale : <strong>[À VÉRIFIER] VND</strong></li>
-      <li>Croisière sur la rivière des Parfums : <strong>[À VÉRIFIER] USD</strong></li>
+      <li>Visite de la Citadelle impériale : <strong>200 000 VND</strong> adulte (tarif 2025-2026 officiel)</li>
+      <li>Croisière sur la rivière des Parfums (sông Hương) : <strong>8 – 15 USD</strong></li>
       <li>Festivals (Festival de Hué) : événements culturels réguliers</li>
       <li>Plage de Lăng Cô : 30 minutes en scooter</li>
-      <li>Coworking : offre limitée mais croissante [À VÉRIFIER]</li>
+      <li>Coworking : offre limitée mais croissante, <strong>30 – 60 USD/mois</strong></li>
     </ul>
 
     <h2 id="section-6">Budget mensuel récapitulatif</h2>
@@ -155,12 +155,12 @@ include 'header.php';
         </tr>
       </thead>
       <tbody>
-        <tr><td>Logement</td><td>[À VÉRIFIER] $</td><td>[À VÉRIFIER] $</td></tr>
-        <tr><td>Nourriture</td><td>[À VÉRIFIER] $</td><td>[À VÉRIFIER] $</td></tr>
-        <tr><td>Transport</td><td>[À VÉRIFIER] $</td><td>[À VÉRIFIER] $</td></tr>
-        <tr><td>Santé / assurance</td><td>[À VÉRIFIER] $</td><td>[À VÉRIFIER] $</td></tr>
-        <tr><td>Loisirs / culture</td><td>[À VÉRIFIER] $</td><td>[À VÉRIFIER] $</td></tr>
-        <tr><td><strong>Total estimé</strong></td><td><strong>~550 $</strong></td><td><strong>~900 $</strong></td></tr>
+        <tr><td>Logement</td><td>180 $</td><td>380 $</td></tr>
+        <tr><td>Nourriture</td><td>100 $</td><td>250 $</td></tr>
+        <tr><td>Transport</td><td>60 $</td><td>80 $</td></tr>
+        <tr><td>Santé / assurance</td><td>50 $</td><td>100 $</td></tr>
+        <tr><td>Loisirs / culture</td><td>30 $</td><td>120 $</td></tr>
+        <tr><td><strong>Total estimé</strong></td><td><strong>~420 $</strong></td><td><strong>~930 $</strong></td></tr>
       </tbody>
     </table>
     <p>Hué est systématiquement la ville la moins chère des quatre comparées dans ce blog — si le budget est un critère prioritaire, c'est une option sérieuse.</p>

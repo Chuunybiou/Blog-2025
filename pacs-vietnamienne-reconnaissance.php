@@ -90,7 +90,7 @@ include 'header.php';
     <p>En France, le PACS entre un Français et un(e) ressortissant(e) étranger(ère) crée des effets juridiques :</p>
     <ul>
       <li><strong>Régime fiscal commun</strong> : imposition commune pour les impôts français — potentiellement avantageux</li>
-      <li><strong>Droits de succession allégés</strong> : entre partenaires pacsés, les droits de succession sont exonérés en ligne directe [À VÉRIFIER]</li>
+      <li><strong>Droits de succession</strong> : les partenaires pacsés sont <strong>totalement exonérés de droits de succession</strong> (art. 796-0 bis du CGI, depuis la loi TEPA du 21 août 2007). Attention : contrairement aux époux mariés, les partenaires pacsés n'héritent pas automatiquement — un testament est indispensable pour protéger le survivant</li>
       <li><strong>Certaines prestations sociales</strong> : la CAF prend en compte les ressources du partenaire même étranger</li>
       <li><strong>Protection du logement commun</strong> : si vous vivez ensemble en France</li>
       <li><strong>Prise en compte pour certains dossiers administratifs</strong> : mutuelles, certaines banques</li>
@@ -169,7 +169,7 @@ include 'header.php';
     <p>Si l'objectif final est que votre partenaire vive en France avec toi, le mariage est incontournable. Le PACS peut être une étape intermédiaire pour officialiser la relation côté français pendant une période de transition.</p>
 
     <h2 id="section-6">Le concubinage notoire comme alternative partielle</h2>
-    <p>Le concubinage (union libre) notoire peut être pris en compte dans certains dossiers de visa, notamment pour le renouvellement d'un titre de séjour déjà existant ("liens personnels et familiaux"). Mais il ne crée pas de droit d'entrée sur le territoire. Il faut des preuves solides de vie commune durable (au moins 2 ans selon les préfectures [À VÉRIFIER]).</p>
+    <p>Le concubinage (union libre) notoire peut être pris en compte dans certains dossiers de visa, notamment pour le renouvellement d'un titre de séjour déjà existant (motif "liens personnels et familiaux"). Mais il ne crée pas de droit d'entrée sur le territoire. Les préfectures apprécient les preuves au cas par cas — en pratique, une vie commune d'au moins 2 ans bien documentée (factures communes, bail commun, déclarations fiscales communes) est généralement nécessaire.</p>
 
     <h2 id="section-faq">Questions fréquentes</h2>
     <?php foreach ($page_faq as $faq): ?>

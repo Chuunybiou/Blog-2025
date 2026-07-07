@@ -156,12 +156,12 @@ include 'header.php';
         <tr>
           <td>CA maximum annuel</td>
           <td>Illimité</td>
-          <td>[À VÉRIFIER : ~77 700 € en 2026 pour services]</td>
+          <td>77 700 € HT/an (BNC et BIC services, seuil 2026)</td>
         </tr>
         <tr>
           <td>Coût pour 3 000 € CA/mois</td>
-          <td>~[À VÉRIFIER] € nets</td>
-          <td>~[À VÉRIFIER] € nets</td>
+          <td>~1 430 € nets <small>(après charges patronales + salariales)</small></td>
+          <td>~2 340 € nets de cotisations <small>(taux BNC 22% — avant IR)</small></td>
         </tr>
         <tr>
           <td>Problème domiciliation</td>

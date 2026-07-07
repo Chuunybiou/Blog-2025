@@ -144,23 +144,23 @@ include 'header.php';
       <tbody>
         <tr>
           <td>Logement (appart 1 pièce expat)</td>
-          <td>[À VÉRIFIER] USD/mois</td>
-          <td>[À VÉRIFIER] USD/mois</td>
+          <td>400–600 USD/mois</td>
+          <td>500–800 USD/mois</td>
         </tr>
         <tr>
           <td>Repas restaurant local</td>
-          <td>[À VÉRIFIER] VND</td>
-          <td>[À VÉRIFIER] VND</td>
+          <td>50 000–100 000 VND</td>
+          <td>60 000–120 000 VND</td>
         </tr>
         <tr>
           <td>Café + coworking</td>
-          <td>[À VÉRIFIER] USD/mois</td>
-          <td>[À VÉRIFIER] USD/mois</td>
+          <td>100–200 USD/mois</td>
+          <td>120–250 USD/mois</td>
         </tr>
         <tr>
           <td>Transport (Grab moto 5 km)</td>
-          <td>[À VÉRIFIER] VND</td>
-          <td>[À VÉRIFIER] VND</td>
+          <td>25 000–40 000 VND</td>
+          <td>25 000–45 000 VND</td>
         </tr>
       </tbody>
     </table>
@@ -180,11 +180,12 @@ include 'header.php';
     <p>HCMV est plus ouverte, plus internationale, plus "tout est possible". La scène gastronomique et culturelle est très diverse. L'architecture mélange colonial, moderne et influences asiatiques. Si tu aimes l'énergie et la dynamique d'une métropole en expansion, HCMV est séduisante.</p>
 
     <h2 id="section-6">La communauté française</h2>
-    <p>Les deux villes ont des communautés françaises importantes. Hanoï compte [À VÉRIFIER] Français officiellement inscrits au registre consulaire. HCMV en a [À VÉRIFIER].</p>
+    <p>Les deux villes ont des communautés françaises importantes. En 2025, environ 6 968 Français étaient inscrits au registre consulaire au Vietnam (source : MEAE), répartis entre l'ambassade de Hanoï et le consulat de HCMV — HCMV concentre la majeure partie de la communauté d'affaires, Hanoï celle des fonctionnaires et coopérants.</p>
     <p>Les associations, clubs et événements pour les Français existent dans les deux villes. L'Institut français est actif dans les deux — concerts, expos, cinéma français, cours de langue.</p>
 
     <h2 id="section-7">Mon avis personnel</h2>
-    <p>[TON EXPÉRIENCE ICI — pourquoi tu as choisi Hanoï plutôt que HCMV, ce que tu aimes et ce qui te manque parfois de Saigon, ton conseil selon les profils]</p>
+    <?php /* À COMPLÉTER par Anthony — raison du choix de Hanoï, ressenti personnel, conseil selon les profils */ ?>
+    <p><em>Section à venir — je complète cet article avec mon retour d'expérience.</em></p>
 
     <div class="tip-box">
       <strong>Mon conseil :</strong> Avant de te décider, passe au moins une semaine dans chaque ville. Ce qui fait pencher la balance n'est souvent pas rationnel — c'est une question d'atmosphère et de feeling personnel.

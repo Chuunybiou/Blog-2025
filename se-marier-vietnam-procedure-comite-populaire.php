@@ -162,8 +162,8 @@ include 'header.php';
     <ul>
       <li>Tu dois être physiquement présent — pas de procuration possible</li>
       <li>Apporte tes documents originaux + copies</li>
-      <li>Un interprète peut être requis si tu ne parles pas vietnamien [À VÉRIFIER selon le comité]</li>
-      <li>Des témoins peuvent être demandés [À VÉRIFIER]</li>
+      <li>Un interprète peut être requis si tu ne parles pas vietnamien (selon le comité populaire local — renseigne-toi en avance)</li>
+      <li>Aucun témoin n'est requis en règle générale — le mariage au comité populaire est une procédure administrative, pas une cérémonie au sens français du terme</li>
     </ul>
     <p>À l'issue de la cérémonie, le comité populaire vous remet le <strong>giấy chứng nhận đăng ký kết hôn</strong> (certificat d'enregistrement de mariage) — c'est votre acte de mariage officiel.</p>
 
@@ -180,7 +180,8 @@ include 'header.php';
 
     <h2 id="section-6">La cérémonie traditionnelle : séparée ou combinée ?</h2>
     <p>La cérémonie civile au comité populaire n'a rien de festif. La plupart des couples franco-vietnamiens organisent une <strong>cérémonie traditionnelle séparée</strong> (lễ cưới) avec les familles, avant ou après le mariage civil. Cette cérémonie n'a pas de valeur légale mais elle est culturellement très importante au Vietnam.</p>
-    <p>[TON EXPÉRIENCE ICI — comment vous avez organisé votre mariage à toi et ta femme, ce qui a bien marché et ce qui a été surprenant]</p>
+    <?php /* À COMPLÉTER par Anthony — retour d'expérience sur le mariage au comité populaire */ ?>
+    <p><em>Section à venir — je partagerai bientôt notre expérience personnelle de cette démarche.</em></p>
 
     <h2 id="section-faq">Questions fréquentes</h2>
     <?php foreach ($page_faq as $faq): ?>

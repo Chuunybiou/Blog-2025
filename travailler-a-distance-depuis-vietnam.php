@@ -129,7 +129,7 @@ include 'header.php';
         <tr>
           <td>Micro-entreprise</td>
           <td>Zone grise, dépend du client</td>
-          <td>Cotisations URSSAF si résident fiscal FR [À VÉRIFIER]</td>
+          <td>Cotisations URSSAF obligatoires si résident fiscal français</td>
           <td>Partielle (selon régime)</td>
           <td>Faible CA, clients FR, résident fiscal FR</td>
         </tr>
@@ -137,7 +137,7 @@ include 'header.php';
           <td>Contrat ou société locale VN</td>
           <td>Légal avec permis de travail ou création de société</td>
           <td>Impôt au Vietnam sur revenus VN</td>
-          <td>Sécu sociale vietnamienne [À VÉRIFIER]</td>
+          <td>Cotisations sociales vietnamiennes obligatoires (BHXH, BHYT, BHTN) avec contrat local</td>
           <td>Long terme, intégration locale</td>
         </tr>
       </tbody>
@@ -221,7 +221,8 @@ include 'header.php';
     </div>
 
     <h2 id="section-9">Mon parcours</h2>
-    <p>[TON EXPÉRIENCE ICI : Comment tu as organisé ton travail à distance depuis Hanoï — quel statut tu utilises, comment tu gères les clients français, les transferts d'argent, la fiscalité. Ce paragraphe personnel est ce qui différencie cet article d'un guide générique.]</p>
+    <?php /* À COMPLÉTER par Anthony — statut utilisé, gestion clients FR, transferts, fiscalité */ ?>
+    <p><em>Section à venir — je partagerai prochainement mon organisation concrète depuis Hanoï.</em></p>
 
     <div class="warning-box">
       <strong>Disclaimer :</strong> Cet article partage mon expérience et des informations générales, pas un conseil fiscal ou juridique personnalisé. Pour ta situation précise, consulte un expert-comptable ou un avocat fiscaliste spécialisé en expatriation.
