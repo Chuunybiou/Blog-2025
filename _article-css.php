@@ -100,18 +100,18 @@ $page_extra_css = "
 .tip-box strong{display:block;margin-bottom:0.3rem;color:var(--jade)}
 .warning-box{background:rgba(184,134,11,0.06);border-left:4px solid var(--amber);padding:1.25rem 1.5rem;border-radius:0 var(--radius) var(--radius) 0;margin:2rem 0;font-size:0.95rem}
 .warning-box strong{display:block;margin-bottom:0.3rem;color:var(--amber)}
-.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:2rem 0;border-radius:var(--radius);box-shadow:var(--shadow-sm)}
-.comparison-table{width:100%;border-collapse:collapse;font-size:0.9rem;background:var(--white);border-radius:var(--radius);overflow:hidden;min-width:420px}
-.table-wrap .comparison-table{margin:0;box-shadow:none;border-radius:0}
-.comparison-table thead{background:var(--ink);color:var(--cream)}
-.comparison-table thead th{position:sticky;top:0;z-index:1}
-.comparison-table th{text-align:left;padding:0.9rem 1.2rem;font-size:0.75rem;text-transform:uppercase;letter-spacing:1px;font-weight:600}
-.comparison-table td{padding:0.8rem 1.2rem;border-bottom:1px solid var(--border);color:#3a3530}
-.comparison-table tbody tr:nth-child(even){background:rgba(0,0,0,0.025)}
-.comparison-table tbody tr:last-child td{border-bottom:none}
-.comparison-table tbody tr:hover{background:var(--warm-bg)}
-.comparison-table td:first-child{font-weight:500;color:var(--ink)}
-@media(max-width:640px){.comparison-table{font-size:0.82rem}.comparison-table th,.comparison-table td{padding:0.65rem 0.9rem}}
+.table-wrap,.table-wrapper{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:2rem 0;border-radius:var(--radius);box-shadow:var(--shadow-sm)}
+.comparison-table,.table-wrapper table{width:100%;border-collapse:collapse;font-size:0.9rem;background:var(--white);border-radius:var(--radius);overflow:hidden;min-width:420px}
+.table-wrap .comparison-table,.table-wrapper table{margin:0;box-shadow:none;border-radius:0}
+.comparison-table thead,.table-wrapper table thead{background:var(--ink);color:var(--cream)}
+.comparison-table thead th,.table-wrapper table thead th{position:sticky;top:0;z-index:1}
+.comparison-table th,.table-wrapper table th{text-align:left;padding:0.9rem 1.2rem;font-size:0.75rem;text-transform:uppercase;letter-spacing:1px;font-weight:600}
+.comparison-table td,.table-wrapper table td{padding:0.8rem 1.2rem;border-bottom:1px solid var(--border);color:#3a3530;vertical-align:top}
+.comparison-table tbody tr:nth-child(even),.table-wrapper table tbody tr:nth-child(even){background:rgba(0,0,0,0.025)}
+.comparison-table tbody tr:last-child td,.table-wrapper table tbody tr:last-child td{border-bottom:none}
+.comparison-table tbody tr:hover,.table-wrapper table tbody tr:hover{background:var(--warm-bg)}
+.comparison-table td:first-child,.table-wrapper table td:first-child{font-weight:500;color:var(--ink)}
+@media(max-width:640px){.comparison-table,.table-wrapper table{font-size:0.82rem;min-width:320px}.comparison-table th,.comparison-table td,.table-wrapper table th,.table-wrapper table td{padding:0.65rem 0.9rem}}
 .article-img,.article-photo{width:100%;aspect-ratio:16/9;border-radius:var(--radius);margin:2rem 0;object-fit:cover;display:flex;align-items:center;justify-content:center;font-size:3rem;color:var(--muted);background:linear-gradient(135deg,var(--warm-bg),var(--border))}
 .faq-item{border:1px solid var(--border);border-radius:var(--radius);margin-bottom:0.75rem;overflow:hidden;background:var(--white)}
 .faq-question{width:100%;padding:1rem 1.25rem;background:none;border:none;text-align:left;font-family:inherit;font-size:1rem;font-weight:600;cursor:pointer;display:flex;justify-content:space-between;align-items:center;transition:background 0.2s}
