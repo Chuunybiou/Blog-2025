@@ -1,0 +1,43 @@
+name: Auto-publish scheduled articles
+
+on:
+  schedule:
+    # Every Monday and Thursday at 7:00 UTC (9:00 Paris time)
+    - cron: '0 7 * * 1,4'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Dry run (show what would be published without saving)'
+        type: boolean
+        default: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1'
+
+      - name: Run auto-publish script
+        run: php scripts/auto-publish.php
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git diff --quiet data/articles.json data/publish-schedule.json sitemap.xml || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push changes
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "Cap Vietnam Bot"
+          git config user.email "bot@blog-capvietnam.fr"
+          git add data/articles.json data/publish-schedule.json sitemap.xml
+          git commit -m "Auto-publish: $(date +%Y-%m-%d)"
+          git push

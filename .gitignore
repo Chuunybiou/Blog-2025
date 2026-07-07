@@ -1,0 +1,10 @@
+# Rate-limit lock files (ephemeral, no value in git)
+data/comments/_rate/
+
+# Click tracking (user data, regenerated on server)
+data/clicks.json
+
+# Local dev / system files
+.DS_Store
+Thumbs.db
+*.log

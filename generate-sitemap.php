@@ -1,82 +1,58 @@
 <?php
 /**
  * Dynamic sitemap generator.
- * Run via CLI: php generate-sitemap.php
- * Or access via browser to regenerate: /generate-sitemap.php
- * Outputs sitemap.xml in the same directory.
+ * Reads all published articles from data/articles.json automatically.
+ *
+ * Run via CLI:     php generate-sitemap.php
+ * Via browser:     /generate-sitemap.php   (regenerates and shows count)
+ * Via auto-publish: included by scripts/auto-publish.php
  */
-require_once __DIR__ . '/config/site.php';
+$root = defined('SITE_URL') ? null : __DIR__;
+if ($root) require_once __DIR__ . '/config/site.php';
 
-$base = SITE_URL;
+$base  = SITE_URL;
+$today = date('Y-m-d');
 
-// Pages: [slug, lastmod, changefreq, priority]
-// slug '' = root homepage
-$pages = [
-  // Main pages
-  ['',                                         '2026-04-25', 'weekly',  '1.0'],
-  ['articles-capvietnam',                      '2026-04-25', 'weekly',  '0.9'],
-  ['guide-cap-vietnam-2026',                   '2026-04-25', 'monthly', '0.8'],
-  ['apprendre-francais-capvietnam',            '2026-04-25', 'weekly',  '0.8'],
-  ['a-propos-capvietnam',                      '2026-04-25', 'monthly', '0.6'],
-
-  // Section Vietnamienne
-  ['vi/',                                        '2026-04-25', 'weekly',  '0.8'],
-
-  // Démarches Administratives
-  ['quitter-france-expat-vietnam',             '2026-04-25', 'monthly', '0.8'],
-  ['visa-vietnam-francais-guide-2026',         '2026-04-25', 'monthly', '0.9'],
-  ['quitter-canada-expat-vietnam',             '2026-04-05', 'monthly', '0.8'],
-  ['compte-bancaire-vietnam-etranger',         '2026-04-03', 'monthly', '0.8'],
-  ['assurance-voyage-vietnam',                 '2026-07-03', 'monthly', '0.9'],
-  ['assurance-sante-vietnam-expat',            '2026-07-03', 'monthly', '0.8'],
-  ['permis-conduire-vietnam',                  '2026-03-20', 'monthly', '0.7'],
-  ['carte-residence-temporaire-vietnam',       '2026-02-15', 'monthly', '0.8'],
-  ['se-marier-vietnamienne-demarches-france',  '2026-04-06', 'monthly', '0.8'],
-
-  // Couple Mixte
-  ['differences-culturelles-couple-franco-vietnamien', '2026-03-25', 'monthly', '0.7'],
-  ['belle-famille-vietnamienne-guide',         '2026-03-18', 'monthly', '0.7'],
-  ['prix-mariage-franco-vietnamien',           '2026-04-15', 'monthly', '0.7'],
-  ['compte-joint-franco-vietnamien',           '2026-05-22', 'monthly', '0.8'],
-  ['argent-couple-franco-vietnamien',          '2026-04-20', 'monthly', '0.7'],
-  ['the-sante-vietnamien-dattes-goji-reglisse','2026-06-01', 'monthly', '0.7'],
-  ['tet-nouvel-an-lunaire-vietnam',            '2026-02-10', 'yearly',  '0.7'],
-  ['apprendre-vietnamien-couple',              '2026-02-05', 'monthly', '0.6'],
-
-  // Argent & Travail
-  ['banque-vietnam-francais',                  '2026-06-01', 'monthly', '0.9'],
-  ['budget-mensuel-hanoi-2026',                '2026-04-01', 'monthly', '0.8'],
-  ['transferer-argent-vietnam-wise',           '2026-04-25', 'monthly', '0.8'],
-  ['compte-bancaire-canada-europe-wealthsimple','2026-04-18', 'monthly', '0.8'],
-  ['travailler-en-ligne-vietnam',              '2026-03-15', 'monthly', '0.7'],
-  ['fiscalite-expat-france-vietnam',           '2026-02-20', 'monthly', '0.8'],
-  ['cafes-coworkings-hanoi',                   '2026-02-12', 'monthly', '0.6'],
-  ['creer-blog-expat-rentable',                '2026-01-20', 'monthly', '0.7'],
-
-  // Argent & Travail
-  ['igraal-cashback-expat-france',             '2026-06-06', 'monthly', '0.7'],
-  ['organiser-finances-expat-france-vietnam',  '2026-06-06', 'monthly', '0.8'],
-  ['fortuneo-expat-compte-france',             '2026-06-06', 'monthly', '0.8'],
-
-  // Couple / Culture
-  ['franchise-vietnamiens-physique-harmonie',  '2026-06-06', 'monthly', '0.7'],
-  ['visiter-pagode-vietnam-regles',            '2026-06-06', 'monthly', '0.7'],
-
-  // Vie pratique
-  ['adaptateur-prise-electrique-vietnam',      '2026-06-02', 'monthly', '0.7'],
-  ['louer-appartement-hanoi-etranger',         '2026-03-10', 'monthly', '0.7'],
-  ['telephone-vietnam-quelle-sim-choisir',     '2026-03-15', 'monthly', '0.7'],
-  ['ramener-produits-francais-vietnam',        '2026-02-28', 'monthly', '0.6'],
-  ['sim-internet-applications-vietnam',        '2026-06-25', 'monthly', '0.8'],
+// ── 1. Static / hub pages ────────────────────────────────────────
+$static_pages = [
+    // [slug, lastmod, changefreq, priority]
+    ['',                                          $today,        'weekly',  '1.0'],
+    ['articles-capvietnam',                       $today,        'weekly',  '0.9'],
+    ['par-ou-commencer-couple-franco-vietnamien', $today,        'monthly', '0.9'],
+    ['outils-vivre-vietnam',                      '2026-07-06',  'monthly', '0.8'],
+    ['calculateur-budget-vietnam',                '2026-04-26',  'monthly', '0.8'],
+    ['guide-cap-vietnam-2026',                    '2026-04-25',  'monthly', '0.8'],
+    ['a-propos-capvietnam',                       '2026-04-25',  'monthly', '0.6'],
+    ['pack-gratuit',                              '2026-04-25',  'monthly', '0.7'],
+    ['livre-vietnamien',                          '2026-04-25',  'monthly', '0.7'],
+    ['vi/',                                       '2026-07-06',  'weekly',  '0.8'],
 ];
 
-$xml = '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
+// ── 2. Dynamic articles from articles.json ──────────────────────
+$json_path = __DIR__ . '/data/articles.json';
+$json      = json_decode(file_get_contents($json_path), true) ?? [];
+$articles  = $json['articles'] ?? [];
+
+$article_pages = [];
+foreach ($articles as $a) {
+    // Skip unpublished
+    if (($a['published'] ?? true) === false) continue;
+    $slug    = $a['slug'] ?? '';
+    $lastmod = $a['date'] ?? $today;
+    if (!$slug) continue;
+    $article_pages[] = [$slug, $lastmod, 'monthly', '0.8'];
+}
+
+// ── 3. Build XML ─────────────────────────────────────────────────
+$all = array_merge($static_pages, $article_pages);
+
+$xml  = '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
 $xml .= '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' . "\n\n";
 
-foreach ($pages as [$slug, $lastmod, $changefreq, $priority]) {
-    $loc = $slug === '' ? $base . '/' : $base . '/' . $slug;
+foreach ($all as [$slug, $lastmod, $changefreq, $priority]) {
+    $loc  = $slug === '' ? $base . '/' : $base . '/' . $slug;
     $xml .= "  <url>\n";
-    $xml .= "    <loc>{$loc}</loc>\n";
+    $xml .= "    <loc>" . htmlspecialchars($loc, ENT_XML1) . "</loc>\n";
     $xml .= "    <lastmod>{$lastmod}</lastmod>\n";
     $xml .= "    <changefreq>{$changefreq}</changefreq>\n";
     $xml .= "    <priority>{$priority}</priority>\n";
@@ -85,12 +61,11 @@ foreach ($pages as [$slug, $lastmod, $changefreq, $priority]) {
 
 $xml .= "\n</urlset>";
 
-$output = __DIR__ . '/sitemap.xml';
-file_put_contents($output, $xml);
+file_put_contents(__DIR__ . '/sitemap.xml', $xml);
 
 if (php_sapi_name() === 'cli') {
-    echo "sitemap.xml generated (" . count($pages) . " URLs)\n";
-} else {
-    header('Content-Type: text/plain');
-    echo "sitemap.xml regenerated — " . count($pages) . " URLs — " . date('Y-m-d H:i:s') . "\n";
+    echo "sitemap.xml generated — " . count($all) . " URLs (" . count($article_pages) . " articles)\n";
+} elseif (!defined('SITEMAP_SILENT')) {
+    header('Content-Type: text/plain; charset=utf-8');
+    echo "sitemap.xml regenerated — " . count($all) . " URLs — " . date('Y-m-d H:i:s') . "\n";
 }

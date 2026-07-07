@@ -227,6 +227,23 @@ include 'header.php';
       </ul>
     </div>
 
+    <?php
+    $aff_id    = 'budgetair'; // no ACS id in go.php — direct ACS links used below
+    // Override URL manually for this CTA
+    ?>
+    <div class="aff-cta aff-cta--green" style="display:block">
+      <div class="aff-cta__icon">🛡️</div>
+      <div class="aff-cta__body">
+        <p class="aff-cta__title">Obtenir un devis ACS en 2 minutes</p>
+        <p class="aff-cta__text">Choisissez votre formule, renseignez vos dates et destination — le prix s'affiche instantanément. Certificat par email immédiat après paiement.</p>
+        <div style="display:flex;gap:0.75rem;flex-wrap:wrap;margin-top:1rem">
+          <a href="https://www.acs-ami.com/fr/assurance-voyage/globe-partner/?part=blogcapvietnam&utm_source=blog-capvietnam&utm_medium=aff-link" target="_blank" rel="noopener sponsored" class="aff-cta__btn">Globe Partner (−40 ans) →</a>
+          <a href="https://www.acs-ami.com/fr/assurance-voyage/globe-traveller/?part=blogcapvietnam&utm_source=blog-capvietnam&utm_medium=aff-link" target="_blank" rel="noopener sponsored" class="aff-cta__btn" style="background:#1b6b52;">Globe Traveller (−66 ans) →</a>
+        </div>
+        <p class="aff-cta__note">Liens affiliés — le prix ne change pas pour vous. La commission me permet de maintenir ce blog gratuit.</p>
+      </div>
+    </div>
+
     <h2 id="section-5">Ce qui est couvert en détail</h2>
 
     <p>Les deux formules couvrent les situations que vous rencontrerez le plus souvent au Vietnam :</p>
