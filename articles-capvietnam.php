@@ -27,6 +27,7 @@ $_count_mariage   = count(array_filter($_published, fn($a) => ($a['category'] ??
 $_count_vivre_ens = count(array_filter($_published, fn($a) => ($a['category'] ?? '') === 'vivre-ensemble'  || in_array('vivre-ensemble',  $a['tags'] ?? [])));
 $_count_argent    = count(array_filter($_published, fn($a) => ($a['category'] ?? '') === 'argent'          || in_array('argent',          $a['tags'] ?? [])));
 $_count_vie_prat  = count(array_filter($_published, fn($a) => ($a['category'] ?? '') === 'vie-pratique'    || in_array('vie-pratique',    $a['tags'] ?? [])));
+$_count_emploi    = count(array_filter($_published, fn($a) => ($a['category'] ?? '') === 'emploi'          || in_array('emploi',          $a['tags'] ?? [])));
 
 // Category filter from URL
 $_valid_cats = array_combine(array_keys(TAXONOMY), array_column(TAXONOMY, 'label'));
@@ -72,6 +73,7 @@ $page_extra_css = '
 .filter-tab.active-vivre-ensemble{background:var(--terracotta);color:#fff;border-color:var(--terracotta)}
 .filter-tab.active-argent{background:var(--amber);color:#fff;border-color:var(--amber)}
 .filter-tab.active-vie-pratique{background:#2a7a7a;color:#fff;border-color:#2a7a7a}
+.filter-tab.active-emploi{background:#2d6a9f;color:#fff;border-color:#2d6a9f}
 .search-box{display:flex;align-items:center;gap:0.5rem;border:1px solid var(--border);border-radius:100px;padding:0.4rem 1rem;background:var(--white)}
 .search-box input{border:none;background:none;font-family:inherit;font-size:0.9rem;color:var(--ink);width:200px;outline:none}
 .search-box input::placeholder{color:var(--muted)}
@@ -100,6 +102,7 @@ $page_extra_css = '
 .bg-vivre-ensemble{background:linear-gradient(135deg,var(--terracotta),#8b2f14)}
 .bg-argent{background:linear-gradient(135deg,var(--amber),#7a5500)}
 .bg-vie-pratique{background:linear-gradient(135deg,#2a7a7a,#1a4f4f)}
+.bg-emploi{background:linear-gradient(135deg,#2d6a9f,#1a3f6b)}
 .card-body{padding:1.5rem;flex:1;display:flex;flex-direction:column}
 .card-meta{display:flex;align-items:center;gap:0.6rem;margin-bottom:0.6rem}
 .card-badge{font-size:0.58rem;letter-spacing:2px;text-transform:uppercase;font-weight:700;padding:3px 9px;border-radius:3px}
@@ -108,6 +111,7 @@ $page_extra_css = '
 .badge-vivre-ensemble{background:rgba(191,74,42,0.1);color:var(--terracotta)}
 .badge-argent{background:rgba(184,134,11,0.1);color:var(--amber)}
 .badge-vie-pratique{background:rgba(42,122,122,0.12);color:#2a7a7a}
+.badge-emploi{background:rgba(45,106,159,0.12);color:#2d6a9f}
 .card-date{font-size:0.78rem;color:var(--muted)}
 .card-body h3{font-family:"DM Serif Display",serif;font-size:1.15rem;line-height:1.3;margin-bottom:0.5rem}
 .card-body p{color:var(--muted);font-size:0.88rem;line-height:1.65;flex:1}
@@ -128,7 +132,7 @@ $page_extra_css = '
 @media(max-width:640px){.articles-grid{grid-template-columns:1fr}.hero-stats{flex-direction:column;gap:1rem}.search-box input{width:140px}.filters-bar{flex-direction:column;align-items:flex-start}.nl-form{flex-direction:column}}
 .portal-section{max-width:1200px;margin:0 auto;padding:2.5rem 2rem 0}
 .portal-pretitle{font-size:0.72rem;letter-spacing:3px;text-transform:uppercase;color:var(--muted);font-weight:600;margin-bottom:1.25rem}
-.portal-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1.25rem}
+.portal-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:1.25rem}
 .portal-card{display:flex;flex-direction:column;gap:0.5rem;padding:1.75rem;border:1.5px solid var(--border);border-radius:var(--radius);background:var(--white);cursor:pointer;transition:all 0.22s;user-select:none}
 .portal-card:hover{box-shadow:var(--shadow-md);transform:translateY(-2px)}
 .portal-icon{font-size:2rem;line-height:1;margin-bottom:0.2rem}
@@ -138,7 +142,7 @@ $page_extra_css = '
 .portal-reset-bar{text-align:center;padding:0.9rem 0 0;display:none}
 .portal-reset-bar button{background:none;border:none;font-family:inherit;font-size:0.85rem;color:var(--muted);cursor:pointer;text-decoration:underline}
 .portal-reset-bar button:hover{color:var(--ink)}
-@media(max-width:1100px){.portal-grid{grid-template-columns:repeat(3,1fr)}}@media(max-width:700px){.portal-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:480px){.portal-grid{grid-template-columns:1fr}}
+@media(max-width:1200px){.portal-grid{grid-template-columns:repeat(3,1fr)}}@media(max-width:700px){.portal-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:480px){.portal-grid{grid-template-columns:1fr}}
 ';
 include 'header.php';
 ?>
@@ -158,7 +162,7 @@ include 'header.php';
         <div class="hero-stat-label">Articles publiés</div>
       </div>
       <div>
-        <div class="hero-stat-num">5</div>
+        <div class="hero-stat-num">6</div>
         <div class="hero-stat-label">Thèmes</div>
       </div>
       <div>
@@ -202,6 +206,12 @@ include 'header.php';
       <div class="portal-desc">Visa, logement, santé, transport et vie quotidienne au Vietnam.</div>
       <div class="portal-count" style="color:#2a7a7a"><?= $_count_vie_prat > 0 ? $_count_vie_prat . ' articles' : '🕐 À venir' ?></div>
     </div>
+    <div class="portal-card" onclick="setPortalFilter('emploi')" role="button" tabindex="0">
+      <div class="portal-icon">💼</div>
+      <div class="portal-title">Emploi & Entreprendre</div>
+      <div class="portal-desc">Trouver un emploi, créer son entreprise, salaires et coworkings au Vietnam.</div>
+      <div class="portal-count" style="color:#2d6a9f"><?= $_count_emploi > 0 ? $_count_emploi . ' articles' : '🕐 À venir' ?></div>
+    </div>
   </div>
 </div>
 
@@ -213,6 +223,7 @@ include 'header.php';
     <button class="filter-tab" data-filter="vivre-ensemble">🏠 Vivre ensemble</button>
     <button class="filter-tab" data-filter="argent">💰 L'argent à deux</button>
     <button class="filter-tab" data-filter="vie-pratique">🌏 Vie pratique</button>
+    <button class="filter-tab" data-filter="emploi">💼 Emploi & Entreprendre</button>
   </div>
   <div class="search-box">
     <span class="search-icon">🔍</span>
@@ -298,7 +309,8 @@ const featured     = document.querySelector('.featured-card');
 const featuredWrap = document.querySelector('.featured');
 const filterClassMap = {
   couple: 'active-couple', mariage: 'active-mariage',
-  'vivre-ensemble': 'active-vivre-ensemble', argent: 'active-argent', 'vie-pratique': 'active-vie-pratique'
+  'vivre-ensemble': 'active-vivre-ensemble', argent: 'active-argent', 'vie-pratique': 'active-vie-pratique',
+  emploi: 'active-emploi'
 };
 
 function matchesFilter(cat, tagsAttr) {

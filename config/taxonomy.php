@@ -45,4 +45,12 @@ define('TAXONOMY', [
         'desc_fr'  => 'Visa, logement, santé, transport et vie quotidienne au Vietnam.',
         'desc_vi'  => 'Visa, chỗ ở, y tế, giao thông và cuộc sống hàng ngày tại Việt Nam.',
     ],
+    'emploi' => [
+        'label'    => 'Emploi & Entreprendre',
+        'emoji'    => '💼',
+        'hex'      => '#2d6a9f',
+        'color'    => 'emploi',
+        'desc_fr'  => 'Trouver un emploi, créer son entreprise, salaires et coworkings au Vietnam.',
+        'desc_vi'  => 'Tìm việc làm, mở công ty, mức lương và coworking tại Việt Nam.',
+    ],
 ]);
