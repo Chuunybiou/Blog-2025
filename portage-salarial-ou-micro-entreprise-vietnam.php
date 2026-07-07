@@ -31,11 +31,11 @@ $article_category_url = SITE_URL . '/articles-capvietnam?cat=argent';
 
 $page_faq = [
   ['q' => 'Peut-on garder sa micro-entreprise quand on s\'installe au Vietnam ?',
-   'a' => 'Techniquement oui, mais ça pose des problèmes. La micro-entreprise requiert une domiciliation en France [À VÉRIFIER : article L123-11 du Code de commerce]. Si tu n\'es plus résident fiscal français, cette domiciliation peut être contestée par l\'URSSAF ou l\'administration fiscale. La situation est floue, pas automatiquement illégale, mais risquée si tu es contrôlé.'],
+   'a' => 'Techniquement oui, mais ça pose des problèmes. La micro-entreprise requiert une domiciliation en France (exigée par le Code de commerce). Si tu n\'es plus résident fiscal français, cette domiciliation peut être contestée par l\'URSSAF ou l\'administration fiscale. La situation est floue, pas automatiquement illégale, mais risquée si tu es contrôlé.'],
   ['q' => 'La micro-entreprise fonctionne-t-elle pour facturer des clients au Vietnam ?',
    'a' => 'Pour facturer des clients vietnamiens depuis une micro-entreprise française, les clients devront régler en euros vers ton compte français. Ce n\'est pas interdit, mais peu pratique pour des clients locaux. Pour des clients français ou européens depuis le Vietnam, ça fonctionne mieux.'],
   ['q' => 'Y a-t-il une limite de CA pour la micro-entreprise pertinente pour un expat ?',
-   'a' => 'Les plafonds micro-entreprise sont [À VÉRIFIER : 77 700 € pour les prestations de services BNC/BIC en 2026]. Si tu dépasses ces seuils, tu bascules en régime réel, ce qui complexifie la comptabilité. Pour un freelance avec un bon CA, le portage salarial offre souvent plus de souplesse.'],
+   'a' => 'Le plafond de chiffre d\'affaires micro-entreprise pour les prestations de services (BNC et BIC) est de 77 700 € HT par an en 2026. Si tu dépasses ce seuil, tu bascules en régime réel, ce qui complexifie la comptabilité. Pour un freelance avec un bon CA, le portage salarial offre souvent plus de souplesse.'],
   ['q' => 'Peut-on passer de la micro-entreprise au portage salarial facilement ?',
    'a' => 'Oui. La fermeture d\'une micro-entreprise se fait en ligne sur autoentrepreneur.urssaf.fr. Dès que tu ouvres ton compte avec une société de portage et signes ton premier contrat, tu passes en portage. Il n\'y a pas de délai de carence obligatoire. Attention aux missions en cours et aux clients déjà facturés depuis la micro.'],
 ];
@@ -92,7 +92,7 @@ include 'header.php';
     <h2 id="section-1">Le piège de la micro-entreprise quand on n'est plus résident fiscal français</h2>
     <p>Voici le problème concret. La micro-entreprise est un régime fiscal et social français. Elle suppose que :</p>
     <ul>
-      <li>Ton activité est domiciliée en France [À VÉRIFIER : conditions exactes de domiciliation URSSAF]</li>
+      <li>Ton activité est domiciliée en France (adresse professionnelle française obligatoire pour l'immatriculation)</li>
       <li>Tu paies tes cotisations sociales en France (SSI / Sécurité sociale des indépendants)</li>
       <li>Tu remplis une déclaration de revenus française</li>
     </ul>
@@ -104,7 +104,7 @@ include 'header.php';
     </ul>
 
     <div class="warning-box">
-      <strong>Ce n'est pas automatiquement interdit</strong>, et des milliers de Français le font sans problème. Mais en cas de contrôle fiscal, la situation est difficile à défendre si ta vie entière est au Vietnam. [À VÉRIFIER : jurisprudence récente URSSAF sur les micro-entrepreneurs non-résidents]
+      <strong>Ce n'est pas automatiquement interdit</strong>, et des milliers de Français le font sans problème. Mais en cas de contrôle fiscal, la situation est difficile à défendre si ta vie entière est au Vietnam.
     </div>
 
     <h2 id="section-2">Tableau comparatif complet</h2>
@@ -189,7 +189,7 @@ include 'header.php';
     <h2 id="section-4">Le cas "résident fiscal vietnamien"</h2>
     <p>Si tu passes l'essentiel de ton temps au Vietnam (183+ jours) et que tes intérêts économiques principaux y sont, la loi vietnamienne te considère résident fiscal local. Dans ce cas :</p>
     <ul>
-      <li>Le Vietnam a le droit d'imposer tes revenus mondiaux [À VÉRIFIER : article 2 de la Loi sur l'impôt sur le revenu des personnes physiques du Vietnam]</li>
+      <li>Le Vietnam a le droit d'imposer tes revenus mondiaux (Loi sur l'impôt sur le revenu des personnes physiques — Loi n°04/2007/QH12 modifiée, article 2)</li>
       <li>La convention France-Vietnam de 1993 répartit les droits d'imposition entre les deux pays</li>
       <li>Maintenir une micro-entreprise française dans ce contexte est très ambigu</li>
       <li>Le portage salarial, lui, est clairement un revenu de source française — la convention lui applique des règles précises</li>

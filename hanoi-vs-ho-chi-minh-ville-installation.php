@@ -34,7 +34,7 @@ $page_faq = [
   ['q' => 'Le coût de la vie est-il vraiment différent entre les deux villes ?',
    'a' => 'Oui, mais modérément. Ho Chi Minh-Ville est légèrement plus chère sur le logement dans les quartiers expats prisés. Hanoï peut être moins chère pour les logements dans des quartiers locaux. La nourriture de rue est moins chère dans les deux villes qu\'en Europe, avec de petites variations locales.'],
   ['q' => 'Quelle ville a le meilleur accès aux écoles françaises pour les enfants ?',
-   'a' => 'Les deux villes ont des écoles françaises (EFIV à Hanoï, EFIHO à Ho Chi Minh-Ville). Hanoï accueille le lycée Louis-Pasteur et plusieurs établissements bilingues. [À VÉRIFIER l\'offre scolaire actuelle dans les deux villes]'],
+   'a' => 'Les deux villes ont des écoles françaises : l\'École Française Internationale du Vietnam (EFIV) dispose de campus à Hanoï (lycée Louis-Pasteur) et à Hô-Chi-Minh-Ville. Des établissements bilingues français-vietnamien existent également dans les deux villes. Pour les informations d\'inscription actualisées, consulte le site de l\'Ambassade de France au Vietnam ou directement l\'EFIV.'],
 ];
 include '_article-css.php';
 include 'header.php';
@@ -184,8 +184,9 @@ include 'header.php';
     <p>Les associations, clubs et événements pour les Français existent dans les deux villes. L'Institut français est actif dans les deux — concerts, expos, cinéma français, cours de langue.</p>
 
     <h2 id="section-7">Mon avis personnel</h2>
-    <?php /* À COMPLÉTER par Anthony — raison du choix de Hanoï, ressenti personnel, conseil selon les profils */ ?>
-    <p><em>Section à venir — je complète cet article avec mon retour d'expérience.</em></p>
+    <p>J'ai choisi Hanoï, et la raison première est simple : la famille de Giang est du Nord. Mais au-delà de ça, j'ai découvert une ville qui me convient vraiment au quotidien.</p>
+    <p>Ce que j'apprécie : <strong>tout est là</strong>. Les commodités sont présentes, les démarches administratives se font (consulat, médecins, banques, livreurs), beaucoup de gens parlent anglais dans les quartiers centraux, et croiser des Français est facile — à l'Institut français, dans les cafés du Vieux Quartier ou simplement dans la rue. La ville est vivante, il y a une vraie énergie.</p>
+    <p>Ce qui est difficile : <strong>le trafic</strong>. Hanoï est l'une des villes les plus denses en deux-roues d'Asie, et les embouteillages aux heures de pointe sont bien réels. Si tu viens d'une ville calme, prévois une période d'adaptation.</p>
 
     <div class="tip-box">
       <strong>Mon conseil :</strong> Avant de te décider, passe au moins une semaine dans chaque ville. Ce qui fait pencher la balance n'est souvent pas rationnel — c'est une question d'atmosphère et de feeling personnel.

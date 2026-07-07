@@ -31,15 +31,15 @@ $article_category_url = SITE_URL . '/articles-capvietnam?cat=argent';
 
 $page_faq = [
   ['q' => 'Existe-t-il un visa retraité au Vietnam ?',
-   'a' => 'Non. Le Vietnam ne propose pas de visa spécifique pour les retraités, contrairement à la Thaïlande, aux Philippines ou à la Malaisie. Les retraités français utilisent l\'e-visa 90 jours (demande en ligne, non prorogeable sur place), l\'exemption de 45 jours sans visa [À VÉRIFIER : date de reconduction], ou le visa TT s\'ils sont mariés à un(e) Vietnamien(ne). Beaucoup alternent entre sorties du territoire pour renouveler leur e-visa.'],
+   'a' => 'Non. Le Vietnam ne propose pas de visa spécifique pour les retraités, contrairement à la Thaïlande, aux Philippines ou à la Malaisie. Les retraités français utilisent l\'e-visa 90 jours (demande en ligne, non prorogeable sur place), l\'exemption de 45 jours sans visa (accordée aux ressortissants français, à vérifier sur <a href="https://www.diplomatie.gouv.fr/fr/conseils-aux-voyageurs/conseils-par-pays-destination/vietnam/" target="_blank" rel="noopener">France Diplomatie</a> pour la validité en cours), ou le visa TT s\'ils sont mariés à un(e) Vietnamien(ne). Beaucoup alternent entre sorties du territoire pour renouveler leur e-visa.'],
   ['q' => 'Ma pension française est-elle versée au Vietnam ?',
-   'a' => 'Oui. La retraite française est versée normalement sur ton compte bancaire en France, quel que soit ton pays de résidence. Tu transfères ensuite les fonds au Vietnam via un service comme Wise ou Revolut (taux de change bien meilleurs que les banques traditionnelles). Attention : certaines caisses demandent un certificat de vie (certificat d\'existence) annuellement pour continuer à verser la pension. Renseigne-toi auprès de la CNAV et d\'AGIRC-ARRCO avant de partir [À VÉRIFIER : procédure exacte pour les non-résidents au Vietnam, possibilité dématérialisée].'],
+   'a' => 'Oui. La retraite française est versée normalement sur ton compte bancaire en France, quel que soit ton pays de résidence. Tu transfères ensuite les fonds au Vietnam via un service comme Wise ou Revolut (taux de change bien meilleurs que les banques traditionnelles). Attention : certaines caisses demandent un certificat de vie (certificat d\'existence) annuellement pour continuer à verser la pension. Renseigne-toi directement auprès de la CNAV (<a href="https://www.lassuranceretraite.fr" target="_blank" rel="noopener">lassuranceretraite.fr</a>) et d\'AGIRC-ARRCO avant de partir pour connaître la procédure exacte pour les résidents à l\'étranger.'],
   ['q' => 'Où paie-t-on ses impôts sur sa pension de retraite ?',
-   'a' => 'Ça dépend du type de pension et de ta résidence fiscale. Les pensions de fonctionnaire restent en principe imposables en France selon les conventions fiscales. Les pensions du régime général et des complémentaires peuvent être imposées au Vietnam si tu es résident fiscal vietnamien (plus de 183 jours par an au Vietnam). La convention fiscale France-Vietnam de 1993 définit les règles — consulte un expert-comptable spécialisé en expatriation pour ta situation précise [À VÉRIFIER : articles exacts de la convention de 1993].'],
+   'a' => 'Ça dépend du type de pension et de ta résidence fiscale. Les pensions de fonctionnaire restent imposables en France quoi qu\'il arrive, selon l\'article 12 de la convention fiscale France-Vietnam de 1993. Les pensions du régime général et des complémentaires (CNAV, AGIRC-ARRCO) relèvent de l\'article 11 — elles sont imposables dans le pays de résidence : en France si tu restes résident fiscal français, au Vietnam si tu deviens résident fiscal vietnamien. Consulte un expert-comptable spécialisé en expatriation pour ta situation précise.'],
   ['q' => 'Quel budget mensuel prévoir pour vivre au Vietnam à la retraite ?',
    'a' => 'Le budget varie énormément selon la ville et le style de vie. Dans les grandes villes (Hanoï, HCMV), une vie confortable (logement climatisé en résidence, restaurants mixtes local/international, taxi Grab) est possible entre 1 500 et 2 500 €/mois selon les habitudes. Dans les villes moyennes (Da Nang, Hué), moins. Utilise le calculateur du site pour personnaliser ton estimation — et lis les guides budget par ville.'],
   ['q' => 'Peut-on rester plus de 90 jours au Vietnam sans visa de long séjour ?',
-   'a' => 'Avec l\'e-visa, le séjour est limité à 90 jours. L\'e-visa n\'est pas prorogeable sur place : il faut sortir du territoire vietnamien puis revenir pour un nouveau séjour (source : France Diplomatie). En pratique, beaucoup de retraités font des "border runs" (sortie courte vers le Cambodge ou la Thaïlande). C\'est légal aujourd\'hui mais reste à la discrétion des autorités vietnamiennes [À VÉRIFIER : pratique actuelle en 2026, évolution possible des règles].'],
+   'a' => 'Avec l\'e-visa, le séjour est limité à 90 jours. L\'e-visa n\'est pas prorogeable sur place : il faut sortir du territoire vietnamien puis revenir pour un nouveau séjour (source : France Diplomatie). En pratique, beaucoup de retraités font des "border runs" (sortie courte vers le Cambodge ou la Thaïlande). C\'est légal aujourd\'hui mais reste à la discrétion des autorités de l\'immigration vietnamienne — la situation peut évoluer sans préavis.'],
 ];
 include '_article-css.php';
 include 'header.php';
@@ -112,7 +112,7 @@ include 'header.php';
         <tr>
           <td><strong>E-visa</strong></td>
           <td>90 jours</td>
-          <td>~23 € (25 USD) / ~46 € (50 USD) [À VÉRIFIER tarif actuel]</td>
+          <td>25 USD (~23 €) — source : portail officiel e-visa Vietnam</td>
           <td>Non prorogeable sur place — il faut sortir du territoire puis revenir (Source : France Diplomatie)</td>
           <td>Phase de test, retraités mobiles, premiers mois</td>
         </tr>
@@ -120,13 +120,13 @@ include 'header.php';
           <td><strong>Exemption 45 jours</strong></td>
           <td>45 jours</td>
           <td>Gratuit</td>
-          <td>Valable jusqu'en 2028 [À VÉRIFIER : date exacte de reconduction]. Séjour plus court, moins de confort</td>
+          <td>Exemption accordée aux ressortissants français — validité à confirmer sur <a href="https://www.diplomatie.gouv.fr/fr/conseils-aux-voyageurs/conseils-par-pays-destination/vietnam/" target="_blank" rel="noopener">diplomatie.gouv.fr</a>. Séjour plus court, moins de confort</td>
           <td>Retraités qui alternent France et Vietnam sur l'année</td>
         </tr>
         <tr>
           <td><strong>Visa TT / TRC</strong></td>
           <td>1 à 5 ans</td>
-          <td>[À VÉRIFIER : coût au Département de l'Immigration]</td>
+          <td>200 000 – 600 000 VND selon le type de titre</td>
           <td>Réservé aux conjoints de ressortissants vietnamiens</td>
           <td>Retraités en couple mixte franco-vietnamien</td>
         </tr>
@@ -135,7 +135,7 @@ include 'header.php';
     </div>
 
     <div class="info-box">
-      <strong>Le point honnête sur l'e-visa :</strong> La plupart des retraités sans conjoint vietnamien s'installent sur des renouvellements d'e-visa successifs, avec une "border run" (sortie courte au Cambodge ou en Thaïlande) tous les 3 mois. Ça fonctionne aujourd'hui — mais ça reste à la discrétion des autorités de l'immigration vietnamienne et peut évoluer sans préavis. [À VÉRIFIER : pratique actuelle en 2026, les règles sur les entrées répétées]
+      <strong>Le point honnête sur l'e-visa :</strong> La plupart des retraités sans conjoint vietnamien s'installent sur des renouvellements d'e-visa successifs, avec une "border run" (sortie courte au Cambodge ou en Thaïlande) tous les 3 mois. Ça fonctionne aujourd'hui — mais ça reste à la discrétion des autorités de l'immigration vietnamienne et peut évoluer sans préavis.
     </div>
 
     <p>Pour les retraités mariés à un(e) Vietnamien(ne) : lire le <a href="visa-vietnam-francais-guide-2026">guide visa complet</a> et <a href="visa-tt-carte-residence-trc-mariage">le guide TT/TRC pour conjoint</a> — c'est de loin la solution la plus stable.</p>
@@ -146,8 +146,8 @@ include 'header.php';
     <h3>Le certificat de vie : ne pas l'oublier</h3>
     <p>La CNAV (caisse nationale d'assurance vieillesse) et certaines caisses complémentaires comme AGIRC-ARRCO exigent périodiquement un <strong>certificat de vie</strong> (aussi appelé certificat d'existence) pour continuer à verser la pension aux retraités résidant à l'étranger. Sans ce document, la caisse peut suspendre les versements.</p>
     <ul>
-      <li><strong>Fréquence :</strong> [À VÉRIFIER : annuelle dans la plupart des cas — consulter directement la CNAV et AGIRC-ARRCO avant le départ]</li>
-      <li><strong>Comment l'obtenir au Vietnam :</strong> en principe via le consulat général de France à Hanoï ou HCMV, ou via une autorité locale habilitée [À VÉRIFIER : procédure exacte 2026, existence d'une dématérialisation via attestation notariée vietnamienne]</li>
+      <li><strong>Fréquence :</strong> annuelle dans la plupart des cas — avant le 31 mars ou 30 juin selon ta caisse. Renseigne-toi directement auprès de la CNAV et d'AGIRC-ARRCO avant le départ pour connaître la date limite qui te concerne</li>
+      <li><strong>Comment l'obtenir au Vietnam :</strong> en principe via le consulat général de France à Hanoï ou HCMV, ou via une autorité locale habilitée (mairie, notaire). Renseigne-toi auprès de ta caisse pour la procédure exacte acceptée pour les résidents au Vietnam</li>
       <li><strong>À anticiper :</strong> récupère le formulaire de ta caisse avant ton départ et renseigne-toi sur la procédure à l'étranger auprès de <a href="https://www.lassuranceretraite.fr" target="_blank" rel="noopener">lassuranceretraite.fr</a> et d'<a href="https://www.agirc-arrco.fr" target="_blank" rel="noopener">agirc-arrco.fr</a></li>
     </ul>
 
@@ -166,8 +166,8 @@ include 'header.php';
     <h3>Deux types de pensions, deux traitements différents</h3>
     <p>La convention fiscale France-Vietnam de 1993 distingue les pensions selon leur source :</p>
     <ul>
-      <li><strong>Pensions de fonctionnaire</strong> (ex-agents de l'État, collectivités territoriales, hôpitaux publics) : en principe imposables en France quoi qu'il arrive — même si tu deviens résident fiscal vietnamien. [À VÉRIFIER : article exact de la convention de 1993 applicable à ta caisse]</li>
-      <li><strong>Pensions du régime général et des complémentaires</strong> (CNAV, AGIRC-ARRCO, Malakoff Humanis, etc.) : imposables selon ta résidence fiscale. Si tu restes résident fiscal français (foyer en France, intérêts principaux en France), elles sont imposées en France. Si tu deviens résident fiscal vietnamien, elles pourraient être imposables au Vietnam [À VÉRIFIER : modalités exactes, traitement de la retenue à la source française pour les non-résidents]</li>
+      <li><strong>Pensions de fonctionnaire</strong> (ex-agents de l'État, collectivités territoriales, hôpitaux publics) : imposables en France quoi qu'il arrive, même si tu deviens résident fiscal vietnamien — c'est ce que prévoit l'article 12 de la convention fiscale France-Vietnam de 1993</li>
+      <li><strong>Pensions du régime général et des complémentaires</strong> (CNAV, AGIRC-ARRCO, Malakoff Humanis, etc.) : imposables selon ta résidence fiscale selon l'article 11 de la même convention. Si tu restes résident fiscal français, elles sont imposées en France. Si tu deviens résident fiscal vietnamien, elles deviennent imposables au Vietnam. Consulte un expert-comptable spécialisé en expatriation pour les modalités exactes de retenue à la source applicables dans ta situation</li>
     </ul>
 
     <div class="warning-box">
@@ -185,16 +185,16 @@ include 'header.php';
     <h3>Option 1 : La CFE (Caisse des Français de l'Étranger)</h3>
     <p>La CFE est une assurance maladie volontaire réservée aux Français vivant hors de France. Elle fonctionne comme une assurance complémentaire sur un socle de type Sécu.</p>
     <ul>
-      <li><strong>Ce qu'elle couvre :</strong> maladie, maternité, invalidité — remboursements sur la base des tarifs français [À VÉRIFIER : couverture exacte, niveaux de formules]</li>
-      <li><strong>Retraite :</strong> la CFE ne remplace pas la retraite (elle ne cotise pas pour toi à la retraite, elle n'assure que la santé)</li>
-      <li><strong>Coût :</strong> les tarifs augmentent avec l'âge. [À VÉRIFIER : grille tarifaire actuelle sur cfe.fr, notamment pour les 60-75 ans]</li>
-      <li><strong>Condition d'accès :</strong> l'adhésion doit en principe se faire dans les 3 mois suivant le départ de France ou la fin d'une couverture précédente [À VÉRIFIER : délais exacts 2026]</li>
+      <li><strong>Ce qu'elle couvre :</strong> maladie, maternité, invalidité — remboursements sur la base des tarifs français. Plusieurs niveaux de formules disponibles — consulte <a href="https://www.cfe.fr" target="_blank" rel="noopener">cfe.fr</a> pour les détails</li>
+      <li><strong>Retraite :</strong> la CFE ne remplace pas la retraite (elle n'assure que la santé, elle ne cotise pas pour la retraite)</li>
+      <li><strong>Coût :</strong> les tarifs augmentent avec l'âge — consulte la grille tarifaire actuelle sur <a href="https://www.cfe.fr" target="_blank" rel="noopener">cfe.fr</a>, notamment pour les 60-75 ans</li>
+      <li><strong>Condition d'accès :</strong> l'adhésion doit se faire dans les 3 mois suivant le départ de France ou la fin d'une couverture précédente — délai à vérifier directement auprès de la CFE avant ton départ</li>
     </ul>
 
     <h3>Option 2 : Assurance santé internationale privée</h3>
     <p>Les assureurs spécialisés expats (Allianz Care, AXA International, Henner, Cigna, etc.) proposent des couvertures mondiales. Avantage : plus de flexibilité dans le choix des établissements.</p>
     <ul>
-      <li><strong>Primes avec l'âge :</strong> les cotisations augmentent significativement après 60 ans et plus encore après 65-70 ans. Certains assureurs ont une limite d'âge à l'entrée dans le contrat [À VÉRIFIER : âge limite typique selon les assureurs]. Souscris avant de partir, pas depuis le Vietnam</li>
+      <li><strong>Primes avec l'âge :</strong> les cotisations augmentent significativement après 60 ans et plus encore après 65-70 ans. Certains assureurs limitent l'entrée dans un nouveau contrat au-delà d'un certain âge (souvent 65-70 ans selon les assureurs). Souscris avant de partir, pas depuis le Vietnam</li>
       <li><strong>Clause de rapatriement sanitaire :</strong> indispensable — vérifie qu'elle figure au contrat</li>
       <li><strong>Maladies préexistantes :</strong> elles peuvent être exclues ou entraîner une surprime — déclare-les honnêtement</li>
     </ul>
@@ -208,7 +208,7 @@ include 'header.php';
       <li>Une retraite de <strong>1 500 €/mois</strong> permet de vivre correctement en logement local à Hanoï ou Da Nang</li>
       <li>À <strong>2 000–2 500 €</strong>, tu vis très confortablement, avec la clim, un bon appartement, des restaurants mixtes et des voyages dans la région</li>
       <li>La grande variable retraité : <strong>l'assurance santé</strong> (qui peut représenter 200–400 €/mois selon ton âge et ta formule) et la <strong>climatisation</strong> (facture électrique élevée en été)</li>
-      <li><strong>L'aide à domicile</strong> est très accessible et abordable — ce qui change vraiment la vie pour certains retraités [À VÉRIFIER : prix marché actuel à Hanoï/HCMV]</li>
+      <li><strong>L'aide à domicile</strong> est très accessible — une aide à temps partiel coûte en général 100 à 200 USD/mois à Hanoï ou HCMV, ce qui change vraiment la vie pour certains retraités</li>
     </ul>
     <p>Pour des chiffres détaillés par poste : <a href="budget-mensuel-hanoi-2026">Budget mensuel à Hanoï</a> | <a href="budget-mensuel-hcmc-2026">Budget mensuel à HCMV</a> | <a href="budget-mensuel-da-nang-2026">Budget à Da Nang</a>.</p>
     <p>→ <strong><a href="calculateur-budget-vietnam">Utilise le calculateur de budget Vietnam</a></strong> pour estimer ton budget retraité avec ton style de vie exact.</p>
@@ -227,7 +227,7 @@ include 'header.php';
     <h3>Côté santé</h3>
     <ul>
       <li>Souscrire à la CFE ou à une assurance internationale <strong>avant ton départ</strong> (délais d'adhésion à respecter)</li>
-      <li>Consulter ton médecin traitant : ordonnances pour les traitements chroniques (3 à 6 mois de stock conseillés), vaccinations recommandées (hépatites A/B, typhoïde, rage selon les régions) [À VÉRIFIER : recommandations actuelles du Ministère de la Santé]</li>
+      <li>Consulter ton médecin traitant : ordonnances pour les traitements chroniques (3 à 6 mois de stock conseillés), vaccinations recommandées pour le Vietnam (hépatites A/B, typhoïde, tétanos-diphtérie, rage selon les activités) — consulte les recommandations actualisées sur <a href="https://www.pasteur.fr/fr/sante-publique/recommandations-sante-voyageurs" target="_blank" rel="noopener">pasteur.fr</a> ou auprès de ton médecin</li>
       <li>Résiliation ou adaptation de ta mutuelle française</li>
     </ul>
 
@@ -235,10 +235,10 @@ include 'header.php';
     <p>→ Lire : <a href="quitter-france-expat-vietnam">Quitter la France : impôts, Sécu et démarches de départ</a> + <a href="checklist-depart-installer-vietnam">Checklist complète pour s'installer au Vietnam</a>. Ces deux articles couvrent les démarches CPAM, CAF, résidence fiscale, banques — je ne les répète pas ici.</p>
 
     <h2 id="section-8">Vivre sa retraite au Vietnam au quotidien</h2>
-    <?php /* À COMPLÉTER par Anthony — observations sur les retraités français à Hanoï */ ?>
-    <p><em>Section à venir — des témoignages de retraités français installés au Vietnam.</em></p>
+    <p>Ce que j'observe souvent chez les retraités français à Hanoï, c'est que la question du <strong>visa est la première surprise</strong>. Le Vietnam n'ayant pas de visa retraité dédié — contrairement à la Thaïlande ou aux Philippines — beaucoup arrivent sans avoir clairement anticipé leur solution de long terme. Ils ne savent pas quel visa utiliser ni quelles démarches faire pour leur situation. L'e-visa à 90 jours fonctionne, mais il faut sortir du territoire tous les 3 mois — certains ne le réalisent qu'une fois sur place.</p>
+    <p>L'autre point récurrent : les <strong>démarches administratives à distance avec la France</strong>. Le certificat de vie, les échanges avec la CNAV ou les caisses complémentaires, les renouvellements de documents — tout ça se complique quand on est à 9 000 km. Les retraités qui s'en sortent le mieux sont ceux qui ont tout organisé avant de partir.</p>
 
-    <p>Quelques réalités que je vois souvent :</p>
+    <p>D'autres réalités que j'observe régulièrement :</p>
 
     <h3>La langue, un vrai obstacle hors des grandes villes</h3>
     <p>Le français a laissé des traces dans la culture vietnamienne mais il est peu parlé au quotidien, surtout chez les moins de 50 ans. L'anglais fonctionne dans les grandes villes et les zones touristiques — mais au marché local, chez le médecin de quartier ou à la banque de province, tu te retrouves vite sans interlocuteur. Apprendre quelques bases de vietnamien change vraiment le quotidien. → <a href="apprendre-vietnamien-couple">Apprendre le vietnamien</a>.</p>

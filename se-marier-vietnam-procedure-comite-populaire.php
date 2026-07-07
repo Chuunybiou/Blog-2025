@@ -115,7 +115,7 @@ include 'header.php';
     </div>
 
     <h2 id="section-3">Les documents requis côté vietnamien</h2>
-    <p>En parallèle, ton/ta futur(e) conjoint(e) vietnamien(ne) doit préparer son propre dossier [À VÉRIFIER selon le comité populaire concerné] :</p>
+    <p>En parallèle, ton/ta futur(e) conjoint(e) vietnamien(ne) doit préparer son propre dossier (la liste exacte peut varier d'un comité populaire à l'autre — renseigne-toi directement auprès du comité de ton quartier) :</p>
     <ul>
       <li>Demande de mariage (đơn xin kết hôn) — formulaire fourni par le comité populaire</li>
       <li>Acte de naissance</li>

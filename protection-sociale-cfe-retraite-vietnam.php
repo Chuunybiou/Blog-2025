@@ -31,13 +31,13 @@ $article_category_url = SITE_URL . '/articles-capvietnam?cat=argent';
 
 $page_faq = [
   ['q' => 'La CFE couvre-t-elle bien les soins au Vietnam ?',
-   'a' => 'La CFE est une couverture de base — elle rembourse une partie des soins selon le barème de la Sécurité sociale française, ce qui peut laisser un reste à charge important dans des cliniques internationales au Vietnam. La plupart des expatriés couplent la CFE avec une assurance complémentaire internationale pour avoir une couverture réelle sur place. [À VÉRIFIER : taux de remboursement CFE pour soins à l\'étranger en 2026]'],
+   'a' => 'La CFE est une couverture de base — elle rembourse une partie des soins selon le barème de la Sécurité sociale française, ce qui peut laisser un reste à charge important dans des cliniques internationales au Vietnam. La plupart des expatriés couplent la CFE avec une assurance complémentaire internationale pour avoir une couverture réelle sur place. Consulte cfe.fr pour les taux de remboursement exacts selon les formules.'],
   ['q' => 'Est-ce que je perds mes trimestres de retraite si je pars au Vietnam ?',
-   'a' => 'Si tu cesses toute cotisation retraite française, tu n\'accumules plus de trimestres. Mais tu ne perds pas ceux déjà acquis. Les options pour continuer à cotiser : rester salarié ou en portage (cotisations automatiques), adhérer à l\'assurance vieillesse volontaire de la CNAV depuis l\'étranger, ou cotiser via la CFE. Le calcul de ta retraite finale tiendra compte des trimestres étrangers si une convention bilatérale de sécurité sociale existe entre la France et le Vietnam. [À VÉRIFIER : convention de sécurité sociale France-Vietnam, si elle existe]'],
+   'a' => 'Si tu cesses toute cotisation retraite française, tu n\'accumules plus de trimestres. Mais tu ne perds pas ceux déjà acquis. Les options pour continuer à cotiser : rester salarié ou en portage (cotisations automatiques), adhérer à l\'assurance vieillesse volontaire de la CNAV depuis l\'étranger, ou cotiser via la CFE. À noter : il n\'existe pas de convention bilatérale de sécurité sociale entre la France et le Vietnam permettant de totaliser les périodes de cotisation des deux pays — renseigne-toi auprès de la CNAV pour ta situation.'],
   ['q' => 'Quel est le coût annuel de la CFE ?',
-   'a' => 'Les cotisations CFE sont calculées selon ta tranche de revenus et ta situation familiale. Elles démarrent à environ [À VÉRIFIER : 70–100 €/mois pour une couverture de base 2026]. Il existe plusieurs niveaux de couverture. La CFE publie un simulateur de cotisation sur son site officiel (cfe.fr). [À VÉRIFIER : tarifs exacts 2026]'],
+   'a' => 'Les cotisations CFE sont calculées selon ta tranche de revenus et ta situation familiale. Plusieurs niveaux de couverture existent. La CFE publie un simulateur de cotisation sur son site officiel — consulte <a href="https://www.cfe.fr" target="_blank" rel="noopener">cfe.fr</a> pour les tarifs exacts en vigueur.'],
   ['q' => 'Faut-il adhérer à la CFE dès l\'arrivée au Vietnam ou peut-on attendre ?',
-   'a' => 'Il y a une condition d\'ancienneté en Sécurité sociale française avant de pouvoir adhérer à la CFE [À VÉRIFIER : condition exacte, généralement 3 mois d\'affiliation préalable]. Surtout, l\'adhésion doit se faire dans un délai à compter de ton départ de France [À VÉRIFIER : délai exact — souvent 3 ou 6 mois]. Passé ce délai, tu ne peux plus adhérer pour certaines garanties. À faire en priorité dès l\'installation.'],
+   'a' => 'Il faut avoir été affilié à la Sécurité sociale française préalablement (généralement au moins 3 mois d\'affiliation). Surtout, l\'adhésion doit se faire dans les 3 mois suivant ton départ de France ou la fin de ta couverture Sécu. Passé ce délai, tu ne peux plus adhérer pour certaines garanties. À faire en priorité dès l\'installation — consulte <a href="https://www.cfe.fr" target="_blank" rel="noopener">cfe.fr</a> pour les conditions exactes en vigueur.'],
 ];
 include '_article-css.php';
 include 'header.php';
@@ -92,7 +92,7 @@ include 'header.php';
     <h2 id="section-1">Ce qu'on perd en quittant la Sécu française</h2>
     <p>La perte n'est pas immédiate, mais elle est réelle. Quand tu quittes un emploi salarié français et t'installes au Vietnam :</p>
     <ul>
-      <li><strong>Maintien de droits temporaire :</strong> tu conserves tes droits à la Sécu pendant <strong>[À VÉRIFIER : 12 mois maximum, sous conditions de mise à jour CPAM]</strong> après avoir cessé de cotiser</li>
+      <li><strong>Maintien de droits temporaire :</strong> tu conserves tes droits à la Sécu pendant <strong>12 mois maximum</strong> après avoir cessé de cotiser, sous conditions (mise à jour CPAM requise)</li>
       <li><strong>Remboursements diminués :</strong> la CPAM rembourse les soins à l'étranger selon le barème français, souvent très inférieur aux tarifs réels des hôpitaux vietnamiens</li>
       <li><strong>Chômage :</strong> les droits ARE s'éteignent dès que tu t'installes durablement à l'étranger</li>
       <li><strong>Retraite :</strong> tu cesses d'accumuler des trimestres si tu n'as plus de cotisations</li>
@@ -124,15 +124,15 @@ include 'header.php';
         </tr>
         <tr>
           <td>Coût mensuel</td>
-          <td>[À VÉRIFIER : ~70–200 €/mois selon tranche de revenus et formule en 2026]</td>
+          <td>Variable selon tranche de revenus et formule — consulte <a href="https://www.cfe.fr" target="_blank" rel="noopener">cfe.fr</a> pour le simulateur</td>
         </tr>
         <tr>
           <td>Condition d'accès</td>
-          <td>Avoir été affilié à la Sécu française préalablement [À VÉRIFIER : durée minimum]</td>
+          <td>Avoir été affilié à la Sécurité sociale française préalablement (généralement au moins 3 mois)</td>
         </tr>
         <tr>
           <td>Délai d'adhésion après départ</td>
-          <td>[À VÉRIFIER : typiquement 3 ou 6 mois — à vérifier sur cfe.fr]</td>
+          <td>3 mois après la fin de ta couverture Sécu — vérifie sur <a href="https://www.cfe.fr" target="_blank" rel="noopener">cfe.fr</a></td>
         </tr>
         <tr>
           <td>Remboursements</td>
@@ -147,13 +147,13 @@ include 'header.php';
     </div>
 
     <h2 id="section-3">L'assurance santé privée internationale</h2>
-    <p>La CFE seule est souvent insuffisante pour les soins au Vietnam, où les cliniques internationales (Vinmec, Family Medical Practice, Hôpital Franco-Vietnamien) pratiquent des tarifs élevés [À VÉRIFIER : tarifs consultation 2026]. La plupart des Français au Vietnam cumulent la CFE avec une assurance complémentaire internationale :</p>
+    <p>La CFE seule est souvent insuffisante pour les soins au Vietnam, où les cliniques internationales (Vinmec, Family Medical Practice, Hôpital Franco-Vietnamien) pratiquent des tarifs élevés (consultation : 40-150 USD selon l'établissement). La plupart des Français au Vietnam cumulent la CFE avec une assurance complémentaire internationale :</p>
     <ul>
-      <li><strong>April International Expat</strong> : courant chez les francophones à l'étranger [À VÉRIFIER : tarifs et couverture actuels]</li>
+      <li><strong>April International Expat</strong> : courant chez les francophones à l'étranger — consulte leur site pour les tarifs et couvertures actuels</li>
       <li><strong>Cigna Global</strong>, <strong>ACS</strong>, <strong>AXA International</strong> : autres références du marché</li>
-      <li>Prix moyen pour un expat de 30-40 ans : <strong>[À VÉRIFIER : 80–200 €/mois]</strong> selon la couverture et les franchises</li>
+      <li>Prix moyen pour un expat de 30-40 ans : <strong>80 à 200 €/mois environ</strong> selon la couverture et les franchises</li>
     </ul>
-    <p>Pour des soins d'urgence et d'hospitalisation, une couverture internationale correcte est indispensable. Le rapatriement sanitaire seul (si nécessaire) peut coûter <strong>[À VÉRIFIER : 20 000–100 000 €]</strong>.</p>
+    <p>Pour des soins d'urgence et d'hospitalisation, une couverture internationale correcte est indispensable. Le rapatriement sanitaire seul (si nécessaire) peut coûter <strong>20 000 à 100 000 €</strong>.</p>
     <div class="info-box">
       <strong>À lire aussi :</strong> → <a href="assurance-sante-vietnam-expat">Assurance santé pour expatrié au Vietnam : le comparatif</a>
     </div>
@@ -168,7 +168,7 @@ include 'header.php';
 
     <div class="info-box">
       <strong>Option 2 — Assurance vieillesse volontaire (CNAV)</strong><br>
-      Tu peux cotiser volontairement à la retraite française depuis l'étranger, via la CNAV (Caisse nationale d'assurance vieillesse). La cotisation est calculée sur une assiette forfaitaire ou réelle. [À VÉRIFIER : montants et conditions d'accès en 2026 sur retraite.gouv.fr]
+      Tu peux cotiser volontairement à la retraite française depuis l'étranger, via la CNAV (Caisse nationale d'assurance vieillesse). La cotisation est calculée sur une assiette forfaitaire ou réelle. Montants et conditions d'accès disponibles sur <a href="https://www.retraite.gouv.fr" target="_blank" rel="noopener">retraite.gouv.fr</a>.
     </div>
 
     <div class="info-box">

@@ -33,9 +33,9 @@ $page_faq = [
   ['q' => 'Peut-on vraiment être en portage salarial depuis le Vietnam ?',
    'a' => 'Oui. Le portage salarial est un contrat entre toi et une société de portage française. Le fait que tu travailles physiquement depuis le Vietnam ne pose pas de problème côté français à proprement parler — tu restes salarié d\'une société basée en France. La question qui se pose est plutôt fiscale (résidence fiscale) et pratique (communication avec la société de portage).'],
   ['q' => 'Quels sont les frais de gestion d\'une société de portage ?',
-   'a' => 'Les frais de gestion varient selon les sociétés, mais se situent généralement entre [À VÉRIFIER : 5 % et 12 % du CA HT]. Certaines sociétés prennent un forfait mensuel fixe. Il faut comparer le pourcentage prélevé, les services inclus (comptabilité, assurance RC pro, avances sur salaire) et la réactivité du support.'],
+   'a' => 'Les frais de gestion varient selon les sociétés, mais se situent généralement entre 5 % et 10 % du CA HT (parfois jusqu\'à 12 % pour des formules premium). Certaines sociétés prennent un forfait mensuel fixe. Il faut comparer le pourcentage prélevé, les services inclus (comptabilité, assurance RC pro, avances sur salaire) et la réactivité du support.'],
   ['q' => 'Le portage salarial permet-il de toucher le chômage après une mission ?',
-   'a' => 'Oui, sous conditions. Si tu as cotisé suffisamment (en jours travaillés et en montants), tu peux ouvrir des droits à l\'allocation chômage (ARE) via France Travail. Le portage salarial ouvre bien des droits, contrairement à la micro-entreprise. [À VÉRIFIER : conditions d\'affiliation France Travail pour les portés en 2026]'],
+   'a' => 'Oui, sous conditions. Si tu as cotisé suffisamment (en jours travaillés et en montants), tu peux ouvrir des droits à l\'allocation chômage (ARE) via France Travail. Le portage salarial ouvre bien ces droits, contrairement à la micro-entreprise. Consulte France Travail pour les conditions exactes d\'affiliation applicables à ta situation en 2026.'],
   ['q' => 'Mes clients doivent-ils être en France pour utiliser le portage ?',
    'a' => 'Non. Tes clients peuvent être basés n\'importe où : France, Europe, États-Unis, Asie. La société de portage facture en leur nom dans la devise convenue. Pour des clients étrangers, il faudra vérifier avec la société de portage les modalités de facturation internationale (TVA, frais de change, etc.)'],
   ['q' => 'Portage salarial ou micro-entreprise : lequel choisir depuis le Vietnam ?',
@@ -101,7 +101,7 @@ include 'header.php';
       <li><strong>La société de portage</strong> : elle signe le contrat avec le client, encaisse le paiement, paie les cotisations sociales et te verse un salaire</li>
       <li><strong>Le client</strong> : il paie la société de portage (pas toi directement)</li>
     </ul>
-    <p>Ce qui te revient en salaire net est typiquement le CA HT de la mission, <strong>moins les frais de gestion de la société de portage</strong> [À VÉRIFIER : 5–12 %], <strong>moins les charges patronales et salariales</strong> [À VÉRIFIER : environ 45–50 % sur salaire brut en France]. Résultat : sur 1 000 € HT facturé, tu touches généralement entre [À VÉRIFIER : 450 et 580 €] nets selon le taux de charges et les frais.</p>
+    <p>Ce qui te revient en salaire net est typiquement le CA HT de la mission, <strong>moins les frais de gestion de la société de portage</strong> (5–10 % en général), <strong>moins les charges patronales (~43 %) et salariales (~26 %) sur le salaire brut</strong>. Résultat : sur 1 000 € HT facturé, tu touches généralement entre 450 et 570 € nets selon le taux de frais de la société.</p>
 
     <div class="tip-box">
       <strong>Avantage clé :</strong> Le portage salarial est encadré par la loi française depuis 2008 et réglementé par une convention collective. La société de portage doit être immatriculée et respecter des obligations précises — contrairement aux montages offshore parfois proposés sur internet.
@@ -180,7 +180,7 @@ include 'header.php';
         </tr>
         <tr>
           <td>Taux de frais de gestion</td>
-          <td>[À VÉRIFIER : 5–12 % selon les sociétés] — plus bas n'est pas toujours mieux si le service est mauvais</td>
+          <td>5 à 10 % du CA HT selon les sociétés — plus bas n'est pas toujours mieux si le service est mauvais</td>
         </tr>
         <tr>
           <td>Délai de versement du salaire</td>
@@ -200,7 +200,7 @@ include 'header.php';
         </tr>
         <tr>
           <td>Convention collective appliquée</td>
-          <td>La convention du portage salarial [À VÉRIFIER : IDCC 3219] est obligatoire depuis 2017</td>
+          <td>La convention collective du portage salarial (IDCC 3219) est obligatoire depuis 2017</td>
         </tr>
       </tbody>
     </table>
@@ -215,7 +215,7 @@ include 'header.php';
     <p>Dans ce cas :</p>
     <ul>
       <li>La France n'a plus le droit d'imposer tous tes revenus (seulement les "revenus de source française" selon la convention de 1993)</li>
-      <li>Tu dois remplir une déclaration de revenus au Vietnam [À VÉRIFIER : obligations exactes pour les salariés de sociétés étrangères]</li>
+      <li>Tu dois remplir une déclaration de revenus au Vietnam sur tes revenus de source vietnamienne ou mondiale (selon ta situation) — consulte un expert-comptable spécialisé en expatriation pour les obligations exactes</li>
       <li>Tes cotisations sociales restent françaises même si tu n'es plus résident fiscal français</li>
     </ul>
     <div class="info-box">

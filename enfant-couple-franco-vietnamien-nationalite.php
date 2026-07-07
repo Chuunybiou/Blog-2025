@@ -187,7 +187,7 @@ include 'header.php';
     <p>Si l'enfant réside au Vietnam avec le parent vietnamien (cas de séparation notamment) :</p>
     <ul>
       <li>Le droit vietnamien s'applique pour la garde et les autorités locales</li>
-      <li>En cas de litige de garde internationale, des règles spécifiques s'appliquent [À VÉRIFIER — consulter l'ambassade]</li>
+      <li>En cas de litige de garde internationale, des règles spécifiques s'appliquent — consulte l'ambassade de France au Vietnam ou un avocat spécialisé en droit international de la famille</li>
     </ul>
 
     <h2 id="section-faq">Questions fréquentes</h2>

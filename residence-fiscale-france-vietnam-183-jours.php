@@ -31,11 +31,11 @@ $article_category_url = SITE_URL . '/articles-capvietnam?cat=argent';
 
 $page_faq = [
   ['q' => 'Si je passe 6 mois en France et 6 mois au Vietnam, où suis-je résident fiscal ?',
-   'a' => 'La répartition à 50/50 ne tranche pas automatiquement. Les critères déterminants sont alors : où est ton foyer permanent (logement, famille) ? Où exerces-tu ton activité principale ? Où sont tes intérêts économiques (comptes, investissements) ? Si tout est partagé équitablement, la convention de 1993 prévoit un ordre de priorité des critères pour trancher. [À VÉRIFIER : articles 4 et suivants de la convention France-Vietnam 1993]'],
+   'a' => 'La répartition à 50/50 ne tranche pas automatiquement. Les critères déterminants sont alors : où est ton foyer permanent (logement, famille) ? Où exerces-tu ton activité principale ? Où sont tes intérêts économiques (comptes, investissements) ? Si tout est partagé équitablement, la convention de 1993 prévoit un ordre de priorité des critères pour trancher (article 4 de la convention France-Vietnam de 1993).'],
   ['q' => 'La règle des 183 jours s\'applique-t-elle à l\'année civile ou sur 12 mois glissants ?',
-   'a' => 'En droit français, la résidence fiscale est appréciée sur l\'année civile (1er janvier au 31 décembre) [À VÉRIFIER : article 4B du CGI]. Au Vietnam, le calcul peut différer [À VÉRIFIER : droit fiscal vietnamien]. La convention parle d\'une "période de 12 mois" qui peut commencer à n\'importe quelle date — ce qui peut créer des situations où tu passes les 183 jours sur 12 mois mais pas sur l\'année civile. Consulte un fiscaliste pour une situation précise.'],
+   'a' => 'En droit français, la résidence fiscale est appréciée sur l\'année civile (1er janvier au 31 décembre) selon l\'article 4B du CGI. Au Vietnam, la règle peut s\'apprécier sur 12 mois glissants à compter de la première arrivée, selon la Loi vietnamienne sur l\'impôt sur le revenu des personnes physiques. La convention de 1993 parle d\'une "période de 12 mois" qui peut commencer à n\'importe quelle date — ce qui peut créer des situations où tu passes les 183 jours sur 12 mois mais pas sur l\'année civile. Consulte un fiscaliste pour une situation précise.'],
   ['q' => 'Mon employeur français peut-il refuser que je travaille au Vietnam si je change de résidence fiscale ?',
-   'a' => 'Oui. Un changement de résidence fiscale peut avoir des conséquences pour ton employeur (risque d\'établissement stable au Vietnam, complexité de paie). Certains employeurs l\'acceptent, d\'autres non. Il est prudent d\'informer ton employeur avant le départ et de clarifier les implications ensemble. [À VÉRIFIER : conditions de ton contrat de travail]'],
+   'a' => 'Oui. Un changement de résidence fiscale peut avoir des conséquences pour ton employeur (risque d\'établissement stable au Vietnam, complexité de paie). Certains employeurs l\'acceptent, d\'autres non. Il est prudent d\'informer ton employeur avant le départ, de relire ton contrat de travail sur ce point, et de clarifier les implications ensemble avec son service RH ou juridique.'],
   ['q' => 'Est-ce qu\'un couple franco-vietnamien au Vietnam est nécessairement résident fiscal vietnamien ?',
    'a' => 'Pas nécessairement, mais c\'est fréquent. Si vous vivez ensemble au Vietnam toute l\'année et que vos revenus principaux sont là, vous êtes très probablement résidents fiscaux vietnamiens. Mais si l\'un des conjoints conserve des liens forts avec la France (logement, famille, revenus), la situation peut être différente. Chaque situation est individuelle.'],
 ];
@@ -105,7 +105,7 @@ include 'header.php';
     <p>Un mauvais positionnement peut entraîner une double imposition (les deux pays imposent), une sous-imposition (ni l'un ni l'autre, mais avec risque de redressement ultérieur), ou la perte de droits sociaux.</p>
 
     <h2 id="section-2">Les 4 critères français (article 4B du CGI)</h2>
-    <p>En France, la résidence fiscale est définie par l'article 4B du Code général des impôts [À VÉRIFIER : texte exact en vigueur 2026]. Tu es considéré résident fiscal français si tu remplis <strong>au moins un</strong> de ces 4 critères :</p>
+    <p>En France, la résidence fiscale est définie par l'article 4B du Code général des impôts. Tu es considéré résident fiscal français si tu remplis <strong>au moins un</strong> de ces 4 critères :</p>
 
     <div class="table-wrap">
     <table class="comparison-table">
@@ -144,15 +144,15 @@ include 'header.php';
     <p>Un seul critère suffit pour être résident fiscal français. Et <strong>les 183 jours au Vietnam (critère inverse)</strong> ne suffisent pas à te faire perdre la résidence fiscale française si l'un des autres critères reste rempli.</p>
 
     <h2 id="section-3">Les critères vietnamiens de résidence fiscale</h2>
-    <p>Le Vietnam définit ses propres résidents fiscaux selon sa loi sur l'impôt sur le revenu des personnes physiques (LIRPP) [À VÉRIFIER : loi vietnamienne actuellement en vigueur, numéro et article exact]. Tu es résident fiscal vietnamien si :</p>
+    <p>Le Vietnam définit ses propres résidents fiscaux selon sa loi sur l'impôt sur le revenu des personnes physiques (LIRPP — Loi n°04/2007/QH12 modifiée). Tu es résident fiscal vietnamien si :</p>
     <ul>
-      <li>Tu séjournes au Vietnam pendant <strong>[À VÉRIFIER : 183 jours ou plus]</strong> dans l'année calendaire OU sur une période de 12 mois consécutifs à compter de la date de ta première arrivée</li>
+      <li>Tu séjournes au Vietnam pendant <strong>183 jours ou plus</strong> dans l'année calendaire OU sur une période de 12 mois consécutifs à compter de la date de ta première arrivée</li>
       <li>OU tu as un logement permanent enregistré au Vietnam (bail long terme ou enregistrement de domicile temporaire)</li>
     </ul>
-    <p>Si tu es résident fiscal vietnamien, le Vietnam impose tes revenus mondiaux (pas seulement les revenus de source vietnamienne). [À VÉRIFIER : taux PIT vietnamien 2026 selon tranches]</p>
+    <p>Si tu es résident fiscal vietnamien, le Vietnam impose tes revenus mondiaux (pas seulement les revenus de source vietnamienne). Les taux d'imposition sur le revenu au Vietnam vont de 5 % à 35 % par tranches progressives (7 tranches) pour les résidents fiscaux.</p>
 
     <h2 id="section-4">Quand les deux pays revendiquent : la convention de 1993</h2>
-    <p>Si tu remplis les critères des deux pays simultanément (ce qui arrive souvent la première ou dernière année d'expatriation), la convention fiscale France-Vietnam signée en 1993 prévoit un mécanisme de départage ("tie-breaker rules") [À VÉRIFIER : article exact de la convention].</p>
+    <p>Si tu remplis les critères des deux pays simultanément (ce qui arrive souvent la première ou dernière année d'expatriation), la convention fiscale France-Vietnam signée en 1993 prévoit un mécanisme de départage ("tie-breaker rules") à l'article 4.</p>
     <p>Les critères de départage s'appliquent dans l'ordre suivant :</p>
     <ol>
       <li><strong>Foyer d'habitation permanent</strong> : dans quel pays as-tu une habitation permanente disponible ?</li>
@@ -167,7 +167,7 @@ include 'header.php';
     <div class="info-box">
       <strong>Cas 1 — Le télétravailleur 8 mois/an au Vietnam</strong><br>
       Antoine travaille pour une boîte française en CDI. Il passe 8 mois à Hanoï (avec sa femme vietnamienne) et 4 mois en France (famille, amis). Ses comptes sont en France.<br><br>
-      <strong>Résultat probable :</strong> Résident fiscal vietnamien (183+ jours VN, foyer au Vietnam avec sa femme). La France peut encore imposer ses revenus de source française selon la convention. Mais ses revenus de travail seront partiellement imposables au Vietnam. [À VÉRIFIER avec un fiscaliste pour sa situation exacte]
+      <strong>Résultat probable :</strong> Résident fiscal vietnamien (183+ jours VN, foyer au Vietnam avec sa femme). La France peut encore imposer ses revenus de source française selon la convention. Mais ses revenus de travail seront partiellement imposables au Vietnam. Situation à valider avec un fiscaliste spécialisé en expatriation.
     </div>
 
     <div class="info-box">

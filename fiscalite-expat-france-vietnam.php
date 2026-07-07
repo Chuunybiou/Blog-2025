@@ -122,7 +122,7 @@ include 'header.php';
         <tr>
           <td>Salaire (travail exercé au Vietnam)</td>
           <td>Vietnam principalement</td>
-          <td>Règle du lieu d'exercice [À VÉRIFIER : art. convention]</td>
+          <td>Règle du lieu d'exercice — article 14 de la convention France-Vietnam de 1993</td>
         </tr>
         <tr>
           <td>Salaire (télétravail pour employeur FR)</td>

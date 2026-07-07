@@ -33,11 +33,11 @@ $page_faq = [
   ['q' => 'Dois-je déclarer mes revenus en France si je vis au Vietnam ?',
    'a' => 'Cela dépend de ta résidence fiscale. Si tu es résident fiscal français (foyer en France, moins de 183 jours au Vietnam, intérêts économiques en France), oui tu dois déclarer tous tes revenus mondiaux en France. Si tu es résident fiscal vietnamien, tu ne déclares en France que tes revenus de source française (loyers, dividendes de sociétés françaises, etc.).'],
   ['q' => 'Qu\'est-ce que la déclaration de non-résident (formulaire 2042 NR) ?',
-   'a' => 'Le formulaire 2042 NR est la déclaration de revenus pour les non-résidents fiscaux français qui ont des revenus de source française. Il se remplit en ligne sur impots.gouv.fr, via le service des impôts des particuliers non-résidents (SIPNR) à Noisy-le-Grand. [À VÉRIFIER : délais exacts de dépôt pour non-résidents 2026]'],
+   'a' => 'Le formulaire 2042 NR est la déclaration de revenus pour les non-résidents fiscaux français qui ont des revenus de source française. Il se remplit en ligne sur impots.gouv.fr, via le service des impôts des particuliers non-résidents (SIPNR) à Noisy-le-Grand. Les non-résidents bénéficient généralement de délais plus tardifs que les résidents — consulte impots.gouv.fr pour les dates exactes en vigueur.'],
   ['q' => 'Comment signaler son départ à l\'étranger au fisc français ?',
-   'a' => 'Il faut déposer une déclaration de revenus pour l\'année de départ (déclarant les revenus jusqu\'à la date de départ), cocher la case "transfert du domicile fiscal hors de France", et signaler ta nouvelle adresse. Les banques, la CAF, la CPAM doivent également être informées. [À VÉRIFIER : formulaire spécifique si disponible en 2026]'],
+   'a' => 'Il faut déposer une déclaration de revenus pour l\'année de départ (déclarant les revenus jusqu\'à la date de départ), cocher la case "transfert du domicile fiscal hors de France", et signaler ta nouvelle adresse au centre des impôts. Les banques, la CAF, la CPAM doivent également être informées. Consulte impots.gouv.fr pour la procédure en vigueur.'],
   ['q' => 'Les impôts au Vietnam sont-ils déduits de ceux que je paie en France ?',
-   'a' => 'La convention de 1993 prévoit un mécanisme de crédit d\'impôt pour éviter la double imposition. Si tu as payé de l\'impôt sur le revenu au Vietnam sur un revenu, tu peux en principe en déduire le montant de ta déclaration française sur ce même revenu. Le mécanisme exact dépend du type de revenu. [À VÉRIFIER : articles spécifiques de la convention de 1993]'],
+   'a' => 'La convention de 1993 prévoit un mécanisme de crédit d\'impôt pour éviter la double imposition. Si tu as payé de l\'impôt sur le revenu au Vietnam sur un revenu, tu peux en principe en déduire le montant de ta déclaration française sur ce même revenu. Le mécanisme exact dépend du type de revenu et de l\'article de la convention applicable (salaires, dividendes, plus-values…) — consulte un expert-comptable spécialisé pour les modalités de déclaration du crédit d\'impôt dans ta situation.'],
 ];
 include '_article-css.php';
 include 'header.php';
@@ -130,7 +130,7 @@ include 'header.php';
     <p>L'année où tu t'installes au Vietnam est souvent la plus complexe fiscalement. Tu peux changer de statut fiscal en cours d'année. Dans ce cas :</p>
     <ul>
       <li>Tu déclares tes revenus <strong>jusqu'à la date de départ</strong> comme résident fiscal français</li>
-      <li>Tu indiques ton transfert de domicile fiscal hors de France sur ta déclaration [À VÉRIFIER : case spécifique sur formulaire 2042]</li>
+      <li>Tu indiques ton transfert de domicile fiscal hors de France sur ta déclaration (rubrique dédiée sur le formulaire 2042 — consulte la notice ou impots.gouv.fr)</li>
       <li>Tu communiques ta nouvelle adresse au fisc français</li>
       <li>À partir de ta date de départ, seuls les revenus de source française restent imposables en France</li>
     </ul>
@@ -146,7 +146,7 @@ include 'header.php';
       <li>Revenus de capitaux mobiliers (dividendes, intérêts)</li>
       <li>Comptes bancaires étrangers à déclarer séparément sur le formulaire 3916</li>
     </ul>
-    <p>Si tu as payé des impôts sur ces revenus au Vietnam, la convention de 1993 prévoit un crédit d'impôt pour éviter la double imposition [À VÉRIFIER : article précis et modalités de déclaration du crédit d'impôt].</p>
+    <p>Si tu as payé des impôts sur ces revenus au Vietnam, la convention de 1993 prévoit un crédit d'impôt pour éviter la double imposition — consulte un expert-comptable spécialisé en expatriation pour les modalités de déclaration applicables à ton type de revenu.</p>
 
     <h2 id="section-4">Si tu es non-résident fiscal français</h2>
     <p>Tu ne déclares en France que tes <strong>revenus de source française</strong>. Les revenus typiques à déclarer :</p>
@@ -172,12 +172,12 @@ include 'header.php';
       <tbody>
         <tr>
           <td>Déclaration de revenus résidents</td>
-          <td>[À VÉRIFIER : mai/juin de l'année suivante]</td>
+          <td>Généralement mai-juin de l'année suivante — consulte impots.gouv.fr pour les dates exactes</td>
           <td>Centre des finances publiques habituel</td>
         </tr>
         <tr>
           <td>Déclaration de revenus non-résidents (2042 NR)</td>
-          <td>[À VÉRIFIER : délai spécifique non-résidents, généralement plus tardif]</td>
+          <td>Délai plus tardif que pour les résidents — consulte le SIPNR ou impots.gouv.fr</td>
           <td>SIPNR — Noisy-le-Grand (09 72 72 39 39)</td>
         </tr>
         <tr>

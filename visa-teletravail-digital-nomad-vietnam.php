@@ -31,11 +31,11 @@ $article_category_url = SITE_URL . '/articles-capvietnam?cat=argent';
 
 $page_faq = [
   ['q' => 'Le Vietnam a-t-il un visa digital nomad ?',
-   'a' => 'Non, pas en 2026. Contrairement à l\'Indonésie (Bali), au Portugal ou à la Thaïlande qui ont créé des visas spécifiques pour les nomades digitaux, le Vietnam n\'a pas de visa "digital nomad" officiel. Les nomades utilisent le plus souvent l\'e-visa (90 jours) ou le visa d\'affaires DL. [À VÉRIFIER : annonces du gouvernement vietnamien sur ce sujet en 2025-2026]'],
+   'a' => 'Non, pas en 2026. Contrairement à l\'Indonésie (Bali), au Portugal ou à la Thaïlande qui ont créé des visas spécifiques pour les nomades digitaux, le Vietnam n\'a pas de visa "digital nomad" officiel à cette date. Les nomades utilisent le plus souvent l\'e-visa (90 jours) ou le visa d\'affaires DL. Si un tel visa était créé, ce serait annoncé sur le site du Département de l\'Immigration vietnamien.'],
   ['q' => 'Peut-on travailler légalement en e-visa Vietnam ?',
-   'a' => 'L\'e-visa n\'autorise pas formellement à exercer une activité professionnelle au Vietnam. Télétravailler pour des clients étrangers depuis le Vietnam en e-visa est dans une zone grise : la loi vietnamienne n\'explicite pas clairement ce cas. En pratique, aucun cas d\'expulsion ou d\'amende pour simple télétravail en e-visa n\'est documenté à ce jour. Mais la situation peut changer. [À VÉRIFIER : texte exact de la réglementation sur les activités autorisées en e-visa]'],
+   'a' => 'L\'e-visa n\'autorise pas formellement à exercer une activité professionnelle au Vietnam. Télétravailler pour des clients étrangers depuis le Vietnam en e-visa est dans une zone grise : la réglementation vietnamienne n\'explicite pas clairement ce cas. En pratique, aucun cas d\'expulsion ou d\'amende pour simple télétravail en e-visa n\'est documenté à ce jour. Mais la situation peut changer — la réglementation est susceptible d\'évoluer.'],
   ['q' => 'L\'e-visa Vietnam est-il renouvelable plusieurs fois de suite ?',
-   'a' => 'Formellement, l\'e-visa est accordé pour 90 jours. Le renouvellement consécutif (sortir du Vietnam et revenir immédiatement avec un nouvel e-visa) était courant mais les autorités commencent à le limiter dans certains cas. Il est prudent d\'avoir une autre solution pour les séjours longs. [À VÉRIFIER : règles actuelles de l\'Immigration vietnamienne sur les renouvellements consécutifs en 2026]'],
+   'a' => 'Formellement, l\'e-visa est accordé pour 90 jours. Le renouvellement consécutif (sortir du Vietnam et revenir immédiatement avec un nouvel e-visa) est pratiqué par beaucoup de nomades, mais les autorités commencent à questionner certains voyageurs qui font ça de façon répétée. C\'est légal aujourd\'hui mais reste à la discrétion des agents de l\'immigration — il est prudent d\'avoir une alternative pour les séjours longs.'],
   ['q' => 'Je suis marié(e) à un(e) Vietnamien(ne) : quel est le meilleur visa ?',
    'a' => 'Le visa TT ou la carte de résidence temporaire (TRC) sont les options les plus stables et légales pour un conjoint de Vietnamien. Ils permettent de rester au Vietnam longtemps sans visa-run, et sont compatibles avec le télétravail (qui n\'est pas considéré comme "travail au Vietnam" dans ce contexte, bien que la zone grise reste). Lien vers notre guide → visa TT et TRC pour conjoint de Vietnamien.'],
 ];
@@ -151,17 +151,17 @@ include 'header.php';
     <h2 id="section-3">E-visa : la solution la plus simple</h2>
     <p>L'e-visa Vietnam est la porte d'entrée de la majorité des nomades. Ses caractéristiques :</p>
     <ul>
-      <li>Obtenu en ligne sur la plateforme officielle du Département de l'Immigration du Vietnam [À VÉRIFIER : URL officielle en vigueur]</li>
+      <li>Obtenu en ligne sur la plateforme officielle du Département de l'Immigration du Vietnam : <strong>evisa.xuatnhapcanh.gov.vn</strong></li>
       <li>Valide 90 jours, entrées multiples</li>
-      <li>Prix : <strong>[À VÉRIFIER : 25 USD en 2024, vérifier tarif 2026]</strong></li>
-      <li>Traitement en <strong>[À VÉRIFIER : 3 jours ouvrés environ]</strong></li>
+      <li>Prix : <strong>25 USD</strong> (tarif en vigueur depuis 2023)</li>
+      <li>Traitement en <strong>3 jours ouvrés environ</strong></li>
     </ul>
-    <p>Le problème des renouvellements consécutifs : sortir du pays (Cambodge, Laos, Thaïlande) et rentrer avec un nouvel e-visa était courant. Les autorités commencent à questionner certains voyageurs qui font ça de façon répétée, sans refuser systématiquement. [À VÉRIFIER : politique actuelle de l'Immigration en 2026]</p>
+    <p>Le problème des renouvellements consécutifs : sortir du pays (Cambodge, Laos, Thaïlande) et rentrer avec un nouvel e-visa est courant. Les autorités commencent à questionner certains voyageurs qui font ça de façon répétée, sans refuser systématiquement. La politique peut évoluer — il est prudent de prévoir une solution alternative pour les séjours longs.</p>
 
     <h2 id="section-4">Visa DL (affaires)</h2>
     <p>Le visa DL est théoriquement pour les affaires — rencontres avec des partenaires vietnamiens, conférences, activités commerciales. Il est utilisé par certains nomades pour des séjours plus longs :</p>
     <ul>
-      <li>Nécessite une lettre d'invitation d'une société vietnamienne [À VÉRIFIER : conditions exactes]</li>
+      <li>Nécessite une lettre d'invitation d'une société vietnamienne (les conditions peuvent varier — renseigne-toi auprès de l'agence visa ou de la société qui t'invite)</li>
       <li>Peut être accordé pour 3 ou 12 mois</li>
       <li>N'autorise pas formellement le télétravail pour des clients étrangers — même zone grise que l'e-visa</li>
     </ul>

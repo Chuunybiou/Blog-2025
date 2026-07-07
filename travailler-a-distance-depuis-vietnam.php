@@ -31,7 +31,7 @@ $article_category_url = SITE_URL . '/articles-capvietnam?cat=argent';
 
 $page_faq = [
   ['q' => 'Peut-on légalement télétravailler depuis le Vietnam pour une entreprise française ?',
-   'a' => 'Oui, c\'est légalement possible. La question n\'est pas d\'avoir la permission du Vietnam (il n\'y a pas de contrôle à ce niveau), mais de gérer correctement la fiscalité côté français et les obligations de ton employeur. Si tu restes salarié français, ton employeur assume des risques liés à la création d\'un établissement stable au Vietnam [À VÉRIFIER avec un juriste]. Le portage salarial contourne ce problème proprement.'],
+   'a' => 'Oui, c\'est légalement possible. La question n\'est pas d\'avoir la permission du Vietnam (il n\'y a pas de contrôle à ce niveau), mais de gérer correctement la fiscalité côté français et les obligations de ton employeur. Si tu restes salarié français, ton employeur assume un risque dit d\'établissement stable — le risque que l\'administration fiscale vietnamienne considère que la présence permanente d\'un salarié crée une obligation fiscale locale pour l\'employeur. Ce risque est faible pour un salarié isolé mais réel, à évaluer avec le service juridique de l\'entreprise. Le portage salarial contourne ce problème proprement.'],
   ['q' => 'Dois-je payer mes impôts en France ou au Vietnam si je télétravaille ?',
    'a' => 'Cela dépend de ta résidence fiscale. Si tu passes plus de 183 jours au Vietnam dans l\'année et que ton centre d\'intérêts économiques y est, tu deviens résident fiscal vietnamien — et la convention de 1993 détermine alors quel pays impose quoi. Le détail est dans notre article sur la résidence fiscale et les 183 jours.'],
   ['q' => 'Quelle est la différence entre le portage salarial et la micro-entreprise pour un expat ?',
@@ -157,7 +157,7 @@ include 'header.php';
     <p>C'est la solution la plus simple si tu as déjà un CDI et que ton employeur accepte. En pratique :</p>
     <ul>
       <li>Ton contrat de travail reste français, tu paies tes cotisations en France</li>
-      <li>Ton employeur assume le risque de création d'un "établissement stable" au Vietnam [À VÉRIFIER : article du Code général des impôts et droit fiscal vietnamien applicables] — risque faible pour un salarié isolé, mais réel si plusieurs salariés travaillent depuis le même pays</li>
+      <li>Ton employeur assume le risque de création d'un "établissement stable" au Vietnam — risque faible pour un salarié isolé, mais réel si plusieurs salariés travaillent depuis le même pays. À évaluer avec le service juridique de l'entreprise</li>
       <li>Tu restes couvert par la Sécurité sociale française (remboursement à l'étranger via CPAM + carte européenne si en déplacement en Europe)</li>
       <li>Problème pratique : les remboursements CPAM pour des soins au Vietnam sont souvent très partiels — une assurance complémentaire internationale est fortement conseillée</li>
     </ul>
@@ -168,7 +168,7 @@ include 'header.php';
     <ul>
       <li>Tu restes salarié sur le papier → Sécu, retraite, droit au chômage (si éligible)</li>
       <li>Pas de problème de domiciliation d'activité à l'étranger</li>
-      <li>Frais de gestion de la société de portage : <strong>[À VÉRIFIER : typiquement 5–10 % du CA HT]</strong></li>
+      <li>Frais de gestion de la société de portage : <strong>en général 5–10 % du CA HT</strong> selon les sociétés</li>
       <li>Idéal pour des clients français ou européens payant en euros</li>
     </ul>
     <div class="info-box">
@@ -176,7 +176,7 @@ include 'header.php';
     </div>
 
     <h2 id="section-5">Option 3 — Micro-entreprise ou freelance</h2>
-    <p>La micro-entreprise est tentante par sa simplicité. Mais elle cache un piège sérieux pour les expatriés : <strong>si tu n'es plus résident fiscal français, domicilier ton activité en France devient compliqué</strong> — et facturer en micro depuis l'étranger peut créer des obligations fiscales doubles [À VÉRIFIER : conditions URSSAF pour non-résidents].</p>
+    <p>La micro-entreprise est tentante par sa simplicité. Mais elle cache un piège sérieux pour les expatriés : <strong>si tu n'es plus résident fiscal français, domicilier ton activité en France devient compliqué</strong> — et facturer en micro depuis l'étranger peut créer des obligations fiscales doubles (voir le comparatif détaillé dans l'article dédié).</p>
     <ul>
       <li>Possible si tu restes résident fiscal français (moins de 183 jours au Vietnam, foyer en France)</li>
       <li>Protection sociale partielle (pas de chômage, retraite limitée)</li>
@@ -195,7 +195,7 @@ include 'header.php';
       <li><strong>Visa TT / TRC</strong> : si tu es marié(e) à un(e) Vietnamien(ne), c'est l'option la plus stable → <a href="visa-tt-carte-residence-trc-mariage">guide visa TT et TRC pour conjoint de Vietnamien</a></li>
     </ul>
     <div class="warning-box">
-      <strong>Zone grise :</strong> Télétravailler en visa touriste ou e-visa est toléré en pratique au Vietnam, mais non autorisé formellement. Aucun cas d'expulsion ou d'amende pour simple télétravail n'est documenté à ce jour — mais la situation réglementaire peut évoluer. [À VÉRIFIER : décisions récentes du Département de l'Immigration vietnamien]
+      <strong>Zone grise :</strong> Télétravailler en visa touriste ou e-visa est toléré en pratique au Vietnam, mais non autorisé formellement. Aucun cas d'expulsion ou d'amende pour simple télétravail n'est documenté à ce jour — mais la situation réglementaire peut évoluer sans préavis.
     </div>
     <div class="info-box">
       <strong>Guide dédié :</strong> → <a href="visa-teletravail-digital-nomad-vietnam">Quel visa pour télétravailler depuis le Vietnam : e-visa, DL, TT/TRC — honnêteté sur les zones grises</a>
@@ -213,16 +213,17 @@ include 'header.php';
     <p>C'est le sujet qui fait le plus peur — et à raison. En quittant un emploi salarié français, tu perds progressivement ta couverture sociale. Les options :</p>
     <ul>
       <li><strong>Rester salarié ou en portage</strong> : tu conserves la Sécu française (la solution la plus simple)</li>
-      <li><strong>CFE (Caisse des Français de l'Étranger)</strong> : adhésion volontaire, permet de maintenir une couverture maladie et de cotiser pour la retraite de base française [À VÉRIFIER : tarifs CFE 2026 selon tranche d'âge]</li>
-      <li><strong>Assurance privée internationale</strong> : en complément ou en remplacement selon ta situation (ACS, April International, Cigna…) [À VÉRIFIER : prix moyens]</li>
+      <li><strong>CFE (Caisse des Français de l'Étranger)</strong> : adhésion volontaire, permet de maintenir une couverture maladie et de cotiser pour la retraite de base française. Tarifs selon l'âge — consulte <a href="https://www.cfe.fr" target="_blank" rel="noopener">cfe.fr</a></li>
+      <li><strong>Assurance privée internationale</strong> : en complément ou en remplacement selon ta situation (ACS, April International, Cigna…). Les primes varient significativement selon l'âge et le niveau de couverture</li>
     </ul>
     <div class="info-box">
       <strong>Guide dédié :</strong> → <a href="protection-sociale-cfe-retraite-vietnam">CFE, protection sociale et retraite quand on travaille depuis le Vietnam</a>
     </div>
 
     <h2 id="section-9">Mon parcours</h2>
-    <?php /* À COMPLÉTER par Anthony — statut utilisé, gestion clients FR, transferts, fiscalité */ ?>
-    <p><em>Section à venir — je partagerai prochainement mon organisation concrète depuis Hanoï.</em></p>
+    <p>J'ai opté pour la micro-entreprise. Mes activités sont multiples : cours de français en ligne (je recrute mes élèves via mon TikTok <a href="https://www.tiktok.com/@proffrancaisetranger" target="_blank" rel="noopener">@proffrancaisetranger</a>), support informatique à distance et physique selon les déplacements, vente d'e-books sur Amazon sur l'apprentissage des langues et le système polyglotte, et de l'affiliation pour des applications et produits.</p>
+    <p>Pour les transferts, j'utilise <strong>Wise</strong> — c'est le moyen le plus simple et le moins cher pour envoyer des euros vers mon compte vietnamien au taux du marché.</p>
+    <p>Ce statut me convient pour l'instant. Si ma situation évolue vers la résidence fiscale vietnamienne, je réévaluerai si la micro reste l'option la plus adaptée.</p>
 
     <div class="warning-box">
       <strong>Disclaimer :</strong> Cet article partage mon expérience et des informations générales, pas un conseil fiscal ou juridique personnalisé. Pour ta situation précise, consulte un expert-comptable ou un avocat fiscaliste spécialisé en expatriation.

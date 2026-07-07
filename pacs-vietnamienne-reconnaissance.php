@@ -117,7 +117,7 @@ include 'header.php';
 
     <h2 id="section-4">Comment conclure un PACS avec un(e) Vietnamien(ne)</h2>
     <p>Si ton/ta partenaire est en France avec un visa valide, vous pouvez vous pacser à la mairie (depuis 2017) ou chez un notaire.</p>
-    <p>Documents requis [À VÉRIFIER liste complète] :</p>
+    <p>Documents généralement requis (liste non exhaustive — renseigne-toi à la mairie ou chez ton notaire avant le rendez-vous) :</p>
     <ul>
       <li>Convention de PACS (rédigée par les partenaires ou chez un notaire)</li>
       <li>Acte de naissance de chacun (moins de 6 mois, traduit pour la pièce étrangère)</li>
