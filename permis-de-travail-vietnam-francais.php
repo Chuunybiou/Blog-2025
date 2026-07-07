@@ -1,0 +1,196 @@
+<?php
+require_once __DIR__ . '/config/site.php';
+$page_title       = 'Permis de travail au Vietnam pour les Français en 2026 : procédure complète';
+$page_description = 'Giấy phép lao động (GPLĐ) : qui doit l\'obtenir, quels documents préparer, délais et coût. Guide complet du permis de travail au Vietnam pour les ressortissants français.';
+$page_canonical   = SITE_URL . '/permis-de-travail-vietnam-francais';
+$page_og_title    = 'Permis de travail au Vietnam pour les Français en 2026';
+$page_og_desc     = 'Tout sur le giấy phép lao động : documents requis, procédure étape par étape, délais de traitement, exemptions et renouvellement.';
+$page_og_url      = SITE_URL . '/permis-de-travail-vietnam-francais';
+$page_og_image    = 'https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=1200&q=80';
+$page_schema      = json_encode([
+  '@context'        => 'https://schema.org',
+  '@type'           => 'Article',
+  'headline'        => 'Permis de travail au Vietnam pour les Français en 2026 : procédure complète',
+  'datePublished'   => '2026-10-01',
+  'dateModified'    => '2026-10-01',
+  'author'          => ['@type' => 'Person', 'name' => SITE_AUTHOR, 'url' => SITE_URL . '/a-propos-capvietnam'],
+  'publisher'       => ['@type' => 'Organization', 'name' => SITE_NAME, 'url' => SITE_URL],
+  'mainEntityOfPage'=> SITE_URL . '/permis-de-travail-vietnam-francais',
+  'inLanguage'      => 'fr',
+  'articleSection'  => 'Emploi & Entreprendre',
+], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
+
+$article_color        = 'jade';
+$article_hero_bg      = '#001f18';
+$article_glow         = 'rgba(27,107,82,0.18)';
+$article_badge        = 'rgba(27,107,82,0.25)';
+$article_badge_c      = '#4dbe94';
+
+$article_category     = 'Emploi & Entreprendre';
+$article_category_url = SITE_URL . '/articles-capvietnam?cat=emploi';
+
+$page_faq = [
+  ['q' => 'Peut-on travailler pendant que la demande de permis est en cours de traitement ?',
+   'a' => 'Non, légalement. L\'employeur est censé déposer et obtenir le permis avant la prise de poste effective. Dans la pratique, certains employeurs font commencer leurs salariés pendant le traitement du dossier, mais cette situation est irrégulière et expose l\'employeur à une amende. Il est plus sûr de n\'exercer qu\'après réception du permis de travail.'],
+  ['q' => 'Que se passe-t-il si je change d\'employeur en cours de permis ?',
+   'a' => 'Le permis de travail vietnamien est lié à l\'employeur. Si tu changes d\'entreprise, l\'ancien permis n\'est plus valide pour le nouvel emploi. Il faut déposer une nouvelle demande de permis de travail auprès du nouvel employeur. Dans certains cas, une procédure simplifiée est possible si le permis initial n\'est pas expiré. Consulte un cabinet juridique spécialisé pour les démarches exactes.'],
+  ['q' => 'Mon diplôme doit-il être d\'un certain niveau pour obtenir le permis de travail ?',
+   'a' => 'En règle générale, le Décret 152/2020/NĐ-CP prévoit que le travailleur étranger doit justifier d\'un diplôme universitaire correspondant au poste et d\'une expérience professionnelle d\'au moins 3 ans dans le domaine. Des exigences spécifiques peuvent s\'appliquer selon le secteur. Pour certains postes, une expérience professionnelle solide peut parfois compenser l\'absence de diplôme, mais cela reste à l\'appréciation des autorités locales.'],
+  ['q' => 'Les propriétaires de leur propre société au Vietnam ont-ils besoin d\'un permis de travail ?',
+   'a' => 'Non, si tu es propriétaire et représentant légal (người đại diện theo pháp luật) de ta propre SARL vietnamienne, tu es exempté de permis de travail selon le Décret 152/2020/NĐ-CP. Cette exemption est l\'une des raisons pour lesquelles certains expatriés choisissent de créer leur propre structure au Vietnam plutôt que de travailler pour un employeur local. Voir l\'article <a href="creer-entreprise-vietnam-statuts-juridiques">Créer une entreprise au Vietnam</a>.'],
+];
+include '_article-css.php';
+include 'header.php';
+?>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<header class="article-hero">
+  <div class="article-hero-inner">
+    <div class="breadcrumb">
+      <a href="/">Accueil</a><span class="breadcrumb-sep">›</span>
+      <a href="articles-capvietnam?cat=emploi">Emploi &amp; Entreprendre</a><span class="breadcrumb-sep">›</span>
+      <span>Permis de travail au Vietnam</span>
+    </div>
+    <span class="article-badge-hero">Emploi &amp; Entreprendre</span>
+    <h1>Permis de travail au Vietnam pour les Français en 2026 : la procédure complète</h1>
+    <div class="article-hero-meta">
+      <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
+      <span>📅 Octobre 2026</span>
+      <span>⏱ 8 min de lecture</span>
+      <span>Mis à jour : Octobre 2026</span>
+    </div>
+  </div>
+</header>
+
+<div class="article-layout">
+  <aside class="toc">
+    <div class="toc-label">Sommaire</div>
+    <ol class="toc-list">
+      <li><a href="#section-1">Qu'est-ce que le permis de travail vietnamien ?</a></li>
+      <li><a href="#section-2">Qui doit en avoir un ?</a></li>
+      <li><a href="#section-3">Qui est exempté ?</a></li>
+      <li><a href="#section-4">Documents à préparer</a></li>
+      <li><a href="#section-5">La procédure étape par étape</a></li>
+      <li><a href="#section-6">Délais, coût et renouvellement</a></li>
+      <li><a href="#section-faq">Questions fréquentes</a></li>
+    </ol>
+    <div class="toc-share">
+      <div class="toc-share-label">Partager</div>
+      <div class="share-btns">
+        <a class="share-btn" onclick="window.open('https://www.facebook.com/sharer.php?u='+encodeURIComponent(location.href))">f</a>
+        <a class="share-btn" onclick="window.open('https://twitter.com/intent/tweet?url='+encodeURIComponent(location.href))">𝕏</a>
+      </div>
+    </div>
+  </aside>
+
+  <main class="article-content">
+
+    <p class="article-intro">Pour travailler légalement au Vietnam, tout ressortissant étranger — y compris les Français — doit obtenir un permis de travail, appelé <strong>giấy phép lao động</strong> (GPLĐ) en vietnamien. C'est l'employeur qui en est responsable, pas le salarié, mais il est indispensable de comprendre le processus pour anticiper les délais et préparer les documents nécessaires côté français.</p>
+
+    <div class="article-alert">
+      <strong>Base légale :</strong> La réglementation du permis de travail est définie par le <strong>Décret 152/2020/NĐ-CP</strong> du gouvernement vietnamien (modifié par le Décret 70/2023/NĐ-CP). Ces textes peuvent évoluer ; vérifier auprès de l'employeur ou d'un cabinet juridique local avant toute démarche.
+    </div>
+
+    <h2 id="section-1">1. Qu'est-ce que le permis de travail vietnamien ?</h2>
+    <p>Le permis de travail (GPLĐ) est un document officiel délivré par le <strong>Service provincial du Travail, des Invalides de Guerre et des Affaires sociales</strong> (Sở Lao Động - Thương Binh và Xã Hội, abrégé Sở LĐTBXH). Il autorise un étranger à exercer une activité salariée au Vietnam pour un employeur précis et un poste précis.</p>
+    <p>Sa durée de validité est limitée à <strong>24 mois maximum</strong> (2 ans), correspondant à la durée du contrat de travail si elle est inférieure. Il est renouvelable.</p>
+
+    <h2 id="section-2">2. Qui doit obtenir un permis de travail ?</h2>
+    <p>Toute personne de nationalité étrangère qui :</p>
+    <ul>
+      <li>Travaille pour une entreprise ou organisation établie au Vietnam (vietnamienne ou étrangère)</li>
+      <li>Est en contrat de travail local</li>
+      <li>Exerce une fonction de direction ou d'expert au sein d'une entité au Vietnam</li>
+      <li>Est détachée par une entreprise étrangère pour travailler au Vietnam au-delà du seuil d'exemption</li>
+    </ul>
+
+    <h2 id="section-3">3. Qui est exempté du permis de travail ?</h2>
+    <p>Le Décret 152/2020/NĐ-CP liste plusieurs catégories exemptées :</p>
+    <ul>
+      <li><strong>Propriétaires ou membres de SARL</strong> qui sont en même temps représentants légaux de leur société vietnamienne</li>
+      <li><strong>Experts en mission courte</strong> : moins de 30 jours consécutifs, dans la limite de 90 jours cumulés par an</li>
+      <li><strong>Étudiants</strong> en alternance ou stage intégré à leur formation</li>
+      <li><strong>Personnel diplomatique</strong> et assimilé</li>
+      <li>Certaines autres catégories prévues par des traités internationaux</li>
+    </ul>
+    <p>Pour les exemptés, une <strong>confirmation d'exemption</strong> (xác nhận không thuộc diện cấp GPLĐ) doit tout de même être obtenue auprès du Sở LĐTBXH.</p>
+
+    <h2 id="section-4">4. Documents à préparer</h2>
+    <p>La constitution du dossier est à la charge de l'employeur, mais plusieurs documents viennent du futur salarié. Voici les pièces généralement requises :</p>
+
+    <div class="table-wrapper">
+    <table>
+      <thead><tr><th>Document</th><th>Remarques</th></tr></thead>
+      <tbody>
+        <tr><td>Formulaire de demande de GPLĐ (officiel)</td><td>Fourni et rempli par l'employeur</td></tr>
+        <tr><td>Photo d'identité (4×6 cm, fond blanc)</td><td>Prise récemment</td></tr>
+        <tr><td>Copie certifiée du passeport</td><td>Pages photo et visa</td></tr>
+        <tr><td>Diplôme le plus élevé</td><td>Apostillé + traduit en vietnamien par traducteur assermenté</td></tr>
+        <tr><td>Attestation d'expérience professionnelle</td><td>Au moins 3 ans dans le domaine (lettres d'employeurs ou attestation)</td></tr>
+        <tr><td>Casier judiciaire</td><td>Bulletins nº 3 (France) de moins de 6 mois, apostillé + traduit en vietnamien</td></tr>
+        <tr><td>Certificat médical</td><td>Délivré par un hôpital agréé au Vietnam ou à l'étranger</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <p><strong>Sur l'apostille du diplôme depuis la France</strong> : l'apostille est délivrée par le procureur de la République du tribunal judiciaire dont dépend l'établissement émetteur du diplôme. Pour les diplômes d'État (licence, master, doctorat), la demande se fait auprès du rectorat ou du ministère de l'Éducation nationale selon le niveau. La traduction en vietnamien doit être réalisée par un traducteur assermenté — en France via une liste de la cour d'appel, au Vietnam via un bureau de traduction officiel.</p>
+
+    <p><strong>Sur le casier judiciaire depuis la France</strong> : le bulletin n°3 s'obtient gratuitement en ligne sur casier.justice.fr ou par courrier auprès du Casier Judiciaire National (Nantes). L'apostille est apposée par le parquet du TJ dont dépend le casier (généralement Nantes).</p>
+
+    <h2 id="section-5">5. La procédure étape par étape</h2>
+    <ol>
+      <li><strong>Constitution du dossier</strong> : l'employeur rassemble tous les documents (côté entreprise : actes de constitution, liste des postes, etc. ; côté salarié : les documents du tableau ci-dessus)</li>
+      <li><strong>Dépôt au Sở LĐTBXH</strong> : le dossier complet est déposé au Service du Travail de la province ou ville où l'entreprise est établie (Hanoï ou Hô-Chi-Minh-Ville selon le cas)</li>
+      <li><strong>Instruction du dossier</strong> : les autorités vérifient la conformité des documents</li>
+      <li><strong>Délivrance du permis</strong> : le Sở LĐTBXH remet le GPLĐ physique à l'employeur</li>
+      <li><strong>Visa LD</strong> : avec le permis de travail obtenu, le salarié peut demander un visa de travail (type LD) pour régulariser son séjour si nécessaire</li>
+    </ol>
+
+    <h2 id="section-6">6. Délais, coût et renouvellement</h2>
+
+    <h3>Délais de traitement</h3>
+    <p>Le délai légal de traitement est de <strong>5 jours ouvrés</strong> à compter du dépôt d'un dossier complet. En pratique, comptez 7 à 15 jours ouvrés pour inclure les allers-retours en cas de documents manquants ou de demandes de compléments.</p>
+
+    <h3>Coût</h3>
+    <p>La taxe officielle de délivrance du permis est fixée par le Ministère des Finances vietnamien. Consulte l'employeur ou un cabinet local pour le montant exact au moment de la démarche, ce montant pouvant être révisé. Les coûts d'apostille et de traduction en France sont à la charge du salarié ou de l'employeur selon accord.</p>
+
+    <h3>Renouvellement</h3>
+    <p>Le permis de travail peut être renouvelé avant son expiration. L'employeur doit soumettre une demande de renouvellement au moins <strong>5 jours ouvrés avant</strong> la date d'expiration. Le dossier de renouvellement est généralement plus léger (mise à jour du casier judiciaire, photo, contrat renouvelé).</p>
+
+    <div id="section-faq">
+      <h2>Questions fréquentes</h2>
+      <?php foreach ($page_faq as $i => $item): ?>
+      <details <?= $i===0?'open':'' ?>>
+        <summary><?= htmlspecialchars($item['q']) ?></summary>
+        <p><?= $item['a'] ?></p>
+      </details>
+      <?php endforeach; ?>
+    </div>
+
+  </main>
+</div>
+
+<div class="cta-newsletter">
+  <div class="cta-newsletter-inner">
+    <div class="cta-newsletter-text">
+      <strong>Tu prépares ton installation professionnelle au Vietnam ?</strong>
+      <span>Reçois les prochains guides sur l'emploi, les visas et l'entrepreneuriat au Vietnam.</span>
+    </div>
+    <a href="newsletter-capvietnam" class="cta-newsletter-btn">Recevoir la newsletter</a>
+  </div>
+</div>
+
+<div class="author-box">
+  <img src="assets/img/anthony-vietnam.jpg" alt="Anthony Bouillon - Cap Vietnam" class="author-avatar" onerror="this.style.display='none'">
+  <div class="author-box-text">
+    <div class="author-box-name">Anthony Bouillon</div>
+    <div class="author-box-bio">Expatrié français installé au Vietnam. Je partage mon expérience du quotidien vietnamien : vie pratique, démarches, travail et couple franco-vietnamien.</div>
+    <a href="a-propos-capvietnam" class="author-box-link">En savoir plus sur l'auteur</a>
+  </div>
+</div>
+
+<?php include '_article-comments.php'; ?>
+<?php include '_related-articles.php'; ?>
+<?php include '_article-js.php'; ?>
+<?php include 'footer.php'; ?>

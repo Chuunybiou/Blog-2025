@@ -1,0 +1,200 @@
+<?php
+require_once __DIR__ . '/config/site.php';
+$page_title       = 'Enseigner le français au Vietnam en 2026 : qualifications, salaires et démarches';
+$page_description = 'Comment devenir professeur de FLE au Vietnam ? Institut Français, Alliance Française, écoles privées ou en ligne : salaires, qualifications requises et statuts juridiques pour enseigner le français au Vietnam.';
+$page_canonical   = SITE_URL . '/enseigner-francais-vietnam-fle';
+$page_og_title    = 'Enseigner le français au Vietnam en 2026 : le guide complet';
+$page_og_desc     = 'IFV, Alliance Française, EFIV, écoles privées ou cours en ligne : tout ce qu\'un professeur de français doit savoir pour enseigner au Vietnam.';
+$page_og_url      = SITE_URL . '/enseigner-francais-vietnam-fle';
+$page_og_image    = 'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1200&q=80';
+$page_schema      = json_encode([
+  '@context'        => 'https://schema.org',
+  '@type'           => 'Article',
+  'headline'        => 'Enseigner le français au Vietnam en 2026 : qualifications, salaires et démarches',
+  'datePublished'   => '2026-09-28',
+  'dateModified'    => '2026-09-28',
+  'author'          => ['@type' => 'Person', 'name' => SITE_AUTHOR, 'url' => SITE_URL . '/a-propos-capvietnam'],
+  'publisher'       => ['@type' => 'Organization', 'name' => SITE_NAME, 'url' => SITE_URL],
+  'mainEntityOfPage'=> SITE_URL . '/enseigner-francais-vietnam-fle',
+  'inLanguage'      => 'fr',
+  'articleSection'  => 'Emploi & Entreprendre',
+], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
+
+$article_color        = 'jade';
+$article_hero_bg      = '#001f18';
+$article_glow         = 'rgba(27,107,82,0.18)';
+$article_badge        = 'rgba(27,107,82,0.25)';
+$article_badge_c      = '#4dbe94';
+
+$article_category     = 'Emploi & Entreprendre';
+$article_category_url = SITE_URL . '/articles-capvietnam?cat=emploi';
+
+$page_faq = [
+  ['q' => 'Quelle qualification faut-il pour enseigner le français à l\'Institut Français du Vietnam ?',
+   'a' => 'L\'Institut Français du Vietnam demande généralement un Master FLE/FLS (Français Langue Étrangère / Français Langue Seconde) ou équivalent, avec une expérience d\'enseignement. Le DAEFLE (Diplôme d\'aptitude à l\'enseignement du français langue étrangère) du CNED peut également être valorisé. Pour les postes de lecteurs ou assistants, les exigences peuvent être moins strictes. Consulte les offres d\'emploi directement sur le site de l\'IFV (ifvietnam.net) ou de la Direction des Ressources Humaines de l\'Institut Français de Paris.'],
+  ['q' => 'Peut-on enseigner le français au Vietnam sans expérience ?',
+   'a' => 'C\'est difficile dans les établissements institutionnels (IFV, Alliance Française) qui exigent une expérience. En revanche, les écoles privées bilingues vietnamiennes ou les centres de langues locaux recrutent parfois des débutants, en particulier des natifs français. Pour l\'enseignement en ligne, aucune barrière réglementaire : des plateformes comme Italki ou Preply permettent de commencer sans diplôme, même si une certification FLE améliore le profil et permet de demander des tarifs plus élevés.'],
+  ['q' => 'Quelle est la différence entre l\'Institut Français du Vietnam et l\'Alliance Française ?',
+   'a' => 'L\'Institut Français du Vietnam (IFV) est un établissement public placé sous la tutelle de l\'Ambassade de France. Il a des antennes à Hanoï, Hô-Chi-Minh-Ville, Da Nang et Huế. L\'Alliance Française est un réseau associatif indépendant, présent à Hanoï et Hô-Chi-Minh-Ville au Vietnam. Les deux enseignent le français et organisent des activités culturelles, mais leurs structures juridiques, conditions de recrutement et grilles de rémunération sont distinctes.'],
+  ['q' => 'Comment déclarer les revenus de cours de français en ligne depuis le Vietnam ?',
+   'a' => 'Si tu es résident fiscal vietnamien et que tu donnes des cours en ligne à des élèves étrangers, tes revenus sont en principe imposables au Vietnam. La situation pratique dépend de ta structure : micro-entreprise française, portage salarial, ou auto-déclaration vietnamienne. Consulte un expert-comptable spécialisé en expatriation pour ta situation exacte. Voir aussi les articles <a href="fiscalite-expat-france-vietnam">Fiscalité expat France-Vietnam</a> et <a href="portage-salarial-ou-micro-entreprise-vietnam">Portage salarial ou micro-entreprise</a>.'],
+];
+include '_article-css.php';
+include 'header.php';
+?>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<header class="article-hero">
+  <div class="article-hero-inner">
+    <div class="breadcrumb">
+      <a href="/">Accueil</a><span class="breadcrumb-sep">›</span>
+      <a href="articles-capvietnam?cat=emploi">Emploi &amp; Entreprendre</a><span class="breadcrumb-sep">›</span>
+      <span>Enseigner le français au Vietnam</span>
+    </div>
+    <span class="article-badge-hero">Emploi &amp; Entreprendre</span>
+    <h1>Enseigner le français au Vietnam en 2026 : qualifications, salaires et statuts</h1>
+    <div class="article-hero-meta">
+      <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
+      <span>📅 Septembre 2026</span>
+      <span>⏱ 9 min de lecture</span>
+      <span>Mis à jour : Septembre 2026</span>
+    </div>
+  </div>
+</header>
+
+<div class="article-layout">
+  <aside class="toc">
+    <div class="toc-label">Sommaire</div>
+    <ol class="toc-list">
+      <li><a href="#section-1">Les types d'employeurs</a></li>
+      <li><a href="#section-2">Qualifications requises</a></li>
+      <li><a href="#section-3">Salaires par type d'employeur</a></li>
+      <li><a href="#section-4">Statut local ou détaché ?</a></li>
+      <li><a href="#section-5">Enseigner en ligne depuis le Vietnam</a></li>
+      <li><a href="#section-faq">Questions fréquentes</a></li>
+    </ol>
+    <div class="toc-share">
+      <div class="toc-share-label">Partager</div>
+      <div class="share-btns">
+        <a class="share-btn" onclick="window.open('https://www.facebook.com/sharer.php?u='+encodeURIComponent(location.href))">f</a>
+        <a class="share-btn" onclick="window.open('https://twitter.com/intent/tweet?url='+encodeURIComponent(location.href))">𝕏</a>
+      </div>
+    </div>
+  </aside>
+
+  <main class="article-content">
+
+    <p class="article-intro">Enseigner le français au Vietnam est l'un des débouchés professionnels les plus accessibles pour un expatrié français. La langue française reste valorisée dans le système éducatif vietnamien, et la demande d'apprentissage est soutenue tant du côté des adultes professionnels que des familles souhaitant une éducation francophone pour leurs enfants. Mais les conditions, qualifications et salaires varient énormément selon le type d'employeur.</p>
+
+    <h2 id="section-1">1. Les différents types d'employeurs</h2>
+
+    <h3>Institut Français du Vietnam (IFV)</h3>
+    <p>L'<strong>Institut Français du Vietnam</strong> est le principal acteur institutionnel de la promotion de la langue française. Il dispose d'antennes à Hanoï, Hô-Chi-Minh-Ville, Da Nang et Huế. Il recrute des professeurs de FLE sur dossier, prioritairement avec un master spécialisé et de l'expérience. Le site officiel est <strong>ifvietnam.net</strong>. Certains postes sont gérés depuis Paris via l'Institut Français (institutfrancais.com).</p>
+
+    <h3>Alliance Française</h3>
+    <p>L'<strong>Alliance Française</strong> est présente à Hanoï et Hô-Chi-Minh-Ville. Structure associative indépendante, elle recrute également des professeurs qualifiés. Les conditions de recrutement et de rémunération peuvent différer de l'IFV. Pour postuler : alliancefrancaise.org.vn.</p>
+
+    <h3>EFIV — École Française Internationale du Vietnam</h3>
+    <p>L'<strong>EFIV</strong> dispose du lycée Louis-Pasteur à Hanoï et d'un campus à Hô-Chi-Minh-Ville. Elle accueille des enseignants détachés de l'Éducation nationale française (AEFE) ou recrutés locaux. Si tu es enseignant titulaire de l'Éducation nationale, tu peux postuler à un poste AEFE via le portail officiel : aefe.fr.</p>
+
+    <h3>Écoles bilingues et centres de langues privés</h3>
+    <p>Les écoles bilingues français-vietnamien se sont multipliées dans les grandes villes, notamment à Hanoï (quartier Tây Hồ) et Hô-Chi-Minh-Ville. Les centres de langues locaux recrutent des enseignants natifs, parfois sans exiger de master FLE, pour des cours adultes ou enfants. Les salaires sont inférieurs aux institutions mais l'accès est plus facile.</p>
+
+    <h3>Universités</h3>
+    <p>Plusieurs universités vietnamiennes disposent de départements de français (Université Nationale de Hanoï, Université de Huế, USSH à HCMV). Les postes de lecteurs ou de professeurs de langue y sont disponibles, souvent via des conventions bilatérales ou des recrutements locaux. Les salaires horaires sont plus bas, mais les postes incluent parfois un logement ou des avantages annexes.</p>
+
+    <h2 id="section-2">2. Qualifications requises</h2>
+
+    <div class="table-wrapper">
+    <table>
+      <thead><tr><th>Type d'employeur</th><th>Qualification minimum</th><th>Expérience</th></tr></thead>
+      <tbody>
+        <tr><td>IFV / Alliance Française</td><td>Master FLE/FLS ou DAEFLE</td><td>Souvent exigée (1-3 ans)</td></tr>
+        <tr><td>EFIV (lycée français)</td><td>Titulaire EN (CAPES, agrégation)</td><td>Requise</td></tr>
+        <tr><td>École bilingue privée</td><td>Licence + expérience</td><td>Appréciée</td></tr>
+        <tr><td>Centre de langues local</td><td>Natif + parfois aucune</td><td>Non obligatoire</td></tr>
+        <tr><td>Université</td><td>Master ou licence selon poste</td><td>Variable</td></tr>
+        <tr><td>Cours en ligne</td><td>Aucune (légalement)</td><td>Non obligatoire</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <p>Le <strong>DAEFLE</strong> (Diplôme d'Aptitude à l'Enseignement du Français Langue Étrangère) est délivré par le CNED en partenariat avec l'Alliance Française de Paris. C'est une qualification reconnue internationalement, accessible à distance, qui ouvre de nombreuses portes dans les réseaux institutionnels. Pour plus d'informations : cned.fr.</p>
+
+    <h2 id="section-3">3. Salaires par type d'employeur</h2>
+    <p>Les salaires dans l'enseignement du FLE au Vietnam sont généralement exprimés à l'heure ou au mois selon le type de contrat. Ces chiffres sont des ordres de grandeur observés sur le marché et peuvent varier selon l'ancienneté, le niveau d'enseignement et la négociation individuelle.</p>
+
+    <div class="table-wrapper">
+    <table>
+      <thead><tr><th>Type d'employeur</th><th>Tarif horaire indicatif</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr><td>IFV / Alliance Française</td><td>20 – 30 USD/h</td><td>Cours de groupe, contrat temps partiel souvent</td></tr>
+        <tr><td>École bilingue privée</td><td>15 – 25 USD/h</td><td>Variable selon établissement</td></tr>
+        <tr><td>Centre de langues local</td><td>10 – 18 USD/h</td><td>Horaires décalés (soirs, week-ends)</td></tr>
+        <tr><td>Université</td><td>8 – 15 USD/h</td><td>Logement parfois inclus</td></tr>
+        <tr><td>Cours en ligne (clients directs)</td><td>15 – 50 USD/h</td><td>Très variable selon clients et réputation</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <p>Pour les postes à temps plein (contrat de 40h/semaine), les salaires mensuels nets se situent généralement entre <strong>700 et 1 500 USD</strong> pour un enseignant FLE en contrat local. Les postes AEFE (détachés) offrent des conditions de rémunération différentes, calculées sur la grille de l'Éducation nationale française, hors indemnités d'expatriation.</p>
+
+    <h2 id="section-4">4. Statut : contrat local ou détachement ?</h2>
+
+    <h3>Contrat local vietnamien</h3>
+    <p>L'enseignant est recruté directement par un employeur vietnamien (IFV, école, centre de langues). Il doit obtenir un <strong>permis de travail</strong> (giấy phép lao động). Il cotise aux régimes sociaux vietnamiens. Sa résidence fiscale est probablement vietnamienne s'il y passe plus de 183 jours par an — il est alors imposable au Vietnam sur ses revenus locaux selon les taux PIT vietnamiens (5 à 35 %, 7 tranches).</p>
+    <p>Pour plus de détails : <a href="permis-de-travail-vietnam-francais">Permis de travail au Vietnam</a>.</p>
+
+    <h3>Détachement via l'AEFE ou l'IFV</h3>
+    <p>Les enseignants titulaires de l'Éducation nationale peuvent être détachés au Vietnam via l'<strong>AEFE</strong> (Agence pour l'Enseignement Français à l'Étranger) pour les lycées EFIV. Ce statut maintient les droits à la retraite en France et la couverture de la Sécurité sociale. La rémunération intègre des indemnités d'expatriation. Les candidatures passent par le portail AEFE (aefe.fr).</p>
+
+    <h2 id="section-5">5. Enseigner le français en ligne depuis le Vietnam</h2>
+    <p>Donner des cours de français en ligne depuis le Vietnam est une activité exercée par de nombreux expatriés. C'est une solution flexible qui ne nécessite pas de permis de travail si tes clients et ta structure commerciale sont entièrement hors du Vietnam.</p>
+
+    <h3>Les plateformes</h3>
+    <ul>
+      <li><strong>Italki</strong> et <strong>Preply</strong> : places de marché pour cours particuliers en ligne ; profil public, tarifs libres, clients du monde entier</li>
+      <li><strong>Verbling</strong> : orienté professeurs qualifiés</li>
+      <li><strong>Clients directs</strong> : via les réseaux sociaux, TikTok, YouTube ou bouche-à-oreille — modèle le plus rentable une fois la réputation construite</li>
+    </ul>
+
+    <h3>Structure juridique et fiscalité</h3>
+    <p>Si tu donnes des cours en ligne à des clients français depuis le Vietnam, la question de ta structure commerciale (micro-entreprise française, portage salarial, auto-déclaration VN) est importante. Voir l'article <a href="portage-salarial-ou-micro-entreprise-vietnam">Portage salarial ou micro-entreprise au Vietnam</a> pour analyser ta situation.</p>
+
+    <div id="section-faq">
+      <h2>Questions fréquentes</h2>
+      <?php foreach ($page_faq as $i => $item): ?>
+      <details <?= $i===0?'open':'' ?>>
+        <summary><?= htmlspecialchars($item['q']) ?></summary>
+        <p><?= $item['a'] ?></p>
+      </details>
+      <?php endforeach; ?>
+    </div>
+
+  </main>
+</div>
+
+<div class="cta-newsletter">
+  <div class="cta-newsletter-inner">
+    <div class="cta-newsletter-text">
+      <strong>Tu veux enseigner le français au Vietnam ?</strong>
+      <span>Reçois les prochains guides sur l'emploi et l'entrepreneuriat pour les expatriés français.</span>
+    </div>
+    <a href="newsletter-capvietnam" class="cta-newsletter-btn">Recevoir la newsletter</a>
+  </div>
+</div>
+
+<div class="author-box">
+  <img src="assets/img/anthony-vietnam.jpg" alt="Anthony Bouillon - Cap Vietnam" class="author-avatar" onerror="this.style.display='none'">
+  <div class="author-box-text">
+    <div class="author-box-name">Anthony Bouillon</div>
+    <div class="author-box-bio">Expatrié français installé au Vietnam. Je partage mon expérience du quotidien vietnamien : vie pratique, démarches, travail et couple franco-vietnamien.</div>
+    <a href="a-propos-capvietnam" class="author-box-link">En savoir plus sur l'auteur</a>
+  </div>
+</div>
+
+<?php include '_article-comments.php'; ?>
+<?php include '_related-articles.php'; ?>
+<?php include '_article-js.php'; ?>
+<?php include 'footer.php'; ?>
