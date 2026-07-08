@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Ton pack est prêt — Blog Cap Vietnam</title>
+<meta name="description" content="Accède aux 4 ressources du pack : guide PDF Mariage & Visa 2026, lettre CCAM, lettre de relance ambassade et checklist complète.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#FBF6EC;
+  --paper-deep:#F3EBDB;
+  --ink:#23281F;
+  --ink-soft:#5A5F53;
+  --hanoi:#DE9E28;
+  --hanoi-soft:#F6E3B8;
+  --shutter:#2E5641;
+  --shutter-deep:#1F3D2E;
+  --tampon:#A6392B;
+  --line:#E2D8C2;
+  --radius:14px;
+  --font-display:'Young Serif',Georgia,serif;
+  --font-body:'Instrument Sans',system-ui,sans-serif;
+  --font-mono:'IBM Plex Mono',ui-monospace,monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+body{font-family:var(--font-body);background:var(--paper);color:var(--ink);line-height:1.65;font-size:17px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--hanoi);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.wrap-narrow{max-width:760px;margin:0 auto;padding:0 24px}
+
+.eyebrow{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--shutter);display:inline-flex;align-items:center;gap:.6em}
+.eyebrow::before{content:"";width:26px;height:2px;background:var(--hanoi)}
+h1,h2,h3,h4{font-family:var(--font-display);font-weight:400;line-height:1.15}
+h2{font-size:clamp(1.7rem,3.4vw,2.3rem);margin:.5rem 0 .9rem}
+.section{padding:80px 0}
+.section-head{max-width:640px;margin-bottom:40px}
+.section-head p{color:var(--ink-soft)}
+.mono{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft)}
+
+.btn{display:inline-flex;align-items:center;gap:.5em;font-family:var(--font-body);font-weight:600;font-size:.95rem;padding:.85em 1.5em;border-radius:999px;text-decoration:none;border:1.5px solid var(--ink);transition:transform .15s ease,box-shadow .15s ease,background .15s ease;cursor:pointer}
+.btn-primary{background:var(--ink);color:var(--paper)}
+.btn-primary:hover{background:var(--shutter-deep);border-color:var(--shutter-deep);transform:translateY(-2px);box-shadow:0 8px 20px rgba(35,40,31,.18)}
+.btn-ghost{background:transparent;color:var(--ink)}
+.btn-ghost:hover{background:var(--paper-deep)}
+.btn-hanoi{background:var(--hanoi);border-color:var(--hanoi);color:var(--ink)}
+.btn-hanoi:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(222,158,40,.35)}
+
+header.site{position:sticky;top:0;z-index:50;background:rgba(251,246,236,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;gap:32px;height:66px}
+.brand{font-family:var(--font-display);font-size:1.25rem;text-decoration:none;display:flex;align-items:baseline;gap:.35em}
+.brand span{color:var(--tampon)}
+.nav-links{display:flex;gap:26px;margin-left:auto;align-items:center}
+.nav-links a{text-decoration:none;font-size:.92rem;font-weight:500;color:var(--ink-soft);padding:.35em 0;border-bottom:2px solid transparent;transition:color .15s,border-color .15s}
+.nav-links a:hover,.nav-links a[aria-current]{color:var(--ink);border-color:var(--hanoi)}
+.lang-pill{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.06em;border:1px solid var(--line);border-radius:999px;padding:.4em .9em;text-decoration:none;color:var(--ink-soft);transition:background .15s}
+.lang-pill:hover{background:var(--paper-deep);color:var(--ink)}
+.nav-cta{margin-left:8px}
+.burger{display:none;background:none;border:1.5px solid var(--ink);border-radius:8px;padding:.45em .7em;font-size:1rem;cursor:pointer}
+
+.breadcrumb{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.08em;color:var(--ink-soft);padding-top:28px}
+.breadcrumb a{text-decoration:none}
+.breadcrumb a:hover{color:var(--ink);text-decoration:underline}
+
+.stamp{border:2.5px solid var(--tampon);color:var(--tampon);border-radius:10px;padding:.55em .9em;background:rgba(251,246,236,.9);font-family:var(--font-mono);font-size:.68rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;text-align:center;line-height:1.5;box-shadow:0 4px 14px rgba(166,57,43,.18)}
+.stamp b{display:block;font-size:.84rem;font-weight:500}
+
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;text-decoration:none;display:flex;flex-direction:column;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+.card:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(35,40,31,.12);border-color:var(--hanoi)}
+.card-body{padding:22px 22px 24px;display:flex;flex-direction:column;gap:.55rem;flex:1}
+.card-meta{font-family:var(--font-mono);font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:var(--shutter);display:flex;gap:1.1em;flex-wrap:wrap}
+.card h3{font-size:1.08rem;line-height:1.32}
+.card p{color:var(--ink-soft);font-size:.9rem;flex:1}
+.card .go{font-weight:600;font-size:.88rem;color:var(--shutter)}
+
+.newsletter-band{background:var(--shutter-deep);color:var(--paper);border-radius:calc(var(--radius) + 6px);padding:44px 48px;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+.newsletter-band h2{color:var(--paper);margin:0 0 .4rem}
+.newsletter-band p{color:rgba(251,246,236,.8);font-size:.95rem}
+.newsletter-band .eyebrow{color:var(--hanoi)}
+.newsletter-band .eyebrow::before{background:var(--hanoi)}
+.nl-form{display:flex;gap:10px}
+.nl-form input{flex:1;padding:.85em 1.1em;border-radius:999px;border:1px solid rgba(251,246,236,.3);background:rgba(251,246,236,.95);font-family:var(--font-body);font-size:.95rem;min-width:0}
+.nl-small{font-size:.76rem;color:rgba(251,246,236,.55);margin-top:10px}
+.nl-small a{color:rgba(251,246,236,.75)}
+
+footer.site{background:var(--ink);color:rgba(251,246,236,.75);padding:64px 0 32px;font-size:.9rem;margin-top:80px}
+.foot-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:40px;margin-bottom:44px}
+footer.site .brand{color:var(--paper)}
+footer.site h4{font-family:var(--font-mono);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--hanoi);margin-bottom:1rem}
+footer.site ul{list-style:none;display:grid;gap:.55rem}
+footer.site a{color:rgba(251,246,236,.75);text-decoration:none}
+footer.site a:hover{color:var(--paper);text-decoration:underline}
+.foot-legal{border-top:1px solid rgba(251,246,236,.15);padding-top:24px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:.8rem;color:rgba(251,246,236,.5)}
+.foot-legal a{color:rgba(251,246,236,.6)}
+.affiliate-note{font-size:.78rem;color:rgba(251,246,236,.45);margin-top:10px;max-width:52em}
+
+.cookies{position:fixed;bottom:20px;left:20px;z-index:60;max-width:340px;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;box-shadow:0 18px 44px rgba(35,40,31,.2);font-size:.86rem}
+.cookies p{color:var(--ink-soft);margin-bottom:12px}
+.cookies p a{color:var(--ink)}
+.cookies-actions{display:flex;gap:10px}
+.cookies-actions .btn{padding:.55em 1.1em;font-size:.85rem}
+
+@media(max-width:960px){
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .newsletter-band{grid-template-columns:1fr;padding:36px 28px}
+}
+@media(max-width:680px){
+  .nav-links{display:none}
+  .burger{display:block;margin-left:auto}
+  .section{padding:60px 0}
+  .cookies{left:12px;right:12px;max-width:none}
+  .nl-form{flex-direction:column}
+  .nl-form .btn{justify-content:center}
+}
+.alertbar{background:var(--ink);color:rgba(251,246,236,.85);font-size:.82rem}
+.alertbar-inner{display:flex;align-items:center;gap:14px;padding-block:9px}
+.alertbar p{margin:0}
+.alertbar a{color:var(--hanoi);text-decoration:none;font-weight:600}
+.alertbar a:hover{text-decoration:underline}
+.alert-tag{flex:none;font-family:var(--font-mono);font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--hanoi);border:1px solid var(--hanoi);border-radius:6px;padding:.25em .7em}
+
+header.site{top:0}
+
+.hero{padding:64px 0 0;background:linear-gradient(180deg,var(--paper-deep),var(--paper))}
+.hero-top{display:grid;grid-template-columns:1fr auto;gap:44px;align-items:start;margin-bottom:48px}
+.hero h1{font-size:clamp(2.3rem,5.2vw,3.9rem);margin:.6rem 0 1rem;max-width:14em}
+.hero h1 em{font-style:italic;color:var(--shutter)}
+.hero .lede{font-size:1.12rem;color:var(--ink-soft);max-width:38em}
+.hero-stamp-zone{padding-top:26px}
+.stamp.big{transform:rotate(7deg);font-size:.72rem}
+.stamp.big b{font-size:.95rem}
+
+/* --- ligne de vie --- */
+.journey{padding-bottom:56px}
+.journey-label{margin-bottom:22px;color:var(--tampon)}
+.journey-line{display:flex;align-items:flex-start;gap:0;position:relative;padding:0 6px}
+.journey-line::before{content:"";position:absolute;left:34px;right:34px;top:11px;border-top:2px dashed var(--line)}
+.terminus{font-family:var(--font-mono);font-size:.7rem;font-weight:500;letter-spacing:.08em;color:var(--paper);background:var(--shutter-deep);border-radius:6px;padding:.35em .6em;position:relative;z-index:1;flex:none;margin-top:-4px}
+.station{flex:1;background:none;border:0;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:10px;position:relative;z-index:1;font-family:var(--font-body);padding:0}
+.station i{width:24px;height:24px;border-radius:50%;background:var(--paper);border:3px solid var(--shutter);transition:transform .18s ease,background .18s ease,border-color .18s ease}
+.station span{font-size:.86rem;font-weight:600;color:var(--ink-soft);line-height:1.25;text-align:center;transition:color .15s}
+.station:hover i{transform:scale(1.2)}
+.station:hover span{color:var(--ink)}
+.station[aria-selected="true"] i{background:var(--hanoi);border-color:var(--hanoi);transform:scale(1.3);box-shadow:0 0 0 6px rgba(222,158,40,.22)}
+.station[aria-selected="true"] span{color:var(--ink)}
+
+.journey-panel{margin-top:34px;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:34px 38px;box-shadow:0 18px 44px rgba(35,40,31,.08)}
+.jp-head{display:flex;justify-content:space-between;align-items:baseline;gap:20px;flex-wrap:wrap;margin-bottom:.6rem}
+.jp-head h2{margin:0;font-size:clamp(1.4rem,2.6vw,1.8rem)}
+.jp-head .mono{color:var(--tampon)}
+.journey-panel > p{color:var(--ink-soft);max-width:46em;margin-bottom:1.3rem}
+.jp-cols{display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:stretch}
+#jp-links{list-style:none;border-top:2px dashed var(--line)}
+#jp-links li{border-bottom:2px dashed var(--line)}
+#jp-links a{display:block;padding:.8em 4px;text-decoration:none;font-weight:600;font-size:.96rem;transition:padding-left .18s ease,color .15s}
+#jp-links a::before{content:"→ ";color:var(--hanoi)}
+#jp-links a:hover{padding-left:14px;color:var(--shutter)}
+.jp-tool{background:var(--shutter-deep);color:var(--paper);border-radius:var(--radius);padding:24px;text-decoration:none;display:flex;flex-direction:column;gap:.6rem;justify-content:center;transition:transform .18s ease,box-shadow .18s ease}
+.jp-tool:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(31,61,46,.35)}
+.jp-tool strong{font-family:var(--font-display);font-weight:400;font-size:1.15rem;line-height:1.3}
+.jp-tool .go{color:var(--hanoi);font-weight:600;font-size:.9rem}
+
+/* --- bandeau chiffres --- */
+.proofbar{background:var(--shutter-deep);color:var(--paper)}
+.proofbar-inner{display:flex;justify-content:space-between;gap:26px;padding-block:24px;flex-wrap:wrap}
+.proofbar strong{font-family:var(--font-display);font-size:1.5rem;display:block;color:var(--hanoi)}
+.proofbar span{font-family:var(--font-mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(251,246,236,.7)}
+
+/* --- méthode --- */
+.method-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.method{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px 24px;position:relative}
+.m-num{font-family:var(--font-mono);font-size:.72rem;color:var(--tampon);border:1.5px solid var(--tampon);border-radius:50%;width:30px;height:30px;display:grid;place-items:center;margin-bottom:14px}
+.method h3{font-size:1.08rem;margin-bottom:.5rem}
+.method p{color:var(--ink-soft);font-size:.88rem}
+
+/* --- sections sombres --- */
+.section.dark{background:var(--ink);color:var(--paper)}
+.section.dark h2{color:var(--paper)}
+.section.dark .section-head p{color:rgba(251,246,236,.7)}
+.eyebrow.gold{color:var(--hanoi)}
+.eyebrow.gold::before{background:var(--hanoi)}
+.btn-ghost.light{border-color:rgba(251,246,236,.4);color:var(--paper)}
+.btn-ghost.light:hover{background:rgba(251,246,236,.08)}
+
+/* --- simulateurs --- */
+.sim-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.sim{background:rgba(251,246,236,.05);border:1px solid rgba(251,246,236,.16);border-radius:var(--radius);padding:30px 28px;text-decoration:none;color:var(--paper);display:flex;flex-direction:column;gap:.6rem;transition:transform .18s ease,border-color .18s ease,background .18s ease}
+.sim:hover{transform:translateY(-4px);border-color:var(--hanoi);background:rgba(251,246,236,.08)}
+.sim-tag{font-family:var(--font-mono);font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;color:var(--hanoi);border:1px solid var(--hanoi);border-radius:6px;padding:.3em .7em;width:max-content;margin-bottom:.3rem}
+.sim h3{font-size:1.25rem}
+.sim p{color:rgba(251,246,236,.75);font-size:.93rem;flex:1}
+.sim-meta{color:rgba(251,246,236,.5)!important;font-size:.64rem!important}
+
+/* --- bibliothèque --- */
+.lib-head{display:flex;justify-content:space-between;align-items:flex-end;gap:36px;flex-wrap:wrap;margin-bottom:36px}
+.lib-search{display:flex;gap:10px;flex:1;max-width:480px;min-width:280px}
+.lib-search input{flex:1;padding:.8em 1.2em;border-radius:999px;border:1.5px solid var(--line);background:#fff;font-family:var(--font-body);font-size:.92rem;min-width:0}
+.lib-search input:focus{border-color:var(--hanoi);outline:none}
+.lib-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.pin-ref{color:var(--tampon)!important;border:1px solid var(--tampon);border-radius:6px;padding:.15em .55em}
+.section-foot{margin-top:34px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+
+/* --- journal de veille --- */
+.log{list-style:none;max-width:820px}
+.log li{display:grid;grid-template-columns:150px 1fr;gap:34px;padding:24px 0;border-bottom:2px dashed var(--line)}
+.log li:first-child{border-top:2px dashed var(--line)}
+.log-date{color:var(--shutter);padding-top:4px}
+.log-date em{display:block;font-style:normal;color:var(--tampon);font-size:.62rem;margin-top:4px}
+.log h3{font-size:1.12rem;margin-bottom:.35rem}
+.log p{color:var(--ink-soft);font-size:.93rem;max-width:40em}
+.log a{color:var(--shutter);font-weight:600;text-decoration:none}
+.log a:hover{text-decoration:underline}
+.log-note{margin-top:22px;font-size:.68rem!important}
+.log-note a{color:var(--tampon)}
+
+/* --- section vietnamienne --- */
+.vi-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:52px;align-items:center}
+.vi-grid > div > p{color:rgba(251,246,236,.75)}
+.vi-card{border:2px dashed rgba(222,158,40,.5);border-radius:var(--radius);padding:32px;background:rgba(222,158,40,.06)}
+.vi-card h3{color:var(--paper);font-size:1.35rem;margin:.5rem 0 .6rem}
+.vi-card p{color:rgba(251,246,236,.75);font-size:.95rem}
+
+/* --- communauté --- */
+.comm-grid{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center}
+.comm-quote{background:#fff;border:1px solid var(--line);border-left:4px solid var(--hanoi);border-radius:var(--radius);padding:30px 34px}
+.comm-quote p{font-family:var(--font-display);font-size:1.18rem;line-height:1.45;margin-bottom:1.1rem}
+.comm-quote footer{display:flex;align-items:center;gap:12px;font-size:.9rem;color:var(--ink-soft)}
+.comm-quote img{width:42px;height:42px;border-radius:50%;object-fit:cover;border:2px solid var(--hanoi)}
+.comm-quote a{color:var(--shutter)}
+
+/* --- pack --- */
+.pack{background:var(--shutter-deep);color:var(--paper);border-radius:calc(var(--radius) + 8px);padding:56px 52px;position:relative;overflow:hidden}
+.pack::after{content:"CAP VIETNAM · DOSSIER COMPLET · CAP VIETNAM · DOSSIER COMPLET · ";position:absolute;bottom:14px;left:0;white-space:nowrap;font-family:var(--font-mono);font-size:.66rem;letter-spacing:.3em;color:rgba(251,246,236,.14)}
+.pack-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:46px;align-items:center;position:relative}
+.pack h2{color:var(--paper)}
+.pack ul{list-style:none;margin:1.1rem 0 0;display:grid;gap:.7rem}
+.pack li{display:flex;gap:.7em;font-size:.95rem;color:rgba(251,246,236,.88)}
+.pack li::before{content:"✓";color:var(--hanoi);font-weight:700}
+.pack-form{background:rgba(251,246,236,.06);border:1px solid rgba(251,246,236,.2);border-radius:var(--radius);padding:30px}
+.pack-form label{font-family:var(--font-mono);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(251,246,236,.7);display:block;margin-bottom:.6rem}
+.pack-form input{width:100%;padding:.9em 1.1em;border-radius:10px;border:1px solid rgba(251,246,236,.3);background:rgba(251,246,236,.95);font-family:var(--font-body);font-size:1rem;margin-bottom:14px}
+.pack-form .btn{width:100%;justify-content:center}
+.pack-form small{display:block;margin-top:12px;font-size:.78rem;color:rgba(251,246,236,.6);text-align:center}
+.pack-form small a{color:rgba(251,246,236,.8)}
+
+/* --- FAQ --- */
+details{border:1px solid var(--line);border-radius:var(--radius);background:#fff;margin-bottom:12px;padding:0 20px}
+summary{cursor:pointer;font-weight:600;padding:16px 0;list-style:none;position:relative;padding-right:30px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:2px;top:12px;font-family:var(--font-mono);font-size:1.2rem;color:var(--hanoi)}
+details[open] summary::after{content:"–"}
+details p{padding-bottom:16px;color:var(--ink-soft);font-size:.95rem}
+details a{color:var(--shutter)}
+
+@media(max-width:960px){
+  .hero-top{grid-template-columns:1fr}
+  .hero-stamp-zone{display:none}
+  .method-grid{grid-template-columns:1fr 1fr}
+  .sim-grid,.lib-grid{grid-template-columns:1fr 1fr}
+  .vi-grid,.comm-grid,.pack-grid{grid-template-columns:1fr;gap:32px}
+  .jp-cols{grid-template-columns:1fr}
+  .journey-line{flex-wrap:nowrap;overflow-x:auto;padding-bottom:6px}
+  .station span{font-size:.76rem}
+}
+@media(max-width:640px){
+  .method-grid,.sim-grid,.lib-grid{grid-template-columns:1fr}
+  .log li{grid-template-columns:1fr;gap:6px}
+  .journey-panel{padding:24px 20px}
+  .terminus{display:none}
+  .journey-line::before{left:8px;right:8px}
+  .pack{padding:38px 24px}
+  .proofbar-inner{justify-content:flex-start;gap:22px}
+}
+.method-grid.six{grid-template-columns:repeat(3,1fr)}
+.method h3{padding-bottom:.4rem;border-bottom:2px solid var(--hanoi);display:inline-block}
+.cat-chips{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:28px}
+.cat-chips a,.soon-chip{text-decoration:none;font-size:.88rem;font-weight:500;border:1.5px solid var(--line);border-radius:999px;padding:.5em 1.05em;background:#fff;transition:border-color .15s,transform .15s;color:var(--ink)}
+.cat-chips a:hover{border-color:var(--hanoi);transform:translateY(-2px)}
+.cat-chips b,.soon-chip b{font-family:var(--font-mono);font-weight:500;font-size:.72rem;color:var(--shutter);margin-left:.4em}
+.soon-chip{border-style:dashed;color:var(--ink-soft)}
+.soon-chip b{color:var(--tampon);text-transform:uppercase;letter-spacing:.06em}
+#jp-links ul{list-style:none;border-top:2px dashed var(--line);margin-bottom:6px}
+#jp-links li{border-bottom:2px dashed var(--line)}
+#jp-links a{display:block;padding:.7em 4px;text-decoration:none;font-weight:600;font-size:.93rem;transition:padding-left .18s ease,color .15s}
+#jp-links a::before{content:"→ ";color:var(--hanoi)}
+#jp-links a:hover{padding-left:14px;color:var(--shutter)}
+.branch{color:var(--tampon)!important;margin:14px 0 6px;font-size:.68rem!important}
+.branch:first-child{margin-top:0}
+.ebook{border:2px dashed var(--line);border-radius:calc(var(--radius) + 6px);background:#fff;padding:36px 40px;display:flex;gap:34px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+@media(max-width:960px){.method-grid.six{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.method-grid.six{grid-template-columns:1fr}}
+.hero-top{grid-template-columns:1.05fr .95fr;align-items:center}
+.hero-photo{position:relative;max-width:440px;justify-self:end}
+.hero-photo img{border-radius:var(--radius);aspect-ratio:4/3.4;object-fit:cover;box-shadow:0 24px 60px rgba(35,40,31,.22)}
+.hero-photo .stamp.big{position:absolute;top:-20px;right:-12px;transform:rotate(8deg);z-index:1}
+.hero-photo figcaption{margin-top:.7rem;font-size:.66rem}
+.photoband{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;max-width:1120px;margin:0 auto 80px;padding:0 24px}
+.photoband figure{position:relative;border-radius:var(--radius);overflow:hidden}
+.photoband img{aspect-ratio:4/3;object-fit:cover;width:100%;transition:transform .3s ease}
+.photoband figure:hover img{transform:scale(1.04)}
+.photoband figcaption{position:absolute;bottom:0;left:0;right:0;padding:22px 12px 9px;background:linear-gradient(transparent,rgba(35,40,31,.75));color:rgba(251,246,236,.9);font-size:.6rem}
+.brand small{font-family:var(--font-mono);font-size:.58em;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);font-weight:400}
+footer.site .brand small{color:rgba(251,246,236,.55)}
+@media(max-width:960px){.hero-photo{max-width:100%;justify-self:stretch}.hero-photo img{aspect-ratio:16/9}.photoband{grid-template-columns:1fr 1fr}}
+/* --- v3.1 : journal des changements en registre --- */
+.log{max-width:none;background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.log li{grid-template-columns:210px 1fr;gap:42px;padding:26px 32px;border-bottom:1px solid var(--paper-deep);border-top:0;position:relative;transition:background .15s ease}
+.log li:first-child{border-top:0}
+.log li:last-child{border-bottom:0}
+.log li:hover{background:var(--paper)}
+.log li::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--line);transition:background .15s ease}
+.log li:hover::before{background:var(--hanoi)}
+.log-date{display:flex;flex-direction:column;gap:9px;align-items:flex-start;padding-top:2px}
+.log-date em{margin:0}
+.pill{font-family:var(--font-mono);font-style:normal;font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;border-radius:999px;padding:.35em .85em;width:max-content}
+.pill-upcoming{color:var(--tampon);border:1.5px solid var(--tampon);background:transparent}
+.pill-active{color:var(--paper);background:var(--shutter)}
+.pill-published{color:var(--ink);background:var(--hanoi)}
+.log h3{font-size:1.16rem}
+.log p{max-width:52em}
+.log-note{text-align:right}
+/* --- v3.1 : grille articles — hauteurs homogènes garanties --- */
+.lib-grid .card{min-height:0}
+.lib-grid .card p{flex:0 1 auto}
+.lib-grid .card .go{margin-top:auto;padding-top:.6rem}
+@media(max-width:760px){
+  .log li{grid-template-columns:1fr;gap:10px;padding:20px 22px}
+  .log-date{flex-direction:row;align-items:center;gap:12px}
+  .log-note{text-align:left}
+}
+/* --- hero plein écran sur photo --- */
+.hero-full{position:relative;min-height:78vh;display:flex;align-items:flex-end;overflow:hidden}
+.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 60%}
+.hero-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(28,32,26,.25) 0%,rgba(28,32,26,.15) 40%,rgba(28,32,26,.78) 100%)}
+.hero-inner{position:relative;padding-block:70px 74px;max-width:1120px}
+.hero-full h1{font-size:clamp(2.4rem,5.4vw,4rem);color:#fff;margin:.6rem 0 1rem;max-width:15em;text-shadow:0 2px 24px rgba(28,32,26,.45)}
+.hero-full h1 em{font-style:italic;color:var(--hanoi)}
+.hero-full .lede{font-size:1.12rem;color:rgba(251,246,236,.92);max-width:36em;margin-bottom:1.6rem;text-shadow:0 1px 12px rgba(28,32,26,.5)}
+.eyebrow.light{color:var(--hanoi)}
+.eyebrow.light::before{background:var(--hanoi)}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+.hero-stamp{position:absolute;top:96px;right:5%;transform:rotate(8deg);z-index:2}
+.hero-caption{position:absolute;bottom:14px;right:20px;color:rgba(251,246,236,.55);font-size:.6rem!important;z-index:2}
+.hero-full .btn-ghost.light:hover{background:rgba(251,246,236,.14)}
+
+/* --- zone parcours sous le hero --- */
+.journey-zone{background:linear-gradient(180deg,var(--paper-deep),var(--paper));padding:56px 0 64px}
+.journey{padding-bottom:0}
+.journey-panels .journey-panel{margin-top:34px}
+.journey-panels .journey-panel[hidden]{display:none}
+.jp-tool-desc{font-size:.85rem;color:rgba(251,246,236,.7)}
+.jp-links ul{list-style:none;border-top:2px dashed var(--line);margin-bottom:6px}
+.jp-links li{border-bottom:2px dashed var(--line)}
+.jp-links a{display:block;padding:.7em 4px;text-decoration:none;font-weight:600;font-size:.93rem;transition:padding-left .18s ease,color .15s}
+.jp-links a::before{content:"→ ";color:var(--hanoi)}
+.jp-links a:hover{padding-left:14px;color:var(--shutter)}
+
+/* --- cartes catégories avec photos --- */
+.catcards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.catcard{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;text-decoration:none;display:flex;flex-direction:column;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+a.catcard:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(35,40,31,.12);border-color:var(--hanoi)}
+.catcard img{aspect-ratio:16/8.5;object-fit:cover;width:100%}
+.catcard-body{padding:20px 22px 22px}
+.catcard h3{font-size:1.14rem;margin-bottom:.4rem;display:flex;align-items:baseline;gap:.6em}
+.catcard h3 b{font-family:var(--font-mono);font-weight:500;font-size:.72rem;color:var(--shutter)}
+.catcard h3 b.soon{color:var(--tampon);text-transform:uppercase;letter-spacing:.06em}
+.catcard p{color:var(--ink-soft);font-size:.9rem}
+.catcard.is-soon{border-style:dashed;justify-content:center;background:transparent}
+
+/* --- photo cérémonie (communauté) --- */
+.comm-photo{position:relative}
+.comm-photo img{border-radius:var(--radius);box-shadow:0 22px 55px rgba(35,40,31,.18);width:100%;object-fit:cover}
+.comm-photo figcaption{margin-top:.7rem;font-size:.64rem}
+
+@media(max-width:960px){
+  .hero-full{min-height:66vh}
+  .hero-stamp{top:auto;bottom:auto;right:16px;top:20px}
+  .catcards{grid-template-columns:1fr 1fr}
+  .comm-photo{max-width:520px}
+}
+@media(max-width:640px){
+  .hero-full{min-height:78vh}
+  .hero-inner{padding-block:48px 56px}
+  .catcards{grid-template-columns:1fr}
+  .hero-caption{left:20px;right:auto}
+}
+.ap-hero-full .hero-bg{object-position:center 42%}
+.ap-avatar{width:96px;height:96px;border-radius:50%;object-fit:cover;border:3px solid var(--hanoi);box-shadow:0 8px 26px rgba(28,32,26,.4);margin-bottom:18px}
+.ap-story{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:start}
+.ap-story-text p{color:var(--ink-soft);margin-bottom:1rem}
+.ap-story-text a{color:var(--shutter)}
+.ap-story-text blockquote{font-family:var(--font-display);font-size:1.18rem;color:var(--ink);border-left:3px solid var(--hanoi);padding-left:18px;margin:1.4rem 0}
+.ap-story-img{position:sticky;top:96px}
+.ap-story-img img{border-radius:var(--radius);box-shadow:0 18px 46px rgba(35,40,31,.16);width:100%}
+.ap-story-img figcaption{margin-top:.7rem;font-size:.64rem}
+.privacy-note{border:1px dashed var(--tampon);border-radius:var(--radius);padding:16px 20px;background:#fff;margin-top:1.2rem;font-size:.9rem}
+.privacy-note p{margin:6px 0 0!important;color:var(--ink-soft)}
+.alt-band{background:var(--paper-deep);border-block:1px solid var(--line)}
+
+.timeline{list-style:none;max-width:780px;position:relative}
+.timeline::before{content:"";position:absolute;left:138px;top:8px;bottom:8px;border-left:2px dashed var(--line)}
+.timeline li{display:grid;grid-template-columns:116px 1fr;gap:46px;padding:20px 0;position:relative}
+.timeline li::before{content:"";position:absolute;left:132px;top:28px;width:14px;height:14px;border-radius:50%;background:var(--paper-deep);border:3px solid var(--shutter)}
+.timeline li.is-key::before{background:var(--hanoi);border-color:var(--hanoi)}
+.timeline li.is-next::before{background:var(--paper-deep);border-color:var(--tampon)}
+.tl-date{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--shutter);text-align:right;padding-top:6px;display:flex;flex-direction:column;gap:8px;align-items:flex-end}
+.timeline h3{font-size:1.12rem;margin-bottom:.35rem}
+.timeline p{color:var(--ink-soft);font-size:.94rem;max-width:36em}
+
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.gallery figure{position:relative;border-radius:var(--radius);overflow:hidden}
+.gallery img{aspect-ratio:4/3;object-fit:cover;width:100%;transition:transform .3s ease}
+.gallery figure:hover img{transform:scale(1.04)}
+.gallery figcaption{position:absolute;bottom:0;left:0;right:0;padding:24px 14px 10px;background:linear-gradient(transparent,rgba(35,40,31,.75));color:rgba(251,246,236,.9);font-size:.6rem}
+
+.follow-list{list-style:none;border-top:2px dashed rgba(251,246,236,.25)}
+.follow-list li{border-bottom:2px dashed rgba(251,246,236,.25)}
+.follow-list a{display:block;padding:.9em 4px;text-decoration:none;font-weight:600;color:var(--paper);transition:padding-left .18s ease,color .15s}
+.follow-list a:hover{padding-left:14px;color:var(--hanoi)}
+
+@media(max-width:960px){
+  .ap-story{grid-template-columns:1fr;gap:32px}
+  .ap-story-img{position:static;max-width:520px}
+  .gallery{grid-template-columns:1fr 1fr}
+  .timeline::before{left:8px}
+  .timeline li{grid-template-columns:1fr;gap:6px;padding-left:34px}
+  .timeline li::before{left:2px;top:8px}
+  .tl-date{text-align:left;padding-top:0;flex-direction:row;align-items:center}
+}
+@media(max-width:600px){.gallery{grid-template-columns:1fr}}
+.pk-hero{min-height:64vh}
+.pk-hero .hero-bg{object-position:center 38%}
+.pk-hero .hero-shade{background:linear-gradient(180deg,rgba(28,32,26,.5) 0%,rgba(28,32,26,.3) 40%,rgba(28,32,26,.82) 100%)}
+.steps-inner{justify-content:center;gap:18px;align-items:center}
+.steps-inner > div:not(.step-arrow){display:flex;align-items:center;gap:14px}
+.steps-inner strong{font-size:1.3rem;border:2px solid var(--hanoi);border-radius:50%;width:44px;height:44px;display:grid;place-items:center;flex:none}
+.steps-inner span{max-width:13em}
+.step-arrow{color:var(--hanoi);font-size:1.3rem}
+.pk-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.pk-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px 26px;display:flex;flex-direction:column;gap:.6rem;position:relative;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+.pk-card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(35,40,31,.1);border-color:var(--hanoi)}
+.pk-card.is-main{grid-column:span 3;flex-direction:row;align-items:center;gap:28px;background:var(--hanoi-soft);border:2px dashed var(--hanoi)}
+.pk-card.is-main h3{font-size:1.35rem;flex:none;max-width:12em}
+.pk-card.is-main p{flex:1}
+.pk-tag{font-family:var(--font-mono);font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;color:var(--tampon);border:1px solid var(--tampon);border-radius:6px;padding:.3em .7em;width:max-content}
+.pk-card h3{font-size:1.12rem;line-height:1.3}
+.pk-card p{color:var(--ink-soft);font-size:.92rem;flex:1}
+.pk-format{font-size:.64rem!important;color:var(--shutter)!important;border-top:2px dashed var(--line);padding-top:12px}
+.pk-tip{margin-top:22px;border:1px dashed var(--tampon);border-radius:var(--radius);background:#fff;padding:18px 24px;display:flex;gap:20px;align-items:baseline;flex-wrap:wrap}
+.pk-tip p{color:var(--ink-soft);margin:0}
+.pk-for-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:52px;align-items:center}
+.pk-for{list-style:none;border-top:2px dashed var(--line)}
+.pk-for li{border-bottom:2px dashed var(--line);padding:.95em 4px .95em 38px;position:relative;font-weight:500}
+.pk-for li::before{content:"✓";position:absolute;left:4px;top:.85em;width:24px;height:24px;border-radius:50%;background:var(--shutter);color:var(--paper);display:grid;place-items:center;font-size:.8rem}
+@media(max-width:960px){
+  .pk-grid{grid-template-columns:1fr 1fr}
+  .pk-card.is-main{grid-column:span 2;flex-direction:column;align-items:flex-start;gap:.6rem}
+  .pk-card.is-main h3{max-width:none}
+  .pk-for-grid{grid-template-columns:1fr;gap:28px}
+  .steps-inner{justify-content:flex-start}
+  .step-arrow{display:none}
+}
+@media(max-width:640px){
+  .pk-grid{grid-template-columns:1fr}
+  .pk-card.is-main{grid-column:span 1}
+}
+.mg-hero{background:linear-gradient(180deg,var(--paper-deep),var(--paper));padding:72px 0 20px;text-align:center}
+.mg-hero-inner{display:flex;flex-direction:column;align-items:center}
+.mg-hero h1{font-size:clamp(2.2rem,4.8vw,3.4rem);margin-bottom:.8rem}
+.mg-hero h1 em{font-style:italic;color:var(--shutter)}
+.mg-hero .lede{color:var(--ink-soft);max-width:36em}
+.pk-card .btn{align-self:flex-start;margin-top:auto}
+.pk-card.is-main .btn{align-self:center;margin:0;flex:none}
+.mg-next{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.mg-step{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px;text-decoration:none;display:flex;flex-direction:column;gap:.6rem;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+.mg-step:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(35,40,31,.1);border-color:var(--hanoi)}
+.mg-step h3{font-size:1.12rem}
+.mg-step p{color:var(--ink-soft);font-size:.9rem;flex:1}
+.mg-step .go{font-weight:600;font-size:.9rem;color:var(--shutter);text-decoration:none}
+.mg-step a.go:hover{text-decoration:underline}
+.mg-links{display:flex;gap:18px;flex-wrap:wrap}
+@media(max-width:960px){.mg-next{grid-template-columns:1fr}}
+</style></head><body>
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="index.html"><small>Blog</small> Cap<span>Vietnam</span></a>
+    <nav class="nav-links" aria-label="Navigation principale">
+      <a href="articles.html">Articles</a>
+      <a href="https://blog-capvietnam.fr/outils-vivre-vietnam">Outils</a>
+      <a href="guide.html">Guide</a>
+      <a href="a-propos.html">À propos</a>
+      <a class="lang-pill" href="https://blog-capvietnam.fr/vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+    </nav>
+    <button class="burger" aria-label="Ouvrir le menu">☰</button>
+  </div>
+</header>
+
+<!-- ===== HERO accès ===== -->
+<section class="mg-hero">
+  <div class="wrap mg-hero-inner">
+    <div class="stamp big" style="transform:rotate(-6deg);margin-bottom:26px">Newsletter confirmée<b>ACCÈS OUVERT</b>Pack complet</div>
+    <h1>Merci ! Ton pack est <em>prêt</em>.</h1>
+    <p class="lede">Les 4 ressources sont à télécharger ci-dessous. Pense à mettre cette page en favori — tu pourras y revenir à n'importe quelle étape de tes démarches.</p>
+  </div>
+</section>
+
+<!-- ===== téléchargements ===== -->
+<section class="section" style="padding-top:56px" id="telechargements">
+  <div class="wrap">
+    <div class="pk-grid">
+      <div class="pk-card is-main">
+        <span class="pk-tag">Guide principal</span>
+        <div style="flex:1">
+          <h3>Guide PDF — Mariage &amp; Visa conjoint 2026</h3>
+          <p>CCAM, mariage au Vietnam, VLS-TS, titre de séjour, budget et installation — le parcours complet en un PDF de référence. <span class="mono" style="font-size:.62rem">PDF · ~40 PAGES</span></p>
+        </div>
+        <!-- TODO : vérifier que c'est bien le fichier servi par la page merci-guide actuelle -->
+        <a class="btn btn-primary" href="https://blog-capvietnam.fr/Guide_Se_marier_et_vivre_au_Vietnam-1.pdf" download>Télécharger le PDF ↓</a>
+      </div>
+      <div class="pk-card">
+        <span class="pk-tag">Modèle de lettre</span>
+        <h3>Lettre de demande CCAM au consulat</h3>
+        <p>À compléter directement dans le navigateur, puis Ctrl+P pour enregistrer en PDF. Format officiel.</p>
+        <!-- TODO : remplacer par l'URL réelle du modèle -->
+        <a class="btn btn-ghost" href="#">Ouvrir le modèle →</a>
+      </div>
+      <div class="pk-card">
+        <span class="pk-tag">Modèle de lettre</span>
+        <h3>Lettre de relance à l'ambassade</h3>
+        <p>Quand le consulat ne répond pas après 2 mois. Relance formelle pour dossier CCAM ou visa VLS-TS en attente.</p>
+        <!-- TODO : remplacer par l'URL réelle du modèle -->
+        <a class="btn btn-ghost" href="#">Ouvrir le modèle →</a>
+      </div>
+      <div class="pk-card">
+        <span class="pk-tag">Checklist</span>
+        <h3>Checklist CCAM — tous les documents</h3>
+        <p>Cases à cocher, côté français et vietnamien, apostille, traductions, chronologie recommandée.</p>
+        <!-- TODO : remplacer par l'URL réelle de la checklist -->
+        <a class="btn btn-ghost" href="#">Ouvrir la checklist →</a>
+      </div>
+    </div>
+    <div class="pk-tip">
+      <span class="mono" style="color:var(--tampon)">BON À SAVOIR</span>
+      <p>Les modèles sont <strong>remplissables dans le navigateur</strong> et enregistrables en PDF via Ctrl+P. Pas besoin de Word ni d'Acrobat. Un lien ne fonctionne pas ? <a href="https://blog-capvietnam.fr/contact-capvietnam">Écris-moi</a>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== et maintenant ===== -->
+<section class="section alt-band" id="suite">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Et maintenant ?</span>
+      <h2>Les 3 prochaines étapes utiles</h2>
+    </div>
+    <div class="mg-next">
+      <a class="mg-step" href="https://blog-capvietnam.fr/parcours-couple-franco-vietnamien">
+        <span class="mono" style="color:var(--tampon)">ÉTAPE 1 · ~5 MIN</span>
+        <h3>Situe-toi avec le parcours guidé</h3>
+        <p>De la rencontre à la vie installée — coche chaque étape, choisis ta branche France ou Vietnam.</p>
+        <span class="go">Lancer le parcours →</span>
+      </a>
+      <a class="mg-step" href="https://blog-capvietnam.fr/retroplanning-faire-venir-conjoint">
+        <span class="mono" style="color:var(--tampon)">ÉTAPE 2 · SIMULATEUR</span>
+        <h3>Calcule tes échéances</h3>
+        <p>Entre ta date de lancement CCAM, obtiens chaque échéance jusqu'à l'arrivée en France.</p>
+        <span class="go">Ouvrir le rétroplanning →</span>
+      </a>
+      <div class="mg-step">
+        <span class="mono" style="color:var(--tampon)">ÉTAPE 3 · COMMUNAUTÉ</span>
+        <h3>Rejoins les autres couples</h3>
+        <p>Délais comparés, dossiers acceptés, entraide sur les cas particuliers — sur Facebook ou Discord.</p>
+        <span class="mg-links">
+          <a class="go" href="https://www.facebook.com/groups/vivreauvietnamcouplefrancovietnamiencap/">Groupe Facebook →</a>
+          <a class="go" href="https://discord.gg/MdDVNb7QZz">Discord expats →</a>
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== à quoi t'attendre ===== -->
+<section class="section">
+  <div class="wrap-narrow" style="text-align:center">
+    <span class="eyebrow" style="justify-content:center">La newsletter</span>
+    <h2>À quoi t'attendre maintenant</h2>
+    <p style="color:var(--ink-soft);max-width:38em;margin:0 auto 18px">Un email par mois : alertes administratives (apostille, PAI, visas) et bons plans. Pas de spam, désabonnement en 1 clic. Si le pack n'arrive pas dans ta boîte, vérifie tes spams ou <a href="https://blog-capvietnam.fr/contact-capvietnam" style="color:var(--shutter)">contacte-moi</a>.</p>
+    <p class="mono" style="font-size:.66rem">ANTHONYBOUILLONCONTACT@GMAIL.COM</p>
+  </div>
+</section>
+<!--FOOTER-->
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="index.html"><small>Blog</small> Cap<span style="color:var(--hanoi)">Vietnam</span></a>
+        <p style="margin-top:12px;max-width:26em">Le blog du couple franco-vietnamien. Mariage, démarches, argent et vie quotidienne entre la France et le Vietnam.</p>
+      </div>
+      <div>
+        <h4>Catégories</h4>
+        <ul>
+          <li><a href="articles.html">Notre histoire &amp; couple</a></li>
+          <li><a href="articles.html">Se marier</a></li>
+          <li><a href="articles.html">Vivre ensemble</a></li>
+          <li><a href="articles.html">L'argent à deux</a></li>
+          <li><a href="articles.html">Vie pratique au Vietnam</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Liens utiles</h4>
+        <ul>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="https://blog-capvietnam.fr/outils-vivre-vietnam">Mes outils</a></li>
+          <li><a href="https://blog-capvietnam.fr/contact-capvietnam">Contact</a></li>
+          <li><a href="https://blog-capvietnam.fr/livre-vietnamien">Apprendre le vietnamien</a></li>
+          <li><a href="https://blog-capvietnam.fr/mes-livres">Tous mes livres</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Réseaux</h4>
+        <ul>
+          <li><a href="https://www.tiktok.com/@proffrancaisetranger">TikTok</a></li>
+          <li><a href="https://www.facebook.com/groups/vivreauvietnamcouplefrancovietnamiencap/">Groupe Facebook</a></li>
+          <li><a href="https://discord.gg/MdDVNb7QZz">Discord expats</a></li>
+          <li><a href="https://blog-capvietnam.fr/go.php?id=kofi">Soutenir le blog</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <span>© 2026 Blog-CapVietnam. Tous droits réservés.</span>
+      <span>
+        <a href="https://blog-capvietnam.fr/mentions-legales-capvietnam">Mentions légales</a> ·
+        <a href="https://blog-capvietnam.fr/confidentialite-capvietnam">Confidentialité</a> ·
+        <a href="https://blog-capvietnam.fr/cookies-capvietnam">Cookies</a>
+      </span>
+    </div>
+    <p class="affiliate-note">Ce site contient des liens affiliés rémunérés. Ils ne modifient ni mon avis ni mon classement.</p>
+  </div>
+</footer>
+<div class="cookies" id="cookies" role="dialog" aria-label="Préférences cookies">
+  <p>Ce site utilise des cookies pour les statistiques anonymes. <a href="https://blog-capvietnam.fr/confidentialite-capvietnam">En savoir plus</a></p>
+  <div class="cookies-actions">
+    <button class="btn btn-primary" onclick="document.getElementById('cookies').remove()">Accepter</button>
+    <button class="btn btn-ghost" onclick="document.getElementById('cookies').remove()">Refuser</button>
+  </div>
+</div>
+<!--/FOOTER-->
+</body></html>
