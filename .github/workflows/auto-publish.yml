@@ -2,8 +2,8 @@ name: Auto-publish scheduled articles
 
 on:
   schedule:
-    # Every Monday and Thursday at 7:00 UTC (9:00 Paris time)
-    - cron: '0 7 * * 1,4'
+    # Every day at 7:00 UTC (9:00 Paris time)
+    - cron: '0 7 * * *'
   workflow_dispatch:
     inputs:
       dry_run:
@@ -41,3 +41,25 @@ jobs:
           git add data/articles.json data/publish-schedule.json sitemap.xml
           git commit -m "Auto-publish: $(date +%Y-%m-%d)"
           git push
+
+      # Un push fait avec le GITHUB_TOKEN par défaut ne redéclenche pas
+      # automatiquement le workflow "Deploy to OVH FTP" (limitation GitHub Actions).
+      # On déploie donc ici directement, dans la même exécution, pour que la
+      # publication soit réellement mise en ligne sans intervention manuelle.
+      - name: Deploy via FTP
+        if: steps.changes.outputs.changed == 'true'
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: /www4/
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            .claude/**
+            logs/**
+            AUDIT*.md
+            CHANGELOG*.md
+            IMAGES_TODO.md

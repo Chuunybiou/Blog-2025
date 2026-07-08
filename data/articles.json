@@ -90,7 +90,10 @@
             "imageAlt": "Aéroport — déclaration pré-arrivée PAI Vietnam 2026",
             "keywords": "declaration pre-arrivee vietnam PAI formulaire obligatoire 2026 aeroport hanoi hcmv da nang phu quoc",
             "silo": "vietnam",
-            "tags": ["visa", "entree-vietnam"],
+            "tags": [
+                "visa",
+                "entree-vietnam"
+            ],
             "published": true
         },
         {
@@ -875,14 +878,14 @@
             "excerpt": "Où consulter en français au Vietnam ? Hôpitaux internationaux à Hanoï et HCMV, médecins, assurance santé et urgences : le guide complet pour expatriés.",
             "category": "vie-pratique",
             "categoryLabel": "Vie pratique au Vietnam",
-            "date": "2026-06-01",
-            "dateLabel": "Juin 2026",
+            "date": "2026-07-08",
+            "dateLabel": "Juillet 2026",
             "readTime": "8 min",
             "emoji": "🏥",
             "image": "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=600&q=80",
             "imageAlt": "Hôpital médecin Vietnam expatrié",
             "keywords": "hopitaux medecins francophones vietnam expatries sante assurance hanoi ho chi minh",
-            "published": false
+            "published": true
         },
         {
             "slug": "sim-internet-applications-vietnam",

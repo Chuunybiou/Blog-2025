@@ -1,34 +1,120 @@
 {
     "schedule": [
-        {"slug": "hopitaux-medecins-francophones-vietnam",        "publish_on": "2026-07-08"},
-        {"slug": "visa-tt-carte-residence-trc-mariage",           "publish_on": "2026-07-10"},
-        {"slug": "hanoi-vs-ho-chi-minh-ville-installation",       "publish_on": "2026-07-14"},
-        {"slug": "se-marier-vietnam-procedure-comite-populaire",  "publish_on": "2026-07-17"},
-        {"slug": "travailler-a-distance-depuis-vietnam",          "publish_on": "2026-07-21"},
-        {"slug": "visa-teletravail-digital-nomad-vietnam",        "publish_on": "2026-07-24"},
-        {"slug": "portage-salarial-depuis-vietnam",               "publish_on": "2026-07-28"},
-        {"slug": "portage-salarial-ou-micro-entreprise-vietnam",  "publish_on": "2026-07-31"},
-        {"slug": "residence-fiscale-france-vietnam-183-jours",    "publish_on": "2026-08-04"},
-        {"slug": "declarer-impots-france-depuis-vietnam",         "publish_on": "2026-08-07"},
-        {"slug": "protection-sociale-cfe-retraite-vietnam",       "publish_on": "2026-08-11"},
-        {"slug": "retraite-vietnam-francais",                     "publish_on": "2026-08-14"},
-        {"slug": "vivre-retraite-vietnam-guide",                  "publish_on": "2026-08-18"},
-        {"slug": "visa-retraite-vietnam",                         "publish_on": "2026-08-21"},
-        {"slug": "pacs-vietnamienne-reconnaissance",              "publish_on": "2026-08-25"},
-        {"slug": "assurance-sante-privee-manulife-vietnam",       "publish_on": "2026-08-28"},
-        {"slug": "budget-mensuel-da-nang-2026",                   "publish_on": "2026-09-01"},
-        {"slug": "budget-mensuel-nha-trang-2026",                 "publish_on": "2026-09-04"},
-        {"slug": "budget-mensuel-hue-2026",                       "publish_on": "2026-09-08"},
-        {"slug": "creer-blog-expat-rentable",                     "publish_on": "2026-09-11"},
-        {"slug": "telephone-vietnam-quelle-sim-choisir",          "publish_on": "2026-09-15"},
-        {"slug": "compte-bancaire-canada-europe-wealthsimple",    "publish_on": "2026-09-18"},
-        {"slug": "quitter-canada-expat-vietnam",                  "publish_on": "2026-09-22"},
-        {"slug": "trouver-emploi-vietnam-francais-2026",          "publish_on": "2026-09-25"},
-        {"slug": "enseigner-francais-vietnam-fle",                "publish_on": "2026-09-28"},
-        {"slug": "permis-de-travail-vietnam-francais",            "publish_on": "2026-10-01"},
-        {"slug": "salaires-vietnam-expatries-2026",               "publish_on": "2026-10-05"},
-        {"slug": "coworkings-hanoi-hcmv-2026",                   "publish_on": "2026-10-08"},
-        {"slug": "creer-entreprise-vietnam-statuts-juridiques",   "publish_on": "2026-10-12"},
-        {"slug": "ouvrir-restaurant-cafe-boutique-vietnam",       "publish_on": "2026-10-15"}
+        {
+            "slug": "visa-tt-carte-residence-trc-mariage",
+            "publish_on": "2026-07-10"
+        },
+        {
+            "slug": "hanoi-vs-ho-chi-minh-ville-installation",
+            "publish_on": "2026-07-14"
+        },
+        {
+            "slug": "se-marier-vietnam-procedure-comite-populaire",
+            "publish_on": "2026-07-17"
+        },
+        {
+            "slug": "travailler-a-distance-depuis-vietnam",
+            "publish_on": "2026-07-21"
+        },
+        {
+            "slug": "visa-teletravail-digital-nomad-vietnam",
+            "publish_on": "2026-07-24"
+        },
+        {
+            "slug": "portage-salarial-depuis-vietnam",
+            "publish_on": "2026-07-28"
+        },
+        {
+            "slug": "portage-salarial-ou-micro-entreprise-vietnam",
+            "publish_on": "2026-07-31"
+        },
+        {
+            "slug": "residence-fiscale-france-vietnam-183-jours",
+            "publish_on": "2026-08-04"
+        },
+        {
+            "slug": "declarer-impots-france-depuis-vietnam",
+            "publish_on": "2026-08-07"
+        },
+        {
+            "slug": "protection-sociale-cfe-retraite-vietnam",
+            "publish_on": "2026-08-11"
+        },
+        {
+            "slug": "retraite-vietnam-francais",
+            "publish_on": "2026-08-14"
+        },
+        {
+            "slug": "vivre-retraite-vietnam-guide",
+            "publish_on": "2026-08-18"
+        },
+        {
+            "slug": "visa-retraite-vietnam",
+            "publish_on": "2026-08-21"
+        },
+        {
+            "slug": "pacs-vietnamienne-reconnaissance",
+            "publish_on": "2026-08-25"
+        },
+        {
+            "slug": "assurance-sante-privee-manulife-vietnam",
+            "publish_on": "2026-08-28"
+        },
+        {
+            "slug": "budget-mensuel-da-nang-2026",
+            "publish_on": "2026-09-01"
+        },
+        {
+            "slug": "budget-mensuel-nha-trang-2026",
+            "publish_on": "2026-09-04"
+        },
+        {
+            "slug": "budget-mensuel-hue-2026",
+            "publish_on": "2026-09-08"
+        },
+        {
+            "slug": "creer-blog-expat-rentable",
+            "publish_on": "2026-09-11"
+        },
+        {
+            "slug": "telephone-vietnam-quelle-sim-choisir",
+            "publish_on": "2026-09-15"
+        },
+        {
+            "slug": "compte-bancaire-canada-europe-wealthsimple",
+            "publish_on": "2026-09-18"
+        },
+        {
+            "slug": "quitter-canada-expat-vietnam",
+            "publish_on": "2026-09-22"
+        },
+        {
+            "slug": "trouver-emploi-vietnam-francais-2026",
+            "publish_on": "2026-09-25"
+        },
+        {
+            "slug": "enseigner-francais-vietnam-fle",
+            "publish_on": "2026-09-28"
+        },
+        {
+            "slug": "permis-de-travail-vietnam-francais",
+            "publish_on": "2026-10-01"
+        },
+        {
+            "slug": "salaires-vietnam-expatries-2026",
+            "publish_on": "2026-10-05"
+        },
+        {
+            "slug": "coworkings-hanoi-hcmv-2026",
+            "publish_on": "2026-10-08"
+        },
+        {
+            "slug": "creer-entreprise-vietnam-statuts-juridiques",
+            "publish_on": "2026-10-12"
+        },
+        {
+            "slug": "ouvrir-restaurant-cafe-boutique-vietnam",
+            "publish_on": "2026-10-15"
+        }
     ]
 }

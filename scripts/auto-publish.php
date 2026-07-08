@@ -26,6 +26,11 @@ if (!$schedule || !$articles) {
     exit(1);
 }
 
+$fr_months = [
+    1 => 'Janvier', 2 => 'Février', 3 => 'Mars', 4 => 'Avril', 5 => 'Mai', 6 => 'Juin',
+    7 => 'Juillet', 8 => 'Août', 9 => 'Septembre', 10 => 'Octobre', 11 => 'Novembre', 12 => 'Décembre',
+];
+
 $remaining = [];
 $published = [];
 
@@ -34,11 +39,13 @@ foreach ($schedule['schedule'] as $entry) {
     $publish_on = $entry['publish_on'];
 
     if ($publish_on <= $today) {
-        // Find the article and publish it
+        // Find the article and publish it, avec la date officielle de publication
         $found = false;
         foreach ($articles['articles'] as &$article) {
             if ($article['slug'] === $slug) {
                 $article['published'] = true;
+                $article['date']      = $publish_on;
+                $article['dateLabel'] = $fr_months[(int) date('n', strtotime($publish_on))] . ' ' . date('Y', strtotime($publish_on));
                 $published[]  = $slug;
                 $found = true;
                 break;

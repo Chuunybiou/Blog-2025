@@ -77,6 +77,10 @@ $page_extra_css   = $page_extra_css   ?? '';
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Libre+Franklin:wght@300;400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Libre+Franklin:wght@300;400;500;600;700&display=swap"></noscript>
 
+<!-- Nav/footer "carnet papier" fonts — additive, does not replace DM Serif Display / Libre Franklin used elsewhere on pages -->
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap"></noscript>
+
 <!-- Font fallback while web fonts load -->
 <style>body{font-family:Georgia,serif}nav,footer,.section-label,.article-badge-hero,.breadcrumb,.toc-label,.toc-list,.article-hero-meta,.author-info p,.related-card p{font-family:system-ui,-apple-system,sans-serif}</style>
 
@@ -147,20 +151,32 @@ body {
 .cookie-refuse { background: transparent; color: var(--cream); border: 1px solid rgba(255,255,255,0.3); }
 .cookie-refuse:hover { border-color: #fff; }
 
-/* ═══════════ NAV ═══════════ */
+/* ═══════════ NAV — carnet papier (tokens scoped to nav, doesn't affect page content) ═══════════ */
 nav {
+  --paper: #FBF6EC;
+  --paper-deep: #F3EBDB;
+  --ink2: #23281F;
+  --ink-soft2: #5A5F53;
+  --hanoi: #DE9E28;
+  --shutter: #2E5641;
+  --tampon: #A6392B;
+  --line2: #E2D8C2;
+  --font-display2: 'Young Serif', Georgia, serif;
+  --font-body2: 'Instrument Sans', system-ui, sans-serif;
+  --font-mono2: 'IBM Plex Mono', ui-monospace, monospace;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
-  background: rgba(250,248,244,0.92);
+  background: rgba(251,246,236,0.92);
   backdrop-filter: blur(20px);
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid var(--line2);
   transition: box-shadow 0.3s;
+  font-family: var(--font-body2);
 }
 nav.scrolled { box-shadow: var(--shadow-md); }
 .nav-inner {
-  max-width: 1200px;
+  max-width: 1120px;
   margin: 0 auto;
   padding: 0 2rem;
   height: 64px;
@@ -169,70 +185,67 @@ nav.scrolled { box-shadow: var(--shadow-md); }
   justify-content: space-between;
 }
 .nav-logo {
-  font-family: 'DM Serif Display', serif;
+  font-family: var(--font-display2);
+  font-weight: 400;
   font-size: 1.4rem;
-  color: var(--ink);
+  color: var(--ink2);
   text-decoration: none;
 }
-.nav-logo span { color: var(--terracotta); }
-.nav-links { display: flex; gap: 1rem; list-style: none; align-items: center; }
+.nav-logo span { color: var(--tampon); }
+.nav-links { display: flex; gap: 1.4rem; list-style: none; align-items: center; }
 .nav-links a {
   text-decoration: none;
-  color: var(--muted);
-  font-size: 0.85rem;
+  color: var(--ink-soft2);
+  font-size: 0.92rem;
   font-weight: 500;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
   transition: color 0.2s;
 }
-.nav-links a:hover, .nav-links a.active { color: var(--ink); }
+.nav-links a:hover, .nav-links a.active { color: var(--ink2); }
 .nav-guide-cta {
-  background: var(--amber-soft);
-  color: var(--ink) !important;
+  background: var(--hanoi);
+  color: var(--ink2) !important;
   padding: 0.35rem 0.9rem;
   border-radius: 100px;
   font-weight: 700 !important;
-  text-transform: none !important;
   letter-spacing: 0 !important;
   transition: background 0.2s, transform 0.2s !important;
 }
-.nav-guide-cta:hover { background: var(--amber) !important; color: var(--ink) !important; transform: translateY(-1px); }
+.nav-guide-cta:hover { background: #c98a1f !important; color: var(--ink2) !important; transform: translateY(-1px); }
 
 /* CTA Livre Amazon - méthode polyglotte */
 .nav-book-cta {
-  background: var(--terracotta);
+  background: var(--tampon);
   color: #fff !important;
   padding: 0.35rem 0.9rem;
   border-radius: 100px;
   font-weight: 700 !important;
-  text-transform: none !important;
   letter-spacing: 0 !important;
   transition: background 0.2s, transform 0.2s !important;
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
 }
-.nav-book-cta:hover { background: var(--terracotta-soft) !important; color: #fff !important; transform: translateY(-1px); }
+.nav-book-cta:hover { background: #8c3024 !important; color: #fff !important; transform: translateY(-1px); }
 
 .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
-.nav-toggle span { display: block; width: 22px; height: 2px; background: var(--ink); margin: 5px 0; transition: 0.3s; }
-.nav-lang-switch { font-size: 0.85rem !important; padding: 0.35rem 0.9rem !important; border-radius: 100px !important; background: #2d2d2d !important; color: #fff !important; font-weight: 700 !important; text-transform: none !important; letter-spacing: 0 !important; transition: background 0.2s, transform 0.2s !important; line-height: 1 !important; }
-.nav-lang-switch:hover { background: #444 !important; transform: translateY(-1px); }
+.nav-toggle span { display: block; width: 22px; height: 2px; background: var(--ink2); margin: 5px 0; transition: 0.3s; }
+.nav-lang-switch { font-family: var(--font-mono2) !important; font-size: 0.78rem !important; letter-spacing: 0.04em !important; padding: 0.35rem 0.9rem !important; border-radius: 100px !important; background: var(--shutter) !important; color: var(--paper) !important; font-weight: 500 !important; text-transform: none !important; transition: background 0.2s, transform 0.2s !important; line-height: 1 !important; }
+.nav-lang-switch:hover { background: #244a38 !important; transform: translateY(-1px); }
 
 /* ═══ DROPDOWN OUTILS ═══ */
 .nav-dropdown { position: relative; }
 .nav-dropdown > button {
   background: none; border: none; cursor: pointer; padding: 0;
-  color: var(--muted); font-size: 0.85rem; font-weight: 500;
-  letter-spacing: 0.5px; text-transform: uppercase; font-family: inherit;
+  color: var(--ink-soft2); font-size: 0.92rem; font-weight: 500;
+  font-family: var(--font-body2);
   display: flex; align-items: center; gap: 3px; transition: color 0.2s;
 }
-.nav-dropdown > button:hover { color: var(--ink); }
+.nav-dropdown > button:hover { color: var(--ink2); }
 .nav-dropdown > button::after { content: "▾"; font-size: 0.65rem; opacity: 0.55; margin-top: 1px; }
 .nav-dd-menu {
   position: absolute; top: calc(100% + 14px); left: 50%; transform: translateX(-50%) translateY(-6px);
-  background: #fff; border: 1px solid var(--border); border-radius: 10px;
-  box-shadow: 0 8px 30px rgba(28,25,23,0.12); min-width: 230px; padding: 0.5rem 0;
+  background: var(--paper); border: 1px solid var(--line2); border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(35,40,31,0.14); min-width: 230px; padding: 0.5rem 0;
   opacity: 0; visibility: hidden; pointer-events: none;
   transition: opacity 0.15s, transform 0.15s; z-index: 200;
 }
@@ -243,27 +256,28 @@ nav.scrolled { box-shadow: var(--shadow-md); }
 }
 .nav-dd-menu a {
   display: block; padding: 0.55rem 1.1rem;
-  color: var(--ink) !important; font-size: 0.85rem !important;
+  color: var(--ink2) !important; font-size: 0.88rem !important;
   text-transform: none !important; letter-spacing: 0 !important;
+  font-family: var(--font-body2) !important;
   font-weight: 500 !important; text-decoration: none; transition: background 0.12s; white-space: nowrap;
 }
-.nav-dd-menu a:hover { background: var(--warm-bg); }
-.nav-dd-sep { height: 1px; background: var(--border); margin: 0.4rem 0.8rem; }
+.nav-dd-menu a:hover { background: var(--paper-deep); }
+.nav-dd-sep { height: 1px; background: var(--line2); margin: 0.4rem 0.8rem; }
 @media (max-width: 640px) {
-  .nav-dropdown > button { color: var(--muted); }
+  .nav-dropdown > button { color: var(--ink-soft2); }
   .nav-dd-menu {
     position: static; transform: none; box-shadow: none; border: none;
     background: transparent; padding: 0 0 0 1rem; opacity: 1; visibility: visible;
     pointer-events: auto; min-width: auto; display: none;
   }
   .nav-dropdown.open .nav-dd-menu { display: block; }
-  .nav-dd-menu a { padding: 0.3rem 0; font-size: 0.82rem !important; }
+  .nav-dd-menu a { padding: 0.3rem 0; font-size: 0.85rem !important; }
   .nav-dd-sep { display: none; }
 }
 
 /* ═══════════ SECTIONS ═══════════ */
 .section {
-  max-width: 1200px;
+max-width: 1200px;
   margin: 0 auto;
   padding: 6rem 2rem;
 }
@@ -287,41 +301,49 @@ nav.scrolled { box-shadow: var(--shadow-md); }
   font-size: 1.05rem;
 }
 
-/* ═══════════ FOOTER ═══════════ */
+/* ═══════════ FOOTER — carnet papier (tokens scoped to footer) ═══════════ */
 footer {
-  background: var(--ink);
-  color: rgba(250,248,244,0.6);
+  --paper: #FBF6EC;
+  --hanoi: #DE9E28;
+  --tampon: #A6392B;
+  --font-display2: 'Young Serif', Georgia, serif;
+  --font-body2: 'Instrument Sans', system-ui, sans-serif;
+  --font-mono2: 'IBM Plex Mono', ui-monospace, monospace;
+  background: #23281F;
+  color: rgba(251,246,236,0.6);
   padding: 4rem 2rem 2rem;
+  font-family: var(--font-body2);
 }
 .footer-grid {
-  max-width: 1200px;
+  max-width: 1120px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1.5fr 1fr 1fr 1fr;
   gap: 3rem;
   padding-bottom: 3rem;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
+  border-bottom: 1px solid rgba(251,246,236,0.1);
 }
-.footer-brand .nav-logo { font-size: 1.6rem; }
+.footer-brand .nav-logo { font-size: 1.6rem; font-family: var(--font-display2); }
 .footer-brand p { margin-top: 1rem; font-size: 0.9rem; line-height: 1.7; }
 .footer-col h4 {
-  color: var(--cream);
-  font-size: 0.75rem;
+  font-family: var(--font-mono2);
+  color: var(--hanoi);
+  font-size: 0.7rem;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 0.14em;
   margin-bottom: 1.25rem;
 }
 .footer-col a {
   display: block;
-  color: rgba(250,248,244,0.5);
+  color: rgba(251,246,236,0.55);
   text-decoration: none;
   font-size: 0.9rem;
   margin-bottom: 0.6rem;
   transition: color 0.2s;
 }
-.footer-col a:hover { color: var(--cream); }
+.footer-col a:hover { color: var(--paper); }
 .footer-bottom {
-  max-width: 1200px;
+  max-width: 1120px;
   margin: 0 auto;
   padding-top: 2rem;
   display: flex;
@@ -332,8 +354,8 @@ footer {
   font-size: 0.8rem;
 }
 .footer-legal { display: flex; gap: 1.5rem; }
-.footer-legal a { color: rgba(250,248,244,0.4); text-decoration: none; }
-.footer-legal a:hover { color: var(--cream); }
+.footer-legal a { color: rgba(251,246,236,0.45); text-decoration: none; }
+.footer-legal a:hover { color: var(--paper); }
 
 /* ═══════════ MODALS ═══════════ */
 .modal-overlay {
@@ -388,7 +410,7 @@ footer {
   .footer-grid { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 640px) {
-  .nav-links { display: none; position: absolute; top: 64px; left: 0; right: 0; background: var(--cream); flex-direction: column; padding: 1.5rem 2rem; gap: 1rem; border-bottom: 1px solid var(--border); align-items: flex-start; }
+  .nav-links { display: none; position: absolute; top: 64px; left: 0; right: 0; background: var(--paper); flex-direction: column; padding: 1.5rem 2rem; gap: 1rem; border-bottom: 1px solid var(--line2); align-items: flex-start; }
   .nav-links.open { display: flex; }
   .nav-toggle { display: block; }
   .footer-grid { grid-template-columns: 1fr; }
@@ -430,8 +452,9 @@ footer {
           <a href="<?= $path_prefix ?>calculateur-budget-vietnam">💰 Budget mensuel au Vietnam</a>
         </div>
       </li>
-      <li><a href="<?= $path_prefix ?>guide-cap-vietnam-2026" class="nav-guide-cta">Guide</a></li>
-      <li><a href="<?= $path_prefix ?>a-propos-capvietnam">À propos</a></li>
+        <li><a href="<?= $path_prefix ?>a-propos-capvietnam">À propos</a></li>
+      <li><a href="<?= $path_prefix ?>pack-gratuit" class="nav-guide-cta">Pack gratuit</a></li>
+    
       <?php
       if ($page_lang_switch) {
         $_l_href  = htmlspecialchars($page_lang_switch['href']);

@@ -1,14 +1,14 @@
 ﻿
 <!-- ═══════ EBOOK BANNER ═══════ -->
 <?php $_eb_vi = ($page_lang ?? 'fr') === 'vi'; ?>
-<section style="background:linear-gradient(135deg,#3a1a0a 0%,#2d1a0a 50%,#1c1208 100%);padding:3.5rem 2rem;text-align:center;">
+<section style="background:linear-gradient(135deg,#1F3D2E 0%,#17301F 50%,#101C16 100%);padding:3.5rem 2rem;text-align:center;">
   <div style="max-width:700px;margin:0 auto;">
-    <span style="display:inline-block;font-size:0.65rem;letter-spacing:4px;text-transform:uppercase;font-weight:700;padding:5px 16px;border-radius:3px;background:rgba(184,134,11,0.2);color:#d4a836;margin-bottom:1.5rem;"><?= $_eb_vi ? '📕 Quà tặng' : '📕 Ressource' ?></span>
+    <span style="display:inline-block;font-size:0.65rem;letter-spacing:4px;text-transform:uppercase;font-weight:700;padding:5px 16px;border-radius:3px;background:rgba(222,158,40,0.2);color:#DE9E28;margin-bottom:1.5rem;"><?= $_eb_vi ? '📕 Quà tặng' : '📕 Ressource' ?></span>
     <h2 style="font-family:'DM Serif Display',serif;font-size:clamp(1.6rem,4vw,2.4rem);color:#faf8f4;line-height:1.25;margin-bottom:1rem;"><?= $_eb_vi ? 'Tặng chồng Pháp của bạn cuốn sách học tiếng Việt' : 'Vous voulez apprendre le vietnamien ?' ?></h2>
     <p style="color:rgba(250,248,244,0.65);font-size:1.05rem;line-height:1.7;margin-bottom:0.5rem;"><?= $_eb_vi ? 'Phương pháp polyglotte của Anthony Bouillon giúp người Pháp học tiếng Việt một cách tự nhiên — kể cả khi chưa có nền tảng ngôn ngữ.' : 'La méthode polyglotte d\'Anthony Bouillon pour apprendre le vietnamien naturellement — même sans bases linguistiques.' ?></p>
     <p style="color:rgba(250,248,244,0.4);font-size:0.85rem;margin-bottom:2rem;"><?= $_eb_vi ? 'Có trên Amazon dưới dạng ebook · Phương pháp đã được kiểm chứng thực tế tại Hà Nội.' : 'Disponible en ebook sur Amazon · Méthode testée sur le terrain à Hanoï' ?></p>
     <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
-      <a href="<?= ($path_prefix ?? '') ?>livre-vietnamien" style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.85rem 2rem;background:rgba(184,134,11,0.9);color:#fff;border-radius:6px;text-decoration:none;font-weight:700;font-size:0.95rem;"><?= $_eb_vi ? '📕 Xem sách' : '📕 Découvrir l\'ebook' ?></a>
+      <a href="<?= ($path_prefix ?? '') ?>livre-vietnamien" style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.85rem 2rem;background:#DE9E28;color:#23281F;border-radius:6px;text-decoration:none;font-weight:700;font-size:0.95rem;"><?= $_eb_vi ? '📕 Xem sách' : '📕 Découvrir l\'ebook' ?></a>
       <a href="https://www.amazon.fr/dp/B0H1CHWKF8" target="_blank" rel="noopener sponsored" style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.85rem 2rem;background:rgba(250,248,244,0.08);color:#faf8f4;border:1px solid rgba(250,248,244,0.2);border-radius:6px;text-decoration:none;font-weight:600;font-size:0.95rem;"><?= $_eb_vi ? 'Mua trên Amazon →' : 'Acheter sur Amazon →' ?></a>
     </div>
   </div>
@@ -18,7 +18,7 @@
 <footer>
   <div class="footer-grid">
     <div class="footer-brand">
-      <a href="<?= $path_prefix ?: '/' ?>" class="nav-logo">Cap<span>Vietnam</span></a>
+      <a href="<?= $path_prefix ?: '/' ?>" class="nav-logo">Blog Cap<span>Vietnam</span></a>
       <p>Le blog du couple franco-vietnamien. Mariage, démarches, argent et vie quotidienne entre la France et le Vietnam.</p>
     </div>
     <div class="footer-col">
