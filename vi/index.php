@@ -418,10 +418,9 @@ include '../header.php';
 <section class="vi-newsletter">
   <h2>Nhận bài viết qua email ✉️</h2>
   <p>Đăng ký nhận hướng dẫn mới — miễn phí, không spam.</p>
-  <form class="vi-nl-form" action="<?= SITE_FORMSPREE ?>" method="POST">
-        <input type="hidden" name="_next" value="<?= SITE_URL ?>/vi/merci">
-    <input type="hidden" name="_subject" value="Newsletter VI — Cap Vietnam">
-    <input type="hidden" name="source" value="vi/index">
+  <form class="vi-nl-form" action="<?= SITE_URL ?>/subscribe-pack" method="POST">
+    <input type="hidden" name="lang" value="vi">
+    <input type="text" name="website" value="" style="position:absolute;left:-9999px" tabindex="-1" autocomplete="off" aria-hidden="true">
     <input type="email" name="email" placeholder="Email của bạn…" required>
     <button type="submit">Đăng ký →</button>
   </form>

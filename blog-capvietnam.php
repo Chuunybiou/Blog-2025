@@ -741,8 +741,8 @@ foreach (TAXONOMY as $_cat_key => $_cat):
           </ul>
           <p style="margin-top:14px;font-size:.85rem"><a href="pack-gratuit" style="color:rgba(251,246,236,.75)">Voir le détail du pack →</a></p>
         </div>
-        <form class="pack-form" action="<?= SITE_FORMSPREE ?>" method="post">
-          <input type="hidden" name="_next" value="<?= SITE_URL ?>/merci-guide">
+        <form class="pack-form" action="subscribe-pack" method="post">
+          <input type="text" name="website" value="" style="position:absolute;left:-9999px" tabindex="-1" autocomplete="off" aria-hidden="true">
           <label for="hv-email">Ton adresse email</label>
           <input id="hv-email" name="email" type="email" required placeholder="prenom@exemple.fr" autocomplete="email">
           <button class="btn btn-hanoi" type="submit">Recevoir le pack →</button>

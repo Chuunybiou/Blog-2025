@@ -8,3 +8,6 @@ data/clicks.json
 .DS_Store
 Thumbs.db
 *.log
+
+# Secrets — never commit, upload manually via FTP after each edit
+config/secrets.php

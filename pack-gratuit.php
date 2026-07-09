@@ -250,8 +250,8 @@ include 'header.php';
           </ul>
           <p style="margin-top:14px;font-size:.85rem"><a href="merci-guide" style="color:rgba(251,246,236,.75)">Déjà abonné ? Accède au pack ici →</a></p>
         </div>
-        <form class="pack-form" id="pack-form" action="<?= SITE_FORMSPREE ?>" method="POST">
-          <input type="hidden" name="_subject" value="Pack gratuit — inscription Cap Vietnam">
+        <form class="pack-form" id="pack-form" action="subscribe-pack" method="POST">
+          <input type="text" name="website" value="" style="position:absolute;left:-9999px" tabindex="-1" autocomplete="off" aria-hidden="true">
           <label for="email" class="mono" style="display:block;margin-bottom:.6rem;color:rgba(251,246,236,.7)">Ton adresse email</label>
           <input id="email" name="email" type="email" required placeholder="prenom@exemple.fr" autocomplete="email">
           <button class="btn btn-hanoi" type="submit" id="pack-btn">📥 Recevoir le pack →</button>
@@ -272,7 +272,9 @@ document.getElementById('pack-form').addEventListener('submit', function(e) {
     method: 'POST',
     body: new FormData(this),
     headers: { 'Accept': 'application/json' }
-  }).then(go).catch(go);
+  }).then(function(r) { return r.json(); }).then(function(data) {
+    window.location.href = data.redirect || '<?= SITE_URL ?>/merci-guide';
+  }).catch(go);
 });
 </script>
 
