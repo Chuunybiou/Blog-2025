@@ -114,6 +114,7 @@ if (localStorage.getItem('cookies_consent') === 'accepted') { loadAnalytics(); }
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
+img { max-width: 100%; height: auto; }
 html { scroll-behavior: smooth; }
 body {
   font-family: 'Libre Franklin', sans-serif;

@@ -168,7 +168,7 @@ $page_extra_css = '
 .home-v2 .hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 60%}
 .home-v2 .hero-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(28,32,26,.25) 0%,rgba(28,32,26,.15) 40%,rgba(28,32,26,.78) 100%)}
 .home-v2 .hero-inner{position:relative;padding-block:70px 74px;max-width:1120px}
-.home-v2 .hero-full h1{font-size:clamp(2.4rem,5.4vw,4rem);color:#fff;margin:.6rem 0 1rem;max-width:15em;text-shadow:0 2px 24px rgba(28,32,26,.45)}
+.home-v2 .hero-full h1{font-size:clamp(1.6rem,8vw,4rem);color:#fff;margin:.6rem 0 1rem;max-width:15em;text-shadow:0 2px 24px rgba(28,32,26,.45)}
 .home-v2 .hero-full h1 em{font-style:italic;color:var(--hanoi)}
 .home-v2 .hero-full .lede{font-size:1.12rem;color:rgba(251,246,236,.92);max-width:36em;margin-bottom:1rem;text-shadow:0 1px 12px rgba(28,32,26,.5)}
 /* --- bandeau annonce, épinglé au-dessus du nav (page d\'accueil uniquement) --- */
@@ -585,7 +585,7 @@ $_cat_photos = [
   'couple'         => ['assets/img/banh-mi-cafe-couple-hanoi.jpg', 'Anthony et sa femme à Hanoï, bánh mì et café', 675, 900, true],
   'mariage'        => ['assets/img/mariage-franco-vietnamien-ceremonie.jpg', 'Cérémonie de mariage franco-vietnamienne', 1439, 1093, true],
   'vivre-ensemble' => ['assets/img/lac-hoan-kiem-tour-tortue-hanoi.jpg', 'Tour de la Tortue, lac Hoàn Kiếm, Hanoï', 675, 900, true],
-  'argent'         => ['assets/img/capvietnam-money.jpg', 'Dong vietnamien et euros', 1306, 1600, false],
+  'argent'         => ['assets/img/capvietnam-money.jpg', 'Dong vietnamien et euros', 571, 700, false],
   'vie-pratique'   => ['assets/img/cafe-leva-hanoi-bougainvillees.jpg', 'Café Leva à Hanoï, quartier Tây Hồ', 675, 900, true],
   'emploi'         => ['assets/img/rue-hanoi-bougainvillees-scooters.jpg', 'Rue animée à Hanoï', 675, 900, true],
 ];
