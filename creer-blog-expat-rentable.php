@@ -240,14 +240,15 @@ include 'header.php';
       <div class="faq-answer">Google Ireland Limited verse les revenus AdSense. Si vous êtes résident fiscal français, ces revenus sont des BIC (bénéfices industriels et commerciaux) à déclarer en France sur le formulaire 2042 C PRO. Si Google a prélevé une retenue à la source (rare pour la France), vous pouvez la déduire grâce à la convention fiscale franco-irlandaise. Consultez un comptable pour votre première déclaration.</div>
     </div>
 
-    <div class="author-box">
-      <div class="author-avatar" style="overflow:hidden;position:relative;"><img src="assets/img/profile/anthony-profil.jpg" alt="Anthony Bouillon" width="72" height="72" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"></div>
-      <div class="author-info">
-        <h4>Anthony Bouillon</h4>
-        <p>Blog des expatriés français au Vietnam. Informations pratiques, vécues et vérifiées par notre communauté installée à Hanoï, Hô Chi Minh-Ville et Da Nang.</p>
-        <div class="author-links"><a href="a-propos-capvietnam">En savoir plus →</a></div>
-      </div>
-    </div>
+    <?php
+$author_bio = <<<'BIO'
+Blog des expatriés français au Vietnam. Informations pratiques, vécues et vérifiées par notre communauté installée à Hanoï, Hô Chi Minh-Ville et Da Nang.
+BIO;
+$author_links = <<<'LINKS'
+<a href="a-propos-capvietnam">En savoir plus →</a>
+LINKS;
+include '_author-box.php';
+?>
 
     <div class="cta-newsletter">
       <h3>Tout ce qu'il faut savoir pour vivre au Vietnam</h3>

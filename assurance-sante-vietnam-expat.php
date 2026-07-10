@@ -235,14 +235,12 @@ include 'header.php';
       <div class="faq-answer">Oui, les mutuelles expatriées couvrent en général la dengue comme toute autre maladie. Certaines assurances "voyages" excluent les maladies tropicales — vérifier les conditions générales. La dengue est fréquente au Vietnam, surtout en saison des pluies (juin-novembre).</div>
     </div>
 
-    <div class="author-box">
-      <div class="author-avatar" style="overflow:hidden;position:relative;"><img src="assets/img/profile/anthony-profil.jpg" alt="Anthony Bouillon" width="72" height="72" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"></div>
-      <div class="author-info">
-        <h4>Anthony Bouillon</h4>
-        <p>Blog d'un Français installé à Hanoï. Informations issues de l'expérience personnelle et des textes officiels — aucun conseil médical.</p>
-        <div class="author-links"><a href="a-propos-capvietnam">À propos →</a></div>
-      </div>
-    </div>
+    <?php
+$author_bio = <<<'BIO'
+Blog d'un Français installé à Hanoï. Informations issues de l'expérience personnelle et des textes officiels — aucun conseil médical.
+BIO;
+include '_author-box.php';
+?>
 
     <div class="cta-newsletter">
       <h3>Reçois les prochains guides</h3>

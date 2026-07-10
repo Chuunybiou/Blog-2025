@@ -214,14 +214,12 @@ include 'header.php';
       <div class="faq-answer">Oui, prévoir 200 à 500 euros en billets (ou USD équivalent). Sert pour le transport depuis l'aéroport, les premiers jours avant l'ouverture d'un compte bancaire local, et les achats urgents. Change dans une bijouterie agréée ou une banque — jamais à l'aéroport (taux 3 à 5% moins favorable qu'en ville).</div>
     </div>
 
-    <div class="author-box">
-      <div class="author-avatar" style="overflow:hidden;position:relative;"><img src="assets/img/profile/anthony-profil.jpg" alt="Anthony Bouillon" width="72" height="72" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"></div>
-      <div class="author-info">
-        <h4>Anthony Bouillon</h4>
-        <p>Français installé à Hanoï avec ma femme vietnamienne. Cette checklist compile tout ce que j'aurais voulu savoir — et tout ce que j'ai oublié — avant mon départ de France en 2026.</p>
-        <div class="author-links"><a href="a-propos-capvietnam">À propos →</a></div>
-      </div>
-    </div>
+    <?php
+$author_bio = <<<'BIO'
+Français installé à Hanoï avec ma femme vietnamienne. Cette checklist compile tout ce que j'aurais voulu savoir — et tout ce que j'ai oublié — avant mon départ de France en 2026.
+BIO;
+include '_author-box.php';
+?>
 
     <div class="cta-newsletter">
       <h3>Reçois les prochains guides</h3>

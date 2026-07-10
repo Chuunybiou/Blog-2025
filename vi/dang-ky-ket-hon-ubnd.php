@@ -20,7 +20,7 @@ $page_canonical   = SITE_URL . '/vi/dang-ky-ket-hon-ubnd';
 $page_og_title    = 'Đăng Ký Kết Hôn tại UBND — Cặp đôi Pháp-Việt : hướng dẫn 2026';
 $page_og_desc     = $page_description;
 $page_og_url      = $page_canonical;
-$page_og_image    = SITE_URL . '/assets/img/mariage-franco-vietnamien-ceremonie.png';
+$page_og_image    = SITE_URL . '/assets/img/mariage-franco-vietnamien-ceremonie.jpg';
 
 $page_schema = json_encode([
   '@context'         => 'https://schema.org',
@@ -83,7 +83,7 @@ include '../header.php';
     </p>
   </div>
   <div class="vi-art-hero-img-wrap">
-    <img src="../assets/img/mariage-franco-vietnamien-ceremonie.png"
+    <img src="../assets/img/mariage-franco-vietnamien-ceremonie.jpg"
          alt="Lễ cưới Pháp-Việt tại Việt Nam"
          width="1200" height="420" loading="eager" decoding="async">
   </div>

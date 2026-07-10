@@ -1,4 +1,6 @@
 ﻿
+</main>
+
 <!-- ═══════ EBOOK BANNER ═══════ -->
 <?php $_eb_vi = ($page_lang ?? 'fr') === 'vi'; ?>
 <section style="background:linear-gradient(135deg,#1F3D2E 0%,#17301F 50%,#101C16 100%);padding:3.5rem 2rem;text-align:center;">
@@ -6,7 +8,7 @@
     <span style="display:inline-block;font-size:0.65rem;letter-spacing:4px;text-transform:uppercase;font-weight:700;padding:5px 16px;border-radius:3px;background:rgba(222,158,40,0.2);color:#DE9E28;margin-bottom:1.5rem;"><?= $_eb_vi ? '📕 Quà tặng' : '📕 Ressource' ?></span>
     <h2 style="font-family:'DM Serif Display',serif;font-size:clamp(1.6rem,4vw,2.4rem);color:#faf8f4;line-height:1.25;margin-bottom:1rem;"><?= $_eb_vi ? 'Tặng chồng Pháp của bạn cuốn sách học tiếng Việt' : 'Vous voulez apprendre le vietnamien ?' ?></h2>
     <p style="color:rgba(250,248,244,0.65);font-size:1.05rem;line-height:1.7;margin-bottom:0.5rem;"><?= $_eb_vi ? 'Phương pháp polyglotte của Anthony Bouillon giúp người Pháp học tiếng Việt một cách tự nhiên — kể cả khi chưa có nền tảng ngôn ngữ.' : 'La méthode polyglotte d\'Anthony Bouillon pour apprendre le vietnamien naturellement — même sans bases linguistiques.' ?></p>
-    <p style="color:rgba(250,248,244,0.4);font-size:0.85rem;margin-bottom:2rem;"><?= $_eb_vi ? 'Có trên Amazon dưới dạng ebook · Phương pháp đã được kiểm chứng thực tế tại Hà Nội.' : 'Disponible en ebook sur Amazon · Méthode testée sur le terrain à Hanoï' ?></p>
+    <p style="color:rgba(250,248,244,0.6);font-size:0.85rem;margin-bottom:2rem;"><?= $_eb_vi ? 'Có trên Amazon dưới dạng ebook · Phương pháp đã được kiểm chứng thực tế tại Hà Nội.' : 'Disponible en ebook sur Amazon · Méthode testée sur le terrain à Hanoï' ?></p>
     <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
       <a href="<?= ($path_prefix ?? '') ?>livre-vietnamien" style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.85rem 2rem;background:#DE9E28;color:#23281F;border-radius:6px;text-decoration:none;font-weight:700;font-size:0.95rem;"><?= $_eb_vi ? '📕 Xem sách' : '📕 Découvrir l\'ebook' ?></a>
       <a href="https://www.amazon.fr/dp/B0H1CHWKF8" target="_blank" rel="noopener sponsored" style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.85rem 2rem;background:rgba(250,248,244,0.08);color:#faf8f4;border:1px solid rgba(250,248,244,0.2);border-radius:6px;text-decoration:none;font-weight:600;font-size:0.95rem;"><?= $_eb_vi ? 'Mua trên Amazon →' : 'Acheter sur Amazon →' ?></a>
@@ -22,7 +24,7 @@
       <p>Le blog du couple franco-vietnamien. Mariage, démarches, argent et vie quotidienne entre la France et le Vietnam.</p>
     </div>
     <div class="footer-col">
-      <h4><?= ($page_lang ?? 'fr') === 'vi' ? 'Danh mục' : 'Catégories' ?></h4>
+      <h3><?= ($page_lang ?? 'fr') === 'vi' ? 'Danh mục' : 'Catégories' ?></h3>
       <?php $_fl = ($page_lang ?? 'fr') === 'vi'; ?>
       <a href="<?= $path_prefix ?>articles-capvietnam?cat=couple"><?= $_fl ? '❤️ Câu chuyện của chúng tôi' : '❤️ Notre histoire &amp; couple' ?></a>
       <a href="<?= $path_prefix ?>articles-capvietnam?cat=mariage"><?= $_fl ? '💍 Kết hôn Pháp-Việt' : '💍 Se marier' ?></a>
@@ -31,7 +33,7 @@
       <a href="<?= $path_prefix ?>articles-capvietnam?cat=vie-pratique"><?= $_fl ? '🌏 Cuộc sống thực tế tại Việt Nam' : '🌏 Vie pratique au Vietnam' ?></a>
     </div>
     <div class="footer-col">
-      <h4><?= ($page_lang ?? 'fr') === 'vi' ? 'Liên kết hữu ích' : 'Liens utiles' ?></h4>
+      <h3><?= ($page_lang ?? 'fr') === 'vi' ? 'Liên kết hữu ích' : 'Liens utiles' ?></h3>
       <a href="<?= $path_prefix ?>a-propos-capvietnam">À propos</a>
       <a href="<?= $path_prefix ?>outils-vivre-vietnam">🛠️ Mes outils</a>
       <a href="<?= $path_prefix ?>contact-capvietnam">Contact</a>
@@ -39,11 +41,11 @@
       <a href="<?= $path_prefix ?>livre-vietnamien" style="color:var(--terracotta-soft);font-weight:600">📕 Apprendre le vietnamien</a>
       <a href="<?= $path_prefix ?>mes-livres" style="color:rgba(250,248,244,0.55)">📚 Tous mes livres</a>
       <hr style="border-color:var(--border);margin:0.8rem 0">
-      <a href="https://bonusparrainage.com" target="_blank" rel="noopener" style="color:rgba(250,248,244,0.28);font-size:0.78rem">bonusparrainage.com</a>
-      <a href="https://anthony-bouillon.com" target="_blank" rel="noopener" style="color:rgba(250,248,244,0.28);font-size:0.78rem">anthony-bouillon.com</a>
+      <a href="https://bonusparrainage.com" target="_blank" rel="noopener" style="color:rgba(250,248,244,0.55);font-size:0.78rem">bonusparrainage.com</a>
+      <a href="https://anthony-bouillon.com" target="_blank" rel="noopener" style="color:rgba(250,248,244,0.55);font-size:0.78rem">anthony-bouillon.com</a>
     </div>
     <div class="footer-col">
-      <h4><?= ($page_lang ?? 'fr') === 'vi' ? 'Mạng xã hội' : 'Réseaux' ?></h4>
+      <h3><?= ($page_lang ?? 'fr') === 'vi' ? 'Mạng xã hội' : 'Réseaux' ?></h3>
       <a href="<?= SITE_TIKTOK ?>" target="_blank" rel="noopener">TikTok</a>
       <a href="https://www.facebook.com/groups/vivreauvietnamcouplefrancovietnamiencap/" target="_blank" rel="noopener">💬 Groupe Facebook</a>
       <a href="https://discord.gg/MdDVNb7QZz" target="_blank" rel="noopener">🎮 Discord expats</a>
@@ -51,7 +53,7 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <p style="font-size:0.78rem;color:rgba(250,248,244,0.35);margin-bottom:1rem;line-height:1.6;width:100%;">
+    <p style="font-size:0.78rem;color:rgba(250,248,244,0.55);margin-bottom:1rem;line-height:1.6;width:100%;">
       ℹ️ Ce site contient des liens affiliés rémunérés. Ils ne modifient ni mon avis ni mon classement.
     </p>
     <span>© <?= SITE_YEAR ?> Blog-CapVietnam. Tous droits réservés.</span>

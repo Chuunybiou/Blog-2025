@@ -198,14 +198,12 @@ include 'header.php';
       <a href="go.php?id=amazon-ebook-en" target="_blank" rel="noopener sponsored" class="btn btn-primary" style="font-size:.88rem">Voir sur Amazon →</a>
     </div>
 
-    <div class="author-box">
-      <div class="author-avatar" style="overflow:hidden;position:relative;"><img src="assets/img/profile/anthony-profil.jpg" alt="Anthony Bouillon" width="72" height="72" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"></div>
-      <div class="author-info">
-        <h4>Anthony Bouillon</h4>
-        <p>Niveau B1 en vietnamien après 4 ans de pratique à Hanoï. Le chemin est long mais chaque étape ouvre de nouvelles portes.</p>
-        <div class="author-links"><a href="a-propos-capvietnam">À propos →</a></div>
-      </div>
-    </div>
+    <?php
+$author_bio = <<<'BIO'
+Niveau B1 en vietnamien après 4 ans de pratique à Hanoï. Le chemin est long mais chaque étape ouvre de nouvelles portes.
+BIO;
+include '_author-box.php';
+?>
 
     <div class="cta-newsletter">
       <h3>Reçois les prochains guides</h3>

@@ -180,14 +180,12 @@ include 'header.php';
       <div class="faq-answer">Non directement. La thẻ tạm trú pour motif conjugal (TT) autorise la résidence mais pas le travail. Pour travailler légalement, il faut en plus obtenir un permis de travail ou être exempté (dirigeant d'entreprise, expert, etc.).</div>
     </div>
 
-    <div class="author-box">
-      <div class="author-avatar" style="overflow:hidden;position:relative;"><img src="assets/img/profile/anthony-profil.jpg" alt="Anthony Bouillon" width="72" height="72" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"></div>
-      <div class="author-info">
-        <h4>Anthony Bouillon</h4>
-        <p>Informations basées sur la Loi n°51/2019/QH14 et les décrets d'application. Toujours vérifier auprès du Département de l'Immigration local pour les mises à jour réglementaires.</p>
-        <div class="author-links"><a href="a-propos-capvietnam">À propos →</a></div>
-      </div>
-    </div>
+    <?php
+$author_bio = <<<'BIO'
+Informations basées sur la Loi n°51/2019/QH14 et les décrets d'application. Toujours vérifier auprès du Département de l'Immigration local pour les mises à jour réglementaires.
+BIO;
+include '_author-box.php';
+?>
 
     <div class="cta-newsletter">
       <h3>Reçois les prochains guides</h3>

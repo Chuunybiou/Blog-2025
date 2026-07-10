@@ -1,0 +1,31 @@
+# Cap Vietnam
+
+> Blog francophone tenu par Anthony Bouillon, Français en couple avec une Vietnamienne, sur la vie de couple franco-vietnamien : démarches de mariage, visa conjoint, argent à deux, et vie pratique au Vietnam (Hanoï notamment).
+
+Le contenu est basé sur une expérience personnelle et vécue plutôt que sur de la théorie générique. Les articles sont datés et mis à jour ; privilégier la version la plus récente en cas de contradiction avec des sources plus anciennes. Les pages listées ci-dessous sont en français ; une partie du contenu existe aussi en vietnamien sous /vi/.
+
+## Pages clés
+
+- [Accueil](https://blog-capvietnam.fr/): présentation du blog et derniers articles par catégorie.
+- [Tous les articles](https://blog-capvietnam.fr/articles-capvietnam): index complet des articles, filtrable par catégorie.
+- [Par où commencer ?](https://blog-capvietnam.fr/par-ou-commencer-couple-franco-vietnamien): parcours guidé chronologique pour un couple franco-vietnamien (rencontre → mariage → visa → installation).
+- [Guide Cap Vietnam 2026](https://blog-capvietnam.fr/guide-cap-vietnam-2026): guide de référence pour s'expatrier ou se marier au Vietnam.
+- [Calculateur de budget Vietnam](https://blog-capvietnam.fr/calculateur-budget-vietnam): simulateur de budget mensuel pour vivre au Vietnam.
+- [Outils pour vivre au Vietnam](https://blog-capvietnam.fr/outils-vivre-vietnam): liste d'outils pratiques (banques, transferts d'argent, SIM, etc.).
+- [À propos](https://blog-capvietnam.fr/a-propos-capvietnam): qui est l'auteur, pourquoi ce blog.
+- [Contact](https://blog-capvietnam.fr/contact-capvietnam): formulaire de contact.
+
+## Catégories
+
+- **Notre histoire & couple** ❤️ — la rencontre, la belle-famille, les différences culturelles, le quotidien à deux.
+- **Se marier** 💍 — CCAM, cérémonie au Vietnam, transcription à Nantes, faire venir son conjoint.
+- **Vivre ensemble** 🏠 — visa conjoint, titre de séjour, s'installer en France ou au Vietnam.
+- **L'argent à deux** 💰 — budgets, transferts, fiscalité, comptes bancaires, financement du mariage.
+- **Vie pratique au Vietnam** 🌏 — visa, logement, santé, transport, quotidien sur place.
+- **Emploi & Entreprendre** 💼 — trouver un emploi, créer son entreprise, salaires, coworkings au Vietnam.
+
+Index complet et à jour de chaque catégorie sur [/articles-capvietnam](https://blog-capvietnam.fr/articles-capvietnam).
+
+## À ignorer
+
+- Toute URL sous /data/, /admin*, /stats-affilies, /go, /merci-guide : pages techniques ou internes, non pertinentes pour un résumé du contenu éditorial.

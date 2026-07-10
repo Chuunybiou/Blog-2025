@@ -174,14 +174,12 @@ include 'header.php';
       <div class="faq-answer">En général 1 à 2 ans de présence régulière et sincère. L'apprentissage même minimal du vietnamien accélère considérablement ce processus. Les relations familiales vietnamiennes se construisent dans la durée, par la régularité et la fiabilité — pas par de grands gestes ponctuels.</div>
     </div>
 
-    <div class="author-box">
-      <div class="author-avatar" style="overflow:hidden;position:relative;"><img src="assets/img/profile/anthony-profil.jpg" alt="Anthony Bouillon" width="72" height="72" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"></div>
-      <div class="author-info">
-        <h4>Anthony Bouillon</h4>
-        <p>Ces conseils reflètent l'expérience personnelle — chaque famille est unique, adapte-les à la tienne.</p>
-        <div class="author-links"><a href="a-propos-capvietnam">À propos →</a></div>
-      </div>
-    </div>
+    <?php
+$author_bio = <<<'BIO'
+Ces conseils reflètent l'expérience personnelle — chaque famille est unique, adapte-les à la tienne.
+BIO;
+include '_author-box.php';
+?>
 
     <div class="cta-newsletter">
       <h3>Reçois les prochains guides</h3>

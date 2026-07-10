@@ -224,14 +224,12 @@ include '_affiliate-cta.php';
       <div class="faq-answer">L'utilisation d'un VPN est courante dans la communauté expat et professionnelle. Les services comme ExpressVPN, NordVPN ou Mullvad fonctionnent correctement. Vérifiez la législation en vigueur concernant l'utilisation de VPN dans le cadre professionnel avant votre installation.</div>
     </div>
 
-    <div class="author-box">
-      <div class="author-avatar" style="overflow:hidden;position:relative;"><img src="assets/img/profile/anthony-profil.jpg" alt="Anthony Bouillon" width="72" height="72" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"></div>
-      <div class="author-info">
-        <h4>Anthony Bouillon</h4>
-        <p>Informations pratiques, vécues et vérifiées par notre communauté installée à Hanoï, Hô Chi Minh-Ville et Da Nang.</p>
-        <div class="author-links"><a href="a-propos-capvietnam">À propos →</a></div>
-      </div>
-    </div>
+    <?php
+$author_bio = <<<'BIO'
+Informations pratiques, vécues et vérifiées par notre communauté installée à Hanoï, Hô Chi Minh-Ville et Da Nang.
+BIO;
+include '_author-box.php';
+?>
 
     <div class="cta-newsletter">
       <h3>Le guide pratique de l'expat au Vietnam</h3>

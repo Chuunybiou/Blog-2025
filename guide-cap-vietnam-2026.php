@@ -12,8 +12,8 @@ $page_canonical   = SITE_URL . '/guide-cap-vietnam-2026';
 $page_og_title    = 'Guide complet — S\'installer au Vietnam en couple franco-vietnamien';
 $page_og_desc     = 'Visa TT, mariage franco-vietnamien, budget 2026, travail en ligne, couple mixte — tout ce que j\'ai appris en le vivant à Hanoï, réuni en un guide gratuit.';
 $page_og_url      = SITE_URL . '/guide-cap-vietnam-2026';
-$page_og_image    = SITE_URL . '/assets/img/mariage-franco-vietnamien-ceremonie.png';
-$page_schema      = '{"@context":"https://schema.org","@type":"Article","headline":"Guide complet — couple franco-vietnamien au Vietnam 2026","description":"Mariage franco-vietnamien, visa TT, budget réel à Hanoï, travail en ligne, couple mixte. Guide pratique écrit par un Français installé au Vietnam.","datePublished":"2026-01-01","dateModified":"2026-06-22","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://blog-capvietnam.fr/a-propos-capvietnam"},"publisher":{"@type":"Organization","name":"Cap Vietnam","url":"https://blog-capvietnam.fr"},"image":"https://blog-capvietnam.fr/assets/img/mariage-franco-vietnamien-ceremonie.png","mainEntityOfPage":"https://blog-capvietnam.fr/guide-cap-vietnam-2026","inLanguage":"fr"}';
+$page_og_image    = SITE_URL . '/assets/img/mariage-franco-vietnamien-ceremonie.jpg';
+$page_schema      = '{"@context":"https://schema.org","@type":"Article","headline":"Guide complet — couple franco-vietnamien au Vietnam 2026","description":"Mariage franco-vietnamien, visa TT, budget réel à Hanoï, travail en ligne, couple mixte. Guide pratique écrit par un Français installé au Vietnam.","datePublished":"2026-01-01","dateModified":"2026-06-22","author":{"@type":"Person","name":"Anthony Bouillon","url":"https://blog-capvietnam.fr/a-propos-capvietnam"},"publisher":{"@type":"Organization","name":"Cap Vietnam","url":"https://blog-capvietnam.fr"},"image":"https://blog-capvietnam.fr/assets/img/mariage-franco-vietnamien-ceremonie.jpg","mainEntityOfPage":"https://blog-capvietnam.fr/guide-cap-vietnam-2026","inLanguage":"fr"}';
 
 $page_extra_css = '
 /* ── Hero ── */
@@ -68,7 +68,7 @@ $page_extra_css = '
 /* ── CTA encarts ── */
 .guide-cta-encart{background:linear-gradient(135deg,#0d3d2b,#1a5c40);border-radius:var(--radius);padding:1.5rem 2rem;display:flex;align-items:center;gap:1.5rem;margin:2rem 0;flex-wrap:wrap}
 .guide-cta-encart-icon{font-size:2.2rem;flex-shrink:0}
-.guide-cta-encart h4{color:#faf8f4;font-family:"DM Serif Display",serif;font-size:1.05rem;margin-bottom:0.25rem}
+.guide-cta-encart h3{color:#faf8f4;font-family:"DM Serif Display",serif;font-size:1.05rem;margin-bottom:0.25rem}
 .guide-cta-encart p{color:rgba(250,248,244,0.65);font-size:0.85rem;line-height:1.5;margin-bottom:0.75rem}
 .guide-cta-encart a.btn{display:inline-block;padding:0.6rem 1.25rem;background:#d4a84b;color:#0d1829;border-radius:4px;font-weight:700;font-size:0.85rem;text-decoration:none}
 .guide-cta-encart a.btn:hover{background:#c49535}
@@ -150,7 +150,7 @@ include 'header.php';
       </div>
     </div>
     <div class="guide-hero-img">
-      <img src="assets/img/mariage-franco-vietnamien-ceremonie.png" alt="Cérémonie de mariage franco-vietnamien" width="480" height="360" loading="eager">
+      <img src="assets/img/mariage-franco-vietnamien-ceremonie.jpg" alt="Cérémonie de mariage franco-vietnamien" width="480" height="360" loading="eager">
     </div>
   </div>
 </header>
@@ -229,7 +229,7 @@ include 'header.php';
   <div class="guide-cta-encart">
     <div class="guide-cta-encart-icon">📅</div>
     <div>
-      <h4>Rétroplanning conjoint — outil interactif gratuit</h4>
+      <h3>Rétroplanning conjoint — outil interactif gratuit</h3>
       <p>Planifie les étapes du mariage et du visa en sens inverse à partir de ta date cible. Génère un PDF avec toutes tes deadlines.</p>
       <a href="retroplanning-faire-venir-conjoint" class="btn">Lancer le simulateur →</a>
     </div>
@@ -323,7 +323,7 @@ include 'header.php';
   <div class="guide-cta-encart">
     <div class="guide-cta-encart-icon">⏱️</div>
     <div>
-      <h4>Rétroplanning installation Vietnam — outil interactif</h4>
+      <h3>Rétroplanning installation Vietnam — outil interactif</h3>
       <p>Calcule le planning de ton installation à rebours depuis ta date d'arrivée : SIM, compte bancaire, logement, immatriculation, déclaration fiscale.</p>
       <a href="simulateur-residence-vietnam" class="btn">Voir le rétroplanning →</a>
     </div>
@@ -378,7 +378,7 @@ include 'header.php';
   <div class="guide-cta-encart">
     <div class="guide-cta-encart-icon">💰</div>
     <div>
-      <h4>Calculateur de budget Vietnam — outil interactif</h4>
+      <h3>Calculateur de budget Vietnam — outil interactif</h3>
       <p>Estime ton budget mensuel selon ton profil (solo, couple, famille), ta ville et ton style de vie. Résultat instantané.</p>
       <a href="calculateur-budget-vietnam" class="btn">Calculer mon budget →</a>
     </div>

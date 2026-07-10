@@ -581,7 +581,7 @@ include 'header.php';
 <?php
 $_cat_photos = [
   'couple'         => ['assets/img/banh-mi-cafe-couple-hanoi.jpg', 'Anthony et sa femme à Hanoï, bánh mì et café'],
-  'mariage'        => ['assets/img/mariage-franco-vietnamien-ceremonie.png', 'Cérémonie de mariage franco-vietnamienne'],
+  'mariage'        => ['assets/img/mariage-franco-vietnamien-ceremonie.jpg', 'Cérémonie de mariage franco-vietnamienne'],
   'vivre-ensemble' => ['assets/img/lac-hoan-kiem-tour-tortue-hanoi.jpg', 'Tour de la Tortue, lac Hoàn Kiếm, Hanoï'],
   'argent'         => ['assets/img/capvietnam-money.jpg', 'Dong vietnamien et euros'],
   'vie-pratique'   => ['assets/img/cafe-leva-hanoi-bougainvillees.jpg', 'Café Leva à Hanoï, quartier Tây Hồ'],
@@ -719,7 +719,7 @@ foreach (TAXONOMY as $_cat_key => $_cat):
       </blockquote>
     </div>
     <figure class="comm-photo">
-      <img src="assets/img/mariage-franco-vietnamien-ceremonie.png" alt="Cérémonie de mariage franco-vietnamienne — les mariés devant l'arche fleurie" loading="lazy">
+      <img src="assets/img/mariage-franco-vietnamien-ceremonie.jpg" alt="Cérémonie de mariage franco-vietnamienne — les mariés devant l'arche fleurie" loading="lazy">
       <figcaption class="mono">CÉRÉMONIE DE MARIAGE — PHOTO DU BLOG</figcaption>
     </figure>
   </div>

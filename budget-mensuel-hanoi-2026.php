@@ -220,14 +220,12 @@ include 'header.php';
       <div class="faq-answer">Oui, significativement. Les loyers dans les quartiers centraux ont augmenté de 25 à 40% entre 2020 et 2026. Les restaurants internationaux ont aussi monté leurs prix. La nourriture locale reste très abordable. L'inflation VND est réelle mais les salaires expats en EUR ou USD compensent l'impact.</div>
     </div>
 
-    <div class="author-box">
-      <div class="author-avatar" style="overflow:hidden;position:relative;"><img src="assets/img/profile/anthony-profil.jpg" alt="Anthony Bouillon" width="72" height="72" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"></div>
-      <div class="author-info">
-        <h4>Anthony Bouillon</h4>
-        <p>Chiffres basés sur mes propres dépenses et celles d'amis expatriés à Hanoï en 2026. Mis à jour régulièrement.</p>
-        <div class="author-links"><a href="a-propos-capvietnam">À propos →</a></div>
-      </div>
-    </div>
+    <?php
+$author_bio = <<<'BIO'
+Chiffres basés sur mes propres dépenses et celles d'amis expatriés à Hanoï en 2026. Mis à jour régulièrement.
+BIO;
+include '_author-box.php';
+?>
 
     <div class="cta-newsletter">
       <h3>Reçois les prochains guides</h3>

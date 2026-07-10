@@ -10,7 +10,7 @@ $page_canonical   = $page_canonical   ?? SITE_URL . '/';
 $page_og_title    = $page_og_title    ?? $page_title;
 $page_og_desc     = $page_og_desc     ?? $page_description;
 $page_og_url      = $page_og_url      ?? $page_canonical;
-$page_og_image    = $page_og_image    ?? SITE_URL . '/assets/img/blog-vietnam.png';
+$page_og_image    = $page_og_image    ?? SITE_URL . '/assets/img/blog-vietnam.jpg';
 $page_schema      = $page_schema      ?? null;
 $page_extra_head  = $page_extra_head  ?? '';
 $page_extra_css   = $page_extra_css   ?? '';
@@ -62,8 +62,8 @@ $page_extra_css   = $page_extra_css   ?? '';
 <?php endif; ?>
 
 <meta name="theme-color" content="#1c1917">
-<link rel="icon" type="image/png" href="<?= $path_prefix ?>assets/img/blog-vietnam.png">
-<link rel="apple-touch-icon" href="<?= $path_prefix ?>assets/img/blog-vietnam.png">
+<link rel="icon" type="image/jpeg" href="<?= $path_prefix ?>assets/img/blog-vietnam.jpg">
+<link rel="apple-touch-icon" href="<?= $path_prefix ?>assets/img/blog-vietnam.jpg">
 
 <!-- Resource hints -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -95,7 +95,7 @@ $page_extra_css   = $page_extra_css   ?? '';
   --jade-soft: #2a9474;
   --amber: #b8860b;
   --amber-soft: #d4a84b;
-  --muted: #8c8279;
+  --muted: #6e655b;
   --border: #ddd5c9;
   --white: #fff;
   --shadow-sm: 0 1px 3px rgba(28,25,23,0.06);
@@ -325,7 +325,7 @@ footer {
 }
 .footer-brand .nav-logo { font-size: 1.6rem; font-family: var(--font-display2); }
 .footer-brand p { margin-top: 1rem; font-size: 0.9rem; line-height: 1.7; }
-.footer-col h4 {
+.footer-col h3 {
   font-family: var(--font-mono2);
   color: var(--hanoi);
   font-size: 0.7rem;
@@ -354,7 +354,7 @@ footer {
   font-size: 0.8rem;
 }
 .footer-legal { display: flex; gap: 1.5rem; }
-.footer-legal a { color: rgba(251,246,236,0.45); text-decoration: none; }
+.footer-legal a { color: rgba(251,246,236,0.6); text-decoration: none; }
 .footer-legal a:hover { color: var(--paper); }
 
 /* ═══════════ MODALS ═══════════ */
@@ -443,7 +443,7 @@ footer {
       <li><a href="<?= $path_prefix ?>articles-capvietnam">Articles</a></li>
       <li class="nav-dropdown">
         <button aria-haspopup="true" aria-expanded="false">🛠️ Outils</button>
-        <div class="nav-dd-menu" role="menu">
+        <div class="nav-dd-menu">
           <a href="<?= $path_prefix ?>outils-vivre-vietnam">🛠️ Services recommandés</a>
           <div class="nav-dd-sep"></div>
           <a href="<?= $path_prefix ?>par-ou-commencer-couple-franco-vietnamien">🗺️ Par où commencer ?</a>
@@ -500,3 +500,5 @@ footer {
 })();
 </script>
 <?php endif; ?>
+
+<main>

@@ -205,16 +205,12 @@ include 'header.php';
       <div class="faq-answer">C'est uniquement possible si tu as souscrit une assurance incluant cette garantie (CFE avec option rapatriement, ou assurance internationale privée). Sans assurance, les frais de rapatriement médical depuis l'Asie du Sud-Est peuvent dépasser 30 000 €. Ne pars jamais sans cette couverture.</div>
     </div>
 
-    <div class="author-box">
-      <div class="author-avatar" style="overflow:hidden;position:relative;">
-        <img src="assets/img/profile/anthony-profil.jpg" alt="Anthony Bouillon" width="72" height="72" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;">
-      </div>
-      <div class="author-info">
-        <h4>Anthony Bouillon</h4>
-        <p>Français expatrié à Hanoï. Je partage mon parcours d'installation au Vietnam avec ma femme vietnamienne : démarches administratives, vie de couple mixte et travail en ligne.</p>
-        <div class="author-links"><a href="a-propos-capvietnam">À propos →</a></div>
-      </div>
-    </div>
+    <?php
+$author_bio = <<<'BIO'
+Français expatrié à Hanoï. Je partage mon parcours d'installation au Vietnam avec ma femme vietnamienne : démarches administratives, vie de couple mixte et travail en ligne.
+BIO;
+include '_author-box.php';
+?>
 
     <div class="cta-newsletter">
       <h3>Reçois les prochains articles</h3>

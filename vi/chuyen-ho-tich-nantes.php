@@ -20,7 +20,7 @@ $page_canonical   = SITE_URL . '/vi/chuyen-ho-tich-nantes';
 $page_og_title    = 'Đăng Ký Hộ Tịch Hôn Nhân tại Nantes : hướng dẫn 2026';
 $page_og_desc     = $page_description;
 $page_og_url      = $page_canonical;
-$page_og_image    = SITE_URL . '/assets/img/mariage-franco-vietnamien-ceremonie.png';
+$page_og_image    = SITE_URL . '/assets/img/mariage-franco-vietnamien-ceremonie.jpg';
 
 $page_schema = json_encode([
   '@context'         => 'https://schema.org',
@@ -83,7 +83,7 @@ include '../header.php';
     </p>
   </div>
   <div class="vi-art-hero-img-wrap">
-    <img src="../assets/img/mariage-franco-vietnamien-ceremonie.png"
+    <img src="../assets/img/mariage-franco-vietnamien-ceremonie.jpg"
          alt="Đăng ký hộ tịch hôn nhân tại Nantes — cặp đôi Pháp-Việt"
          width="1200" height="380" loading="eager" decoding="async">
   </div>

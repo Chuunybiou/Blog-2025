@@ -216,14 +216,12 @@ include 'header.php';
       <div class="faq-answer">Wise est disponible pour recevoir des virements sur un compte bancaire vietnamien (Vietcombank, Techcombank, etc.). En revanche, ouvrir un compte Wise avec une adresse vietnamienne peut être limité selon la résidence déclarée. La plupart des expatriés gardent leur compte Wise lié à leur adresse française.</div>
     </div>
 
-    <div class="author-box">
-      <div class="author-avatar" style="overflow:hidden;position:relative;"><img src="assets/img/profile/anthony-profil.jpg" alt="Anthony Bouillon" width="72" height="72" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"></div>
-      <div class="author-info">
-        <h4>Anthony Bouillon</h4>
-        <p>Utilisateur de Wise depuis 2026 pour mes virements mensuels France → Vietnam. Les frais indiqués sont les miens, mis à jour en 2026.</p>
-        <div class="author-links"><a href="a-propos-capvietnam">À propos →</a></div>
-      </div>
-    </div>
+    <?php
+$author_bio = <<<'BIO'
+Utilisateur de Wise depuis 2026 pour mes virements mensuels France → Vietnam. Les frais indiqués sont les miens, mis à jour en 2026.
+BIO;
+include '_author-box.php';
+?>
 
     <div class="cta-newsletter">
       <h3>Reçois les prochains guides</h3>

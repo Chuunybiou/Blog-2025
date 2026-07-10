@@ -21,7 +21,7 @@ $page_canonical   = SITE_URL . '/vi/';
 $page_og_title    = 'Lấy chồng Pháp · Sang Pháp định cư | Cap Vietnam';
 $page_og_desc     = 'Hành trình sang Pháp theo chồng Pháp — CCAM, kết hôn tại Việt Nam, visa, thẻ cư trú. Hướng dẫn bằng tiếng Pháp, từng bước.';
 $page_og_url      = $page_canonical;
-$page_og_image    = SITE_URL . '/assets/img/mariage-franco-vietnamien-ceremonie.png';
+$page_og_image    = SITE_URL . '/assets/img/mariage-franco-vietnamien-ceremonie.jpg';
 
 $page_extra_css = '
 /* ══ VIETNAMESE SECTION ══ */

@@ -397,17 +397,16 @@ include 'header.php';
       <div class="faq-answer">La caution doit être restituée dans les 15 à 30 jours après l'état des lieux de sortie, déduction faite des dégradations constatées. Gardez tous vos reçus de paiement, faites l'état des lieux de sortie en présence du propriétaire et exigez un document signé. En cas de litige, les groupes expats locaux peuvent vous orienter vers des avocats spécialisés.</div>
     </div>
 
-    <div class="author-box">
-      <div class="author-avatar" style="overflow:hidden;position:relative;"><img src="assets/img/profile/anthony-profil.jpg" alt="Anthony Bouillon" width="72" height="72" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"></div>
-      <div class="author-info">
-        <h4>Anthony Bouillon</h4>
-        <p>Expatrié à Hanoï. J'ai visité une vingtaine d'appartements avant de signer mon bail — ces conseils viennent de mon expérience directe et des retours de la communauté expat francophone.</p>
-        <div class="author-links">
-          <a href="a-propos-capvietnam">À propos →</a>
+    <?php
+$author_bio = <<<'BIO'
+Expatrié à Hanoï. J'ai visité une vingtaine d'appartements avant de signer mon bail — ces conseils viennent de mon expérience directe et des retours de la communauté expat francophone.
+BIO;
+$author_links = <<<'LINKS'
+<a href="a-propos-capvietnam">À propos →</a>
           <a href="budget-mensuel-hanoi-2026">Budget mensuel à Hanoï →</a>
-        </div>
-      </div>
-    </div>
+LINKS;
+include '_author-box.php';
+?>
 
     <div class="cta-newsletter">
       <h3>Reçois les prochains guides</h3>

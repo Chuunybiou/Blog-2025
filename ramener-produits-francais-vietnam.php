@@ -255,17 +255,16 @@ include 'header.php';
       <p class="cta-rgpd">En t'inscrivant, tu acceptes la <a href="confidentialite-capvietnam">politique de confidentialité</a> — <a href="pack-gratuit" style="color:#4db890">voir le pack →</a></p>
     </div>
 
-    <div class="author-box">
-      <div class="author-avatar" style="display:flex;align-items:center;justify-content:center;background:#c0846e;color:#fff;font-weight:700;font-size:1.5rem;border-radius:50%;width:72px;height:72px;flex-shrink:0;">AB</div>
-      <div class="author-info">
-        <h4>Anthony Bouillon</h4>
-        <p>Français marié à une Vietnamienne, entre France, Canada et Vietnam. Je fais le voyage France-Vietnam plusieurs fois par an — ce que j'emporte, c'est ce que j'ai appris à naviguer.</p>
-        <div class="author-links">
-          <a href="https://www.tiktok.com/@proffrancaisetranger" target="_blank" rel="noopener">TikTok</a>
+    <?php
+$author_bio = <<<'BIO'
+Français marié à une Vietnamienne, entre France, Canada et Vietnam. Je fais le voyage France-Vietnam plusieurs fois par an — ce que j'emporte, c'est ce que j'ai appris à naviguer.
+BIO;
+$author_links = <<<'LINKS'
+<a href="https://www.tiktok.com/@proffrancaisetranger" target="_blank" rel="noopener">TikTok</a>
           <a href="a-propos-capvietnam">À propos</a>
-        </div>
-      </div>
-    </div>
+LINKS;
+include '_author-box.php';
+?>
   </main>
 </div>
 

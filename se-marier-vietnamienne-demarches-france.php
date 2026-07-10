@@ -178,14 +178,12 @@ include 'header.php';
       <div class="faq-answer">Non légalement, mais un interprète peut être demandé lors de l'entretien au Comité populaire. En pratique, la conjointe vietnamienne assure souvent la traduction, et les documents officiels sont tous traduits par un traducteur assermenté.</div>
     </div>
 
-    <div class="author-box">
-      <div class="author-avatar" style="overflow:hidden;position:relative;"><img src="assets/img/profile/anthony-profil.jpg" alt="Anthony Bouillon" width="72" height="72" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"></div>
-      <div class="author-info">
-        <h4>Anthony Bouillon</h4>
-        <p>Informations basées sur le Code civil français, la Loi vietnamienne sur le mariage et la famille n°52/2014/QH13 et la convention consulaire franco-vietnamienne.</p>
-        <div class="author-links"><a href="a-propos-capvietnam">À propos →</a></div>
-      </div>
-    </div>
+    <?php
+$author_bio = <<<'BIO'
+Informations basées sur le Code civil français, la Loi vietnamienne sur le mariage et la famille n°52/2014/QH13 et la convention consulaire franco-vietnamienne.
+BIO;
+include '_author-box.php';
+?>
 
     <div class="cta-newsletter">
       <h3>Reçois les prochains guides</h3>

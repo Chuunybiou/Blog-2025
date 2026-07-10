@@ -331,19 +331,16 @@ include 'header.php';
     </div>
 
     <!-- AUTHOR BOX -->
-    <div class="author-box">
-      <div class="author-avatar" style="overflow:hidden;position:relative;">
-        <img src="<?= PROFILE_PHOTO ?>" alt="Anthony Bouillon — Cap Vietnam" width="72" height="72" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;">
-      </div>
-      <div class="author-info">
-        <h4>Anthony Bouillon</h4>
-        <p>Français installé au Vietnam avec ma femme vietnamienne. Je partage mes retours d'expérience concrets — les démarches, les finances, la vie au quotidien — sans inventer ce que je n'ai pas vécu.</p>
-        <div class="author-links">
-          <a href="a-propos-capvietnam">À propos →</a>
+    <?php
+$author_bio = <<<'BIO'
+Français installé au Vietnam avec ma femme vietnamienne. Je partage mes retours d'expérience concrets — les démarches, les finances, la vie au quotidien — sans inventer ce que je n'ai pas vécu.
+BIO;
+$author_links = <<<'LINKS'
+<a href="a-propos-capvietnam">À propos →</a>
           <a href="<?= SITE_TIKTOK ?>" target="_blank" rel="noopener">TikTok</a>
-        </div>
-      </div>
-    </div>
+LINKS;
+include '_author-box.php';
+?>
 
   </main>
 </div>

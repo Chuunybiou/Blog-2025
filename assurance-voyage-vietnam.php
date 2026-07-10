@@ -305,14 +305,12 @@ include 'header.php';
     </div>
     <?php endforeach; ?>
 
-    <div class="author-box">
-      <div class="author-avatar" style="overflow:hidden;position:relative;"><img src="assets/img/profile/anthony-profil.jpg" alt="Anthony Bouillon" width="72" height="72" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"></div>
-      <div class="author-info">
-        <h4>Anthony Bouillon</h4>
-        <p>Français installé à Hanoï. Partenaire ACS — les liens dans cet article sont affiliés et me permettent de maintenir le blog gratuitement. Ils ne changent pas le tarif pour vous.</p>
-        <div class="author-links"><a href="a-propos-capvietnam">À propos →</a></div>
-      </div>
-    </div>
+    <?php
+$author_bio = <<<'BIO'
+Français installé à Hanoï. Partenaire ACS — les liens dans cet article sont affiliés et me permettent de maintenir le blog gratuitement. Ils ne changent pas le tarif pour vous.
+BIO;
+include '_author-box.php';
+?>
 
     <div class="cta-newsletter">
       <h3>Reçois les prochains guides</h3>

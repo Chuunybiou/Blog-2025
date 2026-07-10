@@ -238,14 +238,12 @@ include 'header.php';
       <div class="faq-answer">Oui, et beaucoup d'expatriés le font — mais le budget Grab monte rapidement (3 à 6 M VND/mois si usage quotidien). La ligne de métro 1 (ouverte en 2025) dessert l'axe est mais ne couvre pas encore les quartiers expats principaux. Un scooter reste le meilleur rapport liberté/coût pour un séjour de plus de 3 mois.</div>
     </div>
 
-    <div class="author-box">
-      <div class="author-avatar" style="overflow:hidden;position:relative;"><img src="assets/img/profile/anthony-profil.jpg" alt="Anthony Bouillon" width="72" height="72" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"></div>
-      <div class="author-info">
-        <h4>Anthony Bouillon</h4>
-        <p>Basé à Hanoï mais avec des passages réguliers à HCMC. Chiffres compilés en 2026 auprès de la communauté expat francophone dans les deux villes.</p>
-        <div class="author-links"><a href="a-propos-capvietnam">À propos →</a></div>
-      </div>
-    </div>
+    <?php
+$author_bio = <<<'BIO'
+Basé à Hanoï mais avec des passages réguliers à HCMC. Chiffres compilés en 2026 auprès de la communauté expat francophone dans les deux villes.
+BIO;
+include '_author-box.php';
+?>
 
     <div class="cta-newsletter">
       <h3>Reçois les prochains guides</h3>

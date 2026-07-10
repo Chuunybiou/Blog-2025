@@ -122,7 +122,7 @@ $page_extra_css = "
 .faq-item.open .faq-answer{max-height:400px;padding:0 1.25rem 1.25rem}
 .author-box{display:flex;gap:1.5rem;align-items:flex-start;background:var(--white);padding:2rem;border-radius:var(--radius);box-shadow:var(--shadow-sm);margin:3rem 0}
 .author-avatar{width:72px;height:72px;border-radius:50%;flex-shrink:0;background:linear-gradient(135deg,var(--{$_c}),var(--jade));display:flex;align-items:center;justify-content:center;font-size:1.8rem}
-.author-info h4{font-family:\"DM Serif Display\",serif;font-size:1.1rem;margin-bottom:0.3rem}
+.author-info h3{font-family:\"DM Serif Display\",serif;font-size:1.1rem;margin-bottom:0.3rem}
 .author-info p{color:var(--muted);font-size:0.9rem;margin-bottom:0.5rem}
 .author-links{display:flex;gap:0.75rem}.author-links a{font-size:0.8rem;color:var(--{$_c});text-decoration:none;font-weight:600;transition:0.2s}
 .article-nav{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin:3rem 0;padding-top:3rem;border-top:1px solid var(--border)}

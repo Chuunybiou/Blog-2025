@@ -269,14 +269,12 @@ include 'header.php';
       <div class="faq-answer">Oui. Le détachement à l'international (article L1261-1 du Code du travail) permet à un employeur français d'envoyer un salarié au Vietnam temporairement, sous certaines conditions. Le salarié détaché reste soumis au droit du travail français et à la sécurité sociale française (dans la limite des accords bilatéraux existants).</div>
     </div>
 
-    <div class="author-box">
-      <div class="author-avatar" style="overflow:hidden;position:relative;"><img src="assets/img/profile/anthony-profil.jpg" alt="Anthony Bouillon" width="72" height="72" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"></div>
-      <div class="author-info">
-        <h4>Anthony Bouillon</h4>
-        <p>Ces informations sont générales et ne constituent pas un conseil fiscal. Pour ta situation spécifique, consulte un expert-comptable ou un avocat fiscaliste spécialisé en expatriation.</p>
-        <div class="author-links"><a href="a-propos-capvietnam">À propos →</a></div>
-      </div>
-    </div>
+    <?php
+$author_bio = <<<'BIO'
+Ces informations sont générales et ne constituent pas un conseil fiscal. Pour ta situation spécifique, consulte un expert-comptable ou un avocat fiscaliste spécialisé en expatriation.
+BIO;
+include '_author-box.php';
+?>
 
     <div class="cta-newsletter">
       <h3>Reçois les prochains guides</h3>

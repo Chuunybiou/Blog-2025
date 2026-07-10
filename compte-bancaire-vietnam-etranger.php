@@ -223,14 +223,12 @@ include 'header.php';
       <div class="faq-answer">Oui, via le service de virement international (chuyển tiền quốc tế) de ta banque. Les délais sont de 2 à 5 jours ouvrés, les frais varient de 20 à 50 USD selon la banque. Wise reste généralement moins cher pour les petites sommes.</div>
     </div>
 
-    <div class="author-box">
-      <div class="author-avatar" style="overflow:hidden;position:relative;"><img src="assets/img/profile/anthony-profil.jpg" alt="Anthony Bouillon" width="72" height="72" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"></div>
-      <div class="author-info">
-        <h4>Anthony Bouillon</h4>
-        <p>Blog d'un Français installé à Hanoï avec sa femme vietnamienne. Démarches admin, vie quotidienne et finances d'expat — uniquement des informations vérifiées.</p>
-        <div class="author-links"><a href="a-propos-capvietnam">À propos →</a></div>
-      </div>
-    </div>
+    <?php
+$author_bio = <<<'BIO'
+Blog d'un Français installé à Hanoï avec sa femme vietnamienne. Démarches admin, vie quotidienne et finances d'expat — uniquement des informations vérifiées.
+BIO;
+include '_author-box.php';
+?>
 
     <div class="cta-newsletter">
       <h3>Reçois les prochains guides</h3>
