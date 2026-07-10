@@ -246,8 +246,8 @@ $page_extra_css = '
 .home-v2 .catcards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .home-v2 .catcard{background:#fff;border:1px solid var(--line2);border-radius:var(--radius2);overflow:hidden;text-decoration:none;display:flex;flex-direction:column;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
 .home-v2 a.catcard:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(35,40,31,.12);border-color:var(--hanoi)}
-.home-v2 .catcard img{aspect-ratio:16/8.5;object-fit:cover;width:100%}
-.home-v2 picture{display:contents}
+.home-v2 .catcard img{height:300px;object-fit:cover;width:100%}
+.home-v2 picture{display:block;width:100%}
 .home-v2 .catcard-body{padding:20px 22px 22px}
 .home-v2 .catcard h3{font-size:1.14rem;margin-bottom:.4rem;display:flex;align-items:baseline;gap:.6em}
 .home-v2 .catcard h3 b{font-family:var(--font-mono2);font-weight:500;font-size:.72rem;color:var(--shutter)}
@@ -297,7 +297,7 @@ $page_extra_css = '
 .home-v2 .comm-quote img{width:42px;height:42px;border-radius:50%;object-fit:cover;border:2px solid var(--hanoi)}
 .home-v2 .comm-quote a{color:var(--shutter)}
 .home-v2 .comm-photo{position:relative}
-.home-v2 .comm-photo img{border-radius:var(--radius2);box-shadow:0 22px 55px rgba(35,40,31,.18);width:100%;object-fit:cover}
+.home-v2 .comm-photo img{border-radius:var(--radius2);box-shadow:0 22px 55px rgba(35,40,31,.18);width:100%;height:600px;object-fit:cover}
 .home-v2 .comm-photo figcaption{margin-top:.7rem;font-size:.64rem}
 
 /* --- pack --- */
