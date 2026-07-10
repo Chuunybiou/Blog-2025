@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 
 // Load articles from JSON
@@ -130,6 +130,11 @@ $page_extra_css = '
 .nl-rgpd a{color:rgba(250,248,244,0.45)}
 @media(max-width:1000px){.articles-grid{grid-template-columns:repeat(2,1fr)}.featured-card{grid-template-columns:1fr}.featured-visual{min-height:220px}}
 @media(max-width:640px){.articles-grid{grid-template-columns:1fr}.hero-stats{flex-direction:column;gap:1rem}.search-box input{width:140px}.filters-bar{flex-direction:column;align-items:flex-start}.nl-form{flex-direction:column}}
+.pagination{display:flex;justify-content:center;align-items:center;gap:.5rem;flex-wrap:wrap;margin-top:2.5rem}
+.page-btn{padding:.55rem 1rem;border-radius:8px;border:1px solid var(--border);background:var(--white);font-family:inherit;font-size:.85rem;font-weight:500;color:var(--muted);cursor:pointer;transition:all .2s;min-width:2.4rem}
+.page-btn:hover:not(:disabled){border-color:var(--ink);color:var(--ink)}
+.page-btn.active{background:var(--ink);color:var(--cream);border-color:var(--ink)}
+.page-btn:disabled{opacity:.4;cursor:not-allowed}
 .portal-section{max-width:1200px;margin:0 auto;padding:2.5rem 2rem 0}
 .portal-pretitle{font-size:0.72rem;letter-spacing:3px;text-transform:uppercase;color:var(--muted);font-weight:600;margin-bottom:1.25rem}
 .portal-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:1.25rem}
@@ -227,7 +232,7 @@ include 'header.php';
   </div>
   <div class="search-box">
     <span class="search-icon">🔍</span>
-    <input type="text" id="searchInput" placeholder="Rechercher un article…" oninput="filterArticles()">
+    <input type="text" id="searchInput" placeholder="Rechercher un article…">
   </div>
 </div>
 <div class="results-count" id="resultsCount"><?= $_count ?> articles</div>
@@ -287,6 +292,7 @@ foreach ($_grid as $a):
 <?php endforeach; ?>
 
   </div>
+  <div class="pagination" id="pagination"></div>
 </section>
 
 <section class="newsletter-band">
@@ -303,10 +309,13 @@ foreach ($_grid as $a):
 
 <script>
 let activeFilter = '<?= $_initial_filter ?>';
+let currentPage  = 1;
+const PAGE_SIZE  = 12;
 const tabs         = document.querySelectorAll('.filter-tab');
 const cards        = document.querySelectorAll('.article-card');
 const featured     = document.querySelector('.featured-card');
 const featuredWrap = document.querySelector('.featured');
+const paginationEl = document.getElementById('pagination');
 const filterClassMap = {
   couple: 'active-couple', mariage: 'active-mariage',
   'vivre-ensemble': 'active-vivre-ensemble', argent: 'active-argent', 'vie-pratique': 'active-vie-pratique',
@@ -324,7 +333,7 @@ function setPortalFilter(f) {
   tabs.forEach(t => { t.className = 'filter-tab'; });
   const tab = document.querySelector(`.filter-tab[data-filter="${f}"]`);
   if (tab) { activeFilter = f; tab.classList.add(filterClassMap[f] || 'active'); }
-  filterArticles();
+  filterArticles(true);
 }
 
 tabs.forEach(tab => {
@@ -333,7 +342,7 @@ tabs.forEach(tab => {
     const f = tab.dataset.filter;
     activeFilter = f;
     tab.classList.add(f === 'all' ? 'active' : (filterClassMap[f] || 'active'));
-    filterArticles();
+    filterArticles(true);
   });
 });
 
@@ -343,31 +352,64 @@ if (activeFilter !== 'all') {
   if (preTab) preTab.classList.add(filterClassMap[activeFilter] || 'active');
 }
 
-function filterArticles() {
+function renderPagination(totalPages) {
+  if (!paginationEl) return;
+  if (totalPages <= 1) { paginationEl.innerHTML = ''; return; }
+  let html = `<button class="page-btn" ${currentPage === 1 ? 'disabled' : ''} onclick="goToPage(${currentPage - 1})">← Précédent</button>`;
+  for (let p = 1; p <= totalPages; p++) {
+    html += `<button class="page-btn ${p === currentPage ? 'active' : ''}" onclick="goToPage(${p})">${p}</button>`;
+  }
+  html += `<button class="page-btn" ${currentPage === totalPages ? 'disabled' : ''} onclick="goToPage(${currentPage + 1})">Suivant →</button>`;
+  paginationEl.innerHTML = html;
+}
+
+function goToPage(p) {
+  currentPage = p;
+  filterArticles(false);
+  document.querySelector('.articles-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function filterArticles(resetPage) {
   const search = document.getElementById('searchInput').value.toLowerCase();
-  let count = 0;
+  if (resetPage) currentPage = 1;
+
   if (featured && featuredWrap) {
     const featShow = matchesFilter(featured.dataset.cat, featured.dataset.tags) &&
                      (search === '' || featured.textContent.toLowerCase().includes(search));
     featuredWrap.style.display = featShow ? '' : 'none';
-    if (featShow) count++;
   }
+
+  const matching = [];
   cards.forEach(card => {
     const title = (card.dataset.title || '') + ' ' + card.textContent.toLowerCase();
     const show  = matchesFilter(card.dataset.cat, card.dataset.tags) &&
                   (search === '' || title.includes(search));
-    card.style.display = show ? '' : 'none';
-    if (show) count++;
+    if (show) matching.push(card);
+    else card.style.display = 'none';
   });
+
+  const totalPages = Math.max(1, Math.ceil(matching.length / PAGE_SIZE));
+  if (currentPage > totalPages) currentPage = totalPages;
+  const start = (currentPage - 1) * PAGE_SIZE;
+
+  matching.forEach((card, i) => {
+    const onThisPage = i >= start && i < start + PAGE_SIZE;
+    card.style.display = onThisPage ? '' : 'none';
+    if (onThisPage) { card.style.opacity = '1'; card.style.transform = 'translateY(0)'; }
+  });
+
+  renderPagination(totalPages);
+
   const rc = document.getElementById('resultsCount');
-  if (count === 0 && activeFilter !== 'all') {
+  if (matching.length === 0 && activeFilter !== 'all') {
     rc.textContent = '🕐 Articles à venir dans cette catégorie';
   } else {
-    rc.textContent = count + ' article' + (count > 1 ? 's' : '');
+    rc.textContent = matching.length + ' article' + (matching.length > 1 ? 's' : '');
   }
 }
 
-if (activeFilter !== 'all') filterArticles();
+document.getElementById('searchInput').addEventListener('input', () => filterArticles(true));
+filterArticles(true);
 
 const _observer = new IntersectionObserver(entries => {
   entries.forEach(e => { if(e.isIntersecting){e.target.style.opacity='1';e.target.style.transform='translateY(0)';}});

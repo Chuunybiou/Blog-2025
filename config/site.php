@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // Central configuration — edit here, propagates everywhere
 define('SITE_NAME',       'Cap Vietnam');
 define('SITE_URL',        'https://blog-capvietnam.fr');

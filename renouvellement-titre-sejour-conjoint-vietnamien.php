@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 
 $page_title       = 'Renouveler le titre de séjour de son conjoint vietnamien en France (2026)';

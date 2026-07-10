@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 
 $page_title       = 'Quitter le Canada pour le Vietnam — Cap Vietnam';

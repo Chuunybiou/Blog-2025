@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 $page_title       = 'Transcription mariage au SCEC de Nantes : dossier et délais 2026';
 $page_description = 'Comment faire transcrire ton mariage vietnamien au Service Central d\'État Civil de Nantes ? Documents requis, délais de traitement et erreurs à éviter pour une transcription réussie.';

@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 $page_title       = 'Visa long séjour conjoint de Français : dossier complet 2026';
 $page_description = 'Comment obtenir le visa long séjour pour ton conjoint vietnamien en France ? Documents requis, dépôt via VFS Global, délais et conseils pour un dossier solide.';

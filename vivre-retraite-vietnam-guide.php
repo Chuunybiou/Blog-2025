@@ -6,7 +6,7 @@ $page_canonical   = SITE_URL . '/vivre-retraite-vietnam-guide';
 $page_og_title    = 'Vivre sa retraite au Vietnam : le guide complet 2026';
 $page_og_desc     = 'Budget, santé, logement, sécurité, vie sociale — tout ce qu\'un retraité français doit savoir avant de s\'installer au Vietnam.';
 $page_og_url      = SITE_URL . '/vivre-retraite-vietnam-guide';
-$page_og_image    = 'https://images.unsplash.com/photo-1540541338537-71cf2b054dcb?w=1200&q=80';
+$page_og_image    = SITE_URL . '/assets/img/rue-village-karsts-phong-nha.jpg';
 $page_schema      = json_encode([
   '@context'        => 'https://schema.org',
   '@type'           => 'Article',

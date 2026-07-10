@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 
 $page_title       = 'Transférer de l\'argent vers le Vietnam avec Wise';

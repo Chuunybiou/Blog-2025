@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 
 $page_title       = 'Argent et couple franco-vietnamien : ce qu\'on ne dit pas assez';

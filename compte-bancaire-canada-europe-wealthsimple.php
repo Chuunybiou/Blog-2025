@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 $page_title       = 'Compte bancaire au Canada depuis l\'Europe : guide Wealthsimple 2026';
 $page_description = 'Comment ouvrir un compte bancaire canadien depuis la France ou l\'Europe avec Wealthsimple ? CELI, compte chèques, investissement : guide complet pour les expatriés.';

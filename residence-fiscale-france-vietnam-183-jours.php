@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 $page_title       = 'Résidence fiscale France-Vietnam et règle des 183 jours : guide 2026';
 $page_description = 'Résidence fiscale France ou Vietnam ? Les 4 critères français, la règle des 183 jours, comment la convention de 1993 tranche les conflits. 3 cas concrets pour expatriés.';

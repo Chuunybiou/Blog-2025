@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 $page_title       = 'Entretien à l\'ambassade de France au Vietnam pour visa conjoint : comment se préparer';
 $page_description = 'L\'ambassade de France peut convoquer ton conjoint vietnamien à un entretien avant de délivrer le visa long séjour. Voici ce qu\'il faut préparer pour maximiser les chances de succès.';

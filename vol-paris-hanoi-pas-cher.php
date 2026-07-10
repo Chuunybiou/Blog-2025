@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 
 $page_title       = 'Vol Paris-Hanoï pas cher : escales, compagnies et comment comparer les prix';

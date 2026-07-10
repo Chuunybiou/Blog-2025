@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 
 $page_title       = 'Se marier avec une Vietnamienne : toutes les démarches';
@@ -180,7 +180,7 @@ include 'header.php';
 
     <?php
 $author_bio = <<<'BIO'
-Informations basées sur le Code civil français, la Loi vietnamienne sur le mariage et la famille n°52/2014/QH13 et la convention consulaire franco-vietnamienne.
+Français marié à une Vietnamienne, installé à Hanoï. Je partage notre parcours : démarches administratives, mariage franco-vietnamien, vie de couple mixte.
 BIO;
 include '_author-box.php';
 ?>

@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 $page_title       = 'Prendre sa retraite au Vietnam : le guide 2026';
 $page_description = 'Visa, pension, santé, fiscalité, budget : tout ce qu\'un retraité français doit savoir avant de s\'installer au Vietnam. Sans visa retraité, voici comment font les expatriés.';

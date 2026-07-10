@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 $page_title       = 'Travailler à distance depuis le Vietnam : le guide complet 2026';
 $page_description = 'Télétravail, portage salarial, micro-entreprise ou contrat local : tout ce qu\'un Français doit savoir pour travailler légalement depuis le Vietnam. Fiscalité, visa, protection sociale.';

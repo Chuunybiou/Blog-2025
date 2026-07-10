@@ -242,7 +242,7 @@ $page_extra_css = '
 .home-v2 .sim-tag{font-family:var(--font-mono2);font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;color:var(--hanoi);border:1px solid var(--hanoi);border-radius:6px;padding:.3em .7em;width:max-content;margin-bottom:.3rem}
 .home-v2 .sim h3{font-size:1.25rem}
 .home-v2 .sim p{color:rgba(251,246,236,.75);font-size:.93rem;flex:1}
-.home-v2 .sim-meta{color:rgba(251,246,236,.5)!important;font-size:.64rem!important}
+.home-v2 .sim-meta{color:rgba(251,246,236,.65)!important;font-size:.64rem!important}
 
 /* --- cartes catégories avec photos --- */
 .home-v2 .catcards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
@@ -313,7 +313,7 @@ $page_extra_css = '
 .home-v2 .pack-form label{font-family:var(--font-mono2);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(251,246,236,.7);display:block;margin-bottom:.6rem}
 .home-v2 .pack-form input{width:100%;padding:.9em 1.1em;border-radius:10px;border:1px solid rgba(251,246,236,.3);background:rgba(251,246,236,.95);font-family:var(--font-body2);font-size:1rem;margin-bottom:14px}
 .home-v2 .pack-form .btn{width:100%;justify-content:center}
-.home-v2 .pack-form small{display:block;margin-top:12px;font-size:.78rem;color:rgba(251,246,236,.6);text-align:center}
+.home-v2 .pack-form small{display:block;margin-top:12px;font-size:.78rem;color:rgba(251,246,236,.75);text-align:center}
 .home-v2 .pack-form small a{color:rgba(251,246,236,.8)}
 
 /* --- FAQ --- */
@@ -386,16 +386,16 @@ include 'header.php';
 <!-- ═══════ LIGNE DE VIE (panneaux statiques, indexables) ═══════ -->
 <section class="journey-zone">
   <div class="wrap">
-    <div class="journey" role="tablist" aria-label="Les étapes du couple franco-vietnamien, dans l'ordre">
+    <div class="journey">
       <p class="journey-label mono">TOUTES LES ÉTAPES DANS L'ORDRE — DE LA RENCONTRE À LA RETRAITE. CLIQUE SUR LA TIENNE.</p>
-      <div class="journey-line">
-        <span class="terminus">01</span>
+      <div class="journey-line" role="tablist" aria-label="Les étapes du couple franco-vietnamien, dans l'ordre">
+        <span class="terminus" aria-hidden="true">01</span>
         <button class="station" id="hv-st-0" role="tab" aria-selected="false" aria-controls="hv-panel-0" data-step="0"><i></i><span>Comprendre<br>&amp; se préparer</span></button>
         <button class="station" id="hv-st-1" role="tab" aria-selected="true" aria-controls="hv-panel-1" data-step="1"><i></i><span>Se marier</span></button>
         <button class="station" id="hv-st-2" role="tab" aria-selected="false" aria-controls="hv-panel-2" data-step="2"><i></i><span>Vivre ensemble —<br>choisir où s'installer</span></button>
         <button class="station" id="hv-st-3" role="tab" aria-selected="false" aria-controls="hv-panel-3" data-step="3"><i></i><span>Avoir<br>des enfants</span></button>
         <button class="station" id="hv-st-4" role="tab" aria-selected="false" aria-controls="hv-panel-4" data-step="4"><i></i><span>Long terme<br>&amp; retraite</span></button>
-        <span class="terminus">05</span>
+        <span class="terminus" aria-hidden="true">05</span>
       </div>
 
       <div class="journey-panels">
@@ -410,7 +410,7 @@ include 'header.php';
               <li><a href="argent-couple-franco-vietnamien">Gérer l'argent en couple franco-vietnamien — compte joint, dépenses, famille</a></li>
             </ul></div>
             <a class="jp-tool" href="par-ou-commencer-couple-franco-vietnamien">
-              <span class="mono" style="color:var(--tampon)">HUB LIÉ</span>
+              <span class="mono" style="color:var(--hanoi)">HUB LIÉ</span>
               <strong>Par où commencer ?</strong>
               <span class="jp-tool-desc">De la rencontre à la vie installée — toutes les étapes classées, choisis ta branche France ou Vietnam.</span>
               <span class="go">Ouvrir →</span>
@@ -429,7 +429,7 @@ include 'header.php';
               <li><a href="prix-mariage-franco-vietnamien">Coût d'un mariage franco-vietnamien — budget réel</a></li>
             </ul></div>
             <a class="jp-tool" href="retroplanning-faire-venir-conjoint">
-              <span class="mono" style="color:var(--tampon)">SIMULATEUR LIÉ</span>
+              <span class="mono" style="color:var(--hanoi)">SIMULATEUR LIÉ</span>
               <strong>Rétroplanning — visa &amp; titre de séjour conjoint</strong>
               <span class="jp-tool-desc">Entre ta date de lancement CCAM, obtiens chaque échéance jusqu'à l'arrivée en France.</span>
               <span class="go">Ouvrir →</span>
@@ -455,7 +455,7 @@ include 'header.php';
               </ul>
             </div>
             <a class="jp-tool" href="simulateur-residence-vietnam">
-              <span class="mono" style="color:var(--tampon)">SIMULATEUR LIÉ</span>
+              <span class="mono" style="color:var(--hanoi)">SIMULATEUR LIÉ</span>
               <strong>Rétroplanning — résidence et installation Vietnam</strong>
               <span class="jp-tool-desc">Entre ta date de départ, obtiens ton plan d'action personnalisé semaine par semaine.</span>
               <span class="go">Ouvrir →</span>
@@ -472,7 +472,7 @@ include 'header.php';
               <li><a href="vivre-hanoi-avec-enfant-ecole-creche">Vivre à Hanoï avec un enfant — LFAY, crèches bilingues, frais 2026-2027</a></li>
             </ul></div>
             <a class="jp-tool" href="calculateur-budget-vietnam">
-              <span class="mono" style="color:var(--tampon)">CALCULATEUR LIÉ</span>
+              <span class="mono" style="color:var(--hanoi)">CALCULATEUR LIÉ</span>
               <strong>Coût de la vie au Vietnam</strong>
               <span class="jp-tool-desc">Estime ton budget mensuel à Hanoï ou Hô Chi Minh-Ville avec des chiffres réels.</span>
               <span class="go">Ouvrir →</span>
@@ -491,7 +491,7 @@ include 'header.php';
               <li><a href="pacs-vietnamienne-reconnaissance">PACS avec un(e) Vietnamien(ne) — reconnaissance et droits</a></li>
             </ul></div>
             <a class="jp-tool" href="calculateur-budget-vietnam">
-              <span class="mono" style="color:var(--tampon)">CALCULATEUR LIÉ</span>
+              <span class="mono" style="color:var(--hanoi)">CALCULATEUR LIÉ</span>
               <strong>Coût de la vie au Vietnam</strong>
               <span class="jp-tool-desc">Estime ton budget mensuel à Hanoï ou Hô Chi Minh-Ville avec des chiffres réels.</span>
               <span class="go">Ouvrir →</span>

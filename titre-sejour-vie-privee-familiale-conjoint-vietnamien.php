@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 $page_title       = 'Titre de séjour vie privée et familiale pour conjoint vietnamien : guide 2026';
 $page_description = 'Comment demander le titre de séjour "vie privée et familiale" pour ton conjoint vietnamien en France ? Dossier ANEF, renouvellement et passage en carte de résident expliqués.';

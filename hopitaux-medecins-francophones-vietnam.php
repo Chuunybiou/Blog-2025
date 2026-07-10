@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 $page_title       = 'Médecins et hôpitaux francophones au Vietnam (2026)';
 $page_description = 'Où consulter en français au Vietnam ? Hôpitaux internationaux à Hanoï et Hô Chi Minh-Ville, médecins francophones, assurance santé expat et urgences : tout ce qu\'il faut savoir.';

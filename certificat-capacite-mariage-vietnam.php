@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 $page_title       = 'CCAM — Certificat de Capacité à Mariage : comment l\'obtenir au consulat de France';
 $page_description = 'Le CCAM (Certificat de Capacité à Mariage) est délivré par le consulat français AVANT le mariage au Vietnam. À demander 4 mois avant : mode d\'emploi complet, documents, délais.';

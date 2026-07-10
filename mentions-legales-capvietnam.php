@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 $page_title       = 'Mentions légales — Cap Vietnam';
 $page_description = 'Mentions légales du blog Cap Vietnam : éditeur, hébergeur, propriété intellectuelle et responsabilité.';

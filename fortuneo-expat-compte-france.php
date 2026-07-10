@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 
 $page_title       = 'Fortuneo depuis l\'étranger : ce qui change en expatriation';

@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 $page_title       = 'Portage salarial ou micro-entreprise au Vietnam : lequel choisir ?';
 $page_description = 'Portage salarial ou micro-entreprise quand on vit au Vietnam ? Tableau comparatif complet, piège de la domiciliation, arbre de décision pour freelances français expatriés.';

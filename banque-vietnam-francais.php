@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 
 $page_title       = 'Compte bancaire au Vietnam pour Français — Vietcombank, Techcombank, Wise';

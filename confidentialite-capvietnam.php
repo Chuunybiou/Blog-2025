@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 $page_title       = 'Politique de confidentialité — Cap Vietnam';
 $page_description = 'Politique de confidentialité de Cap Vietnam : collecte des données, cookies, newsletter, droits RGPD des utilisateurs.';

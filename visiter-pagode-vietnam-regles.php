@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 
 $page_title       = 'Visiter une pagode au Vietnam : tenue, chaussures et comportement à adopter';

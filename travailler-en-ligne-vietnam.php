@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 $page_title       = 'Travailler en ligne depuis le Vietnam — Cap Vietnam';
 $page_description = 'Travailler en ligne depuis le Vietnam légalement : statut juridique, obligations fiscales, visas adaptés et vie de nomade digital à Hanoï.';

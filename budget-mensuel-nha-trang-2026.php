@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 $page_title       = 'Budget mensuel à Nha Trang en 2026 : combien ça coûte vraiment ?';
 $page_description = 'Loyer, nourriture, mer, transports : budget réel d\'un expatrié à Nha Trang en 2026. Avantages et inconvénients de la ville balnéaire pour s\'installer durablement.';

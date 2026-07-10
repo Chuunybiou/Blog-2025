@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 $page_title       = 'Téléphone au Vietnam : quelle SIM choisir en 2026 (locale vs internationale)';
 $page_description = 'SIM locale Viettel, Vinaphone, Mobifone ou carte SIM internationale pour l\'Asie ? Mon comparatif complet pour choisir la bonne SIM avant de partir au Vietnam.';

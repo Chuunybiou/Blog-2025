@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 $page_title       = 'Visa TT et carte de résidence temporaire (TRC) pour mariage au Vietnam : guide 2026';
 $page_description = 'Si tu es marié(e) avec un(e) Vietnamien(ne) et tu vis au Vietnam, le visa TT et la carte de résidence temporaire (TRC) sont ta solution légale de long séjour. Guide pratique 2026.';

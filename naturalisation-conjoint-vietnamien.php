@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 
 $page_title       = 'Naturalisation du conjoint vietnamien en France : conditions, dossier et délais (2026)';

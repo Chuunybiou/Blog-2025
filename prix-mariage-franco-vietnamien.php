@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 
 $page_title       = 'Prix d\'un mariage franco-vietnamien : budget réel et à quoi s\'attendre';

@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Dynamic related articles section.
  * Set before including:

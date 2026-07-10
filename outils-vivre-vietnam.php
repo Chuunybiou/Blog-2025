@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 $page_title       = 'Mes outils pour vivre au Vietnam — Ressources expat 2026';
 $page_description = 'Les outils que j\'utilise vraiment pour vivre entre le Canada, la France et le Vietnam : banques, VPN, SIM, assurance santé, traduction, transport. Uniquement ce que j\'ai testé.';

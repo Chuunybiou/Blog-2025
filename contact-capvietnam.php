@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 $page_title       = 'Contact — Cap Vietnam';
 $page_description = 'Poser une question sur l\'expatriation au Vietnam, proposer une collaboration ou partager ton témoignage — écris-moi directement.';

@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 
 $page_title       = 'Le Tết vietnamien vu de l\'intérieur — Cap Vietnam';

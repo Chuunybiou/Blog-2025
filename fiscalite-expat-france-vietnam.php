@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 $page_title       = 'Fiscalité expatrié France-Vietnam — Cap Vietnam';
 $page_description = 'Fiscalité des expatriés français au Vietnam : convention de non-double imposition, résidence fiscale, déclaration de revenus et obligations depuis l\'étranger.';

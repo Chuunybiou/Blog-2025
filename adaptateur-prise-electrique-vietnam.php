@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 
 $page_title       = 'Adaptateur prise électrique Vietnam : ce qu\'il faut savoir avant de partir';

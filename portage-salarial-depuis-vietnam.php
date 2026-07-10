@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 $page_title       = 'Portage salarial depuis le Vietnam : guide complet 2026';
 $page_description = 'Comment utiliser le portage salarial pour travailler légalement depuis le Vietnam ? Choix de la société, simulation de salaire net, résidence fiscale et protection sociale.';

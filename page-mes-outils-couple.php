@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 $page_title       = 'Mes outils gratuits pour le couple franco-vietnamien — Cap Vietnam';
 $page_description = 'Rétroplannings, parcours guidé et calculateur de budget : 4 outils interactifs gratuits pour faire venir son conjoint en France ou s\'installer au Vietnam.';

@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/../config/site.php';
 $page_title = 'Checklist CCAM — Documents pour le certificat de capacité à mariage (2026)';
 ?>

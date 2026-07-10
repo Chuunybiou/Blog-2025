@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 $page_title       = 'Budget mensuel à Hué en 2026 : vivre dans l\'ancienne capitale du Vietnam';
 $page_description = 'Combien coûte la vie à Hué en 2026 ? Logement, nourriture locale, culture et transports. Hué est l\'une des villes les moins chères du Vietnam — idéale pour un séjour longue durée.';

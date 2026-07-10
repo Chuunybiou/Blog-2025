@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 $page_title       = 'Faire venir son conjoint(e) vietnamien(ne) en France : guide complet 2026';
 $page_description = 'CCAM, mariage au Vietnam, transcription Nantes, visa long séjour, titre de séjour : toutes les étapes pour faire venir ton conjoint vietnamien en France. Procédures, délais et coûts.';

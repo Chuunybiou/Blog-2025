@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 
 // Raccourcis pour les noms de fichiers images (éviter la répétition des longs hashs)

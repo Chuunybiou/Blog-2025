@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 $page_title       = 'Hanoï vs Hô Chi Minh-Ville : où s\'installer au Vietnam en 2026 ?';
 $page_description = 'Hanoï ou Saigon pour vivre au Vietnam ? Climat, coût de la vie, ambiance, communauté d\'expats, emploi : comparatif honnête pour choisir ta ville d\'installation.';

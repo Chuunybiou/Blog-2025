@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 $path_prefix      = $path_prefix      ?? '';
 $page_lang        = $page_lang        ?? 'fr';
@@ -74,12 +74,12 @@ $page_extra_css   = $page_extra_css   ?? '';
 <link rel="dns-prefetch" href="//www.amazon.fr">
 
 <!-- Non-render-blocking font load -->
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Libre+Franklin:wght@300;400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Libre+Franklin:wght@300;400;500;600;700&display=swap"></noscript>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Libre+Franklin:wght@300;400;500;600;700&display=optional" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Libre+Franklin:wght@300;400;500;600;700&display=optional"></noscript>
 
 <!-- Nav/footer "carnet papier" fonts — additive, does not replace DM Serif Display / Libre Franklin used elsewhere on pages -->
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap"></noscript>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=optional" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=optional"></noscript>
 
 <!-- Font fallback while web fonts load -->
 <style>body{font-family:Georgia,serif}nav,footer,.section-label,.article-badge-hero,.breadcrumb,.toc-label,.toc-list,.article-hero-meta,.author-info p,.related-card p{font-family:system-ui,-apple-system,sans-serif}</style>
@@ -342,6 +342,7 @@ footer {
   transition: color 0.2s;
 }
 .footer-col a:hover { color: var(--paper); }
+footer .nav-logo span { color: var(--hanoi); }
 .footer-bottom {
   max-width: 1120px;
   margin: 0 auto;

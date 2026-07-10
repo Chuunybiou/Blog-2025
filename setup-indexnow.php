@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Setup IndexNow — à exécuter UNE SEULE FOIS via CLI ou navigateur
  * Usage : php setup-indexnow.php

@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 $page_title       = 'S\'expatrier au Vietnam en 2026 : Guide complet pour les Français';
 $page_description = 'Tout ce qu\'il faut savoir pour s\'installer au Vietnam en 2026 : visas, logement, santé, banques, fiscalité, coût de la vie, internet, travail, création d\'entreprise. Guide honnête basé sur le vécu.';

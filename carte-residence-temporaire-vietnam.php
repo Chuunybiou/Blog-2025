@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 
 $page_title       = 'Thẻ Tạm Trú : carte de résidence temporaire Vietnam';
@@ -182,7 +182,7 @@ include 'header.php';
 
     <?php
 $author_bio = <<<'BIO'
-Informations basées sur la Loi n°51/2019/QH14 et les décrets d'application. Toujours vérifier auprès du Département de l'Immigration local pour les mises à jour réglementaires.
+Français installé au Vietnam avec ma femme vietnamienne. J'ai suivi ces démarches moi-même — je vérifie toujours les textes officiels avant de les partager.
 BIO;
 include '_author-box.php';
 ?>

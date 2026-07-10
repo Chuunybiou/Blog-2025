@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 
 $page_title       = 'Organiser ses finances entre France et Vietnam : comptes, outils et stratégie';

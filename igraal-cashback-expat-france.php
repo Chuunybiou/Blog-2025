@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 
 $page_title       = 'iGraal : récupérer du cashback sur ses achats français depuis le Vietnam';

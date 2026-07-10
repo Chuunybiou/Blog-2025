@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 $page_title       = 'Ramener des produits français au Vietnam : ce qu\'on peut (et ne peut pas) en 2026';
 $page_description = 'Fromages, vins, médicaments, cosmétiques, électronique : ce qu\'on peut ramener de France au Vietnam dans ses valises sans problèmes douaniers. Guide pratique et liste concrète.';

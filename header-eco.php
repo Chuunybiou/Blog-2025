@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 $path_prefix      = $path_prefix      ?? '';
 $page_lang        = $page_lang        ?? 'fr';

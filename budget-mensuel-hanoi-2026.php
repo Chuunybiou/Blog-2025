@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 
 $page_title       = 'Budget mensuel à Hanoï 2026 — Cap Vietnam';

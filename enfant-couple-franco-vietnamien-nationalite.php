@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 $page_title       = 'Nationalité d\'un enfant de couple franco-vietnamien : les règles en 2026';
 $page_description = 'Un enfant né d\'un Français et d\'un(e) Vietnamien(ne) peut avoir la double nationalité. Voici les règles de transmission, les démarches pour déclarer la naissance et les documents à obtenir.';

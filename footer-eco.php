@@ -1,4 +1,4 @@
-﻿<style>
+<style>
 /* Styles spécifiques au footer-eco (injectés dans le body, valides en HTML5) */
 .eco-footer-grid {
   max-width: var(--container-max, 1100px);

@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 $page_title       = 'Se marier au Vietnam avec un Français : procédure au comité populaire 2026';
 $page_description = 'Comment se marier au Vietnam entre un Français et un(e) Vietnamien(ne) ? Certificat de capacité matrimoniale, comité populaire, documents requis. Guide complet 2026.';

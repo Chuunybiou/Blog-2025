@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 $page_title       = 'Budget mensuel à Da Nang en 2026 : combien ça coûte vraiment ?';
 $page_description = 'Loyer, nourriture, transport, activités : budget réel d\'un expatrié à Da Nang en 2026. Comparaison avec Hanoï et HCMV, et pourquoi Da Nang attire de plus en plus de Français.';

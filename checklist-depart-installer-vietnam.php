@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 
 $page_title       = 'Checklist complète pour s\'installer au Vietnam depuis la France — Cap Vietnam';

@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 $page_title       = 'Visa Schengen pour la belle-famille vietnamienne : guide pratique 2026';
 $page_description = 'Faire venir les parents ou proches vietnamiens en France ? Le visa Schengen pour la belle-famille vietnamienne est exigeant. Voici comment monter un dossier solide pour maximiser les chances.';

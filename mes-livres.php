@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 
 $page_title       = 'Mes livres — Méthode Polyglotte · Série complète | Cap Vietnam';

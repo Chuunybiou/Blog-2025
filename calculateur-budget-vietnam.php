@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 
 $page_title       = 'Calculateur de budget mensuel Vietnam 2026 — Cap Vietnam';

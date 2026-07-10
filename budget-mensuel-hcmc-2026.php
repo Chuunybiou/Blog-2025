@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 $page_title       = 'Budget mensuel à Hô-Chi-Minh-Ville 2026 — Cap Vietnam';
 $page_description = 'Budget réel d\'un expatrié à Hô-Chi-Minh-Ville en 2026 : loyer par quartier, nourriture, transports Grab, loisirs et comparatif complet avec Hanoï.';

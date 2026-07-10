@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 $page_title       = 'Télétravailler depuis le Vietnam : quel visa en 2026 ?';
 $page_description = 'Quel visa choisir pour télétravailler depuis le Vietnam ? Le Vietnam n\'a pas de visa digital nomad officiel. Ce guide explique les options réelles, les zones grises et les risques.';

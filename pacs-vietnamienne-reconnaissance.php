@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 $page_title       = 'PACS avec un(e) Vietnamien(ne) : reconnaissance en France et au Vietnam 2026';
 $page_description = 'Le PACS avec un(e) partenaire vietnamien(ne) est possible mais limité. Il ne donne pas droit au visa conjoint en France. Voici ce que le PACS permet et ne permet pas en 2026.';

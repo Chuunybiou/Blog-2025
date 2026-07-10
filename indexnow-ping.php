@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * IndexNow ping — Bing indexation quasi-instantanée
  *

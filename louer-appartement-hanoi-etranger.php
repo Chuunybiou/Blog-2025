@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 
 $page_title       = 'Louer un appartement à Hanoï en tant qu\'étranger : guide complet 2026';

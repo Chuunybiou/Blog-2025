@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 $page_title       = 'Déclarer ses impôts en France depuis le Vietnam : guide pratique 2026';
 $page_description = 'Comment déclarer ses impôts en France quand on vit au Vietnam ? Formulaires non-résidents, revenus de source française, changement de statut fiscal, calendrier officiel.';

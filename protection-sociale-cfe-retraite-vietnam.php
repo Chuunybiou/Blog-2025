@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 $page_title       = 'CFE, sécu et retraite : guide pour les expats au Vietnam';
 $page_description = 'Que se passe-t-il pour la Sécurité sociale, la retraite et la CFE quand on s\'installe au Vietnam ? Ce que tu perds, ce que tu gardes, les options pour ne pas se retrouver sans couverture.';

@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/config/site.php';
 $page_title       = 'Compte bancaire au Vietnam pour étrangers — Cap Vietnam';
 $page_description = 'Ouvrir un compte bancaire au Vietnam : banques acceptant les étrangers, documents requis, comptes VND et USD, et alternatives Wise pour les expatriés.';
