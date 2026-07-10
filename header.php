@@ -23,10 +23,6 @@ $page_extra_css   = $page_extra_css   ?? '';
 <title><?= htmlspecialchars($page_title) ?></title>
 <meta name="description" content="<?= htmlspecialchars($page_description) ?>">
 <meta name='impact-site-verification' value='92815f1a-4182-4e5e-9001-79e777d23b09'>
-<!-- Preconnect tiers -->
-<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
-<link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
-<link rel="preconnect" href="https://images.unsplash.com" crossorigin>
 <!-- Google Analytics 4 — chargé uniquement après consentement cookies (RGPD + évite 157 Ko sur le chargement initial) -->
 <script>
 window.dataLayer = window.dataLayer || [];
@@ -504,13 +500,7 @@ footer .nav-logo span { color: var(--hanoi); }
   if(document.cookie.split(';').some(function(c){return c.trim().indexOf('vi_ok=')===0;})) return;
   var b=document.getElementById('vi-banner');
   var langs=((navigator.languages||[navigator.language||'']).join(',')).toLowerCase();
-  if(/\bvi\b/.test(langs)){b.style.display='block';return;}
-  window.addEventListener('load',function(){
-    fetch('https://ipapi.co/country/')
-      .then(function(r){return r.text();})
-      .then(function(c){if(c.trim()==='VN')b.style.display='block';})
-      .catch(function(){});
-  });
+  if(/\bvi\b/.test(langs)){b.style.display='block';}
 })();
 </script>
 <?php endif; ?>
