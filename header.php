@@ -116,12 +116,14 @@ if (localStorage.getItem('cookies_consent') === 'accepted') { loadAnalytics(); }
 * { margin: 0; padding: 0; box-sizing: border-box; }
 img { max-width: 100%; height: auto; }
 html { scroll-behavior: smooth; }
+html, body { overflow-x: hidden; max-width: 100%; }
 body {
   font-family: 'Libre Franklin', sans-serif;
   background: var(--cream);
   color: var(--ink);
   line-height: 1.75;
   font-size: 16px;
+  overflow-wrap: break-word;
 }
 
 /* ═══════════ COOKIE BANNER (RGPD) ═══════════ */

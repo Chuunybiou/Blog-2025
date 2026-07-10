@@ -173,11 +173,18 @@ $page_extra_css = '
 .home-v2 .hero-full .lede{font-size:1.12rem;color:rgba(251,246,236,.92);max-width:36em;margin-bottom:1rem;text-shadow:0 1px 12px rgba(28,32,26,.5)}
 /* --- bandeau annonce, épinglé au-dessus du nav (page d\'accueil uniquement) --- */
 #nav{top:40px}
-.home-v2 .alertbar{position:fixed;top:0;left:0;right:0;z-index:1001;height:40px;background:#23281F;display:flex;align-items:center;overflow:hidden}
-.home-v2 .alertbar-inner{max-width:1120px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:12px;width:100%}
-.home-v2 .alertbar p{margin:0;font-size:.8rem;color:rgba(251,246,236,.85);font-family:var(--font-body2);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.home-v2 .alertbar a{color:var(--hanoi);text-decoration:none;font-weight:600}
-.home-v2 .alertbar a:hover{text-decoration:underline}
+.home-v2 .alertbar{position:fixed;top:0;left:0;right:0;z-index:1001;height:40px;background:#23281F;display:flex;align-items:center;overflow:hidden;text-decoration:none;color:inherit;cursor:pointer}
+.home-v2 .alertbar:hover{background:#2c3227}
+.home-v2 .alertbar-inner{max-width:1120px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:12px;width:100%;min-width:0}
+.home-v2 .alertbar p{margin:0;font-size:.8rem;color:rgba(251,246,236,.85);font-family:var(--font-body2);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0;flex:1}
+.home-v2 .alertbar-short{display:none}
+.home-v2 .alertbar-cta{color:var(--hanoi);font-weight:600;white-space:nowrap}
+nav{top:40px !important}
+.home-v2 .hero-full{padding-top:104px}
+@media(max-width:640px){
+  .home-v2 .alertbar-full{display:none}
+  .home-v2 .alertbar-short{display:inline}
+}
 .home-v2 .alert-tag{flex:none;font-family:var(--font-mono2);font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--hanoi);border:1px solid var(--hanoi);border-radius:6px;padding:.2em .6em}
 @media(max-width:640px){.home-v2 .alert-tag{display:none}}
 .home-v2 .hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
@@ -358,12 +365,12 @@ include 'header.php';
 <div class="home-v2">
 
 <!-- ═══════ BANDEAU ANNONCE (épinglé au-dessus du nav) ═══════ -->
-<div class="alertbar">
+<a class="alertbar" href="apostille-vietnam-francais-2026">
   <div class="alertbar-inner">
     <span class="alert-tag">Nouveau</span>
-    <p>Apostille au Vietnam dès le 11 septembre 2026 : le Vietnam rejoint la Convention de La Haye — fin de la double légalisation consulaire. <a href="apostille-vietnam-francais-2026">Ce qui change →</a></p>
+    <p><span class="alertbar-full">Apostille au Vietnam dès le 11 septembre 2026 : le Vietnam rejoint la Convention de La Haye — fin de la double légalisation consulaire.</span><span class="alertbar-short">Apostille au Vietnam dès le 11 septembre 2026</span> <span class="alertbar-cta">Ce qui change →</span></p>
   </div>
-</div>
+</a>
 
 <!-- ═══════ HERO plein écran ═══════ -->
 <header class="hero-full" id="home">

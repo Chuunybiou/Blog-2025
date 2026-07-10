@@ -69,7 +69,7 @@ $page_extra_css = "
 .article-hero{padding-top:64px;background:linear-gradient(165deg,#1c1917 0%,#2d2319 50%,{$_bg} 100%);position:relative;overflow:hidden}
 .article-hero::before{content:\"\";position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 20% 80%,{$_gl},transparent 60%)}
 .article-hero-inner{max-width:800px;margin:0 auto;padding:5rem 2rem 4rem;position:relative;z-index:1}
-.breadcrumb{display:flex;align-items:center;gap:0.5rem;font-size:0.8rem;color:rgba(250,248,244,0.4);margin-bottom:2rem}
+.breadcrumb{display:flex;align-items:center;flex-wrap:wrap;row-gap:0.25rem;gap:0.5rem;font-size:0.8rem;color:rgba(250,248,244,0.4);margin-bottom:2rem}
 .breadcrumb a{color:rgba(250,248,244,0.5);text-decoration:none;transition:color 0.2s}.breadcrumb a:hover{color:var(--cream)}
 .breadcrumb-sep{font-size:0.7rem}
 .article-badge-hero{display:inline-block;font-size:0.65rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;padding:5px 14px;border-radius:3px;margin-bottom:1.5rem;background:{$_bd};color:{$_bc}}
