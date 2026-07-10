@@ -247,6 +247,7 @@ $page_extra_css = '
 .home-v2 .catcard{background:#fff;border:1px solid var(--line2);border-radius:var(--radius2);overflow:hidden;text-decoration:none;display:flex;flex-direction:column;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
 .home-v2 a.catcard:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(35,40,31,.12);border-color:var(--hanoi)}
 .home-v2 .catcard img{aspect-ratio:16/8.5;object-fit:cover;width:100%}
+.home-v2 picture{display:contents}
 .home-v2 .catcard-body{padding:20px 22px 22px}
 .home-v2 .catcard h3{font-size:1.14rem;margin-bottom:.4rem;display:flex;align-items:baseline;gap:.6em}
 .home-v2 .catcard h3 b{font-family:var(--font-mono2);font-weight:500;font-size:.72rem;color:var(--shutter)}
