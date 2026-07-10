@@ -27,9 +27,22 @@ $page_extra_css   = $page_extra_css   ?? '';
 <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
 <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
 <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
-<!-- Google Analytics 4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6Q6E8EEN7F"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-6Q6E8EEN7F');</script>
+<!-- Google Analytics 4 — chargé uniquement après consentement cookies (RGPD + évite 157 Ko sur le chargement initial) -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){ dataLayer.push(arguments); }
+function loadAnalytics() {
+  if (window._gaLoaded) return;
+  window._gaLoaded = true;
+  var s = document.createElement('script');
+  s.async = true;
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=G-6Q6E8EEN7F';
+  document.head.appendChild(s);
+  gtag('js', new Date());
+  gtag('config', 'G-6Q6E8EEN7F');
+}
+if (localStorage.getItem('cookies_consent') === 'accepted') { loadAnalytics(); }
+</script>
 <meta name="author" content="Anthony Bouillon">
 <meta name="robots" content="<?= ($page_noindex ?? false) ? 'noindex, nofollow' : 'index, follow' ?>">
 <meta name="google-site-verification" content="8oAHVfQ6RoBt-EnNRRPUOwcZOCZibxOHSAKwPsh-AwY" />

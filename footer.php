@@ -168,6 +168,7 @@
 function acceptCookies() {
   localStorage.setItem('cookies_consent', 'accepted');
   document.getElementById('cookie-banner').classList.add('hidden');
+  if (typeof loadAnalytics === 'function') loadAnalytics();
 }
 function refuseCookies() {
   localStorage.setItem('cookies_consent', 'refused');
