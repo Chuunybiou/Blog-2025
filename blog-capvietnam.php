@@ -65,9 +65,7 @@ $page_og_title    = 'Cap Vietnam — Le blog du couple franco-vietnamien';
 $page_og_desc     = 'Mariage, démarches, argent et vie quotidienne entre la France et le Vietnam — par un Français en couple avec une Vietnamienne.';
 $page_og_url      = SITE_URL . '/';
 $page_og_image    = SITE_URL . '/assets/img/og-capvietnam.png';
-$page_extra_head  = '<link rel="preload" as="image" href="/assets/img/chapeau-conique-barque-phong-nha.jpg" fetchpriority="high">'
-  . '<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel=\'stylesheet\'">'
-  . '<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap"></noscript>';
+$page_extra_head  = '<link rel="preload" as="image" href="/assets/img/chapeau-conique-barque-phong-nha.webp" type="image/webp" fetchpriority="high">';
 $page_schema      = json_encode([
   '@context' => 'https://schema.org',
   '@graph'   => [
@@ -368,7 +366,10 @@ include 'header.php';
 
 <!-- ═══════ HERO plein écran ═══════ -->
 <header class="hero-full" id="home">
-  <img class="hero-bg" src="assets/img/chapeau-conique-barque-phong-nha.jpg" width="1600" height="900" alt="Barque sur la rivière face au village de Phong Nha, Quảng Bình" loading="eager" fetchpriority="high">
+  <picture>
+    <source srcset="assets/img/chapeau-conique-barque-phong-nha.webp" type="image/webp">
+    <img class="hero-bg" src="assets/img/chapeau-conique-barque-phong-nha.jpg" width="1600" height="900" alt="Barque sur la rivière face au village de Phong Nha, Quảng Bình" loading="eager" fetchpriority="high">
+  </picture>
   <div class="hero-shade" aria-hidden="true"></div>
   <div class="stamp big hero-stamp">Rien de touristique<b>100 % VÉCU</b>Québec → Hanoï</div>
   <div class="wrap hero-inner">
@@ -580,21 +581,27 @@ include 'header.php';
     <div class="catcards">
 <?php
 $_cat_photos = [
-  'couple'         => ['assets/img/banh-mi-cafe-couple-hanoi.jpg', 'Anthony et sa femme à Hanoï, bánh mì et café'],
-  'mariage'        => ['assets/img/mariage-franco-vietnamien-ceremonie.jpg', 'Cérémonie de mariage franco-vietnamienne'],
-  'vivre-ensemble' => ['assets/img/lac-hoan-kiem-tour-tortue-hanoi.jpg', 'Tour de la Tortue, lac Hoàn Kiếm, Hanoï'],
-  'argent'         => ['assets/img/capvietnam-money.jpg', 'Dong vietnamien et euros'],
-  'vie-pratique'   => ['assets/img/cafe-leva-hanoi-bougainvillees.jpg', 'Café Leva à Hanoï, quartier Tây Hồ'],
-  'emploi'         => ['assets/img/rue-hanoi-bougainvillees-scooters.jpg', 'Rue animée à Hanoï'],
+  'couple'         => ['assets/img/banh-mi-cafe-couple-hanoi.jpg', 'Anthony et sa femme à Hanoï, bánh mì et café', 675, 900, true],
+  'mariage'        => ['assets/img/mariage-franco-vietnamien-ceremonie.jpg', 'Cérémonie de mariage franco-vietnamienne', 1439, 1093, true],
+  'vivre-ensemble' => ['assets/img/lac-hoan-kiem-tour-tortue-hanoi.jpg', 'Tour de la Tortue, lac Hoàn Kiếm, Hanoï', 675, 900, true],
+  'argent'         => ['assets/img/capvietnam-money.jpg', 'Dong vietnamien et euros', 1306, 1600, false],
+  'vie-pratique'   => ['assets/img/cafe-leva-hanoi-bougainvillees.jpg', 'Café Leva à Hanoï, quartier Tây Hồ', 675, 900, true],
+  'emploi'         => ['assets/img/rue-hanoi-bougainvillees-scooters.jpg', 'Rue animée à Hanoï', 675, 900, true],
 ];
 foreach (TAXONOMY as $_cat_key => $_cat):
   $_n = $_cat_counts[$_cat_key] ?? 0;
   if ($_n > 0):
-    $_photo = $_cat_photos[$_cat_key][0] ?? '';
-    $_alt   = $_cat_photos[$_cat_key][1] ?? '';
+    [$_photo, $_alt, $_pw, $_ph, $_hasWebp] = $_cat_photos[$_cat_key] ?? ['', '', 0, 0, false];
 ?>
       <a class="catcard" href="articles-capvietnam?cat=<?= htmlspecialchars($_cat_key) ?>">
-        <img src="<?= htmlspecialchars($_photo) ?>" alt="<?= htmlspecialchars($_alt) ?>" loading="lazy">
+        <?php if ($_hasWebp): ?>
+        <picture>
+          <source srcset="<?= htmlspecialchars(preg_replace('/\.jpg$/', '.webp', $_photo)) ?>" type="image/webp">
+          <img src="<?= htmlspecialchars($_photo) ?>" alt="<?= htmlspecialchars($_alt) ?>" width="<?= $_pw ?>" height="<?= $_ph ?>" loading="lazy">
+        </picture>
+        <?php else: ?>
+        <img src="<?= htmlspecialchars($_photo) ?>" alt="<?= htmlspecialchars($_alt) ?>" width="<?= $_pw ?>" height="<?= $_ph ?>" loading="lazy">
+        <?php endif; ?>
         <div class="catcard-body"><h3><?= htmlspecialchars($_cat['label']) ?> <b><?= $_n ?></b></h3><p><?= htmlspecialchars($_cat['desc_fr']) ?></p></div>
       </a>
 <?php else: ?>
@@ -719,7 +726,10 @@ foreach (TAXONOMY as $_cat_key => $_cat):
       </blockquote>
     </div>
     <figure class="comm-photo">
-      <img src="assets/img/mariage-franco-vietnamien-ceremonie.jpg" alt="Cérémonie de mariage franco-vietnamienne — les mariés devant l'arche fleurie" loading="lazy">
+      <picture>
+        <source srcset="assets/img/mariage-franco-vietnamien-ceremonie.webp" type="image/webp">
+        <img src="assets/img/mariage-franco-vietnamien-ceremonie.jpg" alt="Cérémonie de mariage franco-vietnamienne — les mariés devant l'arche fleurie" width="1439" height="1093" loading="lazy">
+      </picture>
       <figcaption class="mono">CÉRÉMONIE DE MARIAGE — PHOTO DU BLOG</figcaption>
     </figure>
   </div>
