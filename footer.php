@@ -61,6 +61,7 @@
       <a href="<?= $path_prefix ?>mentions-legales-capvietnam">Mentions légales</a>
       <a href="<?= $path_prefix ?>confidentialite-capvietnam">Confidentialité</a>
       <a href="<?= $path_prefix ?>cookies-capvietnam">Cookies</a>
+      <a href="#" onclick="openCookieSettings(event)">Gérer les cookies</a>
     </div>
   </div>
 </footer>
@@ -156,7 +157,7 @@
       <li><strong>Cookies analytiques (si acceptés) :</strong> permettent de mesurer l'audience du site de manière anonyme via Google Analytics ou un outil équivalent. Durée : 13 mois.</li>
     </ul>
     <h3>3. Gestion de vos préférences</h3>
-    <p>Vous pouvez à tout moment modifier vos préférences en cliquant sur le lien « Gestion des cookies » en pied de page, ou en configurant votre navigateur pour refuser les cookies.</p>
+    <p>Vous pouvez à tout moment modifier vos préférences en cliquant sur le lien « Gérer les cookies » en pied de page, ou en configurant votre navigateur pour refuser les cookies. Votre choix vous sera également redemandé automatiquement après 6 mois.</p>
     <h3>4. Base légale</h3>
     <p>Conformément à l'article 82 de la loi Informatique et Libertés et aux recommandations de la CNIL, les cookies non essentiels ne sont déposés qu'après recueil de votre consentement.</p>
   </div>
@@ -167,14 +168,21 @@
 // Cookie consent
 function acceptCookies() {
   localStorage.setItem('cookies_consent', 'accepted');
+  localStorage.setItem('cookies_consent_date', Date.now().toString());
   document.getElementById('cookie-banner').classList.add('hidden');
   if (typeof loadAnalytics === 'function') loadAnalytics();
 }
 function refuseCookies() {
   localStorage.setItem('cookies_consent', 'refused');
+  localStorage.setItem('cookies_consent_date', Date.now().toString());
   document.getElementById('cookie-banner').classList.add('hidden');
+  window._gaLoaded = false;
 }
-if (localStorage.getItem('cookies_consent')) {
+function openCookieSettings(e) {
+  if (e) e.preventDefault();
+  document.getElementById('cookie-banner').classList.remove('hidden');
+}
+if (localStorage.getItem('cookies_consent') && typeof isCookieConsentExpired === 'function' && !isCookieConsentExpired()) {
   document.getElementById('cookie-banner').classList.add('hidden');
 }
 

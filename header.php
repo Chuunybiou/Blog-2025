@@ -37,7 +37,14 @@ function loadAnalytics() {
   gtag('js', new Date());
   gtag('config', 'G-6Q6E8EEN7F');
 }
-if (localStorage.getItem('cookies_consent') === 'accepted') { loadAnalytics(); }
+var COOKIE_CONSENT_MAX_AGE_DAYS = 180;
+function isCookieConsentExpired() {
+  var ts = localStorage.getItem('cookies_consent_date');
+  if (!ts) return true;
+  var ageDays = (Date.now() - parseInt(ts, 10)) / 86400000;
+  return ageDays > COOKIE_CONSENT_MAX_AGE_DAYS;
+}
+if (localStorage.getItem('cookies_consent') === 'accepted' && !isCookieConsentExpired()) { loadAnalytics(); }
 </script>
 <meta name="author" content="Anthony Bouillon">
 <meta name="robots" content="<?= ($page_noindex ?? false) ? 'noindex, nofollow' : 'index, follow' ?>">
@@ -160,8 +167,8 @@ body {
 }
 .cookie-accept { background: var(--jade); color: #fff; }
 .cookie-accept:hover { background: var(--jade-soft); }
-.cookie-refuse { background: transparent; color: var(--cream); border: 1px solid rgba(255,255,255,0.3); }
-.cookie-refuse:hover { border-color: #fff; }
+.cookie-refuse { background: var(--muted); color: #fff; }
+.cookie-refuse:hover { background: #857b6f; }
 
 /* ═══════════ NAV — carnet papier (tokens scoped to nav, doesn't affect page content) ═══════════ */
 nav {
