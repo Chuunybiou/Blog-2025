@@ -82,8 +82,25 @@ function is_bot(string $ua): bool {
     }
     return false;
 }
+// Clics enregistrés depuis un environnement local/dev (tests, pas de vrais visiteurs)
+function is_local_ref(string $ref): bool {
+    $lower = strtolower($ref);
+    foreach (['localhost', '127.0.0.1', 'true%20project', 'true project', '::1'] as $kw) {
+        if (str_contains($lower, $kw)) return true;
+    }
+    return false;
+}
+
+// ── Purge manuelle des clics locaux/robots (bouton dans l'UI) ──
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_POST['action'] ?? '') === 'purge') {
+    $clicks = array_values(array_filter($clicks, fn($c) => !is_bot($c['ua'] ?? '') && !is_local_ref($c['ref'] ?? '')));
+    file_put_contents($clicks_file, json_encode($clicks, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES));
+    header('Location: stats-affilies.php?purged=1');
+    exit;
+}
+
 $total_raw     = count($clicks);
-$clicks        = array_values(array_filter($clicks, fn($c) => !is_bot($c['ua'] ?? '')));
+$clicks        = array_values(array_filter($clicks, fn($c) => !is_bot($c['ua'] ?? '') && !is_local_ref($c['ref'] ?? '')));
 $bots_filtered = $total_raw - count($clicks);
 
 // Agrégation par ID
@@ -178,12 +195,21 @@ foreach ($clicks as $c) {
 <div class="topbar">
   <h1>📊 Stats affiliés — Cap Vietnam</h1>
   <span style="font-size:.78rem;color:rgba(250,248,244,.45)">
-    🤖 <?= $bots_filtered ?> robots filtrés · 🙋 tes clics exclus en temps réel
+    🤖 <?= $bots_filtered ?> robots/tests locaux filtrés · 🙋 tes clics exclus en temps réel
   </span>
   <a href="?logout=1">Déconnexion</a>
 </div>
 
 <div class="container">
+
+  <?php if (isset($_GET['purged'])): ?>
+  <div style="background:#dcfce7;color:#166534;padding:.85rem 1.2rem;border-radius:8px;font-size:.85rem;margin-bottom:1.5rem">✅ Historique nettoyé — clics de test locaux et robots supprimés définitivement.</div>
+  <?php endif; ?>
+
+  <form method="POST" onsubmit="return confirm('Supprimer définitivement les clics de test locaux et robots de l\'historique ?')" style="margin-bottom:1.5rem">
+    <input type="hidden" name="action" value="purge">
+    <button type="submit" style="padding:.6rem 1.1rem;background:#fff;border:1px solid #e5e0d8;border-radius:8px;font-size:.8rem;font-weight:600;color:#1c1917;cursor:pointer">🧹 Purger les clics de test locaux de l'historique</button>
+  </form>
 
   <!-- KPIs -->
   <div class="kpi-grid" style="margin-bottom:2rem">
