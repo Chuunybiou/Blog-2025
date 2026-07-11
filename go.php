@@ -49,8 +49,10 @@ function is_bot(string $ua): bool {
     return false;
 }
 
-// Ne pas loguer : robot OU propriétaire connecté (cookie _bco posé à la connexion stats)
-if (is_bot($_SERVER['HTTP_USER_AGENT'] ?? '') || !empty($_COOKIE['_bco'])) {
+// Ne pas loguer : robot, propriétaire connecté (cookie _bco), ou requête hors domaine de prod (tests locaux)
+$host = strtolower($_SERVER['HTTP_HOST'] ?? '');
+$is_local = $host !== 'blog-capvietnam.fr' && $host !== 'www.blog-capvietnam.fr';
+if (is_bot($_SERVER['HTTP_USER_AGENT'] ?? '') || !empty($_COOKIE['_bco']) || $is_local) {
     header('Location: ' . $destinations[$id], true, 302);
     exit;
 }
