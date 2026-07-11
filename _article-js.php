@@ -1,4 +1,29 @@
 <script>
+function _fallbackCopy(text, cb) {
+  const ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.position = 'fixed';
+  ta.style.left = '-9999px';
+  document.body.appendChild(ta);
+  ta.select();
+  try { document.execCommand('copy'); cb(); } catch (e) {}
+  document.body.removeChild(ta);
+}
+document.querySelectorAll('.share-copy').forEach(btn => {
+  btn.addEventListener('click', function(e) {
+    e.preventDefault();
+    const url = location.href;
+    const showCopied = () => {
+      btn.textContent = '✓';
+      setTimeout(() => { btn.textContent = '🔗'; }, 1500);
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(url).then(showCopied).catch(() => _fallbackCopy(url, showCopied));
+    } else {
+      _fallbackCopy(url, showCopied);
+    }
+  });
+});
 document.querySelectorAll('.article-content table').forEach(t => {
   if (!t.closest('.table-wrapper') && !t.closest('.table-wrap') && !t.classList.contains('comparison-table')) {
     const w = document.createElement('div');

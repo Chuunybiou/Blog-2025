@@ -167,7 +167,7 @@ $page_extra_css = '
 .home-v2 .hero-full{position:relative;min-height:78vh;display:flex;align-items:flex-end;overflow:hidden}
 .home-v2 .hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 60%}
 .home-v2 .hero-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(28,32,26,.25) 0%,rgba(28,32,26,.15) 40%,rgba(28,32,26,.78) 100%)}
-.home-v2 .hero-inner{position:relative;padding-block:70px 74px;max-width:1120px}
+.home-v2 .hero-inner{position:relative;padding-block:70px 74px;max-width:1120px;width:100%}
 .home-v2 .hero-full h1{font-size:clamp(1.6rem,8vw,4rem);color:#fff;margin:.6rem 0 1rem;max-width:15em;text-shadow:0 2px 24px rgba(28,32,26,.45)}
 .home-v2 .hero-full h1 em{font-style:italic;color:var(--hanoi)}
 .home-v2 .hero-full .lede{font-size:1.12rem;color:rgba(251,246,236,.92);max-width:36em;margin-bottom:1rem;text-shadow:0 1px 12px rgba(28,32,26,.5)}
