@@ -106,7 +106,7 @@ $page_title = 'Modèle lettre CCAM — Demande de certificat de capacité à mar
     <div class="pieces">
       <p><strong>Pièces jointes :</strong></p>
       <ul>
-        <li>Copie intégrale de l'acte de naissance (moins de 3 mois si possible)</li>
+        <li>Copie intégrale de l'acte de naissance (moins de 3 mois)</li>
         <li>Carte nationale d'identité ou passeport (copie recto-verso)</li>
         <li>Justificatif de domicile (moins de 3 mois)</li>
         <li>Acte de naissance de la future épouse (apostillé + traduction assermentée)</li>
