@@ -62,6 +62,9 @@ RewriteRule ^go\.php$ - [L]
 # a-propos-capvietnam.html → URL canonique (vieux lien externe)
 RewriteRule ^a-propos-capvietnam\.html$ /a-propos-capvietnam [R=301,L]
 
+# mentions-legales-capvietnam.html → URL canonique (vieille URL indexée par Google, 404 sinon)
+RewriteRule ^mentions-legales-capvietnam\.html$ /mentions-legales-capvietnam [R=301,L]
+
 # Articles fusionnés — redirections canoniques
 RewriteRule ^telephone-vietnam-quelle-sim-choisir$ /sim-internet-applications-vietnam [R=301,L]
 RewriteRule ^compte-bancaire-vietnam-etranger$ /banque-vietnam-francais [R=301,L]
