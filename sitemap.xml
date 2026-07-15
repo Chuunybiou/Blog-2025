@@ -3,19 +3,19 @@
 
   <url>
     <loc>https://blog-capvietnam.fr/</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://blog-capvietnam.fr/articles-capvietnam</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://blog-capvietnam.fr/par-ou-commencer-couple-franco-vietnamien</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -368,6 +368,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://blog-capvietnam.fr/visa-tt-carte-residence-trc-mariage</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://blog-capvietnam.fr/hopitaux-medecins-francophones-vietnam</loc>
     <lastmod>2026-07-08</lastmod>
     <changefreq>monthly</changefreq>
@@ -376,6 +382,12 @@
   <url>
     <loc>https://blog-capvietnam.fr/sim-internet-applications-vietnam</loc>
     <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blog-capvietnam.fr/hanoi-vs-ho-chi-minh-ville-installation</loc>
+    <lastmod>2026-07-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

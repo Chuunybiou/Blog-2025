@@ -863,14 +863,14 @@
             "excerpt": "Marié(e) à un(e) Vietnamien(ne) et installé au Vietnam ? Le visa TT et la carte de résidence temporaire (TRC) sont ta solution légale. Guide 2026.",
             "category": "vivre-ensemble",
             "categoryLabel": "Vivre ensemble",
-            "date": "2026-06-01",
-            "dateLabel": "Juin 2026",
+            "date": "2026-07-10",
+            "dateLabel": "Juillet 2026",
             "readTime": "8 min",
             "emoji": "📄",
             "image": "https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=600&q=80",
             "imageAlt": "Carte de résidence temporaire Vietnam TRC",
             "keywords": "visa tt carte residence temporaire trc mariage conjoint vietnamien vietnam",
-            "published": false
+            "published": true
         },
         {
             "slug": "hopitaux-medecins-francophones-vietnam",
@@ -968,14 +968,14 @@
             "excerpt": "Hanoï ou Saigon pour vivre au Vietnam ? Climat, coût de la vie, ambiance, emploi, communauté française — le comparatif honnête pour choisir ta ville.",
             "category": "vie-pratique",
             "categoryLabel": "Vie pratique au Vietnam",
-            "date": "2026-06-01",
-            "dateLabel": "Juin 2026",
+            "date": "2026-07-14",
+            "dateLabel": "Juillet 2026",
             "readTime": "9 min",
             "emoji": "🏙️",
             "image": "assets/img/hotel-de-ville-hcmc-coucher-soleil.jpg",
             "imageAlt": "Hôtel de ville de Hô Chi Minh-Ville au coucher du soleil — comparatif Hanoï vs Saigon",
             "keywords": "hanoi ho chi minh saigon installation expatriation comparatif cout vie ambiance",
-            "published": false
+            "published": true
         },
         {
             "slug": "retraite-vietnam-francais",
