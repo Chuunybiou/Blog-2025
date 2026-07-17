@@ -844,8 +844,8 @@
             "excerpt": "Comment célébrer un mariage mixte franco-vietnamien au Vietnam ? CCAM, cérémonie au comité populaire, documents requis — tout ce qu'il faut savoir.",
             "category": "mariage",
             "categoryLabel": "Se marier",
-            "date": "2026-06-01",
-            "dateLabel": "Juin 2026",
+            "date": "2026-07-17",
+            "dateLabel": "Juillet 2026",
             "readTime": "9 min",
             "emoji": "💍",
             "image": "assets/img/mariage-franco-vietnamien-ceremonie.jpg",
@@ -855,7 +855,7 @@
             "tags": [
                 "mariage"
             ],
-            "published": false
+            "published": true
         },
         {
             "slug": "visa-tt-carte-residence-trc-mariage",
