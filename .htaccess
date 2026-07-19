@@ -65,6 +65,9 @@ RewriteRule ^a-propos-capvietnam\.html$ /a-propos-capvietnam [R=301,L]
 # mentions-legales-capvietnam.html → URL canonique (vieille URL indexée par Google, 404 sinon)
 RewriteRule ^mentions-legales-capvietnam\.html$ /mentions-legales-capvietnam [R=301,L]
 
+# differences-culturelles-couple-franco-vietnamien.html → URL canonique (vieille URL indexée par Google, 404 sinon)
+RewriteRule ^differences-culturelles-couple-franco-vietnamien\.html$ /differences-culturelles-couple-franco-vietnamien [R=301,L]
+
 # Articles fusionnés — redirections canoniques
 RewriteRule ^telephone-vietnam-quelle-sim-choisir$ /sim-internet-applications-vietnam [R=301,L]
 RewriteRule ^compte-bancaire-vietnam-etranger$ /banque-vietnam-francais [R=301,L]

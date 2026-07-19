@@ -197,6 +197,19 @@ include 'header.php';
   </div>
 </section>
 
+<!-- ═══════ UPSELL PACK PAYANT ═══════ -->
+<section class="section" style="padding-block:56px">
+  <div class="wrap">
+    <div class="pk-tip" style="border-color:var(--hanoi);align-items:center;justify-content:space-between">
+      <div>
+        <span class="mono" style="color:var(--tampon)">POUR ALLER PLUS LOIN</span>
+        <p style="margin-top:.3rem"><strong>Pack Mariage &amp; Visa complet</strong> — 45 pages + 8 modèles de lettres officielles + check-list, 9,99 €.</p>
+      </div>
+      <a class="btn btn-hanoi" href="pack-mariage-visa-2026" style="flex:none">Découvrir →</a>
+    </div>
+  </div>
+</section>
+
 <!-- ═══════ WISE (lien affilié) ═══════ -->
 <section class="section" style="padding-block:64px">
   <div class="wrap">

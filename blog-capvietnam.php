@@ -758,6 +758,7 @@ foreach (TAXONOMY as $_cat_key => $_cat):
             <li><strong>Checklist CCAM complète</strong> : tous les documents, dans l'ordre</li>
           </ul>
           <p style="margin-top:14px;font-size:.85rem"><a href="pack-gratuit" style="color:rgba(251,246,236,.75)">Voir le détail du pack →</a></p>
+          <p style="margin-top:6px;font-size:.85rem"><a href="pack-mariage-visa-2026" style="color:var(--hanoi)">💍 Besoin d'aller plus loin ? Le pack complet à 9,99 € →</a></p>
         </div>
         <form class="pack-form" action="subscribe-pack" method="post">
           <input type="text" name="website" value="" style="position:absolute;left:-9999px" tabindex="-1" autocomplete="off" aria-hidden="true">

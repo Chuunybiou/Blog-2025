@@ -470,6 +470,8 @@ footer .nav-logo span { color: var(--hanoi); }
           <a href="<?= $path_prefix ?>retroplanning-faire-venir-conjoint">📅 Faire venir mon conjoint en France</a>
           <a href="<?= $path_prefix ?>simulateur-residence-vietnam">⏱️ S'installer au Vietnam</a>
           <a href="<?= $path_prefix ?>calculateur-budget-vietnam">💰 Budget mensuel au Vietnam</a>
+          <div class="nav-dd-sep"></div>
+          <a href="<?= $path_prefix ?>pack-mariage-visa-2026">💍 Pack Mariage &amp; Visa 2026 (9,99 €)</a>
         </div>
       </li>
         <li><a href="<?= $path_prefix ?>a-propos-capvietnam">À propos</a></li>

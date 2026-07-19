@@ -278,6 +278,16 @@ document.getElementById('pack-form').addEventListener('submit', function(e) {
 });
 </script>
 
+<!-- ═══════ UPSELL PACK PAYANT ═══════ -->
+<section class="section alt-band" style="padding-block:56px">
+  <div class="wrap" style="max-width:760px;text-align:center">
+    <span class="eyebrow gold" style="justify-content:center">Pour aller plus loin</span>
+    <h2>Le Pack Mariage &amp; Visa complet — Édition 2026</h2>
+    <p style="color:var(--ink-soft2);max-width:36em;margin:0 auto 20px">45 pages de feuille de route détaillée + 8 modèles de lettres officielles + check-list imprimable, pour sécuriser tout ton parcours administratif. 9,99 €, accès immédiat.</p>
+    <a class="btn btn-hanoi" href="pack-mariage-visa-2026">Découvrir le pack complet →</a>
+  </div>
+</section>
+
 <!-- ═══════ LE BLOG EN CHIFFRES ═══════ -->
 <div class="proofbar" style="margin-bottom:80px">
   <div class="wrap proofbar-inner">

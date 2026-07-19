@@ -35,6 +35,7 @@
     <div class="footer-col">
       <h3><?= ($page_lang ?? 'fr') === 'vi' ? 'Liên kết hữu ích' : 'Liens utiles' ?></h3>
       <a href="<?= $path_prefix ?>a-propos-capvietnam">À propos</a>
+      <a href="<?= $path_prefix ?>pack-mariage-visa-2026" style="color:var(--hanoi);font-weight:600">💍 Pack Mariage &amp; Visa 2026</a>
       <a href="<?= $path_prefix ?>outils-vivre-vietnam">🛠️ Mes outils</a>
       <a href="<?= $path_prefix ?>contact-capvietnam">Contact</a>
       <a href="<?= $path_prefix ?: '/' ?>#newsletter">Newsletter mensuelle</a>
