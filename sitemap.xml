@@ -3,19 +3,19 @@
 
   <url>
     <loc>https://blog-capvietnam.fr/</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://blog-capvietnam.fr/articles-capvietnam</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://blog-capvietnam.fr/par-ou-commencer-couple-franco-vietnamien</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -400,6 +400,12 @@
   <url>
     <loc>https://blog-capvietnam.fr/enfant-couple-franco-vietnamien-nationalite</loc>
     <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blog-capvietnam.fr/travailler-a-distance-depuis-vietnam</loc>
+    <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
