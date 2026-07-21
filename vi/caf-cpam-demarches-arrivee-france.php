@@ -196,7 +196,7 @@ include '../header.php';
   </div>
   <div class="step-block">
     <span class="step-num">2</span>
-    <div><strong>Mở tài khoản ngân hàng Pháp</strong> (Fortuneo, Boursorama, ou agence locale) — cần RIB cho tất cả les démarches</div>
+    <div><strong><a href="mo-tai-khoan-ngan-hang-phap">Mở tài khoản ngân hàng Pháp</a></strong> (Fortuneo, BoursoBank, ou agence locale) — cần RIB cho tất cả les démarches</div>
   </div>
   <div class="step-block">
     <span class="step-num">3</span>

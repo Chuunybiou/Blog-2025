@@ -25,7 +25,7 @@ $page_og_image    = SITE_URL . '/assets/img/mariage-franco-vietnamien-ceremonie.
 
 $page_extra_css = '
 /* ══ VIETNAMESE SECTION ══ */
-.vi-hero{padding-top:64px;background:linear-gradient(165deg,#0a0a2e 0%,#1a1050 45%,#0d1f44 100%);position:relative;overflow:hidden;min-height:90vh;display:flex;align-items:center}
+.vi-hero{padding-top:64px;background:linear-gradient(165deg,#1c1917 0%,#2d2319 45%,#1a3a1e 100%);position:relative;overflow:hidden;min-height:90vh;display:flex;align-items:center}
 .vi-hero::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 20% 80%,rgba(191,74,42,0.12),transparent 60%),radial-gradient(ellipse 50% 40% at 80% 20%,rgba(26,95,138,0.15),transparent 60%)}
 .vi-hero-inner{max-width:1200px;margin:0 auto;padding:5rem 2rem;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;position:relative;z-index:1}
 .vi-hero-badge{display:inline-block;font-size:0.65rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;padding:5px 14px;border-radius:3px;background:rgba(191,74,42,0.25);color:#e8856a;border:1px solid rgba(232,133,106,0.25);margin-bottom:1.5rem}
@@ -373,6 +373,17 @@ include '../header.php';
         <div class="vi-art-preview-cat">Việc làm</div>
         <h3>Tìm Việc Ở Pháp Với Bằng Cấp Việt Nam — Thực Tế 2026</h3>
         <p>Ngành nào dễ, ngành nào khó, VAE, ENIC-NARIC — hướng dẫn thực tế không tô hồng.</p>
+        <span class="vi-art-preview-more">Đọc thêm →</span>
+      </div>
+    </a>
+    <a class="vi-art-preview" href="mo-tai-khoan-ngan-hang-phap">
+      <div class="vi-art-preview-img">
+        <div class="tt-thumb bg-culture" style="height:180px;border-radius:0"><span class="tt-lesson-num">Tiền bạc</span><div class="tt-thumb-emoji">🏦</div></div>
+      </div>
+      <div class="vi-art-preview-body">
+        <div class="vi-art-preview-cat">Tiền bạc</div>
+        <h3>Mở Tài Khoản Ngân Hàng Ở Pháp Khi Mới Đến — Từng Bước</h3>
+        <p>RIB cho CAF, CPAM, thuê nhà và lương — ngân hàng nào chọn và giấy tờ cần thiết.</p>
         <span class="vi-art-preview-more">Đọc thêm →</span>
       </div>
     </a>
