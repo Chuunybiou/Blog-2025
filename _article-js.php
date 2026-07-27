@@ -25,7 +25,9 @@ document.querySelectorAll('.share-copy').forEach(btn => {
   });
 });
 document.querySelectorAll('.article-content table').forEach(t => {
-  if (!t.closest('.table-wrapper') && !t.closest('.table-wrap') && !t.classList.contains('comparison-table')) {
+  // .comparison-table seul ne gère pas le débordement horizontal (seul .table-wrapper
+  // le fait) — donc on l'enveloppe aussi, comme n'importe quelle autre table.
+  if (!t.closest('.table-wrapper') && !t.closest('.table-wrap')) {
     const w = document.createElement('div');
     w.className = 'table-wrapper';
     t.parentNode.insertBefore(w, t);

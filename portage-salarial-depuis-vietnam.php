@@ -17,17 +17,17 @@ $page_schema      = json_encode([
   'publisher'       => ['@type' => 'Organization', 'name' => SITE_NAME, 'url' => SITE_URL],
   'mainEntityOfPage'=> SITE_URL . '/portage-salarial-depuis-vietnam',
   'inLanguage'      => 'fr',
-  'articleSection'  => 'Argent & Travail',
+  'articleSection'  => 'Emploi & Entreprendre',
 ], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
 
-$article_color        = 'amber';
-$article_hero_bg      = '#2a1f00';
-$article_glow         = 'rgba(184,134,11,0.18)';
-$article_badge        = 'rgba(184,134,11,0.25)';
-$article_badge_c      = 'var(--amber-soft)';
+$article_color        = 'jade';
+$article_hero_bg      = '#001f18';
+$article_glow         = 'rgba(27,107,82,0.18)';
+$article_badge        = 'rgba(27,107,82,0.25)';
+$article_badge_c      = '#4dbe94';
 
-$article_category     = 'Argent & Travail';
-$article_category_url = SITE_URL . '/articles-capvietnam?cat=argent';
+$article_category     = 'Emploi & Entreprendre';
+$article_category_url = SITE_URL . '/articles-capvietnam?cat=emploi';
 
 $page_faq = [
   ['q' => 'Peut-on vraiment être en portage salarial depuis le Vietnam ?',
@@ -51,10 +51,10 @@ include 'header.php';
   <div class="article-hero-inner">
     <div class="breadcrumb">
       <a href="/">Accueil</a><span class="breadcrumb-sep">›</span>
-      <a href="articles-capvietnam?cat=argent">Argent &amp; Travail</a><span class="breadcrumb-sep">›</span>
+      <a href="articles-capvietnam?cat=emploi">Emploi &amp; Entreprendre</a><span class="breadcrumb-sep">›</span>
       <span>Portage salarial depuis le Vietnam</span>
     </div>
-    <span class="article-badge-hero">Argent &amp; Travail</span>
+    <span class="article-badge-hero">Emploi &amp; Entreprendre</span>
     <h1>Portage salarial depuis le Vietnam : comment ça marche, quelle société choisir</h1>
     <div class="article-hero-meta">
       <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
@@ -327,7 +327,7 @@ include '_author-box.php';
 
 <?php
 $current_slug = 'portage-salarial-depuis-vietnam';
-$current_cat  = 'argent';
+$current_cat  = 'emploi';
 include '_related-articles.php';
 ?>
 

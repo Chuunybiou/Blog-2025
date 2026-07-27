@@ -86,7 +86,7 @@ $page_extra_css = "
 .share-btns{display:flex;gap:0.5rem}
 .share-btn{width:38px;height:38px;border-radius:50%;border:1px solid var(--border);background:var(--white);display:flex;align-items:center;justify-content:center;font-size:0.9rem;transition:all 0.2s;cursor:pointer}
 .share-btn:hover{background:var(--warm-bg)}
-.article-content{max-width:720px}
+.article-content{max-width:720px;min-width:0}
 .article-content>p{font-size:1.05rem;color:#3a3530;margin-bottom:1.5rem}
 .article-content h2{font-family:\"DM Serif Display\",serif;font-size:1.8rem;margin:3rem 0 1rem;line-height:1.25;padding-top:1rem}
 .article-content h3{font-family:\"DM Serif Display\",serif;font-size:1.3rem;margin:2rem 0 0.75rem;line-height:1.3}
