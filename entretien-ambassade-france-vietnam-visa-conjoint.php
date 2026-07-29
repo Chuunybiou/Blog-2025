@@ -37,6 +37,12 @@ $page_faq = [
    'a' => 'En général non : l\'entretien est individuel et le conjoint français n\'est pas admis. L\'objectif est de vérifier la sincérité du mariage en posant des questions séparément aux deux époux si nécessaire.'],
   ['q' => 'Que se passe-t-il si mon conjoint répond mal à une question ?',
    'a' => 'Une seule réponse erronée ne suffit pas à justifier un refus. L\'agent évalue l\'ensemble de l\'entretien et du dossier. Ce qui compte, c\'est la cohérence globale et la sincérité perçue.'],
+  ['q' => 'Une grande différence d\'âge peut-elle faire refuser le visa ?',
+   'a' => 'Non, pas en soi — la différence d\'âge n\'est pas un motif légal de refus. Elle fait simplement partie des profils que l\'administration regarde de plus près. Un dossier bien documenté (relation dans la durée, rencontres physiques répétées, communication régulière) neutralise complètement ce point.'],
+  ['q' => 'Mon conjoint doit-il parler français pour obtenir le visa ?',
+   'a' => 'Non, aucun niveau de français n\'est exigé pour le visa long séjour conjoint de Français. La question de la langue arrive plus tard, à l\'arrivée en France, avec le test de positionnement de l\'OFII et les éventuelles formations linguistiques gratuites du CIR. En entretien, ce qui compte est d\'expliquer honnêtement comment vous communiquez.'],
+  ['q' => 'Combien de temps entre le refus et le recours ?',
+   'a' => 'Deux délais de deux mois à ne jamais laisser passer : deux mois après la notification du refus pour saisir la Commission de recours (CRRV) à Nantes, puis, en cas de rejet explicite ou implicite de la commission, deux mois pour saisir le tribunal administratif de Nantes. Ces délais sont stricts — c\'est la seule erreur vraiment irréversible du parcours.'],
 ];
 include '_article-css.php';
 include 'header.php';
@@ -57,8 +63,8 @@ include 'header.php';
     <div class="article-hero-meta">
       <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
       <span>📅 Juin 2026</span>
-      <span>⏱ 8 min de lecture</span>
-      <span>Mis &agrave; jour : Juin 2026</span>
+      <span>⏱ 11 min de lecture</span>
+      <span>Mis &agrave; jour : Juillet 2026</span>
     </div>
   </div>
 </header>
@@ -99,6 +105,24 @@ include 'header.php';
       <li>De détecter d'éventuelles incohérences avec le dossier écrit</li>
     </ul>
     <p>Attention : l'entretien n'est pas systématique. Il est convoqué selon le profil du dossier.</p>
+
+    <h3>Comment raisonne l'agent consulaire : le faisceau d'indices</h3>
+
+    <p>Il faut comprendre une chose pour dédramatiser : l'agent ne cherche pas LA question piège qui fera tout basculer. Il évalue un <strong>faisceau d'indices</strong> — la cohérence globale entre ce que dit ton conjoint, ce que dit le dossier écrit, et ce qui est vérifiable. Certains profils de dossiers attirent mécaniquement plus d'attention :</p>
+
+    <ul>
+      <li>Une relation très récente au moment du mariage (quelques mois entre la rencontre et la cérémonie)</li>
+      <li>Peu ou pas de rencontres physiques avant le mariage</li>
+      <li>Une grande différence d'âge</li>
+      <li>L'absence apparente de langue commune entre les époux</li>
+      <li>Des antécédents administratifs (précédente demande refusée, précédent mariage avec un ressortissant étranger…)</li>
+    </ul>
+
+    <p>Sois clair là-dessus : <strong>cocher une de ces cases ne signifie pas un refus</strong> — des milliers de couples parfaitement sincères cochent l'une ou l'autre. Ça signifie simplement que votre dossier sera regardé de plus près, et donc que votre préparation documentaire doit être plus soignée. Un couple avec 15 ans d'écart et trois ans de relation documentée par des dizaines de photos, de billets d'avion et de conversations quotidiennes n'a rien à craindre d'un entretien.</p>
+
+    <h3>Le sujet sensible : la langue commune</h3>
+
+    <p>C'est une question quasi certaine, et elle mérite une réponse honnête préparée en couple : <em>« comment communiquez-vous ? »</em>. Beaucoup de couples franco-vietnamiens fonctionnent avec un mélange — un peu d'anglais, un peu de français, un peu de vietnamien, et oui, parfois une application de traduction pour les sujets complexes. <strong>Dis-le tel que c'est.</strong> Un agent comprend très bien qu'un couple réel communique imparfaitement ; ce qui l'alerte, c'est un couple qui prétend parler couramment une langue commune et qui se contredit sur ce point. Si ton conjoint apprend le français (cours à l'Institut Français, applications, <a href="apprendre-vietnamien-couple">et toi le vietnamien</a>), mentionnez-le : l'effort d'apprentissage mutuel est un signal de projet de vie sincère.</p>
 
     <div style="background:linear-gradient(135deg,#0d2b1f,#1b4a35);border-radius:10px;padding:1.5rem 2rem;margin:1.5rem 0;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap">
       <div>
@@ -163,6 +187,23 @@ include 'header.php';
       <strong>Ne récitez pas un script.</strong> Les agents sont formés pour repérer les réponses mémorisées. Préparez les faits, pas les réponses mot pour mot. La fluidité naturelle vaut mieux que la précision mécanique.
     </div>
 
+    <h3>La méthode de préparation qui marche : l'album de vie</h3>
+
+    <p>Plutôt que de bachoter des listes de dates, faites ensemble un exercice simple et même agréable : <strong>reconstituez la chronologie de votre histoire avec les documents à l'appui</strong>. Ouvrez vos photos, vos billets d'avion, vos conversations, et remontez le fil : la première conversation, le premier appel vidéo, le premier voyage, la rencontre avec chaque famille, la demande, le mariage. Notez les dates au fur et à mesure.</p>
+
+    <p>Cet exercice a un double effet. D'abord, il produit naturellement le dossier de preuves à apporter (voir section suivante), déjà organisé chronologiquement. Ensuite — et c'est le plus important — il <strong>rafraîchit la mémoire des deux</strong> sur les mêmes événements. La plupart des « incohérences » relevées en entretien ne sont pas des mensonges : ce sont deux mémoires sincères qui datent différemment le même souvenir. Une soirée à refaire l'album ensemble élimine ce risque mieux que n'importe quel coaching.</p>
+
+    <p>Termine par une répétition légère : pose à ton conjoint les questions du tableau ci-dessus, une fois, sans pression, plutôt en conversation qu'en interrogatoire. Si une réponse hésite, ce n'est pas grave — c'est l'occasion d'en reparler naturellement. Et arrête-toi là : sur-préparer produit exactement l'effet récité que les agents repèrent.</p>
+
+    <h3>Les erreurs qui desservent un dossier sincère</h3>
+
+    <ul>
+      <li><strong>Le sur-coaching.</strong> Des réponses trop parfaites, débitées sans réfléchir, dans le même ordre que le dossier écrit : c'est le signal d'alarme n°1. Un vrai couple hésite sur une date, se corrige, sourit — c'est humain et c'est crédible.</li>
+      <li><strong>Les réseaux sociaux incohérents.</strong> Les informations publiquement accessibles font partie du paysage. Un profil Facebook public qui raconte une autre histoire que le dossier (statut « célibataire », photos contradictoires…) crée des questions inutiles. Faites un tour de vos profils publics avant l'entretien.</li>
+      <li><strong>Minimiser ou embellir des faits vérifiables.</strong> Sur les points factuels (précédents mariages, refus de visa antérieurs, situation professionnelle), la transparence totale est la seule stratégie : ces informations sont dans les systèmes, les taire coûte bien plus cher que les assumer.</li>
+      <li><strong>Improviser la logistique.</strong> Arriver juste à l'heure, sans la convocation imprimée, téléphone déchargé avec les preuves dedans… Le stress logistique s'ajoute au stress de l'entretien. Repérage du lieu la veille, documents imprimés en double, arrivée très en avance.</li>
+    </ul>
+
     <h2 id="section-4">Les preuves de vie commune à apporter</h2>
     <p>Ton conjoint peut apporter un dossier de preuves de votre vie commune pour appuyer l'entretien. Ces preuves ne sont pas toujours demandées mais elles renforcent la crédibilité :</p>
     <ul>
@@ -175,7 +216,7 @@ include 'header.php';
     </ul>
 
     <h2 id="section-5">Le déroulement du jour de l'entretien</h2>
-    <p>Ton conjoint se présente à l'ambassade (Hanoï) ou au consulat général (Hô Chi Minh-Ville) à l'heure indiquée sur la convocation. Il faut généralement arriver <strong>en avance</strong> car les procédures de sécurité à l'entrée prennent du temps.</p>
+    <p>Ton conjoint se présente à l'ambassade (Hanoï) ou au consulat général (Hô Chi Minh-Ville) à l'heure indiquée sur la convocation. Il faut généralement arriver <strong>en avance</strong> car les procédures de sécurité à l'entrée prennent du temps : contrôle des sacs, dépôt du téléphone dans certains cas, files d'attente aux heures d'affluence. Si ton conjoint vient de province, prévoyez l'arrivée la veille et une nuit sur place plutôt qu'un trajet de nuit suivi d'un entretien au saut du bus — la fatigue se voit et se ressent dans les réponses.</p>
     <p>À apporter le jour J :</p>
     <ul>
       <li>La convocation originale</li>
@@ -185,9 +226,28 @@ include 'header.php';
     </ul>
     <p>L'entretien lui-même dure généralement entre 15 et 45 minutes. L'agent peut demander à voir certains documents apportés.</p>
 
+    <h3>Et toi, le conjoint français, pendant ce temps ?</h3>
+
+    <p>Tu ne seras probablement pas dans la salle — mais tu as un rôle avant et après. <strong>Avant :</strong> sois joignable pendant tout le créneau de l'entretien. Il arrive que l'administration souhaite vérifier un élément auprès du conjoint français, parfois par téléphone, parfois en te posant les mêmes questions séparément pour croiser les réponses — c'est même le principe de base de la vérification de communauté de vie. Si tu es en France, garde ton téléphone chargé et sous la main aux heures vietnamiennes de l'entretien (rappel : 5 à 6 heures d'avance sur la France selon la saison — un entretien à 9h à Hanoï, c'est 3h ou 4h du matin pour toi).</p>
+
+    <p><strong>Après :</strong> débriefez à chaud, mais sans dramatiser. Ton conjoint sortira avec des doutes sur telle ou telle réponse — c'est universel, tout le monde ressort d'un entretien administratif en refaisant le match. Note ensemble les questions posées pendant qu'elles sont fraîches : si le dossier devait faire l'objet d'une demande complémentaire ou d'un recours, ce compte-rendu à chaud vaudra de l'or.</p>
+
     <h2 id="section-6">Après l'entretien</h2>
-    <p>L'agent ne donne pas de réponse immédiate à l'issue de l'entretien. Le dossier repart en instruction et la décision (accord ou refus) est notifiée dans les semaines suivantes.</p>
+    <p>L'agent ne donne pas de réponse immédiate à l'issue de l'entretien. Le dossier repart en instruction et la décision (accord ou refus) est notifiée dans les semaines suivantes. Cette période d'attente est éprouvante — c'est celle où l'on n'a plus aucune prise sur le dossier. Deux conseils pour la traverser : ne bombardez pas l'ambassade de relances la première semaine (ça n'accélère rien), et fixez-vous ensemble un jalon raisonnable — par exemple, pas de relance avant un mois sans nouvelles, puis un courriel courtois de demande d'état d'avancement avec le numéro de dossier.</p>
     <p>Si le visa est accordé : ton conjoint récupère son passeport avec le visa auprès de VFS Global (en personne ou en le faisant envoyer par courrier sécurisé). Si le visa est refusé : un recours est possible. → Voir <a href="visa-long-sejour-conjoint-vietnamien-france">notre article sur les recours en cas de refus de visa</a>.</p>
+
+    <h3>En cas de refus : la voie de recours, étape par étape</h3>
+
+    <p>Un refus n'est pas la fin du parcours — surtout pour un visa de conjoint de Français, catégorie sur laquelle l'administration a une marge d'appréciation limitée quand le mariage est valablement transcrit. Le circuit de contestation, dans l'ordre :</p>
+
+    <ul>
+      <li><strong>Demander les motifs.</strong> Le refus de visa à un conjoint de Français doit être motivé. Comprendre le motif exact (doute sur la sincérité du mariage ? pièce manquante ? autre ?) détermine toute la stratégie de recours.</li>
+      <li><strong>La Commission de recours contre les décisions de refus de visa (CRRV)</strong>, basée à Nantes : c'est le passage obligé avant tout recours au tribunal. Le recours doit lui être adressé dans les <strong>deux mois</strong> suivant la notification du refus. C'est un recours écrit — c'est là que le dossier de preuves constitué pour l'entretien ressert, complété de tout élément nouveau.</li>
+      <li><strong>Le tribunal administratif de Nantes</strong>, compétent pour tout le contentieux des visas : si la CRRV rejette (ou ne répond pas dans les deux mois, ce qui vaut rejet implicite), tu peux saisir le tribunal dans un nouveau délai de deux mois.</li>
+      <li><strong>L'avocat spécialisé :</strong> pas obligatoire devant la CRRV, vivement conseillé au stade du tribunal. Pour un dossier de conjoint sincère et documenté, ces recours aboutissent régulièrement — ne laisse jamais passer les délais de deux mois, c'est la seule erreur irréversible.</li>
+    </ul>
+
+    <p>Et parfois, la voie la plus rapide n'est pas le contentieux : si le refus tient à une pièce faible ou à un malentendu identifiable, <strong>redéposer une demande mieux documentée</strong> peut aboutir plus vite qu'un recours. Les deux voies ne s'excluent pas.</p>
 
     <h2 id="section-faq">Questions fréquentes</h2>
     <?php foreach ($page_faq as $faq): ?>
@@ -200,8 +260,8 @@ include 'header.php';
     <div class="cta-newsletter">
       <h3>Reçois mes prochains articles</h3>
       <p>📥 <strong>Guide PDF + 3 modèles de lettres offerts</strong> dès l'inscription. Un email par mois, désinscription en 1 clic.</p>
-      <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
-        <input type="hidden" name="_next" value="<?= SITE_URL ?>/merci-guide">
+      <form class="cta-form" action="<?= SITE_URL ?>/subscribe-pack" method="POST">
+        <input type="text" name="website" value="" style="position:absolute;left:-9999px" tabindex="-1" autocomplete="off" aria-hidden="true">
         <input type="email" name="email" placeholder="Ton adresse email" required>
         <button type="submit">S'inscrire</button>
       </form>

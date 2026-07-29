@@ -37,6 +37,12 @@ $page_faq = [
    'a' => 'La demande peut être déposée jusqu\'à 6 mois avant le départ prévu. Le délai de traitement officiel est de 15 jours ouvrés, mais prévois 3 à 4 semaines de marge en haute saison (juin-août, décembre).'],
   ['q' => 'Peut-on faire venir la belle-famille pour un mariage en France ?',
    'a' => 'Oui, et une invitation à un mariage peut être un motif de visa recevable. Dans ce cas, inclus dans le dossier une preuve de la cérémonie (faire-part, attestation du lieu de réception…) et une lettre d\'invitation personnalisée.'],
+  ['q' => 'Peut-on prolonger le séjour une fois les parents en France ?',
+   'a' => 'La prolongation d\'un visa Schengen sur place est exceptionnelle : elle n\'est accordée que pour des motifs graves et imprévus (raison médicale sérieuse, force majeure). Ne construisez jamais un projet de séjour en comptant sur une prolongation — demandez d\'emblée la durée réellement souhaitée, et respectez-la.'],
+  ['q' => 'Les beaux-parents peuvent-ils venir garder leur petit-enfant plusieurs mois ?',
+   'a' => 'C\'est le grand classique des familles franco-vietnamiennes autour d\'une naissance. Dans la limite des 90 jours sur 180 du visa court séjour, oui — et une naissance est un excellent motif documenté. Au-delà (garde longue durée), le visa court séjour n\'est pas le bon outil, et le détourner expose à des refus futurs. Pour des venues régulières, la bonne trajectoire est l\'historique de voyage propre menant à un visa de circulation à entrées multiples.'],
+  ['q' => 'Les empreintes digitales sont-elles à refaire à chaque demande ?',
+   'a' => 'Non. Les empreintes relevées lors d\'une demande Schengen sont enregistrées dans le système VIS et réutilisables pendant 59 mois. Pour une nouvelle demande dans les 5 ans, le passage physique au centre peut ne plus être nécessaire, selon les cas.'],
 ];
 include '_article-css.php';
 include 'header.php';
@@ -57,8 +63,8 @@ include 'header.php';
     <div class="article-hero-meta">
       <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
       <span>📅 Juin 2026</span>
-      <span>⏱ 8 min de lecture</span>
-      <span>Mis &agrave; jour : Juin 2026</span>
+      <span>⏱ 11 min de lecture</span>
+      <span>Mis &agrave; jour : Juillet 2026</span>
     </div>
   </div>
 </header>
@@ -71,9 +77,11 @@ include 'header.php';
       <li><a href="#section-2">Qui peut demander ?</a></li>
       <li><a href="#section-3">Le dossier côté Vietnam</a></li>
       <li><a href="#section-4">Le dossier côté France</a></li>
+      <li><a href="#section-4b">La lettre d'invitation</a></li>
       <li><a href="#section-5">L'attestation d'accueil</a></li>
       <li><a href="#section-6">Le dépôt via VFS Global</a></li>
       <li><a href="#section-7">En cas de refus</a></li>
+      <li><a href="#section-8">Les erreurs classiques</a></li>
       <li><a href="#section-faq">Questions fréquentes</a></li>
     </ol>
     <div class="toc-share">
@@ -98,6 +106,8 @@ include 'header.php';
       <li>Les fausses déclarations de motif</li>
     </ul>
     <p>Un profil "à risque" aux yeux du consulat : personne âgée, peu de ressources propres, peu d'attaches économiques ou familiales au Vietnam. C'est souvent le profil des parents vietnamiens — d'où l'importance d'un dossier irréprochable.</p>
+
+    <p>Le paradoxe est cruel, il faut le dire : plus tes beaux-parents mènent une vie simple et honnête au Vietnam — une petite retraite, une maison de village, une vie sans comptes bancaires garnis — plus leur dossier « brut » ressemble au profil qui inquiète les consulats. La réponse n'est pas de maquiller la réalité, c'est de <strong>documenter ce qui existe vraiment</strong> : la maison familiale même modeste est un titre de propriété ; les autres enfants et petits-enfants restés au pays sont des attaches familiales solides ; l'autel des ancêtres dont on a la charge est, culturellement, l'attache la plus forte qui soit — et une lettre d'invitation peut parfaitement l'expliquer à un agent français.</p>
 
     <h2 id="section-2">Qui peut déposer la demande ?</h2>
     <p>La demande de visa est déposée par le demandeur vietnamien lui-même (les beaux-parents) auprès du consulat français compétent via VFS Global. En tant que garant en France, tu fournis un dossier d'invitation et d'hébergement.</p>
@@ -189,6 +199,24 @@ include 'header.php';
     </table>
     </div>
 
+    <h2 id="section-4b">La lettre d'invitation : le modèle qui fonctionne</h2>
+
+    <p>La lettre d'invitation est la pièce la plus personnelle du dossier — et celle où tu peux vraiment faire la différence. Une bonne lettre tient sur une page et couvre, dans l'ordre :</p>
+
+    <ol>
+      <li><strong>Qui tu es</strong> : nom, nationalité, adresse, profession — et ton lien exact avec les invités (« beau-fils de M. et Mme X, époux de leur fille Y depuis le… »).</li>
+      <li><strong>Qui tu invites</strong> : identité complète des invités telle qu'elle figure sur les passeports (orthographe comprise — les noms vietnamiens transcrits varient d'un document à l'autre, aligne-toi sur le passeport).</li>
+      <li><strong>Le motif précis et daté</strong> : « visite familiale du [date] au [date], à l'occasion de [naissance de notre premier enfant / mariage / vacances d'été] ». Un motif concret et borné rassure ; un « séjour de découverte de la France » vague inquiète.</li>
+      <li><strong>La logistique</strong> : où ils logeront (chez vous, avec l'attestation d'accueil en référence), qui prend en charge quoi (billets, dépenses sur place).</li>
+      <li><strong>L'engagement de retour</strong> : une phrase mentionnant les attaches des invités au Vietnam (autres enfants, maison, activité) et leur intention documentée de rentrer à la date prévue.</li>
+    </ol>
+
+    <p>Rédige-la en français (c'est le consulat français qui lit), signe-la, et joins-y les pièces qu'elle mentionne. Si le motif est un événement (naissance, mariage), ajoute une preuve : certificat de grossesse, faire-part, réservation de salle.</p>
+
+    <h3>Si les parents n'ont pas de ressources propres : la prise en charge</h3>
+
+    <p>Cas très fréquent avec des beaux-parents retraités de la campagne : peu ou pas de relevés bancaires à présenter. La réponse du dossier, c'est <strong>ta prise en charge financière formelle</strong> : une attestation sur l'honneur par laquelle tu t'engages à couvrir l'intégralité des frais du séjour, appuyée par tes trois derniers relevés de compte et bulletins de salaire. L'absence de ressources propres du demandeur n'est pas rédhibitoire quand le garant français démontre une capacité financière claire — c'est l'incertitude qui fait refuser, pas la modestie des revenus des parents.</p>
+
     <h2 id="section-5">L'attestation d'accueil : comment l'obtenir</h2>
     <p>L'<strong>attestation d'accueil</strong> (terme légal exact — ne pas confondre avec "attestation d'hébergement") est un document officiel délivré par la mairie de ta commune de résidence. Elle certifie que tu t'engages à accueillir et héberger les demandeurs à ton domicile pendant leur séjour.</p>
     <p>Pour l'obtenir :</p>
@@ -212,6 +240,26 @@ include 'header.php';
     </ul>
     <p>Délai de traitement : <strong>15 jours ouvrés</strong> officiellement, mais prévois <strong>3 à 4 semaines</strong> en haute saison (juin-août, décembre).</p>
 
+    <h3>La biométrie : ce qui attend tes beaux-parents au centre</h3>
+
+    <p>Lors du dépôt, les demandeurs passent par le relevé des <strong>empreintes digitales et de la photo biométrique</strong>, enregistrées dans le système d'information sur les visas Schengen (VIS). Bonne nouvelle pour les visites suivantes : ces empreintes restent réutilisables pendant <strong>59 mois</strong> — pour une nouvelle demande dans les 5 ans, la présence physique au centre peut ne plus être nécessaire si rien n'a changé. Prépare tes beaux-parents à cette étape si c'est leur premier voyage : le passage au centre VFS, avec ses files, ses guichets et ses procédures en anglais/vietnamien, est plus impressionnant que compliqué. Beaucoup de familles font accompagner les parents par un proche pour la journée de dépôt — c'est autorisé jusqu'à l'entrée du centre.</p>
+
+    <h3>La stratégie long terme : construire l'historique de voyage</h3>
+
+    <p>Un principe que trop de familles découvrent tard : <strong>le premier visa Schengen se joue en partie sur les suivants</strong>. La stratégie qui fonctionne sur la durée :</p>
+
+    <ul>
+      <li><strong>Premier séjour : court et irréprochable.</strong> Deux à quatre semaines, dates respectées à la lettre, retour dans les temps. Ce premier visa « proprement consommé » devient la meilleure pièce des dossiers futurs.</li>
+      <li><strong>Conserver les preuves du retour</strong> : tampons de sortie, cartes d'embarquement du vol retour. En cas de doute d'un futur consulat, ces preuves ferment la discussion.</li>
+      <li><strong>Viser ensuite le visa de circulation.</strong> Après un ou plusieurs visas court séjour bien utilisés, il devient possible d'obtenir un visa Schengen à entrées multiples de longue validité — précieux pour des grands-parents qui voudront venir régulièrement voir leurs petits-enfants sans refaire tout le parcours à chaque fois.</li>
+    </ul>
+
+    <p>Autrement dit : résiste à la tentation du premier séjour de 90 jours maximisé. Un premier séjour modeste et carré ouvre la porte à dix voyages sereins ; un premier séjour limite fermera peut-être la porte au deuxième.</p>
+
+    <h3>Le jour du voyage : les documents en cabine</h3>
+
+    <p>Dernier détail logistique que personne ne dit aux familles : le visa dans le passeport ne suffit pas juridiquement à l'entrée. La police aux frontières peut demander à l'arrivée les <strong>justificatifs des conditions du séjour</strong> — exactement ceux du dossier de visa. Prépare pour tes beaux-parents une pochette cabine avec : l'attestation d'accueil originale, l'assurance voyage, le billet retour, ta lettre d'invitation et tes coordonnées en gros caractères. Et sois joignable à l'heure de l'atterrissage : un agent qui appelle le garant et tombe sur une messagerie, c'est un contrôle qui se complique inutilement.</p>
+
     <h2 id="section-7">Que faire en cas de refus ?</h2>
     <p>Un refus de visa Schengen mentionne un motif parmi une liste de codes standard (ressources insuffisantes, doute sur le retour, dossier incomplet…). Tu peux :</p>
     <ul>
@@ -220,6 +268,22 @@ include 'header.php';
       <li>Attendre quelques mois et redéposer : un historique de visas accordés précédemment joue positivement</li>
     </ul>
     <p>Si les beaux-parents ont déjà voyagé (autres pays d'Asie, Europe, Amérique), mentionner les voyages précédents et les visas obtenus peut aider.</p>
+
+    <h2 id="section-8">Les erreurs classiques du dossier belle-famille</h2>
+
+    <p>Après avoir vu passer beaucoup de retours d'expérience dans les groupes de couples franco-vietnamiens, voici les erreurs qui reviennent en boucle dans les dossiers refusés — toutes évitables :</p>
+
+    <ul>
+      <li><strong>Le dossier « côté France » impeccable, le dossier « côté Vietnam » vide.</strong> Beaucoup de couples soignent l'invitation et l'hébergement, et négligent les preuves d'attaches au Vietnam. Or c'est LA question centrale du consulat : qu'est-ce qui garantit le retour ? Titre de propriété de la maison familiale, livret de pension, présence d'autres enfants et petits-enfants au Vietnam — ces documents pèsent plus lourd que ton contrat de travail.</li>
+      <li><strong>Des incohérences de dates</strong> entre le formulaire, l'assurance, les réservations de vol et la lettre d'invitation. Le dossier passe entre plusieurs mains ; la moindre discordance (assurance qui démarre deux jours après l'arrivée, billet retour après la fin du visa demandé) fait tiquer. Fais une relecture croisée de toutes les dates avant le dépôt.</li>
+      <li><strong>La traduction négligée.</strong> Les documents vietnamiens (titres de propriété, livrets de pension) doivent être accompagnés d'une traduction — un document illisible pour l'agent est un document qui n'existe pas. À noter : <a href="apostille-vietnam-francais-2026">l'adhésion du Vietnam à l'apostille en septembre 2026</a> simplifie la légalisation des documents vietnamiens, mais ne dispense pas de la traduction.</li>
+      <li><strong>Demander des dates « larges » par confort.</strong> Un séjour demandé du 1er juin au 28 août « pour être tranquille » alors que le motif est une naissance mi-juin : l'écart entre le motif et la durée interroge. Colle la durée demandée au motif réel.</li>
+      <li><strong>Déposer trop tard.</strong> Entre le rendez-vous VFS à décrocher, les 15 jours ouvrés de traitement et les aléas de haute saison, un dépôt à 3 semaines du départ est un pari. Vise 2 à 3 mois avant le voyage — la demande est possible jusqu'à 6 mois avant.</li>
+    </ul>
+
+    <h3>Bien choisir la période du séjour</h3>
+
+    <p>Deux fenêtres reviennent dans presque toutes les familles franco-vietnamiennes : <strong>l'été français</strong> (les grands-parents découvrent la France quand il y fait beau — et chaud, prévois-les au fait que la canicule sans climatisation existe) et <strong>les grands événements familiaux</strong> (naissance, mariage, baptême). Évite en revanche de planifier un séjour qui chevauche le <strong>Têt</strong> : demander à des parents vietnamiens de passer le Nouvel An lunaire loin de leur autel des ancêtres et de leur communauté, c'est leur demander un vrai sacrifice — et c'est souvent vécu comme tel même s'ils acceptent par politesse. Le calendrier idéal se choisit à trois : toi, ton conjoint, et eux.</p>
 
     <h2 id="section-faq">Questions fréquentes</h2>
     <?php foreach ($page_faq as $faq): ?>
@@ -232,8 +296,8 @@ include 'header.php';
     <div class="cta-newsletter">
       <h3>Reçois mes prochains articles</h3>
       <p>📥 <strong>Guide PDF + 3 modèles de lettres offerts</strong> dès l'inscription. Un email par mois, désinscription en 1 clic.</p>
-      <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
-        <input type="hidden" name="_next" value="<?= SITE_URL ?>/merci-guide">
+      <form class="cta-form" action="<?= SITE_URL ?>/subscribe-pack" method="POST">
+        <input type="text" name="website" value="" style="position:absolute;left:-9999px" tabindex="-1" autocomplete="off" aria-hidden="true">
         <input type="email" name="email" placeholder="Ton adresse email" required>
         <button type="submit">S'inscrire</button>
       </form>

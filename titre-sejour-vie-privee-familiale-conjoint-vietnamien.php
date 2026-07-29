@@ -37,6 +37,12 @@ $page_faq = [
    'a' => 'Après 3 ans de vie commune effective en France depuis le mariage, sous réserve de résidence régulière et d\'absence de condamnation grave.'],
   ['q' => 'Que se passe-t-il si la préfecture perd le dossier ou ne répond pas ?',
    'a' => 'Si la préfecture ne répond pas dans le délai légal de 4 mois après le dépôt, c\'est considéré comme un refus implicite. Tu peux déposer un recours auprès du tribunal administratif ou adresser un courrier recommandé à la préfecture pour relancer le traitement.'],
+  ['q' => 'Mon conjoint peut-il voyager au Vietnam avec un récépissé de renouvellement ?',
+   'a' => 'Avec un récépissé de renouvellement présenté avec le titre de séjour expiré, le retour en France est en principe possible. Avec un récépissé de première demande en revanche, sortir de l\'espace Schengen est risqué : le récépissé seul ne garantit pas le réembarquement. Dans le doute, vérifie ta situation exacte auprès de la préfecture avant de réserver des billets.'],
+  ['q' => 'Que devient le titre de séjour en cas de séparation ou de divorce ?',
+   'a' => 'Le titre « vie privée et familiale » de conjoint de Français repose sur la communauté de vie : une rupture avant l\'obtention de la carte de résident peut entraîner un non-renouvellement. Exception essentielle : en cas de violences conjugales ou familiales, la loi protège le conjoint étranger et la rupture de la vie commune ne peut pas lui être opposée pour refuser le renouvellement.'],
+  ['q' => 'Combien de preuves de vie commune faut-il fournir ?',
+   'a' => 'Il n\'y a pas de nombre magique : ce que la préfecture regarde, c\'est la régularité et l\'étalement dans le temps. Un dossier solide combine des preuves « lourdes » (bail ou facture aux deux noms, relevés de compte joint, avis d\'imposition commun) réparties sur toute la période, plutôt que beaucoup de documents concentrés sur un seul mois.'],
 ];
 include '_article-css.php';
 include 'header.php';
@@ -57,7 +63,7 @@ include 'header.php';
     <div class="article-hero-meta">
       <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
       <span>📅 Juin 2026</span>
-      <span>⏱ 9 min de lecture</span>
+      <span>⏱ 11 min de lecture</span>
     </div>
   </div>
 </header>
@@ -72,6 +78,8 @@ include 'header.php';
       <li><a href="#section-4">Démarche en ligne via l'ANEF</a></li>
       <li><a href="#section-5">Le renouvellement</a></li>
       <li><a href="#section-6">La carte de résident (10 ans)</a></li>
+      <li><a href="#section-6b">La frise année par année</a></li>
+      <li><a href="#section-6c">Les pièges qui coûtent cher</a></li>
       <li><a href="#section-7">Droits attachés au titre</a></li>
       <li><a href="#section-faq">Questions fréquentes</a></li>
     </ol>
@@ -94,9 +102,32 @@ include 'header.php';
     <p>La validation se fait en ligne sur le site de l'OFII (ofii.fr). Ton conjoint devra payer la taxe <strong>OFII (250 €)</strong> et se présenter à une visite médicale (radiographie pulmonaire). Cette validation est <strong>obligatoire</strong> — sans elle, le visa n'est pas valide en France.</p>
     <p>La validation OFII déclenche également le Contrat d'Intégration Républicaine (CIR), qui prévoit des formations civiques et linguistiques obligatoires pour les nouveaux arrivants.</p>
 
+    <h3>Le CIR concrètement : à quoi s'attendre</h3>
+
+    <p>Le CIR fait souvent peur sur le papier, mais c'est un parcours balisé. Après la validation du visa, ton conjoint est convoqué à un <strong>entretien individuel à l'OFII</strong> : présentation du parcours, signature du contrat, et surtout un <strong>test de positionnement en français</strong>. Deux issues :</p>
+
+    <ul>
+      <li><strong>Niveau suffisant</strong> (à l'oral et à l'écrit) : pas de formation linguistique prescrite. C'est le cas de beaucoup de conjoints qui ont déjà appris le français au Vietnam — l'Institut Français de Hanoï et de HCMV préparent d'ailleurs très bien à ça.</li>
+      <li><strong>Niveau insuffisant :</strong> des heures de formation de français sont prescrites, entièrement gratuites, dans un organisme proche de chez vous. Le volume dépend du niveau de départ. Ce n'est pas une punition — c'est l'un des rares moments où l'État finance intégralement des cours de langue, autant en profiter à fond.</li>
+    </ul>
+
+    <p>S'ajoutent les <strong>journées de formation civique</strong> (valeurs et institutions de la République, vie pratique en France), obligatoires pour tous. Garde précieusement toutes les attestations d'assiduité : elles ressortent au moment du renouvellement, de la carte de résident et de la <a href="naturalisation-conjoint-vietnamien">naturalisation</a>. Un CIR non respecté peut bloquer la suite du parcours — un CIR bien suivi, à l'inverse, est un argument dans le dossier.</p>
+
     <h2 id="section-2">Premier titre de séjour : la carte "vie privée et familiale" 1 an</h2>
     <p>Le VLS-TS est valable pendant 1 an. Avant son expiration, ton conjoint doit déposer une demande de titre de séjour "vie privée et familiale" en préfecture. Ce titre est délivré pour une durée initiale d'un an, renouvelable.</p>
     <p>La condition principale : prouver la réalité de la vie commune avec le conjoint français. La préfecture peut demander des justificatifs de communauté de vie (bail commun, relevés bancaires communs, preuves de résidence commune).</p>
+
+    <h3>Construire la preuve de vie commune au quotidien (dès le premier jour)</h3>
+
+    <p>C'est LE conseil que je donnerais à tout couple qui démarre : <strong>la preuve de vie commune se construit au fil de l'eau, pas la veille du dépôt</strong>. La préfecture veut voir des traces régulières et étalées dans le temps — pas trois documents produits le même mois. Le système qui marche :</p>
+
+    <ul>
+      <li><strong>Mets les deux noms partout, tout de suite.</strong> Bail ou attestation d'hébergement, contrat d'électricité, box internet, assurance habitation : chaque abonnement au double nom est une preuve datée qui travaille pour vous chaque mois.</li>
+      <li><strong>Ouvrez un compte joint</strong> et faites-y vivre les dépenses du quotidien. Les relevés mensuels d'un compte joint actif sont parmi les preuves les plus solides — elles montrent une vie financière commune, pas juste une adresse partagée. (Sur l'organisation de l'argent à deux, voir <a href="argent-couple-franco-vietnamien">notre guide dédié</a>.)</li>
+      <li><strong>La déclaration d'impôts commune</strong> arrive automatiquement avec le mariage — conserve chaque avis d'imposition, c'est une preuve en béton.</li>
+      <li><strong>Tiens un classeur (ou un dossier cloud) « préfecture »</strong> : chaque trimestre, glisses-y une facture, un relevé, un courrier à vos deux noms. Le jour du renouvellement, ton dossier se monte en vingt minutes au lieu d'un week-end de panique.</li>
+      <li><strong>Attestations de proches :</strong> en complément (jamais en preuve principale), des attestations sur l'honneur de proches ou voisins avec copie de leur pièce d'identité peuvent épaissir un dossier — utile la première année, quand les preuves « lourdes » sont encore récentes.</li>
+    </ul>
 
     <h2 id="section-3">Les documents à préparer</h2>
 
@@ -153,6 +184,8 @@ include 'header.php';
       <strong>Blocage sur l'ANEF ?</strong> Le portail est parfois saturé ou bugué. En cas d'impossibilité persistante de déposer en ligne, contacter directement la préfecture. Selon les préfectures, une attestation de dépôt peut être délivrée.
     </div>
 
+    <p>Trois conseils de préparation qui évitent 90 % des allers-retours avec l'ANEF : <strong>scanne tout en amont</strong> (chaque document en PDF lisible, nommé clairement — « acte_mariage_transcrit.pdf » plutôt que « scan0001.pdf »), <strong>respecte les limites de taille de fichiers</strong> en compressant les scans si besoin, et <strong>fais les captures d'écran de chaque étape</strong> de la soumission, y compris le numéro de dossier et la confirmation finale. En cas de bug ou de litige, ces captures sont ta seule trace de la démarche accomplie dans les temps.</p>
+
     <h2 id="section-5">Le renouvellement du titre de séjour</h2>
     <p>Le titre de séjour "vie privée et familiale" est renouvelable chaque année. La demande de renouvellement doit être déposée sur l'ANEF <strong>entre 4 et 2 mois avant l'expiration</strong> du titre en cours.</p>
     <p>Pièces généralement demandées pour le renouvellement : mêmes pièces que pour le premier titre, plus les preuves de vie commune de l'année écoulée (relevés bancaires communs, bail, photos…).</p>
@@ -168,14 +201,83 @@ include 'header.php';
     </ul>
     <p>La <strong>déclaration de nationalité française</strong> est possible après <strong>4 ans de mariage</strong> avec un Français (Art. 21-2 du Code civil). La durée est portée à 5 ans si les époux n'ont pas résidé ensemble en France pendant au moins 3 ans depuis le mariage.</p>
 
+    <h2 id="section-6b">La frise complète, année par année</h2>
+
+    <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Moment</th>
+          <th>Étape</th>
+          <th>Le réflexe à avoir</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Arrivée (J+0 à J+90)</strong></td>
+          <td>Validation du VLS-TS en ligne + taxe OFII</td>
+          <td>À faire dans les 3 mois, sans exception — c'est la fondation de tout le reste</td>
+        </tr>
+        <tr>
+          <td><strong>Premiers mois</strong></td>
+          <td>Entretien OFII, CIR, formations civiques</td>
+          <td>Conserver chaque attestation ; ouvrir compte joint et abonnements aux deux noms</td>
+        </tr>
+        <tr>
+          <td><strong>Mois 8 à 10</strong></td>
+          <td>Demande du premier titre VPF sur l'ANEF</td>
+          <td>Fenêtre de dépôt : entre 4 et 2 mois avant l'expiration du VLS-TS</td>
+        </tr>
+        <tr>
+          <td><strong>Années 2 et 3</strong></td>
+          <td>Renouvellements annuels</td>
+          <td>Même fenêtre 4-2 mois ; le classeur « préfecture » paie ici</td>
+        </tr>
+        <tr>
+          <td><strong>Année 3 (de vie commune en France)</strong></td>
+          <td>Carte de résident 10 ans possible</td>
+          <td>Sécurité de séjour maximale — à demander dès que les conditions sont réunies</td>
+        </tr>
+        <tr>
+          <td><strong>Année 4 (de mariage)</strong></td>
+          <td>Déclaration de nationalité possible</td>
+          <td>Art. 21-2 du Code civil — voir le <a href="naturalisation-conjoint-vietnamien">guide naturalisation</a></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <h2 id="section-6c">Les pièges qui coûtent cher</h2>
+
+    <ul>
+      <li><strong>Laisser expirer le titre sans avoir déposé le renouvellement.</strong> C'est LA situation à éviter absolument : sans récépissé ni titre valide, ton conjoint bascule en séjour irrégulier, avec des conséquences en cascade (travail, CAF, voyages). La fenêtre de dépôt entre 4 et 2 mois avant expiration existe pour ça — mets une alarme récurrente dans vos deux téléphones dès la réception de chaque titre.</li>
+      <li><strong>Voyager pendant un renouvellement sans préparation.</strong> Avec un récépissé de renouvellement accompagné du titre expiré, le retour en France est en principe possible. Mais avec un simple récépissé de première demande, sortir de l'espace Schengen expose à un refus de réembarquement. Règle prudente : pas de voyage au Vietnam prévu pendant une période de renouvellement si vous pouvez l'éviter — et si c'est inévitable, vérifiez la situation exacte auprès de la préfecture avant de réserver.</li>
+      <li><strong>Oublier de signaler un déménagement.</strong> Changement d'adresse = déclaration à faire (via l'ANEF). Une convocation OFII ou préfecture envoyée à l'ancienne adresse et manquée peut faire dérailler un dossier entier.</li>
+      <li><strong>La rupture de vie commune avant 3 ans.</strong> Le titre VPF « conjoint de Français » repose sur la communauté de vie : une séparation avant l'obtention de la carte de résident peut entraîner le non-renouvellement du titre. Exception majeure et protectrice : en cas de <strong>violences conjugales ou familiales</strong>, la loi protège le conjoint étranger — la rupture de vie commune ne peut pas lui être opposée, et le renouvellement reste de droit. Si tu lis ceci dans cette situation : associations spécialisées et 3919 sont là, et le titre de séjour n'est pas une raison de rester.</li>
+    </ul>
+
     <h2 id="section-7">Droits attachés au titre de séjour</h2>
     <p>Le titre de séjour "vie privée et familiale" autorise :</p>
     <ul>
       <li>La résidence en France</li>
       <li>L'exercice d'une activité professionnelle salariée ou indépendante</li>
-      <li>L'accès aux droits sociaux (sécurité sociale, CAF, Pôle Emploi)</li>
+      <li>L'accès aux droits sociaux (sécurité sociale, CAF, France Travail)</li>
       <li>Les voyages dans l'espace Schengen dans les conditions habituelles</li>
     </ul>
+
+    <h3>Les démarches sociales à enchaîner une fois le séjour régularisé</h3>
+
+    <p>Le titre (ou le VLS-TS validé) est la clé qui ouvre toutes les autres portes. Dans la foulée, enchaîne dans cet ordre :</p>
+
+    <ul>
+      <li><strong>Numéro de sécurité sociale :</strong> la demande d'immatriculation se fait auprès de la CPAM du domicile. Ton conjoint reçoit d'abord un numéro provisoire, puis un numéro définitif — patience, c'est l'administration française dans toute sa splendeur, mais tout finit par arriver. La carte Vitale suit.</li>
+      <li><strong>Compte bancaire personnel :</strong> possible dès l'arrivée avec passeport + visa + justificatif de domicile, mais nettement plus simple une fois le titre en poche. Le compte joint évoqué plus haut ne remplace pas un compte personnel — les deux sont utiles.</li>
+      <li><strong>CAF :</strong> selon votre situation (revenus, logement), des droits peuvent exister dès la régularité du séjour. Une simulation en ligne prend dix minutes.</li>
+      <li><strong>France Travail :</strong> l'inscription est ouverte au titulaire d'un titre VPF — utile même sans expérience française, ne serait-ce que pour l'accès aux formations financées.</li>
+      <li><strong>Permis de conduire :</strong> le permis vietnamien peut être utilisé pendant une durée limitée après l'arrivée, puis c'est la procédure française qui prend le relais. Anticipe ce sujet tôt — les délais d'examen sont longs, et l'autonomie de déplacement compte énormément pour l'intégration hors des grandes villes.</li>
+    </ul>
+
+    <p>Chacune de ces démarches génère... de nouveaux documents aux deux noms ou à l'adresse commune. Tu vois où je veux en venir : <strong>tout ce que vous faites nourrit le classeur préfecture</strong>. Le parcours administratif français est une boucle — autant la faire tourner à votre avantage.</p>
 
     <h2 id="section-faq">Questions fréquentes</h2>
     <?php foreach ($page_faq as $faq): ?>
@@ -188,8 +290,8 @@ include 'header.php';
     <div class="cta-newsletter">
       <h3>Reçois mes prochains articles</h3>
       <p>📥 <strong>Guide PDF + 3 modèles de lettres offerts</strong> dès l'inscription. Un email par mois, désinscription en 1 clic.</p>
-      <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
-        <input type="hidden" name="_next" value="<?= SITE_URL ?>/merci-guide">
+      <form class="cta-form" action="<?= SITE_URL ?>/subscribe-pack" method="POST">
+        <input type="text" name="website" value="" style="position:absolute;left:-9999px" tabindex="-1" autocomplete="off" aria-hidden="true">
         <input type="email" name="email" placeholder="Ton adresse email" required>
         <button type="submit">S'inscrire</button>
       </form>

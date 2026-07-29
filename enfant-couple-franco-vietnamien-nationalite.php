@@ -35,6 +35,12 @@ $page_faq = [
    'a' => 'La France accepte la double nationalité sans restriction. Le Vietnam ne reconnaît pas officiellement la double nationalité mais la tolère dans les faits. Ton enfant peut donc avoir les deux passeports, mais en pratique les autorités vietnamiennes le considèrent comme vietnamien sur le sol vietnamien.'],
   ['q' => 'Peut-on choisir la nationalité de l\'enfant ?',
    'a' => 'Non, la nationalité française est automatique dès lors qu\'un parent est français — il n\'y a pas de choix à faire pour cela. En revanche, la nationalité vietnamienne n\'est pas automatique pour un enfant de couple mixte : selon l\'article 16 de la loi vietnamienne sur la nationalité (2008), les deux parents doivent exprimer leur accord pour que l\'enfant soit enregistré comme vietnamien lors de la déclaration de naissance auprès des autorités vietnamiennes. Sans cet accord formalisé, l\'enfant n\'obtient pas la nationalité vietnamienne.'],
+  ['q' => 'Quel passeport l\'enfant doit-il utiliser pour voyager ?',
+   'a' => 'La règle d\'usage des binationaux : chaque pays veut voir « son » passeport. Sortie et entrée au Vietnam avec le passeport vietnamien, entrée et sortie de France avec le passeport français. Emporte toujours les deux, valides, à chaque voyage.'],
+  ['q' => 'Peut-on donner un prénom vietnamien avec accents à l\'état civil français ?',
+   'a' => 'Le prénom vietnamien est accepté, mais les diacritiques vietnamiens (tons, đ, ư, ơ…) ne font pas partie des caractères admis par l\'état civil français : ils seront simplifiés sur les documents français. L\'enfant aura donc deux graphies officielles selon le pays — c\'est normal et sans conséquence, tant que nom et prénom ne sont pas intervertis.'],
+  ['q' => 'Un enfant né en France d\'un parent vietnamien peut-il avoir la nationalité vietnamienne ?',
+   'a' => 'Oui, le principe est symétrique : la nationalité vietnamienne se transmet aussi par filiation, avec la même exigence d\'accord des deux parents pour un enfant de couple mixte. Les démarches se font alors auprès de l\'ambassade du Vietnam en France. Si vous envisagez des séjours longs au Vietnam, ça vaut la réflexion dès la naissance.'],
 ];
 include '_article-css.php';
 include 'header.php';
@@ -54,7 +60,7 @@ include 'header.php';
     <div class="article-hero-meta">
       <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
       <span>📅 Juin 2026</span>
-      <span>⏱ 8 min de lecture</span>
+      <span>⏱ 11 min de lecture</span>
     </div>
   </div>
 </header>
@@ -67,8 +73,11 @@ include 'header.php';
       <li><a href="#section-2">La double nationalité franco-vietnamienne</a></li>
       <li><a href="#section-3">Déclarer la naissance côté français</a></li>
       <li><a href="#section-4">Documents à obtenir</a></li>
+      <li><a href="#section-4b">Le prénom binational</a></li>
+      <li><a href="#section-4c">Registre consulaire et CNF</a></li>
       <li><a href="#section-5">Le passeport français de l'enfant</a></li>
       <li><a href="#section-6">L'enfant en France vs au Vietnam</a></li>
+      <li><a href="#section-7">Chronologie des 3 premiers mois</a></li>
       <li><a href="#section-faq">Questions fréquentes</a></li>
     </ol>
     <div class="toc-share">
@@ -103,6 +112,12 @@ include 'header.php';
       <li>Un passeport vietnamien — si les deux parents ont choisi la nationalité vietnamienne lors de la déclaration au comité populaire (accord formalisé requis, art. 16 de la loi vietnamienne 2008)</li>
     </ul>
     <p>Attention : sur le sol vietnamien, les autorités considèrent en général ton enfant comme vietnamien et lui appliquent le droit vietnamien. En France, il est français.</p>
+
+    <h3>L'envers du choix : et si l'enfant n'a QUE la nationalité française ?</h3>
+
+    <p>On parle beaucoup du « comment obtenir les deux nationalités », rarement de la conséquence inverse — et elle est importante. Si vous ne formalisez pas l'accord pour la nationalité vietnamienne, votre enfant est, aux yeux du Vietnam, <strong>un étranger comme un autre</strong>. Concrètement : il lui faudra un visa (ou une exemption, ou une carte de résidence) pour vivre au Vietnam ou rendre visite à ses grands-parents, exactement comme à toi. Pour un couple qui envisage de vivre au Vietnam ou d'y passer de longues périodes, c'est un paramètre qui pèse lourd dans la décision — l'enfant « étranger dans le pays de sa mère » est une situation administrativement gérable mais émotionnellement étrange.</p>
+
+    <p>À l'inverse, l'enfant qui a les deux nationalités vit le meilleur des deux mondes administratifs : pas de visa d'aucun côté, accès à l'école publique vietnamienne comme aux droits français. La contrepartie, ce sont quelques obligations françaises à ne pas oublier plus tard (recensement citoyen à 16 ans, Journée Défense et Citoyenneté — faisables depuis l'étranger via le consulat), et des questions à anticiper côté vietnamien à l'âge adulte, notamment sur les obligations des citoyens vietnamiens, à vérifier le moment venu selon le lieu de résidence.</p>
 
     <h2 id="section-3">Déclarer la naissance côté français</h2>
     <p>Si l'enfant naît au Vietnam, tu dois déclarer sa naissance à l'ambassade de France à Hanoï (ou au consulat général à HCMV) dans les <strong>30 jours calendaires</strong> suivant la naissance. Cette déclaration est gratuite.</p>
@@ -169,6 +184,25 @@ include 'header.php';
       </tbody>
     </table>
 
+    <h2 id="section-4b">Le prénom : le premier casse-tête (adorable) du couple mixte</h2>
+
+    <p>Avant les papiers, il y a une décision très concrète que tout couple franco-vietnamien connaît : <strong>quel prénom fonctionne dans les deux pays ?</strong> Quelques réalités à connaître avant de trancher :</p>
+
+    <ul>
+      <li><strong>L'ordre des noms est inversé.</strong> Au Vietnam, le nom de famille vient en premier (Nguyễn Văn A) ; en France, en dernier. Sur les documents des deux pays, le même enfant apparaîtra donc avec des présentations différentes — normal, mais vérifie à chaque document que nom et prénom n'ont pas été intervertis par un agent pressé. C'est LA coquille classique des actes binationaux.</li>
+      <li><strong>Les diacritiques vietnamiens ne passent pas à l'état civil français.</strong> L'état civil français n'admet qu'un jeu limité de caractères : les Đ, ư, ơ et les tons du vietnamien seront simplifiés sur les documents français (Hương devient Huong). L'enfant aura donc de facto deux graphies officielles — prévoyez-le pour éviter la panique le jour où une administration compare les deux.</li>
+      <li><strong>Le test de la double prononciation.</strong> Le vrai critère du terrain : est-ce que les deux grands-mères peuvent prononcer le prénom ? Les sons français « j », « r » et les nasales sont difficiles pour un locuteur vietnamien ; les tons vietnamiens sont invisibles pour une oreille française. D'où la popularité, chez les couples mixtes, des doubles prénoms (un français + un vietnamien) ou des prénoms « passe-partout » qui existent dans les deux univers sonores — courts, sans sons pièges (Léo, Mila, Anna, Nam, Lan, An…).</li>
+    </ul>
+
+    <h2 id="section-4c">Après l'état civil : registre consulaire et certificat de nationalité</h2>
+
+    <p>Deux démarches complémentaires méritent d'être connues :</p>
+
+    <ul>
+      <li><strong>L'inscription au registre des Français établis hors de France</strong> (si vous vivez au Vietnam) : gratuite, en ligne, à faire pour l'enfant comme pour toi. Elle simplifie toutes les démarches consulaires suivantes, permet de recevoir les alertes de sécurité, et facilitera plus tard bourses scolaires (réseau AEFE) et inscription électorale.</li>
+      <li><strong>Le certificat de nationalité française (CNF)</strong> : c'est la preuve juridique « lourde » de la nationalité, délivrée par le tribunal judiciaire. Dans la vie courante, l'acte de naissance transcrit et le passeport suffisent — tu n'as pas besoin de CNF par défaut. Mais si un jour une administration exige une preuve formelle de nationalité (cas de doute, première demande de papiers dans certaines situations complexes), c'est ce document-là qu'on te demandera. Bon à savoir, pas urgent à obtenir.</li>
+    </ul>
+
     <h2 id="section-5">Le passeport français de l'enfant</h2>
     <p>Une fois l'acte de naissance enregistré au consulat, tu peux demander un passeport français pour ton enfant. La demande se fait au consulat, avec :</p>
     <ul>
@@ -190,6 +224,29 @@ include 'header.php';
       <li>En cas de litige de garde internationale, des règles spécifiques s'appliquent — consulte l'ambassade de France au Vietnam ou un avocat spécialisé en droit international de la famille</li>
     </ul>
 
+    <h3>Voyager avec un enfant binational : le ballet des deux passeports</h3>
+
+    <p>C'est la question pratique que tout parent d'enfant double-national finit par poser : <em>« on lui montre quel passeport, à qui ? »</em> La règle d'usage des binationaux du monde entier s'applique : <strong>chaque pays veut voir « son » passeport</strong>. Concrètement, pour un trajet Vietnam → France : sortie du Vietnam avec le passeport vietnamien (pour l'immigration vietnamienne, l'enfant est vietnamien), entrée en France avec le passeport français (pour la PAF, il est français). Et l'inverse au retour. Prévois les deux passeports valides à chaque voyage — un passeport d'enfant expire vite (5 ans côté français, et la validité des passeports vietnamiens d'enfants est également courte), et découvrir une expiration à l'aéroport est un classique douloureux.</p>
+
+    <p>Pense aussi à la <strong>déclaration PAI</strong> pour l'arrivée au Vietnam (une par voyageur, bébés inclus — <a href="declaration-pre-arrivee-vietnam-pai-2026">le mode d'emploi ici</a>), et si l'enfant voyage avec un seul de ses parents, renseigne-toi sur les exigences d'autorisation de l'autre parent : la France a supprimé l'autorisation de sortie du territoire puis l'a réintroduite par le passé, et les compagnies aériennes asiatiques posent parfois leurs propres questions sur un mineur accompagné d'un seul parent au nom de famille différent. Un jugement de mariage ou le livret de famille dans le bagage cabine désamorce la plupart des situations.</p>
+
+    <h3>École et santé : où l'enfant a-t-il ses droits ?</h3>
+
+    <p>La double nationalité ouvre les deux systèmes, mais chacun selon ses règles de résidence. En France : école publique gratuite et Sécurité sociale, comme tout petit Français. Au Vietnam : l'enfant vietnamien peut aller à l'école publique locale ; les couples mixtes de Hanoï arbitrent le plus souvent entre école publique vietnamienne, écoles bilingues et lycée français — j'ai détaillé les options et les coûts dans <a href="vivre-hanoi-avec-enfant-ecole-creche">vivre à Hanoï avec un enfant</a>, et la question de la <a href="scolarite-enfants-franco-vietnamiens">scolarité des enfants franco-vietnamiens en France</a> a aussi son guide dédié. Côté santé au Vietnam, l'enfant s'appuie sur le système local et/ou votre assurance familiale — voir <a href="grossesse-vietnam-hopital-cout-demarches">le guide grossesse et maternité</a> pour le tout début du parcours.</p>
+
+    <h2 id="section-7">La chronologie idéale des 3 premiers mois (naissance au Vietnam)</h2>
+
+    <p>Pour t'éviter de reconstituer le puzzle, voici l'ordre optimal des démarches quand bébé naît au Vietnam :</p>
+
+    <ol>
+      <li><strong>Semaine 1-2 : l'acte de naissance vietnamien.</strong> Déclaration au comité populaire avec le certificat de la maternité. C'est le document racine — tout le reste en découle. Si vous voulez la nationalité vietnamienne pour l'enfant, c'est ici que l'accord des deux parents se formalise.</li>
+      <li><strong>Avant le jour 30 : la déclaration au consulat français.</strong> La fenêtre des 30 jours est le seul vrai délai du parcours — prends rendez-vous dès la naissance, pas après. Si le délai est dépassé, pas de panique : la transcription reste possible sans limite, juste un peu plus de paperasse.</li>
+      <li><strong>Dans la foulée : livret de famille mis à jour et passeport français.</strong> Les photos d'identité d'un nouveau-né sont une aventure en soi (yeux ouverts, fond uni, bébé qui coopère) — certains studios photo vietnamiens des grandes villes connaissent les normes françaises, demande autour de toi.</li>
+      <li><strong>Semaine 6-12 : passeport vietnamien</strong> (si double nationalité choisie), inscription au registre des Français de l'étranger, et — si un voyage en France se profile — vérification que les deux passeports seront prêts à temps.</li>
+    </ol>
+
+    <p>Le tout se fait très bien en parallèle des nuits courtes — à condition de ne pas découvrir la liste au jour 25. Épingle cette page, ou mieux : prépare le dossier consulaire pendant la grossesse, il ne manquera que le certificat de naissance à y glisser.</p>
+
     <h2 id="section-faq">Questions fréquentes</h2>
     <?php foreach ($page_faq as $faq): ?>
     <div class="faq-item">
@@ -201,8 +258,8 @@ include 'header.php';
     <div class="cta-newsletter">
       <h3>Reçois mes prochains articles</h3>
       <p>📥 <strong>Guide PDF + 3 modèles de lettres offerts</strong> dès l'inscription. Un email par mois, désinscription en 1 clic.</p>
-      <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
-        <input type="hidden" name="_next" value="<?= SITE_URL ?>/merci-guide">
+      <form class="cta-form" action="<?= SITE_URL ?>/subscribe-pack" method="POST">
+        <input type="text" name="website" value="" style="position:absolute;left:-9999px" tabindex="-1" autocomplete="off" aria-hidden="true">
         <input type="email" name="email" placeholder="Ton adresse email" required>
         <button type="submit">S'inscrire</button>
       </form>

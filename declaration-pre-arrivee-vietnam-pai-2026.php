@@ -42,6 +42,14 @@ $page_faq = [
    'a' => 'Les autorités peuvent refuser l\'embarquement ou retarder votre passage à l\'immigration à l\'arrivée. Dans les aéroports concernés, le PAI est contrôlé au check-in et à l\'arrivée.'],
   ['q' => 'Les Vietnamiens résidant en France doivent-ils aussi le remplir ?',
    'a' => 'Oui. La formalité s\'applique à tous les voyageurs étrangers ainsi qu\'aux Vietnamiens résidant à l\'étranger (Việt kiều) arrivant dans les aéroports concernés.'],
+  ['q' => 'Faut-il une déclaration par personne, même pour les enfants ?',
+   'a' => 'Oui. Chaque voyageur doit faire l\'objet de sa propre déclaration, y compris les mineurs. En pratique, un parent peut remplir toutes les déclarations de la famille depuis le même appareil, en quelques minutes — mais chaque passeport génère son propre QR code.'],
+  ['q' => 'Mon vol a été modifié, dois-je refaire le PAI ?',
+   'a' => 'Un simple retard du même vol ne pose généralement pas de problème : la déclaration reste rattachée à votre numéro de vol. En revanche, si votre numéro de vol change (nouvelle réservation, réacheminement sur un autre vol) ou si la date d\'arrivée change, refaites une déclaration — c\'est gratuit et rapide.'],
+  ['q' => 'Combien de temps le QR code est-il valable ?',
+   'a' => 'Le QR code est rattaché au vol que vous avez déclaré. Il sert pour cette arrivée-là, et uniquement celle-là. À chaque nouveau voyage vers un aéroport concerné, il faut refaire une déclaration dans la fenêtre des 72 heures.'],
+  ['q' => 'Puis-je remplir le PAI directement à l\'aéroport avant d\'embarquer ?',
+   'a' => 'Techniquement oui, tant que vous êtes dans la fenêtre des 72 heures. Mais c\'est déconseillé : la validation n\'est pas toujours instantanée, le WiFi d\'aéroport est capricieux, et un problème de dernière minute (photo de passeport refusée, faute de frappe) peut vous faire rater l\'embarquement. Visez au moins 24 heures avant le départ.'],
 ];
 
 include '_article-css.php';
@@ -62,8 +70,8 @@ include 'header.php';
     <div class="article-hero-meta">
       <span>Par <a href="<?= SITE_URL ?>/a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
       <span>📅 23 juin 2026</span>
-      <span>⏱ 6 min de lecture</span>
-      <span>Mis&nbsp;à&nbsp;jour&nbsp;: Juin 2026</span>
+      <span>⏱ 10 min de lecture</span>
+      <span>Mis&nbsp;à&nbsp;jour&nbsp;: Juillet 2026</span>
     </div>
   </div>
 </header>
@@ -73,10 +81,14 @@ include 'header.php';
     <div class="toc-label">Sommaire</div>
     <ol class="toc-list">
       <li><a href="#section-quoi">C'est quoi le PAI ?</a></li>
+      <li><a href="#section-pourquoi">Pourquoi cette formalité ?</a></li>
       <li><a href="#section-aeroports">Aéroports concernés</a></li>
       <li><a href="#section-comment">Comment remplir le formulaire</a></li>
       <li><a href="#section-infos">Informations requises</a></li>
       <li><a href="#section-qr">Le QR code</a></li>
+      <li><a href="#section-cas">Cas particuliers</a></li>
+      <li><a href="#section-erreurs">Erreurs fréquentes</a></li>
+      <li><a href="#section-checklist">Rétro-planning en 4 temps</a></li>
       <li><a href="#section-piege">Ce que le PAI ne remplace pas</a></li>
       <li><a href="#section-faq">Questions fréquentes</a></li>
     </ol>
@@ -108,6 +120,21 @@ include 'header.php';
     <div class="warning-box">
       <strong>⚠️ Méfiez-vous des sites tiers :</strong> des sites privés proposent de remplir le PAI à votre place contre paiement. Le formulaire officiel est <strong>totalement gratuit</strong> sur <a href="https://prearrival.immigration.gov.vn/" target="_blank" rel="noopener">prearrival.immigration.gov.vn</a>. Ne payez rien.
     </div>
+
+    <h2 id="section-pourquoi">Pourquoi cette formalité ? Le Vietnam suit ses voisins</h2>
+
+    <p>Si vous voyagez régulièrement en Asie du Sud-Est, le principe du PAI ne vous dépaysera pas : le Vietnam est en réalité <strong>l'un des derniers pays de la région à digitaliser sa carte d'arrivée</strong>. Ses voisins ont tous franchi le pas ces dernières années :</p>
+
+    <ul class="article-list">
+      <li><strong>Singapour</strong> impose la <em>SG Arrival Card</em> électronique depuis plusieurs années — à remplir dans les 3 jours avant l'arrivée, exactement le même principe de fenêtre que le PAI vietnamien.</li>
+      <li><strong>La Thaïlande</strong> a remplacé son vieux formulaire papier TM6 par la <em>Thailand Digital Arrival Card</em> (TDAC), elle aussi gratuite et en ligne.</li>
+      <li><strong>La Malaisie</strong> exige la <em>Malaysia Digital Arrival Card</em> (MDAC) pour la plupart des voyageurs étrangers.</li>
+      <li><strong>Le Cambodge</strong> a lancé son application <em>e-Arrival</em> qui regroupe carte d'arrivée, déclaration douanière et déclaration sanitaire.</li>
+    </ul>
+
+    <p>L'objectif est le même partout : permettre aux autorités de <strong>pré-vérifier les voyageurs avant l'atterrissage</strong> plutôt que de tout traiter au guichet, réduire les files à l'immigration, et supprimer à terme les formulaires papier. C'est aussi pour ça qu'il ne faut pas voir le PAI comme une contrainte kafkaïenne de plus : bien utilisé, il fluidifie réellement le passage — les voyageurs pré-enregistrés passent plus vite au contrôle.</p>
+
+    <p>Détail qui a son importance pour les couples franco-vietnamiens : cette digitalisation s'inscrit dans le même mouvement de modernisation administrative que <a href="<?= SITE_URL ?>/apostille-vietnam-francais-2026">l'adhésion du Vietnam à la Convention de La Haye sur l'apostille</a> (11 septembre 2026). Le Vietnam simplifie et digitalise ses procédures d'entrée et de reconnaissance de documents — deux chantiers qui, mis bout à bout, changent concrètement la vie des familles binationales qui font régulièrement l'aller-retour.</p>
 
     <h2 id="section-aeroports">Aéroports concernés et dates d'entrée en vigueur</h2>
 
@@ -149,6 +176,10 @@ include 'header.php';
 
     <p>Les autres aéroports (Cam Ranh, Cat Bi, Phu Cat…) ne sont pas encore soumis à cette obligation à la date de publication de cet article, mais l'extension est probable dans les prochains mois.</p>
 
+    <h3>Concrètement, à quoi ça ressemble le jour J</h3>
+
+    <p>Deux moments de contrôle, pas plus. D'abord <strong>au comptoir d'enregistrement de la compagnie aérienne</strong> : l'agent vérifie que vous avez bien un QR code PAI pour un vol vers un aéroport concerné, au même titre qu'il vérifie votre visa ou votre exemption. C'est là que se joue le vrai risque — une compagnie peut refuser l'embarquement d'un passager sans PAI, car c'est elle qui paie l'amende si elle transporte un voyageur non conforme. Ensuite <strong>au contrôle des passeports à l'arrivée</strong> : l'agent d'immigration scanne le QR code, retrouve votre déclaration pré-remplie, et le passage s'en trouve accéléré. Entre les deux, personne ne vous le demandera : pas besoin de le montrer en salle d'embarquement ni dans l'avion.</p>
+
     <h2 id="section-comment">Comment remplir le formulaire PAI</h2>
 
     <p>Le site officiel est : <a href="https://prearrival.immigration.gov.vn/" target="_blank" rel="noopener" style="font-weight:700;font-size:1.05rem">→ prearrival.immigration.gov.vn</a></p>
@@ -160,6 +191,18 @@ include 'header.php';
       <li><strong>Délai de traitement :</strong> dans la pratique, la validation est rapide (quelques minutes à quelques heures). Ne faites pas ça à la dernière minute — visez 24h avant le départ.</li>
       <li><strong>Langue disponible :</strong> le formulaire est disponible en anglais et en vietnamien.</li>
     </ul>
+
+    <h3>Le parcours type, étape par étape</h3>
+
+    <ol class="article-list">
+      <li><strong>Vérifiez que vous êtes sur le bon site.</strong> L'adresse se termine par <code>immigration.gov.vn</code> — le domaine gouvernemental vietnamien. Si vous êtes arrivé là via une publicité Google et que l'adresse est différente, fermez l'onglet : c'est un intermédiaire payant.</li>
+      <li><strong>Choisissez la langue anglaise</strong> (sauf si votre moitié vietnamienne remplit pour vous 😉) et créez une nouvelle déclaration.</li>
+      <li><strong>Renseignez vos informations personnelles</strong> exactement comme elles figurent sur votre passeport : ordre des prénoms, orthographe, tout doit correspondre à la zone de lecture du passeport. C'est LA source d'erreur classique — une lettre de travers et le QR code ne correspondra pas au contrôle.</li>
+      <li><strong>Renseignez le vol</strong> : numéro de vol (celui du dernier segment qui atterrit au Vietnam, pas celui du départ de Paris si vous avez une correspondance), date et aéroport d'arrivée.</li>
+      <li><strong>Renseignez l'hébergement.</strong> L'adresse de votre hôtel telle qu'elle figure sur la réservation, ou — cas fréquent pour les lecteurs de ce blog — l'adresse de la belle-famille si vous logez chez elle. Une adresse privée est parfaitement acceptée, prévoyez-la complète (numéro, rue, quartier/phường, district, ville).</li>
+      <li><strong>Téléversez la page photo de votre passeport</strong> : un scan ou une photo nette, lisible, sans reflet, au format image classique. Évitez la photo prise de nuit sur un coin de table — si la page est illisible, la validation peut coincer.</li>
+      <li><strong>Relisez tout, soumettez, et surveillez votre boîte mail</strong> (y compris les spams). Le QR code arrive par email une fois la déclaration validée.</li>
+    </ol>
 
     <h2 id="section-infos">Informations requises</h2>
 
@@ -204,6 +247,41 @@ include 'header.php';
     </ul>
 
     <p>Imprimez-le ou gardez-le visible sur votre téléphone. Assurez-vous d'avoir accès à votre email avant de décoller — ne comptez pas sur une connexion WiFi à bord pour le retrouver.</p>
+
+    <p>Mon conseil pratique : dès réception, <strong>faites une capture d'écran du QR code</strong> et enregistrez-la dans la galerie photos de votre téléphone, puis imprimez une copie papier glissée dans le passeport. Trois supports (email, galerie, papier) — comme ça, batterie vide, réseau absent ou email inaccessible, vous avez toujours un plan B. C'est exactement le réflexe que je recommande déjà pour l'e-visa dans la <a href="<?= SITE_URL ?>/checklist-depart-installer-vietnam">checklist départ Vietnam</a>.</p>
+
+    <h2 id="section-cas">Cas particuliers : famille, transit, résidents</h2>
+
+    <h3>Vous voyagez en famille</h3>
+    <p>Chaque voyageur doit avoir sa propre déclaration — y compris les bébés et les enfants. En pratique, rien ne vous empêche de remplir les déclarations de toute la famille depuis le même ordinateur, à la suite : comptez 5 minutes par personne une fois que vous avez pris le pli. Chaque passeport reçoit son propre QR code, à présenter individuellement. Pour un couple franco-vietnamien avec enfant binational, déclarez chaque personne avec le passeport qu'elle utilisera pour entrer au Vietnam — c'est ce passeport-là qui doit correspondre au QR code.</p>
+
+    <h3>Vous êtes en transit</h3>
+    <p>Le PAI vise les voyageurs qui <em>entrent</em> au Vietnam par les aéroports concernés. Si vous êtes en correspondance internationale sans franchir l'immigration vietnamienne, la situation est moins clairement documentée à ce jour. Mon conseil honnête : dans le doute, remplissez-le quand même. C'est gratuit, ça prend cinq minutes, et ça vous évite toute discussion au comptoir d'enregistrement d'une compagnie qui appliquerait la règle avec zèle.</p>
+
+    <h3>Vous entrez par voie terrestre ou par un autre aéroport</h3>
+    <p>Les postes-frontières terrestres (Mộc Bài depuis le Cambodge, Lào Cai depuis la Chine, etc.) et les aéroports non listés ci-dessus ne sont pas soumis au PAI à la date de publication. Mais gardez un œil sur la liste : le déploiement s'est fait aéroport par aéroport en quelques mois, l'extension au reste du réseau est le scénario le plus probable.</p>
+
+    <h3>Vous vivez au Vietnam (TRC, visa TT)</h3>
+    <p>La formalité s'applique aux <em>voyageurs</em> arrivant dans les aéroports concernés — ce qui inclut les résidents étrangers qui rentrent de voyage. Si vous vivez à Hanoï avec une <a href="<?= SITE_URL ?>/carte-residence-temporaire-vietnam">carte de résidence temporaire</a> et que vous revenez d'un séjour en France, prévoyez votre PAI comme n'importe quel autre voyageur. Même logique pour votre conjoint(e) vietnamien(ne) titulaire d'un passeport étranger ou résidant à l'étranger.</p>
+
+    <h2 id="section-erreurs">Les erreurs fréquentes (et comment les rattraper)</h2>
+
+    <ul class="article-list">
+      <li><strong>Faute de frappe dans le numéro de passeport.</strong> C'est l'erreur n°1, et elle n'est pas anodine : au contrôle, le QR code est rapproché de votre passeport. Si vous repérez l'erreur après soumission, refaites simplement une nouvelle déclaration correcte — c'est gratuit et rien ne vous en empêche. Présentez le bon QR code à l'arrivée.</li>
+      <li><strong>Vol modifié après la déclaration.</strong> Retard du même vol : pas de panique, votre numéro de vol n'a pas changé. Réacheminement sur un autre vol ou décalage au lendemain : refaites une déclaration avec les nouvelles informations dès que vous les connaissez.</li>
+      <li><strong>QR code jamais reçu.</strong> Vérifiez le dossier spam, puis les onglets « Promotions »/« Notifications » si vous êtes sur Gmail. Toujours rien après quelques heures ? Refaites la déclaration avec une autre adresse email — et cette fois, notez le numéro de confirmation affiché à l'écran avant de fermer la page.</li>
+      <li><strong>Payer un site tiers.</strong> Si vous avez déjà payé un intermédiaire, pas de panique : la déclaration qu'il a (peut-être) faite peut être valide. Mais vérifiez qu'elle existe réellement en refaisant gratuitement la vôtre sur le site officiel — vous saurez au moins que vous êtes couvert.</li>
+      <li><strong>Tout faire à la porte d'embarquement.</strong> Fenêtre de 72h ne veut pas dire « à la dernière minute ». Entre le WiFi d'aéroport, la photo du passeport à téléverser et la validation qui peut prendre quelques heures, c'est le meilleur moyen de transformer une formalité de 5 minutes en sueurs froides.</li>
+    </ul>
+
+    <h2 id="section-checklist">Votre rétro-planning PAI en 4 temps</h2>
+
+    <ul class="article-list">
+      <li><strong>J-3 (ouverture de la fenêtre) :</strong> la déclaration devient possible. Si votre voyage est carré (vol et hôtel confirmés), c'est le bon moment.</li>
+      <li><strong>J-2 / J-1 :</strong> le créneau idéal. Vous remplissez au calme, la validation a tout le temps d'arriver, et il vous reste de la marge pour corriger une erreur éventuelle.</li>
+      <li><strong>Jour du départ, avant de partir de chez vous :</strong> QR code reçu ? Capture d'écran faite ? Copie imprimée dans le passeport ? Ne partez pas sans ces trois cases cochées.</li>
+      <li><strong>À l'aéroport :</strong> au check-in, préparez passeport + visa ou justificatif d'exemption + QR code PAI. À l'arrivée au Vietnam, même trio au contrôle des passeports.</li>
+    </ul>
 
     <h2 id="section-piege">Ce que le PAI ne remplace pas</h2>
 
