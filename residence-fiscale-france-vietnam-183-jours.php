@@ -38,6 +38,10 @@ $page_faq = [
    'a' => 'Oui. Un changement de résidence fiscale peut avoir des conséquences pour ton employeur (risque d\'établissement stable au Vietnam, complexité de paie). Certains employeurs l\'acceptent, d\'autres non. Il est prudent d\'informer ton employeur avant le départ, de relire ton contrat de travail sur ce point, et de clarifier les implications ensemble avec son service RH ou juridique.'],
   ['q' => 'Est-ce qu\'un couple franco-vietnamien au Vietnam est nécessairement résident fiscal vietnamien ?',
    'a' => 'Pas nécessairement, mais c\'est fréquent. Si vous vivez ensemble au Vietnam toute l\'année et que vos revenus principaux sont là, vous êtes très probablement résidents fiscaux vietnamiens. Mais si l\'un des conjoints conserve des liens forts avec la France (logement, famille, revenus), la situation peut être différente. Chaque situation est individuelle.'],
+  ['q' => 'Que se passe-t-il si je garde mon appartement en France pendant mon expatriation ?',
+   'a' => 'Tout dépend de son usage. Un logement conservé à ta disposition (vide, ou occupé occasionnellement par toi) constitue un foyer d\'habitation permanent en France — un critère fort de résidence fiscale française et le premier critère de départage de la convention. Le même appartement mis en location longue durée change la donne : il n\'est plus « à ta disposition » et devient un simple intérêt économique, générant des revenus fonciers de source française à déclarer comme non-résident. Mettre le logement en location (avec bail réel) est donc souvent la démarche qui clarifie le mieux un départ.'],
+  ['q' => 'Comment prouver mes jours de présence au Vietnam ou en France ?',
+   'a' => 'Le décompte des 183 jours se prouve par un faisceau de documents : tampons d\'entrée/sortie sur le passeport, billets d\'avion, relevés bancaires montrant des paiements localisés, bail et factures. Tiens un décompte simple (un tableur suffit) dès la première année d\'expatriation : reconstituer trois ans de déplacements a posteriori, lors d\'un contrôle, est beaucoup plus pénible que de le noter au fil de l\'eau.'],
 ];
 include '_article-css.php';
 include 'header.php';
@@ -57,7 +61,7 @@ include 'header.php';
     <div class="article-hero-meta">
       <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
       <span>📅 Juin 2026</span>
-      <span>⏱ 11 min de lecture</span>
+      <span>⏱ 12 min de lecture</span>
       <span>Mis &agrave; jour : Juin 2026</span>
     </div>
   </div>
@@ -73,6 +77,8 @@ include 'header.php';
       <li><a href="#section-4">Quand les deux pays revendiquent</a></li>
       <li><a href="#section-5">3 cas concrets</a></li>
       <li><a href="#section-6">Les erreurs fréquentes</a></li>
+      <li><a href="#section-7">L'année du départ et du retour</a></li>
+      <li><a href="#section-8">Les démarches concrètes du changement</a></li>
       <li><a href="#section-faq">Questions fréquentes</a></li>
     </ol>
     <div class="toc-share">
@@ -91,7 +97,7 @@ include 'header.php';
     <p>Cet article fait partie du dossier <a href="travailler-a-distance-depuis-vietnam">travailler à distance depuis le Vietnam</a>. Pour les conséquences concrètes sur ta déclaration, lis aussi <a href="declarer-impots-france-depuis-vietnam">déclarer ses impôts en France depuis le Vietnam</a> et <a href="fiscalite-expat-france-vietnam">la convention fiscale France-Vietnam expliquée</a>.</p>
 
     <div class="warning-box">
-      <strong>Article technique :</strong> Ce sujet implique du droit fiscal international. Je partage ce que j'ai compris, avec des placeholders précis là où je ne suis pas certain. Pour ta situation personnelle, consulte un fiscaliste spécialisé expatriés. Une erreur de résidence fiscale peut coûter très cher.
+      <strong>Article technique :</strong> Ce sujet implique du droit fiscal international. Je partage ici les règles générales telles qu'elles ressortent des textes (article 4B du CGI, loi vietnamienne, convention de 1993), en signalant explicitement les points qui dépendent de chaque situation. Pour ta situation personnelle, consulte un fiscaliste spécialisé expatriés. Une erreur de résidence fiscale peut coûter très cher.
     </div>
 
     <h2 id="section-1">Pourquoi la résidence fiscale est fondamentale</h2>
@@ -142,6 +148,7 @@ include 'header.php';
     </div>
 
     <p>Un seul critère suffit pour être résident fiscal français. Et <strong>les 183 jours au Vietnam (critère inverse)</strong> ne suffisent pas à te faire perdre la résidence fiscale française si l'un des autres critères reste rempli.</p>
+    <p>C'est le point que la plupart des candidats au départ sous-estiment : la résidence fiscale française est « collante ». Elle ne se perd pas en achetant un billet d'avion, elle se perd en déplaçant réellement le centre de ta vie — famille, logement, activité, patrimoine. Tant qu'un de ces ancrages reste en France, l'administration a un fondement légal pour te considérer comme résident, quel que soit ton nombre de jours passés à Hanoï.</p>
 
     <h2 id="section-3">Les critères vietnamiens de résidence fiscale</h2>
     <p>Le Vietnam définit ses propres résidents fiscaux selon sa loi sur l'impôt sur le revenu des personnes physiques (LIRPP — Loi n°04/2007/QH12 modifiée). Tu es résident fiscal vietnamien si :</p>
@@ -149,11 +156,11 @@ include 'header.php';
       <li>Tu séjournes au Vietnam pendant <strong>183 jours ou plus</strong> dans l'année calendaire OU sur une période de 12 mois consécutifs à compter de la date de ta première arrivée</li>
       <li>OU tu as un logement permanent enregistré au Vietnam (bail long terme ou enregistrement de domicile temporaire)</li>
     </ul>
-    <p>Si tu es résident fiscal vietnamien, le Vietnam impose tes revenus mondiaux (pas seulement les revenus de source vietnamienne). Les taux d'imposition sur le revenu au Vietnam vont de 5 % à 35 % par tranches progressives (7 tranches) pour les résidents fiscaux.</p>
+    <p>Si tu es résident fiscal vietnamien, le Vietnam impose tes revenus mondiaux (pas seulement les revenus de source vietnamienne). Les taux d'imposition sur le revenu au Vietnam vont de 5 % à 35 % par tranches progressives (7 tranches) pour les résidents fiscaux. À l'inverse, un <strong>non-résident</strong> fiscal vietnamien n'est imposé que sur ses revenus de source vietnamienne, à un taux forfaitaire — c'est le régime typique de la première année d'un salarié arrivé en cours d'année.</p>
 
     <h2 id="section-4">Quand les deux pays revendiquent : la convention de 1993</h2>
     <p>Si tu remplis les critères des deux pays simultanément (ce qui arrive souvent la première ou dernière année d'expatriation), la convention fiscale France-Vietnam signée en 1993 prévoit un mécanisme de départage ("tie-breaker rules") à l'article 4.</p>
-    <p>Les critères de départage s'appliquent dans l'ordre suivant :</p>
+    <p>Ces critères s'appliquent <strong>successivement et dans l'ordre</strong> : on ne passe au suivant que si le précédent ne permet pas de trancher.</p>
     <ol>
       <li><strong>Foyer d'habitation permanent</strong> : dans quel pays as-tu une habitation permanente disponible ?</li>
       <li><strong>Centre des intérêts vitaux</strong> : dans quel pays tes liens personnels et économiques sont-ils les plus étroits ?</li>
@@ -190,6 +197,27 @@ include 'header.php';
       <li><strong>"Je n'ai pas à le déclarer si personne ne le sait"</strong> → FAUX. Les échanges automatiques d'informations fiscales entre pays (norme CRS/OCDE) permettent aux administrations de repérer les incohérences.</li>
     </ul>
 
+    <h2 id="section-7">L'année du départ et l'année du retour : les années mixtes</h2>
+    <p>Le changement de résidence fiscale ne se fait presque jamais au 1er janvier : tu pars en cours d'année, et cette année-là se coupe en deux périodes fiscales distinctes. C'est le moment où le plus d'erreurs se commettent.</p>
+    <ul>
+      <li><strong>L'année du départ</strong>, tu restes imposable en France comme résident du 1er janvier jusqu'à la date du transfert de ton domicile, puis comme non-résident (uniquement sur tes éventuels revenus de source française) pour le reste de l'année. La déclaration de l'année suivante reflète ce découpage : la partie « résident » sur la déclaration classique, la partie « non-résident » via l'annexe <strong>2042-NR</strong>.</li>
+      <li><strong>La date du transfert</strong> n'est pas celle de ton vol : c'est la date à laquelle ton foyer et tes intérêts basculent réellement (famille installée, logement principal abandonné ou loué, activité transférée). Garde les preuves — bail vietnamien, résiliation ou mise en location du logement français, contrat local — c'est ce faisceau de faits qui sera examiné en cas de question.</li>
+      <li><strong>Après le départ</strong>, si tu conserves des revenus de source française (loyers, notamment), ton dossier bascule au service des impôts des particuliers non-résidents et tu continues de déclarer chaque année en France ces seuls revenus. Le droit interne prévoit par ailleurs un <strong>taux minimum d'imposition</strong> pour les non-résidents sur les revenus de source française, sauf à prouver que ton taux moyen mondial serait inférieur.</li>
+      <li><strong>L'année du retour</strong> fonctionne en miroir : non-résident jusqu'à la date de réinstallation, résident ensuite. Un retour anticipé (raison familiale, professionnelle) peut donc re-basculer ta situation en cours d'année — ce n'est pas un drame, mais ça se déclare correctement.</li>
+    </ul>
+    <p>Signalons enfin, pour les patrimoines importants, l'existence de l'<strong>exit tax</strong> : le transfert du domicile hors de France peut déclencher une imposition des plus-values latentes sur les participations significatives dans des sociétés. La plupart des expatriés ne sont pas concernés, mais si tu détiens des parts d'entreprise substantielles, c'est un point à valider avec un fiscaliste avant le départ.</p>
+
+    <h2 id="section-8">Les démarches concrètes du changement de résidence</h2>
+    <p>La résidence fiscale découle des faits, mais la cohérence administrative de ton dossier évite les ennuis. Dans les mois autour du départ :</p>
+    <ul>
+      <li><strong>Signale ta nouvelle adresse à l'administration fiscale</strong> (espace particulier sur impots.gouv.fr) — c'est elle qui oriente ton dossier vers le service des non-résidents.</li>
+      <li><strong>Informe tes banques et assurances françaises</strong> de ton changement de résidence fiscale : elles ont l'obligation de connaître la résidence fiscale de leurs clients (norme CRS), et une adresse incohérente entre ta banque et le fisc est exactement le genre de signal qui déclenche des questions. Certains produits (PEA, assurance-vie, livrets) ont des règles spécifiques pour les non-résidents — renseigne-toi avant de partir plutôt qu'après.</li>
+      <li><strong>Inscris-toi au registre des Français établis hors de France</strong> auprès du consulat : ce n'est pas une démarche fiscale, mais elle documente ta présence durable au Vietnam et simplifie la vie administrative (élections, sécurité, renouvellements).</li>
+      <li><strong>Côté vietnamien</strong>, si tu deviens résident fiscal, fais-toi attribuer un code fiscal personnel (mã số thuế) — via ton employeur si tu es salarié — et conserve les justificatifs de tes jours de présence (tampons de passeport, billets) : c'est la preuve de base du décompte des 183 jours.</li>
+      <li><strong>Pense au volet social en parallèle du volet fiscal</strong> : quitter la résidence française, c'est aussi sortir du régime de Sécurité sociale — la <a href="protection-sociale-cfe-retraite-vietnam">CFE et la stratégie retraite</a> se décident au même moment, pas deux ans après.</li>
+    </ul>
+    <p>Et le fil rouge de tout ce guide : les déclarations des comptes étrangers (formulaire 3916 tant que tu es résident français), la déclaration vietnamienne si tu deviens résident là-bas, et la convention de 1993 pour éviter la double imposition — les mécanismes détaillés sont dans <a href="declarer-impots-france-depuis-vietnam">déclarer ses impôts depuis le Vietnam</a>.</p>
+
     <div class="warning-box">
       <strong>Disclaimer :</strong> Cet article partage mon expérience et des informations générales, pas un conseil fiscal ou juridique personnalisé. Pour ta situation précise, consulte un expert-comptable ou un avocat fiscaliste spécialisé en expatriation.
     </div>
@@ -205,8 +233,8 @@ include 'header.php';
     <div class="cta-newsletter">
       <h3>Reçois mes prochains articles</h3>
       <p>📥 <strong>Guide PDF + 3 modèles de lettres offerts</strong> dès l'inscription. Un email par mois, désinscription en 1 clic.</p>
-      <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
-        <input type="hidden" name="_next" value="<?= SITE_URL ?>/merci-guide">
+      <form class="cta-form" action="<?= SITE_URL ?>/subscribe-pack" method="POST">
+        <input type="text" name="website" value="" style="position:absolute;left:-9999px" tabindex="-1" autocomplete="off" aria-hidden="true">
         <input type="email" name="email" placeholder="Ton adresse email" required>
         <button type="submit">S'inscrire</button>
       </form>
