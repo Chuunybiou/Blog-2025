@@ -39,6 +39,10 @@ $page_faq = [
    'a' => 'Le LFAY est le lycée français homologué AEFE couvrant de la maternelle (PS) au baccalauréat, situé en centre-ville de Hanoï. La Petite École (LPE) accueille uniquement les enfants de 12 mois à 6 ans (crèche et maternelle), dans le quartier Tay Ho. Les deux établissements sont affiliés à l\'AEFE et suivent le programme français, mais LPE est plus petite et plus spécialisée dans la petite enfance.'],
   ['q' => 'Mon enfant doit-il parler français pour entrer au LFAY ?',
    'a' => 'Pour la maternelle et le CP, non — c\'est l\'âge où les enfants apprennent. Pour les classes supérieures, un niveau en français est requis. Le LFAY peut organiser des tests de niveau avant l\'admission pour les plus grands.'],
+  ['q' => 'Comment fonctionnent les bourses scolaires AEFE ?',
+   'a' => 'Les bourses sont réservées aux enfants de nationalité française, inscrits au registre des Français de l\'étranger et scolarisés dans un établissement homologué comme le LFAY. Elles sont attribuées sur critères de ressources du foyer, après dépôt d\'un dossier auprès du consulat, examiné en commission locale. La prise en charge peut être partielle ou totale selon la situation. Les campagnes ont des dates précises chaque année — renseigne-toi auprès de l\'ambassade dès que le projet de scolarisation se dessine.'],
+  ['q' => 'Une crèche vietnamienne est-elle un bon choix pour un enfant franco-vietnamien ?',
+   'a' => 'Pour beaucoup de familles mixtes, oui : coût réduit, immersion en vietnamien au meilleur âge, proximité du domicile et intégration naturelle dans le quartier. Le point de vigilance est le passage ultérieur vers le système français : plus l\'enfant y entre tard, plus le français doit avoir été construit à la maison entre-temps. La combinaison « crèche vietnamienne + français quotidien avec le parent francophone » fonctionne bien, à condition d\'être réellement tenue.'],
 ];
 
 include '_article-css.php';
@@ -59,7 +63,7 @@ include 'header.php';
     <div class="article-hero-meta">
       <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
       <span>📅 Juillet 2026</span>
-      <span>⏱ 7 min de lecture</span>
+      <span>⏱ 12 min de lecture</span>
     </div>
     <p style="color:rgba(250,248,244,0.78);font-size:1.05rem;line-height:1.7;margin-top:1.25rem;">
       Hanoï avec un enfant, c'est plus accessible qu'on ne le croit. Le réseau scolaire français est solide, les crèches bilingues existent, et la vie de quartier est naturellement adaptée aux familles. Ce guide fait le point sur les options concrètes pour les couples franco-vietnamiens.
@@ -75,6 +79,9 @@ include 'header.php';
       <li><a href="#section-lfay">Lycée Français Alexandre Yersin (LFAY)</a></li>
       <li><a href="#section-tarifs">Frais de scolarité 2026-2027</a></li>
       <li><a href="#section-inscription">Inscription : procédure EDUKA</a></li>
+      <li><a href="#section-alternatives">Les alternatives : international et public</a></li>
+      <li><a href="#section-admin">L'enfant franco-vietnamien : côté administratif</a></li>
+      <li><a href="#section-langues">Bilinguisme : quelle langue à la maison ?</a></li>
       <li><a href="#section-vie">Vie pratique avec un enfant à Hanoï</a></li>
       <li><a href="#section-faq">Questions fréquentes</a></li>
     </ol>
@@ -121,6 +128,14 @@ include 'header.php';
       <li><strong>Localisation</strong> : Hanoï, centre-ville (Dong Da)</li>
       <li><strong>Programme</strong> : programme français de l'Éducation nationale, de la maternelle au bac (général et technologique)</li>
     </ul>
+    <h3>Ce que l'homologation AEFE change concrètement</h3>
+    <p>« Homologué AEFE » n'est pas un label marketing : c'est une reconnaissance officielle du Ministère de l'Éducation nationale française qui garantit trois choses très concrètes pour une famille :</p>
+    <ul>
+      <li><strong>La continuité scolaire</strong> : un enfant scolarisé au LFAY peut rejoindre n'importe quelle école française — en France ou dans un autre lycée français du monde — sans examen d'admission ni rupture de programme. Pour les familles expatriées dont le parcours peut changer (retour en France, mutation ailleurs en Asie), c'est la vraie assurance.</li>
+      <li><strong>Les diplômes français</strong> : brevet puis baccalauréat, passés sur place, avec la même valeur qu'en France pour l'accès aux études supérieures (Parcoursup inclus).</li>
+      <li><strong>L'accès aux bourses scolaires</strong> : seuls les établissements homologués ouvrent droit aux bourses AEFE pour les enfants français (voir encadré plus bas).</li>
+    </ul>
+    <p>Le nom de l'établissement, au passage, raconte une histoire locale : Alexandre Yersin, médecin franco-suisse de l'Institut Pasteur, découvreur du bacille de la peste et fondateur de la ville de Đà Lạt, est l'une des figures françaises les plus respectées au Vietnam — des rues portent son nom dans tout le pays.</p>
 
     <h2 id="section-tarifs">Frais de scolarité 2026-2027</h2>
     <p>Les frais de scolarité au LFAY varient selon le niveau. Les tarifs ci-dessous s'appliquent aux élèves de nationalité française. Pour les autres nationalités, contacter directement l'école. Source : <a href="https://www.international-schools-database.com/in/hanoi/lyc-e-francais-alexandre-yersin-de-hanoi/fees" target="_blank" rel="noopener">International Schools Database</a> (données 2026-2027).</p>
@@ -188,6 +203,25 @@ include 'header.php';
       Le calendrier EDUKA peut varier d'une année à l'autre. Vérifie toujours les dates exactes sur <a href="https://lfay.com.vn" target="_blank" rel="noopener">lfay.com.vn</a> avant de planifier ton arrivée à Hanoï.
     </div>
 
+    <h2 id="section-alternatives">Les alternatives : écoles internationales et système public</h2>
+    <p>Le système français n'est pas la seule voie à Hanoï, et pour un couple franco-vietnamien la question mérite d'être posée à plat.</p>
+    <h3>Les écoles internationales anglophones</h3>
+    <p>Hanoï compte plusieurs écoles internationales réputées (UNIS Hanoi, British International School et d'autres), généralement situées dans les quartiers expat. Elles offrent des cursus IB ou britanniques de haut niveau — à des frais de scolarité généralement supérieurs à ceux du LFAY. Le choix se résume souvent ainsi : anglais et réseau international d'un côté, continuité du système français et bourses AEFE de l'autre. Pour un enfant franco-vietnamien qui grandit déjà entre deux langues, ajouter un cursus dans une troisième langue est un vrai choix de projet familial, pas un détail.</p>
+    <h3>L'école publique vietnamienne</h3>
+    <p>Option rarement envisagée par les expatriés « purs », mais réelle pour les couples mixtes : l'enfant, s'il a la nationalité vietnamienne, peut être scolarisé dans le système public local, comme ses cousins. Avantages évidents : coût minime, immersion totale en vietnamien, ancrage dans la moitié vietnamienne de sa famille. Limites tout aussi réelles : classes chargées, pédagogie très différente des standards français, pression scolaire forte dès le primaire, et un français qui devra alors se construire entièrement à la maison. Certaines familles panachent : maternelle vietnamienne pour la langue et le coût, puis bascule vers le système français au primaire — le moment de la bascule étant précisément celui où le niveau de français de l'enfant est évalué. Notre article sur <a href="scolarite-enfants-franco-vietnamiens">la scolarité des enfants franco-vietnamiens</a> creuse ce choix en détail.</p>
+
+    <h2 id="section-admin">L'enfant franco-vietnamien : le volet administratif à ne pas rater</h2>
+    <p>Élever un enfant binational à Hanoï, c'est aussi un petit dossier administratif, à traiter tôt :</p>
+    <ul>
+      <li><strong>La déclaration de naissance côté français</strong> : une naissance à Hanoï se déclare aux autorités vietnamiennes, puis se transcrit auprès de l'ambassade de France pour exister à l'état civil français. C'est cette transcription qui permet ensuite le passeport français de l'enfant et son inscription au registre des Français de l'étranger. Le parcours complet est dans l'article <a href="grossesse-vietnam-hopital-cout-demarches">grossesse et naissance au Vietnam</a>.</li>
+      <li><strong>La double nationalité</strong> : la France admet pleinement la double nationalité. Côté vietnamien, la loi sur la nationalité permet, pour les enfants de couples mixtes, un enregistrement vietnamien tout en conservant la nationalité française — les modalités se règlent au moment de la déclaration de naissance, et il vaut la peine de se faire préciser les options par les deux administrations avant de choisir.</li>
+      <li><strong>Le livret de famille et les passeports</strong> : tenez les deux jeux de documents à jour (actes des deux pays, passeports des deux pays le cas échéant) — les allers-retours France-Vietnam d'un enfant binational sont beaucoup plus simples quand chaque frontière se passe avec « son » passeport.</li>
+    </ul>
+
+    <h2 id="section-langues">Bilinguisme : quelle langue à la maison ?</h2>
+    <p>C'est la question que tous les couples franco-vietnamiens se posent, et la recherche sur le bilinguisme donne une réponse rassurante : les enfants exposés tôt et régulièrement à deux langues les acquièrent toutes les deux, sans retard global de langage — le mélange des langues en début d'apprentissage est normal et transitoire. La méthode la plus répandue et la plus simple à tenir est « <strong>un parent, une langue</strong> » : chacun parle sa langue maternelle à l'enfant, systématiquement, sans se forcer à un français ou un vietnamien approximatif.</p>
+    <p>Dans le contexte de Hanoï, l'équation a une particularité : le vietnamien sera partout (famille, quartier, nounou, rue) et le français presque nulle part en dehors de l'école et du parent français. C'est donc généralement <strong>le français qui a besoin d'être défendu</strong> : lecture du soir en français, dessins animés en français, appels réguliers aux grands-parents de France. La scolarisation en système français fait le reste. L'inverse vaut pour les familles qui prévoient un retour en France : c'est alors le vietnamien qu'il faudra entretenir activement — et <a href="apprendre-vietnamien-couple">l'article sur l'apprentissage du vietnamien en couple</a> donne des pistes qui servent aussi pour les enfants.</p>
+
     <h2 id="section-vie">Vie pratique avec un enfant à Hanoï</h2>
 
     <h3>Pédiatre et santé</h3>
@@ -199,8 +233,14 @@ include 'header.php';
     <h3>Pollution de l'air</h3>
     <p>La qualité de l'air à Hanoï est un point à surveiller, surtout en hiver (novembre à mars). Consulter <strong>IQAir</strong> ou <strong>AirVisual</strong> quotidiennement est utile. Pour un enfant en bas âge, un purificateur d'air dans la chambre et les salles de vie est recommandé lors des pics de pollution.</p>
 
+    <h3>Garde d'enfants : l'atout nounou</h3>
+    <p>C'est l'une des grandes différences avec la France : la garde à domicile est courante et abordable à Hanoï. La <em>giúp việc</em> (aide à domicile) fait partie du paysage des familles vietnamiennes de classe moyenne, et beaucoup de couples mixtes emploient une nounou à temps partiel ou complet pour les premières années. Le recrutement passe presque toujours par le réseau — la famille vietnamienne est ici un atout majeur pour trouver une personne de confiance. Deux conseils : formalisez les attentes dès le départ (horaires, tâches, congés du Tết), et si le français de l'enfant vous importe, gardez en tête que la nounou renforcera mécaniquement le vietnamien — voir la section bilinguisme.</p>
+
+    <h3>Sécurité au quotidien</h3>
+    <p>Le vrai sujet de sécurité à Hanoï n'est ni la criminalité (très faible) ni la santé : c'est <strong>la route</strong>. Sièges auto quasi inexistants dans les taxis, trottoirs occupés par les scooters, traversées de rue sportives. Les réflexes des familles installées : un siège auto acheté sur place pour les trajets réguliers (Grab permet de choisir une voiture), le casque enfant systématique dès que l'enfant monte en scooter — c'est la loi et le bon sens —, et l'apprentissage précoce des règles de traversée locales. Rien d'ingérable, mais c'est une vigilance de tous les jours qui surprend les nouveaux arrivants.</p>
+
     <h3>Activités et loisirs</h3>
-    <p>Hanoï propose de nombreuses activités adaptées aux enfants en dehors de l'école : parcs (Hồ Tây, Thống Nhất), piscines dans les complexes résidentiels et les hôtels, cours de natation, arts martiaux, musique. La vie de quartier — notamment à Tay Ho, le quartier le plus prisé des expats — est assez animée et familiale.</p>
+    <p>Hanoï propose de nombreuses activités adaptées aux enfants en dehors de l'école : parcs (Hồ Tây, Thống Nhất), piscines dans les complexes résidentiels et les hôtels, cours de natation, arts martiaux, musique. La vie de quartier — notamment à Tay Ho, le quartier le plus prisé des expats — est assez animée et familiale. Et n'oublie pas l'agenda vietnamien : la fête de la mi-automne (Tết Trung Thu), avec ses lanternes et ses lions dansants, est LA fête des enfants au Vietnam, et le <a href="tet-nouvel-an-lunaire-vietnam">Tết</a> se vit d'abord en famille — deux rendez-vous où un enfant franco-vietnamien construit sa moitié vietnamienne aussi sûrement qu'à l'école il construit l'autre.</p>
 
     <h2 id="section-faq">Questions fréquentes</h2>
     <?php foreach ($page_faq as $faq): ?>
@@ -213,8 +253,8 @@ include 'header.php';
     <div class="cta-newsletter">
       <h3>Reçois mes prochains articles</h3>
       <p>📥 <strong>Guide PDF + 3 modèles de lettres offerts</strong> dès l'inscription. Un email par mois, désinscription en 1 clic.</p>
-      <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
-        <input type="hidden" name="_next" value="<?= SITE_URL ?>/merci-guide">
+      <form class="cta-form" action="<?= SITE_URL ?>/subscribe-pack" method="POST">
+        <input type="text" name="website" value="" style="position:absolute;left:-9999px" tabindex="-1" autocomplete="off" aria-hidden="true">
         <input type="email" name="email" placeholder="Ton adresse email" required>
         <button type="submit">S'inscrire</button>
       </form>

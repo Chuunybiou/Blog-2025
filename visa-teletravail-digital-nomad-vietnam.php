@@ -38,6 +38,10 @@ $page_faq = [
    'a' => 'Formellement, l\'e-visa est accordé pour 90 jours. Le renouvellement consécutif (sortir du Vietnam et revenir immédiatement avec un nouvel e-visa) est pratiqué par beaucoup de nomades, mais les autorités commencent à questionner certains voyageurs qui font ça de façon répétée. C\'est légal aujourd\'hui mais reste à la discrétion des agents de l\'immigration — il est prudent d\'avoir une alternative pour les séjours longs.'],
   ['q' => 'Je suis marié(e) à un(e) Vietnamien(ne) : quel est le meilleur visa ?',
    'a' => 'Le visa TT ou la carte de résidence temporaire (TRC) sont les options les plus stables et légales pour un conjoint de Vietnamien. Ils permettent de rester au Vietnam longtemps sans visa-run, et sont compatibles avec le télétravail (qui n\'est pas considéré comme "travail au Vietnam" dans ce contexte, bien que la zone grise reste). Lien vers notre guide → visa TT et TRC pour conjoint de Vietnamien.'],
+  ['q' => 'Dois-je payer des impôts au Vietnam si je télétravaille depuis le pays ?',
+   'a' => 'Potentiellement, oui. Au-delà de 183 jours de présence sur une année, tu peux devenir résident fiscal vietnamien, imposable en principe sur tes revenus mondiaux. La convention fiscale entre la France et le Vietnam sert alors à départager les situations de double résidence et à éviter la double imposition. En dessous de 183 jours et sans autre attache au Vietnam, tu restes généralement résident fiscal français. C\'est un sujet à traiter sérieusement dès que le séjour se prolonge — pas après un contrôle.'],
+  ['q' => 'Puis-je prendre des clients vietnamiens en freelance ?',
+   'a' => 'Pas sans structure. Facturer des clients situés au Vietnam, c\'est exercer une activité économique dans le pays : il faut soit un permis de travail via un employeur local, soit une entreprise vietnamienne en règle, soit l\'exemption de permis de travail des conjoints de Vietnamiens (avec ses formalités). Le télétravail « toléré » concerne uniquement les clients étrangers — mélanger les deux fait sortir de la zone grise du mauvais côté.'],
 ];
 include '_article-css.php';
 include 'header.php';
@@ -57,7 +61,7 @@ include 'header.php';
     <div class="article-hero-meta">
       <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
       <span>📅 Juin 2026</span>
-      <span>⏱ 8 min de lecture</span>
+      <span>⏱ 12 min de lecture</span>
       <span>Mis &agrave; jour : Juin 2026</span>
     </div>
   </div>
@@ -73,6 +77,9 @@ include 'header.php';
       <li><a href="#section-4">Visa DL (affaires)</a></li>
       <li><a href="#section-5">Visa TT et TRC pour conjoint</a></li>
       <li><a href="#section-6">Honnêteté sur les zones grises</a></li>
+      <li><a href="#section-voisins">Ce que font les pays voisins</a></li>
+      <li><a href="#section-fiscal">Fiscalité : l'autre moitié du sujet</a></li>
+      <li><a href="#section-pratiques">Les bonnes pratiques du télétravailleur</a></li>
       <li><a href="#section-faq">Questions fréquentes</a></li>
     </ol>
     <div class="toc-share">
@@ -86,12 +93,12 @@ include 'header.php';
 
   <main class="article-content">
 
-    <p><strong>La question que tout nomade digital se pose avant d'aller au Vietnam : "c'est légal de travailler là-bas ?"</strong> La réponse honnête : oui, dans une large mesure — mais dans une zone grise qu'il vaut mieux connaître avant de partir. Ce guide te donne l'état de la situation en 2026, sans survendre ni dramatiser.</p>
+    <p><strong>La question que tout nomade digital se pose avant d'aller au Vietnam : "c'est légal de travailler là-bas ?"</strong> La réponse honnête : oui, dans une large mesure — mais dans une zone grise qu'il vaut mieux connaître avant de partir. Ce guide te donne l'état de la situation en 2026, sans survendre ni dramatiser : les options de visa réelles, ce que font les pays voisins, le volet fiscal que presque tout le monde oublie, et les bonnes pratiques qui gardent ton séjour du bon côté de la ligne.</p>
 
     <p>Cet article fait partie du dossier <a href="travailler-a-distance-depuis-vietnam">travailler à distance depuis le Vietnam</a>. Si tu es marié(e) à un(e) Vietnamien(ne), le <a href="visa-tt-carte-residence-trc-mariage">visa TT et TRC</a> est la solution la plus stable — et c'est aussi le lien entre ce dossier travail et le <a href="faire-venir-conjointe-vietnamienne-france">silo couple mixte franco-vietnamien</a>.</p>
 
     <h2 id="section-1">La réalité : pas de visa "digital nomad" au Vietnam</h2>
-    <p>En 2026, le Vietnam n'a pas créé de visa dédié aux nomades digitaux, contrairement à d'autres destinations populaires. Pourquoi ça compte :</p>
+    <p>En 2026, le Vietnam n'a pas créé de visa dédié aux nomades digitaux, contrairement à d'autres destinations populaires de la région. Aucune des pages qui te vendent un « visa digital nomad Vietnam » ne repose donc sur un statut réel. Pourquoi ça compte :</p>
     <ul>
       <li>Il n'y a pas de cadre légal clair pour "télétravailler depuis le Vietnam pour des clients étrangers"</li>
       <li>Les lois sur l'immigration et le travail distinguent surtout "travailler <em>pour</em> une entité vietnamienne" (nécessite un permis) et "séjourner au Vietnam" (nécessite un visa)</li>
@@ -101,6 +108,7 @@ include 'header.php';
     <div class="info-box">
       <strong>Le résultat pratique :</strong> La grande majorité des nomades digitaux et des expatriés qui travaillent à distance depuis le Vietnam le font en zone grise — tolérée, mais non officiellement légale. Jusqu'à présent, aucune mesure systématique n'a été prise contre cette pratique. Mais personne ne peut garantir que ça ne changera pas.
     </div>
+    <p>Pourquoi cette tolérance de fait ? Parce que l'intérêt du Vietnam est du côté des télétravailleurs : ils dépensent localement des revenus gagnés à l'étranger, ne prennent l'emploi de personne, et remplissent cafés, coworkings et locations longue durée de Đà Nẵng à Tây Hồ. Réprimer cette population n'aurait guère de logique économique — c'est précisément pourquoi la plupart des observateurs anticipent plutôt, à terme, la création d'un statut que le durcissement. Mais « probable » n'est pas « garanti », et bâtir sa vie sur une tolérance reste un choix qu'il faut faire en connaissance de cause.</p>
 
     <h2 id="section-2">Les options de visa disponibles</h2>
 
@@ -157,6 +165,7 @@ include 'header.php';
       <li>Traitement en <strong>3 jours ouvrés environ</strong></li>
     </ul>
     <p>Le problème des renouvellements consécutifs : sortir du pays (Cambodge, Laos, Thaïlande) et rentrer avec un nouvel e-visa est courant. Les autorités commencent à questionner certains voyageurs qui font ça de façon répétée, sans refuser systématiquement. La politique peut évoluer — il est prudent de prévoir une solution alternative pour les séjours longs.</p>
+    <p>Conseils pratiques du quotidien en mode e-visa : demande le suivant <em>avant</em> que l'actuel expire si tu prévois une sortie-retour (les délais de traitement s'allongent autour des fêtes, Tết en tête) ; vérifie que le point d'entrée déclaré correspond bien à ton vol de retour ; et n'oublie pas la <a href="declaration-pre-arrivee-vietnam-pai-2026">déclaration PAI</a> à chaque arrivée dans les grands aéroports. Pour l'installation matérielle du télétravailleur — SIM, forfaits data, fibre — tout est dans <a href="sim-internet-applications-vietnam">l'article SIM et internet au Vietnam</a>, et le comparatif des espaces de travail dans celui sur <a href="coworkings-hanoi-hcmv-2026">les coworkings de Hanoï et HCMV</a>.</p>
 
     <h2 id="section-4">Visa DL (affaires)</h2>
     <p>Le visa DL est théoriquement pour les affaires — rencontres avec des partenaires vietnamiens, conférences, activités commerciales. Il est utilisé par certains nomades pour des séjours plus longs :</p>
@@ -165,6 +174,7 @@ include 'header.php';
       <li>Peut être accordé pour 3 ou 12 mois</li>
       <li>N'autorise pas formellement le télétravail pour des clients étrangers — même zone grise que l'e-visa</li>
     </ul>
+    <p>Un mot de prudence sur ce marché : la « lettre d'invitation » se monnaye auprès d'agences plus ou moins sérieuses, et la frontière entre le service administratif légitime et le montage de complaisance est parfois mince. Si la société qui t'« invite » n'a aucune activité réelle avec toi, tu construis ton séjour sur un document dont tu ne contrôles ni la validité ni les conséquences en cas de contrôle. Passe par des agences établies, garde les justificatifs, et considère le DL pour ce qu'il est : un outil de séjour moyen terme, pas un statut de travail.</p>
 
     <h2 id="section-5">La solution la plus stable : visa TT / TRC (conjoint de Vietnamien)</h2>
     <p>Si tu es marié(e) à un(e) Vietnamien(ne), le <strong>visa TT (thị thực TT) ou la carte de résidence temporaire (TRC)</strong> sont de loin les options les plus sereines pour vivre et télétravailler au Vietnam :</p>
@@ -174,12 +184,13 @@ include 'header.php';
       <li>Base légale claire pour la résidence</li>
       <li>Le télétravail pour des clients étrangers reste une zone grise, mais le statut de résident reconnu limite les risques pratiques</li>
     </ul>
+    <p>Bonus considérable pour les conjoints : le Code du travail vietnamien exempte de permis de travail l'étranger marié à un(e) Vietnamien(ne) et résidant au Vietnam. Autrement dit, si un jour tu veux basculer du télétravail vers une activité locale (contrat vietnamien, clients sur place), la porte est administrativement bien plus simple à ouvrir pour toi que pour n'importe quel autre étranger — une confirmation d'exemption remplace tout le parcours du permis.</p>
     <div class="info-box">
       <strong>Guide dédié :</strong> → <a href="visa-tt-carte-residence-trc-mariage">Visa TT et TRC pour conjoint de Vietnamien : comment les obtenir</a>
     </div>
 
     <h2 id="section-6">Honnêteté sur les zones grises</h2>
-    <p>Je préfère te dire clairement ce que je sais avec certitude et ce que je ne sais pas :</p>
+    <p>Ce blog s'est engagé à ne jamais enjoliver les sujets administratifs. Alors je préfère te dire clairement ce que je sais avec certitude et ce que je ne sais pas :</p>
 
     <div class="table-wrap">
     <table class="comparison-table">
@@ -218,6 +229,29 @@ include 'header.php';
       <strong>Disclaimer :</strong> Cet article partage mon expérience et des informations générales, pas un conseil juridique ou migratoire personnalisé. La réglementation visa est sujette à changement. Pour une situation précise, consulte un avocat spécialisé en droit de l'immigration vietnamien.
     </div>
 
+    <h2 id="section-voisins">Ce que font les pays voisins (et pourquoi ça éclaire le cas vietnamien)</h2>
+    <p>Pour comprendre où en est le Vietnam, un coup d'œil à la région aide. La Thaïlande a lancé son visa <strong>DTV</strong> (Destination Thailand Visa), pensé notamment pour les travailleurs à distance ; l'Indonésie a créé des visas longue durée ciblant les nomades à Bali ; la Malaisie a son programme <strong>DE Rantau</strong> dédié aux professionnels du numérique. Ces pays ont fait un choix explicite : légaliser et encadrer une population qui, de toute façon, était déjà là.</p>
+    <p>Le Vietnam observe, mais n'a pas franchi le pas. Sa stratégie visa récente a plutôt consisté à élargir les outils généralistes — e-visa ouvert à toutes les nationalités, allongement à 90 jours, exemptions élargies — qu'à créer des statuts spécialisés. Résultat paradoxal : le pays est l'une des destinations préférées des nomades en Asie du Sud-Est (coût de vie, fibre, cafés, sécurité) tout en étant l'un des rares à ne leur offrir aucun statut dédié. C'est aussi pour ça qu'aucune « astuce » miracle trouvée sur un forum ne remplacera la lecture lucide des options du tableau plus haut : le cadre n'existe pas encore, point.</p>
+
+    <h2 id="section-fiscal">Fiscalité : l'autre moitié du sujet (souvent ignorée)</h2>
+    <p>Le visa règle le droit de séjourner. Il ne dit rien de <strong>où tu dois payer tes impôts</strong> — et c'est le deuxième angle mort des nomades au Vietnam. Les grandes lignes, à connaître avant de partir :</p>
+    <ul>
+      <li><strong>La règle des 183 jours</strong> : au-delà de 183 jours de présence au Vietnam sur une année, tu peux être considéré comme résident fiscal vietnamien — avec, en théorie, une imposition sur tes revenus mondiaux, y compris ceux de tes clients français.</li>
+      <li><strong>La convention fiscale France-Vietnam</strong> : elle existe, et elle sert précisément à départager les cas de double résidence et à éviter la double imposition. C'est elle qui détermine, critère par critère (foyer permanent, centre des intérêts vitaux…), de quel côté tu relèves.</li>
+      <li><strong>Le statut français ne disparaît pas tout seul</strong> : une micro-entreprise française, par exemple, suppose des obligations qui se compliquent quand son titulaire ne réside plus en France. « Personne ne m'a rien dit » n'est pas un régime fiscal.</li>
+    </ul>
+    <p>Le sujet mérite un article à lui seul — il en a deux : <a href="residence-fiscale-france-vietnam-183-jours">la résidence fiscale France-Vietnam</a> et <a href="declarer-impots-france-depuis-vietnam">déclarer ses impôts français depuis le Vietnam</a>. Et si tu cherches une structure simple pour facturer tes clients sans gérer de société, regarde <a href="portage-salarial-depuis-vietnam">le portage salarial depuis le Vietnam</a>.</p>
+
+    <h2 id="section-pratiques">Les bonnes pratiques du télétravailleur au Vietnam</h2>
+    <p>En attendant un éventuel cadre officiel, voici la ligne de conduite qui ressort de l'expérience collective des expatriés installés :</p>
+    <ul>
+      <li><strong>Garde tes clients et tes revenus à l'étranger.</strong> La zone grise concerne le télétravail pour des clients hors Vietnam. Facturer des clients <em>vietnamiens</em> sans structure locale ni permis, c'est une autre catégorie : du travail non déclaré au sens plein.</li>
+      <li><strong>Sois irréprochable sur tout le reste</strong> : visa valide, enregistrement de résidence à jour, pas d'overstay. La tolérance de fait dont bénéficient les télétravailleurs repose sur leur discrétion administrative.</li>
+      <li><strong>Ne te présente pas comme « travaillant au Vietnam »</strong> dans tes démarches locales — tu séjournes au Vietnam et ton activité est à l'étranger. C'est exactement la réalité juridique, autant la formuler correctement.</li>
+      <li><strong>Couvre ta santé sérieusement</strong> : aucun visa de cette page n'emporte de couverture maladie. Assurance voyage étendue au début, vraie solution de long terme ensuite — le <a href="assurance-sante-vietnam-expat">guide santé expatrié</a> compare les options.</li>
+      <li><strong>Si ta situation le permet, sors de la zone grise par le haut</strong> : mariage → TT/TRC, contrat local → permis de travail, vraie activité récurrente → structure adaptée. La zone grise est un état transitoire acceptable, pas un plan de carrière.</li>
+    </ul>
+
     <h2 id="section-faq">Questions fréquentes</h2>
     <?php foreach ($page_faq as $faq): ?>
     <div class="faq-item">
@@ -237,8 +271,8 @@ include 'header.php';
     <div class="cta-newsletter">
       <h3>Reçois mes prochains articles</h3>
       <p>📥 <strong>Guide PDF + 3 modèles de lettres offerts</strong> dès l'inscription. Un email par mois, désinscription en 1 clic.</p>
-      <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
-        <input type="hidden" name="_next" value="<?= SITE_URL ?>/merci-guide">
+      <form class="cta-form" action="<?= SITE_URL ?>/subscribe-pack" method="POST">
+        <input type="text" name="website" value="" style="position:absolute;left:-9999px" tabindex="-1" autocomplete="off" aria-hidden="true">
         <input type="email" name="email" placeholder="Ton adresse email" required>
         <button type="submit">S'inscrire</button>
       </form>
