@@ -38,6 +38,8 @@ $page_faq = [
    'a' => 'Un célibataire expatrié peut vivre confortablement à Hanoï avec 1 500 à 2 000 USD nets par mois (logement décent en location, alimentation, transport, loisirs). Une famille avec enfants en école internationale aura besoin de 3 500 à 5 000 USD ou plus, les frais de scolarité représentant souvent la charge principale (5 000 à 20 000 USD par an selon l\'école). Da Nang ou Huế coûtent 20 à 30% moins cher que Hanoï ou HCMV.'],
   ['q' => 'Les salaires vietnamiens augmentent-ils chaque année ?',
    'a' => 'Oui, le salaire minimum légal est réévalué régulièrement par décret gouvernemental. Depuis 2018, les augmentations annuelles ont varié entre 5 et 8%. Le Décret 74/2024/NĐ-CP a fixé les salaires minimum en vigueur depuis le 1er juillet 2024. Le Conseil national des salaires (Hội đồng tiền lương quốc gia) émet chaque année une recommandation au gouvernement sur le taux d\'augmentation. Une nouvelle revalorisation est attendue courant 2025-2026 ; consulte le Journal officiel vietnamien (vbpl.vn) pour les chiffres les plus récents.'],
+  ['q' => 'Le 13e mois est-il obligatoire au Vietnam ?',
+   'a' => 'Non — contrairement à une croyance très répandue, le 13e mois et la prime de Tết relèvent de l\'usage et du contrat, pas d\'une obligation légale générale. Dans les faits, la quasi-totalité des employeurs sérieux les versent, et leur absence dans une offre est un signal d\'alerte. Conséquence pratique : fais inscrire le 13e mois (et les modalités de la prime de Tết) explicitement dans ton contrat de travail plutôt que de compter sur la coutume.'],
 ];
 include '_article-css.php';
 include 'header.php';
@@ -57,7 +59,7 @@ include 'header.php';
     <div class="article-hero-meta">
       <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
       <span>📅 Octobre 2026</span>
-      <span>⏱ 8 min de lecture</span>
+      <span>⏱ 12 min de lecture</span>
       <span>Mis à jour : Octobre 2026</span>
     </div>
   </div>
@@ -70,7 +72,10 @@ include 'header.php';
       <li><a href="#section-1">Le salaire minimum légal 2024-2026</a></li>
       <li><a href="#section-2">Le salaire moyen au Vietnam</a></li>
       <li><a href="#section-3">Salaires des expatriés par secteur</a></li>
+      <li><a href="#section-paie">Lire une fiche de paie vietnamienne</a></li>
+      <li><a href="#section-negocier">Négocier son contrat local</a></li>
       <li><a href="#section-4">Budget de vie mensuel</a></li>
+      <li><a href="#section-comparer">Comparer avec la France : le piège</a></li>
       <li><a href="#section-faq">Questions fréquentes</a></li>
     </ol>
     <div class="toc-share">
@@ -84,10 +89,10 @@ include 'header.php';
 
   <main class="article-content">
 
-    <p class="article-intro">Les salaires au Vietnam présentent un double visage : des salaires locaux encore modestes comparés à l'Europe, et des rémunérations expatriées qui varient fortement selon le secteur et l'employeur. Comprendre ce marché est essentiel pour négocier son contrat ou anticiper son budget de vie.</p>
+    <p class="article-intro">Les salaires au Vietnam présentent un double visage : des salaires locaux encore modestes comparés à l'Europe, et des rémunérations expatriées qui varient fortement selon le secteur et l'employeur. Comprendre ce marché est essentiel pour négocier son contrat ou anticiper son budget de vie. Ce guide rassemble les données officielles (salaire minimum, statistiques nationales), les fourchettes de marché observées pour les expatriés, le décodage d'une fiche de paie vietnamienne, et les réflexes de négociation qui font la différence sur un contrat local.</p>
 
     <h2 id="section-1">1. Le salaire minimum légal 2024-2026</h2>
-    <p>Le salaire minimum régional au Vietnam est fixé par décret gouvernemental. Le <strong>Décret 74/2024/NĐ-CP</strong> (entré en vigueur le 1er juillet 2024) établit les montants suivants selon quatre zones géographiques :</p>
+    <p>Le salaire minimum régional au Vietnam est fixé par décret gouvernemental — il n'existe pas de SMIC national unique, mais quatre planchers selon la géographie. Le <strong>Décret 74/2024/NĐ-CP</strong> (entré en vigueur le 1er juillet 2024) établit les montants suivants selon quatre zones géographiques :</p>
 
     <div class="table-wrapper">
     <table>
@@ -101,21 +106,23 @@ include 'header.php';
     </table>
     </div>
 
-    <p><em>Taux de conversion indicatif utilisé : 1 USD ≈ 25 300 VND. Vérifier le taux en vigueur sur banque-de-france.fr ou auprès de ta banque.</em></p>
+    <p><em>Taux de conversion indicatif utilisé : 1 USD ≈ 25 300 VND. Vérifier le taux en vigueur sur banque-de-france.fr ou auprès de ta banque — et pour convertir tes revenus au meilleur taux réel, voir <a href="transferer-argent-vietnam-wise">le guide des transferts d'argent</a>.</em></p>
 
     <p>Ce salaire minimum s'applique à tous les employeurs — vietnamiens et étrangers — pour les travailleurs locaux. Il constitue un plancher légal ; en pratique, la très grande majorité des salariés en zone urbaine gagne davantage.</p>
+    <p>Pourquoi quatre zones ? Parce que le Vietnam assume officiellement l'écart de coût de la vie entre ses métropoles et ses campagnes : le découpage suit la carte économique du pays, et il sert de référence bien au-delà du simple plancher salarial — les plafonds de cotisations sociales, certaines indemnités et beaucoup de grilles internes d'entreprises s'y indexent. Pour un expatrié, connaître la zone de son employeur aide donc à décoder plusieurs lignes de sa fiche de paie.</p>
 
     <h2 id="section-2">2. Le salaire moyen au Vietnam</h2>
-    <p>Selon les données de l'Office général des statistiques du Vietnam (Tổng cục Thống kê — gso.gov.vn), le revenu salarial mensuel moyen des travailleurs vietnamiens se situe entre <strong>7 et 9 millions de VND</strong> (275 à 355 USD environ) au niveau national, avec de fortes disparités selon la région et le secteur.</p>
+    <p>Selon les données de l'Office général des statistiques du Vietnam (Tổng cục Thống kê — gso.gov.vn), le revenu salarial mensuel moyen des travailleurs vietnamiens se situe entre <strong>7 et 9 millions de VND</strong> (275 à 355 USD environ) au niveau national, avec de fortes disparités selon la région et le secteur. Hô Chi Minh-Ville et Hanoï tirent la moyenne vers le haut ; les provinces rurales restent bien en dessous — c'est exactement l'écart que le système des quatre zones du salaire minimum reconnaît officiellement.</p>
     <ul>
       <li><strong>Secteur technologique / informatique</strong> : salaires moyens les plus élevés, souvent 15 à 30 millions VND pour les développeurs expérimentés</li>
       <li><strong>Finance et banque</strong> : 12 à 25 millions VND</li>
       <li><strong>Enseignement public</strong> : souvent bas, 5 à 10 millions VND</li>
       <li><strong>Agriculture et industrie légère</strong> : proches du salaire minimum</li>
     </ul>
+    <p>Ces moyennes racontent une trajectoire plus qu'un état : le Vietnam est l'une des économies les plus dynamiques d'Asie, et les salaires urbains qualifiés progressent nettement plus vite que la moyenne nationale — la tech vietnamienne, en particulier, recrute à des niveaux qui auraient semblé irréels il y a dix ans. Pour ta vie de couple mixte, ces chiffres donnent aussi un repère utile : ils situent les revenus de ta belle-famille et de ton entourage vietnamien, et expliquent pourquoi ton salaire d'expatrié — même modeste à tes yeux — te place statistiquement très haut dans l'échelle locale. Une réalité à manier avec tact.</p>
 
     <h2 id="section-3">3. Salaires des expatriés par secteur</h2>
-    <p>Les rémunérations des expatriés sont sensiblement plus élevées que les salaires locaux, notamment pour les postes de direction ou d'expertise. Ces fourchettes sont des observations de marché ; elles varient selon l'ancienneté, la taille de l'entreprise et la négociation individuelle.</p>
+    <p>Avant les chiffres, un distinguo essentiel : il existe en réalité <strong>trois régimes de rémunération</strong> pour un Français travaillant au Vietnam. Le <strong>contrat local</strong> (recruté sur place, payé aux conditions du marché vietnamien — la voie de la grande majorité des expatriés d'aujourd'hui) ; le <strong>package expatrié</strong> (envoyé par une multinationale avec salaire européen et avantages — une espèce en voie de raréfaction, réservée aux postes de direction) ; et le <strong>revenu étranger en télétravail</strong> (clients ou employeur hors Vietnam — un autre monde juridique et fiscal, traité dans <a href="travailler-a-distance-depuis-vietnam">le dossier travail à distance</a>). Les fourchettes ci-dessous concernent les contrats locaux et packages ; elles sont des observations de marché, variables selon l'ancienneté, la taille de l'entreprise et la négociation individuelle.</p>
 
     <div class="table-wrapper">
     <table>
@@ -134,9 +141,30 @@ include 'header.php';
     </div>
 
     <p>Les <strong>packages expatriés</strong> (offerts par les multinationales) peuvent inclure, en plus du salaire : logement, voiture avec chauffeur, billets d'avion annuels, assurance santé internationale, frais de scolarité pour les enfants. Ces avantages non monétaires peuvent représenter 30 à 50% du coût total employeur.</p>
+    <p>Un mot sur le cas le plus fréquent chez les lecteurs de ce blog : <strong>l'enseignement du français</strong>. Le FLE reste la porte d'entrée classique du marché du travail vietnamien pour un francophone — accessible, demandé, mais avec des rémunérations et des conditions très variables selon les employeurs (alliance française, écoles privées, cours particuliers). Le tour complet du sujet — qualifications, employeurs, tarifs horaires, cumul avec les cours en ligne — est dans notre guide dédié : <a href="enseigner-francais-vietnam-fle">enseigner le français au Vietnam</a>.</p>
+
+    <h2 id="section-paie">Lire une fiche de paie vietnamienne</h2>
+    <p>Premier contrat local, première fiche de paie — et premières surprises pour un Français : pas de CSG, pas de dizaines de lignes cryptiques, mais une logique différente qu'il faut apprivoiser. Les composantes à connaître :</p>
+    <ul>
+      <li><strong>Le brut et le net</strong> : entre les deux s'intercalent les cotisations sociales salariales (10,5 % — retraite, maladie, chômage, voir FAQ) et l'<strong>impôt sur le revenu (PIT, thuế thu nhập cá nhân)</strong>, prélevé à la source par l'employeur selon un barème progressif allant de 5 % à 35 %. Pas de déclaration mensuelle à faire soi-même : l'employeur retient et reverse, avec une régularisation annuelle en fin d'exercice.</li>
+      <li><strong>Les abattements familiaux</strong> : le système vietnamien prévoit un abattement personnel et des abattements par personne à charge (enfants, parents dépendants) qui réduisent la base imposable — déclare tes personnes à charge à ton employeur, beaucoup d'expatriés l'oublient.</li>
+      <li><strong>Les « allowances »</strong> : la paie vietnamienne adore les compléments détaillés — indemnité déjeuner, transport, téléphone, assiduité. Certaines bénéficient d'un traitement fiscal ou social favorable, d'où leur omniprésence dans les packages. Regarde toujours le total réellement versé plutôt que la seule ligne « salaire de base », et vérifie quelles composantes comptent pour le calcul du 13e mois et des cotisations.</li>
+      <li><strong>Le 13e mois et la prime de Tết</strong> : quasi universels dans les faits, mais issus de l'usage et du contrat, pas d'une obligation légale générale — d'où l'importance de les faire écrire noir sur blanc (voir négociation).</li>
+      <li><strong>Les congés</strong> : le minimum légal vietnamien est de 12 jours ouvrables par an (hors jours fériés, dont la semaine du Tết) — un choc culturel pour un salarié français habitué à ses cinq semaines. Les bonnes entreprises accordent davantage, et c'est un levier de négociation à part entière.</li>
+    </ul>
+
+    <h2 id="section-negocier">Négocier son contrat local en tant qu'expatrié</h2>
+    <p>La négociation salariale vietnamienne a ses codes propres, et le candidat français qui arrive avec ses réflexes hexagonaux laisse de l'argent sur la table. Les points qui changent tout :</p>
+    <ul>
+      <li><strong>Négocie en net, comme tout le monde</strong> : au Vietnam, l'usage courant est de discuter le salaire <em>net</em> (« net in hand ») — précise toujours explicitement si un montant évoqué est brut ou net, et qui supporte le PIT. Des malentendus de 20 % naissent de cette seule ambiguïté, dans les deux sens.</li>
+      <li><strong>Fais chiffrer le package complet</strong> : 13e mois, prime de Tết, assurance santé privée (très répandue dans les bonnes entreprises), jours de congé au-delà du minimum légal, billets d'avion, budget formation. Au Vietnam, ces lignes se négocient autant que le salaire — et un employeur qui lâche difficilement du salaire acceptera souvent d'améliorer les avantages.</li>
+      <li><strong>Clarifie le sponsor du permis de travail</strong> : l'employeur doit piloter et financer ton <a href="permis-de-travail-vietnam-francais">permis de travail</a> et le visa/TRC qui va avec — un employeur qui rechigne sur ce point t'annonce la couleur pour la suite. (Si tu es marié(e) à un(e) Vietnamien(ne), rappelle-lui que l'exemption de permis des conjoints simplifie son dossier.)</li>
+      <li><strong>Situe-toi honnêtement sur la grille</strong> : un expatrié coûte cher pour le marché local — ta valeur ajoutée doit être lisible (compétence rare, langues, réseau international). Les fourchettes de la section précédente te donnent le terrain de jeu réaliste ; le contexte du marché de l'emploi est détaillé dans <a href="trouver-emploi-vietnam-francais-2026">trouver un emploi au Vietnam</a>.</li>
+      <li><strong>Négocie avec le sourire</strong> : la culture de négociation vietnamienne est réelle mais indirecte — la confrontation dure ferme des portes que la persistance aimable ouvre. Les codes de communication décrits dans <a href="differences-culturelles-couple-franco-vietnamien">l'article différences culturelles</a> s'appliquent intégralement à la table de négociation.</li>
+    </ul>
 
     <h2 id="section-4">4. Budget de vie mensuel pour un expatrié à Hanoï</h2>
-    <p>À titre d'illustration, voici des ordres de grandeur pour une vie confortable à Hanoï :</p>
+    <p>Le salaire ne prend tout son sens que rapporté aux dépenses réelles du terrain. À titre d'illustration concrète, voici des ordres de grandeur pour une vie confortable à Hanoï — la ligne « scolarité » montre au passage pourquoi les familles négocient si âprement la prise en charge des frais d'école dans leur package :</p>
 
     <div class="table-wrapper">
     <table>
@@ -153,7 +181,12 @@ include 'header.php';
     </table>
     </div>
 
-    <p>Ces chiffres sont plus bas à Da Nang ou Huế (environ 20 à 30% moins cher) et plus élevés dans les quartiers expatriés premium de Hanoï ou HCMV (Tây Hồ, Thảo Điền).</p>
+    <p>Ces chiffres sont plus bas à Da Nang ou Huế (environ 20 à 30% moins cher) et plus élevés dans les quartiers expatriés premium de Hanoï ou HCMV (Tây Hồ, Thảo Điền). Les budgets détaillés ville par ville sont dans nos guides dédiés : <a href="budget-mensuel-hanoi-2026">Hanoï</a>, <a href="budget-mensuel-da-nang-2026">Đà Nẵng</a>, <a href="budget-mensuel-nha-trang-2026">Nha Trang</a> et <a href="budget-mensuel-hue-2026">Huế</a>.</p>
+
+    <h2 id="section-comparer">Comparer avec la France : le piège des conversions</h2>
+    <p>« 1 500 USD par mois, mais c'est moins que le SMIC ! » — c'est la réaction française classique devant un salaire vietnamien, et elle passe à côté de l'essentiel. Un salaire ne se juge qu'en regard du coût de la vie locale : à Hanoï, 1 500 USD nets financent un vrai confort (logement correct, sorties, épargne) là où le même montant serait juste à Paris. C'est toute la logique du pouvoir d'achat : convertir les euros en « niveau de vie » plutôt qu'en dongs. Les économistes appellent ça la parité de pouvoir d'achat ; les expatriés installés appellent ça « ma vie est meilleure ici avec moins » — c'est la même idée.</p>
+    <p>Le raisonnement complet d'un candidat à l'expatriation tient en trois questions : que me reste-t-il chaque mois après un niveau de vie équivalent (souvent plus qu'en France) ? Qu'est-ce que je perds en protection sociale différée — retraite, chômage — et comment je le compense (CFE, cotisations volontaires, épargne — voir <a href="protection-sociale-cfe-retraite-vietnam">le guide protection sociale</a>) ? Et que vaut cette expérience sur mon CV dans cinq ans ? Les expatriés déçus sont presque toujours ceux qui n'ont fait que la première conversion, au taux de change du jour.</p>
+    <p>Dernier paramètre pour les couples mixtes : un salaire local vietnamien correct + un coût de vie local + une famille sur place forme un équilibre de vie complet, là où le même CV en France donnerait peut-être un salaire supérieur mais une vie plus chère et une belle-famille à 10 000 km. L'arbitrage n'est jamais purement salarial — et c'est très bien comme ça.</p>
 
     <div id="section-faq">
       <h2>Questions fréquentes</h2>
