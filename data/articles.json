@@ -1108,14 +1108,14 @@
             "excerpt": "Le piège de la micro-entreprise quand on n'est plus résident fiscal français. Tableau comparatif complet et arbre de décision pour freelances expatriés.",
             "category": "emploi",
             "categoryLabel": "Emploi & Entreprendre",
-            "date": "2026-06-11",
-            "dateLabel": "Juin 2026",
+            "date": "2026-07-31",
+            "dateLabel": "Juillet 2026",
             "readTime": "12 min",
             "emoji": "⚖️",
             "image": "https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=600&q=80",
             "imageAlt": "Portage salarial vs micro-entreprise expatrié Vietnam",
             "keywords": "portage salarial micro entreprise vietnam comparatif autoentrepreneur expatrie resident fiscal",
-            "published": false
+            "published": true
         },
         {
             "slug": "residence-fiscale-france-vietnam-183-jours",
