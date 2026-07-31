@@ -25,6 +25,10 @@ $page_faq = [
    'a' => 'Non. Seul le mariage civil (devant le Comité populaire au Vietnam ou à la mairie en France) a une valeur juridique. La cérémonie traditionnelle (đám cưới) ou religieuse n\'a aucun effet légal, mais elle reste culturellement essentielle pour la famille vietnamienne.'],
   ['q' => 'Faut-il apprendre le vietnamien pour se marier au Vietnam ?',
    'a' => 'Non légalement, mais un interprète peut être demandé lors de l\'entretien au Comité populaire. En pratique, la conjointe vietnamienne assure souvent la traduction, et les documents officiels sont tous traduits par un traducteur assermenté.'],
+  ['q' => 'Ma femme prendra-t-elle mon nom de famille ?',
+   'a' => 'Pas automatiquement, et probablement pas : au Vietnam, les femmes conservent leur nom de naissance toute leur vie — c\'est la norme culturelle, le mariage ne change pas le nom. En France, le mariage ne change d\'ailleurs jamais le nom légal non plus : il ouvre seulement un droit d\'usage du nom du conjoint, que ta femme pourra utiliser ou non sur ses documents français. Beaucoup de Vietnamiennes mariées à des Français gardent simplement leur nom — et c\'est parfaitement normal des deux côtés.'],
+  ['q' => 'Faut-il faire un contrat de mariage ?',
+   'a' => 'Ce n\'est pas obligatoire, mais pour un couple mixte c\'est une vraie question à poser à un notaire avant le mariage. Sans contrat, la loi applicable à votre régime matrimonial dépend de règles de droit international privé — généralement liées à votre première résidence habituelle commune — ce qui peut donner des résultats inattendus si vous vivez entre deux pays. Un contrat permet de choisir explicitement le régime et la loi applicable, et simplifie énormément les choses en cas d\'achat immobilier au Vietnam ou en France.'],
 ];
 include '_article-css.php';
 include 'header.php';
@@ -44,7 +48,7 @@ include 'header.php';
     <div class="article-hero-meta">
       <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
       <span>📅 6 avril 2026</span>
-      <span>⏱ 11 min de lecture</span>
+      <span>⏱ 12 min de lecture</span>
     </div>
   </div>
 </header>
@@ -58,6 +62,11 @@ include 'header.php';
       <li><a href="#section-3">Mariage civil au Vietnam</a></li>
       <li><a href="#section-4">Transcription en France</a></li>
       <li><a href="#section-5">Visa conjoint pour la France</a></li>
+      <li><a href="#section-6">Coûts indicatifs</a></li>
+      <li><a href="#section-7">La cérémonie traditionnelle</a></li>
+      <li><a href="#section-8">Après le mariage</a></li>
+      <li><a href="#section-france">Se marier en France : l'autre voie</a></li>
+      <li><a href="#section-erreurs">Les erreurs fréquentes</a></li>
       <li><a href="#section-faq">Questions fréquentes</a></li>
     </ol>
     <div class="toc-share">
@@ -85,6 +94,7 @@ include 'header.php';
       <li><strong>Mariage civil au Vietnam</strong> : célébré devant les autorités vietnamiennes (Comité populaire de la commune), reconnu en France après transcription consulaire. C'est la voie la plus courante quand les deux conjoints vivent au Vietnam.</li>
       <li><strong>Mariage civil en France</strong> : célébré à la mairie, nécessite que la conjointe vietnamienne soit en France avec un visa valide. Plus simple administrativement mais demande qu'elle soit présente physiquement.</li>
     </ul>
+    <p>Le critère de décision est presque toujours géographique : <strong>où vivez-vous aujourd'hui, et où la famille de ta conjointe attend-elle la fête ?</strong> Quand la vie et la famille sont au Vietnam, le mariage vietnamien s'impose naturellement — la cérémonie familiale y aura lieu de toute façon, et enchaîner enregistrement local et đám cưới dans la même période simplifie tout. Le mariage en France se justifie surtout quand ta conjointe y séjourne déjà légalement pour une autre raison (études, travail). Le détail de la voie française est plus bas dans cet article ; ce guide déroule d'abord la voie vietnamienne, la plus fréquente. Et pour la vue d'ensemble du projet complet jusqu'à l'installation en France, garde sous le coude le <a href="faire-venir-conjointe-vietnamienne-france">guide pilier « faire venir sa conjointe »</a>.</p>
 
     <h2 id="section-2">Le certificat de capacité matrimoniale (CCM)</h2>
     <p>Pour se marier au Vietnam, le ressortissant français doit obtenir auprès des autorités françaises un <strong>certificat de capacité matrimoniale</strong> (CCM). Ce document atteste que tu es libre de te marier selon le droit français (pas de mariage antérieur non dissous, pas d'empêchement légal).</p>
@@ -93,6 +103,7 @@ include 'header.php';
       <li><strong>L'ambassade ou le consulat de France</strong> au Vietnam (Hanoï ou Hô-Chi-Minh-Ville) si tu résides au Vietnam</li>
       <li>La <strong>mairie</strong> de ton domicile en France si tu y résides</li>
     </ul>
+    <p>Ce document — appelé CCAM dans la pratique consulaire au Vietnam — a son guide dédié sur ce blog, avec la liste des pièces, l'audition consulaire et les pièges de calendrier : <a href="certificat-capacite-mariage-vietnam">le CCAM pas à pas</a>. Retiens l'essentiel ici : c'est la première brique de tout le parcours, elle se demande des mois avant la date rêvée, et elle est valable un an.</p>
     <div class="info-box">
       <strong>📋 Documents pour le CCM à l'ambassade de France à Hanoï :</strong>
       Acte de naissance français (moins de 3 mois) — Justificatif de domicile au Vietnam — Passeport — Formulaire cerfa (disponible à l'ambassade) — Célibat attesté (si divorcé : jugement de divorce) — Délai de traitement : 3 à 6 semaines.
@@ -111,6 +122,7 @@ include 'header.php';
       <li>Publication de l'avis de mariage pendant 15 jours</li>
       <li>Célébration civile et remise du certificat de mariage (giấy chứng nhận kết hôn)</li>
     </ol>
+    <p>À quoi ressemble la « célébration » vietnamienne ? À rien de ce qu'imagine un Français : pas de salle des mariages, pas de discours — une signature de registres dans un bureau administratif, en présence des deux époux, parfois expédiée en un quart d'heure. C'est voulu : au Vietnam, l'émotion est réservée au đám cưới familial (voir plus bas), l'administration ne fait que constater. Prévois quand même l'interprète si le comité populaire le demande, et vérifie les usages locaux : chaque province a ses petites variantes de procédure, que ta belle-famille connaît mieux que n'importe quel site web. Le déroulé détaillé côté vietnamien fait l'objet d'un article dédié : <a href="se-marier-vietnam-procedure-comite-populaire">la procédure au comité populaire pas à pas</a>.</p>
     <div class="info-box">
       <strong>📋 Documents à fournir au Comité populaire :</strong>
       CCM français traduit en vietnamien (traducteur assermenté) — Passeport français — Acte de naissance vietnamien de la conjointe — Livret de résidence (sổ hộ khẩu) — Certificat de célibat vietnamien — 2 photos couple 4x6 cm.
@@ -123,9 +135,10 @@ include 'header.php';
       <li>Ou directement par courrier au SCEC, 11 rue de la Maison Blanche, 44941 Nantes Cedex 9</li>
     </ul>
     <p>Sans transcription, le mariage n'a pas d'effet juridique en France : la conjointe ne peut pas obtenir un visa "conjoint de Français" et n'a pas les droits successoraux reconnus.</p>
+    <p>Côté formalités des documents vietnamiens, l'acte de mariage devra être légalisé — ou apostillé une fois l'apostille pleinement applicable entre les deux pays (le Vietnam a adhéré à la Convention de La Haye, voir notre <a href="apostille-vietnam-francais-2026">guide apostille</a>) — puis traduit par un traducteur assermenté. Le SCEC procède aussi à ses propres vérifications, notamment lorsque le mariage a été célébré sans CCM préalable ou que le dossier présente des zones d'ombre : c'est ce contrôle qui explique les délais. Tout le détail des pièces et du suivi est dans le <a href="transcription-mariage-service-central-nantes">guide de la transcription à Nantes</a>.</p>
 
     <h2 id="section-5">Le visa conjoint pour la France (VLS-TS)</h2>
-    <p>Une fois le mariage transcrit, la conjointe vietnamienne peut demander un <strong>visa long séjour valant titre de séjour (VLS-TS) mention "vie privée et familiale"</strong> auprès de l'ambassade de France à Hanoï. Ce visa d'un an est renouvelable et mène à la carte de résident après 3 à 5 ans de vie commune en France.</p>
+    <p>Une fois le mariage transcrit, la conjointe vietnamienne peut demander un <strong>visa long séjour valant titre de séjour (VLS-TS) mention "vie privée et familiale"</strong> auprès de l'ambassade de France à Hanoï. Ce visa d'un an est renouvelable et mène à la carte de résident après 3 à 5 ans de vie commune en France. Le dossier, le dépôt via VFS Global, la préparation de l'entretien et la check-list de l'arrivée en France sont détaillés dans deux guides dédiés : <a href="visa-long-sejour-conjoint-vietnamien-france">le visa long séjour conjoint de Français</a> et <a href="entretien-ambassade-france-vietnam-visa-conjoint">l'entretien à l'ambassade</a>.</p>
 
     <h2 id="section-6">Coûts indicatifs de la procédure</h2>
     <p>Voici une estimation des coûts réels pour un mariage franco-vietnamien célébré au Vietnam et transcrit en France :</p>
@@ -141,10 +154,10 @@ include 'header.php';
         <tr><td><strong>Total démarches légales</strong></td><td><strong>~100–200 €</strong></td></tr>
       </tbody>
     </table>
-    <p>Ces coûts n'incluent pas la cérémonie traditionnelle (đám cưới) ni les coûts liés au visa conjoint pour la France le cas échéant.</p>
+    <p>Ces coûts n'incluent pas la cérémonie traditionnelle (đám cưới) ni les coûts liés au visa conjoint pour la France le cas échéant — ni tes billets d'avion, qui sont en réalité le premier poste du budget pour un marié résidant en France.</p>
 
     <h2 id="section-7">La cérémonie traditionnelle : đám cưới</h2>
-    <p>Même si le mariage civil est l'acte légal, la <strong>cérémonie traditionnelle vietnamienne</strong> (đám cưới) est indispensable culturellement. C'est elle que la famille attend, c'est elle dont on se souviendra.</p>
+    <p>Même si le mariage civil est l'acte légal, la <strong>cérémonie traditionnelle vietnamienne</strong> (đám cưới) est indispensable culturellement. C'est elle que la famille attend, c'est elle dont on se souviendra. Pour le marié français, c'est aussi le premier grand examen de passage dans la belle-famille : accepte de te laisser guider sur le protocole (les aînés d'abord, les toasts, l'ordre des visites aux tables), et prépare deux ou trois phrases de remerciement en vietnamien — l'effet sur l'assemblée vaut tous les cadeaux (<a href="apprendre-vietnamien-couple">de quoi t'y mettre ici</a>).</p>
     <p>Elle se déroule en deux temps :</p>
     <ul>
       <li><strong>Lễ ăn hỏi (fiançailles / dépôt de cadeaux)</strong> : le futur marié et sa délégation apportent des plateaux de cadeaux symboliques (bia lễ) chez la famille de la future mariée. Bétel et arec, alcool, gâteaux, poulet rôti sont les offrandes traditionnelles. La délégation doit être en nombre pair (signe de bonheur). Ce rituel a lieu plusieurs semaines avant le mariage.</li>
@@ -164,19 +177,32 @@ include 'header.php';
       <li><strong>Mise à jour des bénéficiaires</strong> : assurance vie, retraite, comptes bancaires — mettre à jour les bénéficiaires après le mariage.</li>
     </ul>
 
+    <h2 id="section-france">Se marier en France : l'autre voie, en détail</h2>
+    <p>Si ta future épouse peut venir en France (visa court séjour, ou titre de séjour déjà en cours pour un autre motif), le mariage à la mairie française est une alternative complète au parcours vietnamien :</p>
+    <ol>
+      <li><strong>Dossier de mariage à la mairie</strong> du domicile de l'un des deux : actes de naissance (le sien traduit et légalisé/apostillé), justificatifs, certificat de coutume et de célibat vietnamiens.</li>
+      <li><strong>Audition éventuelle</strong> par l'officier d'état civil — même logique que l'audition consulaire du CCM.</li>
+      <li><strong>Publication des bans</strong> pendant 10 jours, puis célébration.</li>
+      <li><strong>Reconnaissance au Vietnam</strong> : le mariage français devra ensuite être enregistré côté vietnamien (ghi chú kết hôn) pour produire ses effets là-bas — le miroir exact de la transcription de Nantes.</li>
+    </ol>
+    <p>Avantages : pas de transcription à attendre côté français (le mariage est français d'origine), et la demande de visa long séjour peut suivre plus vite. Inconvénients : il faut que ta conjointe obtienne un visa pour venir — et un visa court séjour « en vue de mariage » s'obtient, mais se prépare ; et se marier en France ne donne <strong>aucun droit automatique au séjour</strong> : après le mariage, elle devra en principe repartir demander son VLS-TS au Vietnam. Le choix entre les deux voies dépend surtout d'où vous vivez déjà et de la faisabilité du visa court séjour.</p>
+
+    <h2 id="section-erreurs">Les erreurs fréquentes</h2>
+    <ul>
+      <li><strong>Fixer la date du đám cưới avant d'avoir le CCM</strong> : la famille veut une date (souvent choisie pour sa bonne fortune), l'administration a son calendrier. Fête et enregistrement légal peuvent être dissociés — c'est la soupape qui sauve tous les plannings.</li>
+      <li><strong>Négliger les délais incompressibles</strong> : 10 jours de bans français, 15 jours d'affichage vietnamien, vérifications de Nantes — aucun intermédiaire ne peut les « accélérer », méfie-toi de qui le promet.</li>
+      <li><strong>Faire traduire par un proche</strong> : seules les traductions assermentées sont acceptées, dans les deux sens. Une traduction refusée = un cycle de plus.</li>
+      <li><strong>Oublier de lancer la transcription immédiatement</strong> : c'est elle qui conditionne le visa conjoint et tous les droits en France. Le dossier part à Nantes la semaine du mariage, pas « après la lune de miel ».</li>
+      <li><strong>Ignorer la question du régime matrimonial</strong> : pour un couple mixte, la loi applicable au régime dépend de règles de droit international privé (souvent liées à la première résidence commune). Un contrat de mariage chez un notaire permet de choisir clairement — dix fois plus simple avant qu'après, surtout si un achat immobilier au Vietnam est dans les projets.</li>
+    </ul>
+
     <h2 id="section-faq">Questions fréquentes</h2>
+    <?php foreach ($page_faq as $faq): ?>
     <div class="faq-item">
-      <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Combien de temps dure l'ensemble de la procédure ? <span class="faq-arrow">▼</span></button>
-      <div class="faq-answer">De l'obtention du CCM à la transcription complète en France, compte 4 à 7 mois au total dans les cas normaux. Prévois plus de temps si l'un des conjoints a des documents manquants ou si des délais administratifs s'accumulent.</div>
+      <button class="faq-question" onclick="this.parentElement.classList.toggle('open')"><?= htmlspecialchars($faq['q']) ?> <span class="faq-arrow">▼</span></button>
+      <div class="faq-answer"><?= $faq['a'] ?></div>
     </div>
-    <div class="faq-item">
-      <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Le mariage religieux ou traditionnel est-il reconnu ? <span class="faq-arrow">▼</span></button>
-      <div class="faq-answer">Non. Seul le mariage civil (devant le Comité populaire au Vietnam ou à la mairie en France) a une valeur juridique. La cérémonie traditionnelle (đám cưới) ou religieuse n'a aucun effet légal, mais elle reste culturellement essentielle pour la famille vietnamienne.</div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Faut-il apprendre le vietnamien pour se marier au Vietnam ? <span class="faq-arrow">▼</span></button>
-      <div class="faq-answer">Non légalement, mais un interprète peut être demandé lors de l'entretien au Comité populaire. En pratique, la conjointe vietnamienne assure souvent la traduction, et les documents officiels sont tous traduits par un traducteur assermenté.</div>
-    </div>
+    <?php endforeach; ?>
 
     <?php
 $author_bio = <<<'BIO'
@@ -188,8 +214,8 @@ include '_author-box.php';
     <div class="cta-newsletter">
       <h3>Reçois les prochains guides</h3>
       <p>📥 <strong>Guide PDF + 3 modèles de lettres offerts</strong> dès l'inscription. Un email par mois, désinscription en 1 clic.</p>
-      <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
-        <input type="hidden" name="_next" value="<?= SITE_URL ?>/merci-guide">
+      <form class="cta-form" action="<?= SITE_URL ?>/subscribe-pack" method="POST">
+        <input type="text" name="website" value="" style="position:absolute;left:-9999px" tabindex="-1" autocomplete="off" aria-hidden="true">
         <input type="email" name="email" placeholder="ton@email.com" required>
         <button type="submit">S'inscrire</button>
       </form>

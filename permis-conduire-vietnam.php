@@ -25,6 +25,10 @@ $page_faq = [
    'a' => 'Le Vietnam a ratifié la Convention de Vienne de 1968, donc le Permis International (PI) est théoriquement valable. En pratique, il est accepté pour les voitures et véhicules de tourisme mais peut poser problème pour les motos de plus de 50cc. Pour un séjour long, la conversion reste la solution la plus sûre.'],
   ['q' => 'Peut-on louer une moto sans permis ?',
    'a' => 'Les loueurs de motos demandent rarement un permis (surtout pour les touristes), mais conduire sans permis adapté est illégal et surtout très risqué en cas d\'accident : ton assurance ne couvrirait pas les dommages.'],
+  ['q' => 'Le scooter peut-il être au nom de mon/ma conjoint(e) vietnamien(ne) ?',
+   'a' => 'Oui, et c\'est très courant dans les couples mixtes : l\'immatriculation du véhicule et le droit de le conduire sont deux choses distinctes. Le scooter enregistré au nom du conjoint vietnamien peut être conduit par le conjoint français — à condition que celui-ci ait son propre permis valide au Vietnam. Garde une copie de la carte grise (đăng ký xe) avec toi lors des contrôles.'],
+  ['q' => 'Vaut-il la peine de conduire une voiture au Vietnam ?',
+   'a' => 'Pour la plupart des expatriés urbains, non : la circulation dense, le stationnement rare et le coût d\'acquisition élevé des voitures au Vietnam (taxes d\'importation lourdes) rendent la voiture peu rationnelle en ville, où Grab et les taxis sont omniprésents et bon marché. La voiture prend du sens pour les familles en périphérie ou les trajets interprovinciaux réguliers — et là, beaucoup optent pour une voiture avec chauffeur, une pratique courante et abordable.'],
 ];
 include '_article-css.php';
 include 'header.php';
@@ -44,7 +48,7 @@ include 'header.php';
     <div class="article-hero-meta">
       <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
       <span>📅 20 mars 2026</span>
-      <span>⏱ 7 min de lecture</span>
+      <span>⏱ 12 min de lecture</span>
     </div>
   </div>
 </header>
@@ -58,6 +62,7 @@ include 'header.php';
       <li><a href="#section-3">Passer l'examen local</a></li>
       <li><a href="#section-4">Catégories de permis</a></li>
       <li><a href="#section-5">Sécurité routière à Hanoï</a></li>
+      <li><a href="#section-culture">Conduire à la vietnamienne</a></li>
       <li><a href="#section-6">L'assurance moto</a></li>
       <li><a href="#section-7">Acheter vs louer un scooter</a></li>
       <li><a href="#section-8">Infractions et contrôles</a></li>
@@ -73,12 +78,12 @@ include 'header.php';
   </aside>
 
   <main class="article-content">
-    <p><strong>Conduire à Hanoï est une expérience à part entière.</strong> Scooters partout, klaxons constants, carrefours sans feux... Mais avec le bon permis et quelques règles de base, tu t'y feras. Voici comment être en règle avec la réglementation vietnamienne (Loi sur la circulation routière n°23/2008/QH12, modifiée en 2022).</p>
+    <p><strong>Conduire à Hanoï est une expérience à part entière.</strong> Scooters partout, klaxons constants, carrefours sans feux... Mais avec le bon permis et quelques règles de base, tu t'y feras. Voici comment être en règle avec la réglementation vietnamienne (Loi sur la circulation routière n°23/2008/QH12, modifiée en 2022) — et surtout comment survivre au trafic une fois le papier en poche, parce que le permis n'est que la moitié du sujet.</p>
 
     <img class="article-photo" src="assets/img/vieux-quartier-hanoi-intersection.jpg" alt="Intersection dans le vieux quartier de Hanoï — circulation et permis de conduire au Vietnam" width="1200" height="675" loading="lazy">
 
     <h2 id="section-1">Peut-on conduire avec son permis français ?</h2>
-    <p>Le permis français n'est <strong>pas reconnu directement au Vietnam</strong>. La France et le Vietnam n'ont pas signé d'accord de reconnaissance mutuelle des permis de conduire. En théorie, le Permis International (PI — Convention de Vienne de 1968) est reconnu, mais son application pratique au Vietnam est limitée et les forces de l'ordre peuvent ne pas l'accepter pour certains types de véhicules.</p>
+    <p>Le permis français n'est <strong>pas reconnu directement au Vietnam</strong>. La France et le Vietnam n'ont pas signé d'accord de reconnaissance mutuelle des permis de conduire. En théorie, le Permis International (PI — Convention de Vienne de 1968) est reconnu, mais son application pratique au Vietnam est limitée et les forces de l'ordre peuvent ne pas l'accepter pour certains types de véhicules. Rappel utile : le PI n'est pas un permis autonome — c'est une traduction officielle de ton permis français, qui ne couvre que les catégories que tu détiens réellement, et qui se demande gratuitement en France (via l'ANTS) <em>avant</em> le départ.</p>
 
     <div class="warning-box">
       <strong>⚠️ Scooters de plus de 50cc :</strong>
@@ -93,6 +98,8 @@ include 'header.php';
       <li>Permis original accompagné d'une traduction officielle en vietnamien (traducteur assermenté)</li>
     </ul>
     <p>La procédure se déroule auprès du <strong>Département des Transports (Sở Giao thông Vận tải)</strong> de la province ou ville où tu résides. À Hanoï, c'est à Đống Đa.</p>
+    <p>Le point qui bloque le plus de monde : <strong>la conversion exige un vrai statut de résident</strong> (carte de résidence temporaire). Un visiteur en exemption de 45 jours ou en e-visa touristique ne peut pas convertir son permis — ce qui est logique : le permis vietnamien est un document de résident. Concrètement, les profils se répartissent ainsi : le touriste de passage roule (à ses risques) avec un PI pour ce que son PI couvre ; l'expatrié installé avec TRC convertit son permis français dès que possible ; et celui qui n'a jamais passé le permis moto en France passe l'examen A1 local — voir section suivante. Il n'y a pas de quatrième voie « facile » : les permis achetés « sans examen » proposés en ligne sont des faux, avec les conséquences pénales et assurantielles qui vont avec.</p>
+    <p>Attention aussi à la correspondance des catégories : un permis B français (voiture) se convertit en permis voiture vietnamien — il ne donne <strong>pas</strong> la catégorie moto. Pour le scooter &gt;50cc, il faut soit un permis A/A1/A2 français à convertir, soit passer l'examen A1 vietnamien. C'est LE malentendu classique des nouveaux arrivants français, qui n'ont souvent jamais eu le permis moto de leur vie.</p>
 
     <div class="info-box">
       <strong>📋 Documents à préparer :</strong>
@@ -100,12 +107,12 @@ include 'header.php';
     </div>
 
     <h2 id="section-3">Passer l'examen local</h2>
-    <p>Si tu n'as pas de permis étranger à convertir, tu dois passer l'examen vietnamien complet. Il comprend :</p>
+    <p>Si tu n'as pas de permis étranger à convertir — cas typique du Français qui a le permis voiture mais jamais passé le permis moto —, tu dois passer l'examen vietnamien de la catégorie visée. Il comprend :</p>
     <ul>
       <li><strong>Épreuve théorique</strong> : 25 questions sur le code de la route vietnamien (en anglais disponible dans certains centres). Questions accessibles en ligne sur le site officiel du Département des Transports.</li>
       <li><strong>Épreuve pratique</strong> : parcours standardisé en auto-école agréée.</li>
     </ul>
-    <p>Compte 2 à 4 mois entre l'inscription et l'obtention du permis. Plusieurs auto-écoles à Hanoï proposent des cours en anglais, notamment pour les expatriés.</p>
+    <p>Compte 2 à 4 mois entre l'inscription et l'obtention du permis. Plusieurs auto-écoles à Hanoï proposent des cours en anglais, notamment pour les expatriés. L'examen A1 (moto jusqu'à 175cc) est le plus demandé par les Français : l'épreuve pratique se déroule sur un parcours en forme de 8 et une ligne droite à faible vitesse — c'est un exercice d'équilibre plus que de conduite, et quelques heures d'entraînement suffisent à quiconque roule déjà. Ton/ta conjoint(e) vietnamien(ne), qui est probablement passé(e) par là, sera d'ailleurs de bon conseil : passer le A1 est un rite de passage national.</p>
 
     <h2 id="section-4">Catégories de permis au Vietnam</h2>
     <table class="comparison-table">
@@ -125,16 +132,28 @@ include 'header.php';
     </div>
 
     <h2 id="section-5">Sécurité routière à Hanoï</h2>
-    <p>Le Vietnam a l'un des taux d'accidents de la route les plus élevés d'Asie du Sud-Est. Quelques règles essentielles :</p>
+    <p>Le Vietnam a l'un des taux d'accidents de la route les plus élevés d'Asie du Sud-Est — et l'accident de scooter reste le premier risque réel de l'expatrié, loin devant tout le reste. Quelques règles essentielles :</p>
     <ul>
       <li><strong>Casque obligatoire</strong> sur toute moto ou scooter, y compris passager — amende de 100 000 à 200 000 VND</li>
       <li><strong>Alcoolémie zéro</strong> : tolérance 0g/L depuis 2020 (Loi sur la prévention de l'alcool 44/2019/QH14)</li>
       <li>Conduite à droite comme en France</li>
       <li>Les piétons traversent souvent n'importe où — anticipe et ralentis</li>
     </ul>
+    <p>Deux réalités climatiques s'ajoutent au tableau. La <strong>saison des pluies</strong> transforme les rues en patinoires dans les premières minutes d'averse (le film de poussière et d'huile se décolle) : les habitués s'arrêtent boire un café le temps que ça passe, et c'est la bonne stratégie. Et le <strong>soleil</strong> explique l'équipement local qui amuse les nouveaux venus — gants, masque, veste intégrale par 35°C : ce n'est pas de la pudeur, c'est de la protection solaire de gens qui passent deux heures par jour sur un scooter. Fais pareil.</p>
+
+    <h2 id="section-culture">Conduire à la vietnamienne : le mode d'emploi non écrit</h2>
+    <p>Le code de la route vietnamien s'apprend dans les textes ; la circulation vietnamienne s'apprend dans la rue. Les règles non écrites qui font la différence entre un conducteur stressé et un conducteur intégré :</p>
+    <ul>
+      <li><strong>Le klaxon n'est pas une agression</strong> : c'est un sonar. « Bip » signifie « je suis là, je passe » — pas « pousse-toi, abruti ». Utilise-le de la même façon : bref, informatif, sans colère.</li>
+      <li><strong>Le flux prime sur la règle</strong> : la circulation vietnamienne fonctionne comme un banc de poissons — fluide, prévisible dans son imprévisibilité. Le danger vient des mouvements brusques, pas de la lenteur. Roule régulier, signale tes intentions, ne freine jamais sec sans raison.</li>
+      <li><strong>La priorité au plus gros</strong> est la règle de survie de fait : bus &gt; camion &gt; voiture &gt; scooter &gt; vélo &gt; piéton. Injuste, mais vital à intégrer.</li>
+      <li><strong>Regarde devant, pas derrière</strong> : chacun gère ce qui arrive devant lui. C'est déroutant au début, puis étonnamment fonctionnel.</li>
+      <li><strong>Commence petit</strong> : premières sorties le dimanche matin dans un quartier calme, pas un lundi 8h sur un boulevard. La courbe d'apprentissage est réelle mais rapide — la plupart des expatriés sont à l'aise en quelques semaines.</li>
+    </ul>
+    <p>Hors des villes, la donne change : les routes nationales mélangent camions rapides, scooters chargés et animaux, et la conduite de nuit multiplie les risques (éclairage aléatoire, véhicules sans feux). Pour les boucles mythiques (Hà Giang, col des Nuages), pars tôt, jamais de nuit, équipe-toi sérieusement — et vérifie que ton assurance couvre bien la moto en zone rurale.</p>
 
     <h2 id="section-6">L'assurance moto et scooter</h2>
-    <p>Au Vietnam, l'assurance de responsabilité civile (<em>bảo hiểm trách nhiệm dân sự</em>) est <strong>obligatoire</strong> pour tous les véhicules à moteur, y compris les scooters. Elle coûte environ <strong>66 000 VND par an</strong> pour un deux-roues et est délivrée par des assureurs agréés comme Bảo Việt, PVI ou PTI.</p>
+    <p>Au Vietnam, l'assurance de responsabilité civile (<em>bảo hiểm trách nhiệm dân sự</em>) est <strong>obligatoire</strong> pour tous les véhicules à moteur, y compris les scooters. Elle coûte environ <strong>66 000 VND par an</strong> pour un deux-roues et est délivrée par des assureurs agréés comme Bảo Việt, PVI ou PTI — elle s'achète en quelques minutes, y compris en ligne ou en supérette, et son attestation fait partie des documents à présenter en cas de contrôle.</p>
     <p>Mais cette couverture légale est très limitée : elle couvre uniquement la responsabilité civile tiers, avec des plafonds bas (40 M VND pour dommages corporels, 15 M VND pour dommages matériels). Pour une protection réelle :</p>
     <ul>
       <li><strong>Assurance tous risques moto</strong> : proposée par Bảo Việt, Pjico, PTI — compte 400 000 à 1 200 000 VND/an selon la valeur du véhicule. Couvre vol et dommages à ton propre scooter.</li>
@@ -146,7 +165,7 @@ include 'header.php';
     </div>
 
     <h2 id="section-7">Acheter vs louer un scooter à Hanoï</h2>
-    <p>La question se pose pour tout expatrié à moyen terme. Les deux options ont leurs avantages :</p>
+    <p>La question se pose pour tout expatrié à moyen terme. Dans un couple mixte, l'achat est souvent plus simple : le véhicule peut être immatriculé au nom du/de la conjoint(e) vietnamien(ne), ce qui fluidifie l'achat d'occasion, la revente et les démarches — pendant que toi tu te concentres sur la seule chose intransférable : ton permis. Les deux options ont leurs avantages :</p>
     <table class="comparison-table">
       <thead><tr><th>Critère</th><th>Acheter (d'occasion)</th><th>Louer (mensuel)</th></tr></thead>
       <tbody>
@@ -162,8 +181,11 @@ include 'header.php';
       Honda Wave Alpha (110cc) : 8–12 M VND d'occasion, très répandu, pièces partout et peu chères. Honda SH (150cc, semi-auto) : 40–80 M VND, plus confortable, mais davantage ciblé par les voleurs. Pour une première installation, le Wave est le choix pragmatique.
     </div>
 
+    <h3>Et sans permis du tout : vélo, vélo électrique, Grab</h3>
+    <p>Si la paperasse te décourage ou que ton séjour est trop court, il existe une vie sans permis parfaitement viable. Le <strong>vélo et le vélo à assistance électrique</strong> se conduisent sans permis, et les distances des quartiers centraux s'y prêtent bien — beaucoup d'expatriés de Tây Hồ vivent à vélo. Les <strong>cyclomoteurs de moins de 50cc</strong> et certains scooters électriques légers échappent aussi à l'exigence du permis moto (règles à vérifier selon le modèle). Et pour tout le reste, <strong>Grab moto ou voiture</strong> reste imbattable : disponible partout, traçable, bon marché. Ne laisse personne te convaincre que « tout le monde roule sans permis » — l'alternative légale existe à tous les niveaux d'engagement.</p>
+
     <h2 id="section-8">Infractions et contrôles de police</h2>
-    <p>Le Vietnam a durci son code de la route ces dernières années, notamment sur l'alcool au volant. Ce qu'il faut savoir pour éviter les mauvaises surprises :</p>
+    <p>Le Vietnam a durci son code de la route ces dernières années, notamment sur l'alcool au volant — le tournant de la tolérance zéro a réellement changé les habitudes de sortie des Vietnamiens, et les applications de chauffeur-remplaçant ou le Grab du retour de soirée font désormais partie des mœurs. Ce qu'il faut savoir pour éviter les mauvaises surprises :</p>
     <ul>
       <li><strong>Alcoolémie zéro (0g/L)</strong> depuis la Loi 44/2019/QH14 : amende de 6 à 8 M VND pour les deux-roues, 30 à 40 M VND pour les voitures, suspension de permis possible. Les contrôles sont fréquents le vendredi et samedi soir.</li>
       <li><strong>Casque non conforme</strong> : amende de 100 000 à 200 000 VND. Les casques à visière intégrale sont recommandés — les casques en mousse vendus sur les marchés touristiques ne sont pas conformes.</li>
@@ -172,22 +194,16 @@ include 'header.php';
     </ul>
     <div class="info-box">
       <strong>En cas de contrôle :</strong>
-      Reste calme et montre tes documents sans les lâcher des mains. Les amendes sont payées sur place (reçu obligatoire depuis 2022 — insiste pour l'obtenir). Si tu ne comprends pas le motif, note le numéro de badge du fonctionnaire et contacte ton ambassade si la situation devient problématique.
+      Reste calme et montre tes documents sans les lâcher des mains. Les amendes sont payées sur place (reçu obligatoire depuis 2022 — insiste pour l'obtenir). Si tu ne comprends pas le motif, note le numéro de badge du fonctionnaire et contacte ton ambassade si la situation devient problématique. Et si ton vietnamien ne suit pas, un appel vidéo à ton/ta conjoint(e) règle 90 % des malentendus de contrôle routier.
     </div>
 
     <h2 id="section-faq">Questions fréquentes</h2>
+    <?php foreach ($page_faq as $faq): ?>
     <div class="faq-item">
-      <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Combien coûte la conversion d'un permis étranger ? <span class="faq-arrow">▼</span></button>
-      <div class="faq-answer">Les frais officiels sont d'environ 135 000 VND. Ajoute la traduction assermentée (300 000–500 000 VND selon le traducteur) et la visite médicale (150 000–250 000 VND). Compte environ 700 000 à 1 000 000 VND au total.</div>
+      <button class="faq-question" onclick="this.parentElement.classList.toggle('open')"><?= htmlspecialchars($faq['q']) ?> <span class="faq-arrow">▼</span></button>
+      <div class="faq-answer"><?= $faq['a'] ?></div>
     </div>
-    <div class="faq-item">
-      <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Le permis international est-il valable au Vietnam ? <span class="faq-arrow">▼</span></button>
-      <div class="faq-answer">Le Vietnam a ratifié la Convention de Vienne de 1968, donc le Permis International (PI) est théoriquement valable. En pratique, il est accepté pour les voitures et véhicules de tourisme mais peut poser problème pour les motos de plus de 50cc. Pour un séjour long, la conversion reste la solution la plus sûre.</div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Peut-on louer une moto sans permis ? <span class="faq-arrow">▼</span></button>
-      <div class="faq-answer">Les loueurs de motos demandent rarement un permis (surtout pour les touristes), mais conduire sans permis adapté est illégal et surtout très risqué en cas d'accident : ton assurance ne couvrirait pas les dommages.</div>
-    </div>
+    <?php endforeach; ?>
 
     <?php
 $author_bio = <<<'BIO'
@@ -199,8 +215,8 @@ include '_author-box.php';
     <div class="cta-newsletter">
       <h3>Reçois les prochains guides</h3>
       <p>📥 <strong>Guide PDF + 3 modèles de lettres offerts</strong> dès l'inscription. Un email par mois, désinscription en 1 clic.</p>
-      <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
-        <input type="hidden" name="_next" value="<?= SITE_URL ?>/merci-guide">
+      <form class="cta-form" action="<?= SITE_URL ?>/subscribe-pack" method="POST">
+        <input type="text" name="website" value="" style="position:absolute;left:-9999px" tabindex="-1" autocomplete="off" aria-hidden="true">
         <input type="email" name="email" placeholder="ton@email.com" required>
         <button type="submit">S'inscrire</button>
       </form>
