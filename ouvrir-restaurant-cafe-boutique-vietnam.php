@@ -38,6 +38,10 @@ $page_faq = [
    'a' => 'Ce n\'est pas obligatoire mais très fortement conseillé pour la gestion quotidienne. Les relations avec les fournisseurs, les employés, les autorités locales (inspections, licences) et les propriétaires de locaux se font en vietnamien dans l\'immense majorité des cas. Si tu ne parles pas vietnamien, tu devras t\'appuyer sur un manager local bilingue, ce qui implique une relation de confiance solide. De nombreux entrepreneurs étrangers réussis au Vietnam s\'associent avec un conjoint ou partenaire vietnamien pour cette raison.'],
   ['q' => 'Quels sont les principaux quartiers pour ouvrir un F&B ciblant les expatriés ?',
    'a' => 'À Hanoï, le quartier Tây Hồ (notamment les rues Xuân Diệu, Tô Ngọc Vân et autour du lac de l\'Ouest) concentre une forte communauté d\'expatriés et de touristes aisés. C\'est là que se trouvent la plupart des restaurants français, cafés à concept et boutiques étrangères. À Hô-Chi-Minh-Ville, le quartier Thảo Điền (Quận 2 / TP Thủ Đức) est le principal hub expatrié pour le F&B. Hội An est également une ville populaire pour les petits établissements ciblant les touristes internationaux.'],
+  ['q' => 'Peut-on ouvrir un commerce au nom de son conjoint vietnamien ?',
+   'a' => 'Oui, et c\'est une configuration très courante dans les couples mixtes : le conjoint vietnamien enregistre un hộ kinh doanh (commerce familial), statut simple et peu coûteux réservé aux citoyens vietnamiens. Il faut en mesurer les implications : juridiquement, l\'affaire appartient au conjoint, et ton propre travail dans l\'établissement doit rester conforme au droit du travail (l\'exemption de permis de travail du conjoint de Vietnamien facilite ce point). Pour un projet ambitieux ou pour protéger ton apport, la SARL reste préférable.'],
+  ['q' => 'Combien de temps prennent les démarches avant de pouvoir ouvrir ?',
+   'a' => 'Pour une SARL à capital étranger, compte plusieurs mois entre le début des démarches (IRC, puis ERC) et l\'ouverture effective : à la création de société s\'ajoutent le certificat de sécurité alimentaire avec inspection des locaux, le certificat incendie PCCC, l\'éventuelle licence d\'alcool, puis les travaux. Un hộ kinh doanh au nom d\'un conjoint vietnamien s\'enregistre beaucoup plus vite. Dans tous les cas, ne signe pas de bail avec un loyer qui court avant d\'avoir sécurisé le calendrier des licences.'],
 ];
 include '_article-css.php';
 include 'header.php';
@@ -57,7 +61,7 @@ include 'header.php';
     <div class="article-hero-meta">
       <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
       <span>📅 Octobre 2026</span>
-      <span>⏱ 11 min de lecture</span>
+      <span>⏱ 12 min de lecture</span>
       <span>Mis à jour : Octobre 2026</span>
     </div>
   </div>
@@ -73,6 +77,9 @@ include 'header.php';
       <li><a href="#section-4">Trouver le bon local</a></li>
       <li><a href="#section-5">Recrutement et gestion du personnel</a></li>
       <li><a href="#section-6">Difficultés récurrentes à anticiper</a></li>
+      <li><a href="#section-7">L'alternative du hộ kinh doanh</a></li>
+      <li><a href="#section-8">Livraison, paiement et marketing local</a></li>
+      <li><a href="#section-9">Checklist avant de signer</a></li>
       <li><a href="#section-faq">Questions fréquentes</a></li>
     </ol>
     <div class="toc-share">
@@ -131,7 +138,7 @@ include 'header.php';
     <p>Les <strong>principaux postes de dépense</strong> sont : le dépôt de garantie du bail (souvent 3 à 6 mois de loyer, parfois 12 mois dans les quartiers premium), les travaux d'aménagement et la décoration, l'équipement de cuisine et de service, le stock initial, et les frais de création de société et de licences.</p>
 
     <h2 id="section-4">4. Trouver le bon local</h2>
-    <p>La localisation est souvent le facteur le plus déterminant pour le F&B. Quelques points clés :</p>
+    <p>La localisation est souvent le facteur le plus déterminant pour le F&B — et c'est aussi le poste où les erreurs coûtent le plus cher, car un mauvais bail signé engage des mois de loyer et de travaux impossibles à récupérer. Quelques points clés :</p>
     <ul>
       <li><strong>Emplacement et flux piétons</strong> : les meilleures adresses ont une forte visibilité depuis la rue</li>
       <li><strong>Bail commercial</strong> : les contrats sont souvent de 2 à 5 ans, rarement plus pour les étrangers. La durée résiduelle avant renouvellement est un risque à évaluer (le propriétaire peut ne pas renouveler ou augmenter fortement le loyer)</li>
@@ -145,7 +152,7 @@ include 'header.php';
     <ul>
       <li><strong>Salaires</strong> : un serveur à Hanoï gagne typiquement 5 à 8 millions VND/mois (200-315 USD) + tips</li>
       <li><strong>Charges sociales</strong> : l'employeur cotise environ 17 à 21,5% en plus du salaire brut pour les assurances sociales, santé et chômage</li>
-      <li><strong>Turnover élevé</strong> : un défi connu dans le secteur F&B au Vietnam, surtout pour les postes de service</li>
+      <li><strong>Turnover élevé</strong> : un défi connu dans le secteur F&B au Vietnam, surtout pour les postes de service — fidéliser passe par la formation, les perspectives d'évolution et le respect au quotidien plus que par le seul salaire</li>
       <li><strong>Manager bilingue</strong> : recommandé si tu ne parles pas vietnamien</li>
       <li><strong>Contrats de travail</strong> : doivent respecter le Code du travail vietnamien (Bộ luật Lao động 2019) avec périodes d'essai, congés payés, etc.</li>
     </ul>
@@ -159,6 +166,38 @@ include 'header.php';
       <li><strong>Les inspections</strong> : les contrôles sanitaires, PCCC et fiscaux peuvent être fréquents. Un cabinet comptable local est recommandé dès le départ</li>
       <li><strong>L'adaptation aux goûts locaux</strong> : même dans les quartiers expatriés, il faut proposer quelque chose qui parle à la clientèle locale et internationale</li>
     </ul>
+    <p>Ajoute à cette liste la <strong>saisonnalité</strong> : les semaines du <a href="tet-nouvel-an-lunaire-vietnam">Tết</a> vident les villes (personnel rentré en famille, clientèle locale absente), la saison des pluies affecte les terrasses, et la fréquentation touristique fluctue fortement selon les mois. Un business plan qui projette douze mois identiques est faux par construction — les exploitants expérimentés provisionnent deux à trois mois creux par an.</p>
+    <p>Et une réalité qu'aucun porteur de projet n'aime entendre mais que tout le monde constate sur place : le F&B est partout dans le monde un secteur à taux d'échec élevé, et le Vietnam ne fait pas exception. Les devantures des rues commerçantes de Hanoï et HCMV changent d'enseigne à un rythme impressionnant. Ce n'est pas une raison de renoncer — c'est une raison de dimensionner l'investissement de départ de façon à pouvoir survivre à dix-huit mois difficiles, plutôt que de tout miser sur un démarrage parfait.</p>
+
+    <h2 id="section-7">7. L'alternative du hộ kinh doanh (au nom du conjoint vietnamien)</h2>
+    <p>Il existe au Vietnam un statut beaucoup plus léger que la société : le <strong>hộ kinh doanh</strong> (commerce familial enregistré), avec une fiscalité simplifiée et des formalités réduites. C'est le statut de l'immense majorité des petits cafés et restaurants de rue vietnamiens. Sa limite pour toi : il est réservé aux <strong>citoyens vietnamiens</strong> — un Français ne peut pas l'enregistrer à son nom.</p>
+    <p>Si tu es marié(e) à un(e) Vietnamien(ne), une configuration très répandue consiste donc à enregistrer le commerce comme hộ kinh doanh <strong>au nom du conjoint vietnamien</strong> : ouverture plus rapide, coûts de structure minimes, gestion administrative en vietnamien par la personne la mieux placée pour le faire. Trois lucidités indispensables avant de choisir cette voie :</p>
+    <ul>
+      <li><strong>Juridiquement, le commerce appartient au conjoint</strong>, pas à toi. En cas de crise conjugale, ta mise de fonds n'est pas protégée comme le serait une part de SARL. C'est une décision de couple autant qu'une décision d'affaires — le droit vietnamien des biens communs des époux s'applique, mais la prudence reste de mise.</li>
+      <li><strong>Ton propre rôle dans l'établissement doit rester légal</strong> : conseiller son conjoint est une chose, travailler derrière le comptoir en est une autre — renseigne-toi sur ta situation de travail (l'exemption de permis du conjoint de Vietnamien, art. 154 du Code du travail, simplifie précisément ce point ; voir <a href="permis-de-travail-vietnam-francais">le guide du permis de travail</a>).</li>
+      <li><strong>Le statut a des plafonds pratiques</strong> : pour un établissement structuré (plusieurs salariés déclarés, alcool, terrasse licenciée, ambitions multi-sites), la société reste la forme adaptée. Le comparatif complet des statuts est dans <a href="creer-entreprise-vietnam-statuts-juridiques">Créer une entreprise au Vietnam</a>.</li>
+    </ul>
+
+    <h2 id="section-8">8. Livraison, paiement et marketing local</h2>
+    <p>Ouvrir la porte ne suffit plus : au Vietnam, une part importante du chiffre d'affaires F&B passe par le téléphone du client.</p>
+    <ul>
+      <li><strong>Les applications de livraison</strong> — GrabFood et ShopeeFood dominent le marché — sont incontournables pour un café ou restaurant urbain. Les commissions prélevées sont significatives (elles se négocient et évoluent), donc intègre-les dans tes prix dès le départ plutôt que de les subir.</li>
+      <li><strong>Le paiement par QR code</strong> (virements bancaires instantanés via VietQR, portefeuilles comme MoMo) est devenu le réflexe des clients vietnamiens, y compris pour un café à 30 000 VND. Un compte bancaire professionnel local avec QR affiché en caisse n'est pas un gadget, c'est une condition d'exploitation normale.</li>
+      <li><strong>Facebook et Google Maps</strong> sont tes vitrines principales : les Vietnamiens cherchent, notent et recommandent massivement en ligne. Des photos soignées, des horaires à jour et des réponses aux avis pèsent directement sur la fréquentation. Instagram et TikTok ajoutent la clientèle jeune et touristique.</li>
+      <li><strong>La clientèle locale d'abord</strong> : les expatriés et touristes font le lancement, les habitués vietnamiens font la survie. Les établissements étrangers qui durent sont presque toujours ceux qui ont su devenir une adresse de quartier, pas seulement un spot à expats.</li>
+    </ul>
+
+    <h2 id="section-9">9. Checklist avant de signer quoi que ce soit</h2>
+    <p>Synthèse des vérifications à faire <strong>avant</strong> d'engager le moindre dépôt de garantie :</p>
+    <ul>
+      <li>Le business plan tient-il avec des hypothèses pessimistes (deux mois creux, commission livraison, loyer renégocié à la hausse au renouvellement) ?</li>
+      <li>Le local est-il juridiquement exploitable en restauration (usage commercial, certificat d'utilisation des sols du propriétaire, conformité PCCC atteignable sans travaux ruineux) ?</li>
+      <li>La durée du bail et ses conditions de renouvellement sont-elles écrites noir sur blanc, avec clause sur l'évolution du loyer ?</li>
+      <li>Le statut juridique est-il choisi en connaissance de cause (SARL à capital étranger vs hộ kinh doanh au nom du conjoint) et validé par un conseil local ?</li>
+      <li>As-tu observé le flux réel du quartier à différentes heures et différents jours — pas seulement le dimanche ensoleillé de ta visite ?</li>
+      <li>As-tu rencontré d'autres exploitants étrangers du quartier pour entendre ce qu'ils auraient fait différemment ?</li>
+    </ul>
+    <p>Un projet qui passe ces six filtres n'est pas garanti — mais il évite les erreurs qui coulent la majorité des établissements avant leur deuxième anniversaire. Pour le volet financement et transferts de fonds depuis la France, voir <a href="transferer-argent-vietnam-wise">le guide des transferts d'argent</a>.</p>
 
     <div id="section-faq">
       <h2>Questions fréquentes</h2>

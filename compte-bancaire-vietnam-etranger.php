@@ -35,7 +35,13 @@ $page_faq = [
   ['q' => "Peut-on ouvrir un compte bancaire au Vietnam avec un visa touriste ?",
    'a' => "En théorie non, mais certaines agences Vietcombank et Techcombank acceptent un e-visa de 90 jours en pratique. Avec un visa de travail ou une carte de résidence temporaire, aucun problème. HSBC exige systématiquement un visa long séjour."],
   ['q' => "Puis-je envoyer de l'argent vers la France depuis mon compte vietnamien ?",
-   'a' => "Oui, via le service de virement international de ta banque. Les délais sont de 2 à 5 jours ouvrés, les frais varient de 20 à 50 USD selon la banque. Wise reste généralement moins cher pour les petites sommes."],
+   'a' => "Oui, via le service de virement international (chuyển tiền quốc tế) de ta banque. Les délais sont de 2 à 5 jours ouvrés, les frais varient de 20 à 50 USD selon la banque. Wise reste généralement moins cher pour les petites sommes."],
+  ['q' => "Dois-je déclarer mon compte vietnamien aux impôts français ?",
+   'a' => "Oui, tant que tu es résident fiscal français : tout compte ouvert, détenu, utilisé ou clos à l'étranger se déclare chaque année via le formulaire 3916/3916-bis joint à ta déclaration de revenus, sous peine d'amende par compte omis. Si tu deviens résident fiscal vietnamien, l'obligation cesse pour les années concernées. Voir le guide <a href=\"residence-fiscale-france-vietnam-183-jours\">résidence fiscale France-Vietnam</a>."],
+  ['q' => "Que devient mon compte si je quitte le Vietnam ou si mon visa expire ?",
+   'a' => "Le compte est lié à ton séjour légal : à l'expiration de ton visa ou de ta carte de résidence, la banque peut restreindre les services (validité de la carte, plafonds, banque en ligne) jusqu'à présentation d'un nouveau titre. Avant un départ définitif, solde le compte en agence : vide-le par virement ou retrait, fais clôturer officiellement et garde le justificatif — un compte dormant à l'étranger reste un compte à déclarer côté français."],
+  ['q' => "Peut-on ouvrir un compte joint avec son conjoint vietnamien ?",
+   'a' => "Les banques vietnamiennes proposent des comptes joints (tài khoản chung), mais la pratique varie selon les établissements et la combinaison étranger + Vietnamien ajoute de la paperasse. Beaucoup de couples mixtes fonctionnent plus simplement avec deux comptes individuels et des virements internes instantanés gratuits, ou une carte supplémentaire sur le compte principal. Demande en agence ce que ta banque accepte réellement."],
 ];
 include '_article-css.php';
 include 'header.php';
@@ -55,7 +61,7 @@ include 'header.php';
     <div class="article-hero-meta">
       <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
       <span>📅 3 avril 2026</span>
-      <span>⏱ 8 min de lecture</span>
+      <span>⏱ 12 min de lecture</span>
     </div>
   </div>
 </header>
@@ -69,6 +75,11 @@ include 'header.php';
       <li><a href="#section-3">Comparatif des banques</a></li>
       <li><a href="#section-4">Compte VND ou USD ?</a></li>
       <li><a href="#section-5">Alternatives numériques</a></li>
+      <li><a href="#section-6">Paiements mobiles</a></li>
+      <li><a href="#section-7">Sécurité et fraude</a></li>
+      <li><a href="#section-8">Convertir des devises</a></li>
+      <li><a href="#section-9">Le jour J en agence</a></li>
+      <li><a href="#section-10">Compte vietnamien et fisc français</a></li>
       <li><a href="#section-faq">Questions fréquentes</a></li>
     </ol>
     <div class="toc-share">
@@ -99,7 +110,7 @@ include 'header.php';
     </div>
 
     <h2 id="section-2">Documents requis</h2>
-    <p>Les documents demandés varient légèrement d'une banque à l'autre, mais voici la liste standard à préparer :</p>
+    <p>Les documents demandés varient légèrement d'une banque à l'autre — et parfois d'une agence à l'autre de la même banque, c'est une réalité du système vietnamien qu'il faut accepter avec philosophie. Si une agence refuse ton dossier, une autre agence de la même enseigne peut très bien l'accepter la semaine suivante. Voici la liste standard à préparer :</p>
     <ul>
       <li><strong>Passeport original</strong> (et photocopie) avec visa valide</li>
       <li><strong>Formulaire d'ouverture de compte</strong> fourni par la banque (en vietnamien, rempli sur place)</li>
@@ -128,12 +139,17 @@ include 'header.php';
 
     <p><strong>Vietcombank</strong> reste la référence pour les expatriés : le réseau est le plus dense, l'application mobile propose une interface en anglais complète, et les guichetiers de Hanoï et Hô-Chi-Minh-Ville ont l'habitude des clients étrangers. <strong>Techcombank</strong> est prisé pour ses virements gratuits et son service client réactif. <strong>HSBC Vietnam</strong> convient mieux aux expats percevant des revenus élevés (seuil de dépôt minimum plus élevé).</p>
 
+    <h3>Frais et retraits au quotidien</h3>
+    <p>Une fois le compte ouvert, le système bancaire vietnamien est remarquablement bon marché à l'usage : les <strong>virements domestiques instantanés</strong> entre banques vietnamiennes (via le réseau interbancaire NAPAS) sont gratuits ou quasi gratuits chez la plupart des banques, 24h/24 — c'est le mode de paiement standard pour tout, du loyer au remboursement entre amis. Les <strong>retraits aux DAB de ta propre banque</strong> sont gratuits ou facturés quelques milliers de VND ; les retraits dans les DAB d'autres banques coûtent un peu plus, mais restent dérisoires comparés aux 3-5 % que prélèvent les DAB vietnamiens sur une carte française classique. C'est précisément l'intérêt du compte local : sortir du circuit « carte étrangère » où chaque retrait cumule frais du DAB local, frais de ta banque française et marge de change.</p>
+    <p>Deux limites à connaître : les DAB plafonnent le montant par retrait (souvent 2 à 5 millions de VND selon la banque — il faut parfois enchaîner plusieurs opérations pour sortir une grosse somme), et la <strong>carte de débit locale de base fonctionne mal hors du Vietnam</strong> : pour tes voyages dans la région ou tes achats en ligne internationaux, demande une carte Visa ou Mastercard internationale en complément de la carte domestique, ou garde ta carte Wise/Revolut pour cet usage.</p>
+
     <h2 id="section-4">Compte VND ou compte USD ?</h2>
     <p>Tu peux ouvrir les deux simultanément dans la même banque. Voici la logique :</p>
     <ul>
       <li><strong>Compte VND</strong> : pour toutes les dépenses quotidiennes (loyer, courses, restaurants, transports). C'est le compte principal si tu vis au Vietnam.</li>
       <li><strong>Compte USD</strong> : pour recevoir des virements internationaux, des revenus en devises ou pour convertir de l'argent sans passer par le marché noir. Les intérêts sur dépôt USD sont très faibles (proche de 0% depuis 2023 selon la réglementation de la Banque d'État).</li>
     </ul>
+    <p>À noter côté épargne : les <strong>dépôts à terme en VND</strong> (sổ tiết kiệm) servent des taux d'intérêt sensiblement supérieurs à ceux des livrets français, ce qui attire certains expatriés. Garde en tête la contrepartie : le risque de change du VND face à l'euro, et le fait que ces intérêts sont imposables selon ta situation fiscale. Ce n'est pas un placement à faire par défaut, c'est un arbitrage à comprendre.</p>
 
     <div class="warning-box">
       <strong>⚠️ Réglementation sur les devises :</strong>
@@ -141,7 +157,7 @@ include 'header.php';
     </div>
 
     <h2 id="section-5">Les alternatives numériques</h2>
-    <p>Si tu n'as pas encore de compte local ou que tu arrives tout juste au Vietnam, ces solutions numériques peuvent dépanner :</p>
+    <p>Si tu n'as pas encore de compte local ou que tu arrives tout juste au Vietnam, ces solutions numériques peuvent dépanner pendant les premières semaines — elles ne remplacent pas un compte local sur la durée, mais elles évitent de payer des frais de change abusifs le temps de s'installer :</p>
     <ul>
       <li><strong>Wise</strong> : compte multi-devises avec IBAN européen, carte de débit internationale. Idéal pour les premiers temps et pour convertir de l'argent au taux interbancaire.</li>
       <li><strong><a href="go.php?id=revolut" rel="noopener sponsored">Revolut</a></strong> : similaire à Wise, fonctionne bien pour les retraits d'espèces (limites selon l'abonnement).</li>
@@ -209,19 +225,41 @@ include 'header.php';
       <li>Conserver un compte USD en parallèle de ton compte VND t'offre de la flexibilité pour les virements internationaux et te protège partiellement contre une dévaluation du VND</li>
     </ul>
 
+    <h3>Recevoir un salaire ou des revenus sur ton compte</h3>
+    <p>Si tu travailles pour un employeur vietnamien, le salaire arrive en VND sur ton compte local — c'est d'ailleurs souvent l'employeur qui impose sa banque partenaire pour la paie, quitte à ce que tu re-vires ensuite vers ta banque préférée (virement domestique gratuit, donc sans importance). Si tu reçois des <strong>revenus depuis l'étranger</strong> (salaire français, clients freelance, pension), deux canaux : le virement SWIFT classique vers ton compte USD ou VND (la banque te demandera parfois l'origine des fonds pour les montants importants — c'est normal, prépare une facture ou un contrat), ou un service comme Wise vers ton compte VND, généralement plus rapide et moins cher pour les montants courants. Les détails et comparatifs chiffrés sont dans <a href="transferer-argent-vietnam-wise">le guide des transferts d'argent France-Vietnam</a>.</p>
+    <p>Dans l'autre sens, rapatrier de l'argent du Vietnam vers la France est plus encadré : la réglementation des changes vietnamienne exige des justificatifs de l'origine des fonds (salaire déclaré, impôts payés) pour les virements sortants significatifs. Garde systématiquement tes contrats de travail, fiches de paie et justificatifs fiscaux — c'est le dossier qui fluidifie tout virement sortant.</p>
+
+    <h2 id="section-9">Le jour J en agence : déroulé et pièges à éviter</h2>
+    <p>Concrètement, voici comment se passe une ouverture de compte pour un étranger, et les petits accrocs qui font perdre du temps :</p>
+    <ul>
+      <li><strong>Choisis une grande agence de centre-ville</strong> plutôt qu'une agence de quartier : les guichetiers y ont l'habitude des dossiers étrangers et le personnel anglophone y est plus fréquent. À Hanoï et HCMV, les agences des quartiers expatriés (Tây Hồ, Thảo Điền) traitent ces demandes tous les jours.</li>
+      <li><strong>Viens tôt et en semaine</strong> : les agences vietnamiennes fonctionnent avec un système de tickets, et les fins de journée comme les lundis sont chargés. Prévois large : l'ouverture elle-même prend 30 à 60 minutes une fois ton tour venu.</li>
+      <li><strong>L'orthographe de ton nom</strong> : vérifie chaque champ avant signature — le nom enregistré doit correspondre exactement au passeport (ordre prénom/nom compris). Une coquille bloquera plus tard les virements internationaux entrants, où la correspondance des noms est contrôlée.</li>
+      <li><strong>Le numéro de téléphone vietnamien est indispensable</strong> : c'est lui qui reçoit les OTP de validation. Prends ta SIM locale avant d'aller à la banque, et enregistre-la à ton nom.</li>
+      <li><strong>Demande l'activation de la banque en ligne et du service de notification</strong> le jour même : certains services ne s'activent qu'en agence, et y retourner pour un oubli est une perte de temps réelle.</li>
+      <li><strong>Signature</strong> : ta signature enregistrée sert de référence pour les opérations au guichet — utilise la même que celle de ton passeport et mémorise-la, les banques vietnamiennes comparent réellement.</li>
+    </ul>
+
+    <h2 id="section-10">Compte vietnamien et fisc français : ce qu'il faut déclarer</h2>
+    <p>Ouvrir un compte à l'étranger crée des obligations déclaratives côté français qu'il vaut mieux connaître dès le départ :</p>
+    <ul>
+      <li><strong>Si tu restes résident fiscal français</strong> (mission courte, aller-retours, famille restée en France) : tout compte ouvert, détenu, utilisé ou clos à l'étranger doit être déclaré chaque année avec ta déclaration de revenus via le <strong>formulaire 3916 / 3916-bis</strong>. L'omission est sanctionnée par une amende par compte non déclaré (1 500 €, portée à 10 000 € pour les comptes dans certains États non coopératifs).</li>
+      <li><strong>Si tu deviens résident fiscal vietnamien</strong>, cette obligation française tombe pour les années où tu n'es plus résident — mais l'année du départ et celle du retour sont des années mixtes : voir <a href="residence-fiscale-france-vietnam-183-jours">le guide résidence fiscale 183 jours</a> et <a href="declarer-impots-france-depuis-vietnam">déclarer ses impôts depuis le Vietnam</a>.</li>
+      <li><strong>L'échange automatique d'informations (norme CRS/AEOI)</strong> se déploie progressivement dans le monde ; ne pars jamais du principe qu'un compte étranger est « invisible ». La règle simple et sans risque : déclarer tout compte étranger tant que tu es résident fiscal français.</li>
+      <li><strong>À l'inverse</strong>, tes comptes français n'ont pas à être cachés au Vietnam : les intérêts et revenus mondiaux d'un résident fiscal vietnamien relèvent en principe de l'impôt vietnamien, et la convention fiscale franco-vietnamienne évite la double imposition.</li>
+    </ul>
+    <div class="info-box">
+      <strong>📌 En résumé :</strong>
+      le compte bancaire vietnamien est un outil de vie quotidienne, pas un outil d'optimisation. Déclare-le en France tant que tu es résident fiscal français (3916), et bascule proprement ta situation fiscale quand ton installation au Vietnam devient durable.
+    </div>
+
     <h2 id="section-faq">Questions fréquentes</h2>
+    <?php foreach ($page_faq as $item): ?>
     <div class="faq-item">
-      <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Combien de temps faut-il pour ouvrir un compte ? <span class="faq-arrow">▼</span></button>
-      <div class="faq-answer">En agence, comptez 30 à 60 minutes. La carte de débit est généralement remise immédiatement ou sous 3 à 5 jours ouvrés. Certaines banques comme Techcombank permettent une pré-inscription en ligne.</div>
+      <button class="faq-question" onclick="this.parentElement.classList.toggle('open')"><?= htmlspecialchars($item['q']) ?> <span class="faq-arrow">▼</span></button>
+      <div class="faq-answer"><?= $item['a'] ?></div>
     </div>
-    <div class="faq-item">
-      <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Peut-on ouvrir un compte avec un visa touriste ? <span class="faq-arrow">▼</span></button>
-      <div class="faq-answer">En théorie non, mais certaines agences Vietcombank et Techcombank acceptent un visa e-visa de 90 jours en pratique. Avec un visa de travail ou une carte de résidence temporaire, aucun problème. HSBC exige systématiquement un visa long séjour.</div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Puis-je envoyer de l'argent vers la France depuis mon compte vietnamien ? <span class="faq-arrow">▼</span></button>
-      <div class="faq-answer">Oui, via le service de virement international (chuyển tiền quốc tế) de ta banque. Les délais sont de 2 à 5 jours ouvrés, les frais varient de 20 à 50 USD selon la banque. Wise reste généralement moins cher pour les petites sommes.</div>
-    </div>
+    <?php endforeach; ?>
 
     <?php
 $author_bio = <<<'BIO'
@@ -233,8 +271,8 @@ include '_author-box.php';
     <div class="cta-newsletter">
       <h3>Reçois les prochains guides</h3>
       <p>📥 <strong>Guide PDF + 3 modèles de lettres offerts</strong> dès l'inscription. Un email par mois, désinscription en 1 clic.</p>
-      <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
-        <input type="hidden" name="_next" value="<?= SITE_URL ?>/merci-guide">
+      <form class="cta-form" action="<?= SITE_URL ?>/subscribe-pack" method="POST">
+        <input type="text" name="website" value="" style="position:absolute;left:-9999px" tabindex="-1" autocomplete="off" aria-hidden="true">
         <input type="email" name="email" placeholder="ton@email.com" required>
         <button type="submit">S'inscrire</button>
       </form>
