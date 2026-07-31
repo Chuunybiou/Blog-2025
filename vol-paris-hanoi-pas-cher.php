@@ -42,6 +42,10 @@ $page_faq = [
    'a' => 'Entre 6 semaines et 3 mois avant le départ reste la fenêtre la plus favorable pour la route Paris-Vietnam. En dessous de 3 semaines, les tarifs remontent fortement. Évitez les périodes de pointe : Tết (janvier-février), vacances scolaires françaises (juillet-août), et les ponts de mai.'],
   ['q' => 'Vaut-il mieux partir de Paris CDG ou d\'un autre aéroport français ?',
    'a' => 'CDG donne accès au plus grand choix de vols avec correspondance, notamment vers les hubs asiatiques. Si vous êtes en province, Lyon, Marseille ou Bordeaux ont parfois des vols avec correspondance vers Francfort ou Amsterdam qui peuvent être compétitifs — à vérifier selon votre point de départ.'],
+  ['q' => 'Les programmes de fidélité valent-ils le coup sur cette route ?',
+   'a' => 'Oui, dès que le trajet devient récurrent — expatriés, couples mixtes qui rentrent chaque année. Chaque alliance a son programme (Flying Blue côté Air France-KLM, Lotusmiles chez Vietnam Airlines, et les programmes des compagnies du Golfe) et les miles d\'un aller-retour long-courrier s\'accumulent vite, surtout combinés aux dépenses courantes. Le bon réflexe : choisir l\'alliance que tu voleras le plus souvent et concentrer tout dessus, plutôt que d\'éparpiller trois soldes de miles inutilisables.'],
+  ['q' => 'Comment survivre au vol avec un bébé ou un jeune enfant ?',
+   'a' => 'Réserve tôt pour obtenir le berceau de cloison (bassinet) sur les vols de nuit — les places sont limitées et partent vite. Cale le vol de nuit sur le rythme de sommeil de l\'enfant, prévois biberon ou tétée au décollage et à l\'atterrissage (la succion soulage les oreilles), et un sac de change accessible avec le double de ce que tu crois nécessaire. Les compagnies asiatiques et du Golfe sont généralement très accueillantes avec les familles — n\'hésite pas à solliciter l\'équipage.'],
 ];
 
 $page_extra_head = '
@@ -67,7 +71,7 @@ include 'header.php';
     <div class="article-hero-meta">
       <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
       <span>📅 7 juin 2026</span>
-      <span>⏱ 6 min de lecture</span>
+      <span>⏱ 12 min de lecture</span>
       <span>Mis &agrave; jour : Juin 2026</span>
     </div>
   </div>
@@ -85,6 +89,8 @@ include 'header.php';
       <li><a href="#section-5">Quand réserver</a></li>
       <li><a href="#section-6">Hanoï ou HCMC</a></li>
       <li><a href="#section-7">Dans le sac de cabine</a></li>
+      <li><a href="#section-arrivee">L'arrivée à Nội Bài</a></li>
+      <li><a href="#section-jetlag">Gérer le décalage horaire</a></li>
       <li><a href="#section-faq">Questions fréquentes</a></li>
     </ol>
   </aside>
@@ -94,14 +100,14 @@ include 'header.php';
     <!-- INTRO -->
     <p>Quand on part pour la première fois au Vietnam depuis la France, la première surprise c'est souvent ça : le vol. Paris-Hanoï, ce n'est pas comme Paris-New York ou Paris-Tokyo — les options ne sont pas légion, et les prix varient beaucoup selon la compagnie, la date, et surtout l'escale choisie.</p>
 
-    <p>J'ai fait le trajet deux fois. Deux escales différentes, deux expériences différentes. Ce que j'écris ici, c'est ce que j'aurais voulu savoir avant de réserver le premier billet.</p>
+    <p>J'ai fait le trajet deux fois. Deux escales différentes, deux expériences différentes. Ce que j'écris ici, c'est ce que j'aurais voulu savoir avant de réserver le premier billet : les escales qui reviennent, le bon moment pour réserver, l'arbitrage Hanoï/HCMC, et les deux sujets que les comparateurs ne t'apprendront jamais — l'arrivée à Nội Bài et le décalage horaire.</p>
 
     <!-- H2 #1 -->
     <h2 id="section-1">Il n'existe pas de vol direct Paris-Hanoï régulier et abordable</h2>
 
     <p>Techniquement, des vols directs existent — Air France propose la liaison Paris CDG → Hanoï Nội Bài. Mais la fréquence est limitée et les tarifs s'envolent. En pratique, la grande majorité des voyageurs font une escale. Ce n'est pas un inconvénient — c'est juste la réalité du réseau aérien sur cette destination.</p>
 
-    <p>La distance Paris-Hanoï est d'environ 9 200 km. Avec une escale bien choisie, le trajet total se fait en 13 à 16 heures. C'est long mais gérable, surtout si vous préparez votre nuit à bord.</p>
+    <p>La distance Paris-Hanoï est d'environ 9 200 km. Avec une escale bien choisie, le trajet total se fait en 13 à 16 heures. C'est long mais gérable, surtout si vous préparez votre nuit à bord. Petite consolation géographique : l'aller vers Hanoï se fait « avec » le sens du décalage — départ de Paris en fin de journée, nuit dans l'avion, arrivée au Vietnam le lendemain — un schéma qui aide naturellement à basculer sur l'heure locale, contrairement au retour vers la France où la journée n'en finit plus.</p>
 
     <!-- H2 #2 -->
     <h2 id="section-2">Mes deux trajets : via Francfort, puis via Bangkok</h2>
@@ -144,7 +150,7 @@ include 'header.php';
     <!-- H2 #4 -->
     <h2 id="section-4">Comment comparer les prix efficacement</h2>
 
-    <p>Le problème des comparateurs de vols, c'est qu'ils ne donnent pas tous les mêmes résultats. Certains manquent des compagnies asiatiques, d'autres n'affichent pas les bagages inclus. Pour cette destination, j'utilise <strong>BudgetAir</strong> — un comparateur spécialisé qui couvre bien les routes longue distance vers l'Asie, avec une interface lisible et les filtres qui comptent vraiment (durée totale, nombre d'escales, inclusion des bagages).</p>
+    <p>Le problème des comparateurs de vols, c'est qu'ils ne donnent pas tous les mêmes résultats. Certains manquent des compagnies asiatiques, d'autres n'affichent pas les bagages inclus. Pour cette destination, j'utilise <strong>BudgetAir</strong> — un comparateur spécialisé qui couvre bien les routes longue distance vers l'Asie, avec une interface lisible et les filtres qui comptent vraiment (durée totale, nombre d'escales, inclusion des bagages). Quel que soit ton comparateur, garde le réflexe de la <strong>vérification croisée finale</strong> : une fois le vol identifié, regarde son prix en direct sur le site de la compagnie — parfois identique (et le service après-vente est meilleur en direct), parfois plus cher, mais tu décides en connaissance de cause.</p>
 
     <?php
     $aff_id    = 'budgetair';
@@ -168,7 +174,7 @@ include 'header.php';
     <!-- H2 #5 -->
     <h2 id="section-5">Quand réserver pour avoir un bon prix</h2>
 
-    <p>La règle générale pour Paris-Vietnam : <strong>réservez entre 6 semaines et 3 mois avant le départ</strong>. En dessous de 3 semaines, les prix remontent fortement — les sièges restants sont vendus à prime. Plus de 4 mois à l'avance, les tarifs promotionnels ne sont pas encore disponibles pour toutes les dates.</p>
+    <p>La règle générale pour Paris-Vietnam : <strong>réservez entre 6 semaines et 3 mois avant le départ</strong>. En dessous de 3 semaines, les prix remontent fortement — les sièges restants sont vendus à prime. Plus de 4 mois à l'avance, les tarifs promotionnels ne sont pas encore disponibles pour toutes les dates. L'exception qui inverse la règle : le <strong>Tết</strong>. Pour un vol pendant le nouvel an lunaire, réserve dès que les billets s'ouvrent, plusieurs mois à l'avance — c'est la seule période où attendre coûte systématiquement plus cher, car la demande de la diaspora sature les avions bien avant le départ.</p>
 
     <h3>Les périodes à éviter</h3>
     <ul>
@@ -178,16 +184,16 @@ include 'header.php';
     </ul>
 
     <h3>Les bonnes fenêtres</h3>
-    <p>Mars-avril et septembre-octobre sont les meilleures périodes pour cumuler un bon prix de billet et un climat agréable à Hanoï. Ce n'est pas un hasard si mon premier voyage date de ces fenêtres-là.</p>
+    <p>Mars-avril et septembre-octobre sont les meilleures périodes pour cumuler un bon prix de billet et un climat agréable à Hanoï. Ce n'est pas un hasard si mon premier voyage date de ces fenêtres-là. L'automne hanoïen (octobre-novembre) est même considéré par les Hanoïens eux-mêmes comme la plus belle saison de leur ville — ciel dégagé, chaleur douce, lumière dorée : si tu as le choix total de tes dates, c'est celle-là.</p>
 
     <!-- H2 #6 -->
     <h2 id="section-6">Hanoï (HAN) ou Hô-Chi-Minh-Ville (SGN) : lequel choisir</h2>
 
-    <p>Si votre destination est Hanoï, Ninh Binh, Sapa ou Ha Long — arrivez à Hanoï. Simple.</p>
+    <p>Si votre destination est Hanoï, Ninh Binh, Sapa ou Ha Long — arrivez à Hanoï. Simple. Tout le nord du pays s'organise depuis la capitale.</p>
 
     <p>Si votre destination est HCMC, Mũi Né ou le Delta du Mékong — arrivez à HCMC (aéroport Tân Sơn Nhất, code SGN).</p>
 
-    <p>Parfois, un vol Paris → HCMC est moins cher qu'un Paris → Hanoï. Si l'écart est significatif (plus de 100-150€), ça peut valoir la peine d'ajouter un vol intérieur Vietnam Airlines ou VietJet (Hanoï ↔ HCMC, moins de 30-50€ souvent). Vérifiez la combinaison avant de vous décider uniquement sur le vol international.</p>
+    <p>Parfois, un vol Paris → HCMC est moins cher qu'un Paris → Hanoï. Si l'écart est significatif (plus de 100-150€), ça peut valoir la peine d'ajouter un vol intérieur Vietnam Airlines ou VietJet (Hanoï ↔ HCMC, moins de 30-50€ souvent). Vérifiez la combinaison avant de vous décider uniquement sur le vol international — en intégrant les vraies contraintes du montage : bagages à récupérer et réenregistrer entre les deux vols, marge de correspondance suffisante (les vols intérieurs low-cost se décalent), et la fatigue d'une étape de plus après douze heures d'avion. L'économie sur le papier fond vite quand elle coûte une demi-journée et des nerfs.</p>
 
     <!-- H2 #7 -->
     <h2 id="section-7">Ce que je glisse dans le sac de cabine pour un vol de 13h</h2>
@@ -200,6 +206,8 @@ include 'header.php';
       <li>Vêtements chauds — les avions sont froids, même sur les vols asiatiques</li>
       <li>Snacks secs — les repas servis ne sont pas toujours au rendez-vous</li>
       <li>Lecture ou formation — 13 heures, c'est aussi du temps qu'on ne récupère pas autrement</li>
+      <li>Les documents en accessible : passeport, e-visa imprimé, confirmation PAI, adresse de la première nuit (l'immigration peut la demander) — une pochette dédiée évite la fouille de sac paniquée devant le guichet</li>
+      <li>Batteries externes en cabine uniquement — les batteries au lithium sont interdites en soute, règle universelle que les aéroports asiatiques appliquent strictement</li>
     </ul>
 
     <p>Pour ma part, j'ai mis à profit ces longues heures de vol pour travailler sur mon anglais avec la transcription phonétique — une méthode que j'ai ensuite formalisée dans un ebook disponible sur Amazon. Si vous avez l'anglais en tête avant de partir (utile au Vietnam pour communiquer avec les locaux anglophones, négocier, ou travailler), ça peut être un bon moment pour s'y mettre.</p>
@@ -210,6 +218,27 @@ include 'header.php';
       <p style="font-size:.9rem;color:var(--muted);margin:.5rem 0 .9rem">Méthode conçue pour les francophones : chaque mot anglais accompagné de sa transcription phonétique pour prononcer correctement dès le départ. Idéal pour lire pendant un long vol.</p>
       <a href="go.php?id=amazon-ebook-en" target="_blank" rel="noopener sponsored" class="btn btn-primary" style="font-size:.88rem">Voir sur Amazon →</a>
     </div>
+
+    <!-- H2 arrivée -->
+    <h2 id="section-arrivee">L'arrivée à Nội Bài : les 90 premières minutes</h2>
+    <p>Le vol n'est que la moitié du voyage — l'atterrissage à Hanoï a ses propres règles du jeu, surtout la première fois :</p>
+    <ul>
+      <li><strong>Avant même d'embarquer</strong> : n'oublie pas la <a href="declaration-pre-arrivee-vietnam-pai-2026">déclaration pré-arrivée (PAI)</a>, obligatoire pour les grands aéroports vietnamiens — gratuite, en ligne, dans les 72h avant le vol.</li>
+      <li><strong>L'immigration</strong> : passeport (et e-visa imprimé si tu en as un — l'impression papier évite bien des discussions). Les files varient énormément selon l'heure d'arrivée des gros porteurs.</li>
+      <li><strong>La SIM</strong> : des comptoirs d'opérateurs t'attendent dans le hall — pratique pour être connecté immédiatement, même si les boutiques en ville sont un peu moins chères. Le comparatif est dans <a href="sim-internet-applications-vietnam">le guide SIM et internet</a>.</li>
+      <li><strong>Le change</strong> : change juste le minimum à l'aéroport (taux défavorable) — ou saute l'étape si tu as une carte sans frais type Wise, les DAB du hall font l'affaire.</li>
+      <li><strong>Le trajet vers la ville</strong> : Nội Bài est à une trentaine de kilomètres du centre. Grab fonctionne depuis l'aéroport (suis les panneaux vers la zone de prise en charge), les taxis officiels ont des comptoirs à prix affichés, et le bus 86 relie le centre pour trois fois rien si tu voyages léger. Évite les rabatteurs qui t'abordent dans le hall.</li>
+    </ul>
+
+    <!-- H2 jetlag -->
+    <h2 id="section-jetlag">Gérer le décalage horaire (+5h à +6h)</h2>
+    <p>Hanoï vit avec 5 heures d'avance sur la France en été, 6 en hiver — et le vol vers l'est est réputé, à juste titre, plus dur pour l'organisme que le retour. Les stratégies qui marchent :</p>
+    <ul>
+      <li><strong>Choisis ton horaire d'arrivée en réservant</strong> : une arrivée en fin d'après-midi ou en soirée est idéale — tu tiens quelques heures, tu dors à l'heure locale, et le gros du décalage est absorbé dès la première nuit.</li>
+      <li><strong>Bascule à l'heure vietnamienne dès l'embarquement</strong> : montre réglée, repas et sommeil calés sur Hanoï, pas sur Paris.</li>
+      <li><strong>Le lendemain, vis dehors</strong> : la lumière du jour est le meilleur synchroniseur de l'horloge interne. Un petit-déjeuner phở au soleil vaut tous les compléments de mélatonine.</li>
+      <li><strong>Prévois 2-3 jours souples</strong> : ne cale ni rendez-vous administratif ni rencontre de belle-famille décisive dans les 48 premières heures — ton cerveau ne sera pas à son meilleur.</li>
+    </ul>
 
     <!-- FAQ -->
     <h2 id="section-faq">Questions fréquentes</h2>
@@ -247,9 +276,8 @@ include 'header.php';
     <div class="cta-newsletter" style="background:linear-gradient(135deg,#001a0d,#003a1a);margin-top:3rem;">
       <h3>📥 Alertes admin &amp; bons plans du mois</h3>
       <p>Bons plans, préparer son départ, vie quotidienne — ce que je vis et ce que j'aurais voulu savoir avant.</p>
-      <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
-        <input type="hidden" name="_next" value="<?= SITE_URL ?>/merci-guide">
-        <input type="hidden" name="_subject" value="Newsletter Cap Vietnam — vol-paris-hanoi">
+      <form class="cta-form" action="<?= SITE_URL ?>/subscribe-pack" method="POST">
+        <input type="text" name="website" value="" style="position:absolute;left:-9999px" tabindex="-1" autocomplete="off" aria-hidden="true">
         <input type="email" name="email" placeholder="ton@email.com" required>
         <button type="submit" style="background:var(--jade);color:#fff;">S'inscrire</button>
       </form>
