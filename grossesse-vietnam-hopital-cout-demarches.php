@@ -39,6 +39,10 @@ $page_faq = [
    'a' => 'Dès la confirmation de la grossesse, idéalement dès la semaine 8-12. Les hôpitaux privés comme HFH et FV Hospital proposent des packages de suivi prénatal à partir de la 12e semaine qui offrent le meilleur rapport suivi/prix. Plus tu attends, plus le prix du package augmente et moins de consultations prénatales sont incluses.'],
   ['q' => 'Vinmec parle-t-il français ?',
    'a' => 'Vinmec dispose de personnel médical anglophone dans tous ses établissements. Le français n\'est pas systématiquement proposé mais peut être disponible selon les praticiens. L\'Hôpital Français de Hanoï (HFH) est l\'établissement le mieux adapté pour un suivi entièrement en français à Hanoi.'],
+  ['q' => 'Le père peut-il assister à l\'accouchement au Vietnam ?',
+   'a' => 'Dans les hôpitaux privés internationaux, généralement oui — la présence du père en salle d\'accouchement fait partie du service, à confirmer avec l\'établissement au moment de l\'inscription. Dans les hôpitaux publics, c\'est beaucoup plus rare : le volume de patientes et l\'organisation des salles font que les pères attendent le plus souvent dehors. Si ce point compte pour vous, pose la question explicitement lors du choix de la maternité — les pratiques varient d\'un établissement à l\'autre.'],
+  ['q' => 'Les césariennes sont-elles plus fréquentes au Vietnam qu\'en France ?',
+   'a' => 'Dans les grandes villes et le secteur privé, le taux de césarienne vietnamien est élevé — une tendance documentée dans toute l\'Asie urbaine. Si tu tiens à privilégier un accouchement par voie basse, dis-le clairement dès les consultations prénatales, choisis un obstétricien aligné avec ce projet, et fais-le noter au dossier. Une césarienne médicalement justifiée reste évidemment la bonne décision quand elle s\'impose — l\'enjeu est qu\'elle soit une décision médicale, pas une facilité d\'agenda.'],
 ];
 
 include '_article-css.php';
@@ -59,7 +63,7 @@ include 'header.php';
     <div class="article-hero-meta">
       <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
       <span>📅 Juillet 2026</span>
-      <span>⏱ 8 min de lecture</span>
+      <span>⏱ 12 min de lecture</span>
     </div>
     <p style="color:rgba(250,248,244,0.78);font-size:1.05rem;line-height:1.7;margin-top:1.25rem;">
       Une grossesse au Vietnam en 2026, c'est un niveau médical très correct dans les grandes villes, avec des hôpitaux privés internationaux qui rivalisent avec les standards européens — et un coût bien inférieur. Ce guide compile les tarifs officiels des principales maternités et les démarches concrètes à anticiper.
@@ -77,6 +81,8 @@ include 'header.php';
       <li><a href="#section-cout">Comparatif des coûts</a></li>
       <li><a href="#section-demarches">Démarches pratiques</a></li>
       <li><a href="#section-assurance">Assurance et remboursements</a></li>
+      <li><a href="#section-culture">La grossesse à la vietnamienne</a></li>
+      <li><a href="#section-choix">Accoucher au Vietnam ou en France ?</a></li>
       <li><a href="#section-faq">Questions fréquentes</a></li>
     </ol>
     <div class="toc-share">
@@ -89,7 +95,7 @@ include 'header.php';
   </aside>
 
   <main class="article-content">
-    <p><strong>Une Française enceinte au Vietnam, une Vietnamienne enceinte en couple avec un Français — les deux situations posent les mêmes questions pratiques.</strong> Quel hôpital choisir ? Est-ce que c'est cher ? Mon assurance couvre ? Et côté paperasse, qu'est-ce qu'il faut prévoir pour l'enfant à naître ?</p>
+    <p><strong>Une Française enceinte au Vietnam, une Vietnamienne enceinte en couple avec un Français — les deux situations posent les mêmes questions pratiques.</strong> Quel hôpital choisir ? Est-ce que c'est cher ? Mon assurance couvre ? Et côté paperasse, qu'est-ce qu'il faut prévoir pour l'enfant à naître ? Ce guide répond aux questions médicales et administratives, mais aussi à celles qu'on n'ose pas poser : le rôle de la belle-famille, les traditions autour de la naissance, et le dilemme « accoucher ici ou rentrer en France ».</p>
 
     <div class="warning-box">
       Cet article est basé sur des informations publiques vérifiées auprès des sites officiels des hôpitaux (juillet 2026). Les tarifs hospitaliers évoluent régulièrement — demande systématiquement un devis à jour directement à l'établissement avant de t'engager.
@@ -138,6 +144,7 @@ include 'header.php';
     </table>
 
     <p>Pour une Vietnamienne avec assurance nationale (BHYT), l'hôpital public est souvent le choix principal avec une prise en charge partielle. Pour une Française ou un couple mixte souhaitant un suivi francophone, les hôpitaux privés sont mieux adaptés.</p>
+    <p>Précision importante pour ne pas caricaturer : « public » ne veut pas dire « mauvaise médecine » — les grands hôpitaux obstétriques publics vietnamiens traitent des volumes énormes et voient passer tous les cas complexes du pays ; leur expertise médicale pure est réelle. Ce qui diffère, c'est l'expérience : la langue, l'intimité, le confort, l'accompagnement. Beaucoup de couples mixtes font d'ailleurs un choix hybride — suivi de grossesse en privé pour le confort et la communication, avec la certitude qu'en cas de complication rare, le transfert vers l'expertise publique de pointe existe.</p>
 
     <h2 id="section-hanoi">À Hanoï : les principales options</h2>
 
@@ -189,7 +196,7 @@ include 'header.php';
     <p><strong>Les tarifs Vinmec ne sont pas affichés publiquement en ligne</strong> — ils sont disponibles sur demande directe. Contacter Vinmec : <a href="https://www.vinmec.com/eng/service-packages/maternity-care-package" target="_blank" rel="noopener">vinmec.com</a></p>
 
     <h3>Hôpitaux publics à Hanoï</h3>
-    <p>Le <strong>Hôpital National de Gynéco-Obstétrique</strong> (Bệnh viện Phụ Sản Trung Ương) est la référence publique pour les grossesses à risque. Très compétent médicalement, mais consultations en vietnamien et conditions d'hébergement basiques. Adapté pour les Vietnamiennes avec BHYT.</p>
+    <p>Le <strong>Hôpital National de Gynéco-Obstétrique</strong> (Bệnh viện Phụ Sản Trung Ương) est la référence publique pour les grossesses à risque. Très compétent médicalement, mais consultations en vietnamien et conditions d'hébergement basiques. Adapté pour les Vietnamiennes avec BHYT. L'hôpital Phụ Sản Hà Nội (municipal) est l'autre grande maternité publique de la ville, avec des services « à la demande » (dịch vụ) intermédiaires entre le public classique et le privé — une option que connaissent bien les familles vietnamiennes de la capitale.</p>
 
     <h2 id="section-hcmv">À Hô Chi Minh-Ville : les principales options</h2>
 
@@ -225,7 +232,7 @@ include 'header.php';
     </table>
 
     <h3>Vinmec International Hospital (HCMV)</h3>
-    <p>Présent à Grand Park et Tân Phú. Même concept que Hanoï — packages sur demande, personnel anglophone. Contacter directement pour les prix 2026.</p>
+    <p>Présent à Grand Park et Tân Phú. Même concept que Hanoï — packages sur demande, personnel anglophone. Contacter directement pour les prix 2026. À HCMV, l'hôpital Hạnh Phúc (spécialisé mère-enfant, standards internationaux) fait aussi partie des établissements régulièrement cités par les couples expatriés — à comparer sur devis.</p>
 
     <h3>Hôpital Từ Dũ (public, HCMV)</h3>
     <p>L'hôpital public de référence en obstétrique à HCMV. Très grand volume (l'un des plus fréquentés d'Asie du Sud-Est), excellent niveau médical pour les grossesses complexes. Recommandé pour les Vietnamiennes avec BHYT. Consultations en vietnamien.</p>
@@ -266,7 +273,8 @@ include 'header.php';
     <ul>
       <li><strong>S'inscrire tôt à la maternité</strong> : dès la semaine 8-12 pour bénéficier des packages complets et avoir le meilleur prix</li>
       <li><strong>Vérifier la couverture de son assurance</strong> : demander par écrit ce qui est pris en charge et les plafonds de remboursement avant de choisir l'établissement</li>
-      <li><strong>Carnet de suivi</strong> : les hôpitaux privés tiennent leur propre dossier, mais garde une copie de toutes tes ordonnances et résultats d'examens</li>
+      <li><strong>Carnet de suivi</strong> : les hôpitaux privés tiennent leur propre dossier, mais garde une copie de toutes tes ordonnances et résultats d'examens — indispensable si tu changes d'établissement ou si l'accouchement se passe ailleurs que prévu</li>
+      <li><strong>Visiter la maternité avant le jour J</strong> : la plupart des hôpitaux privés organisent des visites des salles d'accouchement et des chambres — profites-en pour poser les questions qui fâchent (présence du père, projet de naissance, politique de péridurale, langue de l'équipe de garde la nuit)</li>
       <li><strong>Déclaration à l'ambassade</strong> : si tu es Française expatriée, l'ambassade de France peut te mettre en contact avec des services de soutien aux Françaises à l'étranger</li>
     </ul>
 
@@ -276,19 +284,39 @@ include 'header.php';
       <li><strong>Déclaration de naissance côté français</strong> : à faire à l'ambassade de France dans les <strong>30 jours calendaires</strong> — voir notre article <a href="enfant-couple-franco-vietnamien-nationalite">Nationalité d'un enfant franco-vietnamien</a></li>
       <li><strong>Passeport français</strong> : demandable dès l'enregistrement consulaire</li>
     </ul>
+    <p>Un conseil d'organisation pour cette période où vous aurez autre chose en tête qu'un dossier administratif : préparez la pochette « naissance » <em>avant</em> le terme. Copies des passeports des deux parents, acte de mariage (et sa transcription), formulaires consulaires pré-remplis, et le point sur le choix du ou des prénoms — y compris, si vous le souhaitez, un prénom vietnamien en second prénom, décision qui se discute mieux à tête reposée qu'au guichet. Le délai de 30 jours pour la déclaration française passe très vite avec un nouveau-né à la maison.</p>
 
     <h2 id="section-assurance">Assurance santé et remboursements</h2>
-    <p>La maternité dans un hôpital privé international au Vietnam est rarement remboursée intégralement sans assurance complémentaire. Les principales options :</p>
+    <p>La maternité dans un hôpital privé international au Vietnam est rarement remboursée intégralement sans assurance complémentaire — et c'est le poste où une bonne anticipation rapporte le plus, car les délais de carence maternité se comptent en mois et se prennent <em>avant</em> la grossesse. Les principales options :</p>
     <ul>
       <li><strong>CFE (Caisse des Français de l'Étranger)</strong> : couvre les soins médicaux à l'étranger pour les Français expatriés. La couverture maternité dépend de l'option choisie — vérifier le détail du contrat.</li>
       <li><strong>Assurance internationale (AXA, Cigna, Allianz…)</strong> : indispensable pour une couverture des soins dans les hôpitaux privés à hauteur de 80-100%. Les plafonds maternité varient beaucoup selon les contrats.</li>
       <li><strong>BHYT (assurance santé nationale vietnamienne)</strong> : pour les résidents vietnamiens et les étrangers qui y ont accès. Depuis janvier 2026, FV Hospital à HCMV l'accepte. Remboursement partiel dans les hôpitaux publics.</li>
+      <li><strong>L'assurance privée locale vietnamienne</strong> : les avenants maternité existent chez les assureurs locaux, avec des délais de carence stricts — le fonctionnement général est expliqué dans notre article sur <a href="assurance-sante-privee-manulife-vietnam">l'assurance santé privée au Vietnam</a>.</li>
     </ul>
 
     <div class="tip-box">
       <strong>Vérifier l'assurance avant la grossesse</strong>
       Beaucoup d'assureurs excluent la maternité si la grossesse a débuté avant la souscription. Si tu prévois une grossesse, souscris une assurance incluant la maternité avant d'être enceinte — les délais de carence peuvent aller de 6 à 12 mois.
     </div>
+
+    <h2 id="section-culture">La grossesse à la vietnamienne : ce qui va surprendre le parent français</h2>
+    <p>Dans un couple mixte, la grossesse est le moment où les deux cultures se rencontrent le plus frontalement — et mieux vaut le savoir avant que pendant.</p>
+    <ul>
+      <li><strong>La belle-famille s'implique. Beaucoup.</strong> Au Vietnam, une grossesse est une affaire familiale, pas un projet de couple. Conseils alimentaires, interdits traditionnels, avis sur le prénom, la belle-mère qui s'installe pour aider : tout cela relève de la sollicitude normale, pas de l'intrusion. Le parent français qui le vit comme une invasion passe à côté du soutien logistique le plus précieux du pays.</li>
+      <li><strong>Le « ở cữ », le mois de repos postnatal.</strong> La tradition vietnamienne prescrit à la jeune mère un mois de confinement après la naissance : repos strict, plats spécifiques, restrictions (sortir, se laver les cheveux, l'eau froide…) dont l'application varie énormément selon les familles et les générations. Beaucoup de couples mixtes négocient une version moderne — le repos et les petits plats, sans les interdits les plus datés. L'important est d'en parler <em>avant</em> la naissance, pas de le découvrir en direct face à une grand-mère déterminée.</li>
+      <li><strong>Les traditions autour du nouveau-né</strong> : la fête du premier mois (đầy tháng), les précautions contre les compliments trop directs au bébé, les bracelets protecteurs… Rien d'obligatoire, mais tout a du sens pour la moitié vietnamienne de la famille. Le sujet rejoint ce qu'on décrit dans <a href="belle-famille-vietnamienne-guide">le guide de la belle-famille vietnamienne</a>.</li>
+      <li><strong>Côté droit du travail</strong> : si la maman travaille au Vietnam sous contrat local, le congé maternité vietnamien est de <strong>6 mois</strong> — plus généreux que le congé français de base. Un vrai paramètre dans l'organisation du couple.</li>
+    </ul>
+
+    <h2 id="section-choix">Accoucher au Vietnam ou rentrer en France ?</h2>
+    <p>La question se pose dans presque tous les couples mixtes installés au Vietnam. Il n'y a pas de bonne réponse universelle, mais des critères objectifs :</p>
+    <ul>
+      <li><strong>Pour le Vietnam</strong> : la vie est là (conjoint, travail, logement), le soutien familial vietnamien est sur place, les hôpitaux internationaux des grandes villes offrent un niveau tout à fait solide pour une grossesse normale, et le coût — même en privé haut de gamme — reste inférieur à une grossesse non couverte en France.</li>
+      <li><strong>Pour la France</strong> : la prise en charge Sécurité sociale à 100 % au-delà du 6e mois, la famille française, la langue dans un moment où chaque nuance compte, et l'accès immédiat aux plateaux techniques les plus complets en cas de grossesse à risque.</li>
+      <li><strong>Le facteur que tout le monde oublie</strong> : l'avion. Les compagnies aériennes restreignent le vol en fin de grossesse (certificat médical exigé puis refus d'embarquement au-delà d'un certain terme, variable selon les compagnies). Un « retour en France pour accoucher » se décide au deuxième trimestre, pas au huitième mois.</li>
+      <li><strong>Le facteur administratif</strong> : dans les deux cas, l'enfant sera français ET pourra être vietnamien — mais le circuit des papiers change (déclaration au comité populaire + transcription à l'ambassade côté Vietnam ; état civil français direct côté France, puis démarches vietnamiennes au consulat). Aucun des deux choix ne ferme de porte à la double nationalité.</li>
+    </ul>
 
     <h2 id="section-faq">Questions fréquentes</h2>
     <?php foreach ($page_faq as $faq): ?>
@@ -301,8 +329,8 @@ include 'header.php';
     <div class="cta-newsletter">
       <h3>Reçois mes prochains articles</h3>
       <p>📥 <strong>Guide PDF + 3 modèles de lettres offerts</strong> dès l'inscription. Un email par mois, désinscription en 1 clic.</p>
-      <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
-        <input type="hidden" name="_next" value="<?= SITE_URL ?>/merci-guide">
+      <form class="cta-form" action="<?= SITE_URL ?>/subscribe-pack" method="POST">
+        <input type="text" name="website" value="" style="position:absolute;left:-9999px" tabindex="-1" autocomplete="off" aria-hidden="true">
         <input type="email" name="email" placeholder="Ton adresse email" required>
         <button type="submit">S'inscrire</button>
       </form>

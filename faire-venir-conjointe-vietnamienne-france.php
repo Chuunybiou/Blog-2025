@@ -72,6 +72,8 @@ $page_faq = [
    'a' => 'Les coûts incompressibles : environ 99 € pour le visa long séjour (droits de chancellerie), 250 € pour la taxe OFII à l\'arrivée en France, plus les traductions assermentées et les frais de notaire au Vietnam. Budget total réaliste : 600 à 1 200 €.'],
   ['q' => 'Mon conjoint peut-il travailler en France avec un visa long séjour conjoint de Français ?',
    'a' => 'Oui. Le visa long séjour valant titre de séjour (VLS-TS) mention "vie privée et familiale" autorise l\'exercice d\'une activité professionnelle dès l\'arrivée en France.'],
+  ['q' => 'Mon conjoint peut-il visiter la France pendant que la procédure est en cours ?',
+   'a' => 'Oui, via un visa Schengen court séjour, demandé normalement — le fait qu\'une procédure de visa long séjour soit en cours n\'interdit pas les visites. Deux règles d\'or cependant : chaque demande de court séjour est jugée sur ses propres mérites (un refus reste possible, surtout si le consulat soupçonne une installation anticipée), et il ne faut jamais dépasser la durée autorisée — un overstay Schengen ruinerait le dossier principal. La visite se fait, puis on repart, et le parcours long séjour suit son cours.'],
 ];
 include '_article-css.php';
 include 'header.php';
@@ -112,6 +114,8 @@ include 'header.php';
       <li><a href="#section-7">Étape 6 — L'arrivée en France et l'OFII</a></li>
       <li><a href="#section-8">Étape 7 — Le titre de séjour</a></li>
       <li><a href="#section-9">Faire venir la belle-famille</a></li>
+      <li><a href="#section-attente">Vivre la période d'attente</a></li>
+      <li><a href="#section-erreurs">Les erreurs fréquentes</a></li>
       <li><a href="#section-faq">Questions fréquentes</a></li>
     </ol>
     <div class="toc-share">
@@ -142,7 +146,7 @@ include 'header.php';
     </div>
 
     <h2 id="section-1">Vue d'ensemble du parcours</h2>
-    <p>Faire venir son conjoint vietnamien en France nécessite de valider plusieurs étapes dans un ordre précis. On ne peut pas sauter d'étape — chaque document ouvre la porte à la suivante.</p>
+    <p>Faire venir son conjoint vietnamien en France nécessite de valider plusieurs étapes dans un ordre précis. On ne peut pas sauter d'étape — chaque document ouvre la porte à la suivante, et c'est ce séquencement qui explique la durée totale du parcours.</p>
 
     <div style="overflow-x:auto;border-radius:10px;border:1px solid rgba(77,200,160,0.18);margin:1.5rem 0;">
     <table style="width:100%;border-collapse:collapse;font-size:0.89rem;">
@@ -211,6 +215,10 @@ include 'header.php';
 
     <p>Durée totale réaliste : <strong>12 à 24 mois</strong> selon la rapidité de chaque administration et la qualité du dossier. La bonne nouvelle : une fois le visa obtenu, ton conjoint peut vivre et travailler légalement en France sans attendre le titre de séjour.</p>
 
+    <h3>Le budget global du parcours</h3>
+    <p>Au-delà des frais officiels listés dans la FAQ (visa, taxe OFII), le vrai budget du parcours comprend des postes que personne n'annonce : les <strong>traductions assermentées</strong> de chaque document vietnamien (acte de naissance, certificat de situation matrimoniale, acte de mariage — souvent en plusieurs exemplaires), la <strong>légalisation ou l'apostille</strong> des documents, les <strong>déplacements</strong> (tes vols vers le Vietnam pour le CCAM et le mariage, les trajets vers Hanoï ou HCMV pour les rendez-vous), et les <strong>frais de la cérémonie familiale</strong> vietnamienne — qui, culturellement, n'est pas optionnelle et se budgète à part. Compte large, et garde une réserve : un document à refaire ou un rendez-vous reporté coûte plus en billets d'avion qu'en frais de dossier.</p>
+    <p>Deux principes qui économisent gros sur la durée : <strong>toujours demander les documents vietnamiens en plusieurs exemplaires originaux</strong> dès le premier passage au guichet (un aller-retour au village de ta belle-famille coûte plus cher que trois copies supplémentaires), et <strong>numériser chaque pièce au fur et à mesure</strong> dans un dossier partagé du couple — chaque étape redemande des pièces des étapes précédentes.</p>
+
     <h2 id="section-2">Étape 1 — Le CCAM : le certificat qui rend le mariage possible</h2>
     <p>Avant de pouvoir se marier au Vietnam, le partenaire français doit obtenir un <strong>Certificat de Capacité à Mariage (CCAM)</strong> auprès de l'ambassade de France à Hanoï ou du consulat général à Hô Chi Minh-Ville. Ce document atteste que tu es légalement libre de te marier selon le droit français (pas déjà marié, aucun empêchement légal).</p>
     <ul>
@@ -222,7 +230,7 @@ include 'header.php';
     <p><strong>→ Lire le guide complet :</strong> <a href="certificat-capacite-mariage-vietnam">Le CCAM : comment l'obtenir à l'ambassade de France au Vietnam</a></p>
 
     <h2 id="section-3">Étape 2 — Le mariage au comité populaire</h2>
-    <p>Une fois le CCAM en main, le mariage civil peut être célébré au comité populaire (UBND) du district de résidence de ton conjoint au Vietnam. Tu dois être physiquement présent au Vietnam pour la cérémonie.</p>
+    <p>Une fois le CCAM en main, le mariage civil peut être célébré au comité populaire (UBND) du district de résidence de ton conjoint au Vietnam. Tu dois être physiquement présent au Vietnam pour la cérémonie. Garde en tête la distinction vietnamienne entre l'enregistrement légal (la signature au comité populaire, sobre et administrative) et la fête familiale (le vrai « mariage » aux yeux de la famille, avec ses centaines d'invités) : les deux événements peuvent avoir lieu à des dates différentes, et seul le premier compte pour la suite administrative.</p>
     <ul>
       <li>Le CCAM est remis aux autorités vietnamiennes lors de l'enregistrement du mariage</li>
       <li>La cérémonie est planifiée après dépôt du dossier complet (délai variable selon le district)</li>
@@ -234,7 +242,7 @@ include 'header.php';
     </div>
 
     <h2 id="section-4">Étape 3 — La transcription du mariage à Nantes</h2>
-    <p>Une fois marié(e) au Vietnam, il faut faire reconnaître ce mariage en France. La demande de transcription se dépose au <strong>Service Central d'État Civil (SCEC) de Nantes</strong> — l'unique organisme habilité à transcrire les mariages célébrés à l'étranger dans les registres français.</p>
+    <p>Une fois marié(e) au Vietnam, il faut faire reconnaître ce mariage en France. La demande de transcription se dépose au <strong>Service Central d'État Civil (SCEC) de Nantes</strong> — l'unique organisme habilité à transcrire les mariages célébrés à l'étranger dans les registres français. C'est l'étape la plus longue et la plus passive du parcours : une fois le dossier déposé, il n'y a rien à faire qu'attendre — raison de plus pour la déclencher sans délai après le mariage, car chaque semaine de retard au dépôt est une semaine ajoutée à la fin du parcours.</p>
     <p>La demande se fait par courrier ou via ton consulat, avec l'acte de mariage vietnamien légalisé ou apostillé et ses traductions assermentées. Délai constaté : <strong>6 à 12 mois</strong> selon les périodes de charge.</p>
     <p><strong>→ Lire le guide complet :</strong> <a href="transcription-mariage-service-central-nantes">Transcription du mariage à Nantes : dossier et délais</a></p>
 
@@ -250,12 +258,13 @@ include 'header.php';
 
     <h2 id="section-6">Étape 5 — L'entretien à l'ambassade</h2>
     <p>Pour les visas d'installation (long séjour vie privée), l'ambassade de France convoque souvent le demandeur pour un entretien. Son objectif : s'assurer de la réalité de la vie commune et que le mariage n'est pas de convenance.</p>
-    <p>Cet entretien n'est pas systématique mais reste fréquent pour les conjoints vietnamiens. Prépare ton conjoint avec des photos de votre vie commune, des preuves de communication régulière, et une bonne connaissance de ta situation personnelle en France.</p>
+    <p>Cet entretien n'est pas systématique mais reste fréquent pour les conjoints vietnamiens. Prépare ton conjoint avec des photos de votre vie commune, des preuves de communication régulière, et une bonne connaissance de ta situation personnelle en France. Le principe à retenir : il ne s'agit pas d'un examen à réviser mais d'une conversation de vérification — un couple réel qui raconte simplement son histoire, avec des dates cohérentes entre le récit et les documents, n'a rien à craindre.</p>
     <p><strong>→ Lire le guide complet :</strong> <a href="entretien-ambassade-france-vietnam-visa-conjoint">Entretien à l'ambassade : ce qu'il faut préparer</a></p>
 
     <h2 id="section-7">Étape 6 — L'arrivée en France et la validation OFII</h2>
     <p>Dès l'arrivée en France avec le VLS-TS, ton conjoint doit valider son visa auprès de l'<strong>OFII</strong> (Office Français de l'Immigration et de l'Intégration) dans un délai de <strong>3 mois</strong> suivant l'entrée sur le territoire. Cette validation est obligatoire et coûte <strong>250 €</strong> (taxe réglée en ligne sur <a href="https://www.ofii.fr" target="_blank" rel="noopener">ofii.fr</a>).</p>
     <p>La validation OFII déclenche aussi l'accès aux formations linguistiques et civiques du Contrat d'Intégration Républicaine (CIR) — obligatoires pour tout étranger nouvellement arrivé.</p>
+    <p>Profite de cette première période pour dérouler la check-list d'installation : numéro de Sécurité sociale via la CPAM, compte bancaire français, inscription éventuelle à des cours de français complémentaires, et — si ton conjoint veut travailler tout de suite — CV au format français et équivalences de diplômes. Le VLS-TS validé donne tous les droits d'un titre de séjour : autant s'en servir dès la première semaine plutôt que d'attendre « d'être en règle », puisque vous l'êtes déjà.</p>
 
     <h2 id="section-8">Étape 7 — La demande de titre de séjour</h2>
     <p>Le VLS-TS valable 1 an doit être suivi d'une demande de titre de séjour, à déposer <strong>2 à 4 mois avant son expiration</strong> sur le portail de l'<strong>ANEF</strong> (Administration Numérique pour les Étrangers en France). La demande se fait entièrement en ligne.</p>
@@ -263,9 +272,27 @@ include 'header.php';
     <p><strong>→ Lire le guide complet :</strong> <a href="titre-sejour-vie-privee-familiale-conjoint-vietnamien">Titre de séjour vie privée et familiale : comment le demander</a></p>
 
     <h2 id="section-9">Faire venir la belle-famille vietnamienne en France</h2>
-    <p>Une fois ton conjoint installé en France, vous voudrez peut-être inviter ses parents ou ses proches. Les Vietnamiens doivent obtenir un visa Schengen pour entrer en France, et le processus n'est pas simple — les taux de refus sont élevés.</p>
+    <p>Une fois ton conjoint installé en France, vous voudrez peut-être inviter ses parents ou ses proches — pour le mariage à la française, une naissance, ou simplement des vacances. Les Vietnamiens doivent obtenir un visa Schengen pour entrer en France, et le processus n'est pas simple — les taux de refus sont élevés, car le consulat évalue le risque que le visiteur ne reparte pas. Un dossier qui démontre les attaches au Vietnam (travail, propriété, famille restée au pays) et un hébergement solide en France fait toute la différence.</p>
     <p>Pour maximiser les chances d'obtention, tu devras fournir une lettre d'invitation officielle, une attestation d'hébergement, et justifier de tes ressources en France. La demande se dépose également via VFS Global au Vietnam.</p>
     <p><strong>→ Lire le guide complet :</strong> <a href="visa-schengen-belle-famille-vietnamienne">Visa Schengen pour la belle-famille vietnamienne : nos conseils</a></p>
+
+    <h2 id="section-attente">Vivre la période d'attente : les stratégies des couples</h2>
+    <p>Douze à vingt-quatre mois, c'est long — et la question que tous les couples se posent est : <em>où vit-on pendant ce temps ?</em> Trois stratégies reviennent :</p>
+    <ul>
+      <li><strong>Le Français s'installe au Vietnam pendant la procédure</strong> : c'est ce que nous avons fait. L'exemption de 45 jours, les e-visas puis le visa TT après le mariage permettent de vivre ensemble sur place pendant que Nantes et l'ambassade travaillent. Avantage énorme : la vie commune continue ET se documente (bail commun, quotidien partagé) — exactement ce que le dossier de visa devra prouver.</li>
+      <li><strong>La distance avec des visites</strong> : chacun reste dans son pays, avec des allers-retours. C'est la configuration la plus dure moralement, mais elle fonctionne si elle est bien documentée (billets, appels, messages) — cette documentation devient la preuve de vie commune du dossier.</li>
+      <li><strong>Les courts séjours du conjoint en France</strong> : pendant la procédure, ton/ta conjoint(e) peut demander des visas Schengen court séjour pour visiter la France. Attention à deux règles : chaque demande est examinée indépendamment (un refus est possible), et il ne faut <strong>jamais</strong> tenter de transformer un court séjour en installation — un dépassement ruinerait le dossier de visa long séjour.</li>
+    </ul>
+    <p>Quelle que soit la stratégie : archive tout, en continu. Le couple qui documente sa vie commune au fil de l'eau aborde l'entretien et l'instruction avec des mois d'avance sur celui qui reconstitue tout la veille du dépôt.</p>
+
+    <h2 id="section-erreurs">Les erreurs fréquentes du parcours</h2>
+    <ul>
+      <li><strong>Faire les étapes dans le désordre</strong> : pas de mariage sans CCAM, pas de visa sans transcription. Chaque étape ouvre la suivante — vouloir paralléliser ce qui ne peut pas l'être fait perdre des mois.</li>
+      <li><strong>Sous-estimer la transcription</strong> : c'est l'étape la plus longue du parcours (6-12 mois) et celle qu'on découvre en dernier. Dépose le dossier de transcription <em>immédiatement</em> après le mariage, pas « quand on aura le temps ».</li>
+      <li><strong>Planifier la vie française avant le visa</strong> : démission, bail, inscription à une formation… rien d'irréversible tant que le visa n'est pas dans le passeport.</li>
+      <li><strong>Négliger le français du conjoint</strong> : rien n'est exigé pour le visa, mais tout le parcours suivant (CIR, carte pluriannuelle, carte de résident, nationalité) demande des paliers de français croissants. Chaque mois d'attente est un mois de cours possible.</li>
+      <li><strong>S'isoler dans la procédure</strong> : des milliers de couples franco-vietnamiens sont passés par là. Les groupes d'entraide, ce blog et les articles détaillés de chaque étape existent pour ça — les erreurs coûteuses sont presque toujours des erreurs déjà commises par d'autres.</li>
+    </ul>
 
     <h2 id="section-faq">Questions fréquentes</h2>
     <?php foreach ($page_faq as $faq): ?>
@@ -278,8 +305,8 @@ include 'header.php';
     <div class="cta-newsletter">
       <h3>Reçois mes prochains articles</h3>
       <p>📥 <strong>Guide PDF + 3 modèles de lettres offerts</strong> dès l'inscription. Un email par mois, désinscription en 1 clic.</p>
-      <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
-        <input type="hidden" name="_next" value="<?= SITE_URL ?>/merci-guide">
+      <form class="cta-form" action="<?= SITE_URL ?>/subscribe-pack" method="POST">
+        <input type="text" name="website" value="" style="position:absolute;left:-9999px" tabindex="-1" autocomplete="off" aria-hidden="true">
         <input type="email" name="email" placeholder="Ton adresse email" required>
         <button type="submit">S'inscrire</button>
       </form>

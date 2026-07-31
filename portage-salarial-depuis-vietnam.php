@@ -40,6 +40,8 @@ $page_faq = [
    'a' => 'Non. Tes clients peuvent être basés n\'importe où : France, Europe, États-Unis, Asie. La société de portage facture en leur nom dans la devise convenue. Pour des clients étrangers, il faudra vérifier avec la société de portage les modalités de facturation internationale (TVA, frais de change, etc.)'],
   ['q' => 'Portage salarial ou micro-entreprise : lequel choisir depuis le Vietnam ?',
    'a' => 'Si tu es résident fiscal vietnamien (plus de 183 jours/an au Vietnam, centre d\'intérêts économiques sur place), le portage salarial est généralement plus sûr car il maintient ton ancrage social en France. La micro-entreprise pose des questions sur la domiciliation de l\'activité si tu n\'es plus résident fiscal français. Le comparatif complet est dans notre article dédié.'],
+  ['q' => 'La Sécurité sociale me couvre-t-elle pour mes soins au Vietnam ?',
+   'a' => 'Non. L\'assurance maladie française est territoriale : cotiser via ton bulletin de portage maintient tes droits en France (et ta retraite, ton chômage), mais ne rembourse pas tes consultations à Hanoï ou ton hospitalisation à HCMV. Pour la santé sur place, il faut une couverture dédiée — CFE, mutuelle internationale ou assurance locale. C\'est un budget à part entière, à intégrer dans ton calcul de TJM.'],
 ];
 include '_article-css.php';
 include 'header.php';
@@ -59,7 +61,7 @@ include 'header.php';
     <div class="article-hero-meta">
       <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
       <span>📅 Juin 2026</span>
-      <span>⏱ 10 min de lecture</span>
+      <span>⏱ 12 min de lecture</span>
       <span>Mis &agrave; jour : Juin 2026</span>
     </div>
   </div>
@@ -71,10 +73,12 @@ include 'header.php';
     <ol class="toc-list">
       <li><a href="#section-1">Qu'est-ce que le portage salarial ?</a></li>
       <li><a href="#section-2">Portage depuis le Vietnam : ça marche vraiment ?</a></li>
+      <li><a href="#section-deroule">Une mission en portage, pas à pas</a></li>
       <li><a href="#section-3">Simulation de salaire net</a></li>
       <li><a href="#section-4">Choisir sa société de portage</a></li>
       <li><a href="#section-5">Portage et résidence fiscale</a></li>
       <li><a href="#section-6">Portage vs autres statuts</a></li>
+      <li><a href="#section-erreurs">Les erreurs fréquentes</a></li>
       <li><a href="#section-faq">Questions fréquentes</a></li>
     </ol>
     <div class="toc-share">
@@ -88,27 +92,27 @@ include 'header.php';
 
   <main class="article-content">
 
-    <p><strong>Le portage salarial est, à mon sens, le statut le plus propre pour un freelance français qui travaille depuis le Vietnam.</strong> Tu restes salarié d'une société française, tu cotises pour ta retraite et ton chômage, tes clients reçoivent des factures professionnelles — et tu évites les casse-têtes administratifs de la micro-entreprise à l'étranger.</p>
+    <p><strong>Le portage salarial est, à mon sens, le statut le plus propre pour un freelance français qui travaille depuis le Vietnam.</strong> Tu restes salarié d'une société française, tu cotises pour ta retraite et ton chômage, tes clients reçoivent des factures professionnelles — et tu évites les casse-têtes administratifs de la micro-entreprise à l'étranger. Ce guide déroule le fonctionnement concret, les simulations de net, les critères de choix d'une société quand on vit à 10 000 km, et le volet fiscal que la plupart des articles esquivent.</p>
 
-    <p>Cet article fait partie du dossier <a href="travailler-a-distance-depuis-vietnam">travailler à distance depuis le Vietnam</a>. Si tu hésites encore entre portage et micro-entreprise, lis aussi notre <a href="portage-salarial-ou-micro-entreprise-vietnam">comparatif portage vs micro-entreprise pour expats</a>.</p>
+    <p>Cet article fait partie du dossier <a href="travailler-a-distance-depuis-vietnam">travailler à distance depuis le Vietnam</a>. Si tu hésites encore entre portage et micro-entreprise, lis aussi notre <a href="portage-salarial-ou-micro-entreprise-vietnam">comparatif portage vs micro-entreprise pour expats</a> — les deux articles se complètent, celui-ci entre dans le concret du portage.</p>
 
     <img class="article-photo" src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&q=80" alt="Portage salarial depuis le Vietnam" width="1200" height="675" loading="lazy">
 
     <h2 id="section-1">Qu'est-ce que le portage salarial ?</h2>
-    <p>Le portage salarial est un arrangement à trois parties :</p>
+    <p>Le portage salarial est un arrangement à trois parties, encadré par le Code du travail et une convention collective dédiée :</p>
     <ul>
       <li><strong>Toi</strong> (le salarié porté) : tu trouves tes clients, tu réalises les missions</li>
       <li><strong>La société de portage</strong> : elle signe le contrat avec le client, encaisse le paiement, paie les cotisations sociales et te verse un salaire</li>
       <li><strong>Le client</strong> : il paie la société de portage (pas toi directement)</li>
     </ul>
-    <p>Ce qui te revient en salaire net est typiquement le CA HT de la mission, <strong>moins les frais de gestion de la société de portage</strong> (5–10 % en général), <strong>moins les charges patronales (~43 %) et salariales (~26 %) sur le salaire brut</strong>. Résultat : sur 1 000 € HT facturé, tu touches généralement entre 450 et 570 € nets selon le taux de frais de la société.</p>
+    <p>Ce qui te revient en salaire net est typiquement le CA HT de la mission, <strong>moins les frais de gestion de la société de portage</strong> (5–10 % en général), <strong>moins les charges patronales (~43 %) et salariales (~26 %) sur le salaire brut</strong>. Résultat : sur 1 000 € HT facturé, tu touches généralement entre 450 et 570 € nets selon le taux de frais de la société — un ratio à connaître avant de fixer ton TJM, pas après.</p>
 
     <div class="tip-box">
       <strong>Avantage clé :</strong> Le portage salarial est encadré par la loi française depuis 2008 et réglementé par une convention collective. La société de portage doit être immatriculée et respecter des obligations précises — contrairement aux montages offshore parfois proposés sur internet.
     </div>
 
     <h2 id="section-2">Portage depuis le Vietnam : ça marche vraiment ?</h2>
-    <p>Oui. Voici ce qui change (et ce qui ne change pas) quand tu es physiquement au Vietnam :</p>
+    <p>Oui — et c'est même l'un des rares statuts français qui traverse l'expatriation sans se déformer. Voici ce qui change (et ce qui ne change pas) quand tu es physiquement au Vietnam :</p>
     <ul>
       <li>✅ Ton contrat reste un contrat de travail français — aucun obstacle légal à être ailleurs</li>
       <li>✅ Tes cotisations sont versées en France — retraite, chômage, Sécu maintenus</li>
@@ -116,9 +120,22 @@ include 'header.php';
       <li>⚠️ Ta résidence fiscale évolue si tu passes l'essentiel de l'année au Vietnam → lire notre article sur la <a href="residence-fiscale-france-vietnam-183-jours">résidence fiscale et les 183 jours</a></li>
       <li>⚠️ Certaines sociétés de portage sont réticentes à travailler avec des portés hors de France — demande-le explicitement avant de signer</li>
     </ul>
+    <p>Une nuance capitale que beaucoup découvrent trop tard : <strong>cotiser à la Sécurité sociale française ne veut pas dire être soigné gratuitement au Vietnam</strong>. L'assurance maladie française est territoriale — hors de France (et hors UE), tes soins courants au Vietnam ne sont pas pris en charge par la Sécu, même si tu cotises chaque mois via ton bulletin de portage. Pour la santé au quotidien à Hanoï ou ailleurs, il te faut une couverture dédiée : CFE, mutuelle internationale ou assurance locale — le comparatif est dans le <a href="assurance-sante-vietnam-expat">guide santé expatrié</a>. Tes cotisations françaises, elles, continuent de nourrir ta retraite et tes droits au chômage : c'est ça, le vrai bénéfice.</p>
+
+    <h2 id="section-deroule">Une mission en portage, pas à pas</h2>
+    <p>Pour dédramatiser le montage, voici le déroulé concret d'une mission type :</p>
+    <ol>
+      <li><strong>Tu négocies la mission avec ton client</strong> — périmètre, tarif (TJM ou forfait), durée. C'est toi le commercial, la société de portage ne trouve pas de clients à ta place.</li>
+      <li><strong>Tu signes la convention d'adhésion puis ton contrat de travail</strong> avec la société de portage (CDI ou CDD de portage). C'est ce contrat qui fait de toi un salarié.</li>
+      <li><strong>La société de portage signe le contrat commercial</strong> avec ton client, reprenant les conditions que tu as négociées.</li>
+      <li><strong>Chaque mois, tu remplis ton compte-rendu d'activité (CRA)</strong> — les jours travaillés — et la société facture le client en conséquence.</li>
+      <li><strong>À l'encaissement, la société transforme le CA en salaire</strong> : frais de gestion déduits, charges payées, bulletin de paie émis, virement sur ton compte (français, que tu peux ensuite <a href="transferer-argent-vietnam-wise">alimenter vers le Vietnam via Wise</a>).</li>
+      <li><strong>Tu peux passer des frais professionnels</strong> (matériel, logiciels, déplacements liés aux missions) qui échappent aux charges — un levier d'optimisation légal à discuter avec ta société de portage.</li>
+    </ol>
+    <p>À noter : le portage est réservé par la loi aux <strong>prestations intellectuelles</strong> (conseil, informatique, formation, rédaction, design…) exercées en autonomie — pas au commerce de biens ni aux services à la personne. La convention collective impose aussi un niveau de rémunération minimal au salarié porté, ce qui exclut de fait les missions à très petit tarif.</p>
 
     <h2 id="section-3">Simulation de salaire net</h2>
-    <p>Ces chiffres sont indicatifs. Pour ta simulation précise, utilise le simulateur de ta société de portage ou consulte un comptable spécialisé.</p>
+    <p>Ces chiffres sont indicatifs. Pour ta simulation précise, utilise le simulateur de ta société de portage ou consulte un comptable spécialisé. La mécanique, elle, est toujours la même : CA facturé → moins les frais de gestion → moins les charges patronales → salaire brut → moins les charges salariales → net versé.</p>
 
     <div class="table-wrap">
     <table class="comparison-table">
@@ -161,9 +178,10 @@ include 'header.php';
 
     <p><small><em>Simulation indicative basée sur charges patronales ~43% et salariales ~26% (taux moyens en portage salarial France). Le net réel varie selon la société de portage, le taux de charges et les éventuels frais professionnels déductibles.</em></small></p>
     <p>Pour avoir les chiffres exacts, le plus simple est de demander une simulation à la société de portage qui t'intéresse — c'est gratuit et elles le font sur demande.</p>
+    <p>Oui, la ponction paraît violente — environ la moitié du chiffre d'affaires. Mais compare ce qui est comparable : ce « coût » achète ta retraite qui continue de se construire, tes droits au chômage entre deux missions, ta prévoyance, ta responsabilité civile professionnelle, zéro comptabilité et des factures que les grands comptes acceptent sans sourciller. Le freelance en micro-entreprise qui affiche un meilleur « net » immédiat paie la différence ailleurs : pas de chômage, retraite réduite, et des clients corporate qui rechignent parfois à contracter avec un indépendant. Vu du Vietnam, où ton coût de vie est faible, l'arbitrage « moins de net, plus de filet » est souvent plus rationnel qu'il n'y paraît — surtout si tu envisages un retour en France un jour.</p>
 
     <h2 id="section-4">Choisir sa société de portage</h2>
-    <p>Il existe des dizaines de sociétés de portage en France. Voici les critères qui comptent vraiment pour un expat au Vietnam :</p>
+    <p>Il existe des dizaines de sociétés de portage en France, des généralistes historiques aux spécialistes d'un secteur (IT, ingénierie, formation). Pour un porté « classique » basé en France, elles se valent à peu près ; pour un expatrié au Vietnam, quelques critères deviennent éliminatoires — à commencer par leur position écrite sur les portés résidant à l'étranger et leur capacité à facturer des clients hors de France. Voici la grille complète :</p>
 
     <div class="table-wrap">
     <table class="comparison-table">
@@ -211,13 +229,14 @@ include 'header.php';
     </div>
 
     <h2 id="section-5">Portage salarial et résidence fiscale</h2>
-    <p>C'est le point le plus complexe. Être en portage salarial ne définit pas automatiquement ta résidence fiscale. Si tu passes la majorité de l'année au Vietnam et que tes intérêts économiques principaux y sont, tu peux devenir résident fiscal vietnamien — même en restant salarié d'une société de portage française.</p>
+    <p>C'est le point le plus complexe de tout le montage, celui qui mérite un vrai conseil professionnel, et celui où il faut résister aux réponses simples des forums. Être en portage salarial ne définit pas automatiquement ta résidence fiscale : le statut social (salarié d'une société française) et la résidence fiscale (où tu es imposable) sont deux questions indépendantes, tranchées par des critères différents. Si tu passes la majorité de l'année au Vietnam et que tes intérêts économiques principaux y sont, tu peux devenir résident fiscal vietnamien — même en restant salarié d'une société de portage française.</p>
     <p>Dans ce cas :</p>
     <ul>
       <li>La France n'a plus le droit d'imposer tous tes revenus (seulement les "revenus de source française" selon la convention de 1993)</li>
       <li>Tu dois remplir une déclaration de revenus au Vietnam sur tes revenus de source vietnamienne ou mondiale (selon ta situation) — consulte un expert-comptable spécialisé en expatriation pour les obligations exactes</li>
       <li>Tes cotisations sociales restent françaises même si tu n'es plus résident fiscal français</li>
     </ul>
+    <p>Le scénario inverse existe aussi, et il est plus simple : si tu alternes entre la France et le Vietnam sans dépasser les seuils (moins de la moitié de l'année au Vietnam, foyer et intérêts restés en France), tu restes résident fiscal français et rien ne change à ta déclaration. Beaucoup de portés « semi-nomades » sont dans ce cas. La bascule ne se produit pas par accident d'un jour à l'autre — mais elle se constate a posteriori si tu ne suis pas tes jours de présence. Tiens un décompte simple (un tableur suffit) dès que tes séjours au Vietnam s'allongent.</p>
     <div class="info-box">
       <strong>Lectures indispensables :</strong><br>
       → <a href="residence-fiscale-france-vietnam-183-jours">Résidence fiscale et règle des 183 jours</a><br>
@@ -291,6 +310,15 @@ include 'header.php';
       <strong>Disclaimer :</strong> Cet article partage mon expérience et des informations générales, pas un conseil fiscal ou juridique personnalisé. Pour ta situation précise, consulte un expert-comptable ou un avocat fiscaliste spécialisé en expatriation.
     </div>
 
+    <h2 id="section-erreurs">Les erreurs fréquentes des portés expatriés</h2>
+    <ul>
+      <li><strong>Choisir sa société uniquement au taux de frais</strong> : 2 points de frais d'écart pèsent moins qu'un salaire versé avec un mois de retard ou un support injoignable à 6 h de décalage horaire. Compare le service, pas seulement le pourcentage.</li>
+      <li><strong>Ne pas dire qu'on vit au Vietnam</strong> : cacher sa localisation à sa société de portage est le meilleur moyen de créer un litige (adresse fiscale du bulletin, obligations déclaratives). Les sociétés qui acceptent les portés à l'étranger existent — autant jouer cartes sur table.</li>
+      <li><strong>Confondre salaire net et net d'impôt</strong> : le prélèvement à la source s'applique selon ta situation fiscale, qui change justement avec l'expatriation. Le « net » de la simulation n'est pas forcément ce qui reste après impôts.</li>
+      <li><strong>Ignorer les frais professionnels</strong> : c'est le principal levier d'optimisation légale du portage, et beaucoup de portés ne l'utilisent jamais.</li>
+      <li><strong>Laisser la résidence fiscale au hasard</strong> : passer 200 jours par an au Vietnam sans jamais se poser la question, c'est s'exposer à une régularisation des deux côtés. Le sujet se traite en amont, pas en réaction.</li>
+    </ul>
+
     <h2 id="section-faq">Questions fréquentes</h2>
     <?php foreach ($page_faq as $faq): ?>
     <div class="faq-item">
@@ -302,8 +330,8 @@ include 'header.php';
     <div class="cta-newsletter">
       <h3>Reçois mes prochains articles</h3>
       <p>📥 <strong>Guide PDF + 3 modèles de lettres offerts</strong> dès l'inscription. Un email par mois, désinscription en 1 clic.</p>
-      <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
-        <input type="hidden" name="_next" value="<?= SITE_URL ?>/merci-guide">
+      <form class="cta-form" action="<?= SITE_URL ?>/subscribe-pack" method="POST">
+        <input type="text" name="website" value="" style="position:absolute;left:-9999px" tabindex="-1" autocomplete="off" aria-hidden="true">
         <input type="email" name="email" placeholder="Ton adresse email" required>
         <button type="submit">S'inscrire</button>
       </form>
