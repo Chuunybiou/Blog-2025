@@ -24,7 +24,11 @@ $page_faq = [
   ['q' => 'La thẻ tạm trú remplace-t-elle le visa ?',
    'a' => 'Elle remplace le visa pour la durée de sa validité. Tu n\'as plus besoin de visa pour entrer et sortir du Vietnam tant que ta carte est valide. Elle fonctionne comme un titre de séjour multi-entrées.'],
   ['q' => 'Peut-on travailler avec une thẻ tạm trú obtenue pour motif conjugal ?',
-   'a' => 'Non directement. La thẻ tạm trú pour motif conjugal (TT) autorise la résidence mais pas le travail. Pour travailler légalement, il faut en plus obtenir un permis de travail ou être exempté (dirigeant d\'entreprise, expert, etc.).'],
+   'a' => 'Non directement. La thẻ tạm trú pour motif conjugal (TT) autorise la résidence mais pas le travail. Pour travailler légalement, il faut en plus obtenir un permis de travail — ou faire valoir l\'exemption de permis prévue par le Code du travail pour les étrangers mariés à un(e) Vietnamien(ne) et résidant au Vietnam, qui demande une confirmation administrative mais dispense du parcours complet.'],
+  ['q' => 'Que devient la carte TT en cas de divorce ?',
+   'a' => 'La carte TT repose sur le lien de mariage : si celui-ci disparaît, le fondement du titre disparaît avec lui. La carte n\'est pas annulée du jour au lendemain, mais elle ne sera pas renouvelée sur ce motif, et il faut préparer une transition vers un autre statut (travail, investissement) ou un départ ordonné. Si tu es dans cette situation, prends conseil rapidement — la pire option est de laisser expirer sans plan.'],
+  ['q' => 'Peut-on voyager librement hors du Vietnam avec la thẻ tạm trú ?',
+   'a' => 'Oui, c\'est l\'un de ses grands avantages : la carte vaut autorisation d\'entrées et de sorties multiples pendant toute sa validité. Tu pars en France ou en voyage dans la région et tu rentres au Vietnam sans visa ni formalité — présente simplement passeport et carte à l\'immigration. Vérifie seulement que ton passeport reste valide plus longtemps que la carte.'],
 ];
 include '_article-css.php';
 include 'header.php';
@@ -44,7 +48,7 @@ include 'header.php';
     <div class="article-hero-meta">
       <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
       <span>📅 15 février 2026</span>
-      <span>⏱ 8 min de lecture</span>
+      <span>⏱ 12 min de lecture</span>
     </div>
   </div>
 </header>
@@ -61,6 +65,7 @@ include 'header.php';
       <li><a href="#section-6">La résidence permanente (thẻ thường trú)</a></li>
       <li><a href="#section-7">L'enregistrement de séjour (sổ tạm trú)</a></li>
       <li><a href="#section-8">Problèmes courants et solutions</a></li>
+      <li><a href="#section-vie">Ce que la carte change au quotidien</a></li>
       <li><a href="#section-faq">Questions fréquentes</a></li>
     </ol>
     <div class="toc-share">
@@ -78,15 +83,17 @@ include 'header.php';
       <strong>⚠️ Avertissement :</strong> Cet article est fourni à titre informatif uniquement et ne constitue pas un conseil juridique ou administratif professionnel. Les procédures et conditions peuvent évoluer. Vérifiez les exigences actuelles auprès du Département de l'Immigration du Vietnam (Cục Quản lý xuất nhập cảnh) avant d'entreprendre ces démarches.
     </div>
 
-    <p><strong>La carte de résidence temporaire est le sésame de l'expatrié au Vietnam.</strong> Elle remplace les allers-retours aux frontières, simplifie l'ouverture d'un compte bancaire, l'obtention d'un permis de conduire et les démarches administratives au quotidien. Voici comment l'obtenir selon la Loi sur l'entrée, la sortie, le transit et la résidence des étrangers (Loi n°51/2019/QH14).</p>
+    <p><strong>La carte de résidence temporaire est le sésame de l'expatrié au Vietnam.</strong> Elle remplace les allers-retours aux frontières, simplifie l'ouverture d'un compte bancaire, l'obtention d'un permis de conduire et les démarches administratives au quotidien. Voici comment l'obtenir selon la Loi sur l'entrée, la sortie, le transit et la résidence des étrangers (Loi n°51/2019/QH14) — qui peut y prétendre, avec quels documents, ce qu'elle change concrètement une fois en poche, et la marche suivante vers la résidence permanente.</p>
 
     <img class="article-photo" src="assets/img/village-enfant-velo-montagne-vietnam.jpg" alt="Enfant à vélo dans un village de montagne au Vietnam — vie quotidienne et résidence" width="1200" height="675" loading="lazy">
 
     <h2 id="section-1">Qu'est-ce que la thẻ tạm trú ?</h2>
-    <p>La <em>thẻ tạm trú</em> (carte de résidence temporaire) est un titre de séjour délivré aux étrangers résidant légalement au Vietnam pour une durée déterminée. Elle est distincte du visa (qui autorise l'entrée) et de la <em>thẻ thường trú</em> (résidence permanente, réservée aux étrangers mariant un(e) ressortissant(e) vietnamien(ne) ou après 3 ans de résidence temporaire continue).</p>
+    <p>La <em>thẻ tạm trú</em> (carte de résidence temporaire) est un titre de séjour délivré aux étrangers résidant légalement au Vietnam pour une durée déterminée. On la désigne souvent par son sigle anglais <strong>TRC</strong> (Temporary Residence Card) dans les groupes d'expatriés — c'est le même objet. Elle est distincte du visa (qui autorise l'entrée) et de la <em>thẻ thường trú</em> (résidence permanente, réservée aux étrangers mariant un(e) ressortissant(e) vietnamien(ne) ou après 3 ans de résidence temporaire continue).</p>
     <p>La thẻ tạm trú est valable de 1 à 5 ans selon le motif, et peut être renouvelée indéfiniment tant que la situation justificative existe. Elle est délivrée par le Département de l'Immigration (Cục Quản lý xuất nhập cảnh) ou les commissariats de police provinciaux.</p>
+    <p>Pour situer la carte dans la hiérarchie des statuts : le <strong>visa</strong> autorise l'entrée et un séjour limité ; la <strong>thẻ tạm trú</strong> installe une résidence de moyen terme sans renouvellements incessants ; la <strong>thẻ thường trú</strong> (permanente) supprime toute échéance. La logique du parcours d'un expatrié installé est de monter cet escalier au rythme de sa situation : visa d'abord (l'entrée), carte temporaire dès que le motif existe (mariage, travail, investissement), permanente quand les années de résidence le permettent. Chaque marche réduit la charge administrative et augmente la stabilité — et le point de départ de tout ça est expliqué dans le <a href="visa-vietnam-francais-guide-2026">guide des visas</a>.</p>
 
     <h2 id="section-2">Qui peut l'obtenir et pour quel motif ?</h2>
+    <p>Le principe : la carte suit toujours un <strong>motif de résidence</strong> reconnu par la loi — on n'obtient jamais une TRC « pour convenance ». Les grands motifs et leurs symboles :</p>
     <table class="comparison-table">
       <thead><tr><th>Motif</th><th>Symbole</th><th>Durée max</th></tr></thead>
       <tbody>
@@ -100,7 +107,7 @@ include 'header.php';
     </table>
 
     <h2 id="section-3">Documents requis</h2>
-    <p>Les documents varient selon le motif. Voici la liste pour les cas les plus courants :</p>
+    <p>Les documents varient selon le motif. Deux règles transversales avant les listes : tout document étranger doit être légalisé ou apostillé puis traduit en vietnamien par un bureau agréé, et le passeport doit avoir une validité confortable (la durée de la carte ne dépassera jamais celle du passeport). Voici la liste pour les cas les plus courants :</p>
     <div class="info-box">
       <strong>📋 Pour motif travail (LĐ) :</strong>
       Formulaire NA6 (demande de résidence temporaire) — Passeport valide au moins 12 mois — Permis de travail valide — Contrat de travail — 2 photos 4x6 cm fond blanc — Frais de dossier (~135 000 VND).
@@ -118,22 +125,24 @@ include 'header.php';
       <li><strong>Récupérer le récépissé</strong> indiquant la date de retrait</li>
       <li><strong>Récupérer la carte</strong> dans un délai de 5 à 15 jours ouvrés</li>
     </ol>
+    <p>Détails de terrain qui font gagner un aller-retour : présente-toi tôt le matin (les files s'allongent vite), apporte des copies de tout en plus des originaux, et prévois que le formulaire NA6 soit rempli en vietnamien — c'est ici que la présence de ton/ta conjoint(e) ou d'un accompagnant vietnamien transforme une matinée de stress en formalité. Note aussi que pour un dossier au motif familial (TT), c'est souvent le membre de famille vietnamien qui figure comme « garant » de la demande : sa présence au dépôt n'est pas une simple politesse, elle peut être requise.</p>
 
     <div class="tip-box">
       <strong>💡 Conseil pratique :</strong>
-      Il est courant et légal de faire appel à une agence de services visa/immigration à Hanoï pour constituer le dossier. Compte 500 000 à 1 500 000 VND selon l'agence, mais tu économises du temps et évites les erreurs de formulaire.
+      Il est courant et légal de faire appel à une agence de services visa/immigration à Hanoï pour constituer le dossier. Compte 500 000 à 1 500 000 VND selon l'agence, mais tu économises du temps et évites les erreurs de formulaire. Pour un couple mixte dont le/la conjoint(e) parle vietnamien et a un peu de temps, le dossier en direct reste tout à fait faisable — l'agence est un confort, pas une nécessité.
     </div>
 
     <h2 id="section-5">Durée de validité et renouvellement</h2>
     <p>La thẻ tạm trú est liée à la durée de validité de ton visa ou permis de travail. Renouveler son permis de travail entraîne automatiquement le droit à renouveler sa carte de résidence. Le renouvellement se fait dans les mêmes conditions que la première demande, à soumettre <strong>au moins 30 jours avant l'expiration</strong>.</p>
+    <p>Deux contraintes de durée méconnues : la carte ne peut jamais être délivrée pour une durée supérieure à la validité restante de ton <strong>passeport</strong> (moins une marge de sécurité) — si ton passeport expire dans 18 mois, n'espère pas une carte de 2 ans : renouvelle d'abord le passeport, puis demande la carte. Et pour le motif familial, la durée délivrée dépend de l'appréciation du service selon les pièces : les premiers dossiers reçoivent parfois une durée courte, allongée aux renouvellements suivants quand l'historique de résidence s'est construit.</p>
 
     <div class="warning-box">
       <strong>⚠️ Séjour illégal :</strong>
-      Dépasser la date d'expiration de ta thẻ tạm trú sans renouvellement entraîne une amende de 3 000 000 à 5 000 000 VND et peut conduire à une interdiction de retour au Vietnam de 6 à 12 mois. Ne prends pas ce risque.
+      Dépasser la date d'expiration de ta thẻ tạm trú sans renouvellement entraîne une amende de 3 000 000 à 5 000 000 VND et peut conduire à une interdiction de retour au Vietnam de 6 à 12 mois. Ne prends pas ce risque : une double alarme (60 jours et 45 jours avant l'échéance) est la police d'assurance la moins chère du monde.
     </div>
 
     <h2 id="section-6">La thẻ thường trú : vers la résidence permanente</h2>
-    <p>La <em>thẻ thường trú</em> (carte de résidence permanente) est le niveau supérieur à la résidence temporaire. Elle est accordée sans limite de durée et offre un statut quasi-équivalent à la nationalité vietnamienne pour les droits de résidence. Conditions d'éligibilité selon Loi n°51/2019/QH14, article 39 :</p>
+    <p>La <em>thẻ thường trú</em> (carte de résidence permanente) est le niveau supérieur à la résidence temporaire. Elle est accordée sans limite de durée et offre un statut quasi-équivalent à la nationalité vietnamienne pour les droits de résidence — c'est l'horizon naturel du conjoint de Vietnamien(ne) installé pour de bon, et l'aboutissement du parcours décrit dans notre <a href="visa-tt-carte-residence-trc-mariage">guide TT/TRC des couples mixtes</a>. Conditions d'éligibilité selon Loi n°51/2019/QH14, article 39 :</p>
     <ul>
       <li><strong>Mariage avec un(e) ressortissant(e) vietnamien(ne)</strong> : après 3 ans de résidence temporaire continue comme conjoint (motif TT) et présentation d'une demande formelle au Département de l'Immigration</li>
       <li><strong>Résidence continue de 3 ans</strong> dans le cadre d'une thẻ tạm trú renouvelée sans interruption — réservé aux investisseurs et experts internationaux reconnus par décision ministérielle</li>
@@ -143,42 +152,49 @@ include 'header.php';
       <strong>📋 Procédure pour les conjoints de Vietnamiens :</strong>
       La demande de thẻ thường trú exige : 3 ans de TT consécutifs, attestation de vie commune, casier judiciaire vierge, ressources minimales suffisantes. La demande se dépose au Département de l'Immigration provincial avec le dossier complet. Délai de traitement : 15 à 30 jours ouvrés.
     </div>
+    <p>Faut-il viser la permanente dès que possible ? Pour un couple mixte installé durablement, oui, sans hésiter : fini les renouvellements, un statut détaché des aléas (le titre ne dépend plus de la validité d'un permis de travail ou d'un dossier annuel), et une vraie sérénité de long terme. Le seul « coût » est la constance : trois ans de résidence temporaire propre, sans rupture — raison de plus pour soigner chaque renouvellement dès aujourd'hui.</p>
 
     <h2 id="section-7">Le sổ tạm trú : l'enregistrement de séjour obligatoire</h2>
-    <p>Le <em>sổ tạm trú</em> (livret d'enregistrement de séjour temporaire) est une obligation légale distincte de la thẻ tạm trú. Tout étranger résidant au Vietnam doit s'enregistrer auprès du commissariat de police local (công an phường) dans les <strong>24 heures suivant son arrivée</strong> dans un logement.</p>
+    <p>Le <em>sổ tạm trú</em> (livret d'enregistrement de séjour temporaire) est une obligation légale distincte de la thẻ tạm trú. Tout étranger résidant au Vietnam doit s'enregistrer auprès du commissariat de police local (công an phường) dans les <strong>24 heures suivant son arrivée</strong> dans un logement — et à nouveau à chaque changement d'adresse, y compris pour quelques nuits chez la belle-famille dans une autre province lors du Tết.</p>
     <p>Dans les hôtels et résidences hôtelières, c'est l'établissement qui effectue automatiquement cet enregistrement via le système VNPAS (Vietnam Police Admission System). Dans un appartement personnel ou loué, c'est normalement au propriétaire de faire la déclaration auprès du công an.</p>
     <div class="warning-box">
       <strong>⚠️ Responsabilité du propriétaire :</strong>
       Légalement, c'est le bailleur qui est responsable de l'enregistrement. Mais en pratique, beaucoup oublient. Vérifie avec ton propriétaire que cette déclaration a bien été faite — en cas de contrôle, l'amende peut atteindre 1 500 000 à 3 000 000 VND, et elle peut concerner le locataire comme le propriétaire.
     </div>
-    <p>Depuis 2023, le Vietnam dématérialise progressivement ce système via l'application VNEID et le portail dichvucong.gov.vn. Mais pour les étrangers non titulaires d'un numéro d'identité vietnamien, la démarche en commissariat reste la voie standard.</p>
+    <p>Depuis 2023, le Vietnam dématérialise progressivement ce système via l'application VNEID et le portail dichvucong.gov.vn. Mais pour les étrangers non titulaires d'un numéro d'identité vietnamien, la démarche en commissariat reste la voie standard. Ne confonds donc pas les deux objets : la <strong>thẻ tạm trú</strong> est ton titre de séjour (qui tu es, pourquoi tu restes) ; l'<strong>enregistrement de séjour</strong> dit où tu dors cette nuit. Avoir l'un ne dispense jamais de l'autre — et c'est l'enregistrement, pas la carte, qui est vérifié lors d'un contrôle au domicile.</p>
 
     <h2 id="section-8">Problèmes courants et comment les éviter</h2>
-    <p>Ces erreurs reviennent régulièrement dans les communautés d'expatriés :</p>
+    <p>Ces erreurs reviennent régulièrement dans les communautés d'expatriés — chacune a son antidote simple :</p>
     <ul>
       <li><strong>Oubli de renouvellement</strong> : la thẻ tạm trú expire silencieusement. Mets une alarme 45 jours avant l'expiration. Le processus prend 10 à 15 jours ouvrés et peut s'allonger en période de Tết ou si un document manque.</li>
       <li><strong>Passeport renouvelé sans mettre à jour la carte</strong> : ta thẻ est liée à ton numéro de passeport. Si tu renouvelles ton passeport français au consulat, tu dois présenter l'ancien et le nouveau passeport au Département de l'Immigration pour mise à jour.</li>
       <li><strong>Changement d'adresse non déclaré</strong> : si tu déménages, le sổ tạm trú doit être mis à jour avec la nouvelle adresse. En pratique peu de résidents le font, mais c'est une obligation légale.</li>
       <li><strong>Traduction non assermentée</strong> : l'acte de mariage doit être traduit en vietnamien par un bureau agréé par le Ministère de la Justice vietnamien. Une traduction par une agence ordinaire sera refusée au guichet.</li>
+      <li><strong>Un dossier de première demande incomplet côté mariage</strong> : pour le motif TT, le mariage doit être pleinement reconnu au Vietnam (mariage local, ou mariage français enregistré côté vietnamien). Un acte français seul, jamais enregistré au Vietnam, ne fonde pas la demande — remets cette brique en place d'abord.</li>
     </ul>
     <div class="tip-box">
       <strong>Agences de services à Hanoï :</strong>
-      Des agences spécialisées (Immigration Services Hanoi, Visa On Time, etc.) proposent de gérer l'intégralité du dossier pour 500 000 à 2 000 000 VND selon la complexité. Pour un premier dossier ou un renouvellement avec changement de statut, le gain de temps vaut largement ce coût.
+      Des agences spécialisées (Immigration Services Hanoi, Visa On Time, etc.) proposent de gérer l'intégralité du dossier pour 500 000 à 2 000 000 VND selon la complexité. Pour un premier dossier ou un renouvellement avec changement de statut, le gain de temps vaut largement ce coût. Choisis une agence établie avec pignon sur rue et paiement contre reçu — et fuis quiconque promet d'obtenir une carte « sans les conditions » : ces raccourcis n'existent pas légalement.
     </div>
 
+    <h2 id="section-vie">Ce que la carte change au quotidien</h2>
+    <p>Au-delà du droit au séjour, la thẻ tạm trú est la clé qui déverrouille la vie administrative vietnamienne. Concrètement, elle permet ou simplifie :</p>
+    <ul>
+      <li><strong>L'ouverture d'un vrai compte bancaire local</strong> avec l'écosystème complet (application, virements, QR codes) — voir <a href="banque-vietnam-francais">le guide banque</a></li>
+      <li><strong>La conversion du permis de conduire français</strong>, impossible sans statut de résident — voir <a href="permis-conduire-vietnam">le guide permis</a></li>
+      <li><strong>Les contrats à ton nom</strong> : fibre internet, forfait mobile en abonnement, bail enregistré</li>
+      <li><strong>Les voyages sans stress</strong> : entrées et sorties illimitées pendant la validité, fini les e-visas à répétition et le décompte des jours</li>
+      <li><strong>La crédibilité administrative générale</strong> : face à n'importe quel guichet vietnamien, la carte fait de toi un résident identifiable plutôt qu'un touriste de passage — et ça change le ton de bien des démarches</li>
+    </ul>
+    <p>C'est pour ça que le conseil revient dans tous nos guides : dès que ta situation ouvre droit à la carte (mariage, contrat de travail, investissement), fais-la. Le coût et l'effort du dossier sont sans commune mesure avec le confort gagné.</p>
+
     <h2 id="section-faq">Questions fréquentes</h2>
+    <?php foreach ($page_faq as $faq): ?>
     <div class="faq-item">
-      <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Peut-on obtenir la thẻ tạm trú sans permis de travail ? <span class="faq-arrow">▼</span></button>
-      <div class="faq-answer">Oui, si tu es conjoint(e) ou enfant d'un(e) ressortissant(e) vietnamien(ne), étudiant(e) inscrit(e) dans un établissement au Vietnam, ou investisseur. Sans ces motifs, le permis de travail est généralement requis.</div>
+      <button class="faq-question" onclick="this.parentElement.classList.toggle('open')"><?= htmlspecialchars($faq['q']) ?> <span class="faq-arrow">▼</span></button>
+      <div class="faq-answer"><?= $faq['a'] ?></div>
     </div>
-    <div class="faq-item">
-      <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">La thẻ tạm trú remplace-t-elle le visa ? <span class="faq-arrow">▼</span></button>
-      <div class="faq-answer">Elle remplace le visa pour la durée de sa validité. Tu n'as plus besoin de visa pour entrer et sortir du Vietnam tant que ta carte est valide. Elle fonctionne comme un titre de séjour multi-entrées.</div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Peut-on travailler avec une thẻ tạm trú obtenue pour motif conjugal ? <span class="faq-arrow">▼</span></button>
-      <div class="faq-answer">Non directement. La thẻ tạm trú pour motif conjugal (TT) autorise la résidence mais pas le travail. Pour travailler légalement, il faut en plus obtenir un permis de travail ou être exempté (dirigeant d'entreprise, expert, etc.).</div>
-    </div>
+    <?php endforeach; ?>
 
     <?php
 $author_bio = <<<'BIO'
@@ -190,8 +206,8 @@ include '_author-box.php';
     <div class="cta-newsletter">
       <h3>Reçois les prochains guides</h3>
       <p>📥 <strong>Guide PDF + 3 modèles de lettres offerts</strong> dès l'inscription. Un email par mois, désinscription en 1 clic.</p>
-      <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
-        <input type="hidden" name="_next" value="<?= SITE_URL ?>/merci-guide">
+      <form class="cta-form" action="<?= SITE_URL ?>/subscribe-pack" method="POST">
+        <input type="text" name="website" value="" style="position:absolute;left:-9999px" tabindex="-1" autocomplete="off" aria-hidden="true">
         <input type="email" name="email" placeholder="ton@email.com" required>
         <button type="submit">S'inscrire</button>
       </form>

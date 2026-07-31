@@ -42,6 +42,10 @@ $page_faq = [
    'a' => 'Depuis la loi PACTE (2019), un PEA existant peut être conservé sans clôture obligatoire lors d\'une expatriation. Mais les conditions varient : certaines banques appliquent des restrictions, les nouveaux versements peuvent être bloqués, et le traitement fiscal dépend de votre pays de résidence. Ce point mérite une vérification avec un conseiller fiscal spécialisé en expatriation avant votre départ — pas après.'],
   ['q' => 'Comment transférer de l\'argent de Fortuneo vers un compte au Vietnam ou au Canada ?',
    'a' => 'Via virement SEPA (gratuit vers un compte Wise en euros), puis conversion dans Wise vers VND ou CAD. C\'est la méthode la plus économique. Un virement international direct depuis Fortuneo vers une banque vietnamienne est possible mais plus coûteux.'],
+  ['q' => 'Puis-je garder mon Livret A en partant au Vietnam ?',
+   'a' => 'Oui : le Livret A peut être conservé par un non-résident fiscal français. Le LEP (Livret d\'Épargne Populaire), en revanche, est strictement réservé aux résidents fiscaux et doit être clôturé lors du départ. Les intérêts du Livret A restent exonérés côté français, mais si tu deviens résident fiscal vietnamien, ils entrent en principe dans tes revenus mondiaux à déclarer au Vietnam — un point à valider selon ta situation.'],
+  ['q' => 'Et mon assurance-vie française ?',
+   'a' => 'L\'assurance-vie se conserve très bien en expatriation, et elle reste souvent le meilleur véhicule d\'épargne longue durée de l\'expatrié : contrairement au PEA, les versements demeurent généralement possibles en tant que non-résident. Ce qui change, c\'est la fiscalité des rachats, qui dépend de la convention fiscale entre la France et ton pays de résidence — un sujet à cartographier avant tout retrait important, pas un obstacle à la détention.'],
 ];
 
 $page_extra_head = '
@@ -67,7 +71,7 @@ include 'header.php';
     <div class="article-hero-meta">
       <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
       <span>📅 6 juin 2026</span>
-      <span>⏱ 6 min de lecture</span>
+      <span>⏱ 12 min de lecture</span>
       <span>Mis &agrave; jour : Juin 2026</span>
     </div>
   </div>
@@ -83,6 +87,8 @@ include 'header.php';
       <li><a href="#section-3">Ce qui reste accessible depuis l'étranger</a></li>
       <li><a href="#section-4">La question du PEA</a></li>
       <li><a href="#section-5">Avant de partir : la checklist</a></li>
+      <li><a href="#section-residence">Résidence fiscale et transparence bancaire</a></li>
+      <li><a href="#section-epargne">Livrets, assurance-vie : produit par produit</a></li>
       <li><a href="#section-6">Code parrainage 13036009</a></li>
       <li><a href="#section-faq">Questions fréquentes</a></li>
     </ol>
@@ -93,7 +99,7 @@ include 'header.php';
     <!-- INTRO -->
     <p>J'ai un compte Fortuneo. Quand j'ai commencé à préparer mon installation à l'étranger, l'une des premières questions que je me suis posée était : <strong>qu'est-ce que je garde côté France, et qu'est-ce que je ferme ?</strong></p>
 
-    <p>La réponse n'est pas simple — et les banques en ligne ne la rendent pas toujours claire. Cet article résume ce que j'ai compris sur Fortuneo et l'expatriation : ce qui reste accessible, ce qui peut être bloqué, et surtout ce qu'il faut vérifier <em>avant</em> de partir plutôt qu'après.</p>
+    <p>La réponse n'est pas simple — et les banques en ligne ne la rendent pas toujours claire. Cet article résume ce que j'ai compris sur Fortuneo et l'expatriation : ce qui reste accessible, ce qui peut être bloqué, le sort de chaque produit d'épargne (PEA, livrets, assurance-vie), la question de la résidence fiscale que personne n'aime poser, et surtout ce qu'il faut vérifier <em>avant</em> de partir plutôt qu'après.</p>
 
     <div class="info-box">
       <strong>📋 Deux profils concernés par cet article :</strong><br>
@@ -115,11 +121,12 @@ include 'header.php';
     </ul>
 
     <p>Parmi les banques en ligne françaises, Fortuneo revient souvent dans les discussions d'expatriés — notamment pour sa carte sans frais de change et ses frais de gestion nuls sous conditions.</p>
+    <p>Le contre-exemple qui justifie tout ça : l'expatrié qui clôture tout en partant « pour faire propre », puis découvre qu'il a besoin d'un RIB français pour percevoir un remboursement de la Sécu, régler un reliquat d'impôts ou toucher le loyer de son studio loué — et qu'ouvrir un compte depuis Hanoï sans adresse française relève du parcours du combattant. Fermer un compte français gratuit ne rapporte rien ; le garder ne coûte rien. L'asymétrie se passe de commentaire.</p>
 
     <!-- H2 #2 -->
     <h2 id="section-2">Ce que Fortuneo propose</h2>
 
-    <p>Fortuneo est une banque en ligne française du groupe Crédit Mutuel Arkéa. Ce n'est pas une néobanque : c'est un établissement bancaire complet, avec IBAN français, garantie des dépôts jusqu'à 100 000€, et accès aux marchés financiers.</p>
+    <p>Fortuneo est une banque en ligne française du groupe Crédit Mutuel Arkéa. Ce n'est pas une néobanque : c'est un établissement bancaire complet, avec IBAN français, garantie des dépôts jusqu'à 100 000€, et accès aux marchés financiers. La distinction compte pour un expatrié : une néobanque à IBAN étranger se fait parfois refuser par des organismes français (certains prélèvements, certaines administrations), là où un IBAN français classique passe partout. C'est exactement le rôle qu'on demande à sa « banque de France » restée au pays.</p>
 
     <h3>Les produits principaux</h3>
 
@@ -154,7 +161,7 @@ include 'header.php';
     <!-- H2 #3 -->
     <h2 id="section-3">Ce qui reste accessible depuis l'étranger</h2>
 
-    <p>En pratique, voici ce que les expatriés rapportent sur Fortuneo depuis l'étranger :</p>
+    <p>En pratique, voici ce que les expatriés rapportent sur Fortuneo depuis l'étranger — avec la réserve d'usage : les politiques bancaires évoluent, et ton expérience individuelle dépendra de ta situation déclarée :</p>
 
     <h3>Ce qui fonctionne sans accroc</h3>
     <ul>
@@ -180,7 +187,7 @@ include 'header.php';
     <!-- H2 #4 -->
     <h2 id="section-4">La question du PEA : ce qu'il faut vérifier</h2>
 
-    <p>C'est la question la plus fréquente — et la plus délicate. Si vous avez un PEA Fortuneo, ou si vous envisagez d'en ouvrir un avant de partir, voici ce qu'il faut savoir.</p>
+    <p>C'est la question la plus fréquente — et la plus délicate. Si vous avez un PEA Fortuneo, ou si vous envisagez d'en ouvrir un avant de partir, voici ce qu'il faut savoir. Pour ceux qui découvrent : le PEA est l'enveloppe fiscale française qui exonère d'impôt les plus-values d'actions européennes après cinq ans de détention — un avantage suffisamment précieux pour mériter qu'on réfléchisse à deux fois avant de le sacrifier sur l'autel d'un déménagement.</p>
 
     <h3>Ce que la loi dit depuis 2019</h3>
     <p>Avant la <strong>loi PACTE de mai 2019</strong>, l'expatriation entraînait la clôture obligatoire du PEA. Depuis cette loi, <strong>un PEA existant peut être conservé</strong> lors d'un départ à l'étranger — sans clôture forcée.</p>
@@ -210,14 +217,31 @@ include 'header.php';
       <li><strong>Associez votre compte Fortuneo à Wise</strong> pour les virements internationaux — c'est le couple le plus efficace pour gérer des flux France ↔ étranger</li>
     </ol>
 
-    <p>Si vous n'avez pas encore de compte Fortuneo et que vous partez bientôt, <strong>ouvrir le compte avant le départ</strong> est la stratégie évidente — vous aurez une adresse française active et une situation de résident qui simplifie tout.</p>
+    <p>Si vous n'avez pas encore de compte Fortuneo et que vous partez bientôt, <strong>ouvrir le compte avant le départ</strong> est la stratégie évidente — vous aurez une adresse française active et une situation de résident qui simplifie tout. C'est un principe général de l'expatriation bancaire : tout ce qui demande le statut de résident français (ouverture de compte, carte haut de gamme, crédit, PEA, assurance-vie) s'obtient dix fois plus facilement <em>avant</em> le départ. La liste des ouvertures à faire pendant qu'on est encore résident devrait figurer sur toutes les check-lists de départ, au même rang que la résiliation du bail.</p>
+    <p>Complète le dispositif par les deux autres briques du trio de l'expatrié : <strong>Wise</strong> pour les transferts France ↔ Vietnam au taux interbancaire (<a href="transferer-argent-vietnam-wise">le guide complet</a>), et un <strong>compte vietnamien local</strong> pour la vie quotidienne sur place (<a href="banque-vietnam-francais">comment l'ouvrir</a>). Chaque brique a son rôle, aucune ne remplace les deux autres.</p>
+
+    <!-- H2 résidence -->
+    <h2 id="section-residence">Résidence fiscale et transparence bancaire : jouer franc jeu</h2>
+    <p>Un mot d'honnêteté sur la pratique de « l'adresse chez les parents ». Elle est répandue, elle fonctionne au quotidien — et il faut en comprendre les limites. Les banques participent à l'<strong>échange automatique d'informations fiscales</strong> entre pays (le standard CRS de l'OCDE) : elles collectent la résidence fiscale déclarée de leurs clients et la transmettent aux administrations. Déclarer une résidence française alors que ton centre de vie est au Vietnam, c'est fournir une information inexacte à un dispositif conçu précisément pour croiser les données.</p>
+    <p>Concrètement, les risques ne sont pas la descente de police, mais des frictions très réelles : une banque qui découvre l'incohérence peut geler des opérations le temps de clarifier, exiger des justificatifs, voire clôturer ; et côté impôts, une résidence déclarée incohérente avec ta déclaration de revenus attire l'attention plutôt qu'elle ne l'évite. La position propre : <strong>détermine sérieusement ta résidence fiscale</strong> (voir <a href="residence-fiscale-france-vietnam-183-jours">l'article 183 jours</a>), déclare-la de façon cohérente partout — banque comprise —, et choisis des établissements qui acceptent ta situation réelle plutôt que de la maquiller. Beaucoup d'expatriés restent d'ailleurs résidents fiscaux français (mission courte, foyer en France) : dans ce cas, rien à changer, et l'adresse française est simplement… vraie.</p>
+
+    <!-- H2 épargne -->
+    <h2 id="section-epargne">Livrets, assurance-vie, bourse : le sort de chaque produit</h2>
+    <ul>
+      <li><strong>Livret A</strong> : un non-résident peut le conserver (on ne peut en détenir qu'un, et il se déclare dans ton nouveau pays si celui-ci taxe les intérêts mondiaux). Le <strong>LEP</strong>, en revanche, est réservé aux résidents fiscaux français et doit être clôturé au départ.</li>
+      <li><strong>Livrets bancaires fiscalisés</strong> (comme les livrets Fortuneo) : conservables, mais la fiscalité des intérêts change avec la non-résidence — retenue à la source française et déclaration éventuelle au Vietnam selon ta situation.</li>
+      <li><strong>Assurance-vie</strong> : conservable en expatriation, et souvent le meilleur véhicule d'épargne longue de l'expatrié — la fiscalité applicable dépend de la convention fiscale du pays de résidence. Les versements restent généralement possibles, contrairement au PEA.</li>
+      <li><strong>Compte-titres ordinaire</strong> : conservable, mais certains courtiers restreignent les ordres ou l'accès à certains produits pour les non-résidents (notamment hors UE). À vérifier par écrit.</li>
+      <li><strong>PEA</strong> : voir la section dédiée — conservable, plus alimentable.</li>
+    </ul>
+    <p>Le fil conducteur : rien n'explose au départ, mais chaque produit change discrètement de régime. Une heure avec un conseiller spécialisé en mobilité internationale, avant le départ, pour passer cette liste en revue avec tes montants réels — c'est le meilleur investissement administratif de ton expatriation.</p>
 
     <!-- H2 #6 — Code parrainage -->
     <h2 id="section-6">Code parrainage Fortuneo : 13036009</h2>
 
-    <p>Si vous décidez d'ouvrir un compte Fortuneo, vous pouvez utiliser mon code parrainage. Le code donne accès à un bonus de bienvenue dont le montant varie selon les offres en cours — jusqu'à 250€ selon les périodes promotionnelles.</p>
+    <p>Si vous décidez d'ouvrir un compte Fortuneo — idéalement avant votre départ, on l'a vu —, vous pouvez utiliser mon code parrainage. Le code donne accès à un bonus de bienvenue dont le montant varie selon les offres en cours — jusqu'à 250€ selon les périodes promotionnelles. Transparence habituelle du blog : le parrainage me rapporte aussi une prime, ça ne change rien au coût pour vous, et mon avis sur la banque serait le même sans.</p>
 
-    <p><strong>Comment l'utiliser :</strong> le code se saisit <em>manuellement</em> pendant le processus d'inscription sur fortuneo.fr — il n'y a pas de lien direct qui l'applique automatiquement.</p>
+    <p><strong>Comment l'utiliser :</strong> le code se saisit <em>manuellement</em> pendant le processus d'inscription sur fortuneo.fr — il n'y a pas de lien direct qui l'applique automatiquement. Vérifie les conditions de l'offre en cours (versement initial, opérations à réaliser) sur la page officielle avant de compter sur le bonus.</p>
 
     <div style="background:linear-gradient(135deg,#fff5f3,#ffecea);border:2px solid var(--terracotta);border-radius:var(--radius);padding:1.75rem;margin:1.5rem 0">
       <div style="display:flex;align-items:flex-start;gap:1rem;flex-wrap:wrap">
@@ -273,9 +297,8 @@ include 'header.php';
     <div class="cta-newsletter" style="background:linear-gradient(135deg,#1a0a00,#3a1500);margin-top:3rem;">
       <h3>📥 Alertes admin &amp; bons plans du mois</h3>
       <p>Finances d'expat, démarches, vie en couple mixte — ce que je vis concrètement.</p>
-      <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
-        <input type="hidden" name="_next" value="<?= SITE_URL ?>/merci-guide">
-        <input type="hidden" name="_subject" value="Newsletter Cap Vietnam — fortuneo-expat">
+      <form class="cta-form" action="<?= SITE_URL ?>/subscribe-pack" method="POST">
+        <input type="text" name="website" value="" style="position:absolute;left:-9999px" tabindex="-1" autocomplete="off" aria-hidden="true">
         <input type="email" name="email" placeholder="ton@email.com" required>
         <button type="submit" style="background:var(--terracotta);color:#fff;">S'inscrire</button>
       </form>

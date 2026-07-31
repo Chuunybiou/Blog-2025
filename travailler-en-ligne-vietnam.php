@@ -35,6 +35,10 @@ $page_faq = [
    'a' => 'Oui, aucun contrôle n\'existe pour ce type d\'usage. Les autorités vietnamiennes ne surveillent pas les cafés pour repérer des nomades digitaux étrangers. La préoccupation légale est plutôt fiscale (dans ton pays d\'origine) que policière (au Vietnam).'],
   ['q' => 'Peut-on créer une société au Vietnam pour travailler légalement ?',
    'a' => 'Oui. Un étranger peut créer une société à responsabilité limitée (SARL - Công ty TNHH) au Vietnam avec 100% de capital étranger. Cela permet d\'obtenir un permis de travail, de facturer des clients vietnamiens et d\'employer du personnel local. Le capital minimum recommandé est d\'environ 10 000 USD selon l\'activité.'],
+  ['q' => 'Quel est le décalage horaire entre le Vietnam et la France ?',
+   'a' => 'Le Vietnam est à UTC+7 toute l\'année (pas de changement d\'heure) : +6 heures sur la France en hiver, +5 heures en été. Quand il est 9h à Paris, il est 15h ou 16h à Hanoï. Pour un télétravailleur, cela signifie des matinées vietnamiennes sans sollicitations françaises, et une fenêtre de réunions l\'après-midi — une organisation très vivable une fois les limites posées.'],
+  ['q' => 'Faut-il apporter son matériel informatique ou acheter sur place ?',
+   'a' => 'Apporte ton ordinateur principal : tu connais son clavier (AZERTY introuvable au Vietnam, où le QWERTY règne) et tu évites toute friction de garantie. Sur place, tout le reste s\'achète très bien — écrans, périphériques, accessoires — dans les grandes enseignes d\'électronique des villes, à des prix corrects. Vérifie simplement que tes appareils supportent le 220V (standard vietnamien, comme en France) et prévois des adaptateurs pour les prises plates rencontrées ici et là.'],
 ];
 include '_article-css.php';
 include 'header.php';
@@ -54,7 +58,7 @@ include 'header.php';
     <div class="article-hero-meta">
       <span>Par <a href="a-propos-capvietnam" style="color:inherit;text-decoration:none"><strong>Anthony Bouillon</strong></a></span>
       <span>📅 15 mars 2026</span>
-      <span>⏱ 9 min de lecture</span>
+      <span>⏱ 12 min de lecture</span>
     </div>
   </div>
 </header>
@@ -71,6 +75,8 @@ include 'header.php';
       <li><a href="#section-6">Protection sociale et retraite</a></li>
       <li><a href="#section-7">Plateformes freelance francophones</a></li>
       <li><a href="#section-8">Gérer ses revenus multi-pays</a></li>
+      <li><a href="#section-fuseau">Travailler avec le décalage horaire</a></li>
+      <li><a href="#section-erreurs">Les erreurs fréquentes</a></li>
       <li><a href="#section-faq">Questions fréquentes</a></li>
     </ol>
     <div class="toc-share">
@@ -83,12 +89,12 @@ include 'header.php';
   </aside>
 
   <main class="article-content">
-    <p><strong>Hanoï est devenu un hub pour les nomades digitaux francophones.</strong> Internet rapide, coût de vie bas, vie sociale riche — mais la situation légale pour travailler à distance depuis le Vietnam est floue. Voici ce que dit réellement la loi, et comment naviguer intelligemment.</p>
+    <p><strong>Hanoï est devenu un hub pour les nomades digitaux francophones.</strong> Internet rapide, coût de vie bas, vie sociale riche — mais la situation légale pour travailler à distance depuis le Vietnam est floue. Voici ce que dit réellement la loi, comment gérer la fiscalité et la protection sociale (les deux vrais sujets), où travailler au quotidien, et comment tirer parti du décalage horaire au lieu de le subir.</p>
 
     <img class="article-photo" src="https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=1200&q=80" alt="Télétravail depuis un café à Hanoï" width="1200" height="675" loading="lazy">
 
     <h2 id="section-1">La situation légale pour les nomades digitaux</h2>
-    <p>Il n'existe pas (en 2026) de visa "nomade digital" au Vietnam. La réglementation vietnamienne (Loi sur l'entrée et la résidence n°51/2019/QH14) ne reconnaît pas formellement le statut de nomade digital.</p>
+    <p>Il n'existe pas (en 2026) de visa "nomade digital" au Vietnam. La réglementation vietnamienne (Loi sur l'entrée et la résidence n°51/2019/QH14) ne reconnaît pas formellement le statut de nomade digital — contrairement à la Thaïlande, l'Indonésie ou la Malaisie qui ont créé des programmes dédiés. Le Vietnam attire pourtant massivement cette population, sur ses seuls arguments de fond : coût de vie, fibre, sécurité, qualité de vie.</p>
     <p>Dans les faits, deux situations coexistent :</p>
     <ul>
       <li><strong>Travail pour un employeur étranger</strong> (France, Canada, etc.) depuis le Vietnam : légalement, tu travailles pour une entité étrangère et ton revenu est généré hors Vietnam. Tu n'exerces pas d'activité économique vietnamienne. C'est la situation la plus courante et la moins risquée.</li>
@@ -114,25 +120,29 @@ include 'header.php';
       <strong>💡 La bonne démarche :</strong>
       Consulte un expert-comptable spécialisé en fiscalité internationale avant de passer plus de 6 mois au Vietnam. Les règles évoluent et une situation non clarifiée peut créer des arriérés d'impôts des deux côtés.
     </div>
+    <p>En attendant ce rendez-vous, un geste simple qui coûte zéro : <strong>tiens le décompte de tes jours de présence</strong> dans chaque pays (un tableur, ou simplement tes tampons de passeport photographiés). C'est LA donnée de base de toute analyse de résidence fiscale, et celle que personne n'a sous la main quand la question devient sérieuse. Les deux articles compagnons pour creuser : <a href="residence-fiscale-france-vietnam-183-jours">la règle des 183 jours</a> et <a href="declarer-impots-france-depuis-vietnam">déclarer ses impôts français depuis le Vietnam</a>.</p>
 
     <h2 id="section-4">La connexion Internet à Hanoï</h2>
-    <p>Hanoï a une des meilleures infrastructures Internet d'Asie du Sud-Est. Les débits fibre domestiques atteignent couramment 100 à 500 Mb/s pour 150 000 à 400 000 VND/mois. Les quatre opérateurs principaux (Viettel, VNPT, FPT, CMC) couvrent 95% de la ville avec de la fibre optique.</p>
+    <p>Hanoï a une des meilleures infrastructures Internet d'Asie du Sud-Est — et c'est un point que les nouveaux arrivants sous-estiment systématiquement, en imaginant un pays « en développement » côté réseau. La réalité : les débits fibre domestiques atteignent couramment 100 à 500 Mb/s pour 150 000 à 400 000 VND/mois, soit une fraction du prix français. Les quatre opérateurs principaux (Viettel, VNPT, FPT, CMC) couvrent 95% de la ville avec de la fibre optique.</p>
     <ul>
       <li>4G mobile : excellent partout à Hanoï, 30 à 70 000 VND/mois pour données illimitées</li>
       <li>Coupures : rares dans les quartiers centraux, plus fréquentes lors des typhons</li>
       <li>VPN : recommandé pour accéder à certains services (quelques sites internationaux peuvent être lents sans VPN)</li>
     </ul>
+    <p>Le kit de continuité du professionnel : une <strong>SIM data en secours</strong> du partage de connexion (opérateur différent de ta fibre, pour ne pas tomber avec elle), une batterie externe capable de tenir un appel visio, et le repérage du café à fibre le plus proche pour les jours de coupure. Avec ce trio à quelques dizaines d'euros, tu peux promettre à tes clients une disponibilité que bien des télétravailleurs français ne tiennent pas. Détail des forfaits et opérateurs dans le <a href="sim-internet-applications-vietnam">guide SIM et internet</a>.</p>
 
     <h2 id="section-5">Les meilleurs espaces de travail</h2>
     <ul>
       <li><strong>Toong Coworking</strong> (plusieurs adresses à Hanoï) : espaces professionnels, salles de réunion, abonnements flexibles (200 000 VND/jour, 2 M VND/mois)</li>
       <li><strong>Kafé</strong> (Tây Hồ) : café spécialisé nomades digitaux, WiFi solide, ambiance internationale</li>
       <li><strong>The Coffee House, Highland Coffee</strong> : cafés de chaîne avec WiFi fiable et prises électriques — idéal pour 2 à 3 heures de travail</li>
+      <li><strong>Le café vietnamien de quartier</strong> : l'option sous-cotée — WiFi correct, cà phê à prix local, et personne ne te presse de partir. La culture du café-où-l'on-reste-des-heures est vietnamienne avant d'être nomade</li>
     </ul>
+    <p>Le bon mix dépend de ton métier : les appels visio à répétition réclament le calme d'un coworking ou du bureau à domicile (la fibre résidentielle est excellente), le travail de production s'accommode parfaitement des cafés. Beaucoup alternent : maison le matin, café l'après-midi — la variété fait partie de l'hygiène mentale du travail à distance.</p>
     <p>Voir aussi notre <a href="cafes-coworkings-hanoi">guide complet des cafés et coworkings à Hanoï</a>.</p>
 
     <h2 id="section-6">Protection sociale et retraite du nomade digital</h2>
-    <p>C'est le point aveugle de beaucoup de nomades digitaux installés au Vietnam. En quittant la France sans situation employeur active, tu perds progressivement tes droits :</p>
+    <p>C'est le point aveugle de beaucoup de nomades digitaux installés au Vietnam — le sujet dont personne ne parle sur les forums entre deux photos de plage, et qui fait pourtant la différence entre une parenthèse réussie et un trou de dix ans dans une carrière sociale. En quittant la France sans situation employeur active, tu perds progressivement tes droits :</p>
     <ul>
       <li><strong>Assurance maladie</strong> : les droits sont maintenus 6 à 12 mois après le départ selon ta situation. Après ce délai, tu n'as plus de couverture française — d'où l'intérêt de la CFE ou d'une mutuelle expatriée dès le départ.</li>
       <li><strong>Chômage (ARE)</strong> : les droits ARE sont perdus si tu t'expatries sans maintenir une recherche active d'emploi en France. Pôle Emploi ne "met pas en pause" tes droits pour une expatriation volontaire.</li>
@@ -149,7 +159,7 @@ include 'header.php';
     </div>
 
     <h2 id="section-7">Les plateformes freelance adaptées au marché francophone</h2>
-    <p>Si tu travailles en freelance depuis le Vietnam pour des clients francophones ou internationaux, certaines plateformes sont nettement mieux adaptées :</p>
+    <p>Si tu travailles en freelance depuis le Vietnam pour des clients francophones ou internationaux, certaines plateformes sont nettement mieux adaptées. Précision d'expérience : les plateformes servent à <em>amorcer</em> — les freelances installés au Vietnam qui vivent bien de leur activité tirent l'essentiel de leurs revenus de clients directs et de recommandations, la plateforme n'étant plus qu'un canal d'appoint. Vise cette trajectoire dès le départ :</p>
     <table class="comparison-table">
       <thead><tr><th>Plateforme</th><th>Marché cible</th><th>Types de missions</th><th>Commission</th></tr></thead>
       <tbody>
@@ -170,7 +180,7 @@ include 'header.php';
     </div>
 
     <h2 id="section-8">Gérer ses revenus multi-pays depuis le Vietnam</h2>
-    <p>Travailler depuis le Vietnam pour des clients en France, Belgique, Canada ou Suisse implique de gérer plusieurs devises et systèmes bancaires. Voici les outils utilisés par la communauté expat :</p>
+    <p>Travailler depuis le Vietnam pour des clients en France, Belgique, Canada ou Suisse implique de gérer plusieurs devises et systèmes bancaires — et chaque point de friction évité sur les paiements est de la marge gagnée. Voici les outils utilisés par la communauté expat :</p>
     <ul>
       <li><strong>Wise (multi-devises)</strong> : compte avec IBAN français/belge/britannique, conversion EUR→VND au taux interbancaire, frais 0,4–0,7%. Idéal pour recevoir des paiements clients et convertir en VND pour les dépenses locales.</li>
       <li><strong><a href="go.php?id=revolut" rel="noopener sponsored">Revolut Business</a></strong> : même concept avec plus de fonctionnalités comptables et facturation intégrée. Plans à partir de 7 €/mois.</li>
@@ -178,6 +188,7 @@ include 'header.php';
       <li><strong>Compte bancaire vietnamien (VCB, TCB)</strong> : pratique pour les dépenses quotidiennes en VND et les virements locaux. Nécessite une carte de résidence pour l'ouverture.</li>
     </ul>
     <p>Pour la facturation : si tu es auto-entrepreneur français, tu peux facturer tes clients depuis la France avec ton numéro SIRET même depuis le Vietnam. La domiciliation reste en France, les factures sont émises en euros. La règle des 183 jours s'applique pour définir ta résidence fiscale — voir notre <a href="fiscalite-expat-france-vietnam">guide sur la fiscalité expatriée</a>.</p>
+    <p>Si la gestion d'une structure te rebute, deux alternatives sérieuses existent : le <a href="portage-salarial-depuis-vietnam">portage salarial</a> (tu factures via une société française qui te salarie — retraite et chômage inclus, idéal pour les missions au TJM correct) et, pour les projets d'implantation réelle au Vietnam, la <a href="creer-entreprise-vietnam-statuts-juridiques">création d'une société locale</a>. Le comparatif complet des statuts est dans le <a href="portage-salarial-ou-micro-entreprise-vietnam">face-à-face portage vs micro-entreprise</a>.</p>
 
     <?php
     $aff_id    = 'wise';
@@ -206,15 +217,31 @@ include 'header.php';
       <strong>📱 Rester connecté :</strong> → <a href="sim-internet-applications-vietnam">SIM, internet et applications au Vietnam — Viettel, Mobifone, Zalo, Grab (guide 2026)</a>
     </div>
 
+    <h2 id="section-fuseau">Travailler avec le décalage horaire : l'atout caché du Vietnam</h2>
+    <p>Le Vietnam vit à UTC+7, sans changement d'heure : soit <strong>+6 heures sur la France en hiver, +5 heures en été</strong>. Pour un télétravailleur avec des clients français, ce décalage structure toute la journée — et bien géré, c'est un avantage compétitif :</p>
+    <ul>
+      <li><strong>Tes matinées sont libres</strong> : quand tu commences ta journée à Hanoï, la France dort. Ces heures sans email ni notification sont idéales pour le travail de fond — production, code, rédaction. Beaucoup de nomades n'ont jamais été aussi productifs qu'avec ce « bouclier horaire » naturel.</li>
+      <li><strong>Le recouvrement se joue l'après-midi</strong> : 14h-19h à Hanoï = 8h-13h (hiver) ou 9h-14h (été) à Paris. C'est ta fenêtre de réunions, d'appels et de réactivité client — largement suffisante pour une collaboration fluide.</li>
+      <li><strong>Le piège du soir</strong> : l'après-midi français déborde sur ta soirée vietnamienne. Sans discipline, tu réponds aux messages jusqu'à 22h et ta vie locale (et ton couple) en pâtit. Fixe une heure de coupure et annonce-la à tes clients — « joignable jusqu'à 18h heure de Paris » est une limite parfaitement professionnelle.</li>
+      <li><strong>Annonce ton fuseau, pas ta localisation précise si tu préfères</strong> : la plupart des clients se moquent d'où tu es tant que les créneaux sont clairs et tenus. La fiabilité des rendez-vous vaut tous les arguments.</li>
+    </ul>
+
+    <h2 id="section-erreurs">Les erreurs fréquentes du nomade au Vietnam</h2>
+    <ul>
+      <li><strong>Ignorer la retraite parce qu'on a 30 ans</strong> : les trimestres perdus ne se rattrapent pas — voir la section protection sociale, c'est LE conseil que les nomades de 45 ans donnent à ceux de 30.</li>
+      <li><strong>Laisser sa micro-entreprise française en pilote automatique</strong> : la domiciliation, la TVA et la résidence fiscale évoluent quand ta présence au Vietnam s'allonge. Un point annuel avec un comptable évite l'accumulation silencieuse de problèmes.</li>
+      <li><strong>Prendre des clients vietnamiens « pour arrondir »</strong> : c'est le geste qui transforme une situation tolérée en travail illégal caractérisé. Les clients locaux exigent une structure locale ou un permis — pas d'exception.</li>
+      <li><strong>Négliger l'assurance santé</strong> : aucun statut de cette page n'apporte de couverture maladie. L'accident de scooter n'attend pas que tu aies « le temps de t'en occuper ».</li>
+      <li><strong>Vivre en pointillé sur des e-visas sans plan B</strong> : ça fonctionne, jusqu'au jour où un agent d'immigration trouve que ça fait beaucoup. Si ta vie se construit ici (couple, logement), commence à bâtir un vrai statut — les options sont dans le <a href="visa-teletravail-digital-nomad-vietnam">guide visa des nomades</a>.</li>
+    </ul>
+
     <h2 id="section-faq">Questions fréquentes</h2>
+    <?php foreach ($page_faq as $faq): ?>
     <div class="faq-item">
-      <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Peut-on travailler depuis un café sans être repéré par les autorités ? <span class="faq-arrow">▼</span></button>
-      <div class="faq-answer">Oui, aucun contrôle n'existe pour ce type d'usage. Les autorités vietnamiennes ne surveillent pas les cafés pour repérer des nomades digitaux étrangers. La préoccupation légale est plutôt fiscale (dans ton pays d'origine) que policière (au Vietnam).</div>
+      <button class="faq-question" onclick="this.parentElement.classList.toggle('open')"><?= htmlspecialchars($faq['q']) ?> <span class="faq-arrow">▼</span></button>
+      <div class="faq-answer"><?= $faq['a'] ?></div>
     </div>
-    <div class="faq-item">
-      <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Peut-on créer une société au Vietnam pour travailler légalement ? <span class="faq-arrow">▼</span></button>
-      <div class="faq-answer">Oui. Un étranger peut créer une société à responsabilité limitée (SARL - Công ty TNHH) au Vietnam avec 100% de capital étranger. Cela permet d'obtenir un permis de travail, de facturer des clients vietnamiens et d'employer du personnel local. Le capital minimum recommandé est d'environ 10 000 USD selon l'activité.</div>
-    </div>
+    <?php endforeach; ?>
 
     <?php
 $author_bio = <<<'BIO'
@@ -226,8 +253,8 @@ include '_author-box.php';
     <div class="cta-newsletter">
       <h3>Reçois les prochains guides</h3>
       <p>📥 <strong>Guide PDF + 3 modèles de lettres offerts</strong> dès l'inscription. Un email par mois, désinscription en 1 clic.</p>
-      <form class="cta-form" action="<?= SITE_FORMSPREE ?>" method="POST">
-        <input type="hidden" name="_next" value="<?= SITE_URL ?>/merci-guide">
+      <form class="cta-form" action="<?= SITE_URL ?>/subscribe-pack" method="POST">
+        <input type="text" name="website" value="" style="position:absolute;left:-9999px" tabindex="-1" autocomplete="off" aria-hidden="true">
         <input type="email" name="email" placeholder="ton@email.com" required>
         <button type="submit">S'inscrire</button>
       </form>
