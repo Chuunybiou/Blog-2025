@@ -734,6 +734,11 @@ include __DIR__ . '/header.php';
     </div>
 
     <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">Quelle différence avec le cahier « Comment marche le vietnamien ? » ?</button>
+      <div class="faq-answer">Ce sont deux livres complémentaires. Le <a href="<?= $path_prefix ?>comment-marche-le-vietnamien">cahier « Comment marche le vietnamien ? »</a> pose le socle : accents, sons, tons, lecture et écriture — 146 pages d'entraînement avec exercices corrigés. La méthode 1 100 mots construit ensuite le vocabulaire et la conversation. Si tu débutes de zéro et que les tons t'inquiètent, commence par le cahier ; si tu veux d'abord un plan global et du vocabulaire utile, commence ici.</div>
+    </div>
+
+    <div class="faq-item">
       <button class="faq-question" onclick="toggleFaq(this)">Est-ce différent du Guide Cap Vietnam (gratuit) ?</button>
       <div class="faq-answer">Oui, complètement. Le <a href="<?= $path_prefix ?>pack-gratuit">Guide Cap Vietnam</a> (offert gratuitement avec la newsletter) traite de l'installation pratique : démarches administratives, visa, budget, logement, banque. Le livre vietnamien traite uniquement de l'apprentissage de la langue. Les deux sont complémentaires, mais indépendants.</div>
     </div>
