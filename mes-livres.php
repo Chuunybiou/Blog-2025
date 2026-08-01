@@ -17,9 +17,10 @@ $page_schema = json_encode([
   'author'   => ['@type' => 'Person', 'name' => 'Anthony Bouillon', 'url' => SITE_URL . '/a-propos-capvietnam'],
   'itemListElement' => [
     ['@type' => 'ListItem', 'position' => 1, 'item' => ['@type' => 'Book', 'name' => 'Méthode Polyglotte · Vietnamien', 'url' => 'https://www.amazon.fr/dp/B0H1CHWKF8', 'inLanguage' => 'fr']],
-    ['@type' => 'ListItem', 'position' => 2, 'item' => ['@type' => 'Book', 'name' => 'Méthode Polyglotte · Anglais',    'url' => 'https://www.amazon.fr/dp/B0H2XHZ9TB', 'inLanguage' => 'fr']],
-    ['@type' => 'ListItem', 'position' => 3, 'item' => ['@type' => 'Book', 'name' => 'Méthode Polyglotte · Japonais',  'url' => 'https://www.amazon.fr/dp/B0H4RFJZQY', 'inLanguage' => 'fr']],
-    ['@type' => 'ListItem', 'position' => 4, 'item' => ['@type' => 'Book', 'name' => 'Méthode Polyglotte · Espagnol',  'url' => 'https://www.amazon.fr/dp/B0H47Z1WB3', 'inLanguage' => 'fr']],
+    ['@type' => 'ListItem', 'position' => 2, 'item' => ['@type' => 'Book', 'name' => 'Comment marche le vietnamien ? — cahier d\'initiation', 'url' => 'https://www.amazon.fr/dp/B0HC9876V7', 'inLanguage' => 'fr']],
+    ['@type' => 'ListItem', 'position' => 3, 'item' => ['@type' => 'Book', 'name' => 'Méthode Polyglotte · Anglais',    'url' => 'https://www.amazon.fr/dp/B0H2XHZ9TB', 'inLanguage' => 'fr']],
+    ['@type' => 'ListItem', 'position' => 4, 'item' => ['@type' => 'Book', 'name' => 'Méthode Polyglotte · Japonais',  'url' => 'https://www.amazon.fr/dp/B0H4RFJZQY', 'inLanguage' => 'fr']],
+    ['@type' => 'ListItem', 'position' => 5, 'item' => ['@type' => 'Book', 'name' => 'Méthode Polyglotte · Espagnol',  'url' => 'https://www.amazon.fr/dp/B0H47Z1WB3', 'inLanguage' => 'fr']],
   ]
 ], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
 
@@ -34,6 +35,19 @@ $books = [
     'tag'      => '⭐ Recommandé pour ce blog',
     'tag_class'=> 'tag-primary',
     'accent'   => '#c0392b',
+    'page'     => 'livre-vietnamien',
+  ],
+  [
+    'flag'     => '🇻🇳',
+    'lang'     => 'Vietnamien — le cahier',
+    'asin'     => 'B0HC9876V7',
+    'url'      => 'https://www.amazon.fr/dp/B0HC9876V7',
+    'subtitle' => 'Comment marche le vietnamien ?',
+    'desc'     => 'Le cahier d\'initiation qui reste sur l\'essentiel : accents, sons, tons et construction des phrases, expliqués aux francophones. 146 pages d\'entraînement, exercices corrigés. À faire avant (ou avec) la méthode 1 100 mots.',
+    'tag'      => '🆕 Nouveau — le socle des tons',
+    'tag_class'=> 'tag-primary',
+    'accent'   => '#1b6b52',
+    'page'     => 'comment-marche-le-vietnamien',
   ],
   [
     'flag'     => '🇬🇧',
@@ -253,9 +267,11 @@ include 'header.php';
         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 16.35c-0.19-0.2-0.48-0.27-0.76-0.19-2.01 0.61-4.17 0.93-6.41 0.93-3.4 0-6.62-0.91-9.4-2.64-0.26-0.16-0.59-0.12-0.8 0.09-0.21 0.21-0.24 0.54-0.08 0.8 3.06 4.77 8.13 7.62 13.6 7.62 1.89 0 3.78-0.37 5.56-1.1 0.33-0.13 0.52-0.47 0.45-0.82-0.06-0.25-0.23-0.48-0.16-0.69z M19.5 17.5c-5.39 2.93-13.12 3.15-18.01 0.05-0.36-0.21-0.82-0.09-1.03 0.27-0.21 0.36-0.1 0.82 0.27 1.03 2.68 1.6 5.72 2.42 8.82 2.42 3.45 0 6.88-0.97 9.83-2.89 0.35-0.22 0.45-0.68 0.23-1.03-0.22-0.35-0.68-0.45-1.11-0.85z"/></svg>
         Voir sur Amazon
       </a>
-      <a class="btn-amazon-secondary" href="livre-vietnamien" <?= $book['asin'] !== 'B0H1CHWKF8' ? 'style="display:none"' : '' ?>>
+      <?php if (!empty($book['page'])): ?>
+      <a class="btn-amazon-secondary" href="<?= $book['page'] ?>">
         En savoir plus →
       </a>
+      <?php endif; ?>
     </div>
   </div>
   <?php endforeach; ?>

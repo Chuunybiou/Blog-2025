@@ -533,6 +533,7 @@ include __DIR__ . '/header.php';
         <div class="book-trust-item">🎯 <span><strong>1 100 mots</strong> essentiels</span></div>
         <div class="book-trust-item">🇫🇷 <span>Conçu pour <strong>francophones</strong></span></div>
       </div>
+      <p style="margin-top:1.25rem;font-size:0.9rem;color:var(--muted);">Débutant total, les tons t'inquiètent ? Commence par le cahier compagnon : <a href="comment-marche-le-vietnamien" style="color:var(--terracotta);font-weight:600;">« Comment marche le vietnamien ? » →</a></p>
     </div>
     <div class="book-cover-wrap">
       <!-- Couverture stylisée — remplace par l'image réelle du livre quand tu l'as -->
