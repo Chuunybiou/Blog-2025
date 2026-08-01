@@ -128,7 +128,7 @@ include 'header.php';
       <li><strong>Anticipe la fatigue sociale</strong> : le Tết implique beaucoup de visites, repas et conversations dans une langue que tu comprends peu. Pace-toi.</li>
       <li><strong>Prépare ton estomac (et ton foie)</strong> : chaque visite implique de manger et souvent de trinquer — le rượu (alcool de riz) circule généreusement entre hommes, et refuser sec est délicat. Les techniques de survie : petites bouchées partout, verres à moitié, et le mot magique <em>« một chút thôi »</em> (juste un peu).</li>
       <li><strong>Prends des photos</strong> : avec les ancêtres sur l'autel en arrière-plan — très apprécié par la famille.</li>
-      <li><strong>Apprends "Chúc mừng năm mới"</strong> (Bonne année !) et "Chúc sức khỏe" (Bonne santé !) — quelques mots suffiront à créer un lien fort.</li>
+      <li><strong>Apprends "Chúc mừng năm mới"</strong> (Bonne année !) et "Chúc sức khỏe" (Bonne santé !) — quelques mots suffiront à créer un lien fort. Et si tu veux les prononcer avec les bons tons plutôt qu'à l'oreille, le cahier <a href="comment-marche-le-vietnamien">« Comment marche le vietnamien ? »</a> a été écrit exactement pour ça.</li>
       <li><strong>Ne planifie rien d'autre</strong> : le Tết dure plusieurs jours, avec des obligations familiales qui changent au dernier moment. Laisse ton agenda vide.</li>
     </ul>
 

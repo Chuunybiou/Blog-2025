@@ -214,6 +214,12 @@ include 'header.php';
         <div class="hub-card-desc">Méthodes, ressources et conseils pratiques</div>
         <span class="hub-card-arrow">→</span>
       </a>
+      <a href="comment-marche-le-vietnamien" class="hub-card">
+        <span class="hub-card-emoji">📗</span>
+        <div class="hub-card-title">Le cahier des tons</div>
+        <div class="hub-card-desc">« Comment marche le vietnamien ? » — accents, sons et tons pour francophones</div>
+        <span class="hub-card-arrow">→</span>
+      </a>
       <a href="argent-couple-franco-vietnamien" class="hub-card">
         <span class="hub-card-emoji">💰</span>
         <div class="hub-card-title">Gérer l'argent en couple franco-vietnamien</div>

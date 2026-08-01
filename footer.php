@@ -7,10 +7,10 @@
   <div style="max-width:700px;margin:0 auto;">
     <span style="display:inline-block;font-size:0.65rem;letter-spacing:4px;text-transform:uppercase;font-weight:700;padding:5px 16px;border-radius:3px;background:rgba(222,158,40,0.2);color:#DE9E28;margin-bottom:1.5rem;"><?= $_eb_vi ? '📕 Quà tặng' : '📕 Ressource' ?></span>
     <h2 style="font-family:'DM Serif Display',serif;font-size:clamp(1.6rem,4vw,2.4rem);color:#faf8f4;line-height:1.25;margin-bottom:1rem;"><?= $_eb_vi ? 'Tặng chồng Pháp của bạn cuốn sách học tiếng Việt' : 'Vous voulez apprendre le vietnamien ?' ?></h2>
-    <p style="color:rgba(250,248,244,0.65);font-size:1.05rem;line-height:1.7;margin-bottom:0.5rem;"><?= $_eb_vi ? 'Phương pháp polyglotte của Anthony Bouillon giúp người Pháp học tiếng Việt một cách tự nhiên — kể cả khi chưa có nền tảng ngôn ngữ.' : 'La méthode polyglotte d\'Anthony Bouillon pour apprendre le vietnamien naturellement — même sans bases linguistiques.' ?></p>
-    <p style="color:rgba(250,248,244,0.6);font-size:0.85rem;margin-bottom:2rem;"><?= $_eb_vi ? 'Có trên Amazon dưới dạng ebook · Phương pháp đã được kiểm chứng thực tế tại Hà Nội.' : 'Disponible en ebook sur Amazon · Méthode testée sur le terrain à Hanoï' ?></p>
+    <p style="color:rgba(250,248,244,0.65);font-size:1.05rem;line-height:1.7;margin-bottom:0.5rem;"><?= $_eb_vi ? 'Hai cuốn sách của Anthony Bouillon giúp người Pháp học tiếng Việt : vở luyện thanh điệu và phương pháp 1 100 từ thông dụng nhất.' : 'Deux livres d\'Anthony Bouillon pour apprendre : le cahier des tons « Comment marche le vietnamien ? » et la méthode 1 100 mots.' ?></p>
+    <p style="color:rgba(250,248,244,0.6);font-size:0.85rem;margin-bottom:2rem;"><?= $_eb_vi ? 'Có trên Amazon (bản in và ebook) · Được kiểm chứng thực tế tại Hà Nội.' : 'Disponibles sur Amazon · Méthodes testées sur le terrain à Hanoï' ?></p>
     <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
-      <a href="<?= ($path_prefix ?? '') ?>livre-vietnamien" style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.85rem 2rem;background:#DE9E28;color:#23281F;border-radius:6px;text-decoration:none;font-weight:700;font-size:0.95rem;"><?= $_eb_vi ? '📕 Xem sách' : '📕 Découvrir l\'ebook' ?></a>
+      <a href="<?= ($path_prefix ?? '') ?>mes-livres" style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.85rem 2rem;background:#DE9E28;color:#23281F;border-radius:6px;text-decoration:none;font-weight:700;font-size:0.95rem;"><?= $_eb_vi ? '📚 Xem sách' : '📚 Découvrir mes livres' ?></a>
       <a href="https://www.amazon.fr/dp/B0H1CHWKF8" target="_blank" rel="noopener sponsored" style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.85rem 2rem;background:rgba(250,248,244,0.08);color:#faf8f4;border:1px solid rgba(250,248,244,0.2);border-radius:6px;text-decoration:none;font-weight:600;font-size:0.95rem;"><?= $_eb_vi ? 'Mua trên Amazon →' : 'Acheter sur Amazon →' ?></a>
     </div>
   </div>
@@ -61,6 +61,7 @@
     <div class="footer-legal">
       <a href="<?= $path_prefix ?>mentions-legales-capvietnam">Mentions légales</a>
       <a href="<?= $path_prefix ?>confidentialite-capvietnam">Confidentialité</a>
+      <a href="<?= $path_prefix ?>methodologie-sources">Méthodologie &amp; sources</a>
       <a href="<?= $path_prefix ?>cookies-capvietnam">Cookies</a>
       <a href="#" onclick="openCookieSettings(event)">Gérer les cookies</a>
     </div>

@@ -474,6 +474,7 @@ footer .nav-logo span { color: var(--hanoi); }
           <a href="<?= $path_prefix ?>pack-mariage-visa-2026">💍 Pack Mariage &amp; Visa 2026 (9,99 €)</a>
         </div>
       </li>
+      <li><a href="<?= $path_prefix ?>mes-livres">📚 Mes livres</a></li>
         <li><a href="<?= $path_prefix ?>a-propos-capvietnam">À propos</a></li>
       <li><a href="<?= $path_prefix ?>pack-gratuit" class="nav-guide-cta">Pack gratuit</a></li>
     

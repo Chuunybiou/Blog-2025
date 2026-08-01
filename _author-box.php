@@ -6,7 +6,8 @@
  *   $author_links (string) — optional, raw HTML for the links row (defaults to "À propos" only)
  */
 require_once __DIR__ . '/config/site.php';
-$author_links = $author_links ?? '<a href="a-propos-capvietnam">À propos →</a>';
+$author_links = ($author_links ?? '<a href="a-propos-capvietnam">À propos →</a>')
+              . ' <a href="mes-livres">📚 Mes livres →</a>';
 $_author_path_prefix = $path_prefix ?? '';
 ?>
     <div class="author-box">

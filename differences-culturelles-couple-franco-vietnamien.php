@@ -107,7 +107,7 @@ include 'header.php';
       Pour les événements importants (mariage, démarches officielles, rendez-vous médical), soyez explicites : "il faut arriver à l'heure exacte pour cette raison précise". Pour les dîners familiaux, adopte le rythme local — ça réduira ton stress et améliorera ton intégration.
     </div>
 
-    <div class="tip-box">💡 Un effort concret que les belles-familles vietnamiennes apprécient beaucoup : apprendre quelques mots de vietnamien. Voir notre guide : <a href="apprendre-vietnamien-couple">apprendre le vietnamien en couple</a>.</div>
+    <div class="tip-box">💡 Un effort concret que les belles-familles vietnamiennes apprécient beaucoup : apprendre quelques mots de vietnamien — prononcés avec les bons tons, sinon le compliment se perd en route. Voir notre guide <a href="apprendre-vietnamien-couple">apprendre le vietnamien en couple</a>, et pour poser le socle des tons, le cahier <a href="comment-marche-le-vietnamien">« Comment marche le vietnamien ? »</a>.</div>
 
     <h2 id="section-5">Les rôles de genre</h2>
     <p>La société vietnamienne a des attentes genrées plus marquées qu'en France, bien que cela évolue rapidement dans les milieux urbains éduqués. La femme est souvent responsable du foyer et de l'éducation des enfants, même si elle travaille à plein temps. L'homme est attendu comme pourvoyeur financier principal.</p>

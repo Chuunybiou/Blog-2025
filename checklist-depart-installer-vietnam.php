@@ -133,6 +133,7 @@ include 'header.php';
       <li>☐ <strong>Formulaire PAI soumis</strong> (obligatoire dans les 72h avant le vol si arrivée à Hanoï, HCMC, Đà Nẵng ou Phú Quốc) — <a href="declaration-pre-arrivee-vietnam-pai-2026">voir le guide PAI</a></li>
       <li>☐ <strong>Bagage cabine prioritaire</strong> : passeport, médicaments, ordonnances, assurance santé (carte), téléphone chargé, vêtements de rechange, argent cash. Si ta valise soute est perdue, tu dois pouvoir survivre 72h sans elle.</li>
       <li>☐ <strong>Télécharger les apps offline</strong> avant d'embarquer : Grab (VTC), Google Maps avec carte Vietnam offline, Google Translate (pack langue vietnamien offline), VDict (dictionnaire).</li>
+      <li>☐ <strong>Commencer les bases du vietnamien</strong> : les semaines avant le départ sont le moment idéal pour poser le socle — savoir lire les panneaux et les menus dès l'atterrissage change les premières semaines. Le cahier <a href="comment-marche-le-vietnamien">« Comment marche le vietnamien ? »</a> couvre exactement ça (accents, sons, tons).</li>
       <li>☐ <strong>Charger toutes les batteries</strong> : téléphone, ordinateur, batterie externe. Les prises sont en Type A et C au Vietnam (compatibles françaises avec adaptateur).
       <li>☐ <strong>Fiche d'immigration</strong> : à l'arrivée à Nội Bài (Hanoï) ou Tân Sơn Nhất (HCMC), la file d'attente à l'immigration peut prendre 30 à 90 min selon l'heure. Passe en file e-passport si disponible.</li>
     </ul>

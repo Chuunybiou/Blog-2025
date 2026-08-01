@@ -209,7 +209,7 @@ include 'header.php';
   <div class="author-box-text">
     <div class="author-box-name">Anthony Bouillon</div>
     <div class="author-box-bio">Expatrié français installé au Vietnam. Je partage mon expérience du quotidien vietnamien : vie pratique, démarches, travail et couple franco-vietnamien.</div>
-    <a href="a-propos-capvietnam" class="author-box-link">En savoir plus sur l'auteur</a>
+    <a href="a-propos-capvietnam" class="author-box-link">En savoir plus sur l'auteur</a> · <a href="mes-livres" class="author-box-link">📚 Mes livres</a>
   </div>
 </div>
 

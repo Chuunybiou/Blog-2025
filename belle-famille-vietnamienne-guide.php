@@ -105,6 +105,7 @@ include 'header.php';
       <li>Pour les oncles et tantes : demande à ta conjointe les termes exacts selon l'âge relatif.</li>
       <li>Apprendre quelques mots en vietnamien montre un effort sincère. Voir notre guide : <a href="apprendre-vietnamien-couple">apprendre le vietnamien en couple</a>.</li>
     </ul>
+    <p>Et le piège invisible : ces termes d'adresse portent des <strong>tons</strong>, et un ton faux change le mot. Vouloir dire « Mẹ » (maman) et prononcer autre chose, c'est l'histoire vécue de beaucoup de gendres français. C'est exactement pour cette situation — prononcer correctement les mots de la famille qu'on aime — que j'ai écrit le cahier <a href="comment-marche-le-vietnamien">« Comment marche le vietnamien ? »</a> : les tons expliqués aux francophones, avec exercices.</p>
     <div class="tip-box">
       <strong>Astuce :</strong>
       Avant chaque visite familiale, demande à ta conjointe de te briefer sur qui sera présent et comment les appeler. Un mémo rapide sur ton téléphone peut t'éviter des maladresses.

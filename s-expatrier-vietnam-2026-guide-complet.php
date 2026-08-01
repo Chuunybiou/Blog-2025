@@ -133,7 +133,7 @@ include 'header.php';
     <!-- ════════════════════════════════ LOGEMENT ════════════════════════════════ -->
     <h2 id="logement">2. Logement — trouver un appartement à Hanoï</h2>
 
-    <p>Trouver un appartement au Vietnam est moins compliqué qu'en France. Guide détaillé : <a href="louer-appartement-hanoi-etranger">louer un appartement à Hanoï en tant qu'étranger</a>. Et pour <a href="apprendre-vietnamien-couple">apprendre le vietnamien</a> — utile pour négocier et communiquer avec les propriétaires. Pas besoin de CDI ni de garant : un visa valide et une caution en cash suffisent. En revanche, <strong>le marché locatif a beaucoup évolué depuis 2020</strong> — les prix ont augmenté de 25 à 40% dans les quartiers expats.</p>
+    <p>Trouver un appartement au Vietnam est moins compliqué qu'en France. Guide détaillé : <a href="louer-appartement-hanoi-etranger">louer un appartement à Hanoï en tant qu'étranger</a>. Et pour <a href="apprendre-vietnamien-couple">apprendre le vietnamien</a> — utile pour négocier et communiquer avec les propriétaires (le socle prononciation/lecture se pose en quelques semaines avec le cahier <a href="comment-marche-le-vietnamien">« Comment marche le vietnamien ? »</a>). Pas besoin de CDI ni de garant : un visa valide et une caution en cash suffisent. En revanche, <strong>le marché locatif a beaucoup évolué depuis 2020</strong> — les prix ont augmenté de 25 à 40% dans les quartiers expats.</p>
 
     <h3>Prix réels à Hanoï en 2026</h3>
     <p>Référence rapide : <strong>1 million de VND (1 M₫) ≈ 37 €</strong> en juin 2026.</p>
