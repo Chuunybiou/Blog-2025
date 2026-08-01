@@ -276,6 +276,15 @@ include 'header.php';
       <li><strong>Oublier que le CCAM expire</strong> : un an de validité. Si le projet glisse (grossesse, mutation, pandémie…), recale le calendrier et redemande à temps.</li>
     </ul>
 
+    <?php
+    $page_sources = [
+      ['label' => 'France Diplomatie — services aux Français de l\'étranger', 'url' => 'https://www.diplomatie.gouv.fr'],
+      ['label' => 'Ambassade de France au Vietnam', 'url' => 'https://vn.ambafrance.org'],
+      ['label' => 'Service-Public.fr — fiches officielles droits et démarches', 'url' => 'https://www.service-public.fr'],
+    ];
+    include '_article-sources.php';
+    ?>
+
     <h2 id="section-faq">Questions fréquentes</h2>
     <?php foreach ($page_faq as $faq): ?>
     <div class="faq-item">

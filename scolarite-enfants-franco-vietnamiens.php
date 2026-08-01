@@ -221,6 +221,14 @@ include 'header.php';
       → <a href="apprendre-vietnamien-couple">Apprendre le vietnamien pour son couple</a>
     </div>
 
+    <?php
+    $page_sources = [
+      ['label' => 'AEFE — Agence pour l\'enseignement français à l\'étranger', 'url' => 'https://www.aefe.fr'],
+      ['label' => 'Service-Public.fr — fiches officielles droits et démarches', 'url' => 'https://www.service-public.fr'],
+    ];
+    include '_article-sources.php';
+    ?>
+
     <h2 id="section-faq">Questions fréquentes</h2>
     <?php foreach ($page_faq as $faq): ?>
     <div class="faq-item">

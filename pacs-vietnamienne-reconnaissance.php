@@ -237,6 +237,15 @@ include 'header.php';
       <li><strong>Dissoudre le PACS avant de se marier ensemble</strong> — inutile : le mariage entre partenaires dissout le PACS automatiquement. Une dissolution préalable ajoute des démarches pour rien.</li>
     </ul>
 
+    <?php
+    $page_sources = [
+      ['label' => 'Service-Public.fr — fiches officielles droits et démarches', 'url' => 'https://www.service-public.fr'],
+      ['label' => 'Légifrance — textes de loi et conventions', 'url' => 'https://www.legifrance.gouv.fr'],
+      ['label' => 'France Diplomatie — services aux Français de l\'étranger', 'url' => 'https://www.diplomatie.gouv.fr'],
+    ];
+    include '_article-sources.php';
+    ?>
+
     <h2 id="section-faq">Questions fréquentes</h2>
     <?php foreach ($page_faq as $faq): ?>
     <div class="faq-item">

@@ -277,6 +277,15 @@ include 'header.php';
     <?php /* À COMPLÉTER par Anthony — retour d'expérience sur le mariage au comité populaire */ ?>
     <p><em>Section à venir — je partagerai bientôt notre expérience personnelle de cette démarche.</em></p>
 
+    <?php
+    $page_sources = [
+      ['label' => 'Ambassade de France au Vietnam', 'url' => 'https://vn.ambafrance.org'],
+      ['label' => 'France Diplomatie — services aux Français de l\'étranger', 'url' => 'https://www.diplomatie.gouv.fr'],
+      ['label' => 'Thư Viện Pháp Luật — base des textes juridiques vietnamiens (en vietnamien)', 'url' => 'https://thuvienphapluat.vn'],
+    ];
+    include '_article-sources.php';
+    ?>
+
     <h2 id="section-faq">Questions fréquentes</h2>
     <?php foreach ($page_faq as $faq): ?>
     <div class="faq-item">

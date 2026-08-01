@@ -208,6 +208,14 @@ include 'header.php';
     <p>Si tu es marié(e) à un(e) Vietnamien(ne), tu abordes ce marché avec trois avantages structurels : l'<strong>exemption de permis de travail</strong> (l'employeur n'a pas à monter le lourd dossier GPLĐ — un argument d'embauche réel face à un candidat étranger « ordinaire ») ; la <strong>stabilité perçue</strong> (un conjoint installé avec sa famille locale rassure sur la durée, là où l'expatrié célibataire est soupçonné de repartir dans dix-huit mois) ; et le <strong>réseau familial</strong> évoqué plus haut. Mentionne sobrement ta situation dans ta candidature — au Vietnam, c'est un atout à faire valoir, pas une information privée à taire.</p>
     <p>Dernier conseil de méthode : traite ta recherche comme un projet, pas comme une loterie. Fixe-toi un rythme hebdomadaire (candidatures ciblées, messages réseau, un événement physique), tiens un tableau de suivi, et relance systématiquement après dix jours de silence — la relance polie est bien perçue localement. La plupart des Français qui décrochent un poste au Vietnam le font entre le deuxième et le sixième mois de recherche active sur place : c'est un marathon court, pas un sprint, et la régularité y bat le talent brut. Bonne chance — et le réseau CapVietnam est là pour les questions de visa et d'installation qui suivront.</p>
 
+    <?php
+    $page_sources = [
+      ['label' => 'Thư Viện Pháp Luật — base des textes juridiques vietnamiens (en vietnamien)', 'url' => 'https://thuvienphapluat.vn'],
+      ['label' => 'Portail du Gouvernement vietnamien (en vietnamien)', 'url' => 'https://chinhphu.vn'],
+    ];
+    include '_article-sources.php';
+    ?>
+
     <div id="section-faq">
       <h2>Questions fréquentes</h2>
       <?php foreach ($page_faq as $i => $item): ?>

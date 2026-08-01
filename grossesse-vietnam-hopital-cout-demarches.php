@@ -318,6 +318,15 @@ include 'header.php';
       <li><strong>Le facteur administratif</strong> : dans les deux cas, l'enfant sera français ET pourra être vietnamien — mais le circuit des papiers change (déclaration au comité populaire + transcription à l'ambassade côté Vietnam ; état civil français direct côté France, puis démarches vietnamiennes au consulat). Aucun des deux choix ne ferme de porte à la double nationalité.</li>
     </ul>
 
+    <?php
+    $page_sources = [
+      ['label' => 'Caisse des Français de l\'Étranger (CFE)', 'url' => 'https://www.cfe.fr'],
+      ['label' => 'France Diplomatie — services aux Français de l\'étranger', 'url' => 'https://www.diplomatie.gouv.fr'],
+      ['label' => 'Service-Public.fr — fiches officielles droits et démarches', 'url' => 'https://www.service-public.fr'],
+    ];
+    include '_article-sources.php';
+    ?>
+
     <h2 id="section-faq">Questions fréquentes</h2>
     <?php foreach ($page_faq as $faq): ?>
     <div class="faq-item">

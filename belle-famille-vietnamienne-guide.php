@@ -124,6 +124,8 @@ include 'header.php';
       En province ou dans les familles traditionnelles, refuser l'alcool peut être perçu comme impoli. Accepter symboliquement (même une petite gorgée) montre ta bonne volonté. Préviens ta conjointe à l'avance si tu ne bois pas du tout pour qu'elle explique à ta place.
     </div>
 
+    <p>Après le repas vient presque toujours le thé — et ce n'est pas un détail : servir le thé aux aînés, accepter la tasse à deux mains, resservir sans qu'on te le demande sont des gestes remarqués. Si tu veux briller (ou simplement comprendre ce que tu bois), le guide du <a href="the-sante-vietnamien-dattes-goji-reglisse">thé santé vietnamien aux dattes rouges, goji et réglisse</a> raconte cette culture de la théière familiale.</p>
+
     <h2 id="section-4">Les cadeaux : l'art de bien choisir</h2>
     <p>Apporter un cadeau à chaque visite n'est pas obligatoire, mais apporter quelque chose lors des premières visites et des occasions importantes (Tết, anniversaires, maladies) est très apprécié. Le cadeau vietnamien obéit à sa propre grammaire : il se donne et se reçoit à deux mains, il ne s'ouvre généralement pas devant le donateur, et sa valeur se calibre — trop modeste, il déçoit ; trop fastueux, il crée une dette embarrassante. En cas de doute, la fourchette « bon produit, joliment présenté, sans ostentation » ne se trompe jamais.</p>
     <ul>

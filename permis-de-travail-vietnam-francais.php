@@ -182,6 +182,14 @@ include 'header.php';
     <h2 id="section-8">8. Travailler sans permis : ce que ça coûte vraiment</h2>
     <p>La tentation existe — employeurs pressés, périodes d'essai « informelles », petits contrats. Les conséquences sont pourtant asymétriques et sérieuses : pour l'<strong>employeur</strong>, amendes administratives substantielles par travailleur irrégulier ; pour le <strong>salarié</strong>, amende, possible expulsion et mention qui compliquera les demandes de visa suivantes — sans parler de l'absence totale de protection (pas de contrat opposable, pas d'assurance sociale, aucun recours en cas de salaire impayé). Et le travail non déclaré fragilise tout le reste de ton édifice administratif : renouvellements de visa, TRC, un jour la résidence permanente. La voie légale existe pour tous les profils de cette page — permis classique, exemption conjoint, structure propre. L'emprunter n'est pas du zèle, c'est de la gestion de risque élémentaire.</p>
 
+    <?php
+    $page_sources = [
+      ['label' => 'Thư Viện Pháp Luật — base des textes juridiques vietnamiens (en vietnamien)', 'url' => 'https://thuvienphapluat.vn'],
+      ['label' => 'Portail du Gouvernement vietnamien (en vietnamien)', 'url' => 'https://chinhphu.vn'],
+    ];
+    include '_article-sources.php';
+    ?>
+
     <div id="section-faq">
       <h2>Questions fréquentes</h2>
       <?php foreach ($page_faq as $i => $item): ?>

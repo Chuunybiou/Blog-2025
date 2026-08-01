@@ -208,6 +208,15 @@ include 'header.php';
 
     <p>En attendant, la meilleure décision reste la plus simple : <strong>construis ton projet avec les règles d'aujourd'hui, pas avec celles que tu espères demain</strong>. Si le montage actuel (alternance, e-visas, ou TT/TRC pour les couples mixtes) te convient, le futur visa retraite ne sera qu'un bonus. S'il ne te convient pas, aucune rumeur ne devrait te faire signer un bail de trois ans à Đà Nẵng.</p>
 
+    <?php
+    $page_sources = [
+      ['label' => 'Portail e-visa officiel du Vietnam (Département de l\'immigration)', 'url' => 'https://evisa.xuatnhapcanh.gov.vn'],
+      ['label' => 'Caisse des Français de l\'Étranger (CFE)', 'url' => 'https://www.cfe.fr'],
+      ['label' => 'L\'Assurance retraite — retraite et résidence à l\'étranger', 'url' => 'https://www.lassuranceretraite.fr'],
+    ];
+    include '_article-sources.php';
+    ?>
+
     <h2 id="section-faq">Questions fréquentes</h2>
     <?php foreach ($page_faq as $faq): ?>
     <div class="faq-item">

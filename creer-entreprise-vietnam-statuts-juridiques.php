@@ -212,6 +212,14 @@ include 'header.php';
       <li><strong>Économiser sur le juridique et la compta la première année</strong> : c'est l'année où tout se structure. Les centaines de dollars « économisées » se paient en milliers lors des régularisations, avec les intérêts de retard en prime.</li>
     </ul>
 
+    <?php
+    $page_sources = [
+      ['label' => 'Thư Viện Pháp Luật — base des textes juridiques vietnamiens (en vietnamien)', 'url' => 'https://thuvienphapluat.vn'],
+      ['label' => 'Portail du Gouvernement vietnamien (en vietnamien)', 'url' => 'https://chinhphu.vn'],
+    ];
+    include '_article-sources.php';
+    ?>
+
     <div id="section-faq">
       <h2>Questions fréquentes</h2>
       <?php foreach ($page_faq as $i => $item): ?>

@@ -263,6 +263,15 @@ include 'header.php';
       <li><strong>Chaque année</strong> : vérification du relevé de carrière, réévaluation de la couverture santé selon l'évolution familiale (mariage, naissance — chaque événement change l'équation), et un œil sur les réformes françaises des retraites — elles te concernent toujours, même à 10 000 km.</li>
     </ol>
 
+    <?php
+    $page_sources = [
+      ['label' => 'Caisse des Français de l\'Étranger (CFE)', 'url' => 'https://www.cfe.fr'],
+      ['label' => 'CLEISS — protection sociale internationale', 'url' => 'https://www.cleiss.fr'],
+      ['label' => 'L\'Assurance retraite — retraite et résidence à l\'étranger', 'url' => 'https://www.lassuranceretraite.fr'],
+    ];
+    include '_article-sources.php';
+    ?>
+
     <h2 id="section-faq">Questions fréquentes</h2>
     <?php foreach ($page_faq as $faq): ?>
     <div class="faq-item">

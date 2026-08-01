@@ -268,6 +268,15 @@ include 'header.php';
       </ul>
     </div>
 
+    <?php
+    $page_sources = [
+      ['label' => 'L\'Assurance retraite — retraite et résidence à l\'étranger', 'url' => 'https://www.lassuranceretraite.fr'],
+      ['label' => 'Caisse des Français de l\'Étranger (CFE)', 'url' => 'https://www.cfe.fr'],
+      ['label' => 'impots.gouv.fr — fiscalité des particuliers et non-résidents', 'url' => 'https://www.impots.gouv.fr'],
+    ];
+    include '_article-sources.php';
+    ?>
+
     <h2 id="section-faq">Questions fréquentes</h2>
     <?php foreach ($page_faq as $faq): ?>
     <div class="faq-item">

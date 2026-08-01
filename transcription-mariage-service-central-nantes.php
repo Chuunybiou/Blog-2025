@@ -270,6 +270,15 @@ include 'header.php';
 
     <p>Le scénario « procureur » mérite d'être dédramatisé : la transmission au procureur de la République (celui de Nantes est compétent pour l'état civil consulaire) n'est pas une accusation — c'est la procédure normale quand l'administration veut une vérification supplémentaire, et elle peut déboucher sur une audition des époux, séparément, sur le modèle de <a href="entretien-ambassade-france-vietnam-visa-conjoint">l'entretien de communauté de vie</a>. Si le procureur ne s'oppose pas dans les délais prévus, la transcription reprend son cours. Pour un couple sincère avec un dossier documenté, c'est du temps perdu, pas un danger. En cas de refus formel, en revanche, ne reste pas seul : un avocat en droit de la famille internationale saura si le recours (devant le tribunal judiciaire de Nantes) vaut d'être engagé ou si un vice du dossier peut être corrigé plus simplement.</p>
 
+    <?php
+    $page_sources = [
+      ['label' => 'France Diplomatie — services aux Français de l\'étranger', 'url' => 'https://www.diplomatie.gouv.fr'],
+      ['label' => 'Service-Public.fr — fiches officielles droits et démarches', 'url' => 'https://www.service-public.fr'],
+      ['label' => 'Légifrance — textes de loi et conventions', 'url' => 'https://www.legifrance.gouv.fr'],
+    ];
+    include '_article-sources.php';
+    ?>
+
     <h2 id="section-faq">Questions fréquentes</h2>
     <?php foreach ($page_faq as $faq): ?>
     <div class="faq-item">

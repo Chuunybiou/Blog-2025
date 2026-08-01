@@ -182,6 +182,14 @@ include 'header.php';
       <li><strong>Prévoir un compte dédié au mariage.</strong> Un sous-compte Wise ou Revolut spécifique au budget mariage simplifie le suivi et évite de mélanger les dépenses courantes avec les dépenses exceptionnelles.</li>
     </ul>
 
+    <?php
+    $page_sources = [
+      ['label' => 'Service-Public.fr — fiches officielles droits et démarches', 'url' => 'https://www.service-public.fr'],
+      ['label' => 'France Diplomatie — services aux Français de l\'étranger', 'url' => 'https://www.diplomatie.gouv.fr'],
+    ];
+    include '_article-sources.php';
+    ?>
+
     <h2 id="section-faq">Questions fréquentes</h2>
     <div class="faq-item">
       <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Combien coûte un mariage franco-vietnamien en moyenne ? <span class="faq-arrow">▼</span></button>

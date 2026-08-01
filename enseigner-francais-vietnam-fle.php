@@ -202,6 +202,15 @@ include 'header.php';
     </ul>
     <p>Dernière recommandation : formalise un minimum (fiche de présence, paiement par paquet d'heures d'avance, politique d'annulation annoncée). La relation prof-élève au Vietnam est chaleureuse, mais les annulations de dernière minute sont fréquentes si rien n'est cadré — et ton temps est ta seule matière première.</p>
 
+    <?php
+    $page_sources = [
+      ['label' => 'AEFE — Agence pour l\'enseignement français à l\'étranger', 'url' => 'https://www.aefe.fr'],
+      ['label' => 'France Éducation international — DELF/DALF', 'url' => 'https://www.france-education-international.fr'],
+      ['label' => 'CNED — formation DAEFLE', 'url' => 'https://www.cned.fr'],
+    ];
+    include '_article-sources.php';
+    ?>
+
     <div id="section-faq">
       <h2>Questions fréquentes</h2>
       <?php foreach ($page_faq as $i => $item): ?>

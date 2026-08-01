@@ -319,6 +319,15 @@ include 'header.php';
       <li><strong>Laisser la résidence fiscale au hasard</strong> : passer 200 jours par an au Vietnam sans jamais se poser la question, c'est s'exposer à une régularisation des deux côtés. Le sujet se traite en amont, pas en réaction.</li>
     </ul>
 
+    <?php
+    $page_sources = [
+      ['label' => 'Auto-entrepreneur URSSAF — micro-entreprise', 'url' => 'https://www.autoentrepreneur.urssaf.fr'],
+      ['label' => 'impots.gouv.fr — fiscalité des particuliers et non-résidents', 'url' => 'https://www.impots.gouv.fr'],
+      ['label' => 'CLEISS — protection sociale internationale', 'url' => 'https://www.cleiss.fr'],
+    ];
+    include '_article-sources.php';
+    ?>
+
     <h2 id="section-faq">Questions fréquentes</h2>
     <?php foreach ($page_faq as $faq): ?>
     <div class="faq-item">

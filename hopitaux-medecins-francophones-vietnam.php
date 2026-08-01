@@ -270,6 +270,14 @@ include 'header.php';
 
     <p>Prépare aussi une <strong>fiche d'urgence dans ton portefeuille et ton téléphone</strong> : groupe sanguin, allergies, traitements en cours, numéro de ton assurance et de ta police, contact d'urgence. En couple franco-vietnamien, fais-la bilingue français-vietnamien — si tu n'es pas en état de parler, c'est elle qui parlera pour toi.</p>
 
+    <?php
+    $page_sources = [
+      ['label' => 'Ambassade de France au Vietnam', 'url' => 'https://vn.ambafrance.org'],
+      ['label' => 'France Diplomatie — services aux Français de l\'étranger', 'url' => 'https://www.diplomatie.gouv.fr'],
+    ];
+    include '_article-sources.php';
+    ?>
+
     <h2 id="section-faq">Questions fréquentes</h2>
     <?php foreach ($page_faq as $faq): ?>
     <div class="faq-item">

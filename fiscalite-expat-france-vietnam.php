@@ -255,6 +255,14 @@ include 'header.php';
       → <a href="declarer-impots-france-depuis-vietnam">Déclarer ses impôts en France depuis le Vietnam</a>
     </div>
 
+    <?php
+    $page_sources = [
+      ['label' => 'impots.gouv.fr — fiscalité des particuliers et non-résidents', 'url' => 'https://www.impots.gouv.fr'],
+      ['label' => 'Légifrance — textes de loi et conventions', 'url' => 'https://www.legifrance.gouv.fr'],
+    ];
+    include '_article-sources.php';
+    ?>
+
     <h2 id="section-faq">Questions fréquentes</h2>
     <div class="faq-item">
       <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Si je vis au Vietnam mais garde mon compte courant en France, dois-je le déclarer au Vietnam ? <span class="faq-arrow">▼</span></button>

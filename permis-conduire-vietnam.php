@@ -197,6 +197,15 @@ include 'header.php';
       Reste calme et montre tes documents sans les lâcher des mains. Les amendes sont payées sur place (reçu obligatoire depuis 2022 — insiste pour l'obtenir). Si tu ne comprends pas le motif, note le numéro de badge du fonctionnaire et contacte ton ambassade si la situation devient problématique. Et si ton vietnamien ne suit pas, un appel vidéo à ton/ta conjoint(e) règle 90 % des malentendus de contrôle routier.
     </div>
 
+    <?php
+    $page_sources = [
+      ['label' => 'ANTS — permis de conduire et permis international', 'url' => 'https://ants.gouv.fr'],
+      ['label' => 'Service-Public.fr — fiches officielles droits et démarches', 'url' => 'https://www.service-public.fr'],
+      ['label' => 'France Diplomatie — services aux Français de l\'étranger', 'url' => 'https://www.diplomatie.gouv.fr'],
+    ];
+    include '_article-sources.php';
+    ?>
+
     <h2 id="section-faq">Questions fréquentes</h2>
     <?php foreach ($page_faq as $faq): ?>
     <div class="faq-item">

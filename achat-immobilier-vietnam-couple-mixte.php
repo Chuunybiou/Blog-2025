@@ -241,6 +241,14 @@ include 'header.php';
       → <a href="protection-sociale-cfe-retraite-vietnam">CFE, sécu et retraite : guide pour les expats au Vietnam</a>
     </div>
 
+    <?php
+    $page_sources = [
+      ['label' => 'Thư Viện Pháp Luật — base des textes juridiques vietnamiens (en vietnamien)', 'url' => 'https://thuvienphapluat.vn'],
+      ['label' => 'Portail du Gouvernement vietnamien (en vietnamien)', 'url' => 'https://chinhphu.vn'],
+    ];
+    include '_article-sources.php';
+    ?>
+
     <h2 id="section-faq">Questions fréquentes</h2>
     <?php foreach ($page_faq as $faq): ?>
     <div class="faq-item">

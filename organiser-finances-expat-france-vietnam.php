@@ -231,6 +231,14 @@ include 'header.php';
     <p>Fortuneo et Boursobank nécessitent une adresse française pour l'ouverture. Wealthsimple nécessite une adresse canadienne. Si vous attendez d'être installé à l'étranger, vous ne pourrez plus ouvrir ces comptes. L'ordre logique : ouvrir les comptes <em>avant</em> de partir.</p>
 
     <!-- FAQ -->
+    <?php
+    $page_sources = [
+      ['label' => 'impots.gouv.fr — fiscalité des particuliers et non-résidents', 'url' => 'https://www.impots.gouv.fr'],
+      ['label' => 'Caisse des Français de l\'Étranger (CFE)', 'url' => 'https://www.cfe.fr'],
+    ];
+    include '_article-sources.php';
+    ?>
+
     <h2 id="section-faq">Questions fréquentes</h2>
 
     <?php foreach ($page_faq as $faq): ?>

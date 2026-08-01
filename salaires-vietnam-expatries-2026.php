@@ -188,6 +188,14 @@ include 'header.php';
     <p>Le raisonnement complet d'un candidat à l'expatriation tient en trois questions : que me reste-t-il chaque mois après un niveau de vie équivalent (souvent plus qu'en France) ? Qu'est-ce que je perds en protection sociale différée — retraite, chômage — et comment je le compense (CFE, cotisations volontaires, épargne — voir <a href="protection-sociale-cfe-retraite-vietnam">le guide protection sociale</a>) ? Et que vaut cette expérience sur mon CV dans cinq ans ? Les expatriés déçus sont presque toujours ceux qui n'ont fait que la première conversion, au taux de change du jour.</p>
     <p>Dernier paramètre pour les couples mixtes : un salaire local vietnamien correct + un coût de vie local + une famille sur place forme un équilibre de vie complet, là où le même CV en France donnerait peut-être un salaire supérieur mais une vie plus chère et une belle-famille à 10 000 km. L'arbitrage n'est jamais purement salarial — et c'est très bien comme ça.</p>
 
+    <?php
+    $page_sources = [
+      ['label' => 'Thư Viện Pháp Luật — base des textes juridiques vietnamiens (en vietnamien)', 'url' => 'https://thuvienphapluat.vn'],
+      ['label' => 'Portail du Gouvernement vietnamien (en vietnamien)', 'url' => 'https://chinhphu.vn'],
+    ];
+    include '_article-sources.php';
+    ?>
+
     <div id="section-faq">
       <h2>Questions fréquentes</h2>
       <?php foreach ($page_faq as $i => $item): ?>

@@ -330,6 +330,15 @@ include 'header.php';
     </div>
 
     <!-- ════════════════════════════════ FAQ ════════════════════════════════ -->
+    <?php
+    $page_sources = [
+      ['label' => 'France Diplomatie — services aux Français de l\'étranger', 'url' => 'https://www.diplomatie.gouv.fr'],
+      ['label' => 'Portail e-visa officiel du Vietnam (Département de l\'immigration)', 'url' => 'https://evisa.xuatnhapcanh.gov.vn'],
+      ['label' => 'Caisse des Français de l\'Étranger (CFE)', 'url' => 'https://www.cfe.fr'],
+    ];
+    include '_article-sources.php';
+    ?>
+
     <h2 id="section-faq">Questions fréquentes</h2>
 
     <div class="faq-item">

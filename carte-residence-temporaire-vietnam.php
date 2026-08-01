@@ -188,6 +188,14 @@ include 'header.php';
     </ul>
     <p>C'est pour ça que le conseil revient dans tous nos guides : dès que ta situation ouvre droit à la carte (mariage, contrat de travail, investissement), fais-la. Le coût et l'effort du dossier sont sans commune mesure avec le confort gagné.</p>
 
+    <?php
+    $page_sources = [
+      ['label' => 'Portail e-visa officiel du Vietnam (Département de l\'immigration)', 'url' => 'https://evisa.xuatnhapcanh.gov.vn'],
+      ['label' => 'Thư Viện Pháp Luật — base des textes juridiques vietnamiens (en vietnamien)', 'url' => 'https://thuvienphapluat.vn'],
+    ];
+    include '_article-sources.php';
+    ?>
+
     <h2 id="section-faq">Questions fréquentes</h2>
     <?php foreach ($page_faq as $faq): ?>
     <div class="faq-item">

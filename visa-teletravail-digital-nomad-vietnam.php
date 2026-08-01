@@ -252,6 +252,14 @@ include 'header.php';
       <li><strong>Si ta situation le permet, sors de la zone grise par le haut</strong> : mariage → TT/TRC, contrat local → permis de travail, vraie activité récurrente → structure adaptée. La zone grise est un état transitoire acceptable, pas un plan de carrière.</li>
     </ul>
 
+    <?php
+    $page_sources = [
+      ['label' => 'Portail e-visa officiel du Vietnam (Département de l\'immigration)', 'url' => 'https://evisa.xuatnhapcanh.gov.vn'],
+      ['label' => 'impots.gouv.fr — fiscalité des particuliers et non-résidents', 'url' => 'https://www.impots.gouv.fr'],
+    ];
+    include '_article-sources.php';
+    ?>
+
     <h2 id="section-faq">Questions fréquentes</h2>
     <?php foreach ($page_faq as $faq): ?>
     <div class="faq-item">

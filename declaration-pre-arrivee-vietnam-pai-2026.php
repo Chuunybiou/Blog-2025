@@ -297,6 +297,14 @@ include 'header.php';
 
     <p>Pour tout ce qui concerne les visas, consultez le <a href="<?= SITE_URL ?>/visa-vietnam-francais-guide-2026">guide complet des visas Vietnam pour Français</a>.</p>
 
+    <?php
+    $page_sources = [
+      ['label' => 'Portail e-visa officiel du Vietnam (Département de l\'immigration)', 'url' => 'https://evisa.xuatnhapcanh.gov.vn'],
+      ['label' => 'France Diplomatie — services aux Français de l\'étranger', 'url' => 'https://www.diplomatie.gouv.fr'],
+    ];
+    include '_article-sources.php';
+    ?>
+
     <h2 id="section-faq">Questions fréquentes</h2>
 
     <?php foreach ($page_faq as $item): ?>

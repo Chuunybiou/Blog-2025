@@ -220,6 +220,15 @@ include 'header.php';
       <li><strong>Négliger l'enregistrement de résidence</strong> : voir la section dédiée — deux minutes de vérification avec ton bailleur t'évitent une amende et des blocages administratifs en chaîne.</li>
     </ul>
 
+    <?php
+    $page_sources = [
+      ['label' => 'Portail e-visa officiel du Vietnam (Département de l\'immigration)', 'url' => 'https://evisa.xuatnhapcanh.gov.vn'],
+      ['label' => 'France Diplomatie — services aux Français de l\'étranger', 'url' => 'https://www.diplomatie.gouv.fr'],
+      ['label' => 'Ambassade de France au Vietnam', 'url' => 'https://vn.ambafrance.org'],
+    ];
+    include '_article-sources.php';
+    ?>
+
     <h2 id="section-faq">Questions fréquentes</h2>
     <?php foreach ($page_faq as $faq): ?>
     <div class="faq-item">

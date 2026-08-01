@@ -285,6 +285,15 @@ include 'header.php';
 
     <p>Deux fenêtres reviennent dans presque toutes les familles franco-vietnamiennes : <strong>l'été français</strong> (les grands-parents découvrent la France quand il y fait beau — et chaud, prévois-les au fait que la canicule sans climatisation existe) et <strong>les grands événements familiaux</strong> (naissance, mariage, baptême). Évite en revanche de planifier un séjour qui chevauche le <strong>Têt</strong> : demander à des parents vietnamiens de passer le Nouvel An lunaire loin de leur autel des ancêtres et de leur communauté, c'est leur demander un vrai sacrifice — et c'est souvent vécu comme tel même s'ils acceptent par politesse. Le calendrier idéal se choisit à trois : toi, ton conjoint, et eux.</p>
 
+    <?php
+    $page_sources = [
+      ['label' => 'France-Visas — site officiel des visas pour la France', 'url' => 'https://france-visas.gouv.fr'],
+      ['label' => 'France Diplomatie — services aux Français de l\'étranger', 'url' => 'https://www.diplomatie.gouv.fr'],
+      ['label' => 'Ambassade de France au Vietnam', 'url' => 'https://vn.ambafrance.org'],
+    ];
+    include '_article-sources.php';
+    ?>
+
     <h2 id="section-faq">Questions fréquentes</h2>
     <?php foreach ($page_faq as $faq): ?>
     <div class="faq-item">

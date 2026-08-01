@@ -249,6 +249,15 @@ include 'header.php';
 
     <p>Et parfois, la voie la plus rapide n'est pas le contentieux : si le refus tient à une pièce faible ou à un malentendu identifiable, <strong>redéposer une demande mieux documentée</strong> peut aboutir plus vite qu'un recours. Les deux voies ne s'excluent pas.</p>
 
+    <?php
+    $page_sources = [
+      ['label' => 'France-Visas — site officiel des visas pour la France', 'url' => 'https://france-visas.gouv.fr'],
+      ['label' => 'Ambassade de France au Vietnam', 'url' => 'https://vn.ambafrance.org'],
+      ['label' => 'France Diplomatie — services aux Français de l\'étranger', 'url' => 'https://www.diplomatie.gouv.fr'],
+    ];
+    include '_article-sources.php';
+    ?>
+
     <h2 id="section-faq">Questions fréquentes</h2>
     <?php foreach ($page_faq as $faq): ?>
     <div class="faq-item">

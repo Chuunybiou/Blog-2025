@@ -245,6 +245,14 @@ include 'header.php';
       <li><strong>À la remise de la carte :</strong> photocopies, photos dans le téléphone, alarme de renouvellement posée à J-60 avant expiration. Et respire : tu es officiellement résident au Vietnam.</li>
     </ol>
 
+    <?php
+    $page_sources = [
+      ['label' => 'Portail e-visa officiel du Vietnam (Département de l\'immigration)', 'url' => 'https://evisa.xuatnhapcanh.gov.vn'],
+      ['label' => 'Thư Viện Pháp Luật — base des textes juridiques vietnamiens (en vietnamien)', 'url' => 'https://thuvienphapluat.vn'],
+    ];
+    include '_article-sources.php';
+    ?>
+
     <h2 id="section-faq">Questions fréquentes</h2>
     <?php foreach ($page_faq as $faq): ?>
     <div class="faq-item">

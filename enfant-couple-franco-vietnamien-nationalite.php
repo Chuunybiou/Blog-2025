@@ -247,6 +247,15 @@ include 'header.php';
 
     <p>Le tout se fait très bien en parallèle des nuits courtes — à condition de ne pas découvrir la liste au jour 25. Épingle cette page, ou mieux : prépare le dossier consulaire pendant la grossesse, il ne manquera que le certificat de naissance à y glisser.</p>
 
+    <?php
+    $page_sources = [
+      ['label' => 'Service-Public.fr — fiches officielles droits et démarches', 'url' => 'https://www.service-public.fr'],
+      ['label' => 'Légifrance — textes de loi et conventions', 'url' => 'https://www.legifrance.gouv.fr'],
+      ['label' => 'France Diplomatie — services aux Français de l\'étranger', 'url' => 'https://www.diplomatie.gouv.fr'],
+    ];
+    include '_article-sources.php';
+    ?>
+
     <h2 id="section-faq">Questions fréquentes</h2>
     <?php foreach ($page_faq as $faq): ?>
     <div class="faq-item">

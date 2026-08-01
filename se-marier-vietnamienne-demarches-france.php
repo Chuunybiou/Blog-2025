@@ -196,6 +196,16 @@ include 'header.php';
       <li><strong>Ignorer la question du régime matrimonial</strong> : pour un couple mixte, la loi applicable au régime dépend de règles de droit international privé (souvent liées à la première résidence commune). Un contrat de mariage chez un notaire permet de choisir clairement — dix fois plus simple avant qu'après, surtout si un achat immobilier au Vietnam est dans les projets.</li>
     </ul>
 
+    <?php
+    $page_sources = [
+      ['label' => 'Service-Public.fr — fiches officielles droits et démarches', 'url' => 'https://www.service-public.fr'],
+      ['label' => 'France Diplomatie — services aux Français de l\'étranger', 'url' => 'https://www.diplomatie.gouv.fr'],
+      ['label' => 'Ambassade de France au Vietnam', 'url' => 'https://vn.ambafrance.org'],
+      ['label' => 'Légifrance — textes de loi et conventions', 'url' => 'https://www.legifrance.gouv.fr'],
+    ];
+    include '_article-sources.php';
+    ?>
+
     <h2 id="section-faq">Questions fréquentes</h2>
     <?php foreach ($page_faq as $faq): ?>
     <div class="faq-item">

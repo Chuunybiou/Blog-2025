@@ -188,7 +188,7 @@ include 'header.php';
 
     <h2 id="section-5">Le renouvellement du titre de séjour</h2>
     <p>Le titre de séjour "vie privée et familiale" est renouvelable chaque année. La demande de renouvellement doit être déposée sur l'ANEF <strong>entre 4 et 2 mois avant l'expiration</strong> du titre en cours.</p>
-    <p>Pièces généralement demandées pour le renouvellement : mêmes pièces que pour le premier titre, plus les preuves de vie commune de l'année écoulée (relevés bancaires communs, bail, photos…).</p>
+    <p>Pièces généralement demandées pour le renouvellement : mêmes pièces que pour le premier titre, plus les preuves de vie commune de l'année écoulée (relevés bancaires communs, bail, photos…). Le déroulé complet de cette étape — calendrier ANEF, récépissé, pièges à éviter — est détaillé dans le guide dédié : <a href="renouvellement-titre-sejour-conjoint-vietnamien">renouveler le titre de séjour de ton conjoint vietnamien</a>.</p>
 
     <h2 id="section-6">La carte de résident 10 ans</h2>
     <p>Après <strong>3 ans</strong> de vie commune régulière en France avec un Français, ton conjoint peut demander une carte de résident longue durée valable 10 ans. Cette carte offre une sécurité de séjour bien plus importante.</p>
@@ -278,6 +278,15 @@ include 'header.php';
     </ul>
 
     <p>Chacune de ces démarches génère... de nouveaux documents aux deux noms ou à l'adresse commune. Tu vois où je veux en venir : <strong>tout ce que vous faites nourrit le classeur préfecture</strong>. Le parcours administratif français est une boucle — autant la faire tourner à votre avantage.</p>
+
+    <?php
+    $page_sources = [
+      ['label' => 'Service-Public.fr — fiches officielles droits et démarches', 'url' => 'https://www.service-public.fr'],
+      ['label' => 'Légifrance — textes de loi et conventions', 'url' => 'https://www.legifrance.gouv.fr'],
+      ['label' => 'OFII — Office français de l\'immigration et de l\'intégration', 'url' => 'https://www.ofii.fr'],
+    ];
+    include '_article-sources.php';
+    ?>
 
     <h2 id="section-faq">Questions fréquentes</h2>
     <?php foreach ($page_faq as $faq): ?>

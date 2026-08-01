@@ -237,6 +237,14 @@ include 'header.php';
       <li><strong>Ignorer le côté vietnamien du miroir</strong> : devenir résident fiscal vietnamien crée des obligations déclaratives au Vietnam. Un montage qui n'est déclaré nulle part n'est pas de l'optimisation, c'est une bombe à retardement des deux côtés.</li>
     </ul>
 
+    <?php
+    $page_sources = [
+      ['label' => 'impots.gouv.fr — fiscalité des particuliers et non-résidents', 'url' => 'https://www.impots.gouv.fr'],
+      ['label' => 'Service-Public.fr — fiches officielles droits et démarches', 'url' => 'https://www.service-public.fr'],
+    ];
+    include '_article-sources.php';
+    ?>
+
     <h2 id="section-faq">Questions fréquentes</h2>
     <?php foreach ($page_faq as $faq): ?>
     <div class="faq-item">

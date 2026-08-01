@@ -217,6 +217,8 @@ include 'header.php';
       <strong>📱 Rester connecté :</strong> → <a href="sim-internet-applications-vietnam">SIM, internet et applications au Vietnam — Viettel, Mobifone, Zalo, Grab (guide 2026)</a>
     </div>
 
+    <p>Et si tu cherches une activité en ligne à construire sur la durée plutôt qu'une mission freelance, le blog de niche reste une piste sérieuse — lente, mais compatible avec la vie d'expatrié : voir <a href="creer-blog-expat-rentable">créer un blog d'expat rentable</a> pour le déroulé complet (choix de la niche, monétisation, délais réalistes).</p>
+
     <h2 id="section-fuseau">Travailler avec le décalage horaire : l'atout caché du Vietnam</h2>
     <p>Le Vietnam vit à UTC+7, sans changement d'heure : soit <strong>+6 heures sur la France en hiver, +5 heures en été</strong>. Pour un télétravailleur avec des clients français, ce décalage structure toute la journée — et bien géré, c'est un avantage compétitif :</p>
     <ul>
@@ -234,6 +236,15 @@ include 'header.php';
       <li><strong>Négliger l'assurance santé</strong> : aucun statut de cette page n'apporte de couverture maladie. L'accident de scooter n'attend pas que tu aies « le temps de t'en occuper ».</li>
       <li><strong>Vivre en pointillé sur des e-visas sans plan B</strong> : ça fonctionne, jusqu'au jour où un agent d'immigration trouve que ça fait beaucoup. Si ta vie se construit ici (couple, logement), commence à bâtir un vrai statut — les options sont dans le <a href="visa-teletravail-digital-nomad-vietnam">guide visa des nomades</a>.</li>
     </ul>
+
+    <?php
+    $page_sources = [
+      ['label' => 'Auto-entrepreneur URSSAF — micro-entreprise', 'url' => 'https://www.autoentrepreneur.urssaf.fr'],
+      ['label' => 'impots.gouv.fr — fiscalité des particuliers et non-résidents', 'url' => 'https://www.impots.gouv.fr'],
+      ['label' => 'Thư Viện Pháp Luật — base des textes juridiques vietnamiens (en vietnamien)', 'url' => 'https://thuvienphapluat.vn'],
+    ];
+    include '_article-sources.php';
+    ?>
 
     <h2 id="section-faq">Questions fréquentes</h2>
     <?php foreach ($page_faq as $faq): ?>

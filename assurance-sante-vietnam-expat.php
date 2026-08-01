@@ -221,6 +221,15 @@ include 'header.php';
       <strong>Tu prends ta retraite au Vietnam ?</strong> → <a href="retraite-vietnam-francais">Guide retraite au Vietnam : CFE, pensions, fiscalité, budget</a> — des sections dédiées aux spécificités seniors (tarifs CFE après 60 ans, primes d'assurance).
     </div>
 
+    <?php
+    $page_sources = [
+      ['label' => 'Caisse des Français de l\'Étranger (CFE)', 'url' => 'https://www.cfe.fr'],
+      ['label' => 'Assurance Maladie — vos droits à l\'étranger', 'url' => 'https://www.ameli.fr'],
+      ['label' => 'CLEISS — protection sociale internationale', 'url' => 'https://www.cleiss.fr'],
+    ];
+    include '_article-sources.php';
+    ?>
+
     <h2 id="section-faq">Questions fréquentes</h2>
     <div class="faq-item">
       <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Peut-on utiliser la carte européenne d'assurance maladie (CEAM) au Vietnam ? <span class="faq-arrow">▼</span></button>

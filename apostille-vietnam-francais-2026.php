@@ -344,6 +344,15 @@ include 'header.php';
     </ul>
 
     <?php if (!empty($page_faq)): ?>
+    <?php
+    $page_sources = [
+      ['label' => 'France Diplomatie — services aux Français de l\'étranger', 'url' => 'https://www.diplomatie.gouv.fr'],
+      ['label' => 'Service-Public.fr — fiches officielles droits et démarches', 'url' => 'https://www.service-public.fr'],
+      ['label' => 'Légifrance — textes de loi et conventions', 'url' => 'https://www.legifrance.gouv.fr'],
+    ];
+    include '_article-sources.php';
+    ?>
+
     <h2 id="section-faq">Questions fréquentes</h2>
     <div class="faq-list">
       <?php foreach ($page_faq as $faq): ?>

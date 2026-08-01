@@ -222,6 +222,15 @@ include 'header.php';
       <li><strong>Garde toujours un plan B financier</strong> : de quoi financer un retour en France non planifié (santé, famille, changement de règles migratoires). L'expatriation sereine est celle qui reste réversible — et paradoxalement, c'est quand on sait qu'on peut rentrer qu'on profite vraiment d'être parti.</li>
     </ul>
 
+    <?php
+    $page_sources = [
+      ['label' => 'L\'Assurance retraite — retraite et résidence à l\'étranger', 'url' => 'https://www.lassuranceretraite.fr'],
+      ['label' => 'Caisse des Français de l\'Étranger (CFE)', 'url' => 'https://www.cfe.fr'],
+      ['label' => 'Portail e-visa officiel du Vietnam (Département de l\'immigration)', 'url' => 'https://evisa.xuatnhapcanh.gov.vn'],
+    ];
+    include '_article-sources.php';
+    ?>
+
     <h2 id="section-faq">Questions fréquentes</h2>
     <?php foreach ($page_faq as $faq): ?>
     <div class="faq-item">

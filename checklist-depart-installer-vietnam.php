@@ -200,6 +200,14 @@ include 'header.php';
     include '_affiliate-cta.php';
     ?>
 
+    <?php
+    $page_sources = [
+      ['label' => 'France Diplomatie — services aux Français de l\'étranger', 'url' => 'https://www.diplomatie.gouv.fr'],
+      ['label' => 'Portail e-visa officiel du Vietnam (Département de l\'immigration)', 'url' => 'https://evisa.xuatnhapcanh.gov.vn'],
+    ];
+    include '_article-sources.php';
+    ?>
+
     <h2 id="section-faq">Questions fréquentes</h2>
     <div class="faq-item">
       <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Combien de temps à l'avance faut-il préparer son départ pour le Vietnam ? <span class="faq-arrow">▼</span></button>

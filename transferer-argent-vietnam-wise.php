@@ -236,6 +236,14 @@ include 'header.php';
       <li><strong>Oublier la déclaration fiscale française</strong> : pour un résident fiscal français, un compte Wise est un compte à l'étranger, à déclarer chaque année avec la déclaration de revenus (formulaire dédié aux comptes détenus hors de France). L'oubli est sanctionnable — deux minutes de formulaire t'en préservent.</li>
     </ul>
 
+    <?php
+    $page_sources = [
+      ['label' => 'impots.gouv.fr — fiscalité des particuliers et non-résidents', 'url' => 'https://www.impots.gouv.fr'],
+      ['label' => 'Service-Public.fr — fiches officielles droits et démarches', 'url' => 'https://www.service-public.fr'],
+    ];
+    include '_article-sources.php';
+    ?>
+
     <h2 id="section-faq">Questions fréquentes</h2>
     <?php foreach ($page_faq as $faq): ?>
     <div class="faq-item">

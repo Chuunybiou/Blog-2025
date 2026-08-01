@@ -187,6 +187,17 @@ include 'header.php';
       <strong>Tu pars à la retraite ?</strong> → <a href="retraite-vietnam-francais">Guide complet : visa, pension française, CFE, fiscalité et budget pour les retraités français au Vietnam</a>
     </div>
 
+    <?php
+    $page_sources = [
+      ['label' => 'impots.gouv.fr — fiscalité des particuliers et non-résidents', 'url' => 'https://www.impots.gouv.fr'],
+      ['label' => 'France Diplomatie — services aux Français de l\'étranger', 'url' => 'https://www.diplomatie.gouv.fr'],
+      ['label' => 'Caisse des Français de l\'Étranger (CFE)', 'url' => 'https://www.cfe.fr'],
+    ];
+    include '_article-sources.php';
+    ?>
+
+    <p>Tu ne pars pas de France mais du Canada ? Les étapes sont proches mais les administrations, les comptes (REER, CELI) et la fiscalité de départ diffèrent sensiblement — le guide dédié est ici : <a href="quitter-canada-expat-vietnam">quitter le Canada pour s'expatrier au Vietnam</a>.</p>
+
     <h2 id="section-faq">Questions fréquentes</h2>
     <div class="faq-item">
       <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Dois-je continuer à déclarer mes revenus vietnamiens en France ? <span class="faq-arrow">▼</span></button>

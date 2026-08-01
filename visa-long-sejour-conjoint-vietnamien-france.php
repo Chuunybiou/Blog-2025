@@ -250,6 +250,15 @@ include 'header.php';
     </ul>
     <p>Pour caler toutes les étapes dans le temps, utilise notre outil : <a href="retroplanning-faire-venir-conjoint">le rétroplanning interactif mariage + visa conjoint</a>.</p>
 
+    <?php
+    $page_sources = [
+      ['label' => 'France-Visas — site officiel des visas pour la France', 'url' => 'https://france-visas.gouv.fr'],
+      ['label' => 'Service-Public.fr — fiches officielles droits et démarches', 'url' => 'https://www.service-public.fr'],
+      ['label' => 'OFII — Office français de l\'immigration et de l\'intégration', 'url' => 'https://www.ofii.fr'],
+    ];
+    include '_article-sources.php';
+    ?>
+
     <h2 id="section-faq">Questions fréquentes</h2>
     <?php foreach ($page_faq as $faq): ?>
     <div class="faq-item">

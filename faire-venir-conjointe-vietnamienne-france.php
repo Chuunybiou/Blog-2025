@@ -268,6 +268,7 @@ include 'header.php';
 
     <h2 id="section-8">Étape 7 — La demande de titre de séjour</h2>
     <p>Le VLS-TS valable 1 an doit être suivi d'une demande de titre de séjour, à déposer <strong>2 à 4 mois avant son expiration</strong> sur le portail de l'<strong>ANEF</strong> (Administration Numérique pour les Étrangers en France). La demande se fait entièrement en ligne.</p>
+    <p>Au passage, une confusion fréquente à dissiper : le visa de conjoint de Français n'a rien à voir avec le « regroupement familial », qui est une procédure distincte, plus longue et soumise à des conditions de ressources. Si tu hésites entre les deux notions, lis le comparatif : <a href="regroupement-familial-vs-visa-conjoint">regroupement familial ou visa conjoint, lequel te concerne ?</a></p>
     <p>Le premier titre est généralement une carte de séjour temporaire (1 an). Après 3 ans de mariage avec un ressortissant français, une carte de résident (10 ans) est possible sous conditions.</p>
     <p><strong>→ Lire le guide complet :</strong> <a href="titre-sejour-vie-privee-familiale-conjoint-vietnamien">Titre de séjour vie privée et familiale : comment le demander</a></p>
 
@@ -293,6 +294,16 @@ include 'header.php';
       <li><strong>Négliger le français du conjoint</strong> : rien n'est exigé pour le visa, mais tout le parcours suivant (CIR, carte pluriannuelle, carte de résident, nationalité) demande des paliers de français croissants. Chaque mois d'attente est un mois de cours possible.</li>
       <li><strong>S'isoler dans la procédure</strong> : des milliers de couples franco-vietnamiens sont passés par là. Les groupes d'entraide, ce blog et les articles détaillés de chaque étape existent pour ça — les erreurs coûteuses sont presque toujours des erreurs déjà commises par d'autres.</li>
     </ul>
+
+    <?php
+    $page_sources = [
+      ['label' => 'France-Visas — site officiel des visas pour la France', 'url' => 'https://france-visas.gouv.fr'],
+      ['label' => 'Service-Public.fr — fiches officielles droits et démarches', 'url' => 'https://www.service-public.fr'],
+      ['label' => 'OFII — Office français de l\'immigration et de l\'intégration', 'url' => 'https://www.ofii.fr'],
+      ['label' => 'Ambassade de France au Vietnam', 'url' => 'https://vn.ambafrance.org'],
+    ];
+    include '_article-sources.php';
+    ?>
 
     <h2 id="section-faq">Questions fréquentes</h2>
     <?php foreach ($page_faq as $faq): ?>

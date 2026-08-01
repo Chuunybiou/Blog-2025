@@ -253,6 +253,14 @@ include 'header.php';
       le compte bancaire vietnamien est un outil de vie quotidienne, pas un outil d'optimisation. Déclare-le en France tant que tu es résident fiscal français (3916), et bascule proprement ta situation fiscale quand ton installation au Vietnam devient durable.
     </div>
 
+    <?php
+    $page_sources = [
+      ['label' => 'impots.gouv.fr — fiscalité des particuliers et non-résidents', 'url' => 'https://www.impots.gouv.fr'],
+      ['label' => 'Thư Viện Pháp Luật — base des textes juridiques vietnamiens (en vietnamien)', 'url' => 'https://thuvienphapluat.vn'],
+    ];
+    include '_article-sources.php';
+    ?>
+
     <h2 id="section-faq">Questions fréquentes</h2>
     <?php foreach ($page_faq as $item): ?>
     <div class="faq-item">
