@@ -44,6 +44,12 @@ $page_faq = [
   ['q' => 'Les empreintes digitales sont-elles à refaire à chaque demande ?',
    'a' => 'Non. Les empreintes relevées lors d\'une demande Schengen sont enregistrées dans le système VIS et réutilisables pendant 59 mois. Pour une nouvelle demande dans les 5 ans, le passage physique au centre peut ne plus être nécessaire, selon les cas.'],
 ];
+$page_lang_switch = ['href' => 'vi/visa-schengen-cho-bo-me', 'label' => '🇻🇳 Tiếng Việt', 'title' => 'Bản tiếng Việt'];
+$page_hreflang = [
+  'fr'        => SITE_URL . '/visa-schengen-belle-famille-vietnamienne',
+  'vi'        => SITE_URL . '/vi/visa-schengen-cho-bo-me',
+  'x-default' => SITE_URL . '/visa-schengen-belle-famille-vietnamienne',
+];
 include '_article-css.php';
 include 'header.php';
 ?>

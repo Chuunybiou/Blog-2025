@@ -42,6 +42,12 @@ $page_faq = [
   ['q' => 'Un enfant né en France d\'un parent vietnamien peut-il avoir la nationalité vietnamienne ?',
    'a' => 'Oui, le principe est symétrique : la nationalité vietnamienne se transmet aussi par filiation, avec la même exigence d\'accord des deux parents pour un enfant de couple mixte. Les démarches se font alors auprès de l\'ambassade du Vietnam en France. Si vous envisagez des séjours longs au Vietnam, ça vaut la réflexion dès la naissance.'],
 ];
+$page_lang_switch = ['href' => 'vi/quoc-tich-phap-cho-con', 'label' => '🇻🇳 Tiếng Việt', 'title' => 'Bản tiếng Việt'];
+$page_hreflang = [
+  'fr'        => SITE_URL . '/enfant-couple-franco-vietnamien-nationalite',
+  'vi'        => SITE_URL . '/vi/quoc-tich-phap-cho-con',
+  'x-default' => SITE_URL . '/enfant-couple-franco-vietnamien-nationalite',
+];
 include '_article-css.php';
 include 'header.php';
 ?>

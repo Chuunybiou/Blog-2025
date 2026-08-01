@@ -44,6 +44,12 @@ $page_faq = [
   ['q' => 'Combien de temps entre le refus et le recours ?',
    'a' => 'Deux délais de deux mois à ne jamais laisser passer : deux mois après la notification du refus pour saisir la Commission de recours (CRRV) à Nantes, puis, en cas de rejet explicite ou implicite de la commission, deux mois pour saisir le tribunal administratif de Nantes. Ces délais sont stricts — c\'est la seule erreur vraiment irréversible du parcours.'],
 ];
+$page_lang_switch = ['href' => 'vi/phong-van-visa-vo-chong-phap', 'label' => '🇻🇳 Tiếng Việt', 'title' => 'Bản tiếng Việt'];
+$page_hreflang = [
+  'fr'        => SITE_URL . '/entretien-ambassade-france-vietnam-visa-conjoint',
+  'vi'        => SITE_URL . '/vi/phong-van-visa-vo-chong-phap',
+  'x-default' => SITE_URL . '/entretien-ambassade-france-vietnam-visa-conjoint',
+];
 include '_article-css.php';
 include 'header.php';
 ?>

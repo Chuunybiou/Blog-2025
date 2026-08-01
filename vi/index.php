@@ -321,6 +321,50 @@ include '../header.php';
   <h2 class="vi-section-title">🏠 Sống ở Pháp — hướng dẫn thực tế</h2>
   <p class="vi-section-desc">Những điều người Việt cần biết khi chuyển sang Pháp sống cùng vợ/chồng người Pháp. Không tô hồng, không phóng đại.</p>
   <div class="vi-articles-grid">
+    <a class="vi-art-preview" href="phong-van-visa-vo-chong-phap">
+      <div class="vi-art-preview-img">
+        <div class="tt-thumb bg-convo" style="height:180px;border-radius:0"><span class="tt-lesson-num">Visa</span><div class="tt-thumb-emoji">🎤</div></div>
+      </div>
+      <div class="vi-art-preview-body">
+        <div class="vi-art-preview-cat">Visa sang Pháp</div>
+        <h3>Phỏng Vấn Visa Tại Đại Sứ Quán Pháp — Chuẩn Bị Thế Nào ?</h3>
+        <p>Các câu hỏi thường gặp, bằng chứng cần mang, và cách khiếu nại nếu bị từ chối.</p>
+        <span class="vi-art-preview-more">Đọc thêm →</span>
+      </div>
+    </a>
+    <a class="vi-art-preview" href="nhap-quoc-tich-phap-ket-hon">
+      <div class="vi-art-preview-img">
+        <div class="tt-thumb bg-vocab" style="height:180px;border-radius:0"><span class="tt-lesson-num">Quốc tịch</span><div class="tt-thumb-emoji">🇫🇷</div></div>
+      </div>
+      <div class="vi-art-preview-body">
+        <div class="vi-art-preview-cat">Định cư lâu dài</div>
+        <h3>Nhập Quốc Tịch Pháp Theo Diện Kết Hôn — Sau 4 Năm</h3>
+        <p>Điều kiện, tiếng Pháp B1, hồ sơ, phỏng vấn hòa nhập — và câu hỏi giữ quốc tịch Việt Nam.</p>
+        <span class="vi-art-preview-more">Đọc thêm →</span>
+      </div>
+    </a>
+    <a class="vi-art-preview" href="visa-schengen-cho-bo-me">
+      <div class="vi-art-preview-img">
+        <div class="tt-thumb bg-grammar" style="height:180px;border-radius:0"><span class="tt-lesson-num">Gia đình</span><div class="tt-thumb-emoji">✈️</div></div>
+      </div>
+      <div class="vi-art-preview-body">
+        <div class="vi-art-preview-cat">Gia đình</div>
+        <h3>Đón Bố Mẹ Sang Pháp — Visa Schengen Từng Bước</h3>
+        <p>Hồ sơ hai phía, thư mời, attestation d'accueil, và cách tránh bị từ chối.</p>
+        <span class="vi-art-preview-more">Đọc thêm →</span>
+      </div>
+    </a>
+    <a class="vi-art-preview" href="quoc-tich-phap-cho-con">
+      <div class="vi-art-preview-img">
+        <div class="tt-thumb bg-convo" style="height:180px;border-radius:0"><span class="tt-lesson-num">Em bé</span><div class="tt-thumb-emoji">👶</div></div>
+      </div>
+      <div class="vi-art-preview-body">
+        <div class="vi-art-preview-cat">Gia đình</div>
+        <h3>Con Của Cặp Đôi Pháp-Việt : Quốc Tịch &amp; Hai Hộ Chiếu</h3>
+        <p>Khai sinh hai bên, giữ hai quốc tịch, hộ chiếu Pháp cho bé và quy tắc đi lại.</p>
+        <span class="vi-art-preview-more">Đọc thêm →</span>
+      </div>
+    </a>
     <a class="vi-art-preview" href="cuoc-song-thuc-te-o-phap">
       <div class="vi-art-preview-img">
         <div class="tt-thumb bg-convo" style="height:180px;border-radius:0"><span class="tt-lesson-num">Thực tế</span><div class="tt-thumb-emoji">🌧️</div></div>

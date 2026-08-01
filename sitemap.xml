@@ -541,6 +541,24 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://blog-capvietnam.fr/vi/nhap-quoc-tich-phap-ket-hon</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://blog-capvietnam.fr/vi/phong-van-visa-vo-chong-phap</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://blog-capvietnam.fr/vi/quoc-tich-phap-cho-con</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://blog-capvietnam.fr/vi/tai-sao-hoc-tieng-phap</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>monthly</changefreq>
@@ -555,6 +573,12 @@
   <url>
     <loc>https://blog-capvietnam.fr/vi/visa-dai-han-vo-chong-sang-phap</loc>
     <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://blog-capvietnam.fr/vi/visa-schengen-cho-bo-me</loc>
+    <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

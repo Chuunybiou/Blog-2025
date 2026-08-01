@@ -49,6 +49,12 @@ $page_extra_head = '
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"' . SITE_URL . '"},{"@type":"ListItem","position":2,"name":"Vivre ensemble","item":"' . SITE_URL . '/articles-capvietnam"},{"@type":"ListItem","position":3,"name":"Naturalisation conjoint vietnamien"}]}</script>
 ';
 
+$page_lang_switch = ['href' => 'vi/nhap-quoc-tich-phap-ket-hon', 'label' => '🇻🇳 Tiếng Việt', 'title' => 'Bản tiếng Việt'];
+$page_hreflang = [
+  'fr'        => SITE_URL . '/naturalisation-conjoint-vietnamien',
+  'vi'        => SITE_URL . '/vi/nhap-quoc-tich-phap-ket-hon',
+  'x-default' => SITE_URL . '/naturalisation-conjoint-vietnamien',
+];
 include '_article-css.php';
 include 'header.php';
 ?>
