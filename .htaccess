@@ -42,6 +42,11 @@ ErrorDocument 404 /404-capvietnam.php
   AddOutputFilterByType DEFLATE text/html text/css application/javascript text/javascript application/json text/xml application/xml
 </IfModule>
 
+# ── Fichiers sources du livre payant : jamais servis publiquement ──────────
+<FilesMatch "^(comment-marche-le-vietnamien(-WEB)?|couverture-kdp-complete|Q001176150)\.pdf$">
+  Require all denied
+</FilesMatch>
+
 RewriteEngine On
 
 # HTTP → HTTPS (production uniquement, pas en local)
