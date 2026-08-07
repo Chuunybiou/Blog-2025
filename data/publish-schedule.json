@@ -1,10 +1,6 @@
 {
     "schedule": [
         {
-            "slug": "declarer-impots-france-depuis-vietnam",
-            "publish_on": "2026-08-07"
-        },
-        {
             "slug": "protection-sociale-cfe-retraite-vietnam",
             "publish_on": "2026-08-11"
         },

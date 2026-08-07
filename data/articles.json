@@ -1138,14 +1138,14 @@
             "excerpt": "Résident ou non-résident fiscal ? Formulaire 2042 NR, SIPNR, revenus de source française, déclaration de départ. Ce qu'il faut faire pour être en règle avec le fisc.",
             "category": "argent",
             "categoryLabel": "L'argent à deux",
-            "date": "2026-06-11",
-            "dateLabel": "Juin 2026",
+            "date": "2026-08-07",
+            "dateLabel": "Août 2026",
             "readTime": "12 min",
             "emoji": "📊",
             "image": "https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=600&q=80",
             "imageAlt": "Déclaration impôts France depuis le Vietnam",
             "keywords": "declarer impots france vietnam non resident fiscal 2042 NR expatrie",
-            "published": false
+            "published": true
         },
         {
             "slug": "visa-teletravail-digital-nomad-vietnam",
