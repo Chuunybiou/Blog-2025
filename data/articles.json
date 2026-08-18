@@ -938,14 +938,14 @@
             "excerpt": "Le Vietnam attire de plus en plus de retraités français. Coût de la vie, qualité des soins, logement, sécurité, vie sociale — ce que ça donne vraiment au quotidien.",
             "category": "vie-pratique",
             "categoryLabel": "Vie pratique au Vietnam",
-            "date": "2026-06-25",
-            "dateLabel": "Juin 2026",
+            "date": "2026-08-18",
+            "dateLabel": "Août 2026",
             "readTime": "12 min",
             "emoji": "🌴",
             "image": "assets/img/rue-village-karsts-phong-nha.jpg",
             "imageAlt": "Vie de retraité au Vietnam",
             "keywords": "retraite vietnam francais cout vie sante logement securite vie sociale expatrie senior",
-            "published": false
+            "published": true
         },
         {
             "slug": "vi/trai-cay-tet-doan-ngo",
