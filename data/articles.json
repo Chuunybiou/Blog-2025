@@ -1014,15 +1014,15 @@
             "excerpt": "Le PACS avec un(e) partenaire vietnamien(ne) donne des droits en France mais ne permet pas le visa d'installation. Voici ce qu'il faut savoir avant de choisir entre PACS et mariage.",
             "category": "mariage",
             "categoryLabel": "Se marier",
-            "date": "2026-06-01",
-            "dateLabel": "Juin 2026",
+            "date": "2026-08-25",
+            "dateLabel": "Août 2026",
             "readTime": "15 min",
             "emoji": "🤝",
             "image": "https://images.unsplash.com/photo-1529636798458-92182e662485?w=600&q=80",
             "imageAlt": "PACS couple franco-vietnamien",
             "keywords": "pacs vietnamienne france reconnaissance visa mariage couple mixte",
             "silo": "france",
-            "published": false,
+            "published": true,
             "tags": [
                 "vivre-ensemble"
             ]
