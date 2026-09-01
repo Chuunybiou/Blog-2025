@@ -1033,14 +1033,14 @@
             "excerpt": "Loyer, nourriture, activités de plein air et transport : budget réel pour vivre à Da Nang en 2026. La ville balnéaire qui séduit de plus en plus d'expatriés français.",
             "category": "argent",
             "categoryLabel": "L'argent à deux",
-            "date": "2026-06-01",
-            "dateLabel": "Juin 2026",
+            "date": "2026-09-01",
+            "dateLabel": "Septembre 2026",
             "readTime": "12 min",
             "emoji": "🏖️",
             "image": "assets/img/pont-dragon-nuit-da-nang.jpg",
             "imageAlt": "Pont du Dragon la nuit à Da Nang — budget mensuel expatrié",
             "keywords": "budget da nang 2026 expatrie francais logement nourriture cout vie",
-            "published": false
+            "published": true
         },
         {
             "slug": "budget-mensuel-nha-trang-2026",
