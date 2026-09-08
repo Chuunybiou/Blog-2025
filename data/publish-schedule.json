@@ -1,10 +1,6 @@
 {
     "schedule": [
         {
-            "slug": "budget-mensuel-hue-2026",
-            "publish_on": "2026-09-08"
-        },
-        {
             "slug": "creer-blog-expat-rentable",
             "publish_on": "2026-09-11"
         },
