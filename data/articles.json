@@ -666,14 +666,14 @@
             "excerpt": "WordPress, SEO, affiliation, newsletter… Comment je construis ce blog pour en faire un revenu.",
             "category": "argent",
             "categoryLabel": "L'argent à deux",
-            "date": "2026-01-20",
-            "dateLabel": "Jan 2026",
+            "date": "2026-09-11",
+            "dateLabel": "Septembre 2026",
             "readTime": "11 min",
             "emoji": "✍️",
             "image": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=600&q=80",
             "imageAlt": "Créer un blog expat rentable",
             "keywords": "creer blog expat wordpress monetiser",
-            "published": false
+            "published": true
         },
         {
             "slug": "calculateur-budget-vietnam",
